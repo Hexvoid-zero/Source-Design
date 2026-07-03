@@ -1,0 +1,929 @@
+{
+ "slug": "postman",
+ "name": "Postman",
+ "blurb": "API platform. Orange on charcoal, workspace UI screenshots front and center.",
+ "url": "https://www.postman.com/",
+ "title": "Postman: The World&#x27;s Leading API Platform | Sign Up for Free",
+ "extractedAt": "2026-07-03",
+ "summary": {
+  "colors": [
+   {
+    "name": "neutral-50",
+    "hex": "#ffffff",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-100",
+    "hex": "#f2f2f2",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-200",
+    "hex": "#e6e6e6",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-300",
+    "hex": "#cfcfcf",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-400",
+    "hex": "#a6a6a6",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-500",
+    "hex": "#969696",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-600",
+    "hex": "#6b6b6b",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-800",
+    "hex": "#3b3b3b",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-900",
+    "hex": "#212121",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-950",
+    "hex": "#000000",
+    "group": "neutral"
+   },
+   {
+    "name": "orange",
+    "hex": "#ff6c37",
+    "group": "accent"
+   },
+   {
+    "name": "yellow",
+    "hex": "#ffde83",
+    "group": "accent"
+   },
+   {
+    "name": "orange-2",
+    "hex": "#e0531f",
+    "group": "accent"
+   },
+   {
+    "name": "cyan",
+    "hex": "#0265d2",
+    "group": "accent"
+   },
+   {
+    "name": "deep-indigo",
+    "hex": "#140b1e",
+    "group": "accent"
+   },
+   {
+    "name": "indigo",
+    "hex": "#c0a8e1",
+    "group": "accent"
+   },
+   {
+    "name": "pale-indigo",
+    "hex": "#e4d8f6",
+    "group": "accent"
+   },
+   {
+    "name": "pale-orange",
+    "hex": "#ffd7c7",
+    "group": "accent"
+   },
+   {
+    "name": "orange-3",
+    "hex": "#d23f0e",
+    "group": "accent"
+   },
+   {
+    "name": "cyan-2",
+    "hex": "#3d99ff",
+    "group": "accent"
+   },
+   {
+    "name": "yellow-2",
+    "hex": "#ffb400",
+    "group": "accent"
+   },
+   {
+    "name": "indigo-2",
+    "hex": "#710eed",
+    "group": "accent"
+   }
+  ],
+  "fonts": [
+   "inter",
+   "degular",
+   "notoSansJp",
+   "ibmPlexMono",
+   "inter Fallback",
+   "degular Fallback",
+   "ibmPlexMono Fallback",
+   "notoSansJp Fallback"
+  ],
+  "themeGuess": "light-leaning",
+  "stylesheets": 8,
+  "nativeVarCount": 120
+ },
+ "files": {
+  "DESIGN.md": "---\nname: postman-com-design-system\nsource: https://www.postman.com/\nextracted: 2026-07-03\ntheme: light  # measured from neutral usage weight\ncolors:  # roles inferred from usage frequency + luminance; names verified against values\n  canvas: \"#ffffff\"\n  ink: \"#000000\"\n  text-muted: \"#a6a6a6\"\n  surface: \"#f2f2f2\"\n  hairline: \"#e6e6e6\"\n  accent: \"#ff6c37\"  # orange\n  accent-2: \"#ffde83\"  # yellow\n  accent-3: \"#e0531f\"  # orange\nfonts:\n  primary: \"inter\"  # low-confidence: usage counts are low and close\n  mono: \"ibmPlexMono\"\n---\n\n# Postman: The World&#x27;s Leading API Platform | Sign Up for Free — Design System\n\nExtracted from **https://www.postman.com/** on 2026-07-03.\n\n> Accelerate API development with Postman&#x27;s all-in-one platform. Streamline collaboration and simplify the API lifecycle for faster, better results. Learn more.\n\nEvery value below is mined from the site's live CSS (120 native custom properties, ranked usage counts). Role assignments are inferred from usage and luminance and marked as such — treat them as a strong starting point, not gospel.\n\n## Overview\n\nThe system reads as light: measured neutral usage weighs 423 light against 321 dark. The palette is chromatic: 12 saturated values against 10 neutrals, led by orange (`#ff6c37`). Font usage counts are low and close together (inter: 3, degular: 3, notoSansJp: 3) — the extractor can't confidently call a primary face from CSS alone. Geometry mixes sharp corners (2px) with full pills.\n\n## Usage rules\n\nDerived from the measured usage below — each rule cites its evidence.\n\n- Chromatic color carries 37% of measured usage — this palette uses color structurally. Saturated values can hold large surfaces here; timidity would misrepresent the source.\n- The theme is light (measured neutral weight 423:321). Don't flip individual sections to the opposite mode.\n- `4px` is the workhorse radius (x51); treat the other radii as exceptions, not options.\n- Shadows stay tight (max 4px blur) — keep elevation subtle if you extend the scale.\n- Spacing sits on a 4px grid (10 of 12 values divisible by 4) — stay on it.\n- `ibmPlexMono` is the monospace — keep it for code, data, and metadata roles.\n\n## Colors\n\n### Neutrals (light → dark)\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `neutral-50` | `#ffffff` | 216 | **canvas** — lightest neutral, matches the measured light-leaning theme |\n| `neutral-100` | `#f2f2f2` | 79 | **surface** — neutral closest to canvas luminance |\n| `neutral-200` | `#e6e6e6` | 109 | **hairline** — next neutral near canvas, hairline-border weight |\n| `neutral-300` | `#cfcfcf` | 19 | — |\n| `neutral-400` | `#a6a6a6` | 36 | **text-muted** — most-used mid-luminance neutral |\n| `neutral-500` | `#969696` | 8 | — |\n| `neutral-600` | `#6b6b6b` | 68 | — |\n| `neutral-800` | `#3b3b3b` | 37 | — |\n| `neutral-900` | `#212121` | 122 | — |\n| `neutral-950` | `#000000` | 94 | **ink** — darkest neutral, highest contrast against canvas |\n\n### Accents\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `orange` | `#ff6c37` | 205 | **accent** — most-used chromatic color |\n| `yellow` | `#ffde83` | 41 | **accent-2** — supporting chromatic color |\n| `orange-2` | `#e0531f` | 40 | **accent-3** — supporting chromatic color |\n| `cyan` | `#0265d2` | 36 | — |\n| `deep-indigo` | `#140b1e` | 28 | — |\n| `indigo` | `#c0a8e1` | 24 | — |\n| `pale-indigo` | `#e4d8f6` | 22 | — |\n| `pale-orange` | `#ffd7c7` | 18 | — |\n| `orange-3` | `#d23f0e` | 13 | — |\n| `cyan-2` | `#3d99ff` | 11 | — |\n| `yellow-2` | `#ffb400` | 11 | — |\n| `indigo-2` | `#710eed` | 11 | — |\n\n### Modern color values (kept verbatim)\n\n- `lab(0% 0 0)`\n- `lab(96.5005% 4.18508 1.52328)`\n- `lab(76.5514% 36.422 15.5335)`\n- `lab(55.4814% 75.0732 48.8528)`\n- `lab(48.4493% 77.4328 61.5452)`\n- `lab(40.4273% 67.2623 53.7441)`\n- `lab(94.7127% 3.58394 14.3151)`\n- `lab(64.272% 57.1788 90.3583)`\n- `lab(57.1026% 64.2584 89.8886)`\n- `lab(89.7033% -.480294 84.4917)`\n- `lab(62.7799% 22.4197 86.1544)`\n- `lab(47.8202% 25.2426 66.5015)`\n\n## Typography\n\nUsage counts here are low and close together, so no family can be confidently called primary from CSS declarations alone — sites that set fonts via shorthand or JS under-count. Verify visually. Full list by usage:\n\n| Family | Usage |\n| --- | --- |\n| inter | 3 |\n| degular | 3 |\n| notoSansJp | 3 |\n| ibmPlexMono | 2 |\n| inter Fallback | 1 |\n| degular Fallback | 1 |\n| ibmPlexMono Fallback | 1 |\n| notoSansJp Fallback | 1 |\n\n**Size scale (px):** `9`, `10`, `11`, `12`, `13`, `14`, `15`, `16`, `20`, `25.6`, `32`, `36`\n\n**Weights in use:** `400` (x14), `500` (x12), `600` (x78), `700` (x18)\n\n**Line-heights (unitless):** `1`, `1.15`, `1.2`, `1.3`, `1.4`, `1.5`, `1.6`, `1.63`\n\n**Letter-spacing values:** `-.36px`, `-.32px`, `-.16px`, `.48px`, `.5px`, `.6px`\n\n## Spacing\n\nMost-used values (px): `4`, `6`, `8`, `10`, `12`, `16`, `20`, `24`, `32`, `40`, `48`, `64`\n\n10 of 12 values sit on a 4px grid.\n\n## Border radius\n\n| Token | Value | Usage |\n| --- | --- | --- |\n| `radius-sm` | `2px` | 7 |\n| `radius-md` | `4px` | 51 |\n| `radius-lg` | `6px` | 11 |\n| `radius-xl` | `8px` | 15 |\n| `radius-2xl` | `10px` | 35 |\n| `radius-3xl` | `12px` | 16 |\n| `radius-4xl` | `20px` | 4 |\n| `radius-full` | `50%` | 10 |\n\n## Shadows (ordered by blur radius)\n\n- `shadow-sm` — `0 2px 8px #0003` (x2)\n- `shadow-md` — `0 4px 15px #ff6c3773` (x2)\n- `shadow-lg` — `0 4px 16px #ffde8333` (x2)\n- `shadow-xl` — `0 8px 24px #ffde8366,0 4px 12px #ff6c3780` (x2)\n- `shadow-2xl` — `0 0 #f2f2f2` (x1)\n- `shadow-3xl` — `0 2px 8px 4px #cdaff780` (x3)\n\n### Focus rings (spread-only box-shadows, kept out of the elevation scale)\n\n- `0 0 0 1px #ff6c37` (x2)\n\n## Breakpoints\n\n`399px`, `400px`, `410px`, `480px`, `500px`, `565px`, `567px`, `572px`\n\n## Starter recipes\n\nTokens composed into components. The source site's real components were **not** inspected — these are starting points built from the extracted values, with contrast ratios computed rather than assumed.\n\n```css\n.button-primary {\n  background: var(--color-accent); /* #ff6c37 */\n  color: var(--color-ink); /* #000000 — contrast 7.5:1 */\n  border-radius: 9999px; /* pill — mined as 50% */\n  font-weight: 500;\n}\n\n.card {\n  background: var(--color-surface); /* #f2f2f2 */\n  border: 1px solid var(--color-hairline); /* #e6e6e6 */\n  border-radius: 4px; /* most-used finite radius */\n  box-shadow: var(--shadow-sm);\n}\n\n.input {\n  background: var(--color-canvas); /* #ffffff */\n  color: var(--color-ink); /* #000000 — contrast 21.0:1 */\n  border: 1px solid var(--color-hairline); /* #e6e6e6 */\n  border-radius: 2px;\n  /* placeholder color: var(--color-text-muted) #a6a6a6 */\n}\n\n.nav {\n  background: var(--color-canvas); /* #ffffff */\n  border-bottom: 1px solid var(--color-hairline); /* #e6e6e6 */\n  color: var(--color-ink); /* #000000 */\n  /* inactive links: var(--color-text-muted) #a6a6a6 */\n  /* active link: var(--color-accent) #ff6c37 — contrast vs canvas 2.8:1 */\n}\n\n.modal {\n  background: var(--color-surface); /* #f2f2f2 */\n  border-radius: 4px;\n  box-shadow: var(--shadow-3xl); /* largest mined shadow */\n}\n\n.modal-backdrop {\n  background: color-mix(in srgb, var(--color-ink) 55%, transparent); /* scrim from #000000 */\n}\n\n.input-error {\n  border-color: #ff6c37; /* mined token: orange */\n  /* error text: #ff6c37 on canvas — contrast 2.8:1, below AA; darken for message text */\n}\n```\n\n## Observations\n\n- 10 of 22 extracted colors are neutrals.\n- 6 distinct shadows; the softest reaches 4px blur.\n- 8 breakpoints, from 399px to 572px.\n- The site ships a large native token system (120+ custom properties) — prefer those names when extending it.\n\n## Native CSS custom properties\n\nFirst 40 of 120:\n\n```css\n:root {\n  --font-sans: ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace;\n  --color-red-50: #fef2f2;\n  --color-red-300: #ffa3a3;\n  --color-red-500: #fb2c36;\n  --color-red-600: #e40014;\n  --color-red-700: #bf000f;\n  --color-orange-100: #ffedd5;\n  --color-orange-500: #fe6e00;\n  --color-orange-600: #f05100;\n  --color-yellow-300: #ffe02a;\n  --color-yellow-600: #cd8900;\n  --color-yellow-700: #a36100;\n  --color-green-300: #7bf1a8;\n  --color-green-600: #00a544;\n  --color-green-700: #008138;\n  --color-blue-300: #90c5ff;\n  --color-blue-500: #3080ff;\n  --color-blue-600: #155dfc;\n  --color-blue-700: #1447e6;\n  --color-blue-800: #193cb8;\n  --color-blue-900: #1c398e;\n  --color-purple-500: #ac4bff;\n  --color-slate-100: #f1f5f9;\n  --color-gray-50: #f9fafb;\n  --color-gray-100: #f3f4f6;\n  --color-gray-200: #e5e7eb;\n  --color-gray-300: #d1d5dc;\n  --color-gray-400: #99a1af;\n  --color-gray-500: #6a7282;\n  --color-gray-600: #4a5565;\n  --color-gray-700: #364153;\n  --color-gray-800: #1e2939;\n  --color-gray-900: #101828;\n  --color-black: #000;\n  --color-white: #fff;\n  --spacing: .25rem;\n  --container-sm: 24rem;\n  --container-md: 28rem;\n  --container-2xl: 42rem;\n}\n```\n\n## Files\n\n- `tailwind.css` — Tailwind v4 `@theme` block; tokens become utilities (e.g. `bg-neutral-900`, `text-orange`).\n- `variables.css` — framework-agnostic `:root` variables, same values.\n- `tokens.json` — W3C Design Tokens format for Figma plugins, Style Dictionary, etc.\n",
+  "tailwind.css": "@import \"tailwindcss\";\n\n@theme {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-100: #f2f2f2;\n  --color-neutral-200: #e6e6e6;\n  --color-neutral-300: #cfcfcf;\n  --color-neutral-400: #a6a6a6;\n  --color-neutral-500: #969696;\n  --color-neutral-600: #6b6b6b;\n  --color-neutral-800: #3b3b3b;\n  --color-neutral-900: #212121;\n  --color-neutral-950: #000000;\n  --color-orange: #ff6c37;\n  --color-yellow: #ffde83;\n  --color-orange-2: #e0531f;\n  --color-cyan: #0265d2;\n  --color-deep-indigo: #140b1e;\n  --color-indigo: #c0a8e1;\n  --color-pale-indigo: #e4d8f6;\n  --color-pale-orange: #ffd7c7;\n  --color-orange-3: #d23f0e;\n  --color-cyan-2: #3d99ff;\n  --color-yellow-2: #ffb400;\n  --color-indigo-2: #710eed;\n\n  /* inferred semantic roles (each maps to a distinct mined value) */\n  --color-canvas: #ffffff;\n  --color-ink: #000000;\n  --color-text-muted: #a6a6a6;\n  --color-surface: #f2f2f2;\n  --color-hairline: #e6e6e6;\n  --color-accent: #ff6c37;\n  --color-accent-2: #ffde83;\n  --color-accent-3: #e0531f;\n\n  --font-sans: \"inter\", ui-sans-serif, system-ui, sans-serif;\n  --font-mono: \"ibmPlexMono\", ui-monospace, monospace;\n\n  --text-xs: 0.5625rem;\n  --text-sm: 0.625rem;\n  --text-base: 0.6875rem;\n  --text-lg: 0.75rem;\n  --text-xl: 0.8125rem;\n  --text-2xl: 0.875rem;\n  --text-3xl: 0.9375rem;\n  --text-4xl: 1rem;\n  --text-5xl: 1.25rem;\n  --text-6xl: 1.6rem;\n  --text-7xl: 2rem;\n  --text-8xl: 2.25rem;\n\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, sorted tight -> loose */\n  --leading-none: 1;\n  --leading-tight: 1.15;\n  --leading-snug: 1.2;\n  --leading-normal: 1.3;\n  --leading-relaxed: 1.4;\n  --leading-loose: 1.5;\n  --leading-looser: 1.6;\n  --leading-loosest: 1.63;\n\n  /* letter-spacing, sorted tight -> wide */\n  --tracking-tightest: -.36px;\n  --tracking-tighter: -.32px;\n  --tracking-tight: -.16px;\n  --tracking-normal: .48px;\n  --tracking-wide: .5px;\n  --tracking-wider: .6px;\n\n  --radius-sm: 2px;\n  --radius-md: 4px;\n  --radius-lg: 6px;\n  --radius-xl: 8px;\n  --radius-2xl: 10px;\n  --radius-3xl: 12px;\n  --radius-4xl: 20px;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 2px 8px #0003;\n  --shadow-md: 0 4px 15px #ff6c3773;\n  --shadow-lg: 0 4px 16px #ffde8333;\n  --shadow-xl: 0 8px 24px #ffde8366,0 4px 12px #ff6c3780;\n  --shadow-2xl: 0 0 #f2f2f2;\n  --shadow-3xl: 0 2px 8px 4px #cdaff780;\n\n  --breakpoint-sm: 24.9375rem;\n  --breakpoint-md: 25rem;\n  --breakpoint-lg: 25.625rem;\n  --breakpoint-xl: 30rem;\n  --breakpoint-2xl: 31.25rem;\n  --breakpoint-3xl: 35.3125rem;\n  --breakpoint-4xl: 35.4375rem;\n  --breakpoint-5xl: 35.75rem;\n\n  /* most-used spacing values on the source site (px): 4, 6, 8, 10, 12, 16, 20, 24, 32, 40, 48, 64 */\n}\n",
+  "variables.css": ":root {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-100: #f2f2f2;\n  --color-neutral-200: #e6e6e6;\n  --color-neutral-300: #cfcfcf;\n  --color-neutral-400: #a6a6a6;\n  --color-neutral-500: #969696;\n  --color-neutral-600: #6b6b6b;\n  --color-neutral-800: #3b3b3b;\n  --color-neutral-900: #212121;\n  --color-neutral-950: #000000;\n  --color-orange: #ff6c37;\n  --color-yellow: #ffde83;\n  --color-orange-2: #e0531f;\n  --color-cyan: #0265d2;\n  --color-deep-indigo: #140b1e;\n  --color-indigo: #c0a8e1;\n  --color-pale-indigo: #e4d8f6;\n  --color-pale-orange: #ffd7c7;\n  --color-orange-3: #d23f0e;\n  --color-cyan-2: #3d99ff;\n  --color-yellow-2: #ffb400;\n  --color-indigo-2: #710eed;\n\n  /* inferred semantic roles */\n  --color-canvas: #ffffff;\n  --color-ink: #000000;\n  --color-text-muted: #a6a6a6;\n  --color-surface: #f2f2f2;\n  --color-hairline: #e6e6e6;\n  --color-accent: #ff6c37;\n  --color-accent-2: #ffde83;\n  --color-accent-3: #e0531f;\n\n  /* typography */\n  --font-inter: \"inter\";\n  --font-degular: \"degular\";\n  --font-notosansjp: \"notoSansJp\";\n  --font-ibmplexmono: \"ibmPlexMono\";\n  --font-inter-fallback: \"inter Fallback\";\n  --font-degular-fallback: \"degular Fallback\";\n  --font-ibmplexmono-fallback: \"ibmPlexMono Fallback\";\n  --font-notosansjp-fallback: \"notoSansJp Fallback\";\n\n  /* type scale, ascending */\n  --text-1: 0.5625rem;\n  --text-2: 0.625rem;\n  --text-3: 0.6875rem;\n  --text-4: 0.75rem;\n  --text-5: 0.8125rem;\n  --text-6: 0.875rem;\n  --text-7: 0.9375rem;\n  --text-8: 1rem;\n  --text-9: 1.25rem;\n  --text-10: 1.6rem;\n  --text-11: 2rem;\n  --text-12: 2.25rem;\n\n  /* font weights in use */\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, tight -> loose */\n  --leading-1: 1;\n  --leading-2: 1.15;\n  --leading-3: 1.2;\n  --leading-4: 1.3;\n  --leading-5: 1.4;\n  --leading-6: 1.5;\n  --leading-7: 1.6;\n  --leading-8: 1.63;\n\n  /* letter-spacing, tight -> wide */\n  --tracking-1: -.36px;\n  --tracking-2: -.32px;\n  --tracking-3: -.16px;\n  --tracking-4: .48px;\n  --tracking-5: .5px;\n  --tracking-6: .6px;\n\n  /* spacing, ascending */\n  --space-1: 4px;\n  --space-2: 6px;\n  --space-3: 8px;\n  --space-4: 10px;\n  --space-5: 12px;\n  --space-6: 16px;\n  --space-7: 20px;\n  --space-8: 24px;\n  --space-9: 32px;\n  --space-10: 40px;\n  --space-11: 48px;\n  --space-12: 64px;\n\n  /* radius, ascending */\n  --radius-sm: 2px;\n  --radius-md: 4px;\n  --radius-lg: 6px;\n  --radius-xl: 8px;\n  --radius-2xl: 10px;\n  --radius-3xl: 12px;\n  --radius-4xl: 20px;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 2px 8px #0003;\n  --shadow-md: 0 4px 15px #ff6c3773;\n  --shadow-lg: 0 4px 16px #ffde8333;\n  --shadow-xl: 0 8px 24px #ffde8366,0 4px 12px #ff6c3780;\n  --shadow-2xl: 0 0 #f2f2f2;\n  --shadow-3xl: 0 2px 8px 4px #cdaff780;\n}\n",
+  "tokens.json": "{\n  \"$description\": \"Design tokens extracted from https://www.postman.com/. Semantic entries are inferred from usage + luminance; all values are mined from live CSS.\",\n  \"color\": {\n    \"neutral-50\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\"\n    },\n    \"neutral-100\": {\n      \"$value\": \"#f2f2f2\",\n      \"$type\": \"color\"\n    },\n    \"neutral-200\": {\n      \"$value\": \"#e6e6e6\",\n      \"$type\": \"color\"\n    },\n    \"neutral-300\": {\n      \"$value\": \"#cfcfcf\",\n      \"$type\": \"color\"\n    },\n    \"neutral-400\": {\n      \"$value\": \"#a6a6a6\",\n      \"$type\": \"color\"\n    },\n    \"neutral-500\": {\n      \"$value\": \"#969696\",\n      \"$type\": \"color\"\n    },\n    \"neutral-600\": {\n      \"$value\": \"#6b6b6b\",\n      \"$type\": \"color\"\n    },\n    \"neutral-800\": {\n      \"$value\": \"#3b3b3b\",\n      \"$type\": \"color\"\n    },\n    \"neutral-900\": {\n      \"$value\": \"#212121\",\n      \"$type\": \"color\"\n    },\n    \"neutral-950\": {\n      \"$value\": \"#000000\",\n      \"$type\": \"color\"\n    },\n    \"orange\": {\n      \"$value\": \"#ff6c37\",\n      \"$type\": \"color\"\n    },\n    \"yellow\": {\n      \"$value\": \"#ffde83\",\n      \"$type\": \"color\"\n    },\n    \"orange-2\": {\n      \"$value\": \"#e0531f\",\n      \"$type\": \"color\"\n    },\n    \"cyan\": {\n      \"$value\": \"#0265d2\",\n      \"$type\": \"color\"\n    },\n    \"deep-indigo\": {\n      \"$value\": \"#140b1e\",\n      \"$type\": \"color\"\n    },\n    \"indigo\": {\n      \"$value\": \"#c0a8e1\",\n      \"$type\": \"color\"\n    },\n    \"pale-indigo\": {\n      \"$value\": \"#e4d8f6\",\n      \"$type\": \"color\"\n    },\n    \"pale-orange\": {\n      \"$value\": \"#ffd7c7\",\n      \"$type\": \"color\"\n    },\n    \"orange-3\": {\n      \"$value\": \"#d23f0e\",\n      \"$type\": \"color\"\n    },\n    \"cyan-2\": {\n      \"$value\": \"#3d99ff\",\n      \"$type\": \"color\"\n    },\n    \"yellow-2\": {\n      \"$value\": \"#ffb400\",\n      \"$type\": \"color\"\n    },\n    \"indigo-2\": {\n      \"$value\": \"#710eed\",\n      \"$type\": \"color\"\n    }\n  },\n  \"semantic\": {\n    \"canvas\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: lightest neutral, matches the measured light-leaning theme\"\n    },\n    \"ink\": {\n      \"$value\": \"#000000\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: darkest neutral, highest contrast against canvas\"\n    },\n    \"text-muted\": {\n      \"$value\": \"#a6a6a6\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used mid-luminance neutral\"\n    },\n    \"surface\": {\n      \"$value\": \"#f2f2f2\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: neutral closest to canvas luminance\"\n    },\n    \"hairline\": {\n      \"$value\": \"#e6e6e6\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: next neutral near canvas, hairline-border weight\"\n    },\n    \"accent\": {\n      \"$value\": \"#ff6c37\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used chromatic color\"\n    },\n    \"accent-2\": {\n      \"$value\": \"#ffde83\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    },\n    \"accent-3\": {\n      \"$value\": \"#e0531f\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    }\n  },\n  \"fontFamily\": {\n    \"inter\": {\n      \"$value\": \"inter\",\n      \"$type\": \"fontFamily\"\n    },\n    \"degular\": {\n      \"$value\": \"degular\",\n      \"$type\": \"fontFamily\"\n    },\n    \"notosansjp\": {\n      \"$value\": \"notoSansJp\",\n      \"$type\": \"fontFamily\"\n    },\n    \"ibmplexmono\": {\n      \"$value\": \"ibmPlexMono\",\n      \"$type\": \"fontFamily\"\n    },\n    \"inter-fallback\": {\n      \"$value\": \"inter Fallback\",\n      \"$type\": \"fontFamily\"\n    },\n    \"degular-fallback\": {\n      \"$value\": \"degular Fallback\",\n      \"$type\": \"fontFamily\"\n    },\n    \"ibmplexmono-fallback\": {\n      \"$value\": \"ibmPlexMono Fallback\",\n      \"$type\": \"fontFamily\"\n    },\n    \"notosansjp-fallback\": {\n      \"$value\": \"notoSansJp Fallback\",\n      \"$type\": \"fontFamily\"\n    }\n  },\n  \"fontSize\": {\n    \"size-1\": {\n      \"$value\": \"0.5625rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-2\": {\n      \"$value\": \"0.625rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-3\": {\n      \"$value\": \"0.6875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-4\": {\n      \"$value\": \"0.75rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-5\": {\n      \"$value\": \"0.8125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-6\": {\n      \"$value\": \"0.875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-7\": {\n      \"$value\": \"0.9375rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-8\": {\n      \"$value\": \"1rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-9\": {\n      \"$value\": \"1.25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-10\": {\n      \"$value\": \"1.6rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-11\": {\n      \"$value\": \"2rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-12\": {\n      \"$value\": \"2.25rem\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"fontWeight\": {\n    \"normal\": {\n      \"$value\": 400,\n      \"$type\": \"fontWeight\"\n    },\n    \"medium\": {\n      \"$value\": 500,\n      \"$type\": \"fontWeight\"\n    },\n    \"semibold\": {\n      \"$value\": 600,\n      \"$type\": \"fontWeight\"\n    },\n    \"bold\": {\n      \"$value\": 700,\n      \"$type\": \"fontWeight\"\n    }\n  },\n  \"lineHeight\": {\n    \"leading-1\": {\n      \"$value\": 1,\n      \"$type\": \"number\"\n    },\n    \"leading-2\": {\n      \"$value\": 1.15,\n      \"$type\": \"number\"\n    },\n    \"leading-3\": {\n      \"$value\": 1.2,\n      \"$type\": \"number\"\n    },\n    \"leading-4\": {\n      \"$value\": 1.3,\n      \"$type\": \"number\"\n    },\n    \"leading-5\": {\n      \"$value\": 1.4,\n      \"$type\": \"number\"\n    },\n    \"leading-6\": {\n      \"$value\": 1.5,\n      \"$type\": \"number\"\n    },\n    \"leading-7\": {\n      \"$value\": 1.6,\n      \"$type\": \"number\"\n    },\n    \"leading-8\": {\n      \"$value\": 1.63,\n      \"$type\": \"number\"\n    }\n  },\n  \"letterSpacing\": {\n    \"tracking-1\": {\n      \"$value\": \"-.36px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-2\": {\n      \"$value\": \"-.32px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-3\": {\n      \"$value\": \"-.16px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-4\": {\n      \"$value\": \".48px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-5\": {\n      \"$value\": \".5px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-6\": {\n      \"$value\": \".6px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"dimension\": {\n    \"space-1\": {\n      \"$value\": \"4px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-2\": {\n      \"$value\": \"6px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-3\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-4\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-5\": {\n      \"$value\": \"12px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-6\": {\n      \"$value\": \"16px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-7\": {\n      \"$value\": \"20px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-8\": {\n      \"$value\": \"24px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-9\": {\n      \"$value\": \"32px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-10\": {\n      \"$value\": \"40px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-11\": {\n      \"$value\": \"48px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-12\": {\n      \"$value\": \"64px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"borderRadius\": {\n    \"sm\": {\n      \"$value\": \"2px\",\n      \"$type\": \"dimension\"\n    },\n    \"md\": {\n      \"$value\": \"4px\",\n      \"$type\": \"dimension\"\n    },\n    \"lg\": {\n      \"$value\": \"6px\",\n      \"$type\": \"dimension\"\n    },\n    \"xl\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"2xl\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"3xl\": {\n      \"$value\": \"12px\",\n      \"$type\": \"dimension\"\n    },\n    \"4xl\": {\n      \"$value\": \"20px\",\n      \"$type\": \"dimension\"\n    },\n    \"full\": {\n      \"$value\": \"50%\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"shadow\": {\n    \"sm\": {\n      \"$value\": \"0 2px 8px #0003\",\n      \"$type\": \"shadow\"\n    },\n    \"md\": {\n      \"$value\": \"0 4px 15px #ff6c3773\",\n      \"$type\": \"shadow\"\n    },\n    \"lg\": {\n      \"$value\": \"0 4px 16px #ffde8333\",\n      \"$type\": \"shadow\"\n    },\n    \"xl\": {\n      \"$value\": \"0 8px 24px #ffde8366,0 4px 12px #ff6c3780\",\n      \"$type\": \"shadow\"\n    },\n    \"2xl\": {\n      \"$value\": \"0 0 #f2f2f2\",\n      \"$type\": \"shadow\"\n    },\n    \"3xl\": {\n      \"$value\": \"0 2px 8px 4px #cdaff780\",\n      \"$type\": \"shadow\"\n    }\n  }\n}"
+ },
+ "raw": {
+  "tokens": {
+   "title": "Postman: The World&#x27;s Leading API Platform | Sign Up for Free",
+   "description": "Accelerate API development with Postman&#x27;s all-in-one platform. Streamline collaboration and simplify the API lifecycle for faster, better results. Learn more.",
+   "themeGuess": "light-leaning",
+   "darkWeight": 321,
+   "lightWeight": 423,
+   "neutrals": [
+    {
+     "hex": "#ffffff",
+     "count": 216
+    },
+    {
+     "hex": "#f2f2f2",
+     "count": 79
+    },
+    {
+     "hex": "#e6e6e6",
+     "count": 109
+    },
+    {
+     "hex": "#cfcfcf",
+     "count": 19
+    },
+    {
+     "hex": "#a6a6a6",
+     "count": 36
+    },
+    {
+     "hex": "#969696",
+     "count": 8
+    },
+    {
+     "hex": "#6b6b6b",
+     "count": 68
+    },
+    {
+     "hex": "#3b3b3b",
+     "count": 37
+    },
+    {
+     "hex": "#212121",
+     "count": 122
+    },
+    {
+     "hex": "#000000",
+     "count": 94
+    }
+   ],
+   "accents": [
+    {
+     "hex": "#ff6c37",
+     "count": 205
+    },
+    {
+     "hex": "#ffde83",
+     "count": 41
+    },
+    {
+     "hex": "#e0531f",
+     "count": 40
+    },
+    {
+     "hex": "#0265d2",
+     "count": 36
+    },
+    {
+     "hex": "#140b1e",
+     "count": 28
+    },
+    {
+     "hex": "#c0a8e1",
+     "count": 24
+    },
+    {
+     "hex": "#e4d8f6",
+     "count": 22
+    },
+    {
+     "hex": "#ffd7c7",
+     "count": 18
+    },
+    {
+     "hex": "#d23f0e",
+     "count": 13
+    },
+    {
+     "hex": "#3d99ff",
+     "count": 11
+    },
+    {
+     "hex": "#ffb400",
+     "count": 11
+    },
+    {
+     "hex": "#710eed",
+     "count": 11
+    }
+   ],
+   "modern": [
+    "lab(0% 0 0)",
+    "lab(96.5005% 4.18508 1.52328)",
+    "lab(76.5514% 36.422 15.5335)",
+    "lab(55.4814% 75.0732 48.8528)",
+    "lab(48.4493% 77.4328 61.5452)",
+    "lab(40.4273% 67.2623 53.7441)",
+    "lab(94.7127% 3.58394 14.3151)",
+    "lab(64.272% 57.1788 90.3583)",
+    "lab(57.1026% 64.2584 89.8886)",
+    "lab(89.7033% -.480294 84.4917)",
+    "lab(62.7799% 22.4197 86.1544)",
+    "lab(47.8202% 25.2426 66.5015)",
+    "lab(86.9953% -47.2691 25.0054)",
+    "lab(59.0978% -58.6621 41.2579)",
+    "lab(47.0329% -47.0239 31.4788)",
+    "lab(77.5052% -6.4629 -36.42)",
+    "lab(54.1736% 13.3369 -74.6839)",
+    "lab(44.0605% 29.0279 -86.0352)",
+    "lab(36.9089% 35.0961 -85.6872)",
+    "lab(30.2514% 27.7853 -70.2699)"
+   ],
+   "fonts": [
+    {
+     "name": "inter",
+     "count": 3
+    },
+    {
+     "name": "degular",
+     "count": 3
+    },
+    {
+     "name": "notoSansJp",
+     "count": 3
+    },
+    {
+     "name": "ibmPlexMono",
+     "count": 2
+    },
+    {
+     "name": "inter Fallback",
+     "count": 1
+    },
+    {
+     "name": "degular Fallback",
+     "count": 1
+    },
+    {
+     "name": "ibmPlexMono Fallback",
+     "count": 1
+    },
+    {
+     "name": "notoSansJp Fallback",
+     "count": 1
+    }
+   ],
+   "fontSizes": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    20,
+    25.6,
+    32,
+    36
+   ],
+   "fontWeights": [
+    {
+     "value": 400,
+     "count": 14
+    },
+    {
+     "value": 500,
+     "count": 12
+    },
+    {
+     "value": 600,
+     "count": 78
+    },
+    {
+     "value": 700,
+     "count": 18
+    }
+   ],
+   "lineHeights": [
+    1,
+    1.15,
+    1.2,
+    1.3,
+    1.4,
+    1.5,
+    1.6,
+    1.63
+   ],
+   "letterSpacings": [
+    "-.36px",
+    "-.32px",
+    "-.16px",
+    ".48px",
+    ".5px",
+    ".6px"
+   ],
+   "spacing": [
+    4,
+    6,
+    8,
+    10,
+    12,
+    16,
+    20,
+    24,
+    32,
+    40,
+    48,
+    64
+   ],
+   "radii": [
+    {
+     "value": "4px",
+     "count": 51
+    },
+    {
+     "value": "10px",
+     "count": 35
+    },
+    {
+     "value": "12px",
+     "count": 16
+    },
+    {
+     "value": "8px",
+     "count": 15
+    },
+    {
+     "value": "6px",
+     "count": 11
+    },
+    {
+     "value": "2px",
+     "count": 7
+    },
+    {
+     "value": "20px",
+     "count": 4
+    },
+    {
+     "value": "50%",
+     "count": 10
+    }
+   ],
+   "shadows": [
+    {
+     "value": "0 2px 8px 4px #cdaff780",
+     "count": 3,
+     "blur": 4
+    },
+    {
+     "value": "0 2px 8px #0003",
+     "count": 2,
+     "blur": 0
+    },
+    {
+     "value": "0 4px 15px #ff6c3773",
+     "count": 2,
+     "blur": 0
+    },
+    {
+     "value": "0 4px 16px #ffde8333",
+     "count": 2,
+     "blur": 0
+    },
+    {
+     "value": "0 8px 24px #ffde8366,0 4px 12px #ff6c3780",
+     "count": 2,
+     "blur": 0
+    },
+    {
+     "value": "0 0 #f2f2f2",
+     "count": 1,
+     "blur": 0
+    }
+   ],
+   "breakpoints": [
+    399,
+    400,
+    410,
+    480,
+    500,
+    565,
+    567,
+    572
+   ],
+   "nativeVars": [
+    {
+     "name": "font-sans",
+     "value": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+    },
+    {
+     "name": "font-mono",
+     "value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace"
+    },
+    {
+     "name": "color-red-50",
+     "value": "#fef2f2"
+    },
+    {
+     "name": "color-red-300",
+     "value": "#ffa3a3"
+    },
+    {
+     "name": "color-red-500",
+     "value": "#fb2c36"
+    },
+    {
+     "name": "color-red-600",
+     "value": "#e40014"
+    },
+    {
+     "name": "color-red-700",
+     "value": "#bf000f"
+    },
+    {
+     "name": "color-orange-100",
+     "value": "#ffedd5"
+    },
+    {
+     "name": "color-orange-500",
+     "value": "#fe6e00"
+    },
+    {
+     "name": "color-orange-600",
+     "value": "#f05100"
+    },
+    {
+     "name": "color-yellow-300",
+     "value": "#ffe02a"
+    },
+    {
+     "name": "color-yellow-600",
+     "value": "#cd8900"
+    },
+    {
+     "name": "color-yellow-700",
+     "value": "#a36100"
+    },
+    {
+     "name": "color-green-300",
+     "value": "#7bf1a8"
+    },
+    {
+     "name": "color-green-600",
+     "value": "#00a544"
+    },
+    {
+     "name": "color-green-700",
+     "value": "#008138"
+    },
+    {
+     "name": "color-blue-300",
+     "value": "#90c5ff"
+    },
+    {
+     "name": "color-blue-500",
+     "value": "#3080ff"
+    },
+    {
+     "name": "color-blue-600",
+     "value": "#155dfc"
+    },
+    {
+     "name": "color-blue-700",
+     "value": "#1447e6"
+    },
+    {
+     "name": "color-blue-800",
+     "value": "#193cb8"
+    },
+    {
+     "name": "color-blue-900",
+     "value": "#1c398e"
+    },
+    {
+     "name": "color-purple-500",
+     "value": "#ac4bff"
+    },
+    {
+     "name": "color-slate-100",
+     "value": "#f1f5f9"
+    },
+    {
+     "name": "color-gray-50",
+     "value": "#f9fafb"
+    },
+    {
+     "name": "color-gray-100",
+     "value": "#f3f4f6"
+    },
+    {
+     "name": "color-gray-200",
+     "value": "#e5e7eb"
+    },
+    {
+     "name": "color-gray-300",
+     "value": "#d1d5dc"
+    },
+    {
+     "name": "color-gray-400",
+     "value": "#99a1af"
+    },
+    {
+     "name": "color-gray-500",
+     "value": "#6a7282"
+    },
+    {
+     "name": "color-gray-600",
+     "value": "#4a5565"
+    },
+    {
+     "name": "color-gray-700",
+     "value": "#364153"
+    },
+    {
+     "name": "color-gray-800",
+     "value": "#1e2939"
+    },
+    {
+     "name": "color-gray-900",
+     "value": "#101828"
+    },
+    {
+     "name": "color-black",
+     "value": "#000"
+    },
+    {
+     "name": "color-white",
+     "value": "#fff"
+    },
+    {
+     "name": "spacing",
+     "value": ".25rem"
+    },
+    {
+     "name": "container-sm",
+     "value": "24rem"
+    },
+    {
+     "name": "container-md",
+     "value": "28rem"
+    },
+    {
+     "name": "container-2xl",
+     "value": "42rem"
+    },
+    {
+     "name": "container-4xl",
+     "value": "56rem"
+    },
+    {
+     "name": "container-7xl",
+     "value": "80rem"
+    },
+    {
+     "name": "text-xs",
+     "value": ".75rem"
+    },
+    {
+     "name": "text-xs--line-height",
+     "value": "calc(1 / .75)"
+    },
+    {
+     "name": "text-sm",
+     "value": ".875rem"
+    },
+    {
+     "name": "text-sm--line-height",
+     "value": "calc(1.25 / .875)"
+    },
+    {
+     "name": "text-base",
+     "value": "1rem"
+    },
+    {
+     "name": "text-base--line-height",
+     "value": "calc(1.5 / 1)"
+    },
+    {
+     "name": "text-lg",
+     "value": "1.125rem"
+    },
+    {
+     "name": "text-lg--line-height",
+     "value": "calc(1.75 / 1.125)"
+    },
+    {
+     "name": "text-xl",
+     "value": "1.25rem"
+    },
+    {
+     "name": "text-xl--line-height",
+     "value": "calc(1.75 / 1.25)"
+    },
+    {
+     "name": "text-2xl",
+     "value": "1.5rem"
+    },
+    {
+     "name": "text-2xl--line-height",
+     "value": "calc(2 / 1.5)"
+    },
+    {
+     "name": "text-3xl",
+     "value": "1.875rem"
+    },
+    {
+     "name": "text-3xl--line-height",
+     "value": "calc(2.25 / 1.875)"
+    },
+    {
+     "name": "text-5xl",
+     "value": "3rem"
+    },
+    {
+     "name": "text-5xl--line-height",
+     "value": "1"
+    },
+    {
+     "name": "text-7xl",
+     "value": "4.5rem"
+    },
+    {
+     "name": "text-7xl--line-height",
+     "value": "1"
+    },
+    {
+     "name": "font-weight-normal",
+     "value": "400"
+    },
+    {
+     "name": "font-weight-medium",
+     "value": "500"
+    },
+    {
+     "name": "font-weight-semibold",
+     "value": "600"
+    },
+    {
+     "name": "font-weight-bold",
+     "value": "700"
+    },
+    {
+     "name": "leading-tight",
+     "value": "1.25"
+    },
+    {
+     "name": "leading-normal",
+     "value": "1.5"
+    },
+    {
+     "name": "leading-relaxed",
+     "value": "1.625"
+    },
+    {
+     "name": "radius-2xl",
+     "value": "1rem"
+    },
+    {
+     "name": "ease-in",
+     "value": "cubic-bezier(.4, 0, 1, 1)"
+    },
+    {
+     "name": "ease-out",
+     "value": "cubic-bezier(0, 0, .2, 1)"
+    },
+    {
+     "name": "ease-in-out",
+     "value": "cubic-bezier(.4, 0, .2, 1)"
+    },
+    {
+     "name": "animate-spin",
+     "value": "spin 1s linear infinite"
+    },
+    {
+     "name": "animate-pulse",
+     "value": "pulse 2s cubic-bezier(.4, 0, .6, 1) infinite"
+    },
+    {
+     "name": "blur-sm",
+     "value": "8px"
+    },
+    {
+     "name": "blur-3xl",
+     "value": "64px"
+    },
+    {
+     "name": "aspect-video",
+     "value": "16 / 9"
+    },
+    {
+     "name": "default-transition-duration",
+     "value": ".15s"
+    },
+    {
+     "name": "default-transition-timing-function",
+     "value": "cubic-bezier(.4, 0, .2, 1)"
+    },
+    {
+     "name": "default-font-family",
+     "value": "var(--font-sans)"
+    },
+    {
+     "name": "default-mono-font-family",
+     "value": "var(--font-mono)"
+    },
+    {
+     "name": "font-inter-semibold",
+     "value": "var(--font-inter)"
+    },
+    {
+     "name": "font-degular-display-semibold",
+     "value": "var(--font-degular)"
+    },
+    {
+     "name": "font-degular-display-bold",
+     "value": "var(--font-degular)"
+    },
+    {
+     "name": "border-radius-small",
+     "value": "5px"
+    },
+    {
+     "name": "border-radius-medium",
+     "value": "10px"
+    },
+    {
+     "name": "border-radius-large",
+     "value": "20px"
+    },
+    {
+     "name": "link-hover",
+     "value": "#0056b3"
+    },
+    {
+     "name": "bs-nav-link-color",
+     "value": "#0056b3"
+    },
+    {
+     "name": "blue-enterprise",
+     "value": "#0b162a"
+    },
+    {
+     "name": "blue-100",
+     "value": "#0d1629"
+    },
+    {
+     "name": "blue-95",
+     "value": "#01213c"
+    },
+    {
+     "name": "blue-92",
+     "value": "#012a7a"
+    },
+    {
+     "name": "blue-90",
+     "value": "#002d70"
+    },
+    {
+     "name": "blue-80",
+     "value": "#00439d"
+    },
+    {
+     "name": "blue-70",
+     "value": "#0053b8"
+    },
+    {
+     "name": "blue-60",
+     "value": "#0265d2"
+    },
+    {
+     "name": "blue-55",
+     "value": "#556cf2"
+    },
+    {
+     "name": "blue-50",
+     "value": "#097bed"
+    },
+    {
+     "name": "blue-40",
+     "value": "#3e92f2"
+    },
+    {
+     "name": "blue-30",
+     "value": "#74aef6"
+    },
+    {
+     "name": "blue-20",
+     "value": "#adcdfb"
+    },
+    {
+     "name": "blue-15",
+     "value": "#d1daff"
+    },
+    {
+     "name": "blue-12",
+     "value": "#d5e4ff"
+    },
+    {
+     "name": "blue-10",
+     "value": "#e7f0ff"
+    },
+    {
+     "name": "blue-8",
+     "value": "#e6eafd"
+    },
+    {
+     "name": "blue-05",
+     "value": "#f5f8fb"
+    },
+    {
+     "name": "blue-5",
+     "value": "#f5f8fb"
+    },
+    {
+     "name": "blue-4",
+     "value": "#f5f8fb"
+    },
+    {
+     "name": "grey-100",
+     "value": "#000"
+    },
+    {
+     "name": "grey-95",
+     "value": "#11061f"
+    },
+    {
+     "name": "grey-90",
+     "value": "#212121"
+    },
+    {
+     "name": "grey-85",
+     "value": "#262626"
+    },
+    {
+     "name": "grey-80",
+     "value": "#2b2b2b"
+    },
+    {
+     "name": "grey-70",
+     "value": "#303030"
+    },
+    {
+     "name": "grey-60",
+     "value": "#3b3b3b"
+    },
+    {
+     "name": "grey-55",
+     "value": "#6b6b6b"
+    },
+    {
+     "name": "grey-50",
+     "value": "#707070"
+    },
+    {
+     "name": "grey-40",
+     "value": "#a6a6a6"
+    },
+    {
+     "name": "grey-30",
+     "value": "#e6e6e6"
+    },
+    {
+     "name": "grey-25",
+     "value": "#dadada"
+    }
+   ],
+   "darkVars": [],
+   "rings": [
+    {
+     "value": "0 0 0 1px #ff6c37",
+     "count": 2,
+     "blur": 0
+    }
+   ]
+  },
+  "stylesheets": 8
+ }
+}

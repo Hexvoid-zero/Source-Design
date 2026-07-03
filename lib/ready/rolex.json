@@ -1,0 +1,520 @@
+{
+ "slug": "rolex",
+ "name": "Rolex",
+ "blurb": "Watchmaking. Deep green heritage, gold restraint, serif authority, slow pacing.",
+ "url": "https://www.rolex.com/",
+ "title": "Official Rolex Website - Swiss Luxury Watches",
+ "extractedAt": "2026-07-03",
+ "summary": {
+  "colors": [
+   {
+    "name": "neutral-50",
+    "hex": "#ffffff",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-100",
+    "hex": "#f3f3f3",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-200",
+    "hex": "#d4d4d4",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-400",
+    "hex": "#979797",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-700",
+    "hex": "#545454",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-950",
+    "hex": "#000000",
+    "group": "neutral"
+   },
+   {
+    "name": "green",
+    "hex": "#127749",
+    "group": "accent"
+   },
+   {
+    "name": "green-2",
+    "hex": "#329066",
+    "group": "accent"
+   },
+   {
+    "name": "deep-green",
+    "hex": "#006139",
+    "group": "accent"
+   }
+  ],
+  "fonts": [
+   "RolexFont-XL",
+   "Helvetica Now Text",
+   "RolexFont-S",
+   "Helvetica Thai",
+   "Arial",
+   "Helvetica Neue",
+   "Microsoft YaHei",
+   "SangBleuKingdom"
+  ],
+  "themeGuess": "light-leaning",
+  "stylesheets": 1,
+  "nativeVarCount": 63
+ },
+ "files": {
+  "DESIGN.md": "---\nname: rolex-com-design-system\nsource: https://www.rolex.com/\nextracted: 2026-07-03\ntheme: light  # measured from neutral usage weight\ncolors:  # roles inferred from usage frequency + luminance; names verified against values\n  canvas: \"#ffffff\"\n  ink: \"#000000\"\n  text-muted: \"#979797\"\n  surface: \"#f3f3f3\"\n  hairline: \"#d4d4d4\"\n  accent: \"#127749\"  # green\n  accent-2: \"#329066\"  # green\n  accent-3: \"#006139\"  # deep-green\nfonts:\n  primary: \"RolexFont-XL\"  # medium-confidence: usage counts are close\n---\n\n# Official Rolex Website - Swiss Luxury Watches — Design System\n\nExtracted from **https://www.rolex.com/** on 2026-07-03.\n\n> Rolex watches are crafted from the finest raw materials and assembled with scrupulous attention to detail. Discover the Rolex collection on rolex.com.\n\nEvery value below is mined from the site's live CSS (63 native custom properties, ranked usage counts). Role assignments are inferred from usage and luminance and marked as such — treat them as a strong starting point, not gospel.\n\n## Overview\n\nThe system reads as light: measured neutral usage weighs 9 light against 7 dark. The palette leans monochrome: 6 neutrals carry the structure while 3 chromatic values (led by green, `#127749`) supply accent. **RolexFont-XL** leads the font stack, though usage counts are close — verify against rendered pages before committing. Rounded geometry throughout, up to full pills.\n\n## Usage rules\n\nDerived from the measured usage below — each rule cites its evidence.\n\n- Chromatic color carries 29% of measured usage — this palette uses color structurally. Saturated values can hold large surfaces here; timidity would misrepresent the source.\n- The theme is light (measured neutral weight 9:7). Don't flip individual sections to the opposite mode.\n- The most-used radius is the full pill (x14); mid-size radii are the exception in this system.\n- The only shadows are blur-less hairline offsets — this system barely uses elevation; don't add soft drop shadows.\n\n## Colors\n\n### Neutrals (light → dark)\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `neutral-50` | `#ffffff` | 1 | **canvas** — lightest neutral, matches the measured light-leaning theme |\n| `neutral-100` | `#f3f3f3` | 7 | **surface** — neutral closest to canvas luminance |\n| `neutral-200` | `#d4d4d4` | 1 | **hairline** — next neutral near canvas, hairline-border weight |\n| `neutral-400` | `#979797` | 1 | **text-muted** — most-used mid-luminance neutral |\n| `neutral-700` | `#545454` | 6 | — |\n| `neutral-950` | `#000000` | 1 | **ink** — darkest neutral, highest contrast against canvas |\n\n### Accents\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `green` | `#127749` | 5 | **accent** — most-used chromatic color |\n| `green-2` | `#329066` | 1 | **accent-2** — supporting chromatic color |\n| `deep-green` | `#006139` | 1 | **accent-3** — supporting chromatic color |\n\n### Dark mode\n\nThe source defines 2 dark-mode variants (via dark selector). Both halves of the system, first 2:\n\n| Token | Light | Dark |\n| --- | --- | --- |\n| `--text` | — | `inherit` |\n| `--container` | — | `rgb(var(--dark-grey) / 0.3)` |\n\n`variables.css` ships these as a `prefers-color-scheme: dark` override block.\n\n## Typography\n\n**RolexFont-XL** has the most `font-family` declarations, but the margin over the rest is thin — treat the primary-face call as provisional and verify on rendered pages. Full list by usage:\n\n| Family | Usage |\n| --- | --- |\n| RolexFont-XL | 10 |\n| Helvetica Now Text | 7 |\n| RolexFont-S | 7 |\n| Helvetica Thai | 4 |\n| Arial | 4 |\n| Helvetica Neue | 4 |\n| Microsoft YaHei | 4 |\n| SangBleuKingdom | 3 |\n\n**Size scale (px):** `10`, `12`, `14`, `14.88`, `16`, `18`, `18.88`, `32`\n\n**Weights in use:** `300` (x12), `400` (x47), `700` (x56), `750` (x2)\n\n**Line-heights (unitless):** `1`, `1.14`, `1.15`, `1.25`, `1.38`, `1.43`, `1.5`, `2.5`\n\n**Letter-spacing values:** `0.125em`\n\n## Spacing\n\nMost-used values (px): `8`, `10`, `11`, `13`, `14`, `16`, `20`, `24`, `30`, `35`, `40`, `60`\n\n## Border radius\n\n| Token | Value | Usage |\n| --- | --- | --- |\n| `radius-sm` | `0.38rem` | 3 |\n| `radius-md` | `0.625rem` | 1 |\n| `radius-lg` | `50px` | 3 |\n| `radius-full` | `9999px` | 14 |\n\n## Shadows (ordered by blur radius)\n\n- `shadow-sm` — `0 4px 28px 0 rgba(0, 0, 0, 0.1)` (x1)\n\n## Breakpoints\n\n`480px`, `767px`, `768px`, `896px`, `1025px`, `1280px`, `1440px`, `1600px`\n\n## Starter recipes\n\nTokens composed into components. The source site's real components were **not** inspected — these are starting points built from the extracted values, with contrast ratios computed rather than assumed.\n\n```css\n.button-primary {\n  background: var(--color-accent); /* #127749 */\n  color: var(--color-canvas); /* #ffffff — contrast 5.6:1 */\n  border-radius: 9999px; /* pill — mined as 9999px */\n  font-weight: 750;\n}\n\n.card {\n  background: var(--color-surface); /* #f3f3f3 */\n  border: 1px solid var(--color-hairline); /* #d4d4d4 */\n  border-radius: 0.38rem; /* most-used finite radius */\n  box-shadow: var(--shadow-sm);\n}\n\n.input {\n  background: var(--color-canvas); /* #ffffff */\n  color: var(--color-ink); /* #000000 — contrast 21.0:1 */\n  border: 1px solid var(--color-hairline); /* #d4d4d4 */\n  border-radius: 0.38rem;\n  /* placeholder color: var(--color-text-muted) #979797 */\n}\n\n.nav {\n  background: var(--color-canvas); /* #ffffff */\n  border-bottom: 1px solid var(--color-hairline); /* #d4d4d4 */\n  color: var(--color-ink); /* #000000 */\n  /* inactive links: var(--color-text-muted) #979797 */\n  /* active link: var(--color-accent) #127749 — contrast vs canvas 5.6:1 */\n}\n\n.modal {\n  background: var(--color-surface); /* #f3f3f3 */\n  border-radius: 0.38rem;\n  box-shadow: var(--shadow-sm); /* largest mined shadow */\n}\n\n.modal-backdrop {\n  background: color-mix(in srgb, var(--color-ink) 55%, transparent); /* scrim from #000000 */\n}\n\n.input-success {\n  border-color: #127749; /* mined token: green */\n}\n\n.input-error {\n  /* no red exists in the mined palette — this site does not expose an error color in its CSS. */\n  /* Introduce one deliberately rather than borrowing a random red; keep saturation near the accent's. */\n}\n```\n\n## Observations\n\n- 6 of 9 extracted colors are neutrals.\n- 1 distinct shadow; the softest reaches 0px blur.\n- 8 breakpoints, from 480px to 1600px.\n\n## Native CSS custom properties\n\nFirst 40 of 63:\n\n```css\n:root {\n  --nav-main-alert-expanded: 0;\n  --nav-main-alert-height: 6.875rem;\n  --nav-main-bar-height: clamp(3.75rem, calc(3.352rem + 1.634vw), 5.313rem);\n  --nav-main-bar-pinned: 1;\n  --nav-main-safe-height: calc(var(--nav-main-bar-height) + var(--nav-main-alert-height) * round(up, var(--nav-main-alert-expanded)));\n  --nav-main-lock: -1;\n  --nav-main-panes-expanded: 0;\n  --nav-main-pane-primary-expanded: 0;\n  --nav-main-pane-primary-sub-expanded: 0;\n  --nav-main-pane-secondary-expanded: 0;\n  --nav-overlay-opaque: 0;\n  --nav-sub-lock: -1;\n  --nav-sub-toggle-pinned: 0;\n  --nav-sub-toggle-force-unpinned: 0;\n  --nav-sub-pane-expanded: 0;\n  --primary-font-family: \"Helvetica Now Text\",Helvetica,Arial,sans-serif;\n  --primary-font-weight: 300;\n  --secondary-font-family: RolexFont-S,sans-serif;\n  --secondary-letter-spacing: 0.125em;\n  --leading: normal;\n  --quote-font-family: SangBleuKingdom,\"Times New Roman\",Times,serif;\n  --quote-font-weight: 300;\n  --quote-font-style: normal;\n  --quote-opening: \"“\";\n  --quote-closing: \"”\";\n  --testimony-font-family: \"Bebas Neue Pro\",sans-serif;\n  --testimony-font-weight: 750;\n  --testimony-font-style: italic;\n  --testimony-font-stretch: semi-expanded;\n  --secondary-text-transform: uppercase;\n  --rolex-gold: 146 108 28;\n  --green: 18 119 73;\n  --dark-green: 11 62 39;\n  --light-green: 36 154 100;\n  --light-black: 33 33 33;\n  --dark-grey: 118 118 118;\n  --grey: 212 212 212;\n  --alternate-grey: 216 216 216;\n  --another-light-grey: 236 236 236;\n  --light-grey: 248 248 248;\n}\n```\n\n## Files\n\n- `tailwind.css` — Tailwind v4 `@theme` block; tokens become utilities (e.g. `bg-neutral-900`, `text-green`).\n- `variables.css` — framework-agnostic `:root` variables, same values.\n- `tokens.json` — W3C Design Tokens format for Figma plugins, Style Dictionary, etc.\n",
+  "tailwind.css": "@import \"tailwindcss\";\n\n@theme {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-100: #f3f3f3;\n  --color-neutral-200: #d4d4d4;\n  --color-neutral-400: #979797;\n  --color-neutral-700: #545454;\n  --color-neutral-950: #000000;\n  --color-green: #127749;\n  --color-green-2: #329066;\n  --color-deep-green: #006139;\n\n  /* inferred semantic roles (each maps to a distinct mined value) */\n  --color-canvas: #ffffff;\n  --color-ink: #000000;\n  --color-text-muted: #979797;\n  --color-surface: #f3f3f3;\n  --color-hairline: #d4d4d4;\n  --color-accent: #127749;\n  --color-accent-2: #329066;\n  --color-accent-3: #006139;\n\n  --font-sans: \"RolexFont-XL\", ui-sans-serif, system-ui, sans-serif;\n\n  --text-xs: 0.625rem;\n  --text-sm: 0.75rem;\n  --text-base: 0.875rem;\n  --text-lg: 0.93rem;\n  --text-xl: 1rem;\n  --text-2xl: 1.125rem;\n  --text-3xl: 1.18rem;\n  --text-4xl: 2rem;\n\n  --font-weight-light: 300;\n  --font-weight-normal: 400;\n  --font-weight-bold: 700;\n  --font-weight-750: 750;\n\n  /* line-heights, sorted tight -> loose */\n  --leading-none: 1;\n  --leading-tight: 1.14;\n  --leading-snug: 1.15;\n  --leading-normal: 1.25;\n  --leading-relaxed: 1.38;\n  --leading-loose: 1.43;\n  --leading-looser: 1.5;\n  --leading-loosest: 2.5;\n\n  /* letter-spacing, sorted tight -> wide */\n  --tracking-tightest: 0.125em;\n\n  --radius-sm: 0.38rem;\n  --radius-md: 0.625rem;\n  --radius-lg: 50px;\n  --radius-full: 9999px;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 4px 28px 0 rgba(0, 0, 0, 0.1);\n\n  --breakpoint-sm: 30rem;\n  --breakpoint-md: 47.9375rem;\n  --breakpoint-lg: 48rem;\n  --breakpoint-xl: 56rem;\n  --breakpoint-2xl: 64.0625rem;\n  --breakpoint-3xl: 80rem;\n  --breakpoint-4xl: 90rem;\n  --breakpoint-5xl: 100rem;\n\n  /* most-used spacing values on the source site (px): 8, 10, 11, 13, 14, 16, 20, 24, 30, 35, 40, 60 */\n}\n\n/* dark-mode values mined from the source (native token names) */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --text: inherit;\n    --container: rgb(var(--dark-grey) / 0.3);\n  }\n}\n",
+  "variables.css": ":root {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-100: #f3f3f3;\n  --color-neutral-200: #d4d4d4;\n  --color-neutral-400: #979797;\n  --color-neutral-700: #545454;\n  --color-neutral-950: #000000;\n  --color-green: #127749;\n  --color-green-2: #329066;\n  --color-deep-green: #006139;\n\n  /* inferred semantic roles */\n  --color-canvas: #ffffff;\n  --color-ink: #000000;\n  --color-text-muted: #979797;\n  --color-surface: #f3f3f3;\n  --color-hairline: #d4d4d4;\n  --color-accent: #127749;\n  --color-accent-2: #329066;\n  --color-accent-3: #006139;\n\n  /* typography */\n  --font-rolexfont-xl: \"RolexFont-XL\";\n  --font-helvetica-now-text: \"Helvetica Now Text\";\n  --font-rolexfont-s: \"RolexFont-S\";\n  --font-helvetica-thai: \"Helvetica Thai\";\n  --font-arial: \"Arial\";\n  --font-helvetica-neue: \"Helvetica Neue\";\n  --font-microsoft-yahei: \"Microsoft YaHei\";\n  --font-sangbleukingdom: \"SangBleuKingdom\";\n\n  /* type scale, ascending */\n  --text-1: 0.625rem;\n  --text-2: 0.75rem;\n  --text-3: 0.875rem;\n  --text-4: 0.93rem;\n  --text-5: 1rem;\n  --text-6: 1.125rem;\n  --text-7: 1.18rem;\n  --text-8: 2rem;\n\n  /* font weights in use */\n  --font-weight-light: 300;\n  --font-weight-normal: 400;\n  --font-weight-bold: 700;\n  --font-weight-750: 750;\n\n  /* line-heights, tight -> loose */\n  --leading-1: 1;\n  --leading-2: 1.14;\n  --leading-3: 1.15;\n  --leading-4: 1.25;\n  --leading-5: 1.38;\n  --leading-6: 1.43;\n  --leading-7: 1.5;\n  --leading-8: 2.5;\n\n  /* letter-spacing, tight -> wide */\n  --tracking-1: 0.125em;\n\n  /* spacing, ascending */\n  --space-1: 8px;\n  --space-2: 10px;\n  --space-3: 11px;\n  --space-4: 13px;\n  --space-5: 14px;\n  --space-6: 16px;\n  --space-7: 20px;\n  --space-8: 24px;\n  --space-9: 30px;\n  --space-10: 35px;\n  --space-11: 40px;\n  --space-12: 60px;\n\n  /* radius, ascending */\n  --radius-sm: 0.38rem;\n  --radius-md: 0.625rem;\n  --radius-lg: 50px;\n  --radius-full: 9999px;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 4px 28px 0 rgba(0, 0, 0, 0.1);\n}\n\n/* dark-mode values mined from the source (native token names) */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --text: inherit;\n    --container: rgb(var(--dark-grey) / 0.3);\n  }\n}\n",
+  "tokens.json": "{\n  \"$description\": \"Design tokens extracted from https://www.rolex.com/. Semantic entries are inferred from usage + luminance; all values are mined from live CSS.\",\n  \"color\": {\n    \"neutral-50\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\"\n    },\n    \"neutral-100\": {\n      \"$value\": \"#f3f3f3\",\n      \"$type\": \"color\"\n    },\n    \"neutral-200\": {\n      \"$value\": \"#d4d4d4\",\n      \"$type\": \"color\"\n    },\n    \"neutral-400\": {\n      \"$value\": \"#979797\",\n      \"$type\": \"color\"\n    },\n    \"neutral-700\": {\n      \"$value\": \"#545454\",\n      \"$type\": \"color\"\n    },\n    \"neutral-950\": {\n      \"$value\": \"#000000\",\n      \"$type\": \"color\"\n    },\n    \"green\": {\n      \"$value\": \"#127749\",\n      \"$type\": \"color\"\n    },\n    \"green-2\": {\n      \"$value\": \"#329066\",\n      \"$type\": \"color\"\n    },\n    \"deep-green\": {\n      \"$value\": \"#006139\",\n      \"$type\": \"color\"\n    }\n  },\n  \"semantic\": {\n    \"canvas\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: lightest neutral, matches the measured light-leaning theme\"\n    },\n    \"ink\": {\n      \"$value\": \"#000000\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: darkest neutral, highest contrast against canvas\"\n    },\n    \"text-muted\": {\n      \"$value\": \"#979797\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used mid-luminance neutral\"\n    },\n    \"surface\": {\n      \"$value\": \"#f3f3f3\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: neutral closest to canvas luminance\"\n    },\n    \"hairline\": {\n      \"$value\": \"#d4d4d4\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: next neutral near canvas, hairline-border weight\"\n    },\n    \"accent\": {\n      \"$value\": \"#127749\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used chromatic color\"\n    },\n    \"accent-2\": {\n      \"$value\": \"#329066\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    },\n    \"accent-3\": {\n      \"$value\": \"#006139\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    }\n  },\n  \"fontFamily\": {\n    \"rolexfont-xl\": {\n      \"$value\": \"RolexFont-XL\",\n      \"$type\": \"fontFamily\"\n    },\n    \"helvetica-now-text\": {\n      \"$value\": \"Helvetica Now Text\",\n      \"$type\": \"fontFamily\"\n    },\n    \"rolexfont-s\": {\n      \"$value\": \"RolexFont-S\",\n      \"$type\": \"fontFamily\"\n    },\n    \"helvetica-thai\": {\n      \"$value\": \"Helvetica Thai\",\n      \"$type\": \"fontFamily\"\n    },\n    \"arial\": {\n      \"$value\": \"Arial\",\n      \"$type\": \"fontFamily\"\n    },\n    \"helvetica-neue\": {\n      \"$value\": \"Helvetica Neue\",\n      \"$type\": \"fontFamily\"\n    },\n    \"microsoft-yahei\": {\n      \"$value\": \"Microsoft YaHei\",\n      \"$type\": \"fontFamily\"\n    },\n    \"sangbleukingdom\": {\n      \"$value\": \"SangBleuKingdom\",\n      \"$type\": \"fontFamily\"\n    }\n  },\n  \"fontSize\": {\n    \"size-1\": {\n      \"$value\": \"0.625rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-2\": {\n      \"$value\": \"0.75rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-3\": {\n      \"$value\": \"0.875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-4\": {\n      \"$value\": \"0.93rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-5\": {\n      \"$value\": \"1rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-6\": {\n      \"$value\": \"1.125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-7\": {\n      \"$value\": \"1.18rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-8\": {\n      \"$value\": \"2rem\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"fontWeight\": {\n    \"750\": {\n      \"$value\": 750,\n      \"$type\": \"fontWeight\"\n    },\n    \"light\": {\n      \"$value\": 300,\n      \"$type\": \"fontWeight\"\n    },\n    \"normal\": {\n      \"$value\": 400,\n      \"$type\": \"fontWeight\"\n    },\n    \"bold\": {\n      \"$value\": 700,\n      \"$type\": \"fontWeight\"\n    }\n  },\n  \"lineHeight\": {\n    \"leading-1\": {\n      \"$value\": 1,\n      \"$type\": \"number\"\n    },\n    \"leading-2\": {\n      \"$value\": 1.14,\n      \"$type\": \"number\"\n    },\n    \"leading-3\": {\n      \"$value\": 1.15,\n      \"$type\": \"number\"\n    },\n    \"leading-4\": {\n      \"$value\": 1.25,\n      \"$type\": \"number\"\n    },\n    \"leading-5\": {\n      \"$value\": 1.38,\n      \"$type\": \"number\"\n    },\n    \"leading-6\": {\n      \"$value\": 1.43,\n      \"$type\": \"number\"\n    },\n    \"leading-7\": {\n      \"$value\": 1.5,\n      \"$type\": \"number\"\n    },\n    \"leading-8\": {\n      \"$value\": 2.5,\n      \"$type\": \"number\"\n    }\n  },\n  \"letterSpacing\": {\n    \"tracking-1\": {\n      \"$value\": \"0.125em\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"dimension\": {\n    \"space-1\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-2\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-3\": {\n      \"$value\": \"11px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-4\": {\n      \"$value\": \"13px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-5\": {\n      \"$value\": \"14px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-6\": {\n      \"$value\": \"16px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-7\": {\n      \"$value\": \"20px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-8\": {\n      \"$value\": \"24px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-9\": {\n      \"$value\": \"30px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-10\": {\n      \"$value\": \"35px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-11\": {\n      \"$value\": \"40px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-12\": {\n      \"$value\": \"60px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"borderRadius\": {\n    \"sm\": {\n      \"$value\": \"0.38rem\",\n      \"$type\": \"dimension\"\n    },\n    \"md\": {\n      \"$value\": \"0.625rem\",\n      \"$type\": \"dimension\"\n    },\n    \"lg\": {\n      \"$value\": \"50px\",\n      \"$type\": \"dimension\"\n    },\n    \"full\": {\n      \"$value\": \"9999px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"shadow\": {\n    \"sm\": {\n      \"$value\": \"0 4px 28px 0 rgba(0, 0, 0, 0.1)\",\n      \"$type\": \"shadow\"\n    }\n  },\n  \"dark\": {\n    \"text\": {\n      \"$value\": \"inherit\",\n      \"$type\": \"string\"\n    },\n    \"container\": {\n      \"$value\": \"rgb(var(--dark-grey) / 0.3)\",\n      \"$type\": \"color\"\n    }\n  }\n}"
+ },
+ "raw": {
+  "tokens": {
+   "title": "Official Rolex Website - Swiss Luxury Watches",
+   "description": "Rolex watches are crafted from the finest raw materials and assembled with scrupulous attention to detail. Discover the Rolex collection on rolex.com.",
+   "themeGuess": "light-leaning",
+   "darkWeight": 7,
+   "lightWeight": 9,
+   "neutrals": [
+    {
+     "hex": "#ffffff",
+     "count": 1
+    },
+    {
+     "hex": "#f3f3f3",
+     "count": 7
+    },
+    {
+     "hex": "#d4d4d4",
+     "count": 1
+    },
+    {
+     "hex": "#979797",
+     "count": 1
+    },
+    {
+     "hex": "#545454",
+     "count": 6
+    },
+    {
+     "hex": "#000000",
+     "count": 1
+    }
+   ],
+   "accents": [
+    {
+     "hex": "#127749",
+     "count": 5
+    },
+    {
+     "hex": "#329066",
+     "count": 1
+    },
+    {
+     "hex": "#006139",
+     "count": 1
+    }
+   ],
+   "modern": [],
+   "fonts": [
+    {
+     "name": "RolexFont-XL",
+     "count": 10
+    },
+    {
+     "name": "Helvetica Now Text",
+     "count": 7
+    },
+    {
+     "name": "RolexFont-S",
+     "count": 7
+    },
+    {
+     "name": "Helvetica Thai",
+     "count": 4
+    },
+    {
+     "name": "Arial",
+     "count": 4
+    },
+    {
+     "name": "Helvetica Neue",
+     "count": 4
+    },
+    {
+     "name": "Microsoft YaHei",
+     "count": 4
+    },
+    {
+     "name": "SangBleuKingdom",
+     "count": 3
+    }
+   ],
+   "fontSizes": [
+    10,
+    12,
+    14,
+    14.88,
+    16,
+    18,
+    18.88,
+    32
+   ],
+   "fontWeights": [
+    {
+     "value": 300,
+     "count": 12
+    },
+    {
+     "value": 400,
+     "count": 47
+    },
+    {
+     "value": 700,
+     "count": 56
+    },
+    {
+     "value": 750,
+     "count": 2
+    }
+   ],
+   "lineHeights": [
+    1,
+    1.14,
+    1.15,
+    1.25,
+    1.38,
+    1.43,
+    1.5,
+    2.5
+   ],
+   "letterSpacings": [
+    "0.125em"
+   ],
+   "spacing": [
+    8,
+    10,
+    11,
+    13,
+    14,
+    16,
+    20,
+    24,
+    30,
+    35,
+    40,
+    60
+   ],
+   "radii": [
+    {
+     "value": "50px",
+     "count": 3
+    },
+    {
+     "value": "0.38rem",
+     "count": 3
+    },
+    {
+     "value": "0.625rem",
+     "count": 1
+    },
+    {
+     "value": "9999px",
+     "count": 14
+    }
+   ],
+   "shadows": [
+    {
+     "value": "0 4px 28px 0 rgba(0, 0, 0, 0.1)",
+     "count": 1,
+     "blur": 0
+    }
+   ],
+   "breakpoints": [
+    480,
+    767,
+    768,
+    896,
+    1025,
+    1280,
+    1440,
+    1600
+   ],
+   "nativeVars": [
+    {
+     "name": "nav-main-alert-expanded",
+     "value": "0"
+    },
+    {
+     "name": "nav-main-alert-height",
+     "value": "6.875rem"
+    },
+    {
+     "name": "nav-main-bar-height",
+     "value": "clamp(3.75rem, calc(3.352rem + 1.634vw), 5.313rem)"
+    },
+    {
+     "name": "nav-main-bar-pinned",
+     "value": "1"
+    },
+    {
+     "name": "nav-main-safe-height",
+     "value": "calc(var(--nav-main-bar-height) + var(--nav-main-alert-height) * round(up, var(--nav-main-alert-expanded)))"
+    },
+    {
+     "name": "nav-main-lock",
+     "value": "-1"
+    },
+    {
+     "name": "nav-main-panes-expanded",
+     "value": "0"
+    },
+    {
+     "name": "nav-main-pane-primary-expanded",
+     "value": "0"
+    },
+    {
+     "name": "nav-main-pane-primary-sub-expanded",
+     "value": "0"
+    },
+    {
+     "name": "nav-main-pane-secondary-expanded",
+     "value": "0"
+    },
+    {
+     "name": "nav-overlay-opaque",
+     "value": "0"
+    },
+    {
+     "name": "nav-sub-lock",
+     "value": "-1"
+    },
+    {
+     "name": "nav-sub-toggle-pinned",
+     "value": "0"
+    },
+    {
+     "name": "nav-sub-toggle-force-unpinned",
+     "value": "0"
+    },
+    {
+     "name": "nav-sub-pane-expanded",
+     "value": "0"
+    },
+    {
+     "name": "primary-font-family",
+     "value": "\"Helvetica Now Text\",Helvetica,Arial,sans-serif"
+    },
+    {
+     "name": "primary-font-weight",
+     "value": "300"
+    },
+    {
+     "name": "secondary-font-family",
+     "value": "RolexFont-S,sans-serif"
+    },
+    {
+     "name": "secondary-letter-spacing",
+     "value": "0.125em"
+    },
+    {
+     "name": "leading",
+     "value": "normal"
+    },
+    {
+     "name": "quote-font-family",
+     "value": "SangBleuKingdom,\"Times New Roman\",Times,serif"
+    },
+    {
+     "name": "quote-font-weight",
+     "value": "300"
+    },
+    {
+     "name": "quote-font-style",
+     "value": "normal"
+    },
+    {
+     "name": "quote-opening",
+     "value": "\"“\""
+    },
+    {
+     "name": "quote-closing",
+     "value": "\"”\""
+    },
+    {
+     "name": "testimony-font-family",
+     "value": "\"Bebas Neue Pro\",sans-serif"
+    },
+    {
+     "name": "testimony-font-weight",
+     "value": "750"
+    },
+    {
+     "name": "testimony-font-style",
+     "value": "italic"
+    },
+    {
+     "name": "testimony-font-stretch",
+     "value": "semi-expanded"
+    },
+    {
+     "name": "secondary-text-transform",
+     "value": "uppercase"
+    },
+    {
+     "name": "rolex-gold",
+     "value": "146 108 28"
+    },
+    {
+     "name": "green",
+     "value": "18 119 73"
+    },
+    {
+     "name": "dark-green",
+     "value": "11 62 39"
+    },
+    {
+     "name": "light-green",
+     "value": "36 154 100"
+    },
+    {
+     "name": "light-black",
+     "value": "33 33 33"
+    },
+    {
+     "name": "dark-grey",
+     "value": "118 118 118"
+    },
+    {
+     "name": "grey",
+     "value": "212 212 212"
+    },
+    {
+     "name": "alternate-grey",
+     "value": "216 216 216"
+    },
+    {
+     "name": "another-light-grey",
+     "value": "236 236 236"
+    },
+    {
+     "name": "light-grey",
+     "value": "248 248 248"
+    },
+    {
+     "name": "pure-white",
+     "value": "255 255 255"
+    },
+    {
+     "name": "ocean-green",
+     "value": "155 249 206"
+    },
+    {
+     "name": "bronze",
+     "value": "116 114 102"
+    },
+    {
+     "name": "focus",
+     "value": "var(--light-green)"
+    },
+    {
+     "name": "gradient-green-from",
+     "value": "16 99 61"
+    },
+    {
+     "name": "gradient-green-to",
+     "value": "26 145 90"
+    },
+    {
+     "name": "gradient-dark-green-from",
+     "value": "12 76 47"
+    },
+    {
+     "name": "gradient-dark-green-to",
+     "value": "20 115 72"
+    },
+    {
+     "name": "gradient-qrcode-green-from",
+     "value": "0 107 65"
+    },
+    {
+     "name": "gradient-qrcode-green-to",
+     "value": "0 55 34"
+    },
+    {
+     "name": "gradient-gold-from",
+     "value": "163 126 44"
+    },
+    {
+     "name": "gradient-gold-to",
+     "value": "223 171 58"
+    },
+    {
+     "name": "grid-gap",
+     "value": "6px"
+    },
+    {
+     "name": "grid-col-num",
+     "value": "6"
+    },
+    {
+     "name": "grid-col-unit",
+     "value": "calc(((100vw - var(--outer-margin) * 2) - (var(--grid-gap) * (var(--grid-col-num) - 1))) / var(--grid-col-num))"
+    },
+    {
+     "name": "watches-grid-width",
+     "value": "calc((var(--grid-col-num) - 1) * var(--grid-gap) + var(--grid-col-num) * var(--grid-col-unit))"
+    },
+    {
+     "name": "outer-margin",
+     "value": "8vw"
+    },
+    {
+     "name": "s-h-space",
+     "value": "4vh"
+    },
+    {
+     "name": "m-h-space",
+     "value": "7vh"
+    },
+    {
+     "name": "l-h-space",
+     "value": "10vh"
+    },
+    {
+     "name": "xl-h-space",
+     "value": "120vw"
+    },
+    {
+     "name": "btn-height",
+     "value": "2.5rem"
+    },
+    {
+     "name": "subnav-height",
+     "value": "0"
+    }
+   ],
+   "darkVars": [
+    {
+     "name": "text",
+     "light": null,
+     "dark": "inherit",
+     "via": "dark selector"
+    },
+    {
+     "name": "container",
+     "light": null,
+     "dark": "rgb(var(--dark-grey) / 0.3)",
+     "via": "dark selector"
+    }
+   ],
+   "rings": []
+  },
+  "stylesheets": 1
+ }
+}

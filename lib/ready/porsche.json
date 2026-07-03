@@ -1,0 +1,965 @@
+{
+ "slug": "porsche",
+ "name": "Porsche",
+ "blurb": "Sports cars. Black-and-white showroom, full-bleed photography, thin utility type.",
+ "url": "https://www.porsche.com/",
+ "title": "Porsche Bulgaria | Official Website",
+ "extractedAt": "2026-07-03",
+ "summary": {
+  "colors": [
+   {
+    "name": "neutral-50",
+    "hex": "#ffffff",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-100",
+    "hex": "#e6e6e6",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-200",
+    "hex": "#d7d7da",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-300",
+    "hex": "#cccccc",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-400",
+    "hex": "#b3b3b3",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-500",
+    "hex": "#999999",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-600",
+    "hex": "#88898c",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-700",
+    "hex": "#666666",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-800",
+    "hex": "#4d4d4d",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-900",
+    "hex": "#333333",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-950",
+    "hex": "#1a1a1a",
+    "group": "neutral"
+   },
+   {
+    "name": "blue",
+    "hex": "#1a44ea",
+    "group": "accent"
+   },
+   {
+    "name": "pale-blue",
+    "hex": "#f1f1f4",
+    "group": "accent"
+   },
+   {
+    "name": "red",
+    "hex": "#fc4040",
+    "group": "accent"
+   },
+   {
+    "name": "cyan",
+    "hex": "#178bff",
+    "group": "accent"
+   },
+   {
+    "name": "green",
+    "hex": "#10c47f",
+    "group": "accent"
+   },
+   {
+    "name": "orange",
+    "hex": "#f4882a",
+    "group": "accent"
+   },
+   {
+    "name": "green-2",
+    "hex": "#197e10",
+    "group": "accent"
+   },
+   {
+    "name": "orange-2",
+    "hex": "#ac5102",
+    "group": "accent"
+   },
+   {
+    "name": "red-2",
+    "hex": "#ba171f",
+    "group": "accent"
+   },
+   {
+    "name": "deep-cyan",
+    "hex": "#0b335b",
+    "group": "accent"
+   },
+   {
+    "name": "deep-cyan-2",
+    "hex": "#10263d",
+    "group": "accent"
+   },
+   {
+    "name": "deep-green",
+    "hex": "#0b5b3c",
+    "group": "accent"
+   }
+  ],
+  "fonts": [
+   "Porsche Next"
+  ],
+  "themeGuess": "light-leaning",
+  "stylesheets": 5,
+  "nativeVarCount": 100
+ },
+ "files": {
+  "DESIGN.md": "---\nname: porsche-com-design-system\nsource: https://www.porsche.com/\nextracted: 2026-07-03\ntheme: light  # measured from neutral usage weight\ncolors:  # roles inferred from usage frequency + luminance; names verified against values\n  canvas: \"#ffffff\"\n  ink: \"#1a1a1a\"\n  text-muted: \"#999999\"\n  surface: \"#e6e6e6\"\n  hairline: \"#d7d7da\"\n  accent: \"#1a44ea\"  # blue\n  accent-2: \"#f1f1f4\"  # pale-blue\n  accent-3: \"#fc4040\"  # red\nfonts:\n  primary: \"Porsche Next\"\n---\n\n# Porsche Bulgaria | Official Website — Design System\n\nExtracted from **https://www.porsche.com/** on 2026-07-03.\n\n> Welcome to Porsche! The official source for information on all Porsche vehicles, services, dealers in your area and everything about the Porsche brand.\n\nEvery value below is mined from the site's live CSS (100 native custom properties, ranked usage counts). Role assignments are inferred from usage and luminance and marked as such — treat them as a strong starting point, not gospel.\n\n## Overview\n\nThe system reads as light: measured neutral usage weighs 305 light against 227 dark. The palette is chromatic: 12 saturated values against 11 neutrals, led by blue (`#1a44ea`). **Porsche Next** carries the interface. Geometry mixes sharp corners (1px) with full pills.\n\n## Usage rules\n\nDerived from the measured usage below — each rule cites its evidence.\n\n- Chromatic color is only 16% of measured color usage. Reserve `accent` (`#1a44ea`) for primary actions, links, and emphasis — spreading it into body text or large surfaces breaks the ratio that defines this look.\n- The theme is light (measured neutral weight 305:227). Don't flip individual sections to the opposite mode.\n- `100%` is the workhorse radius (x50); treat the other radii as exceptions, not options.\n- The only shadows are blur-less hairline offsets — this system barely uses elevation; don't add soft drop shadows.\n- One family does the work — build hierarchy with size and weight (400/600/700), not by adding typefaces.\n\n## Colors\n\n### Neutrals (light → dark)\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `neutral-50` | `#ffffff` | 231 | **canvas** — lightest neutral, matches the measured light-leaning theme |\n| `neutral-100` | `#e6e6e6` | 43 | **surface** — neutral closest to canvas luminance |\n| `neutral-200` | `#d7d7da` | 1 | **hairline** — next neutral near canvas, hairline-border weight |\n| `neutral-300` | `#cccccc` | 30 | — |\n| `neutral-400` | `#b3b3b3` | 32 | — |\n| `neutral-500` | `#999999` | 44 | **text-muted** — most-used mid-luminance neutral |\n| `neutral-600` | `#88898c` | 2 | — |\n| `neutral-700` | `#666666` | 43 | — |\n| `neutral-800` | `#4d4d4d` | 35 | — |\n| `neutral-900` | `#333333` | 40 | — |\n| `neutral-950` | `#1a1a1a` | 49 | **ink** — darkest neutral, highest contrast against canvas |\n\n### Accents\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `blue` | `#1a44ea` | 18 | **accent** — most-used chromatic color |\n| `pale-blue` | `#f1f1f4` | 12 | **accent-2** — supporting chromatic color |\n| `red` | `#fc4040` | 11 | **accent-3** — supporting chromatic color |\n| `cyan` | `#178bff` | 10 | — |\n| `green` | `#10c47f` | 10 | — |\n| `orange` | `#f4882a` | 10 | — |\n| `green-2` | `#197e10` | 7 | — |\n| `orange-2` | `#ac5102` | 7 | — |\n| `red-2` | `#ba171f` | 7 | — |\n| `deep-cyan` | `#0b335b` | 3 | — |\n| `deep-cyan-2` | `#10263d` | 3 | — |\n| `deep-green` | `#0b5b3c` | 3 | — |\n\n### Dark mode\n\nThe source defines 33 dark-mode variants (via light-dark()). Both halves of the system, first 30:\n\n| Token | Light | Dark |\n| --- | --- | --- |\n| `--p-color-canvas` | `#fff` | `#010205` |\n| `--p-color-surface` | `#f1f1f4` | `#19191a` |\n| `--p-color-frosted` | `hsla(240,5%,70%,.148)` | `hsla(240,2%,43%,.228)` |\n| `--p-color-frosted-soft` | `rgba(143,145,163,.06)` | `rgba(65,65,70,.154)` |\n| `--p-color-frosted-strong` | `rgba(100,101,114,.236)` | `rgba(156,156,159,.302)` |\n| `--p-color-backdrop` | `rgba(36,36,40,.5)` | `rgba(36,36,40,.5)` |\n| `--p-color-primary` | `#010205` | `#fafbff` |\n| `--p-color-contrast-higher` | `rgba(21,21,25,.8)` | `rgba(246,246,248,.78)` |\n| `--p-color-contrast-high` | `rgba(26,26,30,.7)` | `rgba(246,246,248,.67)` |\n| `--p-color-contrast-medium` | `rgba(17,17,19,.6)` | `rgba(246,246,248,.56)` |\n| `--p-color-contrast-low` | `rgba(36,36,40,.5)` | `rgba(246,246,248,.45)` |\n| `--p-color-contrast-lower` | `rgba(79,80,89,.324)` | `rgba(156,156,159,.302)` |\n| `--p-color-info` | `#1a44ea` | `#178bff` |\n| `--p-color-info-medium` | `rgba(26,68,234,.6)` | `rgba(23,139,255,.6)` |\n| `--p-color-info-low` | `rgba(26,68,234,.18)` | `rgba(23,139,255,.18)` |\n| `--p-color-info-frosted` | `rgba(204,229,255,.55)` | `rgba(11,51,91,.66)` |\n| `--p-color-info-frosted-soft` | `rgba(232,242,252,.55)` | `rgba(16,38,61,.66)` |\n| `--p-color-success` | `#197e10` | `#10c47f` |\n| `--p-color-success-medium` | `rgba(25,126,16,.6)` | `rgba(16,196,127,.6)` |\n| `--p-color-success-low` | `rgba(25,126,16,.18)` | `rgba(16,196,127,.18)` |\n| `--p-color-success-frosted` | `rgba(213,255,204,.55)` | `rgba(11,91,60,.66)` |\n| `--p-color-success-frosted-soft` | `rgba(236,252,232,.55)` | `rgba(16,61,44,.66)` |\n| `--p-color-warning` | `#ac5102` | `#f4882a` |\n| `--p-color-warning-medium` | `rgba(172,81,2,.6)` | `rgba(244,136,42,.6)` |\n| `--p-color-warning-low` | `rgba(172,81,2,.18)` | `rgba(244,136,42,.18)` |\n| `--p-color-warning-frosted` | `rgba(255,238,204,.55)` | `rgba(91,81,11,.66)` |\n| `--p-color-warning-frosted-soft` | `hsla(40,80%,95%,.55)` | `rgba(61,55,16,.66)` |\n| `--p-color-error` | `#ba171f` | `#fc4040` |\n| `--p-color-error-medium` | `rgba(186,23,31,.6)` | `rgba(252,64,64,.6)` |\n| `--p-color-error-low` | `rgba(186,23,31,.18)` | `rgba(252,64,64,.18)` |\n\n`variables.css` ships these as a `prefers-color-scheme: dark` override block.\n\n## Typography\n\n**Porsche Next** is the primary interface face. Full list by usage:\n\n| Family | Usage |\n| --- | --- |\n| Porsche Next | 40 |\n\n**Size scale (px):** `11`, `12`, `14`, `16`, `22`\n\n**Weights in use:** `400` (x16), `600` (x10), `700` (x8)\n\n**Line-heights (unitless):** `1`, `1.1`, `1.3`, `1.5`\n\n**Letter-spacing values:** `.05em`\n\n## Spacing\n\nMost-used values (px): `1`, `2`, `3`, `4`, `6`, `8`, `10`, `12`, `16`, `20`, `36`, `80`\n\n## Border radius\n\n| Token | Value | Usage |\n| --- | --- | --- |\n| `radius-sm` | `1px` | 14 |\n| `radius-md` | `4px` | 11 |\n| `radius-lg` | `8px` | 8 |\n| `radius-xl` | `10px` | 46 |\n| `radius-2xl` | `12px` | 4 |\n| `radius-3xl` | `32px` | 17 |\n| `radius-4xl` | `100%` | 50 |\n| `radius-full` | `50%` | 2 |\n\n## Shadows (ordered by blur radius)\n\n- `shadow-sm` — `0 8px 40px #00000029` (x3)\n- `shadow-md` — `0 3px 8px #00000029` (x1)\n\n### Focus rings (spread-only box-shadows, kept out of the elevation scale)\n\n- `inset 0 0 0 1px #00000026` (x2)\n\n## Breakpoints\n\n`375px`, `390px`, `479px`, `480px`, `759px`, `760px`, `767px`, `768px`\n\n## Starter recipes\n\nTokens composed into components. The source site's real components were **not** inspected — these are starting points built from the extracted values, with contrast ratios computed rather than assumed.\n\n```css\n.button-primary {\n  background: var(--color-accent); /* #1a44ea */\n  color: var(--color-canvas); /* #ffffff — contrast 6.9:1 */\n  border-radius: 9999px; /* pill — mined as 50% */\n  font-weight: 600;\n}\n\n.card {\n  background: var(--color-surface); /* #e6e6e6 */\n  border: 1px solid var(--color-hairline); /* #d7d7da */\n  border-radius: 100%; /* most-used finite radius */\n  box-shadow: var(--shadow-sm);\n}\n\n.input {\n  background: var(--color-canvas); /* #ffffff */\n  color: var(--color-ink); /* #1a1a1a — contrast 17.4:1 */\n  border: 1px solid var(--color-hairline); /* #d7d7da */\n  border-radius: 1px;\n  /* placeholder color: var(--color-text-muted) #999999 */\n}\n\n.nav {\n  background: var(--color-canvas); /* #ffffff */\n  border-bottom: 1px solid var(--color-hairline); /* #d7d7da */\n  color: var(--color-ink); /* #1a1a1a */\n  /* inactive links: var(--color-text-muted) #999999 */\n  /* active link: var(--color-accent) #1a44ea — contrast vs canvas 6.9:1 */\n}\n\n.modal {\n  background: var(--color-surface); /* #e6e6e6 */\n  border-radius: 100%;\n  box-shadow: var(--shadow-md); /* largest mined shadow */\n}\n\n.modal-backdrop {\n  background: color-mix(in srgb, var(--color-ink) 55%, transparent); /* scrim from #1a1a1a */\n}\n\n.input-error {\n  border-color: #fc4040; /* mined token: red */\n  /* error text: #fc4040 on canvas — contrast 3.5:1, below AA; darken for message text */\n}\n\n.input-success {\n  border-color: #10c47f; /* mined token: green */\n}\n```\n\n## Observations\n\n- 11 of 23 extracted colors are neutrals.\n- 2 distinct shadows; the softest reaches 0px blur.\n- 8 breakpoints, from 375px to 768px.\n- The site ships a large native token system (100+ custom properties) — prefer those names when extending it.\n\n## Native CSS custom properties\n\nFirst 40 of 100:\n\n```css\n:root {\n  --phn-header-height: 4.125rem;\n  --pcom-spacing-x-small: clamp(4px,.25vw + 3px,8px);\n  --pcom-spacing-small: clamp(8px,.5vw + 6px,16px);\n  --pcom-spacing-medium: clamp(16px,1.25vw + 12px,36px);\n  --pcom-spacing-large: clamp(32px,2.75vw + 23px,76px);\n  --pcom-spacing-x-large: clamp(48px,3vw + 38px,96px);\n  --pcom-spacing-xx-large: clamp(80px,7.5vw + 56px,200px);\n  --pcom-motion-duration-long: .6s;\n  --pcom-motion-duration-moderate: .4s;\n  --pcom-motion-duration-short: .25s;\n  --pcom-motion-duration-very-long: 1.2s;\n  --pcom-motion-easing-base: cubic-bezier(.25,.1,.25,1);\n  --pcom-motion-easing-in: cubic-bezier(0,0,.2,1);\n  --pcom-motion-easing-out: cubic-bezier(.4,0,.5,1);\n  --pcom-image-hover-scale: scale3d(1.05,1.05,1.05);\n  --p-color-canvas: light-dark(#fff,#010205);\n  --p-color-surface: light-dark(#f1f1f4,#19191a);\n  --p-color-frosted: light-dark(hsla(240,5%,70%,.148),hsla(240,2%,43%,.228));\n  --p-color-frosted-soft: light-dark(rgba(143,145,163,.06),rgba(65,65,70,.154));\n  --p-color-frosted-strong: light-dark(rgba(100,101,114,.236),rgba(156,156,159,.302));\n  --p-color-backdrop: light-dark(rgba(36,36,40,.5),rgba(36,36,40,.5));\n  --p-color-primary: light-dark(#010205,#fafbff);\n  --p-color-contrast-higher: light-dark(rgba(21,21,25,.8),rgba(246,246,248,.78));\n  --p-color-contrast-high: light-dark(rgba(26,26,30,.7),rgba(246,246,248,.67));\n  --p-color-contrast-medium: light-dark(rgba(17,17,19,.6),rgba(246,246,248,.56));\n  --p-color-contrast-low: light-dark(rgba(36,36,40,.5),rgba(246,246,248,.45));\n  --p-color-contrast-lower: light-dark(rgba(79,80,89,.324),rgba(156,156,159,.302));\n  --p-color-info: light-dark(#1a44ea,#178bff);\n  --p-color-info-medium: light-dark(rgba(26,68,234,.6),rgba(23,139,255,.6));\n  --p-color-info-low: light-dark(rgba(26,68,234,.18),rgba(23,139,255,.18));\n  --p-color-info-frosted: light-dark(rgba(204,229,255,.55),rgba(11,51,91,.66));\n  --p-color-info-frosted-soft: light-dark(rgba(232,242,252,.55),rgba(16,38,61,.66));\n  --p-color-success: light-dark(#197e10,#10c47f);\n  --p-color-success-medium: light-dark(rgba(25,126,16,.6),rgba(16,196,127,.6));\n  --p-color-success-low: light-dark(rgba(25,126,16,.18),rgba(16,196,127,.18));\n  --p-color-success-frosted: light-dark(rgba(213,255,204,.55),rgba(11,91,60,.66));\n  --p-color-success-frosted-soft: light-dark(rgba(236,252,232,.55),rgba(16,61,44,.66));\n  --p-color-warning: light-dark(#ac5102,#f4882a);\n  --p-color-warning-medium: light-dark(rgba(172,81,2,.6),rgba(244,136,42,.6));\n  --p-color-warning-low: light-dark(rgba(172,81,2,.18),rgba(244,136,42,.18));\n}\n```\n\n## Files\n\n- `tailwind.css` — Tailwind v4 `@theme` block; tokens become utilities (e.g. `bg-neutral-900`, `text-blue`).\n- `variables.css` — framework-agnostic `:root` variables, same values.\n- `tokens.json` — W3C Design Tokens format for Figma plugins, Style Dictionary, etc.\n",
+  "tailwind.css": "@import \"tailwindcss\";\n\n@theme {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-100: #e6e6e6;\n  --color-neutral-200: #d7d7da;\n  --color-neutral-300: #cccccc;\n  --color-neutral-400: #b3b3b3;\n  --color-neutral-500: #999999;\n  --color-neutral-600: #88898c;\n  --color-neutral-700: #666666;\n  --color-neutral-800: #4d4d4d;\n  --color-neutral-900: #333333;\n  --color-neutral-950: #1a1a1a;\n  --color-blue: #1a44ea;\n  --color-pale-blue: #f1f1f4;\n  --color-red: #fc4040;\n  --color-cyan: #178bff;\n  --color-green: #10c47f;\n  --color-orange: #f4882a;\n  --color-green-2: #197e10;\n  --color-orange-2: #ac5102;\n  --color-red-2: #ba171f;\n  --color-deep-cyan: #0b335b;\n  --color-deep-cyan-2: #10263d;\n  --color-deep-green: #0b5b3c;\n\n  /* inferred semantic roles (each maps to a distinct mined value) */\n  --color-canvas: #ffffff;\n  --color-ink: #1a1a1a;\n  --color-text-muted: #999999;\n  --color-surface: #e6e6e6;\n  --color-hairline: #d7d7da;\n  --color-accent: #1a44ea;\n  --color-accent-2: #f1f1f4;\n  --color-accent-3: #fc4040;\n\n  --font-sans: \"Porsche Next\", ui-sans-serif, system-ui, sans-serif;\n\n  --text-xs: 0.6875rem;\n  --text-sm: 0.75rem;\n  --text-base: 0.875rem;\n  --text-lg: 1rem;\n  --text-xl: 1.375rem;\n\n  --font-weight-normal: 400;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, sorted tight -> loose */\n  --leading-none: 1;\n  --leading-tight: 1.1;\n  --leading-snug: 1.3;\n  --leading-normal: 1.5;\n\n  /* letter-spacing, sorted tight -> wide */\n  --tracking-tightest: .05em;\n\n  --radius-sm: 1px;\n  --radius-md: 4px;\n  --radius-lg: 8px;\n  --radius-xl: 10px;\n  --radius-2xl: 12px;\n  --radius-3xl: 32px;\n  --radius-4xl: 100%;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 8px 40px #00000029;\n  --shadow-md: 0 3px 8px #00000029;\n\n  --breakpoint-sm: 23.4375rem;\n  --breakpoint-md: 24.375rem;\n  --breakpoint-lg: 29.9375rem;\n  --breakpoint-xl: 30rem;\n  --breakpoint-2xl: 47.4375rem;\n  --breakpoint-3xl: 47.5rem;\n  --breakpoint-4xl: 47.9375rem;\n  --breakpoint-5xl: 48rem;\n\n  /* most-used spacing values on the source site (px): 1, 2, 3, 4, 6, 8, 10, 12, 16, 20, 36, 80 */\n}\n\n/* dark-mode values mined from the source (native token names) */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --p-color-canvas: #010205;\n    --p-color-surface: #19191a;\n    --p-color-frosted: hsla(240,2%,43%,.228);\n    --p-color-frosted-soft: rgba(65,65,70,.154);\n    --p-color-frosted-strong: rgba(156,156,159,.302);\n    --p-color-backdrop: rgba(36,36,40,.5);\n    --p-color-primary: #fafbff;\n    --p-color-contrast-higher: rgba(246,246,248,.78);\n    --p-color-contrast-high: rgba(246,246,248,.67);\n    --p-color-contrast-medium: rgba(246,246,248,.56);\n    --p-color-contrast-low: rgba(246,246,248,.45);\n    --p-color-contrast-lower: rgba(156,156,159,.302);\n    --p-color-info: #178bff;\n    --p-color-info-medium: rgba(23,139,255,.6);\n    --p-color-info-low: rgba(23,139,255,.18);\n    --p-color-info-frosted: rgba(11,51,91,.66);\n    --p-color-info-frosted-soft: rgba(16,38,61,.66);\n    --p-color-success: #10c47f;\n    --p-color-success-medium: rgba(16,196,127,.6);\n    --p-color-success-low: rgba(16,196,127,.18);\n    --p-color-success-frosted: rgba(11,91,60,.66);\n    --p-color-success-frosted-soft: rgba(16,61,44,.66);\n    --p-color-warning: #f4882a;\n    --p-color-warning-medium: rgba(244,136,42,.6);\n    --p-color-warning-low: rgba(244,136,42,.18);\n    --p-color-warning-frosted: rgba(91,81,11,.66);\n    --p-color-warning-frosted-soft: rgba(61,55,16,.66);\n    --p-color-error: #fc4040;\n    --p-color-error-medium: rgba(252,64,64,.6);\n    --p-color-error-low: rgba(252,64,64,.18);\n    --p-color-error-frosted: rgba(91,11,11,.66);\n    --p-color-error-frosted-soft: rgba(61,16,16,.66);\n    --p-color-focus: #1a44ea;\n  }\n}\n",
+  "variables.css": ":root {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-100: #e6e6e6;\n  --color-neutral-200: #d7d7da;\n  --color-neutral-300: #cccccc;\n  --color-neutral-400: #b3b3b3;\n  --color-neutral-500: #999999;\n  --color-neutral-600: #88898c;\n  --color-neutral-700: #666666;\n  --color-neutral-800: #4d4d4d;\n  --color-neutral-900: #333333;\n  --color-neutral-950: #1a1a1a;\n  --color-blue: #1a44ea;\n  --color-pale-blue: #f1f1f4;\n  --color-red: #fc4040;\n  --color-cyan: #178bff;\n  --color-green: #10c47f;\n  --color-orange: #f4882a;\n  --color-green-2: #197e10;\n  --color-orange-2: #ac5102;\n  --color-red-2: #ba171f;\n  --color-deep-cyan: #0b335b;\n  --color-deep-cyan-2: #10263d;\n  --color-deep-green: #0b5b3c;\n\n  /* inferred semantic roles */\n  --color-canvas: #ffffff;\n  --color-ink: #1a1a1a;\n  --color-text-muted: #999999;\n  --color-surface: #e6e6e6;\n  --color-hairline: #d7d7da;\n  --color-accent: #1a44ea;\n  --color-accent-2: #f1f1f4;\n  --color-accent-3: #fc4040;\n\n  /* typography */\n  --font-porsche-next: \"Porsche Next\";\n\n  /* type scale, ascending */\n  --text-1: 0.6875rem;\n  --text-2: 0.75rem;\n  --text-3: 0.875rem;\n  --text-4: 1rem;\n  --text-5: 1.375rem;\n\n  /* font weights in use */\n  --font-weight-normal: 400;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, tight -> loose */\n  --leading-1: 1;\n  --leading-2: 1.1;\n  --leading-3: 1.3;\n  --leading-4: 1.5;\n\n  /* letter-spacing, tight -> wide */\n  --tracking-1: .05em;\n\n  /* spacing, ascending */\n  --space-1: 1px;\n  --space-2: 2px;\n  --space-3: 3px;\n  --space-4: 4px;\n  --space-5: 6px;\n  --space-6: 8px;\n  --space-7: 10px;\n  --space-8: 12px;\n  --space-9: 16px;\n  --space-10: 20px;\n  --space-11: 36px;\n  --space-12: 80px;\n\n  /* radius, ascending */\n  --radius-sm: 1px;\n  --radius-md: 4px;\n  --radius-lg: 8px;\n  --radius-xl: 10px;\n  --radius-2xl: 12px;\n  --radius-3xl: 32px;\n  --radius-4xl: 100%;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 8px 40px #00000029;\n  --shadow-md: 0 3px 8px #00000029;\n}\n\n/* dark-mode values mined from the source (native token names) */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --p-color-canvas: #010205;\n    --p-color-surface: #19191a;\n    --p-color-frosted: hsla(240,2%,43%,.228);\n    --p-color-frosted-soft: rgba(65,65,70,.154);\n    --p-color-frosted-strong: rgba(156,156,159,.302);\n    --p-color-backdrop: rgba(36,36,40,.5);\n    --p-color-primary: #fafbff;\n    --p-color-contrast-higher: rgba(246,246,248,.78);\n    --p-color-contrast-high: rgba(246,246,248,.67);\n    --p-color-contrast-medium: rgba(246,246,248,.56);\n    --p-color-contrast-low: rgba(246,246,248,.45);\n    --p-color-contrast-lower: rgba(156,156,159,.302);\n    --p-color-info: #178bff;\n    --p-color-info-medium: rgba(23,139,255,.6);\n    --p-color-info-low: rgba(23,139,255,.18);\n    --p-color-info-frosted: rgba(11,51,91,.66);\n    --p-color-info-frosted-soft: rgba(16,38,61,.66);\n    --p-color-success: #10c47f;\n    --p-color-success-medium: rgba(16,196,127,.6);\n    --p-color-success-low: rgba(16,196,127,.18);\n    --p-color-success-frosted: rgba(11,91,60,.66);\n    --p-color-success-frosted-soft: rgba(16,61,44,.66);\n    --p-color-warning: #f4882a;\n    --p-color-warning-medium: rgba(244,136,42,.6);\n    --p-color-warning-low: rgba(244,136,42,.18);\n    --p-color-warning-frosted: rgba(91,81,11,.66);\n    --p-color-warning-frosted-soft: rgba(61,55,16,.66);\n    --p-color-error: #fc4040;\n    --p-color-error-medium: rgba(252,64,64,.6);\n    --p-color-error-low: rgba(252,64,64,.18);\n    --p-color-error-frosted: rgba(91,11,11,.66);\n    --p-color-error-frosted-soft: rgba(61,16,16,.66);\n    --p-color-focus: #1a44ea;\n  }\n}\n",
+  "tokens.json": "{\n  \"$description\": \"Design tokens extracted from https://www.porsche.com/. Semantic entries are inferred from usage + luminance; all values are mined from live CSS.\",\n  \"color\": {\n    \"neutral-50\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\"\n    },\n    \"neutral-100\": {\n      \"$value\": \"#e6e6e6\",\n      \"$type\": \"color\"\n    },\n    \"neutral-200\": {\n      \"$value\": \"#d7d7da\",\n      \"$type\": \"color\"\n    },\n    \"neutral-300\": {\n      \"$value\": \"#cccccc\",\n      \"$type\": \"color\"\n    },\n    \"neutral-400\": {\n      \"$value\": \"#b3b3b3\",\n      \"$type\": \"color\"\n    },\n    \"neutral-500\": {\n      \"$value\": \"#999999\",\n      \"$type\": \"color\"\n    },\n    \"neutral-600\": {\n      \"$value\": \"#88898c\",\n      \"$type\": \"color\"\n    },\n    \"neutral-700\": {\n      \"$value\": \"#666666\",\n      \"$type\": \"color\"\n    },\n    \"neutral-800\": {\n      \"$value\": \"#4d4d4d\",\n      \"$type\": \"color\"\n    },\n    \"neutral-900\": {\n      \"$value\": \"#333333\",\n      \"$type\": \"color\"\n    },\n    \"neutral-950\": {\n      \"$value\": \"#1a1a1a\",\n      \"$type\": \"color\"\n    },\n    \"blue\": {\n      \"$value\": \"#1a44ea\",\n      \"$type\": \"color\"\n    },\n    \"pale-blue\": {\n      \"$value\": \"#f1f1f4\",\n      \"$type\": \"color\"\n    },\n    \"red\": {\n      \"$value\": \"#fc4040\",\n      \"$type\": \"color\"\n    },\n    \"cyan\": {\n      \"$value\": \"#178bff\",\n      \"$type\": \"color\"\n    },\n    \"green\": {\n      \"$value\": \"#10c47f\",\n      \"$type\": \"color\"\n    },\n    \"orange\": {\n      \"$value\": \"#f4882a\",\n      \"$type\": \"color\"\n    },\n    \"green-2\": {\n      \"$value\": \"#197e10\",\n      \"$type\": \"color\"\n    },\n    \"orange-2\": {\n      \"$value\": \"#ac5102\",\n      \"$type\": \"color\"\n    },\n    \"red-2\": {\n      \"$value\": \"#ba171f\",\n      \"$type\": \"color\"\n    },\n    \"deep-cyan\": {\n      \"$value\": \"#0b335b\",\n      \"$type\": \"color\"\n    },\n    \"deep-cyan-2\": {\n      \"$value\": \"#10263d\",\n      \"$type\": \"color\"\n    },\n    \"deep-green\": {\n      \"$value\": \"#0b5b3c\",\n      \"$type\": \"color\"\n    }\n  },\n  \"semantic\": {\n    \"canvas\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: lightest neutral, matches the measured light-leaning theme\"\n    },\n    \"ink\": {\n      \"$value\": \"#1a1a1a\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: darkest neutral, highest contrast against canvas\"\n    },\n    \"text-muted\": {\n      \"$value\": \"#999999\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used mid-luminance neutral\"\n    },\n    \"surface\": {\n      \"$value\": \"#e6e6e6\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: neutral closest to canvas luminance\"\n    },\n    \"hairline\": {\n      \"$value\": \"#d7d7da\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: next neutral near canvas, hairline-border weight\"\n    },\n    \"accent\": {\n      \"$value\": \"#1a44ea\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used chromatic color\"\n    },\n    \"accent-2\": {\n      \"$value\": \"#f1f1f4\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    },\n    \"accent-3\": {\n      \"$value\": \"#fc4040\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    }\n  },\n  \"fontFamily\": {\n    \"porsche-next\": {\n      \"$value\": \"Porsche Next\",\n      \"$type\": \"fontFamily\"\n    }\n  },\n  \"fontSize\": {\n    \"size-1\": {\n      \"$value\": \"0.6875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-2\": {\n      \"$value\": \"0.75rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-3\": {\n      \"$value\": \"0.875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-4\": {\n      \"$value\": \"1rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-5\": {\n      \"$value\": \"1.375rem\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"fontWeight\": {\n    \"normal\": {\n      \"$value\": 400,\n      \"$type\": \"fontWeight\"\n    },\n    \"semibold\": {\n      \"$value\": 600,\n      \"$type\": \"fontWeight\"\n    },\n    \"bold\": {\n      \"$value\": 700,\n      \"$type\": \"fontWeight\"\n    }\n  },\n  \"lineHeight\": {\n    \"leading-1\": {\n      \"$value\": 1,\n      \"$type\": \"number\"\n    },\n    \"leading-2\": {\n      \"$value\": 1.1,\n      \"$type\": \"number\"\n    },\n    \"leading-3\": {\n      \"$value\": 1.3,\n      \"$type\": \"number\"\n    },\n    \"leading-4\": {\n      \"$value\": 1.5,\n      \"$type\": \"number\"\n    }\n  },\n  \"letterSpacing\": {\n    \"tracking-1\": {\n      \"$value\": \".05em\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"dimension\": {\n    \"space-1\": {\n      \"$value\": \"1px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-2\": {\n      \"$value\": \"2px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-3\": {\n      \"$value\": \"3px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-4\": {\n      \"$value\": \"4px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-5\": {\n      \"$value\": \"6px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-6\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-7\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-8\": {\n      \"$value\": \"12px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-9\": {\n      \"$value\": \"16px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-10\": {\n      \"$value\": \"20px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-11\": {\n      \"$value\": \"36px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-12\": {\n      \"$value\": \"80px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"borderRadius\": {\n    \"sm\": {\n      \"$value\": \"1px\",\n      \"$type\": \"dimension\"\n    },\n    \"md\": {\n      \"$value\": \"4px\",\n      \"$type\": \"dimension\"\n    },\n    \"lg\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"xl\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"2xl\": {\n      \"$value\": \"12px\",\n      \"$type\": \"dimension\"\n    },\n    \"3xl\": {\n      \"$value\": \"32px\",\n      \"$type\": \"dimension\"\n    },\n    \"4xl\": {\n      \"$value\": \"100%\",\n      \"$type\": \"dimension\"\n    },\n    \"full\": {\n      \"$value\": \"50%\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"shadow\": {\n    \"sm\": {\n      \"$value\": \"0 8px 40px #00000029\",\n      \"$type\": \"shadow\"\n    },\n    \"md\": {\n      \"$value\": \"0 3px 8px #00000029\",\n      \"$type\": \"shadow\"\n    }\n  },\n  \"dark\": {\n    \"p-color-canvas\": {\n      \"$value\": \"#010205\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: #fff\"\n    },\n    \"p-color-surface\": {\n      \"$value\": \"#19191a\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: #f1f1f4\"\n    },\n    \"p-color-frosted\": {\n      \"$value\": \"hsla(240,2%,43%,.228)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: hsla(240,5%,70%,.148)\"\n    },\n    \"p-color-frosted-soft\": {\n      \"$value\": \"rgba(65,65,70,.154)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: rgba(143,145,163,.06)\"\n    },\n    \"p-color-frosted-strong\": {\n      \"$value\": \"rgba(156,156,159,.302)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: rgba(100,101,114,.236)\"\n    },\n    \"p-color-backdrop\": {\n      \"$value\": \"rgba(36,36,40,.5)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: rgba(36,36,40,.5)\"\n    },\n    \"p-color-primary\": {\n      \"$value\": \"#fafbff\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: #010205\"\n    },\n    \"p-color-contrast-higher\": {\n      \"$value\": \"rgba(246,246,248,.78)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: rgba(21,21,25,.8)\"\n    },\n    \"p-color-contrast-high\": {\n      \"$value\": \"rgba(246,246,248,.67)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: rgba(26,26,30,.7)\"\n    },\n    \"p-color-contrast-medium\": {\n      \"$value\": \"rgba(246,246,248,.56)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: rgba(17,17,19,.6)\"\n    },\n    \"p-color-contrast-low\": {\n      \"$value\": \"rgba(246,246,248,.45)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: rgba(36,36,40,.5)\"\n    },\n    \"p-color-contrast-lower\": {\n      \"$value\": \"rgba(156,156,159,.302)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: rgba(79,80,89,.324)\"\n    },\n    \"p-color-info\": {\n      \"$value\": \"#178bff\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: #1a44ea\"\n    },\n    \"p-color-info-medium\": {\n      \"$value\": \"rgba(23,139,255,.6)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: rgba(26,68,234,.6)\"\n    },\n    \"p-color-info-low\": {\n      \"$value\": \"rgba(23,139,255,.18)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: rgba(26,68,234,.18)\"\n    },\n    \"p-color-info-frosted\": {\n      \"$value\": \"rgba(11,51,91,.66)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: rgba(204,229,255,.55)\"\n    },\n    \"p-color-info-frosted-soft\": {\n      \"$value\": \"rgba(16,38,61,.66)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: rgba(232,242,252,.55)\"\n    },\n    \"p-color-success\": {\n      \"$value\": \"#10c47f\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: #197e10\"\n    },\n    \"p-color-success-medium\": {\n      \"$value\": \"rgba(16,196,127,.6)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: rgba(25,126,16,.6)\"\n    },\n    \"p-color-success-low\": {\n      \"$value\": \"rgba(16,196,127,.18)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: rgba(25,126,16,.18)\"\n    },\n    \"p-color-success-frosted\": {\n      \"$value\": \"rgba(11,91,60,.66)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: rgba(213,255,204,.55)\"\n    },\n    \"p-color-success-frosted-soft\": {\n      \"$value\": \"rgba(16,61,44,.66)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: rgba(236,252,232,.55)\"\n    },\n    \"p-color-warning\": {\n      \"$value\": \"#f4882a\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: #ac5102\"\n    },\n    \"p-color-warning-medium\": {\n      \"$value\": \"rgba(244,136,42,.6)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: rgba(172,81,2,.6)\"\n    },\n    \"p-color-warning-low\": {\n      \"$value\": \"rgba(244,136,42,.18)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: rgba(172,81,2,.18)\"\n    },\n    \"p-color-warning-frosted\": {\n      \"$value\": \"rgba(91,81,11,.66)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: rgba(255,238,204,.55)\"\n    },\n    \"p-color-warning-frosted-soft\": {\n      \"$value\": \"rgba(61,55,16,.66)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: hsla(40,80%,95%,.55)\"\n    },\n    \"p-color-error\": {\n      \"$value\": \"#fc4040\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: #ba171f\"\n    },\n    \"p-color-error-medium\": {\n      \"$value\": \"rgba(252,64,64,.6)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: rgba(186,23,31,.6)\"\n    },\n    \"p-color-error-low\": {\n      \"$value\": \"rgba(252,64,64,.18)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: rgba(186,23,31,.18)\"\n    },\n    \"p-color-error-frosted\": {\n      \"$value\": \"rgba(91,11,11,.66)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: hsla(0,100%,90%,.55)\"\n    },\n    \"p-color-error-frosted-soft\": {\n      \"$value\": \"rgba(61,16,16,.66)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: hsla(0,80%,95%,.55)\"\n    },\n    \"p-color-focus\": {\n      \"$value\": \"#1a44ea\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: #1a44ea\"\n    }\n  }\n}"
+ },
+ "raw": {
+  "tokens": {
+   "title": "Porsche Bulgaria | Official Website",
+   "description": "Welcome to Porsche! The official source for information on all Porsche vehicles, services, dealers in your area and everything about the Porsche brand.",
+   "themeGuess": "light-leaning",
+   "darkWeight": 227,
+   "lightWeight": 305,
+   "neutrals": [
+    {
+     "hex": "#ffffff",
+     "count": 231
+    },
+    {
+     "hex": "#e6e6e6",
+     "count": 43
+    },
+    {
+     "hex": "#d7d7da",
+     "count": 1
+    },
+    {
+     "hex": "#cccccc",
+     "count": 30
+    },
+    {
+     "hex": "#b3b3b3",
+     "count": 32
+    },
+    {
+     "hex": "#999999",
+     "count": 44
+    },
+    {
+     "hex": "#88898c",
+     "count": 2
+    },
+    {
+     "hex": "#666666",
+     "count": 43
+    },
+    {
+     "hex": "#4d4d4d",
+     "count": 35
+    },
+    {
+     "hex": "#333333",
+     "count": 40
+    },
+    {
+     "hex": "#1a1a1a",
+     "count": 49
+    },
+    {
+     "hex": "#0c0d0e",
+     "count": 60
+    }
+   ],
+   "accents": [
+    {
+     "hex": "#1a44ea",
+     "count": 18
+    },
+    {
+     "hex": "#f1f1f4",
+     "count": 12
+    },
+    {
+     "hex": "#fc4040",
+     "count": 11
+    },
+    {
+     "hex": "#178bff",
+     "count": 10
+    },
+    {
+     "hex": "#10c47f",
+     "count": 10
+    },
+    {
+     "hex": "#f4882a",
+     "count": 10
+    },
+    {
+     "hex": "#197e10",
+     "count": 7
+    },
+    {
+     "hex": "#ac5102",
+     "count": 7
+    },
+    {
+     "hex": "#ba171f",
+     "count": 7
+    },
+    {
+     "hex": "#0b335b",
+     "count": 3
+    },
+    {
+     "hex": "#10263d",
+     "count": 3
+    },
+    {
+     "hex": "#0b5b3c",
+     "count": 3
+    }
+   ],
+   "modern": [],
+   "fonts": [
+    {
+     "name": "Porsche Next",
+     "count": 40
+    }
+   ],
+   "fontSizes": [
+    11,
+    12,
+    14,
+    16,
+    22
+   ],
+   "fontWeights": [
+    {
+     "value": 400,
+     "count": 16
+    },
+    {
+     "value": 600,
+     "count": 10
+    },
+    {
+     "value": 700,
+     "count": 8
+    }
+   ],
+   "lineHeights": [
+    1,
+    1.1,
+    1.3,
+    1.5
+   ],
+   "letterSpacings": [
+    ".05em"
+   ],
+   "spacing": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8,
+    10,
+    12,
+    16,
+    20,
+    36,
+    80
+   ],
+   "radii": [
+    {
+     "value": "100%",
+     "count": 50
+    },
+    {
+     "value": "10px",
+     "count": 46
+    },
+    {
+     "value": "32px",
+     "count": 17
+    },
+    {
+     "value": "1px",
+     "count": 14
+    },
+    {
+     "value": "4px",
+     "count": 11
+    },
+    {
+     "value": "8px",
+     "count": 8
+    },
+    {
+     "value": "12px",
+     "count": 4
+    },
+    {
+     "value": "50%",
+     "count": 2
+    }
+   ],
+   "shadows": [
+    {
+     "value": "0 8px 40px #00000029",
+     "count": 3,
+     "blur": 0
+    },
+    {
+     "value": "0 3px 8px #00000029",
+     "count": 1,
+     "blur": 0
+    }
+   ],
+   "breakpoints": [
+    375,
+    390,
+    479,
+    480,
+    759,
+    760,
+    767,
+    768
+   ],
+   "nativeVars": [
+    {
+     "name": "phn-header-height",
+     "value": "4.125rem"
+    },
+    {
+     "name": "pcom-spacing-x-small",
+     "value": "clamp(4px,.25vw + 3px,8px)"
+    },
+    {
+     "name": "pcom-spacing-small",
+     "value": "clamp(8px,.5vw + 6px,16px)"
+    },
+    {
+     "name": "pcom-spacing-medium",
+     "value": "clamp(16px,1.25vw + 12px,36px)"
+    },
+    {
+     "name": "pcom-spacing-large",
+     "value": "clamp(32px,2.75vw + 23px,76px)"
+    },
+    {
+     "name": "pcom-spacing-x-large",
+     "value": "clamp(48px,3vw + 38px,96px)"
+    },
+    {
+     "name": "pcom-spacing-xx-large",
+     "value": "clamp(80px,7.5vw + 56px,200px)"
+    },
+    {
+     "name": "pcom-motion-duration-long",
+     "value": ".6s"
+    },
+    {
+     "name": "pcom-motion-duration-moderate",
+     "value": ".4s"
+    },
+    {
+     "name": "pcom-motion-duration-short",
+     "value": ".25s"
+    },
+    {
+     "name": "pcom-motion-duration-very-long",
+     "value": "1.2s"
+    },
+    {
+     "name": "pcom-motion-easing-base",
+     "value": "cubic-bezier(.25,.1,.25,1)"
+    },
+    {
+     "name": "pcom-motion-easing-in",
+     "value": "cubic-bezier(0,0,.2,1)"
+    },
+    {
+     "name": "pcom-motion-easing-out",
+     "value": "cubic-bezier(.4,0,.5,1)"
+    },
+    {
+     "name": "pcom-image-hover-scale",
+     "value": "scale3d(1.05,1.05,1.05)"
+    },
+    {
+     "name": "p-color-canvas",
+     "value": "light-dark(#fff,#010205)"
+    },
+    {
+     "name": "p-color-surface",
+     "value": "light-dark(#f1f1f4,#19191a)"
+    },
+    {
+     "name": "p-color-frosted",
+     "value": "light-dark(hsla(240,5%,70%,.148),hsla(240,2%,43%,.228))"
+    },
+    {
+     "name": "p-color-frosted-soft",
+     "value": "light-dark(rgba(143,145,163,.06),rgba(65,65,70,.154))"
+    },
+    {
+     "name": "p-color-frosted-strong",
+     "value": "light-dark(rgba(100,101,114,.236),rgba(156,156,159,.302))"
+    },
+    {
+     "name": "p-color-backdrop",
+     "value": "light-dark(rgba(36,36,40,.5),rgba(36,36,40,.5))"
+    },
+    {
+     "name": "p-color-primary",
+     "value": "light-dark(#010205,#fafbff)"
+    },
+    {
+     "name": "p-color-contrast-higher",
+     "value": "light-dark(rgba(21,21,25,.8),rgba(246,246,248,.78))"
+    },
+    {
+     "name": "p-color-contrast-high",
+     "value": "light-dark(rgba(26,26,30,.7),rgba(246,246,248,.67))"
+    },
+    {
+     "name": "p-color-contrast-medium",
+     "value": "light-dark(rgba(17,17,19,.6),rgba(246,246,248,.56))"
+    },
+    {
+     "name": "p-color-contrast-low",
+     "value": "light-dark(rgba(36,36,40,.5),rgba(246,246,248,.45))"
+    },
+    {
+     "name": "p-color-contrast-lower",
+     "value": "light-dark(rgba(79,80,89,.324),rgba(156,156,159,.302))"
+    },
+    {
+     "name": "p-color-info",
+     "value": "light-dark(#1a44ea,#178bff)"
+    },
+    {
+     "name": "p-color-info-medium",
+     "value": "light-dark(rgba(26,68,234,.6),rgba(23,139,255,.6))"
+    },
+    {
+     "name": "p-color-info-low",
+     "value": "light-dark(rgba(26,68,234,.18),rgba(23,139,255,.18))"
+    },
+    {
+     "name": "p-color-info-frosted",
+     "value": "light-dark(rgba(204,229,255,.55),rgba(11,51,91,.66))"
+    },
+    {
+     "name": "p-color-info-frosted-soft",
+     "value": "light-dark(rgba(232,242,252,.55),rgba(16,38,61,.66))"
+    },
+    {
+     "name": "p-color-success",
+     "value": "light-dark(#197e10,#10c47f)"
+    },
+    {
+     "name": "p-color-success-medium",
+     "value": "light-dark(rgba(25,126,16,.6),rgba(16,196,127,.6))"
+    },
+    {
+     "name": "p-color-success-low",
+     "value": "light-dark(rgba(25,126,16,.18),rgba(16,196,127,.18))"
+    },
+    {
+     "name": "p-color-success-frosted",
+     "value": "light-dark(rgba(213,255,204,.55),rgba(11,91,60,.66))"
+    },
+    {
+     "name": "p-color-success-frosted-soft",
+     "value": "light-dark(rgba(236,252,232,.55),rgba(16,61,44,.66))"
+    },
+    {
+     "name": "p-color-warning",
+     "value": "light-dark(#ac5102,#f4882a)"
+    },
+    {
+     "name": "p-color-warning-medium",
+     "value": "light-dark(rgba(172,81,2,.6),rgba(244,136,42,.6))"
+    },
+    {
+     "name": "p-color-warning-low",
+     "value": "light-dark(rgba(172,81,2,.18),rgba(244,136,42,.18))"
+    },
+    {
+     "name": "p-color-warning-frosted",
+     "value": "light-dark(rgba(255,238,204,.55),rgba(91,81,11,.66))"
+    },
+    {
+     "name": "p-color-warning-frosted-soft",
+     "value": "light-dark(hsla(40,80%,95%,.55),rgba(61,55,16,.66))"
+    },
+    {
+     "name": "p-color-error",
+     "value": "light-dark(#ba171f,#fc4040)"
+    },
+    {
+     "name": "p-color-error-medium",
+     "value": "light-dark(rgba(186,23,31,.6),rgba(252,64,64,.6))"
+    },
+    {
+     "name": "p-color-error-low",
+     "value": "light-dark(rgba(186,23,31,.18),rgba(252,64,64,.18))"
+    },
+    {
+     "name": "p-color-error-frosted",
+     "value": "light-dark(hsla(0,100%,90%,.55),rgba(91,11,11,.66))"
+    },
+    {
+     "name": "p-color-error-frosted-soft",
+     "value": "light-dark(hsla(0,80%,95%,.55),rgba(61,16,16,.66))"
+    },
+    {
+     "name": "p-color-focus",
+     "value": "light-dark(#1a44ea,#1a44ea)"
+    },
+    {
+     "name": "p-font-porsche-next",
+     "value": "\"Porsche Next\",\"Arial Narrow\",Arial,\"Heiti SC\",SimHei,sans-serif"
+    },
+    {
+     "name": "p-font-sans",
+     "value": "var(--p-font-porsche-next)"
+    },
+    {
+     "name": "p-font-weight-normal",
+     "value": "400"
+    },
+    {
+     "name": "p-font-weight-semibold",
+     "value": "600"
+    },
+    {
+     "name": "p-font-weight-bold",
+     "value": "700"
+    },
+    {
+     "name": "p-leading-normal",
+     "value": "calc(6px + 2.125ex)"
+    },
+    {
+     "name": "p-typescale-2xs",
+     "value": ".75rem"
+    },
+    {
+     "name": "p-typescale-xs",
+     "value": ".875rem"
+    },
+    {
+     "name": "p-typescale-sm",
+     "value": "1rem"
+    },
+    {
+     "name": "p-typescale-md",
+     "value": "clamp(1.13rem,.21vw + 1.08rem,1.33rem)"
+    },
+    {
+     "name": "p-typescale-lg",
+     "value": "clamp(1.27rem,.51vw + 1.16rem,1.78rem)"
+    },
+    {
+     "name": "p-typescale-xl",
+     "value": "clamp(1.42rem,.94vw + 1.23rem,2.37rem)"
+    },
+    {
+     "name": "p-typescale-2xl",
+     "value": "clamp(1.6rem,1.56vw + 1.29rem,3.16rem)"
+    },
+    {
+     "name": "p-typescale-3xl",
+     "value": "clamp(1.8rem,2.41vw + 1.32rem,4.21rem)"
+    },
+    {
+     "name": "p-typescale-4xl",
+     "value": "clamp(2.03rem,3.58vw + 1.31rem,5.61rem)"
+    },
+    {
+     "name": "p-typescale-5xl",
+     "value": "clamp(2.28rem,5.2vw + 1.24rem,7.48rem)"
+    },
+    {
+     "name": "p-spacing-fluid-xs",
+     "value": "clamp(4px,.25vw + 3px,8px)"
+    },
+    {
+     "name": "p-spacing-fluid-sm",
+     "value": "clamp(8px,.5vw + 6px,16px)"
+    },
+    {
+     "name": "p-spacing-fluid-md",
+     "value": "clamp(16px,1.25vw + 12px,36px)"
+    },
+    {
+     "name": "p-spacing-fluid-lg",
+     "value": "clamp(32px,2.75vw + 23px,76px)"
+    },
+    {
+     "name": "p-spacing-fluid-xl",
+     "value": "clamp(48px,3vw + 38px,96px)"
+    },
+    {
+     "name": "p-spacing-fluid-2xl",
+     "value": "clamp(80px,7.5vw + 56px,200px)"
+    },
+    {
+     "name": "p-spacing-static-2xs",
+     "value": "1px"
+    },
+    {
+     "name": "p-spacing-static-xs",
+     "value": "4px"
+    },
+    {
+     "name": "p-spacing-static-sm",
+     "value": "8px"
+    },
+    {
+     "name": "p-spacing-static-md",
+     "value": "16px"
+    },
+    {
+     "name": "p-spacing-static-lg",
+     "value": "32px"
+    },
+    {
+     "name": "p-spacing-static-xl",
+     "value": "48px"
+    },
+    {
+     "name": "p-spacing-static-2xl",
+     "value": "80px"
+    },
+    {
+     "name": "p-radius-xs",
+     "value": "2px"
+    },
+    {
+     "name": "p-radius-sm",
+     "value": "4px"
+    },
+    {
+     "name": "p-radius-md",
+     "value": "6px"
+    },
+    {
+     "name": "p-radius-lg",
+     "value": "8px"
+    },
+    {
+     "name": "p-radius-xl",
+     "value": "12px"
+    },
+    {
+     "name": "p-radius-2xl",
+     "value": "16px"
+    },
+    {
+     "name": "p-radius-3xl",
+     "value": "24px"
+    },
+    {
+     "name": "p-radius-4xl",
+     "value": "32px"
+    },
+    {
+     "name": "p-radius-full",
+     "value": "calc(infinity*1px)"
+    },
+    {
+     "name": "p-blur-frosted",
+     "value": "blur(32px)"
+    },
+    {
+     "name": "p-shadow-sm",
+     "value": "0px 3px 8px rgba(0,0,0,.16)"
+    },
+    {
+     "name": "p-shadow-md",
+     "value": "0px 4px 16px rgba(0,0,0,.16)"
+    },
+    {
+     "name": "p-shadow-lg",
+     "value": "0px 8px 40px rgba(0,0,0,.16)"
+    },
+    {
+     "name": "p-duration-sm",
+     "value": ".25s"
+    },
+    {
+     "name": "p-duration-md",
+     "value": ".4s"
+    },
+    {
+     "name": "p-duration-lg",
+     "value": ".6s"
+    },
+    {
+     "name": "p-duration-xl",
+     "value": "1.2s"
+    },
+    {
+     "name": "p-ease-in-out",
+     "value": "cubic-bezier(.25,.1,.25,1)"
+    },
+    {
+     "name": "p-ease-in",
+     "value": "cubic-bezier(0,0,.2,1)"
+    },
+    {
+     "name": "p-ease-out",
+     "value": "cubic-bezier(.4,0,.5,1)"
+    },
+    {
+     "name": "pcom-expected-p-link-height",
+     "value": "54px"
+    },
+    {
+     "name": "pcom-cta-padding-top",
+     "value": "var(--pcom-spacing-medium)"
+    },
+    {
+     "name": "pcom-expected-cta-block-height",
+     "value": "calc(var(--pcom-cta-padding-top) + var(--pcom-expected-p-link-height))"
+    }
+   ],
+   "darkVars": [
+    {
+     "name": "p-color-canvas",
+     "light": "#fff",
+     "dark": "#010205",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-surface",
+     "light": "#f1f1f4",
+     "dark": "#19191a",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-frosted",
+     "light": "hsla(240,5%,70%,.148)",
+     "dark": "hsla(240,2%,43%,.228)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-frosted-soft",
+     "light": "rgba(143,145,163,.06)",
+     "dark": "rgba(65,65,70,.154)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-frosted-strong",
+     "light": "rgba(100,101,114,.236)",
+     "dark": "rgba(156,156,159,.302)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-backdrop",
+     "light": "rgba(36,36,40,.5)",
+     "dark": "rgba(36,36,40,.5)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-primary",
+     "light": "#010205",
+     "dark": "#fafbff",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-contrast-higher",
+     "light": "rgba(21,21,25,.8)",
+     "dark": "rgba(246,246,248,.78)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-contrast-high",
+     "light": "rgba(26,26,30,.7)",
+     "dark": "rgba(246,246,248,.67)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-contrast-medium",
+     "light": "rgba(17,17,19,.6)",
+     "dark": "rgba(246,246,248,.56)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-contrast-low",
+     "light": "rgba(36,36,40,.5)",
+     "dark": "rgba(246,246,248,.45)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-contrast-lower",
+     "light": "rgba(79,80,89,.324)",
+     "dark": "rgba(156,156,159,.302)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-info",
+     "light": "#1a44ea",
+     "dark": "#178bff",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-info-medium",
+     "light": "rgba(26,68,234,.6)",
+     "dark": "rgba(23,139,255,.6)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-info-low",
+     "light": "rgba(26,68,234,.18)",
+     "dark": "rgba(23,139,255,.18)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-info-frosted",
+     "light": "rgba(204,229,255,.55)",
+     "dark": "rgba(11,51,91,.66)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-info-frosted-soft",
+     "light": "rgba(232,242,252,.55)",
+     "dark": "rgba(16,38,61,.66)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-success",
+     "light": "#197e10",
+     "dark": "#10c47f",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-success-medium",
+     "light": "rgba(25,126,16,.6)",
+     "dark": "rgba(16,196,127,.6)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-success-low",
+     "light": "rgba(25,126,16,.18)",
+     "dark": "rgba(16,196,127,.18)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-success-frosted",
+     "light": "rgba(213,255,204,.55)",
+     "dark": "rgba(11,91,60,.66)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-success-frosted-soft",
+     "light": "rgba(236,252,232,.55)",
+     "dark": "rgba(16,61,44,.66)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-warning",
+     "light": "#ac5102",
+     "dark": "#f4882a",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-warning-medium",
+     "light": "rgba(172,81,2,.6)",
+     "dark": "rgba(244,136,42,.6)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-warning-low",
+     "light": "rgba(172,81,2,.18)",
+     "dark": "rgba(244,136,42,.18)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-warning-frosted",
+     "light": "rgba(255,238,204,.55)",
+     "dark": "rgba(91,81,11,.66)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-warning-frosted-soft",
+     "light": "hsla(40,80%,95%,.55)",
+     "dark": "rgba(61,55,16,.66)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-error",
+     "light": "#ba171f",
+     "dark": "#fc4040",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-error-medium",
+     "light": "rgba(186,23,31,.6)",
+     "dark": "rgba(252,64,64,.6)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-error-low",
+     "light": "rgba(186,23,31,.18)",
+     "dark": "rgba(252,64,64,.18)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-error-frosted",
+     "light": "hsla(0,100%,90%,.55)",
+     "dark": "rgba(91,11,11,.66)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-error-frosted-soft",
+     "light": "hsla(0,80%,95%,.55)",
+     "dark": "rgba(61,16,16,.66)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "p-color-focus",
+     "light": "#1a44ea",
+     "dark": "#1a44ea",
+     "via": "light-dark()"
+    }
+   ],
+   "rings": [
+    {
+     "value": "inset 0 0 0 1px #00000026",
+     "count": 2,
+     "blur": 0
+    }
+   ]
+  },
+  "stylesheets": 5
+ }
+}

@@ -1,0 +1,336 @@
+{
+ "slug": "netflix",
+ "name": "Netflix",
+ "blurb": "Streaming. Red-on-black cinema chrome, poster art as the entire layout.",
+ "url": "https://www.netflix.com/",
+ "title": "Netflix Bulgaria - Watch TV Shows Online, Watch Movies Online",
+ "extractedAt": "2026-07-03",
+ "summary": {
+  "colors": [
+   {
+    "name": "neutral-50",
+    "hex": "#ffffff",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-100",
+    "hex": "#ececec",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-400",
+    "hex": "#a9a9a9",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-500",
+    "hex": "#808080",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-800",
+    "hex": "#414141",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-900",
+    "hex": "#232323",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-950",
+    "hex": "#161616",
+    "group": "neutral"
+   },
+   {
+    "name": "red",
+    "hex": "#e50914",
+    "group": "accent"
+   },
+   {
+    "name": "red-2",
+    "hex": "#eb3942",
+    "group": "accent"
+   },
+   {
+    "name": "green",
+    "hex": "#2bb871",
+    "group": "accent"
+   },
+   {
+    "name": "orange",
+    "hex": "#d89d31",
+    "group": "accent"
+   },
+   {
+    "name": "deep-blue",
+    "hex": "#050042",
+    "group": "accent"
+   },
+   {
+    "name": "red-3",
+    "hex": "#c11119",
+    "group": "accent"
+   },
+   {
+    "name": "red-4",
+    "hex": "#99161d",
+    "group": "accent"
+   },
+   {
+    "name": "blue",
+    "hex": "#465a7e",
+    "group": "accent"
+   },
+   {
+    "name": "deep-blue-2",
+    "hex": "#192247",
+    "group": "accent"
+   },
+   {
+    "name": "deep-red",
+    "hex": "#461518",
+    "group": "accent"
+   },
+   {
+    "name": "pink",
+    "hex": "#b82869",
+    "group": "accent"
+   },
+   {
+    "name": "red-5",
+    "hex": "#e00000",
+    "group": "accent"
+   }
+  ],
+  "fonts": [
+   "Netflix Sans",
+   "Netflix Sans Variable",
+   "NKufi",
+   "GraphikTH",
+   "Netflix Sans Debug",
+   "Netflix Sans JA"
+  ],
+  "themeGuess": "light-leaning",
+  "stylesheets": 1,
+  "nativeVarCount": 0
+ },
+ "files": {
+  "DESIGN.md": "---\nname: netflix-com-design-system\nsource: https://www.netflix.com/\nextracted: 2026-07-03\ntheme: light  # measured from neutral usage weight\ncolors:  # roles inferred from usage frequency + luminance; names verified against values\n  canvas: \"#ffffff\"\n  ink: \"#161616\"\n  text-muted: \"#a9a9a9\"\n  surface: \"#ececec\"\n  hairline: \"#808080\"\n  accent: \"#e50914\"  # red\n  accent-2: \"#eb3942\"  # red\n  accent-3: \"#2bb871\"  # green\nfonts:\n  primary: \"Netflix Sans\"  # medium-confidence: usage counts are close\n---\n\n# Netflix Bulgaria - Watch TV Shows Online, Watch Movies Online — Design System\n\nExtracted from **https://www.netflix.com/** on 2026-07-03.\n\nEvery value below is mined from the site's live CSS (0 native custom properties, ranked usage counts). Role assignments are inferred from usage and luminance and marked as such — treat them as a strong starting point, not gospel.\n\n## Overview\n\nThe system reads as light: measured neutral usage weighs 104 light against 116 dark. The palette is chromatic: 12 saturated values against 7 neutrals, led by red (`#e50914`). **Netflix Sans** leads the font stack, though usage counts are close — verify against rendered pages before committing. Corner radii run 0.125rem to 1rem.\n\n## Usage rules\n\nDerived from the measured usage below — each rule cites its evidence.\n\n- Chromatic color carries 33% of measured usage — this palette uses color structurally. Saturated values can hold large surfaces here; timidity would misrepresent the source.\n- The theme is light (measured neutral weight 104:116). Don't flip individual sections to the opposite mode.\n- `0.125rem` is the workhorse radius (x16); treat the other radii as exceptions, not options.\n- The only shadows are blur-less hairline offsets — this system barely uses elevation; don't add soft drop shadows.\n\n## Colors\n\n### Neutrals (light → dark)\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `neutral-50` | `#ffffff` | 100 | **canvas** — lightest neutral, matches the measured light-leaning theme |\n| `neutral-100` | `#ececec` | 4 | **surface** — neutral closest to canvas luminance |\n| `neutral-400` | `#a9a9a9` | 34 | **text-muted** — most-used mid-luminance neutral |\n| `neutral-500` | `#808080` | 13 | **hairline** — next neutral near canvas, hairline-border weight |\n| `neutral-800` | `#414141` | 5 | — |\n| `neutral-900` | `#232323` | 13 | — |\n| `neutral-950` | `#161616` | 17 | **ink** — darkest neutral, highest contrast against canvas |\n\n### Accents\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `red` | `#e50914` | 13 | **accent** — most-used chromatic color |\n| `red-2` | `#eb3942` | 12 | **accent-2** — supporting chromatic color |\n| `green` | `#2bb871` | 12 | **accent-3** — supporting chromatic color |\n| `orange` | `#d89d31` | 12 | — |\n| `deep-blue` | `#050042` | 12 | — |\n| `red-3` | `#c11119` | 6 | — |\n| `red-4` | `#99161d` | 6 | — |\n| `blue` | `#465a7e` | 6 | — |\n| `deep-blue-2` | `#192247` | 5 | — |\n| `deep-red` | `#461518` | 2 | — |\n| `pink` | `#b82869` | 2 | — |\n| `red-5` | `#e00000` | 2 | — |\n\n## Typography\n\n**Netflix Sans** has the most `font-family` declarations, but the margin over the rest is thin — treat the primary-face call as provisional and verify on rendered pages. Full list by usage:\n\n| Family | Usage |\n| --- | --- |\n| Netflix Sans | 7 |\n| Netflix Sans Variable | 4 |\n| NKufi | 4 |\n| GraphikTH | 4 |\n| Netflix Sans Debug | 1 |\n| Netflix Sans JA | 1 |\n\n**Size scale (px):** `10`, `13`, `14`, `16`, `18`, `20`, `24`, `32`, `64`, `80`, `100`, `120`\n\n**Weights in use:** `100` (x6), `300` (x1), `400` (x15), `500` (x4), `700` (x4), `900` (x1)\n\n**Line-heights (unitless):** `1`, `1.5`\n\n## Spacing\n\nMost-used values (px): `2`, `4`, `7`, `12`, `16`, `22`, `24`, `32`, `36`, `40`, `80`, `96`\n\n## Border radius\n\n| Token | Value | Usage |\n| --- | --- | --- |\n| `radius-sm` | `0.125rem` | 16 |\n| `radius-md` | `0.5rem` | 8 |\n| `radius-lg` | `1rem` | 1 |\n\n## Shadows (ordered by blur radius)\n\n- `shadow-sm` — `0 0.25rem 0.5rem 0 rgba(0,0,0,0.8)` (x1)\n\n## Breakpoints\n\n`600px`, `960px`, `1280px`, `1600px`, `1920px`, `2560px`\n\n## Starter recipes\n\nTokens composed into components. The source site's real components were **not** inspected — these are starting points built from the extracted values, with contrast ratios computed rather than assumed.\n\n```css\n.button-primary {\n  background: var(--color-accent); /* #e50914 */\n  color: var(--color-canvas); /* #ffffff — contrast 4.8:1 */\n  border-radius: 0.125rem;\n  font-weight: 500;\n}\n\n.card {\n  background: var(--color-surface); /* #ececec */\n  border: 1px solid var(--color-hairline); /* #808080 */\n  border-radius: 0.125rem; /* most-used finite radius */\n  box-shadow: var(--shadow-sm);\n}\n\n.input {\n  background: var(--color-canvas); /* #ffffff */\n  color: var(--color-ink); /* #161616 — contrast 18.1:1 */\n  border: 1px solid var(--color-hairline); /* #808080 */\n  border-radius: 0.125rem;\n  /* placeholder color: var(--color-text-muted) #a9a9a9 */\n}\n\n.nav {\n  background: var(--color-canvas); /* #ffffff */\n  border-bottom: 1px solid var(--color-hairline); /* #808080 */\n  color: var(--color-ink); /* #161616 */\n  /* inactive links: var(--color-text-muted) #a9a9a9 */\n  /* active link: var(--color-accent) #e50914 — contrast vs canvas 4.8:1 */\n}\n\n.modal {\n  background: var(--color-surface); /* #ececec */\n  border-radius: 0.125rem;\n  box-shadow: var(--shadow-sm); /* largest mined shadow */\n}\n\n.modal-backdrop {\n  background: color-mix(in srgb, var(--color-ink) 55%, transparent); /* scrim from #161616 */\n}\n\n.input-error {\n  border-color: #e50914; /* mined token: red */\n  /* error text: #e50914 on canvas — contrast 4.8:1 */\n}\n\n.input-success {\n  border-color: #2bb871; /* mined token: green */\n}\n```\n\n## Observations\n\n- 7 of 19 extracted colors are neutrals.\n- 1 distinct shadow; the softest reaches 0px blur.\n- 6 breakpoints, from 600px to 2560px.\n\n## Files\n\n- `tailwind.css` — Tailwind v4 `@theme` block; tokens become utilities (e.g. `bg-neutral-900`, `text-red`).\n- `variables.css` — framework-agnostic `:root` variables, same values.\n- `tokens.json` — W3C Design Tokens format for Figma plugins, Style Dictionary, etc.\n",
+  "tailwind.css": "@import \"tailwindcss\";\n\n@theme {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-100: #ececec;\n  --color-neutral-400: #a9a9a9;\n  --color-neutral-500: #808080;\n  --color-neutral-800: #414141;\n  --color-neutral-900: #232323;\n  --color-neutral-950: #161616;\n  --color-red: #e50914;\n  --color-red-2: #eb3942;\n  --color-green: #2bb871;\n  --color-orange: #d89d31;\n  --color-deep-blue: #050042;\n  --color-red-3: #c11119;\n  --color-red-4: #99161d;\n  --color-blue: #465a7e;\n  --color-deep-blue-2: #192247;\n  --color-deep-red: #461518;\n  --color-pink: #b82869;\n  --color-red-5: #e00000;\n\n  /* inferred semantic roles (each maps to a distinct mined value) */\n  --color-canvas: #ffffff;\n  --color-ink: #161616;\n  --color-text-muted: #a9a9a9;\n  --color-surface: #ececec;\n  --color-hairline: #808080;\n  --color-accent: #e50914;\n  --color-accent-2: #eb3942;\n  --color-accent-3: #2bb871;\n\n  --font-sans: \"Netflix Sans\", ui-sans-serif, system-ui, sans-serif;\n\n  --text-xs: 0.625rem;\n  --text-sm: 0.8125rem;\n  --text-base: 0.875rem;\n  --text-lg: 1rem;\n  --text-xl: 1.125rem;\n  --text-2xl: 1.25rem;\n  --text-3xl: 1.5rem;\n  --text-4xl: 2rem;\n  --text-5xl: 4rem;\n  --text-6xl: 5rem;\n  --text-7xl: 6.25rem;\n  --text-8xl: 7.5rem;\n\n  --font-weight-thin: 100;\n  --font-weight-light: 300;\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-bold: 700;\n  --font-weight-black: 900;\n\n  /* line-heights, sorted tight -> loose */\n  --leading-none: 1;\n  --leading-tight: 1.5;\n\n  --radius-sm: 0.125rem;\n  --radius-md: 0.5rem;\n  --radius-lg: 1rem;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 0.25rem 0.5rem 0 rgba(0,0,0,0.8);\n\n  --breakpoint-sm: 37.5rem;\n  --breakpoint-md: 60rem;\n  --breakpoint-lg: 80rem;\n  --breakpoint-xl: 100rem;\n  --breakpoint-2xl: 120rem;\n  --breakpoint-3xl: 160rem;\n\n  /* most-used spacing values on the source site (px): 2, 4, 7, 12, 16, 22, 24, 32, 36, 40, 80, 96 */\n}\n",
+  "variables.css": ":root {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-100: #ececec;\n  --color-neutral-400: #a9a9a9;\n  --color-neutral-500: #808080;\n  --color-neutral-800: #414141;\n  --color-neutral-900: #232323;\n  --color-neutral-950: #161616;\n  --color-red: #e50914;\n  --color-red-2: #eb3942;\n  --color-green: #2bb871;\n  --color-orange: #d89d31;\n  --color-deep-blue: #050042;\n  --color-red-3: #c11119;\n  --color-red-4: #99161d;\n  --color-blue: #465a7e;\n  --color-deep-blue-2: #192247;\n  --color-deep-red: #461518;\n  --color-pink: #b82869;\n  --color-red-5: #e00000;\n\n  /* inferred semantic roles */\n  --color-canvas: #ffffff;\n  --color-ink: #161616;\n  --color-text-muted: #a9a9a9;\n  --color-surface: #ececec;\n  --color-hairline: #808080;\n  --color-accent: #e50914;\n  --color-accent-2: #eb3942;\n  --color-accent-3: #2bb871;\n\n  /* typography */\n  --font-netflix-sans: \"Netflix Sans\";\n  --font-netflix-sans-variable: \"Netflix Sans Variable\";\n  --font-nkufi: \"NKufi\";\n  --font-graphikth: \"GraphikTH\";\n  --font-netflix-sans-debug: \"Netflix Sans Debug\";\n  --font-netflix-sans-ja: \"Netflix Sans JA\";\n\n  /* type scale, ascending */\n  --text-1: 0.625rem;\n  --text-2: 0.8125rem;\n  --text-3: 0.875rem;\n  --text-4: 1rem;\n  --text-5: 1.125rem;\n  --text-6: 1.25rem;\n  --text-7: 1.5rem;\n  --text-8: 2rem;\n  --text-9: 4rem;\n  --text-10: 5rem;\n  --text-11: 6.25rem;\n  --text-12: 7.5rem;\n\n  /* font weights in use */\n  --font-weight-thin: 100;\n  --font-weight-light: 300;\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-bold: 700;\n  --font-weight-black: 900;\n\n  /* line-heights, tight -> loose */\n  --leading-1: 1;\n  --leading-2: 1.5;\n\n  /* spacing, ascending */\n  --space-1: 2px;\n  --space-2: 4px;\n  --space-3: 7px;\n  --space-4: 12px;\n  --space-5: 16px;\n  --space-6: 22px;\n  --space-7: 24px;\n  --space-8: 32px;\n  --space-9: 36px;\n  --space-10: 40px;\n  --space-11: 80px;\n  --space-12: 96px;\n\n  /* radius, ascending */\n  --radius-sm: 0.125rem;\n  --radius-md: 0.5rem;\n  --radius-lg: 1rem;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 0.25rem 0.5rem 0 rgba(0,0,0,0.8);\n}\n",
+  "tokens.json": "{\n  \"$description\": \"Design tokens extracted from https://www.netflix.com/. Semantic entries are inferred from usage + luminance; all values are mined from live CSS.\",\n  \"color\": {\n    \"neutral-50\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\"\n    },\n    \"neutral-100\": {\n      \"$value\": \"#ececec\",\n      \"$type\": \"color\"\n    },\n    \"neutral-400\": {\n      \"$value\": \"#a9a9a9\",\n      \"$type\": \"color\"\n    },\n    \"neutral-500\": {\n      \"$value\": \"#808080\",\n      \"$type\": \"color\"\n    },\n    \"neutral-800\": {\n      \"$value\": \"#414141\",\n      \"$type\": \"color\"\n    },\n    \"neutral-900\": {\n      \"$value\": \"#232323\",\n      \"$type\": \"color\"\n    },\n    \"neutral-950\": {\n      \"$value\": \"#161616\",\n      \"$type\": \"color\"\n    },\n    \"red\": {\n      \"$value\": \"#e50914\",\n      \"$type\": \"color\"\n    },\n    \"red-2\": {\n      \"$value\": \"#eb3942\",\n      \"$type\": \"color\"\n    },\n    \"green\": {\n      \"$value\": \"#2bb871\",\n      \"$type\": \"color\"\n    },\n    \"orange\": {\n      \"$value\": \"#d89d31\",\n      \"$type\": \"color\"\n    },\n    \"deep-blue\": {\n      \"$value\": \"#050042\",\n      \"$type\": \"color\"\n    },\n    \"red-3\": {\n      \"$value\": \"#c11119\",\n      \"$type\": \"color\"\n    },\n    \"red-4\": {\n      \"$value\": \"#99161d\",\n      \"$type\": \"color\"\n    },\n    \"blue\": {\n      \"$value\": \"#465a7e\",\n      \"$type\": \"color\"\n    },\n    \"deep-blue-2\": {\n      \"$value\": \"#192247\",\n      \"$type\": \"color\"\n    },\n    \"deep-red\": {\n      \"$value\": \"#461518\",\n      \"$type\": \"color\"\n    },\n    \"pink\": {\n      \"$value\": \"#b82869\",\n      \"$type\": \"color\"\n    },\n    \"red-5\": {\n      \"$value\": \"#e00000\",\n      \"$type\": \"color\"\n    }\n  },\n  \"semantic\": {\n    \"canvas\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: lightest neutral, matches the measured light-leaning theme\"\n    },\n    \"ink\": {\n      \"$value\": \"#161616\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: darkest neutral, highest contrast against canvas\"\n    },\n    \"text-muted\": {\n      \"$value\": \"#a9a9a9\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used mid-luminance neutral\"\n    },\n    \"surface\": {\n      \"$value\": \"#ececec\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: neutral closest to canvas luminance\"\n    },\n    \"hairline\": {\n      \"$value\": \"#808080\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: next neutral near canvas, hairline-border weight\"\n    },\n    \"accent\": {\n      \"$value\": \"#e50914\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used chromatic color\"\n    },\n    \"accent-2\": {\n      \"$value\": \"#eb3942\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    },\n    \"accent-3\": {\n      \"$value\": \"#2bb871\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    }\n  },\n  \"fontFamily\": {\n    \"netflix-sans\": {\n      \"$value\": \"Netflix Sans\",\n      \"$type\": \"fontFamily\"\n    },\n    \"netflix-sans-variable\": {\n      \"$value\": \"Netflix Sans Variable\",\n      \"$type\": \"fontFamily\"\n    },\n    \"nkufi\": {\n      \"$value\": \"NKufi\",\n      \"$type\": \"fontFamily\"\n    },\n    \"graphikth\": {\n      \"$value\": \"GraphikTH\",\n      \"$type\": \"fontFamily\"\n    },\n    \"netflix-sans-debug\": {\n      \"$value\": \"Netflix Sans Debug\",\n      \"$type\": \"fontFamily\"\n    },\n    \"netflix-sans-ja\": {\n      \"$value\": \"Netflix Sans JA\",\n      \"$type\": \"fontFamily\"\n    }\n  },\n  \"fontSize\": {\n    \"size-1\": {\n      \"$value\": \"0.625rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-2\": {\n      \"$value\": \"0.8125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-3\": {\n      \"$value\": \"0.875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-4\": {\n      \"$value\": \"1rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-5\": {\n      \"$value\": \"1.125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-6\": {\n      \"$value\": \"1.25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-7\": {\n      \"$value\": \"1.5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-8\": {\n      \"$value\": \"2rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-9\": {\n      \"$value\": \"4rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-10\": {\n      \"$value\": \"5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-11\": {\n      \"$value\": \"6.25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-12\": {\n      \"$value\": \"7.5rem\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"fontWeight\": {\n    \"thin\": {\n      \"$value\": 100,\n      \"$type\": \"fontWeight\"\n    },\n    \"light\": {\n      \"$value\": 300,\n      \"$type\": \"fontWeight\"\n    },\n    \"normal\": {\n      \"$value\": 400,\n      \"$type\": \"fontWeight\"\n    },\n    \"medium\": {\n      \"$value\": 500,\n      \"$type\": \"fontWeight\"\n    },\n    \"bold\": {\n      \"$value\": 700,\n      \"$type\": \"fontWeight\"\n    },\n    \"black\": {\n      \"$value\": 900,\n      \"$type\": \"fontWeight\"\n    }\n  },\n  \"lineHeight\": {\n    \"leading-1\": {\n      \"$value\": 1,\n      \"$type\": \"number\"\n    },\n    \"leading-2\": {\n      \"$value\": 1.5,\n      \"$type\": \"number\"\n    }\n  },\n  \"dimension\": {\n    \"space-1\": {\n      \"$value\": \"2px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-2\": {\n      \"$value\": \"4px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-3\": {\n      \"$value\": \"7px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-4\": {\n      \"$value\": \"12px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-5\": {\n      \"$value\": \"16px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-6\": {\n      \"$value\": \"22px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-7\": {\n      \"$value\": \"24px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-8\": {\n      \"$value\": \"32px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-9\": {\n      \"$value\": \"36px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-10\": {\n      \"$value\": \"40px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-11\": {\n      \"$value\": \"80px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-12\": {\n      \"$value\": \"96px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"borderRadius\": {\n    \"sm\": {\n      \"$value\": \"0.125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"md\": {\n      \"$value\": \"0.5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"lg\": {\n      \"$value\": \"1rem\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"shadow\": {\n    \"sm\": {\n      \"$value\": \"0 0.25rem 0.5rem 0 rgba(0,0,0,0.8)\",\n      \"$type\": \"shadow\"\n    }\n  }\n}"
+ },
+ "raw": {
+  "tokens": {
+   "title": "Netflix Bulgaria - Watch TV Shows Online, Watch Movies Online",
+   "description": "",
+   "themeGuess": "light-leaning",
+   "darkWeight": 116,
+   "lightWeight": 104,
+   "neutrals": [
+    {
+     "hex": "#ffffff",
+     "count": 100
+    },
+    {
+     "hex": "#ececec",
+     "count": 4
+    },
+    {
+     "hex": "#a9a9a9",
+     "count": 34
+    },
+    {
+     "hex": "#808080",
+     "count": 13
+    },
+    {
+     "hex": "#414141",
+     "count": 5
+    },
+    {
+     "hex": "#232323",
+     "count": 13
+    },
+    {
+     "hex": "#161616",
+     "count": 17
+    },
+    {
+     "hex": "#000000",
+     "count": 81
+    }
+   ],
+   "accents": [
+    {
+     "hex": "#e50914",
+     "count": 13
+    },
+    {
+     "hex": "#eb3942",
+     "count": 12
+    },
+    {
+     "hex": "#2bb871",
+     "count": 12
+    },
+    {
+     "hex": "#d89d31",
+     "count": 12
+    },
+    {
+     "hex": "#050042",
+     "count": 12
+    },
+    {
+     "hex": "#c11119",
+     "count": 6
+    },
+    {
+     "hex": "#99161d",
+     "count": 6
+    },
+    {
+     "hex": "#465a7e",
+     "count": 6
+    },
+    {
+     "hex": "#192247",
+     "count": 5
+    },
+    {
+     "hex": "#461518",
+     "count": 2
+    },
+    {
+     "hex": "#b82869",
+     "count": 2
+    },
+    {
+     "hex": "#e00000",
+     "count": 2
+    }
+   ],
+   "modern": [],
+   "fonts": [
+    {
+     "name": "Netflix Sans",
+     "count": 7
+    },
+    {
+     "name": "Netflix Sans Variable",
+     "count": 4
+    },
+    {
+     "name": "NKufi",
+     "count": 4
+    },
+    {
+     "name": "GraphikTH",
+     "count": 4
+    },
+    {
+     "name": "Netflix Sans Debug",
+     "count": 1
+    },
+    {
+     "name": "Netflix Sans JA",
+     "count": 1
+    }
+   ],
+   "fontSizes": [
+    10,
+    13,
+    14,
+    16,
+    18,
+    20,
+    24,
+    32,
+    64,
+    80,
+    100,
+    120
+   ],
+   "fontWeights": [
+    {
+     "value": 100,
+     "count": 6
+    },
+    {
+     "value": 300,
+     "count": 1
+    },
+    {
+     "value": 400,
+     "count": 15
+    },
+    {
+     "value": 500,
+     "count": 4
+    },
+    {
+     "value": 700,
+     "count": 4
+    },
+    {
+     "value": 900,
+     "count": 1
+    }
+   ],
+   "lineHeights": [
+    1,
+    1.5
+   ],
+   "letterSpacings": [],
+   "spacing": [
+    2,
+    4,
+    7,
+    12,
+    16,
+    22,
+    24,
+    32,
+    36,
+    40,
+    80,
+    96
+   ],
+   "radii": [
+    {
+     "value": "0.125rem",
+     "count": 16
+    },
+    {
+     "value": "0.5rem",
+     "count": 8
+    },
+    {
+     "value": "1rem",
+     "count": 1
+    }
+   ],
+   "shadows": [
+    {
+     "value": "0 0.25rem 0.5rem 0 rgba(0,0,0,0.8)",
+     "count": 1,
+     "blur": 0
+    }
+   ],
+   "breakpoints": [
+    600,
+    960,
+    1280,
+    1600,
+    1920,
+    2560
+   ],
+   "nativeVars": [],
+   "darkVars": [],
+   "rings": []
+  },
+  "stylesheets": 1
+ }
+}

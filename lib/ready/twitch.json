@@ -1,0 +1,356 @@
+{
+ "slug": "twitch",
+ "name": "Twitch",
+ "blurb": "Live streaming. Full-commit purple, dark viewer chrome, thumbnail-dense grids.",
+ "url": "https://www.twitch.tv/",
+ "title": "Twitch",
+ "extractedAt": "2026-07-03",
+ "summary": {
+  "colors": [
+   {
+    "name": "neutral-50",
+    "hex": "#ffffff",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-100",
+    "hex": "#efeff1",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-200",
+    "hex": "#d9d8dd",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-300",
+    "hex": "#c8c8d0",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-400",
+    "hex": "#b7b2a7",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-500",
+    "hex": "#adadb8",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-600",
+    "hex": "#848494",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-700",
+    "hex": "#808080",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-800",
+    "hex": "#53535f",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-900",
+    "hex": "#26262c",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-950",
+    "hex": "#0e0e10",
+    "group": "neutral"
+   },
+   {
+    "name": "indigo",
+    "hex": "#9147ff",
+    "group": "accent"
+   },
+   {
+    "name": "indigo-2",
+    "hex": "#772ce8",
+    "group": "accent"
+   },
+   {
+    "name": "indigo-3",
+    "hex": "#5c16c5",
+    "group": "accent"
+   },
+   {
+    "name": "indigo-4",
+    "hex": "#a970ff",
+    "group": "accent"
+   },
+   {
+    "name": "indigo-5",
+    "hex": "#bf94ff",
+    "group": "accent"
+   },
+   {
+    "name": "blue",
+    "hex": "#1e69ff",
+    "group": "accent"
+   },
+   {
+    "name": "purple",
+    "hex": "#8205b4",
+    "group": "accent"
+   },
+   {
+    "name": "yellow",
+    "hex": "#e2be53",
+    "group": "accent"
+   },
+   {
+    "name": "blue-2",
+    "hex": "#3b5998",
+    "group": "accent"
+   },
+   {
+    "name": "purple-2",
+    "hex": "#f093f9",
+    "group": "accent"
+   },
+   {
+    "name": "yellow-2",
+    "hex": "#976700",
+    "group": "accent"
+   },
+   {
+    "name": "yellow-3",
+    "hex": "#fafa19",
+    "group": "accent"
+   }
+  ],
+  "fonts": [
+   "Inter",
+   "Roobert",
+   "Noto Sans Arabic",
+   "Tajawal"
+  ],
+  "themeGuess": "light-leaning",
+  "stylesheets": 1,
+  "nativeVarCount": 1
+ },
+ "files": {
+  "DESIGN.md": "---\nname: twitch-tv-design-system\nsource: https://www.twitch.tv/\nextracted: 2026-07-03\ntheme: light  # measured from neutral usage weight\ncolors:  # roles inferred from usage frequency + luminance; names verified against values\n  canvas: \"#ffffff\"\n  ink: \"#0e0e10\"\n  text-muted: \"#adadb8\"\n  surface: \"#efeff1\"\n  hairline: \"#d9d8dd\"\n  accent: \"#9147ff\"  # indigo\n  accent-2: \"#772ce8\"  # indigo\n  accent-3: \"#5c16c5\"  # indigo\nfonts:\n  primary: \"Inter\"\n---\n\n# Twitch — Design System\n\nExtracted from **https://www.twitch.tv/** on 2026-07-03.\n\n> Twitch is an interactive livestreaming service for content spanning gaming, entertainment, sports, music, and more.\n\nEvery value below is mined from the site's live CSS (1 native custom properties, ranked usage counts). Role assignments are inferred from usage and luminance and marked as such — treat them as a strong starting point, not gospel.\n\n## Overview\n\nThe system reads as light: measured neutral usage weighs 43 light against 59 dark. The palette is chromatic: 12 saturated values against 11 neutrals, led by indigo (`#9147ff`). **Inter** carries the interface. Geometry mixes sharp corners (2px) with full pills.\n\n## Usage rules\n\nDerived from the measured usage below — each rule cites its evidence.\n\n- Chromatic color carries 51% of measured usage — this palette uses color structurally. Saturated values can hold large surfaces here; timidity would misrepresent the source.\n- The theme is light (measured neutral weight 43:59). Don't flip individual sections to the opposite mode.\n- `2px` is the workhorse radius (x5); treat the other radii as exceptions, not options.\n- Shadows stay tight (max 2px blur) — keep elevation subtle if you extend the scale.\n\n## Colors\n\n### Neutrals (light → dark)\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `neutral-50` | `#ffffff` | 29 | **canvas** — lightest neutral, matches the measured light-leaning theme |\n| `neutral-100` | `#efeff1` | 13 | **surface** — neutral closest to canvas luminance |\n| `neutral-200` | `#d9d8dd` | 1 | **hairline** — next neutral near canvas, hairline-border weight |\n| `neutral-300` | `#c8c8d0` | 1 | — |\n| `neutral-400` | `#b7b2a7` | 2 | — |\n| `neutral-500` | `#adadb8` | 4 | **text-muted** — most-used mid-luminance neutral |\n| `neutral-600` | `#848494` | 1 | — |\n| `neutral-700` | `#808080` | 3 | — |\n| `neutral-800` | `#53535f` | 2 | — |\n| `neutral-900` | `#26262c` | 2 | — |\n| `neutral-950` | `#0e0e10` | 23 | **ink** — darkest neutral, highest contrast against canvas |\n\n### Accents\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `indigo` | `#9147ff` | 17 | **accent** — most-used chromatic color |\n| `indigo-2` | `#772ce8` | 15 | **accent-2** — supporting chromatic color |\n| `indigo-3` | `#5c16c5` | 11 | **accent-3** — supporting chromatic color |\n| `indigo-4` | `#a970ff` | 8 | — |\n| `indigo-5` | `#bf94ff` | 6 | — |\n| `blue` | `#1e69ff` | 6 | — |\n| `purple` | `#8205b4` | 5 | — |\n| `yellow` | `#e2be53` | 5 | — |\n| `blue-2` | `#3b5998` | 4 | — |\n| `purple-2` | `#f093f9` | 3 | — |\n| `yellow-2` | `#976700` | 3 | — |\n| `yellow-3` | `#fafa19` | 3 | — |\n\n## Typography\n\n**Inter** is the primary interface face. Full list by usage:\n\n| Family | Usage |\n| --- | --- |\n| Inter | 21 |\n| Roobert | 6 |\n| Noto Sans Arabic | 3 |\n| Tajawal | 3 |\n\n**Size scale (px):** `16`, `18`, `19.2`, `25.6`\n\n**Weights in use:** `400` (x11), `500` (x2), `600` (x10), `700` (x12)\n\n**Line-heights (unitless):** `1.5`, `1.7`\n\n**Letter-spacing values:** `.1em`\n\n## Spacing\n\nMost-used values (px): `1`, `2`, `3`, `4`, `5`, `8`, `10`, `16`, `21`, `24`, `32`, `160`\n\n## Border radius\n\n| Token | Value | Usage |\n| --- | --- | --- |\n| `radius-sm` | `2px` | 5 |\n| `radius-md` | `5px` | 1 |\n| `radius-lg` | `.4rem` | 1 |\n| `radius-full` | `50%` | 4 |\n\n## Shadows (ordered by blur radius)\n\n- `shadow-sm` — `0 3px 10px -2px` (x1)\n\n## Breakpoints\n\n`767px`, `768px`, `919px`, `920px`, `1023px`\n\n## Starter recipes\n\nTokens composed into components. The source site's real components were **not** inspected — these are starting points built from the extracted values, with contrast ratios computed rather than assumed.\n\n```css\n.button-primary {\n  background: var(--color-accent); /* #9147ff */\n  color: var(--color-canvas); /* #ffffff — contrast 4.6:1 */\n  border-radius: 9999px; /* pill — mined as 50% */\n  font-weight: 500;\n}\n\n.card {\n  background: var(--color-surface); /* #efeff1 */\n  border: 1px solid var(--color-hairline); /* #d9d8dd */\n  border-radius: 2px; /* most-used finite radius */\n  box-shadow: var(--shadow-sm);\n}\n\n.input {\n  background: var(--color-canvas); /* #ffffff */\n  color: var(--color-ink); /* #0e0e10 — contrast 19.3:1 */\n  border: 1px solid var(--color-hairline); /* #d9d8dd */\n  border-radius: 2px;\n  /* placeholder color: var(--color-text-muted) #adadb8 */\n}\n\n.nav {\n  background: var(--color-canvas); /* #ffffff */\n  border-bottom: 1px solid var(--color-hairline); /* #d9d8dd */\n  color: var(--color-ink); /* #0e0e10 */\n  /* inactive links: var(--color-text-muted) #adadb8 */\n  /* active link: var(--color-accent) #9147ff — contrast vs canvas 4.6:1 */\n}\n\n.modal {\n  background: var(--color-surface); /* #efeff1 */\n  border-radius: 2px;\n  box-shadow: var(--shadow-sm); /* largest mined shadow */\n}\n\n.modal-backdrop {\n  background: color-mix(in srgb, var(--color-ink) 55%, transparent); /* scrim from #0e0e10 */\n}\n\n.input-error {\n  /* no red exists in the mined palette — this site does not expose an error color in its CSS. */\n  /* Introduce one deliberately rather than borrowing a random red; keep saturation near the accent's. */\n}\n```\n\n## Observations\n\n- 11 of 23 extracted colors are neutrals.\n- 1 distinct shadow; the softest reaches 2px blur.\n- 5 breakpoints, from 767px to 1023px.\n\n## Native CSS custom properties\n\nFirst 1 of 1:\n\n```css\n:root {\n  --writing-dir-flip: 1;\n}\n```\n\n## Files\n\n- `tailwind.css` — Tailwind v4 `@theme` block; tokens become utilities (e.g. `bg-neutral-900`, `text-indigo`).\n- `variables.css` — framework-agnostic `:root` variables, same values.\n- `tokens.json` — W3C Design Tokens format for Figma plugins, Style Dictionary, etc.\n",
+  "tailwind.css": "@import \"tailwindcss\";\n\n@theme {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-100: #efeff1;\n  --color-neutral-200: #d9d8dd;\n  --color-neutral-300: #c8c8d0;\n  --color-neutral-400: #b7b2a7;\n  --color-neutral-500: #adadb8;\n  --color-neutral-600: #848494;\n  --color-neutral-700: #808080;\n  --color-neutral-800: #53535f;\n  --color-neutral-900: #26262c;\n  --color-neutral-950: #0e0e10;\n  --color-indigo: #9147ff;\n  --color-indigo-2: #772ce8;\n  --color-indigo-3: #5c16c5;\n  --color-indigo-4: #a970ff;\n  --color-indigo-5: #bf94ff;\n  --color-blue: #1e69ff;\n  --color-purple: #8205b4;\n  --color-yellow: #e2be53;\n  --color-blue-2: #3b5998;\n  --color-purple-2: #f093f9;\n  --color-yellow-2: #976700;\n  --color-yellow-3: #fafa19;\n\n  /* inferred semantic roles (each maps to a distinct mined value) */\n  --color-canvas: #ffffff;\n  --color-ink: #0e0e10;\n  --color-text-muted: #adadb8;\n  --color-surface: #efeff1;\n  --color-hairline: #d9d8dd;\n  --color-accent: #9147ff;\n  --color-accent-2: #772ce8;\n  --color-accent-3: #5c16c5;\n\n  --font-sans: \"Inter\", ui-sans-serif, system-ui, sans-serif;\n\n  --text-xs: 1rem;\n  --text-sm: 1.125rem;\n  --text-base: 1.2rem;\n  --text-lg: 1.6rem;\n\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, sorted tight -> loose */\n  --leading-none: 1.5;\n  --leading-tight: 1.7;\n\n  /* letter-spacing, sorted tight -> wide */\n  --tracking-tightest: .1em;\n\n  --radius-sm: 2px;\n  --radius-md: 5px;\n  --radius-lg: .4rem;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 3px 10px -2px;\n\n  --breakpoint-sm: 47.9375rem;\n  --breakpoint-md: 48rem;\n  --breakpoint-lg: 57.4375rem;\n  --breakpoint-xl: 57.5rem;\n  --breakpoint-2xl: 63.9375rem;\n\n  /* most-used spacing values on the source site (px): 1, 2, 3, 4, 5, 8, 10, 16, 21, 24, 32, 160 */\n}\n",
+  "variables.css": ":root {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-100: #efeff1;\n  --color-neutral-200: #d9d8dd;\n  --color-neutral-300: #c8c8d0;\n  --color-neutral-400: #b7b2a7;\n  --color-neutral-500: #adadb8;\n  --color-neutral-600: #848494;\n  --color-neutral-700: #808080;\n  --color-neutral-800: #53535f;\n  --color-neutral-900: #26262c;\n  --color-neutral-950: #0e0e10;\n  --color-indigo: #9147ff;\n  --color-indigo-2: #772ce8;\n  --color-indigo-3: #5c16c5;\n  --color-indigo-4: #a970ff;\n  --color-indigo-5: #bf94ff;\n  --color-blue: #1e69ff;\n  --color-purple: #8205b4;\n  --color-yellow: #e2be53;\n  --color-blue-2: #3b5998;\n  --color-purple-2: #f093f9;\n  --color-yellow-2: #976700;\n  --color-yellow-3: #fafa19;\n\n  /* inferred semantic roles */\n  --color-canvas: #ffffff;\n  --color-ink: #0e0e10;\n  --color-text-muted: #adadb8;\n  --color-surface: #efeff1;\n  --color-hairline: #d9d8dd;\n  --color-accent: #9147ff;\n  --color-accent-2: #772ce8;\n  --color-accent-3: #5c16c5;\n\n  /* typography */\n  --font-inter: \"Inter\";\n  --font-roobert: \"Roobert\";\n  --font-noto-sans-arabic: \"Noto Sans Arabic\";\n  --font-tajawal: \"Tajawal\";\n\n  /* type scale, ascending */\n  --text-1: 1rem;\n  --text-2: 1.125rem;\n  --text-3: 1.2rem;\n  --text-4: 1.6rem;\n\n  /* font weights in use */\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, tight -> loose */\n  --leading-1: 1.5;\n  --leading-2: 1.7;\n\n  /* letter-spacing, tight -> wide */\n  --tracking-1: .1em;\n\n  /* spacing, ascending */\n  --space-1: 1px;\n  --space-2: 2px;\n  --space-3: 3px;\n  --space-4: 4px;\n  --space-5: 5px;\n  --space-6: 8px;\n  --space-7: 10px;\n  --space-8: 16px;\n  --space-9: 21px;\n  --space-10: 24px;\n  --space-11: 32px;\n  --space-12: 160px;\n\n  /* radius, ascending */\n  --radius-sm: 2px;\n  --radius-md: 5px;\n  --radius-lg: .4rem;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 3px 10px -2px;\n}\n",
+  "tokens.json": "{\n  \"$description\": \"Design tokens extracted from https://www.twitch.tv/. Semantic entries are inferred from usage + luminance; all values are mined from live CSS.\",\n  \"color\": {\n    \"neutral-50\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\"\n    },\n    \"neutral-100\": {\n      \"$value\": \"#efeff1\",\n      \"$type\": \"color\"\n    },\n    \"neutral-200\": {\n      \"$value\": \"#d9d8dd\",\n      \"$type\": \"color\"\n    },\n    \"neutral-300\": {\n      \"$value\": \"#c8c8d0\",\n      \"$type\": \"color\"\n    },\n    \"neutral-400\": {\n      \"$value\": \"#b7b2a7\",\n      \"$type\": \"color\"\n    },\n    \"neutral-500\": {\n      \"$value\": \"#adadb8\",\n      \"$type\": \"color\"\n    },\n    \"neutral-600\": {\n      \"$value\": \"#848494\",\n      \"$type\": \"color\"\n    },\n    \"neutral-700\": {\n      \"$value\": \"#808080\",\n      \"$type\": \"color\"\n    },\n    \"neutral-800\": {\n      \"$value\": \"#53535f\",\n      \"$type\": \"color\"\n    },\n    \"neutral-900\": {\n      \"$value\": \"#26262c\",\n      \"$type\": \"color\"\n    },\n    \"neutral-950\": {\n      \"$value\": \"#0e0e10\",\n      \"$type\": \"color\"\n    },\n    \"indigo\": {\n      \"$value\": \"#9147ff\",\n      \"$type\": \"color\"\n    },\n    \"indigo-2\": {\n      \"$value\": \"#772ce8\",\n      \"$type\": \"color\"\n    },\n    \"indigo-3\": {\n      \"$value\": \"#5c16c5\",\n      \"$type\": \"color\"\n    },\n    \"indigo-4\": {\n      \"$value\": \"#a970ff\",\n      \"$type\": \"color\"\n    },\n    \"indigo-5\": {\n      \"$value\": \"#bf94ff\",\n      \"$type\": \"color\"\n    },\n    \"blue\": {\n      \"$value\": \"#1e69ff\",\n      \"$type\": \"color\"\n    },\n    \"purple\": {\n      \"$value\": \"#8205b4\",\n      \"$type\": \"color\"\n    },\n    \"yellow\": {\n      \"$value\": \"#e2be53\",\n      \"$type\": \"color\"\n    },\n    \"blue-2\": {\n      \"$value\": \"#3b5998\",\n      \"$type\": \"color\"\n    },\n    \"purple-2\": {\n      \"$value\": \"#f093f9\",\n      \"$type\": \"color\"\n    },\n    \"yellow-2\": {\n      \"$value\": \"#976700\",\n      \"$type\": \"color\"\n    },\n    \"yellow-3\": {\n      \"$value\": \"#fafa19\",\n      \"$type\": \"color\"\n    }\n  },\n  \"semantic\": {\n    \"canvas\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: lightest neutral, matches the measured light-leaning theme\"\n    },\n    \"ink\": {\n      \"$value\": \"#0e0e10\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: darkest neutral, highest contrast against canvas\"\n    },\n    \"text-muted\": {\n      \"$value\": \"#adadb8\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used mid-luminance neutral\"\n    },\n    \"surface\": {\n      \"$value\": \"#efeff1\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: neutral closest to canvas luminance\"\n    },\n    \"hairline\": {\n      \"$value\": \"#d9d8dd\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: next neutral near canvas, hairline-border weight\"\n    },\n    \"accent\": {\n      \"$value\": \"#9147ff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used chromatic color\"\n    },\n    \"accent-2\": {\n      \"$value\": \"#772ce8\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    },\n    \"accent-3\": {\n      \"$value\": \"#5c16c5\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    }\n  },\n  \"fontFamily\": {\n    \"inter\": {\n      \"$value\": \"Inter\",\n      \"$type\": \"fontFamily\"\n    },\n    \"roobert\": {\n      \"$value\": \"Roobert\",\n      \"$type\": \"fontFamily\"\n    },\n    \"noto-sans-arabic\": {\n      \"$value\": \"Noto Sans Arabic\",\n      \"$type\": \"fontFamily\"\n    },\n    \"tajawal\": {\n      \"$value\": \"Tajawal\",\n      \"$type\": \"fontFamily\"\n    }\n  },\n  \"fontSize\": {\n    \"size-1\": {\n      \"$value\": \"1rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-2\": {\n      \"$value\": \"1.125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-3\": {\n      \"$value\": \"1.2rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-4\": {\n      \"$value\": \"1.6rem\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"fontWeight\": {\n    \"normal\": {\n      \"$value\": 400,\n      \"$type\": \"fontWeight\"\n    },\n    \"medium\": {\n      \"$value\": 500,\n      \"$type\": \"fontWeight\"\n    },\n    \"semibold\": {\n      \"$value\": 600,\n      \"$type\": \"fontWeight\"\n    },\n    \"bold\": {\n      \"$value\": 700,\n      \"$type\": \"fontWeight\"\n    }\n  },\n  \"lineHeight\": {\n    \"leading-1\": {\n      \"$value\": 1.5,\n      \"$type\": \"number\"\n    },\n    \"leading-2\": {\n      \"$value\": 1.7,\n      \"$type\": \"number\"\n    }\n  },\n  \"letterSpacing\": {\n    \"tracking-1\": {\n      \"$value\": \".1em\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"dimension\": {\n    \"space-1\": {\n      \"$value\": \"1px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-2\": {\n      \"$value\": \"2px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-3\": {\n      \"$value\": \"3px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-4\": {\n      \"$value\": \"4px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-5\": {\n      \"$value\": \"5px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-6\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-7\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-8\": {\n      \"$value\": \"16px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-9\": {\n      \"$value\": \"21px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-10\": {\n      \"$value\": \"24px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-11\": {\n      \"$value\": \"32px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-12\": {\n      \"$value\": \"160px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"borderRadius\": {\n    \"sm\": {\n      \"$value\": \"2px\",\n      \"$type\": \"dimension\"\n    },\n    \"md\": {\n      \"$value\": \"5px\",\n      \"$type\": \"dimension\"\n    },\n    \"lg\": {\n      \"$value\": \".4rem\",\n      \"$type\": \"dimension\"\n    },\n    \"full\": {\n      \"$value\": \"50%\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"shadow\": {\n    \"sm\": {\n      \"$value\": \"0 3px 10px -2px\",\n      \"$type\": \"shadow\"\n    }\n  }\n}"
+ },
+ "raw": {
+  "tokens": {
+   "title": "Twitch",
+   "description": "Twitch is an interactive livestreaming service for content spanning gaming, entertainment, sports, music, and more.",
+   "themeGuess": "light-leaning",
+   "darkWeight": 59,
+   "lightWeight": 43,
+   "neutrals": [
+    {
+     "hex": "#ffffff",
+     "count": 29
+    },
+    {
+     "hex": "#efeff1",
+     "count": 13
+    },
+    {
+     "hex": "#d9d8dd",
+     "count": 1
+    },
+    {
+     "hex": "#c8c8d0",
+     "count": 1
+    },
+    {
+     "hex": "#b7b2a7",
+     "count": 2
+    },
+    {
+     "hex": "#adadb8",
+     "count": 4
+    },
+    {
+     "hex": "#848494",
+     "count": 1
+    },
+    {
+     "hex": "#808080",
+     "count": 3
+    },
+    {
+     "hex": "#53535f",
+     "count": 2
+    },
+    {
+     "hex": "#26262c",
+     "count": 2
+    },
+    {
+     "hex": "#0e0e10",
+     "count": 23
+    },
+    {
+     "hex": "#000000",
+     "count": 32
+    }
+   ],
+   "accents": [
+    {
+     "hex": "#9147ff",
+     "count": 17
+    },
+    {
+     "hex": "#772ce8",
+     "count": 15
+    },
+    {
+     "hex": "#5c16c5",
+     "count": 11
+    },
+    {
+     "hex": "#a970ff",
+     "count": 8
+    },
+    {
+     "hex": "#bf94ff",
+     "count": 6
+    },
+    {
+     "hex": "#1e69ff",
+     "count": 6
+    },
+    {
+     "hex": "#8205b4",
+     "count": 5
+    },
+    {
+     "hex": "#e2be53",
+     "count": 5
+    },
+    {
+     "hex": "#3b5998",
+     "count": 4
+    },
+    {
+     "hex": "#f093f9",
+     "count": 3
+    },
+    {
+     "hex": "#976700",
+     "count": 3
+    },
+    {
+     "hex": "#fafa19",
+     "count": 3
+    }
+   ],
+   "modern": [],
+   "fonts": [
+    {
+     "name": "Inter",
+     "count": 21
+    },
+    {
+     "name": "Roobert",
+     "count": 6
+    },
+    {
+     "name": "Noto Sans Arabic",
+     "count": 3
+    },
+    {
+     "name": "Tajawal",
+     "count": 3
+    }
+   ],
+   "fontSizes": [
+    16,
+    18,
+    19.2,
+    25.6
+   ],
+   "fontWeights": [
+    {
+     "value": 400,
+     "count": 11
+    },
+    {
+     "value": 500,
+     "count": 2
+    },
+    {
+     "value": 600,
+     "count": 10
+    },
+    {
+     "value": 700,
+     "count": 12
+    }
+   ],
+   "lineHeights": [
+    1.5,
+    1.7
+   ],
+   "letterSpacings": [
+    ".1em"
+   ],
+   "spacing": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    10,
+    16,
+    21,
+    24,
+    32,
+    160
+   ],
+   "radii": [
+    {
+     "value": "2px",
+     "count": 5
+    },
+    {
+     "value": ".4rem",
+     "count": 1
+    },
+    {
+     "value": "5px",
+     "count": 1
+    },
+    {
+     "value": "50%",
+     "count": 4
+    }
+   ],
+   "shadows": [
+    {
+     "value": "0 3px 10px -2px",
+     "count": 1,
+     "blur": 2
+    }
+   ],
+   "breakpoints": [
+    767,
+    768,
+    919,
+    920,
+    1023
+   ],
+   "nativeVars": [
+    {
+     "name": "writing-dir-flip",
+     "value": "1"
+    }
+   ],
+   "darkVars": [],
+   "rings": []
+  },
+  "stylesheets": 1
+ }
+}

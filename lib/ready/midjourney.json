@@ -1,0 +1,1060 @@
+{
+ "slug": "midjourney",
+ "name": "Midjourney",
+ "blurb": "Image generation. Near-black gallery walls that let renders carry all color.",
+ "url": "https://www.midjourney.com/",
+ "title": "Midjourney",
+ "extractedAt": "2026-07-03",
+ "summary": {
+  "colors": [
+   {
+    "name": "neutral-100",
+    "hex": "#efefef",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-200",
+    "hex": "#dddddd",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-300",
+    "hex": "#cfcfcf",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-400",
+    "hex": "#bfbfbf",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-500",
+    "hex": "#abafba",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-600",
+    "hex": "#8f94a3",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-700",
+    "hex": "#73798c",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-800",
+    "hex": "#5c6170",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-900",
+    "hex": "#454954",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-950",
+    "hex": "#292c32",
+    "group": "neutral"
+   },
+   {
+    "name": "deep-blue",
+    "hex": "#0d0e11",
+    "group": "accent"
+   },
+   {
+    "name": "pale-blue",
+    "hex": "#fcfcfd",
+    "group": "accent"
+   },
+   {
+    "name": "blue",
+    "hex": "#8b7cff",
+    "group": "accent"
+   },
+   {
+    "name": "yellow",
+    "hex": "#d29922",
+    "group": "accent"
+   },
+   {
+    "name": "deep-blue-2",
+    "hex": "#061434",
+    "group": "accent"
+   },
+   {
+    "name": "blue-2",
+    "hex": "#5865f2",
+    "group": "accent"
+   },
+   {
+    "name": "deep-purple",
+    "hex": "#2d0e36",
+    "group": "accent"
+   },
+   {
+    "name": "deep-blue-3",
+    "hex": "#060522",
+    "group": "accent"
+   },
+   {
+    "name": "red",
+    "hex": "#f2330d",
+    "group": "accent"
+   },
+   {
+    "name": "blue-3",
+    "hex": "#314062",
+    "group": "accent"
+   },
+   {
+    "name": "cyan",
+    "hex": "#8fc5ff",
+    "group": "accent"
+   },
+   {
+    "name": "blue-4",
+    "hex": "#434e6f",
+    "group": "accent"
+   }
+  ],
+  "fonts": [
+   "JetBrains Mono",
+   "DM Sans"
+  ],
+  "themeGuess": "dark-leaning",
+  "stylesheets": 2,
+  "nativeVarCount": 120
+ },
+ "files": {
+  "DESIGN.md": "---\nname: midjourney-com-design-system\nsource: https://www.midjourney.com/\nextracted: 2026-07-03\ntheme: dark  # measured from neutral usage weight\ncolors:  # roles inferred from usage frequency + luminance; names verified against values\n  canvas: \"#292c32\"\n  ink: \"#efefef\"\n  text-muted: \"#bfbfbf\"\n  surface: \"#454954\"\n  hairline: \"#5c6170\"\n  accent: \"#0d0e11\"  # deep-blue\n  accent-2: \"#fcfcfd\"  # pale-blue\n  accent-3: \"#8b7cff\"  # blue\nfonts:\n  primary: \"DM Sans\"\n  mono: \"JetBrains Mono\"\n---\n\n# Midjourney — Design System\n\nExtracted from **https://www.midjourney.com/** on 2026-07-03.\n\n> An independent research lab exploring new mediums of thought and expanding the imaginative powers of the human species.\n\nEvery value below is mined from the site's live CSS (120 native custom properties, ranked usage counts). Role assignments are inferred from usage and luminance and marked as such — treat them as a strong starting point, not gospel.\n\n## Overview\n\nThe system reads as dark: measured neutral usage weighs 60 dark against 32 light. The palette is chromatic: 12 saturated values against 10 neutrals, led by deep-blue (`#0d0e11`). **DM Sans** carries the interface; **JetBrains Mono** handles code and data. Corner radii run .3125rem to 26px.\n\n## Usage rules\n\nDerived from the measured usage below — each rule cites its evidence.\n\n- Chromatic color carries 77% of measured usage — this palette uses color structurally. Saturated values can hold large surfaces here; timidity would misrepresent the source.\n- The theme is dark (measured neutral weight 60:32). Don't flip individual sections to the opposite mode.\n- `.3125rem` is the workhorse radius (x7); treat the other radii as exceptions, not options.\n- The only shadows are blur-less hairline offsets — this system barely uses elevation; don't add soft drop shadows.\n- One family does the work — build hierarchy with size and weight (400/500/600/700/800/900), not by adding typefaces.\n- `JetBrains Mono` is the monospace — keep it for code, data, and metadata roles.\n\n## Colors\n\n### Neutrals (light → dark)\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `neutral-100` | `#efefef` | 17 | **ink** — lightest neutral, highest contrast against canvas |\n| `neutral-200` | `#dddddd` | 7 | — |\n| `neutral-300` | `#cfcfcf` | 8 | — |\n| `neutral-400` | `#bfbfbf` | 13 | **text-muted** — most-used mid-luminance neutral |\n| `neutral-500` | `#abafba` | 2 | — |\n| `neutral-600` | `#8f94a3` | 4 | — |\n| `neutral-700` | `#73798c` | 2 | — |\n| `neutral-800` | `#5c6170` | 2 | **hairline** — next neutral near canvas, hairline-border weight |\n| `neutral-900` | `#454954` | 2 | **surface** — neutral closest to canvas luminance |\n| `neutral-950` | `#292c32` | 8 | **canvas** — darkest neutral, matches the measured dark-leaning theme |\n\n### Accents\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `deep-blue` | `#0d0e11` | 116 | **accent** — most-used chromatic color |\n| `pale-blue` | `#fcfcfd` | 56 | **accent-2** — supporting chromatic color |\n| `blue` | `#8b7cff` | 6 | **accent-3** — supporting chromatic color |\n| `yellow` | `#d29922` | 6 | — |\n| `deep-blue-2` | `#061434` | 6 | — |\n| `blue-2` | `#5865f2` | 4 | — |\n| `deep-purple` | `#2d0e36` | 4 | — |\n| `deep-blue-3` | `#060522` | 3 | — |\n| `red` | `#f2330d` | 3 | — |\n| `blue-3` | `#314062` | 3 | — |\n| `cyan` | `#8fc5ff` | 3 | — |\n| `blue-4` | `#434e6f` | 3 | — |\n\n### Modern color values (kept verbatim)\n\n- `oklch(.971 .013 17.38)`\n- `oklch(.808 .114 19.571)`\n- `oklch(.704 .191 22.216)`\n- `oklch(.637 .237 25.331)`\n- `oklch(.577 .245 27.325)`\n- `oklch(.505 .213 27.518)`\n- `oklch(.444 .177 26.899)`\n- `oklch(.396 .141 25.723)`\n- `oklch(.258 .092 26.042)`\n- `oklch(.98 .016 73.684)`\n- `oklch(.705 .213 47.604)`\n- `oklch(.646 .222 41.116)`\n\n### Dark mode\n\nThe source defines 28 dark-mode variants (via dark selector). Both halves of the system, first 28:\n\n| Token | Light | Dark |\n| --- | --- | --- |\n| `--tw-border-style` | — | `none` |\n| `--tw-gradient-position` | — | `to top in oklab` |\n| `--tw-gradient-from` | — | `#1b1d22` |\n| `--tw-gradient-via` | — | `var(--color-dark-900)` |\n| `--tw-gradient-to` | — | `color-mix(in oklab,var(--color-dark-850)30%,transparent)` |\n| `--tw-shadow` | — | `0px 10px 28px 0px var(--tw-shadow-color,#0006)` |\n| `--tw-shadow-color` | — | `var(--color-black)` |\n| `--tw-ring-color` | — | `var(--color-dark-200)` |\n| `--tw-ring-offset-color` | — | `var(--color-dark-800)` |\n| `--tw-drop-shadow` | — | `drop-shadow(0 2px 4px #ffffff80)` |\n| `--tw-prose-body` | — | `var(--tw-prose-invert-body)` |\n| `--tw-prose-headings` | — | `var(--tw-prose-invert-headings)` |\n| `--tw-prose-lead` | — | `var(--tw-prose-invert-lead)` |\n| `--tw-prose-links` | — | `var(--tw-prose-invert-links)` |\n| `--tw-prose-bold` | — | `var(--tw-prose-invert-bold)` |\n| `--tw-prose-counters` | — | `var(--tw-prose-invert-counters)` |\n| `--tw-prose-bullets` | — | `var(--tw-prose-invert-bullets)` |\n| `--tw-prose-hr` | — | `var(--tw-prose-invert-hr)` |\n| `--tw-prose-quotes` | — | `var(--tw-prose-invert-quotes)` |\n| `--tw-prose-quote-borders` | — | `var(--tw-prose-invert-quote-borders)` |\n| `--tw-prose-captions` | — | `var(--tw-prose-invert-captions)` |\n| `--tw-prose-kbd` | — | `var(--tw-prose-invert-kbd)` |\n| `--tw-prose-kbd-shadows` | — | `var(--tw-prose-invert-kbd-shadows)` |\n| `--tw-prose-code` | — | `var(--tw-prose-invert-code)` |\n| `--tw-prose-pre-code` | — | `var(--tw-prose-invert-pre-code)` |\n| `--tw-prose-pre-bg` | — | `var(--tw-prose-invert-pre-bg)` |\n| `--tw-prose-th-borders` | — | `var(--tw-prose-invert-th-borders)` |\n| `--tw-prose-td-borders` | — | `var(--tw-prose-invert-td-borders)` |\n\n`variables.css` ships these as a `prefers-color-scheme: dark` override block.\n\n## Typography\n\n**DM Sans** is the primary interface face; **JetBrains Mono** is the monospace. Full list by usage:\n\n| Family | Usage |\n| --- | --- |\n| JetBrains Mono | 31 |\n| DM Sans | 2 |\n\n**Size scale (px):** `8`, `10`, `13`, `13.71`, `14`, `14.4`, `15`, `16`, `20`, `20.57`, `24`, `36`\n\n**Weights in use:** `400` (x10), `500` (x3), `600` (x6), `700` (x5), `800` (x2), `900` (x1)\n\n**Line-heights (unitless):** `1.11`, `1.33`, `1.43`, `1.5`, `1.56`, `1.6`, `1.71`, `1.75`\n\n**Letter-spacing values:** `.01rem`\n\n## Spacing\n\nMost-used values (px): `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `16`, `20`, `80`\n\n## Border radius\n\n| Token | Value | Usage |\n| --- | --- | --- |\n| `radius-sm` | `.3125rem` | 7 |\n| `radius-md` | `7px` | 1 |\n| `radius-lg` | `10px` | 4 |\n| `radius-xl` | `14px` | 1 |\n| `radius-2xl` | `16px` | 1 |\n| `radius-3xl` | `20px` | 1 |\n| `radius-4xl` | `26px` | 1 |\n\n## Shadows (ordered by blur radius)\n\n- `shadow-sm` — `0 18px 56px #0000002e` (x2)\n- `shadow-md` — `0 18px 54px #00000024` (x2)\n- `shadow-lg` — `0 0 #0000` (x1)\n\n### Focus rings (spread-only box-shadows, kept out of the elevation scale)\n\n- `0 0 0 2px #000,0 0 0 4px #4299e1` (x1)\n\n## Breakpoints\n\n`475px`, `500px`, `512px`, `640px`, `768px`, `864px`, `1024px`, `1280px`\n\n## Starter recipes\n\nTokens composed into components. The source site's real components were **not** inspected — these are starting points built from the extracted values, with contrast ratios computed rather than assumed.\n\n```css\n.button-primary {\n  background: var(--color-accent); /* #0d0e11 */\n  color: var(--color-ink); /* #efefef — contrast 16.8:1 */\n  border-radius: .3125rem;\n  font-weight: 500;\n}\n\n.card {\n  background: var(--color-surface); /* #454954 */\n  border: 1px solid var(--color-hairline); /* #5c6170 */\n  border-radius: .3125rem; /* most-used finite radius */\n  box-shadow: var(--shadow-sm);\n}\n\n.input {\n  background: var(--color-canvas); /* #292c32 */\n  color: var(--color-ink); /* #efefef — contrast 12.2:1 */\n  border: 1px solid var(--color-hairline); /* #5c6170 */\n  border-radius: .3125rem;\n  /* placeholder color: var(--color-text-muted) #bfbfbf */\n}\n\n.nav {\n  background: var(--color-canvas); /* #292c32 */\n  border-bottom: 1px solid var(--color-hairline); /* #5c6170 */\n  color: var(--color-ink); /* #efefef */\n  /* inactive links: var(--color-text-muted) #bfbfbf */\n  /* active link: var(--color-accent) #0d0e11 — contrast vs canvas 1.4:1 */\n}\n\n.modal {\n  background: var(--color-surface); /* #454954 */\n  border-radius: .3125rem;\n  box-shadow: var(--shadow-lg); /* largest mined shadow */\n}\n\n.modal-backdrop {\n  background: color-mix(in srgb, var(--color-ink) 55%, transparent); /* scrim from #efefef */\n}\n\n.input-error {\n  border-color: #f2330d; /* mined token: red */\n  /* error text: #f2330d on canvas — contrast 3.5:1, below AA; darken for message text */\n}\n```\n\n## Observations\n\n- 10 of 22 extracted colors are neutrals.\n- 3 distinct shadows; the softest reaches 0px blur.\n- 8 breakpoints, from 475px to 1280px.\n- The site ships a large native token system (120+ custom properties) — prefer those names when extending it.\n\n## Native CSS custom properties\n\nFirst 40 of 120:\n\n```css\n:root {\n  --font-mono: JetBrains Mono,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;\n  --color-red-50: oklch(.971 .013 17.38);\n  --color-red-300: oklch(.808 .114 19.571);\n  --color-red-400: oklch(.704 .191 22.216);\n  --color-red-500: oklch(.637 .237 25.331);\n  --color-red-600: oklch(.577 .245 27.325);\n  --color-red-700: oklch(.505 .213 27.518);\n  --color-red-800: oklch(.444 .177 26.899);\n  --color-red-900: oklch(.396 .141 25.723);\n  --color-red-950: oklch(.258 .092 26.042);\n  --color-orange-50: oklch(.98 .016 73.684);\n  --color-orange-500: oklch(.705 .213 47.604);\n  --color-orange-600: oklch(.646 .222 41.116);\n  --color-orange-900: oklch(.408 .123 38.172);\n  --color-amber-100: oklch(.962 .059 95.617);\n  --color-amber-300: oklch(.879 .169 91.605);\n  --color-amber-400: oklch(.828 .189 84.429);\n  --color-amber-500: oklch(.769 .188 70.08);\n  --color-amber-600: oklch(.666 .179 58.318);\n  --color-amber-700: oklch(.555 .163 48.998);\n  --color-amber-800: oklch(.473 .137 46.201);\n  --color-amber-900: oklch(.414 .112 45.904);\n  --color-amber-950: oklch(.279 .077 45.635);\n  --color-yellow-50: oklch(.987 .026 102.212);\n  --color-yellow-500: oklch(.795 .184 86.047);\n  --color-yellow-600: oklch(.681 .162 75.834);\n  --color-yellow-700: oklch(.554 .135 66.442);\n  --color-yellow-800: oklch(.476 .114 61.907);\n  --color-yellow-900: oklch(.421 .095 57.708);\n  --color-green-50: oklch(.982 .018 155.826);\n  --color-green-200: oklch(.925 .084 155.995);\n  --color-green-500: oklch(.723 .219 149.579);\n  --color-green-600: oklch(.627 .194 149.214);\n  --color-green-700: oklch(.527 .154 150.069);\n  --color-green-800: oklch(.448 .119 151.328);\n  --color-green-900: oklch(.393 .095 152.535);\n  --color-emerald-50: oklch(.979 .021 166.113);\n  --color-emerald-100: oklch(.95 .052 163.051);\n  --color-emerald-400: oklch(.765 .177 163.223);\n  --color-emerald-500: oklch(.696 .17 162.48);\n}\n```\n\n## Files\n\n- `tailwind.css` — Tailwind v4 `@theme` block; tokens become utilities (e.g. `bg-neutral-900`, `text-deep-blue`).\n- `variables.css` — framework-agnostic `:root` variables, same values.\n- `tokens.json` — W3C Design Tokens format for Figma plugins, Style Dictionary, etc.\n",
+  "tailwind.css": "@import \"tailwindcss\";\n\n@theme {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-100: #efefef;\n  --color-neutral-200: #dddddd;\n  --color-neutral-300: #cfcfcf;\n  --color-neutral-400: #bfbfbf;\n  --color-neutral-500: #abafba;\n  --color-neutral-600: #8f94a3;\n  --color-neutral-700: #73798c;\n  --color-neutral-800: #5c6170;\n  --color-neutral-900: #454954;\n  --color-neutral-950: #292c32;\n  --color-deep-blue: #0d0e11;\n  --color-pale-blue: #fcfcfd;\n  --color-blue: #8b7cff;\n  --color-yellow: #d29922;\n  --color-deep-blue-2: #061434;\n  --color-blue-2: #5865f2;\n  --color-deep-purple: #2d0e36;\n  --color-deep-blue-3: #060522;\n  --color-red: #f2330d;\n  --color-blue-3: #314062;\n  --color-cyan: #8fc5ff;\n  --color-blue-4: #434e6f;\n\n  /* inferred semantic roles (each maps to a distinct mined value) */\n  --color-canvas: #292c32;\n  --color-ink: #efefef;\n  --color-text-muted: #bfbfbf;\n  --color-surface: #454954;\n  --color-hairline: #5c6170;\n  --color-accent: #0d0e11;\n  --color-accent-2: #fcfcfd;\n  --color-accent-3: #8b7cff;\n\n  --font-sans: \"DM Sans\", ui-sans-serif, system-ui, sans-serif;\n  --font-mono: \"JetBrains Mono\", ui-monospace, monospace;\n\n  --text-xs: 0.5rem;\n  --text-sm: 0.625rem;\n  --text-base: 0.8125rem;\n  --text-lg: 0.856875rem;\n  --text-xl: 0.875rem;\n  --text-2xl: 0.9rem;\n  --text-3xl: 0.9375rem;\n  --text-4xl: 1rem;\n  --text-5xl: 1.25rem;\n  --text-6xl: 1.285625rem;\n  --text-7xl: 1.5rem;\n  --text-8xl: 2.25rem;\n\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n  --font-weight-extrabold: 800;\n  --font-weight-black: 900;\n\n  /* line-heights, sorted tight -> loose */\n  --leading-none: 1.11;\n  --leading-tight: 1.33;\n  --leading-snug: 1.43;\n  --leading-normal: 1.5;\n  --leading-relaxed: 1.56;\n  --leading-loose: 1.6;\n  --leading-looser: 1.71;\n  --leading-loosest: 1.75;\n\n  /* letter-spacing, sorted tight -> wide */\n  --tracking-tightest: .01rem;\n\n  --radius-sm: .3125rem;\n  --radius-md: 7px;\n  --radius-lg: 10px;\n  --radius-xl: 14px;\n  --radius-2xl: 16px;\n  --radius-3xl: 20px;\n  --radius-4xl: 26px;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 18px 56px #0000002e;\n  --shadow-md: 0 18px 54px #00000024;\n  --shadow-lg: 0 0 #0000;\n\n  --breakpoint-sm: 29.6875rem;\n  --breakpoint-md: 31.25rem;\n  --breakpoint-lg: 32rem;\n  --breakpoint-xl: 40rem;\n  --breakpoint-2xl: 48rem;\n  --breakpoint-3xl: 54rem;\n  --breakpoint-4xl: 64rem;\n  --breakpoint-5xl: 80rem;\n\n  /* most-used spacing values on the source site (px): 1, 2, 3, 4, 5, 6, 7, 8, 9, 16, 20, 80 */\n}\n\n/* dark-mode values mined from the source (native token names) */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --tw-border-style: none;\n    --tw-gradient-position: to top in oklab;\n    --tw-gradient-from: #1b1d22;\n    --tw-gradient-via: var(--color-dark-900);\n    --tw-gradient-to: color-mix(in oklab,var(--color-dark-850)30%,transparent);\n    --tw-shadow: 0px 10px 28px 0px var(--tw-shadow-color,#0006);\n    --tw-shadow-color: var(--color-black);\n    --tw-ring-color: var(--color-dark-200);\n    --tw-ring-offset-color: var(--color-dark-800);\n    --tw-drop-shadow: drop-shadow(0 2px 4px #ffffff80);\n    --tw-prose-body: var(--tw-prose-invert-body);\n    --tw-prose-headings: var(--tw-prose-invert-headings);\n    --tw-prose-lead: var(--tw-prose-invert-lead);\n    --tw-prose-links: var(--tw-prose-invert-links);\n    --tw-prose-bold: var(--tw-prose-invert-bold);\n    --tw-prose-counters: var(--tw-prose-invert-counters);\n    --tw-prose-bullets: var(--tw-prose-invert-bullets);\n    --tw-prose-hr: var(--tw-prose-invert-hr);\n    --tw-prose-quotes: var(--tw-prose-invert-quotes);\n    --tw-prose-quote-borders: var(--tw-prose-invert-quote-borders);\n    --tw-prose-captions: var(--tw-prose-invert-captions);\n    --tw-prose-kbd: var(--tw-prose-invert-kbd);\n    --tw-prose-kbd-shadows: var(--tw-prose-invert-kbd-shadows);\n    --tw-prose-code: var(--tw-prose-invert-code);\n    --tw-prose-pre-code: var(--tw-prose-invert-pre-code);\n    --tw-prose-pre-bg: var(--tw-prose-invert-pre-bg);\n    --tw-prose-th-borders: var(--tw-prose-invert-th-borders);\n    --tw-prose-td-borders: var(--tw-prose-invert-td-borders);\n  }\n}\n",
+  "variables.css": ":root {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-100: #efefef;\n  --color-neutral-200: #dddddd;\n  --color-neutral-300: #cfcfcf;\n  --color-neutral-400: #bfbfbf;\n  --color-neutral-500: #abafba;\n  --color-neutral-600: #8f94a3;\n  --color-neutral-700: #73798c;\n  --color-neutral-800: #5c6170;\n  --color-neutral-900: #454954;\n  --color-neutral-950: #292c32;\n  --color-deep-blue: #0d0e11;\n  --color-pale-blue: #fcfcfd;\n  --color-blue: #8b7cff;\n  --color-yellow: #d29922;\n  --color-deep-blue-2: #061434;\n  --color-blue-2: #5865f2;\n  --color-deep-purple: #2d0e36;\n  --color-deep-blue-3: #060522;\n  --color-red: #f2330d;\n  --color-blue-3: #314062;\n  --color-cyan: #8fc5ff;\n  --color-blue-4: #434e6f;\n\n  /* inferred semantic roles */\n  --color-canvas: #292c32;\n  --color-ink: #efefef;\n  --color-text-muted: #bfbfbf;\n  --color-surface: #454954;\n  --color-hairline: #5c6170;\n  --color-accent: #0d0e11;\n  --color-accent-2: #fcfcfd;\n  --color-accent-3: #8b7cff;\n\n  /* typography */\n  --font-jetbrains-mono: \"JetBrains Mono\";\n  --font-dm-sans: \"DM Sans\";\n\n  /* type scale, ascending */\n  --text-1: 0.5rem;\n  --text-2: 0.625rem;\n  --text-3: 0.8125rem;\n  --text-4: 0.856875rem;\n  --text-5: 0.875rem;\n  --text-6: 0.9rem;\n  --text-7: 0.9375rem;\n  --text-8: 1rem;\n  --text-9: 1.25rem;\n  --text-10: 1.285625rem;\n  --text-11: 1.5rem;\n  --text-12: 2.25rem;\n\n  /* font weights in use */\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n  --font-weight-extrabold: 800;\n  --font-weight-black: 900;\n\n  /* line-heights, tight -> loose */\n  --leading-1: 1.11;\n  --leading-2: 1.33;\n  --leading-3: 1.43;\n  --leading-4: 1.5;\n  --leading-5: 1.56;\n  --leading-6: 1.6;\n  --leading-7: 1.71;\n  --leading-8: 1.75;\n\n  /* letter-spacing, tight -> wide */\n  --tracking-1: .01rem;\n\n  /* spacing, ascending */\n  --space-1: 1px;\n  --space-2: 2px;\n  --space-3: 3px;\n  --space-4: 4px;\n  --space-5: 5px;\n  --space-6: 6px;\n  --space-7: 7px;\n  --space-8: 8px;\n  --space-9: 9px;\n  --space-10: 16px;\n  --space-11: 20px;\n  --space-12: 80px;\n\n  /* radius, ascending */\n  --radius-sm: .3125rem;\n  --radius-md: 7px;\n  --radius-lg: 10px;\n  --radius-xl: 14px;\n  --radius-2xl: 16px;\n  --radius-3xl: 20px;\n  --radius-4xl: 26px;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 18px 56px #0000002e;\n  --shadow-md: 0 18px 54px #00000024;\n  --shadow-lg: 0 0 #0000;\n}\n\n/* dark-mode values mined from the source (native token names) */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --tw-border-style: none;\n    --tw-gradient-position: to top in oklab;\n    --tw-gradient-from: #1b1d22;\n    --tw-gradient-via: var(--color-dark-900);\n    --tw-gradient-to: color-mix(in oklab,var(--color-dark-850)30%,transparent);\n    --tw-shadow: 0px 10px 28px 0px var(--tw-shadow-color,#0006);\n    --tw-shadow-color: var(--color-black);\n    --tw-ring-color: var(--color-dark-200);\n    --tw-ring-offset-color: var(--color-dark-800);\n    --tw-drop-shadow: drop-shadow(0 2px 4px #ffffff80);\n    --tw-prose-body: var(--tw-prose-invert-body);\n    --tw-prose-headings: var(--tw-prose-invert-headings);\n    --tw-prose-lead: var(--tw-prose-invert-lead);\n    --tw-prose-links: var(--tw-prose-invert-links);\n    --tw-prose-bold: var(--tw-prose-invert-bold);\n    --tw-prose-counters: var(--tw-prose-invert-counters);\n    --tw-prose-bullets: var(--tw-prose-invert-bullets);\n    --tw-prose-hr: var(--tw-prose-invert-hr);\n    --tw-prose-quotes: var(--tw-prose-invert-quotes);\n    --tw-prose-quote-borders: var(--tw-prose-invert-quote-borders);\n    --tw-prose-captions: var(--tw-prose-invert-captions);\n    --tw-prose-kbd: var(--tw-prose-invert-kbd);\n    --tw-prose-kbd-shadows: var(--tw-prose-invert-kbd-shadows);\n    --tw-prose-code: var(--tw-prose-invert-code);\n    --tw-prose-pre-code: var(--tw-prose-invert-pre-code);\n    --tw-prose-pre-bg: var(--tw-prose-invert-pre-bg);\n    --tw-prose-th-borders: var(--tw-prose-invert-th-borders);\n    --tw-prose-td-borders: var(--tw-prose-invert-td-borders);\n  }\n}\n",
+  "tokens.json": "{\n  \"$description\": \"Design tokens extracted from https://www.midjourney.com/. Semantic entries are inferred from usage + luminance; all values are mined from live CSS.\",\n  \"color\": {\n    \"neutral-100\": {\n      \"$value\": \"#efefef\",\n      \"$type\": \"color\"\n    },\n    \"neutral-200\": {\n      \"$value\": \"#dddddd\",\n      \"$type\": \"color\"\n    },\n    \"neutral-300\": {\n      \"$value\": \"#cfcfcf\",\n      \"$type\": \"color\"\n    },\n    \"neutral-400\": {\n      \"$value\": \"#bfbfbf\",\n      \"$type\": \"color\"\n    },\n    \"neutral-500\": {\n      \"$value\": \"#abafba\",\n      \"$type\": \"color\"\n    },\n    \"neutral-600\": {\n      \"$value\": \"#8f94a3\",\n      \"$type\": \"color\"\n    },\n    \"neutral-700\": {\n      \"$value\": \"#73798c\",\n      \"$type\": \"color\"\n    },\n    \"neutral-800\": {\n      \"$value\": \"#5c6170\",\n      \"$type\": \"color\"\n    },\n    \"neutral-900\": {\n      \"$value\": \"#454954\",\n      \"$type\": \"color\"\n    },\n    \"neutral-950\": {\n      \"$value\": \"#292c32\",\n      \"$type\": \"color\"\n    },\n    \"deep-blue\": {\n      \"$value\": \"#0d0e11\",\n      \"$type\": \"color\"\n    },\n    \"pale-blue\": {\n      \"$value\": \"#fcfcfd\",\n      \"$type\": \"color\"\n    },\n    \"blue\": {\n      \"$value\": \"#8b7cff\",\n      \"$type\": \"color\"\n    },\n    \"yellow\": {\n      \"$value\": \"#d29922\",\n      \"$type\": \"color\"\n    },\n    \"deep-blue-2\": {\n      \"$value\": \"#061434\",\n      \"$type\": \"color\"\n    },\n    \"blue-2\": {\n      \"$value\": \"#5865f2\",\n      \"$type\": \"color\"\n    },\n    \"deep-purple\": {\n      \"$value\": \"#2d0e36\",\n      \"$type\": \"color\"\n    },\n    \"deep-blue-3\": {\n      \"$value\": \"#060522\",\n      \"$type\": \"color\"\n    },\n    \"red\": {\n      \"$value\": \"#f2330d\",\n      \"$type\": \"color\"\n    },\n    \"blue-3\": {\n      \"$value\": \"#314062\",\n      \"$type\": \"color\"\n    },\n    \"cyan\": {\n      \"$value\": \"#8fc5ff\",\n      \"$type\": \"color\"\n    },\n    \"blue-4\": {\n      \"$value\": \"#434e6f\",\n      \"$type\": \"color\"\n    }\n  },\n  \"semantic\": {\n    \"canvas\": {\n      \"$value\": \"#292c32\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: darkest neutral, matches the measured dark-leaning theme\"\n    },\n    \"ink\": {\n      \"$value\": \"#efefef\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: lightest neutral, highest contrast against canvas\"\n    },\n    \"text-muted\": {\n      \"$value\": \"#bfbfbf\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used mid-luminance neutral\"\n    },\n    \"surface\": {\n      \"$value\": \"#454954\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: neutral closest to canvas luminance\"\n    },\n    \"hairline\": {\n      \"$value\": \"#5c6170\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: next neutral near canvas, hairline-border weight\"\n    },\n    \"accent\": {\n      \"$value\": \"#0d0e11\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used chromatic color\"\n    },\n    \"accent-2\": {\n      \"$value\": \"#fcfcfd\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    },\n    \"accent-3\": {\n      \"$value\": \"#8b7cff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    }\n  },\n  \"fontFamily\": {\n    \"jetbrains-mono\": {\n      \"$value\": \"JetBrains Mono\",\n      \"$type\": \"fontFamily\"\n    },\n    \"dm-sans\": {\n      \"$value\": \"DM Sans\",\n      \"$type\": \"fontFamily\"\n    }\n  },\n  \"fontSize\": {\n    \"size-1\": {\n      \"$value\": \"0.5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-2\": {\n      \"$value\": \"0.625rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-3\": {\n      \"$value\": \"0.8125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-4\": {\n      \"$value\": \"0.856875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-5\": {\n      \"$value\": \"0.875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-6\": {\n      \"$value\": \"0.9rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-7\": {\n      \"$value\": \"0.9375rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-8\": {\n      \"$value\": \"1rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-9\": {\n      \"$value\": \"1.25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-10\": {\n      \"$value\": \"1.285625rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-11\": {\n      \"$value\": \"1.5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-12\": {\n      \"$value\": \"2.25rem\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"fontWeight\": {\n    \"normal\": {\n      \"$value\": 400,\n      \"$type\": \"fontWeight\"\n    },\n    \"medium\": {\n      \"$value\": 500,\n      \"$type\": \"fontWeight\"\n    },\n    \"semibold\": {\n      \"$value\": 600,\n      \"$type\": \"fontWeight\"\n    },\n    \"bold\": {\n      \"$value\": 700,\n      \"$type\": \"fontWeight\"\n    },\n    \"extrabold\": {\n      \"$value\": 800,\n      \"$type\": \"fontWeight\"\n    },\n    \"black\": {\n      \"$value\": 900,\n      \"$type\": \"fontWeight\"\n    }\n  },\n  \"lineHeight\": {\n    \"leading-1\": {\n      \"$value\": 1.11,\n      \"$type\": \"number\"\n    },\n    \"leading-2\": {\n      \"$value\": 1.33,\n      \"$type\": \"number\"\n    },\n    \"leading-3\": {\n      \"$value\": 1.43,\n      \"$type\": \"number\"\n    },\n    \"leading-4\": {\n      \"$value\": 1.5,\n      \"$type\": \"number\"\n    },\n    \"leading-5\": {\n      \"$value\": 1.56,\n      \"$type\": \"number\"\n    },\n    \"leading-6\": {\n      \"$value\": 1.6,\n      \"$type\": \"number\"\n    },\n    \"leading-7\": {\n      \"$value\": 1.71,\n      \"$type\": \"number\"\n    },\n    \"leading-8\": {\n      \"$value\": 1.75,\n      \"$type\": \"number\"\n    }\n  },\n  \"letterSpacing\": {\n    \"tracking-1\": {\n      \"$value\": \".01rem\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"dimension\": {\n    \"space-1\": {\n      \"$value\": \"1px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-2\": {\n      \"$value\": \"2px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-3\": {\n      \"$value\": \"3px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-4\": {\n      \"$value\": \"4px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-5\": {\n      \"$value\": \"5px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-6\": {\n      \"$value\": \"6px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-7\": {\n      \"$value\": \"7px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-8\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-9\": {\n      \"$value\": \"9px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-10\": {\n      \"$value\": \"16px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-11\": {\n      \"$value\": \"20px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-12\": {\n      \"$value\": \"80px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"borderRadius\": {\n    \"sm\": {\n      \"$value\": \".3125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"md\": {\n      \"$value\": \"7px\",\n      \"$type\": \"dimension\"\n    },\n    \"lg\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"xl\": {\n      \"$value\": \"14px\",\n      \"$type\": \"dimension\"\n    },\n    \"2xl\": {\n      \"$value\": \"16px\",\n      \"$type\": \"dimension\"\n    },\n    \"3xl\": {\n      \"$value\": \"20px\",\n      \"$type\": \"dimension\"\n    },\n    \"4xl\": {\n      \"$value\": \"26px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"shadow\": {\n    \"sm\": {\n      \"$value\": \"0 18px 56px #0000002e\",\n      \"$type\": \"shadow\"\n    },\n    \"md\": {\n      \"$value\": \"0 18px 54px #00000024\",\n      \"$type\": \"shadow\"\n    },\n    \"lg\": {\n      \"$value\": \"0 0 #0000\",\n      \"$type\": \"shadow\"\n    }\n  },\n  \"dark\": {\n    \"tw-border-style\": {\n      \"$value\": \"none\",\n      \"$type\": \"string\"\n    },\n    \"tw-gradient-position\": {\n      \"$value\": \"to top in oklab\",\n      \"$type\": \"string\"\n    },\n    \"tw-gradient-from\": {\n      \"$value\": \"#1b1d22\",\n      \"$type\": \"color\"\n    },\n    \"tw-gradient-via\": {\n      \"$value\": \"var(--color-dark-900)\",\n      \"$type\": \"string\"\n    },\n    \"tw-gradient-to\": {\n      \"$value\": \"color-mix(in oklab,var(--color-dark-850)30%,transparent)\",\n      \"$type\": \"string\"\n    },\n    \"tw-shadow\": {\n      \"$value\": \"0px 10px 28px 0px var(--tw-shadow-color,#0006)\",\n      \"$type\": \"string\"\n    },\n    \"tw-shadow-color\": {\n      \"$value\": \"var(--color-black)\",\n      \"$type\": \"string\"\n    },\n    \"tw-ring-color\": {\n      \"$value\": \"var(--color-dark-200)\",\n      \"$type\": \"string\"\n    },\n    \"tw-ring-offset-color\": {\n      \"$value\": \"var(--color-dark-800)\",\n      \"$type\": \"string\"\n    },\n    \"tw-drop-shadow\": {\n      \"$value\": \"drop-shadow(0 2px 4px #ffffff80)\",\n      \"$type\": \"string\"\n    },\n    \"tw-prose-body\": {\n      \"$value\": \"var(--tw-prose-invert-body)\",\n      \"$type\": \"string\"\n    },\n    \"tw-prose-headings\": {\n      \"$value\": \"var(--tw-prose-invert-headings)\",\n      \"$type\": \"string\"\n    },\n    \"tw-prose-lead\": {\n      \"$value\": \"var(--tw-prose-invert-lead)\",\n      \"$type\": \"string\"\n    },\n    \"tw-prose-links\": {\n      \"$value\": \"var(--tw-prose-invert-links)\",\n      \"$type\": \"string\"\n    },\n    \"tw-prose-bold\": {\n      \"$value\": \"var(--tw-prose-invert-bold)\",\n      \"$type\": \"string\"\n    },\n    \"tw-prose-counters\": {\n      \"$value\": \"var(--tw-prose-invert-counters)\",\n      \"$type\": \"string\"\n    },\n    \"tw-prose-bullets\": {\n      \"$value\": \"var(--tw-prose-invert-bullets)\",\n      \"$type\": \"string\"\n    },\n    \"tw-prose-hr\": {\n      \"$value\": \"var(--tw-prose-invert-hr)\",\n      \"$type\": \"string\"\n    },\n    \"tw-prose-quotes\": {\n      \"$value\": \"var(--tw-prose-invert-quotes)\",\n      \"$type\": \"string\"\n    },\n    \"tw-prose-quote-borders\": {\n      \"$value\": \"var(--tw-prose-invert-quote-borders)\",\n      \"$type\": \"string\"\n    },\n    \"tw-prose-captions\": {\n      \"$value\": \"var(--tw-prose-invert-captions)\",\n      \"$type\": \"string\"\n    },\n    \"tw-prose-kbd\": {\n      \"$value\": \"var(--tw-prose-invert-kbd)\",\n      \"$type\": \"string\"\n    },\n    \"tw-prose-kbd-shadows\": {\n      \"$value\": \"var(--tw-prose-invert-kbd-shadows)\",\n      \"$type\": \"string\"\n    },\n    \"tw-prose-code\": {\n      \"$value\": \"var(--tw-prose-invert-code)\",\n      \"$type\": \"string\"\n    },\n    \"tw-prose-pre-code\": {\n      \"$value\": \"var(--tw-prose-invert-pre-code)\",\n      \"$type\": \"string\"\n    },\n    \"tw-prose-pre-bg\": {\n      \"$value\": \"var(--tw-prose-invert-pre-bg)\",\n      \"$type\": \"string\"\n    },\n    \"tw-prose-th-borders\": {\n      \"$value\": \"var(--tw-prose-invert-th-borders)\",\n      \"$type\": \"string\"\n    },\n    \"tw-prose-td-borders\": {\n      \"$value\": \"var(--tw-prose-invert-td-borders)\",\n      \"$type\": \"string\"\n    }\n  }\n}"
+ },
+ "raw": {
+  "tokens": {
+   "title": "Midjourney",
+   "description": "An independent research lab exploring new mediums of thought and expanding the imaginative powers of the human species.",
+   "themeGuess": "dark-leaning",
+   "darkWeight": 60,
+   "lightWeight": 32,
+   "neutrals": [
+    {
+     "hex": "#efefef",
+     "count": 17
+    },
+    {
+     "hex": "#dddddd",
+     "count": 7
+    },
+    {
+     "hex": "#cfcfcf",
+     "count": 8
+    },
+    {
+     "hex": "#bfbfbf",
+     "count": 13
+    },
+    {
+     "hex": "#abafba",
+     "count": 2
+    },
+    {
+     "hex": "#8f94a3",
+     "count": 4
+    },
+    {
+     "hex": "#73798c",
+     "count": 2
+    },
+    {
+     "hex": "#5c6170",
+     "count": 2
+    },
+    {
+     "hex": "#454954",
+     "count": 2
+    },
+    {
+     "hex": "#292c32",
+     "count": 8
+    },
+    {
+     "hex": "#1b1d22",
+     "count": 8
+    },
+    {
+     "hex": "#000000",
+     "count": 38
+    }
+   ],
+   "accents": [
+    {
+     "hex": "#0d0e11",
+     "count": 116
+    },
+    {
+     "hex": "#fcfcfd",
+     "count": 56
+    },
+    {
+     "hex": "#8b7cff",
+     "count": 6
+    },
+    {
+     "hex": "#d29922",
+     "count": 6
+    },
+    {
+     "hex": "#061434",
+     "count": 6
+    },
+    {
+     "hex": "#5865f2",
+     "count": 4
+    },
+    {
+     "hex": "#2d0e36",
+     "count": 4
+    },
+    {
+     "hex": "#060522",
+     "count": 3
+    },
+    {
+     "hex": "#f2330d",
+     "count": 3
+    },
+    {
+     "hex": "#314062",
+     "count": 3
+    },
+    {
+     "hex": "#8fc5ff",
+     "count": 3
+    },
+    {
+     "hex": "#434e6f",
+     "count": 3
+    }
+   ],
+   "modern": [
+    "oklch(.971 .013 17.38)",
+    "oklch(.808 .114 19.571)",
+    "oklch(.704 .191 22.216)",
+    "oklch(.637 .237 25.331)",
+    "oklch(.577 .245 27.325)",
+    "oklch(.505 .213 27.518)",
+    "oklch(.444 .177 26.899)",
+    "oklch(.396 .141 25.723)",
+    "oklch(.258 .092 26.042)",
+    "oklch(.98 .016 73.684)",
+    "oklch(.705 .213 47.604)",
+    "oklch(.646 .222 41.116)",
+    "oklch(.408 .123 38.172)",
+    "oklch(.962 .059 95.617)",
+    "oklch(.879 .169 91.605)",
+    "oklch(.828 .189 84.429)",
+    "oklch(.769 .188 70.08)",
+    "oklch(.666 .179 58.318)",
+    "oklch(.555 .163 48.998)",
+    "oklch(.473 .137 46.201)"
+   ],
+   "fonts": [
+    {
+     "name": "JetBrains Mono",
+     "count": 31
+    },
+    {
+     "name": "DM Sans",
+     "count": 2
+    }
+   ],
+   "fontSizes": [
+    8,
+    10,
+    13,
+    13.71,
+    14,
+    14.4,
+    15,
+    16,
+    20,
+    20.57,
+    24,
+    36
+   ],
+   "fontWeights": [
+    {
+     "value": 400,
+     "count": 10
+    },
+    {
+     "value": 500,
+     "count": 3
+    },
+    {
+     "value": 600,
+     "count": 6
+    },
+    {
+     "value": 700,
+     "count": 5
+    },
+    {
+     "value": 800,
+     "count": 2
+    },
+    {
+     "value": 900,
+     "count": 1
+    }
+   ],
+   "lineHeights": [
+    1.11,
+    1.33,
+    1.43,
+    1.5,
+    1.56,
+    1.6,
+    1.71,
+    1.75
+   ],
+   "letterSpacings": [
+    ".01rem"
+   ],
+   "spacing": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    16,
+    20,
+    80
+   ],
+   "radii": [
+    {
+     "value": ".3125rem",
+     "count": 7
+    },
+    {
+     "value": "10px",
+     "count": 4
+    },
+    {
+     "value": "7px",
+     "count": 1
+    },
+    {
+     "value": "14px",
+     "count": 1
+    },
+    {
+     "value": "16px",
+     "count": 1
+    },
+    {
+     "value": "20px",
+     "count": 1
+    },
+    {
+     "value": "26px",
+     "count": 1
+    }
+   ],
+   "shadows": [
+    {
+     "value": "0 18px 56px #0000002e",
+     "count": 2,
+     "blur": 0
+    },
+    {
+     "value": "0 18px 54px #00000024",
+     "count": 2,
+     "blur": 0
+    },
+    {
+     "value": "0 0 #0000",
+     "count": 1,
+     "blur": 0
+    }
+   ],
+   "breakpoints": [
+    475,
+    500,
+    512,
+    640,
+    768,
+    864,
+    1024,
+    1280
+   ],
+   "nativeVars": [
+    {
+     "name": "font-mono",
+     "value": "JetBrains Mono,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace"
+    },
+    {
+     "name": "color-red-50",
+     "value": "oklch(.971 .013 17.38)"
+    },
+    {
+     "name": "color-red-300",
+     "value": "oklch(.808 .114 19.571)"
+    },
+    {
+     "name": "color-red-400",
+     "value": "oklch(.704 .191 22.216)"
+    },
+    {
+     "name": "color-red-500",
+     "value": "oklch(.637 .237 25.331)"
+    },
+    {
+     "name": "color-red-600",
+     "value": "oklch(.577 .245 27.325)"
+    },
+    {
+     "name": "color-red-700",
+     "value": "oklch(.505 .213 27.518)"
+    },
+    {
+     "name": "color-red-800",
+     "value": "oklch(.444 .177 26.899)"
+    },
+    {
+     "name": "color-red-900",
+     "value": "oklch(.396 .141 25.723)"
+    },
+    {
+     "name": "color-red-950",
+     "value": "oklch(.258 .092 26.042)"
+    },
+    {
+     "name": "color-orange-50",
+     "value": "oklch(.98 .016 73.684)"
+    },
+    {
+     "name": "color-orange-500",
+     "value": "oklch(.705 .213 47.604)"
+    },
+    {
+     "name": "color-orange-600",
+     "value": "oklch(.646 .222 41.116)"
+    },
+    {
+     "name": "color-orange-900",
+     "value": "oklch(.408 .123 38.172)"
+    },
+    {
+     "name": "color-amber-100",
+     "value": "oklch(.962 .059 95.617)"
+    },
+    {
+     "name": "color-amber-300",
+     "value": "oklch(.879 .169 91.605)"
+    },
+    {
+     "name": "color-amber-400",
+     "value": "oklch(.828 .189 84.429)"
+    },
+    {
+     "name": "color-amber-500",
+     "value": "oklch(.769 .188 70.08)"
+    },
+    {
+     "name": "color-amber-600",
+     "value": "oklch(.666 .179 58.318)"
+    },
+    {
+     "name": "color-amber-700",
+     "value": "oklch(.555 .163 48.998)"
+    },
+    {
+     "name": "color-amber-800",
+     "value": "oklch(.473 .137 46.201)"
+    },
+    {
+     "name": "color-amber-900",
+     "value": "oklch(.414 .112 45.904)"
+    },
+    {
+     "name": "color-amber-950",
+     "value": "oklch(.279 .077 45.635)"
+    },
+    {
+     "name": "color-yellow-50",
+     "value": "oklch(.987 .026 102.212)"
+    },
+    {
+     "name": "color-yellow-500",
+     "value": "oklch(.795 .184 86.047)"
+    },
+    {
+     "name": "color-yellow-600",
+     "value": "oklch(.681 .162 75.834)"
+    },
+    {
+     "name": "color-yellow-700",
+     "value": "oklch(.554 .135 66.442)"
+    },
+    {
+     "name": "color-yellow-800",
+     "value": "oklch(.476 .114 61.907)"
+    },
+    {
+     "name": "color-yellow-900",
+     "value": "oklch(.421 .095 57.708)"
+    },
+    {
+     "name": "color-green-50",
+     "value": "oklch(.982 .018 155.826)"
+    },
+    {
+     "name": "color-green-200",
+     "value": "oklch(.925 .084 155.995)"
+    },
+    {
+     "name": "color-green-500",
+     "value": "oklch(.723 .219 149.579)"
+    },
+    {
+     "name": "color-green-600",
+     "value": "oklch(.627 .194 149.214)"
+    },
+    {
+     "name": "color-green-700",
+     "value": "oklch(.527 .154 150.069)"
+    },
+    {
+     "name": "color-green-800",
+     "value": "oklch(.448 .119 151.328)"
+    },
+    {
+     "name": "color-green-900",
+     "value": "oklch(.393 .095 152.535)"
+    },
+    {
+     "name": "color-emerald-50",
+     "value": "oklch(.979 .021 166.113)"
+    },
+    {
+     "name": "color-emerald-100",
+     "value": "oklch(.95 .052 163.051)"
+    },
+    {
+     "name": "color-emerald-400",
+     "value": "oklch(.765 .177 163.223)"
+    },
+    {
+     "name": "color-emerald-500",
+     "value": "oklch(.696 .17 162.48)"
+    },
+    {
+     "name": "color-emerald-600",
+     "value": "oklch(.596 .145 163.225)"
+    },
+    {
+     "name": "color-emerald-700",
+     "value": "oklch(.508 .118 165.612)"
+    },
+    {
+     "name": "color-emerald-800",
+     "value": "oklch(.432 .095 166.913)"
+    },
+    {
+     "name": "color-emerald-900",
+     "value": "oklch(.378 .077 168.94)"
+    },
+    {
+     "name": "color-emerald-950",
+     "value": "oklch(.262 .051 172.552)"
+    },
+    {
+     "name": "color-teal-400",
+     "value": "oklch(.777 .152 181.912)"
+    },
+    {
+     "name": "color-sky-500",
+     "value": "oklch(.685 .169 237.323)"
+    },
+    {
+     "name": "color-blue-50",
+     "value": "oklch(.97 .014 254.604)"
+    },
+    {
+     "name": "color-blue-100",
+     "value": "#ebf8ff"
+    },
+    {
+     "name": "color-blue-200",
+     "value": "#bee3f8"
+    },
+    {
+     "name": "color-blue-300",
+     "value": "#90cdf4"
+    },
+    {
+     "name": "color-blue-400",
+     "value": "#63b3ed"
+    },
+    {
+     "name": "color-blue-500",
+     "value": "#4299e1"
+    },
+    {
+     "name": "color-blue-600",
+     "value": "#3182ce"
+    },
+    {
+     "name": "color-blue-700",
+     "value": "#2b6cb0"
+    },
+    {
+     "name": "color-blue-800",
+     "value": "#2c5282"
+    },
+    {
+     "name": "color-blue-900",
+     "value": "#2a4365"
+    },
+    {
+     "name": "color-blue-950",
+     "value": "oklch(.282 .091 267.935)"
+    },
+    {
+     "name": "color-indigo-400",
+     "value": "oklch(.673 .182 276.935)"
+    },
+    {
+     "name": "color-indigo-500",
+     "value": "oklch(.585 .233 277.117)"
+    },
+    {
+     "name": "color-violet-600",
+     "value": "oklch(.541 .281 293.009)"
+    },
+    {
+     "name": "color-fuchsia-500",
+     "value": "oklch(.667 .295 322.15)"
+    },
+    {
+     "name": "color-pink-400",
+     "value": "oklch(.718 .202 349.761)"
+    },
+    {
+     "name": "color-rose-50",
+     "value": "oklch(.969 .015 12.422)"
+    },
+    {
+     "name": "color-rose-500",
+     "value": "oklch(.645 .246 16.439)"
+    },
+    {
+     "name": "color-rose-600",
+     "value": "oklch(.586 .253 17.585)"
+    },
+    {
+     "name": "color-rose-700",
+     "value": "oklch(.514 .222 16.935)"
+    },
+    {
+     "name": "color-rose-900",
+     "value": "oklch(.41 .159 10.272)"
+    },
+    {
+     "name": "color-slate-100",
+     "value": "oklch(.968 .007 247.896)"
+    },
+    {
+     "name": "color-slate-300",
+     "value": "oklch(.869 .022 252.894)"
+    },
+    {
+     "name": "color-slate-400",
+     "value": "oklch(.704 .04 256.788)"
+    },
+    {
+     "name": "color-slate-500",
+     "value": "oklch(.554 .046 257.417)"
+    },
+    {
+     "name": "color-slate-600",
+     "value": "oklch(.446 .043 257.281)"
+    },
+    {
+     "name": "color-slate-700",
+     "value": "oklch(.372 .044 257.287)"
+    },
+    {
+     "name": "color-slate-800",
+     "value": "oklch(.279 .041 260.031)"
+    },
+    {
+     "name": "color-gray-50",
+     "value": "oklch(.985 .002 247.839)"
+    },
+    {
+     "name": "color-gray-100",
+     "value": "oklch(.967 .003 264.542)"
+    },
+    {
+     "name": "color-gray-200",
+     "value": "oklch(.928 .006 264.531)"
+    },
+    {
+     "name": "color-gray-300",
+     "value": "oklch(.872 .01 258.338)"
+    },
+    {
+     "name": "color-gray-400",
+     "value": "oklch(.707 .022 261.325)"
+    },
+    {
+     "name": "color-gray-500",
+     "value": "oklch(.551 .027 264.364)"
+    },
+    {
+     "name": "color-gray-600",
+     "value": "oklch(.446 .03 256.802)"
+    },
+    {
+     "name": "color-gray-700",
+     "value": "oklch(.373 .034 259.733)"
+    },
+    {
+     "name": "color-gray-800",
+     "value": "oklch(.278 .033 256.848)"
+    },
+    {
+     "name": "color-gray-900",
+     "value": "oklch(.21 .034 264.665)"
+    },
+    {
+     "name": "color-gray-950",
+     "value": "oklch(.13 .028 261.692)"
+    },
+    {
+     "name": "color-neutral-800",
+     "value": "oklch(.269 0 0)"
+    },
+    {
+     "name": "color-stone-100",
+     "value": "oklch(.97 .001 106.424)"
+    },
+    {
+     "name": "color-black",
+     "value": "#000"
+    },
+    {
+     "name": "color-white",
+     "value": "#fff"
+    },
+    {
+     "name": "container-sm",
+     "value": "24rem"
+    },
+    {
+     "name": "container-md",
+     "value": "28rem"
+    },
+    {
+     "name": "container-lg",
+     "value": "32rem"
+    },
+    {
+     "name": "container-xl",
+     "value": "36rem"
+    },
+    {
+     "name": "container-2xl",
+     "value": "42rem"
+    },
+    {
+     "name": "container-3xl",
+     "value": "48rem"
+    },
+    {
+     "name": "container-4xl",
+     "value": "56rem"
+    },
+    {
+     "name": "container-5xl",
+     "value": "64rem"
+    },
+    {
+     "name": "container-6xl",
+     "value": "72rem"
+    },
+    {
+     "name": "container-7xl",
+     "value": "80rem"
+    },
+    {
+     "name": "font-weight-light",
+     "value": "300"
+    },
+    {
+     "name": "font-weight-normal",
+     "value": "400"
+    },
+    {
+     "name": "font-weight-medium",
+     "value": "500"
+    },
+    {
+     "name": "font-weight-semibold",
+     "value": "600"
+    },
+    {
+     "name": "font-weight-bold",
+     "value": "700"
+    },
+    {
+     "name": "font-weight-extrabold",
+     "value": "800"
+    },
+    {
+     "name": "tracking-tight",
+     "value": "-.025em"
+    },
+    {
+     "name": "tracking-wide",
+     "value": ".025em"
+    },
+    {
+     "name": "tracking-wider",
+     "value": ".05em"
+    },
+    {
+     "name": "tracking-widest",
+     "value": ".1em"
+    },
+    {
+     "name": "leading-tight",
+     "value": "1.25"
+    },
+    {
+     "name": "leading-snug",
+     "value": "1.375"
+    },
+    {
+     "name": "leading-normal",
+     "value": "1.5"
+    },
+    {
+     "name": "leading-relaxed",
+     "value": "1.625"
+    },
+    {
+     "name": "drop-shadow-md",
+     "value": "0 3px 3px #0000001f"
+    },
+    {
+     "name": "drop-shadow-lg",
+     "value": "0 4px 4px #00000026"
+    },
+    {
+     "name": "drop-shadow-xl",
+     "value": "0 9px 7px #0000001a"
+    },
+    {
+     "name": "drop-shadow-2xl",
+     "value": "0 25px 25px #00000026"
+    },
+    {
+     "name": "ease-in",
+     "value": "cubic-bezier(.4,0,1,1)"
+    },
+    {
+     "name": "ease-out",
+     "value": "cubic-bezier(0,0,.2,1)"
+    }
+   ],
+   "darkVars": [
+    {
+     "name": "tw-border-style",
+     "light": null,
+     "dark": "none",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-gradient-position",
+     "light": null,
+     "dark": "to top in oklab",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-gradient-from",
+     "light": null,
+     "dark": "#1b1d22",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-gradient-via",
+     "light": null,
+     "dark": "var(--color-dark-900)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-gradient-to",
+     "light": null,
+     "dark": "color-mix(in oklab,var(--color-dark-850)30%,transparent)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-shadow",
+     "light": null,
+     "dark": "0px 10px 28px 0px var(--tw-shadow-color,#0006)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-shadow-color",
+     "light": null,
+     "dark": "var(--color-black)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-ring-color",
+     "light": null,
+     "dark": "var(--color-dark-200)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-ring-offset-color",
+     "light": null,
+     "dark": "var(--color-dark-800)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-drop-shadow",
+     "light": null,
+     "dark": "drop-shadow(0 2px 4px #ffffff80)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-prose-body",
+     "light": null,
+     "dark": "var(--tw-prose-invert-body)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-prose-headings",
+     "light": null,
+     "dark": "var(--tw-prose-invert-headings)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-prose-lead",
+     "light": null,
+     "dark": "var(--tw-prose-invert-lead)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-prose-links",
+     "light": null,
+     "dark": "var(--tw-prose-invert-links)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-prose-bold",
+     "light": null,
+     "dark": "var(--tw-prose-invert-bold)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-prose-counters",
+     "light": null,
+     "dark": "var(--tw-prose-invert-counters)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-prose-bullets",
+     "light": null,
+     "dark": "var(--tw-prose-invert-bullets)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-prose-hr",
+     "light": null,
+     "dark": "var(--tw-prose-invert-hr)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-prose-quotes",
+     "light": null,
+     "dark": "var(--tw-prose-invert-quotes)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-prose-quote-borders",
+     "light": null,
+     "dark": "var(--tw-prose-invert-quote-borders)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-prose-captions",
+     "light": null,
+     "dark": "var(--tw-prose-invert-captions)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-prose-kbd",
+     "light": null,
+     "dark": "var(--tw-prose-invert-kbd)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-prose-kbd-shadows",
+     "light": null,
+     "dark": "var(--tw-prose-invert-kbd-shadows)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-prose-code",
+     "light": null,
+     "dark": "var(--tw-prose-invert-code)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-prose-pre-code",
+     "light": null,
+     "dark": "var(--tw-prose-invert-pre-code)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-prose-pre-bg",
+     "light": null,
+     "dark": "var(--tw-prose-invert-pre-bg)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-prose-th-borders",
+     "light": null,
+     "dark": "var(--tw-prose-invert-th-borders)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-prose-td-borders",
+     "light": null,
+     "dark": "var(--tw-prose-invert-td-borders)",
+     "via": "dark selector"
+    }
+   ],
+   "rings": [
+    {
+     "value": "0 0 0 2px #000,0 0 0 4px #4299e1",
+     "count": 1,
+     "blur": 0
+    }
+   ]
+  },
+  "stylesheets": 2
+ }
+}

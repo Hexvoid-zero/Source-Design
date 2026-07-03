@@ -1,0 +1,856 @@
+{
+ "slug": "docker",
+ "name": "Docker",
+ "blurb": "Containers. Signature blue, whale-scale product marketing, boxy cards.",
+ "url": "https://www.docker.com/",
+ "title": "Docker: Accelerated Container Application Development",
+ "extractedAt": "2026-07-03",
+ "summary": {
+  "colors": [
+   {
+    "name": "neutral-50",
+    "hex": "#ffffff",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-500",
+    "hex": "#949494",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-800",
+    "hex": "#444444",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-950",
+    "hex": "#000000",
+    "group": "neutral"
+   },
+   {
+    "name": "blue",
+    "hex": "#2560ff",
+    "group": "accent"
+   },
+   {
+    "name": "pale-blue",
+    "hex": "#e7eaef",
+    "group": "accent"
+   },
+   {
+    "name": "blue-2",
+    "hex": "#434c5f",
+    "group": "accent"
+   },
+   {
+    "name": "pale-cyan",
+    "hex": "#c0e0fa",
+    "group": "accent"
+   },
+   {
+    "name": "blue-3",
+    "hex": "#c8cfda",
+    "group": "accent"
+   },
+   {
+    "name": "blue-4",
+    "hex": "#8b99b2",
+    "group": "accent"
+   },
+   {
+    "name": "blue-5",
+    "hex": "#6c7e9d",
+    "group": "accent"
+   },
+   {
+    "name": "cyan",
+    "hex": "#8bc7f5",
+    "group": "accent"
+   },
+   {
+    "name": "blue-6",
+    "hex": "#a9b4c6",
+    "group": "accent"
+   },
+   {
+    "name": "deep-cyan",
+    "hex": "#0e1217",
+    "group": "accent"
+   },
+   {
+    "name": "blue-7",
+    "hex": "#003db5",
+    "group": "accent"
+   },
+   {
+    "name": "cyan-2",
+    "hex": "#1c90ed",
+    "group": "accent"
+   }
+  ],
+  "fonts": [
+   "Inter",
+   "Manrope",
+   "Repro",
+   "JetBrains Mono",
+   "IBM Plex Mono",
+   "Jost",
+   "Roboto Flex",
+   "Mali"
+  ],
+  "themeGuess": "light-leaning",
+  "stylesheets": 9,
+  "nativeVarCount": 120
+ },
+ "files": {
+  "DESIGN.md": "---\nname: docker-com-design-system\nsource: https://www.docker.com/\nextracted: 2026-07-03\ntheme: light  # measured from neutral usage weight\ncolors:  # roles inferred from usage frequency + luminance; names verified against values\n  canvas: \"#ffffff\"\n  ink: \"#000000\"\n  text-muted: \"#949494\"\n  surface: \"#444444\"\n  accent: \"#2560ff\"  # blue\n  accent-2: \"#e7eaef\"  # pale-blue\n  accent-3: \"#434c5f\"  # blue\nfonts:\n  primary: \"Inter\"\n  mono: \"JetBrains Mono\"\n---\n\n# Docker: Accelerated Container Application Development — Design System\n\nExtracted from **https://www.docker.com/** on 2026-07-03.\n\n> Docker is a platform designed to help developers build, share, and run container applications. We handle the tedious setup, so you can focus on the code.\n\nEvery value below is mined from the site's live CSS (120 native custom properties, ranked usage counts). Role assignments are inferred from usage and luminance and marked as such — treat them as a strong starting point, not gospel.\n\n## Overview\n\nThe system reads as light: measured neutral usage weighs 164 light against 49 dark. The palette is chromatic: 12 saturated values against 4 neutrals, led by blue (`#2560ff`). **Inter** carries the interface; **JetBrains Mono** handles code and data. Geometry mixes sharp corners (.25rem) with full pills.\n\n## Usage rules\n\nDerived from the measured usage below — each rule cites its evidence.\n\n- Chromatic color carries 60% of measured usage — this palette uses color structurally. Saturated values can hold large surfaces here; timidity would misrepresent the source.\n- The theme is light (measured neutral weight 164:49). Don't flip individual sections to the opposite mode.\n- `.25rem` is the workhorse radius (x10); treat the other radii as exceptions, not options.\n- The only shadows are blur-less hairline offsets — this system barely uses elevation; don't add soft drop shadows.\n- `JetBrains Mono` is the monospace — keep it for code, data, and metadata roles.\n\n## Colors\n\n### Neutrals (light → dark)\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `neutral-50` | `#ffffff` | 164 | **canvas** — lightest neutral, matches the measured light-leaning theme |\n| `neutral-500` | `#949494` | 2 | **text-muted** — most-used mid-luminance neutral |\n| `neutral-800` | `#444444` | 2 | **surface** — neutral closest to canvas luminance |\n| `neutral-950` | `#000000` | 47 | **ink** — darkest neutral, highest contrast against canvas |\n\n### Accents\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `blue` | `#2560ff` | 80 | **accent** — most-used chromatic color |\n| `pale-blue` | `#e7eaef` | 50 | **accent-2** — supporting chromatic color |\n| `blue-2` | `#434c5f` | 28 | **accent-3** — supporting chromatic color |\n| `pale-cyan` | `#c0e0fa` | 24 | — |\n| `blue-3` | `#c8cfda` | 24 | — |\n| `blue-4` | `#8b99b2` | 21 | — |\n| `blue-5` | `#6c7e9d` | 16 | — |\n| `cyan` | `#8bc7f5` | 16 | — |\n| `blue-6` | `#a9b4c6` | 16 | — |\n| `deep-cyan` | `#0e1217` | 15 | — |\n| `blue-7` | `#003db5` | 14 | — |\n| `cyan-2` | `#1c90ed` | 12 | — |\n\n## Typography\n\n**Inter** is the primary interface face; **JetBrains Mono** is the monospace. Full list by usage:\n\n| Family | Usage |\n| --- | --- |\n| Inter | 137 |\n| Manrope | 38 |\n| Repro | 31 |\n| JetBrains Mono | 19 |\n| IBM Plex Mono | 15 |\n| Jost | 2 |\n| Roboto Flex | 1 |\n| Mali | 1 |\n\n**Size scale (px):** `10`, `11.5`, `12`, `13`, `14`, `16`, `18`, `20`, `24`, `32`, `40`, `48`\n\n**Weights in use:** `100` (x7), `200` (x3), `400` (x83), `500` (x87), `600` (x18), `700` (x31)\n\n**Line-heights (unitless):** `0.68`, `1`, `1.05`, `1.1`, `1.3`, `1.5`, `1.55`, `1.6`\n\n**Letter-spacing values:** `-.6px`, `-.5px`, `-.25px`, `-.225px`, `-.2px`, `-.15px`\n\n## Spacing\n\nMost-used values (px): `1`, `6`, `8`, `10`, `12`, `16`, `20`, `24`, `28`, `32`, `40`, `48`\n\n## Border radius\n\n| Token | Value | Usage |\n| --- | --- | --- |\n| `radius-sm` | `.25rem` | 10 |\n| `radius-md` | `10px` | 2 |\n| `radius-lg` | `14px` | 5 |\n| `radius-xl` | `1rem` | 2 |\n| `radius-2xl` | `18px` | 3 |\n| `radius-3xl` | `22px` | 2 |\n| `radius-4xl` | `12.5rem` | 2 |\n| `radius-full` | `50%` | 6 |\n\n## Shadows (ordered by blur radius)\n\n- `shadow-sm` — `0 .692px 1.385px 0 rgba(0,0,0,.2)` (x4)\n- `shadow-md` — `0 1px 2px rgba(15, 23, 42, 0.03)` (x2)\n- `shadow-lg` — `0 50px 40px 0 rgba(0,0,0,.14)` (x1)\n- `shadow-xl` — `0 2px 5px 0 rgba(0,0,0,.05)` (x1)\n- `shadow-2xl` — `unset` (x1)\n- `shadow-3xl` — `0 1px 0 rgba(255,255,255,0.06) inset, 0 40px 80px -20px rgba(0,0,0,0.7), 0 8px 24px -8px rgba(0,0,0,0.5)` (x1)\n\n## Breakpoints\n\n`424px`, `425px`, `499px`, `500px`, `600px`, `640px`, `767px`, `768px`\n\n## Starter recipes\n\nTokens composed into components. The source site's real components were **not** inspected — these are starting points built from the extracted values, with contrast ratios computed rather than assumed.\n\n```css\n.button-primary {\n  background: var(--color-accent); /* #2560ff */\n  color: var(--color-canvas); /* #ffffff — contrast 5.0:1 */\n  border-radius: 9999px; /* pill — mined as 50% */\n  font-weight: 500;\n}\n\n.modal {\n  background: var(--color-surface); /* #444444 */\n  border-radius: .25rem;\n  box-shadow: var(--shadow-3xl); /* largest mined shadow */\n}\n\n.modal-backdrop {\n  background: color-mix(in srgb, var(--color-ink) 55%, transparent); /* scrim from #000000 */\n}\n\n.input-error {\n  /* no red exists in the mined palette — this site does not expose an error color in its CSS. */\n  /* Introduce one deliberately rather than borrowing a random red; keep saturation near the accent's. */\n}\n```\n\n## Observations\n\n- 4 of 16 extracted colors are neutrals.\n- 6 distinct shadows; the softest reaches 0px blur.\n- 8 breakpoints, from 424px to 768px.\n- The site ships a large native token system (120+ custom properties) — prefer those names when extending it.\n\n## Native CSS custom properties\n\nFirst 40 of 120:\n\n```css\n:root {\n  --imageHeight: 3.0625rem;\n  --imageMaxWidth: 8rem;\n  --imageMinWidth: 2.625rem;\n  --imageContainerPadding: 2.5rem;\n  --backgroundColor: transparent;\n  --logoColor: #00153c;\n  --backgroundSecondary: #e7eaef;\n  --cardBackgroundColor: #f9fafb;\n  --cardBackgroundHover: #fff;\n  --borderColor: #c8cfda;\n  --shadowColor: hsla(0,0%,100%,.08);\n  --shadowColorActive: hsla(0,0%,100%,.5);\n  --shadowColorHover: hsla(0,0%,100%,.25);\n  --highlightColor: #2560ff;\n  --eyebrowColor: #fff;\n  --headlineColor: #000;\n  --subheadColor: #2c333f;\n  --copyColor: #2c333f;\n  --copyColor2: #566581;\n  --linkColor: #2560ff;\n  --inlineCodeBackgroundColor: #e7eaef;\n  --inlineCodeBorderColor: #c8cfda;\n  --headlineHighlightedColor: #2560ff;\n  --entryTitleColor: blue800;\n  --listItemColor: #2560ff;\n  --arrow-button-icon: url('data:image/svg+xml;\n  --search-icon: url('data:image/svg+xml;\n  --chevron-right-solid-icon: url('data:image/svg+xml;\n  --buttonTextDecoration: \"none\";\n  --buttonPrimaryBorder: #003db5;\n  --buttonPrimaryBorderWidth: 1.5px;\n  --buttonPrimaryBackground: #2560ff;\n  --buttonPrimaryText: #fff;\n  --buttonPrimaryShadow: #c0e0fa;\n  --buttonPrimaryHoverBorder: transparent;\n  --buttonPrimaryHoverBackground: #2560ff;\n  --buttonPrimaryHoverText: #fff;\n  --buttonPrimaryHoverShadow: #c0e0fa;\n  --buttonPrimaryActiveBorder: transparent;\n  --buttonPrimaryActiveBackground: #2560ff;\n}\n```\n\n## Files\n\n- `tailwind.css` — Tailwind v4 `@theme` block; tokens become utilities (e.g. `bg-neutral-900`, `text-blue`).\n- `variables.css` — framework-agnostic `:root` variables, same values.\n- `tokens.json` — W3C Design Tokens format for Figma plugins, Style Dictionary, etc.\n",
+  "tailwind.css": "@import \"tailwindcss\";\n\n@theme {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-500: #949494;\n  --color-neutral-800: #444444;\n  --color-neutral-950: #000000;\n  --color-blue: #2560ff;\n  --color-pale-blue: #e7eaef;\n  --color-blue-2: #434c5f;\n  --color-pale-cyan: #c0e0fa;\n  --color-blue-3: #c8cfda;\n  --color-blue-4: #8b99b2;\n  --color-blue-5: #6c7e9d;\n  --color-cyan: #8bc7f5;\n  --color-blue-6: #a9b4c6;\n  --color-deep-cyan: #0e1217;\n  --color-blue-7: #003db5;\n  --color-cyan-2: #1c90ed;\n\n  /* inferred semantic roles (each maps to a distinct mined value) */\n  --color-canvas: #ffffff;\n  --color-ink: #000000;\n  --color-text-muted: #949494;\n  --color-surface: #444444;\n  --color-accent: #2560ff;\n  --color-accent-2: #e7eaef;\n  --color-accent-3: #434c5f;\n\n  --font-sans: \"Inter\", ui-sans-serif, system-ui, sans-serif;\n  --font-mono: \"JetBrains Mono\", ui-monospace, monospace;\n\n  --text-xs: 0.625rem;\n  --text-sm: 0.71875rem;\n  --text-base: 0.75rem;\n  --text-lg: 0.8125rem;\n  --text-xl: 0.875rem;\n  --text-2xl: 1rem;\n  --text-3xl: 1.125rem;\n  --text-4xl: 1.25rem;\n  --text-5xl: 1.5rem;\n  --text-6xl: 2rem;\n  --text-7xl: 2.5rem;\n  --text-8xl: 3rem;\n\n  --font-weight-thin: 100;\n  --font-weight-extralight: 200;\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, sorted tight -> loose */\n  --leading-none: 0.68;\n  --leading-tight: 1;\n  --leading-snug: 1.05;\n  --leading-normal: 1.1;\n  --leading-relaxed: 1.3;\n  --leading-loose: 1.5;\n  --leading-looser: 1.55;\n  --leading-loosest: 1.6;\n\n  /* letter-spacing, sorted tight -> wide */\n  --tracking-tightest: -.6px;\n  --tracking-tighter: -.5px;\n  --tracking-tight: -.25px;\n  --tracking-normal: -.225px;\n  --tracking-wide: -.2px;\n  --tracking-wider: -.15px;\n\n  --radius-sm: .25rem;\n  --radius-md: 10px;\n  --radius-lg: 14px;\n  --radius-xl: 1rem;\n  --radius-2xl: 18px;\n  --radius-3xl: 22px;\n  --radius-4xl: 12.5rem;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 .692px 1.385px 0 rgba(0,0,0,.2);\n  --shadow-md: 0 1px 2px rgba(15, 23, 42, 0.03);\n  --shadow-lg: 0 50px 40px 0 rgba(0,0,0,.14);\n  --shadow-xl: 0 2px 5px 0 rgba(0,0,0,.05);\n  --shadow-2xl: unset;\n  --shadow-3xl: 0 1px 0 rgba(255,255,255,0.06) inset, 0 40px 80px -20px rgba(0,0,0,0.7), 0 8px 24px -8px rgba(0,0,0,0.5);\n\n  --breakpoint-sm: 26.5rem;\n  --breakpoint-md: 26.5625rem;\n  --breakpoint-lg: 31.1875rem;\n  --breakpoint-xl: 31.25rem;\n  --breakpoint-2xl: 37.5rem;\n  --breakpoint-3xl: 40rem;\n  --breakpoint-4xl: 47.9375rem;\n  --breakpoint-5xl: 48rem;\n\n  /* most-used spacing values on the source site (px): 1, 6, 8, 10, 12, 16, 20, 24, 28, 32, 40, 48 */\n}\n",
+  "variables.css": ":root {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-500: #949494;\n  --color-neutral-800: #444444;\n  --color-neutral-950: #000000;\n  --color-blue: #2560ff;\n  --color-pale-blue: #e7eaef;\n  --color-blue-2: #434c5f;\n  --color-pale-cyan: #c0e0fa;\n  --color-blue-3: #c8cfda;\n  --color-blue-4: #8b99b2;\n  --color-blue-5: #6c7e9d;\n  --color-cyan: #8bc7f5;\n  --color-blue-6: #a9b4c6;\n  --color-deep-cyan: #0e1217;\n  --color-blue-7: #003db5;\n  --color-cyan-2: #1c90ed;\n\n  /* inferred semantic roles */\n  --color-canvas: #ffffff;\n  --color-ink: #000000;\n  --color-text-muted: #949494;\n  --color-surface: #444444;\n  --color-accent: #2560ff;\n  --color-accent-2: #e7eaef;\n  --color-accent-3: #434c5f;\n\n  /* typography */\n  --font-inter: \"Inter\";\n  --font-manrope: \"Manrope\";\n  --font-repro: \"Repro\";\n  --font-jetbrains-mono: \"JetBrains Mono\";\n  --font-ibm-plex-mono: \"IBM Plex Mono\";\n  --font-jost: \"Jost\";\n  --font-roboto-flex: \"Roboto Flex\";\n  --font-mali: \"Mali\";\n\n  /* type scale, ascending */\n  --text-1: 0.625rem;\n  --text-2: 0.71875rem;\n  --text-3: 0.75rem;\n  --text-4: 0.8125rem;\n  --text-5: 0.875rem;\n  --text-6: 1rem;\n  --text-7: 1.125rem;\n  --text-8: 1.25rem;\n  --text-9: 1.5rem;\n  --text-10: 2rem;\n  --text-11: 2.5rem;\n  --text-12: 3rem;\n\n  /* font weights in use */\n  --font-weight-thin: 100;\n  --font-weight-extralight: 200;\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, tight -> loose */\n  --leading-1: 0.68;\n  --leading-2: 1;\n  --leading-3: 1.05;\n  --leading-4: 1.1;\n  --leading-5: 1.3;\n  --leading-6: 1.5;\n  --leading-7: 1.55;\n  --leading-8: 1.6;\n\n  /* letter-spacing, tight -> wide */\n  --tracking-1: -.6px;\n  --tracking-2: -.5px;\n  --tracking-3: -.25px;\n  --tracking-4: -.225px;\n  --tracking-5: -.2px;\n  --tracking-6: -.15px;\n\n  /* spacing, ascending */\n  --space-1: 1px;\n  --space-2: 6px;\n  --space-3: 8px;\n  --space-4: 10px;\n  --space-5: 12px;\n  --space-6: 16px;\n  --space-7: 20px;\n  --space-8: 24px;\n  --space-9: 28px;\n  --space-10: 32px;\n  --space-11: 40px;\n  --space-12: 48px;\n\n  /* radius, ascending */\n  --radius-sm: .25rem;\n  --radius-md: 10px;\n  --radius-lg: 14px;\n  --radius-xl: 1rem;\n  --radius-2xl: 18px;\n  --radius-3xl: 22px;\n  --radius-4xl: 12.5rem;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 .692px 1.385px 0 rgba(0,0,0,.2);\n  --shadow-md: 0 1px 2px rgba(15, 23, 42, 0.03);\n  --shadow-lg: 0 50px 40px 0 rgba(0,0,0,.14);\n  --shadow-xl: 0 2px 5px 0 rgba(0,0,0,.05);\n  --shadow-2xl: unset;\n  --shadow-3xl: 0 1px 0 rgba(255,255,255,0.06) inset, 0 40px 80px -20px rgba(0,0,0,0.7), 0 8px 24px -8px rgba(0,0,0,0.5);\n}\n",
+  "tokens.json": "{\n  \"$description\": \"Design tokens extracted from https://www.docker.com/. Semantic entries are inferred from usage + luminance; all values are mined from live CSS.\",\n  \"color\": {\n    \"neutral-50\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\"\n    },\n    \"neutral-500\": {\n      \"$value\": \"#949494\",\n      \"$type\": \"color\"\n    },\n    \"neutral-800\": {\n      \"$value\": \"#444444\",\n      \"$type\": \"color\"\n    },\n    \"neutral-950\": {\n      \"$value\": \"#000000\",\n      \"$type\": \"color\"\n    },\n    \"blue\": {\n      \"$value\": \"#2560ff\",\n      \"$type\": \"color\"\n    },\n    \"pale-blue\": {\n      \"$value\": \"#e7eaef\",\n      \"$type\": \"color\"\n    },\n    \"blue-2\": {\n      \"$value\": \"#434c5f\",\n      \"$type\": \"color\"\n    },\n    \"pale-cyan\": {\n      \"$value\": \"#c0e0fa\",\n      \"$type\": \"color\"\n    },\n    \"blue-3\": {\n      \"$value\": \"#c8cfda\",\n      \"$type\": \"color\"\n    },\n    \"blue-4\": {\n      \"$value\": \"#8b99b2\",\n      \"$type\": \"color\"\n    },\n    \"blue-5\": {\n      \"$value\": \"#6c7e9d\",\n      \"$type\": \"color\"\n    },\n    \"cyan\": {\n      \"$value\": \"#8bc7f5\",\n      \"$type\": \"color\"\n    },\n    \"blue-6\": {\n      \"$value\": \"#a9b4c6\",\n      \"$type\": \"color\"\n    },\n    \"deep-cyan\": {\n      \"$value\": \"#0e1217\",\n      \"$type\": \"color\"\n    },\n    \"blue-7\": {\n      \"$value\": \"#003db5\",\n      \"$type\": \"color\"\n    },\n    \"cyan-2\": {\n      \"$value\": \"#1c90ed\",\n      \"$type\": \"color\"\n    }\n  },\n  \"semantic\": {\n    \"canvas\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: lightest neutral, matches the measured light-leaning theme\"\n    },\n    \"ink\": {\n      \"$value\": \"#000000\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: darkest neutral, highest contrast against canvas\"\n    },\n    \"text-muted\": {\n      \"$value\": \"#949494\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used mid-luminance neutral\"\n    },\n    \"surface\": {\n      \"$value\": \"#444444\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: neutral closest to canvas luminance\"\n    },\n    \"accent\": {\n      \"$value\": \"#2560ff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used chromatic color\"\n    },\n    \"accent-2\": {\n      \"$value\": \"#e7eaef\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    },\n    \"accent-3\": {\n      \"$value\": \"#434c5f\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    }\n  },\n  \"fontFamily\": {\n    \"inter\": {\n      \"$value\": \"Inter\",\n      \"$type\": \"fontFamily\"\n    },\n    \"manrope\": {\n      \"$value\": \"Manrope\",\n      \"$type\": \"fontFamily\"\n    },\n    \"repro\": {\n      \"$value\": \"Repro\",\n      \"$type\": \"fontFamily\"\n    },\n    \"jetbrains-mono\": {\n      \"$value\": \"JetBrains Mono\",\n      \"$type\": \"fontFamily\"\n    },\n    \"ibm-plex-mono\": {\n      \"$value\": \"IBM Plex Mono\",\n      \"$type\": \"fontFamily\"\n    },\n    \"jost\": {\n      \"$value\": \"Jost\",\n      \"$type\": \"fontFamily\"\n    },\n    \"roboto-flex\": {\n      \"$value\": \"Roboto Flex\",\n      \"$type\": \"fontFamily\"\n    },\n    \"mali\": {\n      \"$value\": \"Mali\",\n      \"$type\": \"fontFamily\"\n    }\n  },\n  \"fontSize\": {\n    \"size-1\": {\n      \"$value\": \"0.625rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-2\": {\n      \"$value\": \"0.71875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-3\": {\n      \"$value\": \"0.75rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-4\": {\n      \"$value\": \"0.8125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-5\": {\n      \"$value\": \"0.875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-6\": {\n      \"$value\": \"1rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-7\": {\n      \"$value\": \"1.125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-8\": {\n      \"$value\": \"1.25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-9\": {\n      \"$value\": \"1.5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-10\": {\n      \"$value\": \"2rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-11\": {\n      \"$value\": \"2.5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-12\": {\n      \"$value\": \"3rem\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"fontWeight\": {\n    \"thin\": {\n      \"$value\": 100,\n      \"$type\": \"fontWeight\"\n    },\n    \"extralight\": {\n      \"$value\": 200,\n      \"$type\": \"fontWeight\"\n    },\n    \"normal\": {\n      \"$value\": 400,\n      \"$type\": \"fontWeight\"\n    },\n    \"medium\": {\n      \"$value\": 500,\n      \"$type\": \"fontWeight\"\n    },\n    \"semibold\": {\n      \"$value\": 600,\n      \"$type\": \"fontWeight\"\n    },\n    \"bold\": {\n      \"$value\": 700,\n      \"$type\": \"fontWeight\"\n    }\n  },\n  \"lineHeight\": {\n    \"leading-1\": {\n      \"$value\": 0.68,\n      \"$type\": \"number\"\n    },\n    \"leading-2\": {\n      \"$value\": 1,\n      \"$type\": \"number\"\n    },\n    \"leading-3\": {\n      \"$value\": 1.05,\n      \"$type\": \"number\"\n    },\n    \"leading-4\": {\n      \"$value\": 1.1,\n      \"$type\": \"number\"\n    },\n    \"leading-5\": {\n      \"$value\": 1.3,\n      \"$type\": \"number\"\n    },\n    \"leading-6\": {\n      \"$value\": 1.5,\n      \"$type\": \"number\"\n    },\n    \"leading-7\": {\n      \"$value\": 1.55,\n      \"$type\": \"number\"\n    },\n    \"leading-8\": {\n      \"$value\": 1.6,\n      \"$type\": \"number\"\n    }\n  },\n  \"letterSpacing\": {\n    \"tracking-1\": {\n      \"$value\": \"-.6px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-2\": {\n      \"$value\": \"-.5px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-3\": {\n      \"$value\": \"-.25px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-4\": {\n      \"$value\": \"-.225px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-5\": {\n      \"$value\": \"-.2px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-6\": {\n      \"$value\": \"-.15px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"dimension\": {\n    \"space-1\": {\n      \"$value\": \"1px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-2\": {\n      \"$value\": \"6px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-3\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-4\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-5\": {\n      \"$value\": \"12px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-6\": {\n      \"$value\": \"16px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-7\": {\n      \"$value\": \"20px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-8\": {\n      \"$value\": \"24px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-9\": {\n      \"$value\": \"28px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-10\": {\n      \"$value\": \"32px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-11\": {\n      \"$value\": \"40px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-12\": {\n      \"$value\": \"48px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"borderRadius\": {\n    \"sm\": {\n      \"$value\": \".25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"md\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"lg\": {\n      \"$value\": \"14px\",\n      \"$type\": \"dimension\"\n    },\n    \"xl\": {\n      \"$value\": \"1rem\",\n      \"$type\": \"dimension\"\n    },\n    \"2xl\": {\n      \"$value\": \"18px\",\n      \"$type\": \"dimension\"\n    },\n    \"3xl\": {\n      \"$value\": \"22px\",\n      \"$type\": \"dimension\"\n    },\n    \"4xl\": {\n      \"$value\": \"12.5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"full\": {\n      \"$value\": \"50%\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"shadow\": {\n    \"sm\": {\n      \"$value\": \"0 .692px 1.385px 0 rgba(0,0,0,.2)\",\n      \"$type\": \"shadow\"\n    },\n    \"md\": {\n      \"$value\": \"0 1px 2px rgba(15, 23, 42, 0.03)\",\n      \"$type\": \"shadow\"\n    },\n    \"lg\": {\n      \"$value\": \"0 50px 40px 0 rgba(0,0,0,.14)\",\n      \"$type\": \"shadow\"\n    },\n    \"xl\": {\n      \"$value\": \"0 2px 5px 0 rgba(0,0,0,.05)\",\n      \"$type\": \"shadow\"\n    },\n    \"2xl\": {\n      \"$value\": \"unset\",\n      \"$type\": \"shadow\"\n    },\n    \"3xl\": {\n      \"$value\": \"0 1px 0 rgba(255,255,255,0.06) inset, 0 40px 80px -20px rgba(0,0,0,0.7), 0 8px 24px -8px rgba(0,0,0,0.5)\",\n      \"$type\": \"shadow\"\n    }\n  }\n}"
+ },
+ "raw": {
+  "tokens": {
+   "title": "Docker: Accelerated Container Application Development",
+   "description": "Docker is a platform designed to help developers build, share, and run container applications. We handle the tedious setup, so you can focus on the code.",
+   "themeGuess": "light-leaning",
+   "darkWeight": 49,
+   "lightWeight": 164,
+   "neutrals": [
+    {
+     "hex": "#ffffff",
+     "count": 164
+    },
+    {
+     "hex": "#949494",
+     "count": 2
+    },
+    {
+     "hex": "#444444",
+     "count": 2
+    },
+    {
+     "hex": "#000000",
+     "count": 47
+    }
+   ],
+   "accents": [
+    {
+     "hex": "#2560ff",
+     "count": 80
+    },
+    {
+     "hex": "#e7eaef",
+     "count": 50
+    },
+    {
+     "hex": "#434c5f",
+     "count": 28
+    },
+    {
+     "hex": "#c0e0fa",
+     "count": 24
+    },
+    {
+     "hex": "#c8cfda",
+     "count": 24
+    },
+    {
+     "hex": "#8b99b2",
+     "count": 21
+    },
+    {
+     "hex": "#6c7e9d",
+     "count": 16
+    },
+    {
+     "hex": "#8bc7f5",
+     "count": 16
+    },
+    {
+     "hex": "#a9b4c6",
+     "count": 16
+    },
+    {
+     "hex": "#0e1217",
+     "count": 15
+    },
+    {
+     "hex": "#003db5",
+     "count": 14
+    },
+    {
+     "hex": "#1c90ed",
+     "count": 12
+    }
+   ],
+   "modern": [],
+   "fonts": [
+    {
+     "name": "Inter",
+     "count": 137
+    },
+    {
+     "name": "Manrope",
+     "count": 38
+    },
+    {
+     "name": "Repro",
+     "count": 31
+    },
+    {
+     "name": "JetBrains Mono",
+     "count": 19
+    },
+    {
+     "name": "IBM Plex Mono",
+     "count": 15
+    },
+    {
+     "name": "Jost",
+     "count": 2
+    },
+    {
+     "name": "Roboto Flex",
+     "count": 1
+    },
+    {
+     "name": "Mali",
+     "count": 1
+    }
+   ],
+   "fontSizes": [
+    10,
+    11.5,
+    12,
+    13,
+    14,
+    16,
+    18,
+    20,
+    24,
+    32,
+    40,
+    48
+   ],
+   "fontWeights": [
+    {
+     "value": 100,
+     "count": 7
+    },
+    {
+     "value": 200,
+     "count": 3
+    },
+    {
+     "value": 400,
+     "count": 83
+    },
+    {
+     "value": 500,
+     "count": 87
+    },
+    {
+     "value": 600,
+     "count": 18
+    },
+    {
+     "value": 700,
+     "count": 31
+    }
+   ],
+   "lineHeights": [
+    0.68,
+    1,
+    1.05,
+    1.1,
+    1.3,
+    1.5,
+    1.55,
+    1.6
+   ],
+   "letterSpacings": [
+    "-.6px",
+    "-.5px",
+    "-.25px",
+    "-.225px",
+    "-.2px",
+    "-.15px"
+   ],
+   "spacing": [
+    1,
+    6,
+    8,
+    10,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    40,
+    48
+   ],
+   "radii": [
+    {
+     "value": ".25rem",
+     "count": 10
+    },
+    {
+     "value": "14px",
+     "count": 5
+    },
+    {
+     "value": "18px",
+     "count": 3
+    },
+    {
+     "value": "22px",
+     "count": 2
+    },
+    {
+     "value": "10px",
+     "count": 2
+    },
+    {
+     "value": "12.5rem",
+     "count": 2
+    },
+    {
+     "value": "1rem",
+     "count": 2
+    },
+    {
+     "value": "50%",
+     "count": 6
+    }
+   ],
+   "shadows": [
+    {
+     "value": "0 .692px 1.385px 0 rgba(0,0,0,.2)",
+     "count": 4,
+     "blur": 0
+    },
+    {
+     "value": "0 1px 2px rgba(15, 23, 42, 0.03)",
+     "count": 2,
+     "blur": 0
+    },
+    {
+     "value": "0 50px 40px 0 rgba(0,0,0,.14)",
+     "count": 1,
+     "blur": 0
+    },
+    {
+     "value": "0 2px 5px 0 rgba(0,0,0,.05)",
+     "count": 1,
+     "blur": 0
+    },
+    {
+     "value": "unset",
+     "count": 1,
+     "blur": 0
+    },
+    {
+     "value": "0 1px 0 rgba(255,255,255,0.06) inset, 0 40px 80px -20px rgba(0,0,0,0.7), 0 8px 24px -8px rgba(0,0,0,0.5)",
+     "count": 1,
+     "blur": 0
+    }
+   ],
+   "breakpoints": [
+    424,
+    425,
+    499,
+    500,
+    600,
+    640,
+    767,
+    768
+   ],
+   "nativeVars": [
+    {
+     "name": "imageHeight",
+     "value": "3.0625rem"
+    },
+    {
+     "name": "imageMaxWidth",
+     "value": "8rem"
+    },
+    {
+     "name": "imageMinWidth",
+     "value": "2.625rem"
+    },
+    {
+     "name": "imageContainerPadding",
+     "value": "2.5rem"
+    },
+    {
+     "name": "backgroundColor",
+     "value": "transparent"
+    },
+    {
+     "name": "logoColor",
+     "value": "#00153c"
+    },
+    {
+     "name": "backgroundSecondary",
+     "value": "#e7eaef"
+    },
+    {
+     "name": "cardBackgroundColor",
+     "value": "#f9fafb"
+    },
+    {
+     "name": "cardBackgroundHover",
+     "value": "#fff"
+    },
+    {
+     "name": "borderColor",
+     "value": "#c8cfda"
+    },
+    {
+     "name": "shadowColor",
+     "value": "hsla(0,0%,100%,.08)"
+    },
+    {
+     "name": "shadowColorActive",
+     "value": "hsla(0,0%,100%,.5)"
+    },
+    {
+     "name": "shadowColorHover",
+     "value": "hsla(0,0%,100%,.25)"
+    },
+    {
+     "name": "highlightColor",
+     "value": "#2560ff"
+    },
+    {
+     "name": "eyebrowColor",
+     "value": "#fff"
+    },
+    {
+     "name": "headlineColor",
+     "value": "#000"
+    },
+    {
+     "name": "subheadColor",
+     "value": "#2c333f"
+    },
+    {
+     "name": "copyColor",
+     "value": "#2c333f"
+    },
+    {
+     "name": "copyColor2",
+     "value": "#566581"
+    },
+    {
+     "name": "linkColor",
+     "value": "#2560ff"
+    },
+    {
+     "name": "inlineCodeBackgroundColor",
+     "value": "#e7eaef"
+    },
+    {
+     "name": "inlineCodeBorderColor",
+     "value": "#c8cfda"
+    },
+    {
+     "name": "headlineHighlightedColor",
+     "value": "#2560ff"
+    },
+    {
+     "name": "entryTitleColor",
+     "value": "blue800"
+    },
+    {
+     "name": "listItemColor",
+     "value": "#2560ff"
+    },
+    {
+     "name": "arrow-button-icon",
+     "value": "url('data:image/svg+xml"
+    },
+    {
+     "name": "search-icon",
+     "value": "url('data:image/svg+xml"
+    },
+    {
+     "name": "chevron-right-solid-icon",
+     "value": "url('data:image/svg+xml"
+    },
+    {
+     "name": "buttonTextDecoration",
+     "value": "\"none\""
+    },
+    {
+     "name": "buttonPrimaryBorder",
+     "value": "#003db5"
+    },
+    {
+     "name": "buttonPrimaryBorderWidth",
+     "value": "1.5px"
+    },
+    {
+     "name": "buttonPrimaryBackground",
+     "value": "#2560ff"
+    },
+    {
+     "name": "buttonPrimaryText",
+     "value": "#fff"
+    },
+    {
+     "name": "buttonPrimaryShadow",
+     "value": "#c0e0fa"
+    },
+    {
+     "name": "buttonPrimaryHoverBorder",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonPrimaryHoverBackground",
+     "value": "#2560ff"
+    },
+    {
+     "name": "buttonPrimaryHoverText",
+     "value": "#fff"
+    },
+    {
+     "name": "buttonPrimaryHoverShadow",
+     "value": "#c0e0fa"
+    },
+    {
+     "name": "buttonPrimaryActiveBorder",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonPrimaryActiveBackground",
+     "value": "#2560ff"
+    },
+    {
+     "name": "buttonPrimaryActiveText",
+     "value": "#fff"
+    },
+    {
+     "name": "buttonPrimaryActiveShadow",
+     "value": "#c0e0fa"
+    },
+    {
+     "name": "buttonPrimaryDisabledBorder",
+     "value": "#566581"
+    },
+    {
+     "name": "buttonPrimaryDisabledBackground",
+     "value": "#c8cfda"
+    },
+    {
+     "name": "buttonPrimaryDisabledText",
+     "value": "#434c5f"
+    },
+    {
+     "name": "buttonPrimaryFocusOutline",
+     "value": "#c0e0fa"
+    },
+    {
+     "name": "buttonPrimaryFocusBackground",
+     "value": "#2560ff"
+    },
+    {
+     "name": "buttonPrimaryFocusBorder",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonPrimaryFocusText",
+     "value": "#fff"
+    },
+    {
+     "name": "buttonPrimaryFocusShadow",
+     "value": "#c0e0fa"
+    },
+    {
+     "name": "buttonSecondaryBorder",
+     "value": "#a9b4c6"
+    },
+    {
+     "name": "buttonSecondaryBorderWidth",
+     "value": "1.5px"
+    },
+    {
+     "name": "buttonSecondaryBackground",
+     "value": "#fff"
+    },
+    {
+     "name": "buttonSecondaryText",
+     "value": "#000"
+    },
+    {
+     "name": "buttonSecondaryShadow",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonSecondaryHoverBorder",
+     "value": "#a9b4c6"
+    },
+    {
+     "name": "buttonSecondaryHoverBackground",
+     "value": "#fff"
+    },
+    {
+     "name": "buttonSecondaryHoverText",
+     "value": "#000"
+    },
+    {
+     "name": "buttonSecondaryHoverShadow",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonSecondaryActiveBorder",
+     "value": "#a9b4c6"
+    },
+    {
+     "name": "buttonSecondaryActiveBackground",
+     "value": "#fff"
+    },
+    {
+     "name": "buttonSecondaryActiveText",
+     "value": "#000"
+    },
+    {
+     "name": "buttonSecondaryActiveShadow",
+     "value": "#c0e0fa"
+    },
+    {
+     "name": "buttonSecondaryDisabledBorder",
+     "value": "#566581"
+    },
+    {
+     "name": "buttonSecondaryDisabledBackground",
+     "value": "#c8cfda"
+    },
+    {
+     "name": "buttonSecondaryDisabledText",
+     "value": "#434c5f"
+    },
+    {
+     "name": "buttonSecondaryFocusOutline",
+     "value": "#c0e0fa"
+    },
+    {
+     "name": "buttonSecondaryFocusBackground",
+     "value": "#fff"
+    },
+    {
+     "name": "buttonSecondaryFocusBorder",
+     "value": "#a9b4c6"
+    },
+    {
+     "name": "buttonSecondaryFocusText",
+     "value": "#000"
+    },
+    {
+     "name": "buttonSecondaryFocusShadow",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonTertiaryBorder",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonTertiaryBorderWidth",
+     "value": "2px"
+    },
+    {
+     "name": "buttonTertiaryBackground",
+     "value": "var(--backgroundColor)"
+    },
+    {
+     "name": "buttonTertiaryText",
+     "value": "#2560ff"
+    },
+    {
+     "name": "buttonTertiaryShadow",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonTertiaryHoverShadow",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonTertiaryHoverBorder",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonTertiaryHoverBackground",
+     "value": "var(--backgroundColor)"
+    },
+    {
+     "name": "buttonTertiaryHoverText",
+     "value": "#003db5"
+    },
+    {
+     "name": "buttonTertiaryActiveShadow",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonTertiaryActiveBorder",
+     "value": "#c0e0fa"
+    },
+    {
+     "name": "buttonTertiaryActiveBackground",
+     "value": "var(--backgroundColor)"
+    },
+    {
+     "name": "buttonTertiaryActiveText",
+     "value": "#2560ff"
+    },
+    {
+     "name": "buttonTertiaryDisabledBorder",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonTertiaryDisabledBackground",
+     "value": "var(--backgroundColor)"
+    },
+    {
+     "name": "buttonTertiaryDisabledText",
+     "value": "#6c7e9d"
+    },
+    {
+     "name": "buttonTertiaryDisabledShadow",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonTertiaryFocusOutline",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonTertiaryFocusBackground",
+     "value": "var(--backgroundColor)"
+    },
+    {
+     "name": "buttonTertiaryFocusBorder",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonTertiaryFocusText",
+     "value": "#2560ff"
+    },
+    {
+     "name": "buttonTertiaryFocusShadow",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonCtaBorder",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonCtaBackground",
+     "value": "var(--backgroundColor)"
+    },
+    {
+     "name": "buttonCtaText",
+     "value": "#2560ff"
+    },
+    {
+     "name": "buttonCtaShadow",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonCtaHoverBorder",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonCtaHoverBackground",
+     "value": "var(--backgroundColor)"
+    },
+    {
+     "name": "buttonCtaHoverText",
+     "value": "#8bc7f5"
+    },
+    {
+     "name": "buttonCtaHoverShadow",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonCtaActiveBorder",
+     "value": "#c0e0fa"
+    },
+    {
+     "name": "buttonCtaActiveBackground",
+     "value": "var(--backgroundColor)"
+    },
+    {
+     "name": "buttonCtaActiveText",
+     "value": "#2560ff"
+    },
+    {
+     "name": "buttonCtaActiveShadow",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonCtaDisabledBorder",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonCtaDisabledBackground",
+     "value": "var(--backgroundColor)"
+    },
+    {
+     "name": "buttonCtaDisabledText",
+     "value": "#6c7e9d"
+    },
+    {
+     "name": "buttonCtaDisabledShadow",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonCtaFocusOutline",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonCtaFocusBackground",
+     "value": "var(--backgroundColor)"
+    },
+    {
+     "name": "buttonCtaFocusBorder",
+     "value": "transparent"
+    },
+    {
+     "name": "buttonCtaFocusText",
+     "value": "#2560ff"
+    },
+    {
+     "name": "buttonCtaFocusShadow",
+     "value": "transparent"
+    },
+    {
+     "name": "labelColor",
+     "value": "#2c333f"
+    },
+    {
+     "name": "inputRequiredAsteriskColor",
+     "value": "#ff5757"
+    },
+    {
+     "name": "inputDescriptionColor",
+     "value": "#6c7e9d"
+    },
+    {
+     "name": "inputBackground",
+     "value": "#fff"
+    },
+    {
+     "name": "inputPlaceholderColor",
+     "value": "#6c7e9d"
+    },
+    {
+     "name": "inputValue",
+     "value": "#002978"
+    }
+   ],
+   "darkVars": [],
+   "rings": []
+  },
+  "stylesheets": 9
+ }
+}

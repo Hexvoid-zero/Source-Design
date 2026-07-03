@@ -205,6 +205,39 @@ export default function Home() {
               </div>
             </section>
 
+            {/* MCP strip: connect an AI client directly */}
+            <section className="border-t border-line">
+              <div className="max-w-[1400px] mx-auto px-5 md:px-10 py-14 md:py-16 grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                <div className="md:col-span-5">
+                  <h2 className="text-[clamp(1.4rem,2.6vw,2rem)] font-light text-snow">
+                    Also an MCP server.
+                  </h2>
+                  <p className="mt-3 text-sm leading-relaxed text-fog max-w-[46ch]">
+                    Every tool on this site — extract, propose, and the ready-designs
+                    library — is callable from Claude, Cursor, or any MCP client.
+                  </p>
+                </div>
+                <div className="md:col-span-6 md:col-start-7">
+                  <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-fog">MCP URL</p>
+                  <p className="mt-1 font-mono text-sm text-cyan break-all select-all">
+                    https://source--design.vercel.app/api/mcp
+                  </p>
+                  <pre className="mt-4 p-4 bg-surface border border-line overflow-auto font-mono text-xs leading-relaxed text-snow/80">
+{`{
+  "mcpServers": {
+    "source-design": {
+      "url": "https://source--design.vercel.app/api/mcp"
+    }
+  }
+}`}
+                  </pre>
+                  <p className="mt-3 font-mono text-[11px] text-fog">
+                    tools: extract_design · propose_design · list_ready_designs · get_ready_design
+                  </p>
+                </div>
+              </div>
+            </section>
+
             {/* statement band: right-aligned */}
             <section className="border-t border-line">
               <div className="max-w-[1400px] mx-auto px-5 md:px-10 py-16 md:py-24 text-right">

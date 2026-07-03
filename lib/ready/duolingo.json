@@ -1,0 +1,666 @@
+{
+ "slug": "duolingo",
+ "name": "Duolingo",
+ "blurb": "Language learning. Feather green, chunky rounded buttons, cartoon confidence.",
+ "url": "https://www.duolingo.com/",
+ "title": "Duolingo - The world’s most popular way to learn",
+ "extractedAt": "2026-07-03",
+ "summary": {
+  "colors": [
+   {
+    "name": "neutral-50",
+    "hex": "#ffffff",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-200",
+    "hex": "#d7d7d7",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-300",
+    "hex": "#c1c1c1",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-400",
+    "hex": "#9e9e9e",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-500",
+    "hex": "#8e918f",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-600",
+    "hex": "#777777",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-700",
+    "hex": "#5f6368",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-800",
+    "hex": "#4b4b4b",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-900",
+    "hex": "#3c4043",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-950",
+    "hex": "#333333",
+    "group": "neutral"
+   },
+   {
+    "name": "cyan",
+    "hex": "#1a73e8",
+    "group": "accent"
+   },
+   {
+    "name": "lime",
+    "hex": "#68b631",
+    "group": "accent"
+   },
+   {
+    "name": "pale-blue",
+    "hex": "#e8eaed",
+    "group": "accent"
+   },
+   {
+    "name": "cyan-2",
+    "hex": "#1cb0f6",
+    "group": "accent"
+   },
+   {
+    "name": "cyan-3",
+    "hex": "#1f96db",
+    "group": "accent"
+   },
+   {
+    "name": "teal",
+    "hex": "#32ae88",
+    "group": "accent"
+   },
+   {
+    "name": "cyan-4",
+    "hex": "#33c3f0",
+    "group": "accent"
+   },
+   {
+    "name": "cyan-5",
+    "hex": "#1eaedb",
+    "group": "accent"
+   },
+   {
+    "name": "cyan-6",
+    "hex": "#5cadff",
+    "group": "accent"
+   },
+   {
+    "name": "blue",
+    "hex": "#4285f4",
+    "group": "accent"
+   },
+   {
+    "name": "pale-blue-2",
+    "hex": "#d2e3fc",
+    "group": "accent"
+   },
+   {
+    "name": "cyan-7",
+    "hex": "#00639b",
+    "group": "accent"
+   }
+  ],
+  "fonts": [
+   "KaTeX_Main",
+   "KaTeX_SansSerif",
+   "KaTeX_Fraktur",
+   "KaTeX_Math",
+   "KaTeX_Size1",
+   "duolingo-sans",
+   "feather",
+   "KaTeX_Caligraphic"
+  ],
+  "themeGuess": "light-leaning",
+  "stylesheets": 9,
+  "nativeVarCount": 61
+ },
+ "files": {
+  "DESIGN.md": "---\nname: duolingo-com-design-system\nsource: https://www.duolingo.com/\nextracted: 2026-07-03\ntheme: light  # measured from neutral usage weight\ncolors:  # roles inferred from usage frequency + luminance; names verified against values\n  canvas: \"#ffffff\"\n  ink: \"#333333\"\n  text-muted: \"#c1c1c1\"\n  surface: \"#d7d7d7\"\n  hairline: \"#9e9e9e\"\n  accent: \"#1a73e8\"  # cyan\n  accent-2: \"#68b631\"  # lime\n  accent-3: \"#e8eaed\"  # pale-blue\nfonts:\n  primary: \"KaTeX_Main\"  # medium-confidence: usage counts are close\n---\n\n# Duolingo - The world’s most popular way to learn — Design System\n\nExtracted from **https://www.duolingo.com/** on 2026-07-03.\n\nEvery value below is mined from the site's live CSS (61 native custom properties, ranked usage counts). Role assignments are inferred from usage and luminance and marked as such — treat them as a strong starting point, not gospel.\n\n## Overview\n\nThe system reads as light: measured neutral usage weighs 50 light against 19 dark. The palette is chromatic: 12 saturated values against 10 neutrals, led by cyan (`#1a73e8`). **KaTeX_Main** leads the font stack, though usage counts are close — verify against rendered pages before committing. Geometry mixes sharp corners (2px) with full pills.\n\n## Usage rules\n\nDerived from the measured usage below — each rule cites its evidence.\n\n- Chromatic color carries 39% of measured usage — this palette uses color structurally. Saturated values can hold large surfaces here; timidity would misrepresent the source.\n- The theme is light (measured neutral weight 50:19). Don't flip individual sections to the opposite mode.\n- `12px` is the workhorse radius (x23); treat the other radii as exceptions, not options.\n- The only shadows are blur-less hairline offsets — this system barely uses elevation; don't add soft drop shadows.\n\n## Colors\n\n### Neutrals (light → dark)\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `neutral-50` | `#ffffff` | 39 | **canvas** — lightest neutral, matches the measured light-leaning theme |\n| `neutral-200` | `#d7d7d7` | 11 | **surface** — neutral closest to canvas luminance |\n| `neutral-300` | `#c1c1c1` | 8 | **text-muted** — most-used mid-luminance neutral |\n| `neutral-400` | `#9e9e9e` | 2 | **hairline** — next neutral near canvas, hairline-border weight |\n| `neutral-500` | `#8e918f` | 2 | — |\n| `neutral-600` | `#777777` | 2 | — |\n| `neutral-700` | `#5f6368` | 3 | — |\n| `neutral-800` | `#4b4b4b` | 9 | — |\n| `neutral-900` | `#3c4043` | 1 | — |\n| `neutral-950` | `#333333` | 1 | **ink** — darkest neutral, highest contrast against canvas |\n\n### Accents\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `cyan` | `#1a73e8` | 15 | **accent** — most-used chromatic color |\n| `lime` | `#68b631` | 8 | **accent-2** — supporting chromatic color |\n| `pale-blue` | `#e8eaed` | 8 | **accent-3** — supporting chromatic color |\n| `cyan-2` | `#1cb0f6` | 4 | — |\n| `cyan-3` | `#1f96db` | 3 | — |\n| `teal` | `#32ae88` | 2 | — |\n| `cyan-4` | `#33c3f0` | 2 | — |\n| `cyan-5` | `#1eaedb` | 2 | — |\n| `cyan-6` | `#5cadff` | 2 | — |\n| `blue` | `#4285f4` | 1 | — |\n| `pale-blue-2` | `#d2e3fc` | 1 | — |\n| `cyan-7` | `#00639b` | 1 | — |\n\n### Modern color values (kept verbatim)\n\n- `color(\"eel\")`\n- `color(\"snow\")`\n\n## Typography\n\n**KaTeX_Main** has the most `font-family` declarations, but the margin over the rest is thin — treat the primary-face call as provisional and verify on rendered pages. Full list by usage:\n\n| Family | Usage |\n| --- | --- |\n| KaTeX_Main | 8 |\n| KaTeX_SansSerif | 7 |\n| KaTeX_Fraktur | 4 |\n| KaTeX_Math | 4 |\n| KaTeX_Size1 | 4 |\n| duolingo-sans | 4 |\n| feather | 4 |\n| KaTeX_Caligraphic | 3 |\n\n**Size scale (px):** `12`, `13`, `13.33`, `14`, `15`, `16`, `17`, `19`, `19.2`, `24`, `25`, `32`\n\n**Weights in use:** `300` (x1), `400` (x19), `500` (x9), `600` (x4), `700` (x90)\n\n**Line-heights (unitless):** `1`, `1.15`, `1.2`, `1.25`, `1.3`, `1.4`, `1.5`, `2`\n\n**Letter-spacing values:** `-.02em`, `.01em`, `.25px`, `.3px`, `.04em`, `.8px`\n\n## Spacing\n\nMost-used values (px): `5`, `6`, `8`, `10`, `12`, `14`, `15`, `16`, `20`, `24`, `32`, `40`\n\n## Border radius\n\n| Token | Value | Usage |\n| --- | --- | --- |\n| `radius-sm` | `2px` | 5 |\n| `radius-md` | `4px` | 11 |\n| `radius-lg` | `6px` | 5 |\n| `radius-xl` | `8px` | 8 |\n| `radius-2xl` | `10px` | 4 |\n| `radius-3xl` | `12px` | 23 |\n| `radius-4xl` | `16px` | 13 |\n| `radius-full` | `50%` | 12 |\n\n## Shadows (ordered by blur radius)\n\n- `shadow-sm` — `0 0 18px rgba(0,0,0,.2)` (x1)\n- `shadow-md` — `0 2px 0` (x1)\n- `shadow-lg` — `0 3px 0 1px` (x1)\n\n## Breakpoints\n\n`360px`, `400px`, `410px`, `425px`, `530px`, `550px`, `600px`, `699px`\n\n## Starter recipes\n\nTokens composed into components. The source site's real components were **not** inspected — these are starting points built from the extracted values, with contrast ratios computed rather than assumed.\n\n```css\n.button-primary {\n  background: var(--color-accent); /* #1a73e8 */\n  color: var(--color-canvas); /* #ffffff — contrast 4.5:1 */\n  border-radius: 9999px; /* pill — mined as 50% */\n  font-weight: 500;\n}\n\n.card {\n  background: var(--color-surface); /* #d7d7d7 */\n  border: 1px solid var(--color-hairline); /* #9e9e9e */\n  border-radius: 12px; /* most-used finite radius */\n  box-shadow: var(--shadow-sm);\n}\n\n.input {\n  background: var(--color-canvas); /* #ffffff */\n  color: var(--color-ink); /* #333333 — contrast 12.6:1 */\n  border: 1px solid var(--color-hairline); /* #9e9e9e */\n  border-radius: 2px;\n  /* placeholder color: var(--color-text-muted) #c1c1c1 */\n}\n\n.nav {\n  background: var(--color-canvas); /* #ffffff */\n  border-bottom: 1px solid var(--color-hairline); /* #9e9e9e */\n  color: var(--color-ink); /* #333333 */\n  /* inactive links: var(--color-text-muted) #c1c1c1 */\n  /* active link: var(--color-accent) #1a73e8 — contrast vs canvas 4.5:1 */\n}\n\n.modal {\n  background: var(--color-surface); /* #d7d7d7 */\n  border-radius: 12px;\n  box-shadow: var(--shadow-lg); /* largest mined shadow */\n}\n\n.modal-backdrop {\n  background: color-mix(in srgb, var(--color-ink) 55%, transparent); /* scrim from #333333 */\n}\n\n.input-success {\n  border-color: #68b631; /* mined token: lime */\n}\n\n.input-error {\n  /* no red exists in the mined palette — this site does not expose an error color in its CSS. */\n  /* Introduce one deliberately rather than borrowing a random red; keep saturation near the accent's. */\n}\n```\n\n## Observations\n\n- 10 of 22 extracted colors are neutrals.\n- 3 distinct shadows; the softest reaches 0px blur.\n- 8 breakpoints, from 360px to 699px.\n\n## Native CSS custom properties\n\nFirst 40 of 61:\n\n```css\n:root {\n  --viewport-height: 100dvh;\n  --web-ui_button-border-radius: 16px;\n  --rtl-sign: 1;\n  --text-pageTitle-casing-large: none;\n  --text-pageTitle-letter-spacing-large: 0;\n  --text-pageTitle-line-height-large: 2.75rem;\n  --text-pageTitle-size-large: 2.5rem;\n  --text-pageTitle-weight-large: 700;\n  --text-pageTitle-casing-small: none;\n  --text-pageTitle-letter-spacing-small: 0;\n  --text-pageTitle-line-height-small: 2.25rem;\n  --text-pageTitle-size-small: 2rem;\n  --text-pageTitle-weight-small: 700;\n  --text-heading-casing-large: none;\n  --text-heading-letter-spacing-large: 0;\n  --text-heading-line-height-large: 2rem;\n  --text-heading-size-large: 1.75rem;\n  --text-heading-weight-large: 700;\n  --text-heading-casing-medium: none;\n  --text-heading-letter-spacing-medium: 0;\n  --text-heading-line-height-medium: 2rem;\n  --text-heading-size-medium: 1.5rem;\n  --text-heading-weight-medium: 700;\n  --text-heading-casing-small: none;\n  --text-heading-letter-spacing-small: 0;\n  --text-heading-line-height-small: 1.5rem;\n  --text-heading-size-small: 1.25rem;\n  --text-heading-weight-small: 700;\n  --text-heading-casing-xsmall: none;\n  --text-heading-letter-spacing-xsmall: 0;\n  --text-heading-line-height-xsmall: 1.25rem;\n  --text-heading-size-xsmall: 1rem;\n  --text-heading-weight-xsmall: 700;\n  --text-body-casing: none;\n  --text-body-letter-spacing: 0;\n  --text-body-line-height: 1.75rem;\n  --text-body-size: 1.25rem;\n  --text-body-weight: 500;\n  --text-body-weight-bold: 700;\n  --text-body-casing-spacious: none;\n}\n```\n\n## Files\n\n- `tailwind.css` — Tailwind v4 `@theme` block; tokens become utilities (e.g. `bg-neutral-900`, `text-cyan`).\n- `variables.css` — framework-agnostic `:root` variables, same values.\n- `tokens.json` — W3C Design Tokens format for Figma plugins, Style Dictionary, etc.\n",
+  "tailwind.css": "@import \"tailwindcss\";\n\n@theme {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-200: #d7d7d7;\n  --color-neutral-300: #c1c1c1;\n  --color-neutral-400: #9e9e9e;\n  --color-neutral-500: #8e918f;\n  --color-neutral-600: #777777;\n  --color-neutral-700: #5f6368;\n  --color-neutral-800: #4b4b4b;\n  --color-neutral-900: #3c4043;\n  --color-neutral-950: #333333;\n  --color-cyan: #1a73e8;\n  --color-lime: #68b631;\n  --color-pale-blue: #e8eaed;\n  --color-cyan-2: #1cb0f6;\n  --color-cyan-3: #1f96db;\n  --color-teal: #32ae88;\n  --color-cyan-4: #33c3f0;\n  --color-cyan-5: #1eaedb;\n  --color-cyan-6: #5cadff;\n  --color-blue: #4285f4;\n  --color-pale-blue-2: #d2e3fc;\n  --color-cyan-7: #00639b;\n\n  /* inferred semantic roles (each maps to a distinct mined value) */\n  --color-canvas: #ffffff;\n  --color-ink: #333333;\n  --color-text-muted: #c1c1c1;\n  --color-surface: #d7d7d7;\n  --color-hairline: #9e9e9e;\n  --color-accent: #1a73e8;\n  --color-accent-2: #68b631;\n  --color-accent-3: #e8eaed;\n\n  --font-sans: \"KaTeX_Main\", ui-sans-serif, system-ui, sans-serif;\n\n  --text-xs: 0.75rem;\n  --text-sm: 0.8125rem;\n  --text-base: 0.833125rem;\n  --text-lg: 0.875rem;\n  --text-xl: 0.9375rem;\n  --text-2xl: 1rem;\n  --text-3xl: 1.0625rem;\n  --text-4xl: 1.1875rem;\n  --text-5xl: 1.2rem;\n  --text-6xl: 1.5rem;\n  --text-7xl: 1.5625rem;\n  --text-8xl: 2rem;\n\n  --font-weight-light: 300;\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, sorted tight -> loose */\n  --leading-none: 1;\n  --leading-tight: 1.15;\n  --leading-snug: 1.2;\n  --leading-normal: 1.25;\n  --leading-relaxed: 1.3;\n  --leading-loose: 1.4;\n  --leading-looser: 1.5;\n  --leading-loosest: 2;\n\n  /* letter-spacing, sorted tight -> wide */\n  --tracking-tightest: -.02em;\n  --tracking-tighter: .01em;\n  --tracking-tight: .25px;\n  --tracking-normal: .3px;\n  --tracking-wide: .04em;\n  --tracking-wider: .8px;\n\n  --radius-sm: 2px;\n  --radius-md: 4px;\n  --radius-lg: 6px;\n  --radius-xl: 8px;\n  --radius-2xl: 10px;\n  --radius-3xl: 12px;\n  --radius-4xl: 16px;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 0 18px rgba(0,0,0,.2);\n  --shadow-md: 0 2px 0;\n  --shadow-lg: 0 3px 0 1px;\n\n  --breakpoint-sm: 22.5rem;\n  --breakpoint-md: 25rem;\n  --breakpoint-lg: 25.625rem;\n  --breakpoint-xl: 26.5625rem;\n  --breakpoint-2xl: 33.125rem;\n  --breakpoint-3xl: 34.375rem;\n  --breakpoint-4xl: 37.5rem;\n  --breakpoint-5xl: 43.6875rem;\n\n  /* most-used spacing values on the source site (px): 5, 6, 8, 10, 12, 14, 15, 16, 20, 24, 32, 40 */\n}\n",
+  "variables.css": ":root {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-200: #d7d7d7;\n  --color-neutral-300: #c1c1c1;\n  --color-neutral-400: #9e9e9e;\n  --color-neutral-500: #8e918f;\n  --color-neutral-600: #777777;\n  --color-neutral-700: #5f6368;\n  --color-neutral-800: #4b4b4b;\n  --color-neutral-900: #3c4043;\n  --color-neutral-950: #333333;\n  --color-cyan: #1a73e8;\n  --color-lime: #68b631;\n  --color-pale-blue: #e8eaed;\n  --color-cyan-2: #1cb0f6;\n  --color-cyan-3: #1f96db;\n  --color-teal: #32ae88;\n  --color-cyan-4: #33c3f0;\n  --color-cyan-5: #1eaedb;\n  --color-cyan-6: #5cadff;\n  --color-blue: #4285f4;\n  --color-pale-blue-2: #d2e3fc;\n  --color-cyan-7: #00639b;\n\n  /* inferred semantic roles */\n  --color-canvas: #ffffff;\n  --color-ink: #333333;\n  --color-text-muted: #c1c1c1;\n  --color-surface: #d7d7d7;\n  --color-hairline: #9e9e9e;\n  --color-accent: #1a73e8;\n  --color-accent-2: #68b631;\n  --color-accent-3: #e8eaed;\n\n  /* typography */\n  --font-katex-main: \"KaTeX_Main\";\n  --font-katex-sansserif: \"KaTeX_SansSerif\";\n  --font-katex-fraktur: \"KaTeX_Fraktur\";\n  --font-katex-math: \"KaTeX_Math\";\n  --font-katex-size1: \"KaTeX_Size1\";\n  --font-duolingo-sans: \"duolingo-sans\";\n  --font-feather: \"feather\";\n  --font-katex-caligraphic: \"KaTeX_Caligraphic\";\n\n  /* type scale, ascending */\n  --text-1: 0.75rem;\n  --text-2: 0.8125rem;\n  --text-3: 0.833125rem;\n  --text-4: 0.875rem;\n  --text-5: 0.9375rem;\n  --text-6: 1rem;\n  --text-7: 1.0625rem;\n  --text-8: 1.1875rem;\n  --text-9: 1.2rem;\n  --text-10: 1.5rem;\n  --text-11: 1.5625rem;\n  --text-12: 2rem;\n\n  /* font weights in use */\n  --font-weight-light: 300;\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, tight -> loose */\n  --leading-1: 1;\n  --leading-2: 1.15;\n  --leading-3: 1.2;\n  --leading-4: 1.25;\n  --leading-5: 1.3;\n  --leading-6: 1.4;\n  --leading-7: 1.5;\n  --leading-8: 2;\n\n  /* letter-spacing, tight -> wide */\n  --tracking-1: -.02em;\n  --tracking-2: .01em;\n  --tracking-3: .25px;\n  --tracking-4: .3px;\n  --tracking-5: .04em;\n  --tracking-6: .8px;\n\n  /* spacing, ascending */\n  --space-1: 5px;\n  --space-2: 6px;\n  --space-3: 8px;\n  --space-4: 10px;\n  --space-5: 12px;\n  --space-6: 14px;\n  --space-7: 15px;\n  --space-8: 16px;\n  --space-9: 20px;\n  --space-10: 24px;\n  --space-11: 32px;\n  --space-12: 40px;\n\n  /* radius, ascending */\n  --radius-sm: 2px;\n  --radius-md: 4px;\n  --radius-lg: 6px;\n  --radius-xl: 8px;\n  --radius-2xl: 10px;\n  --radius-3xl: 12px;\n  --radius-4xl: 16px;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 0 18px rgba(0,0,0,.2);\n  --shadow-md: 0 2px 0;\n  --shadow-lg: 0 3px 0 1px;\n}\n",
+  "tokens.json": "{\n  \"$description\": \"Design tokens extracted from https://www.duolingo.com/. Semantic entries are inferred from usage + luminance; all values are mined from live CSS.\",\n  \"color\": {\n    \"neutral-50\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\"\n    },\n    \"neutral-200\": {\n      \"$value\": \"#d7d7d7\",\n      \"$type\": \"color\"\n    },\n    \"neutral-300\": {\n      \"$value\": \"#c1c1c1\",\n      \"$type\": \"color\"\n    },\n    \"neutral-400\": {\n      \"$value\": \"#9e9e9e\",\n      \"$type\": \"color\"\n    },\n    \"neutral-500\": {\n      \"$value\": \"#8e918f\",\n      \"$type\": \"color\"\n    },\n    \"neutral-600\": {\n      \"$value\": \"#777777\",\n      \"$type\": \"color\"\n    },\n    \"neutral-700\": {\n      \"$value\": \"#5f6368\",\n      \"$type\": \"color\"\n    },\n    \"neutral-800\": {\n      \"$value\": \"#4b4b4b\",\n      \"$type\": \"color\"\n    },\n    \"neutral-900\": {\n      \"$value\": \"#3c4043\",\n      \"$type\": \"color\"\n    },\n    \"neutral-950\": {\n      \"$value\": \"#333333\",\n      \"$type\": \"color\"\n    },\n    \"cyan\": {\n      \"$value\": \"#1a73e8\",\n      \"$type\": \"color\"\n    },\n    \"lime\": {\n      \"$value\": \"#68b631\",\n      \"$type\": \"color\"\n    },\n    \"pale-blue\": {\n      \"$value\": \"#e8eaed\",\n      \"$type\": \"color\"\n    },\n    \"cyan-2\": {\n      \"$value\": \"#1cb0f6\",\n      \"$type\": \"color\"\n    },\n    \"cyan-3\": {\n      \"$value\": \"#1f96db\",\n      \"$type\": \"color\"\n    },\n    \"teal\": {\n      \"$value\": \"#32ae88\",\n      \"$type\": \"color\"\n    },\n    \"cyan-4\": {\n      \"$value\": \"#33c3f0\",\n      \"$type\": \"color\"\n    },\n    \"cyan-5\": {\n      \"$value\": \"#1eaedb\",\n      \"$type\": \"color\"\n    },\n    \"cyan-6\": {\n      \"$value\": \"#5cadff\",\n      \"$type\": \"color\"\n    },\n    \"blue\": {\n      \"$value\": \"#4285f4\",\n      \"$type\": \"color\"\n    },\n    \"pale-blue-2\": {\n      \"$value\": \"#d2e3fc\",\n      \"$type\": \"color\"\n    },\n    \"cyan-7\": {\n      \"$value\": \"#00639b\",\n      \"$type\": \"color\"\n    }\n  },\n  \"semantic\": {\n    \"canvas\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: lightest neutral, matches the measured light-leaning theme\"\n    },\n    \"ink\": {\n      \"$value\": \"#333333\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: darkest neutral, highest contrast against canvas\"\n    },\n    \"text-muted\": {\n      \"$value\": \"#c1c1c1\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used mid-luminance neutral\"\n    },\n    \"surface\": {\n      \"$value\": \"#d7d7d7\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: neutral closest to canvas luminance\"\n    },\n    \"hairline\": {\n      \"$value\": \"#9e9e9e\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: next neutral near canvas, hairline-border weight\"\n    },\n    \"accent\": {\n      \"$value\": \"#1a73e8\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used chromatic color\"\n    },\n    \"accent-2\": {\n      \"$value\": \"#68b631\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    },\n    \"accent-3\": {\n      \"$value\": \"#e8eaed\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    }\n  },\n  \"fontFamily\": {\n    \"katex-main\": {\n      \"$value\": \"KaTeX_Main\",\n      \"$type\": \"fontFamily\"\n    },\n    \"katex-sansserif\": {\n      \"$value\": \"KaTeX_SansSerif\",\n      \"$type\": \"fontFamily\"\n    },\n    \"katex-fraktur\": {\n      \"$value\": \"KaTeX_Fraktur\",\n      \"$type\": \"fontFamily\"\n    },\n    \"katex-math\": {\n      \"$value\": \"KaTeX_Math\",\n      \"$type\": \"fontFamily\"\n    },\n    \"katex-size1\": {\n      \"$value\": \"KaTeX_Size1\",\n      \"$type\": \"fontFamily\"\n    },\n    \"duolingo-sans\": {\n      \"$value\": \"duolingo-sans\",\n      \"$type\": \"fontFamily\"\n    },\n    \"feather\": {\n      \"$value\": \"feather\",\n      \"$type\": \"fontFamily\"\n    },\n    \"katex-caligraphic\": {\n      \"$value\": \"KaTeX_Caligraphic\",\n      \"$type\": \"fontFamily\"\n    }\n  },\n  \"fontSize\": {\n    \"size-1\": {\n      \"$value\": \"0.75rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-2\": {\n      \"$value\": \"0.8125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-3\": {\n      \"$value\": \"0.833125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-4\": {\n      \"$value\": \"0.875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-5\": {\n      \"$value\": \"0.9375rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-6\": {\n      \"$value\": \"1rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-7\": {\n      \"$value\": \"1.0625rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-8\": {\n      \"$value\": \"1.1875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-9\": {\n      \"$value\": \"1.2rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-10\": {\n      \"$value\": \"1.5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-11\": {\n      \"$value\": \"1.5625rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-12\": {\n      \"$value\": \"2rem\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"fontWeight\": {\n    \"light\": {\n      \"$value\": 300,\n      \"$type\": \"fontWeight\"\n    },\n    \"normal\": {\n      \"$value\": 400,\n      \"$type\": \"fontWeight\"\n    },\n    \"medium\": {\n      \"$value\": 500,\n      \"$type\": \"fontWeight\"\n    },\n    \"semibold\": {\n      \"$value\": 600,\n      \"$type\": \"fontWeight\"\n    },\n    \"bold\": {\n      \"$value\": 700,\n      \"$type\": \"fontWeight\"\n    }\n  },\n  \"lineHeight\": {\n    \"leading-1\": {\n      \"$value\": 1,\n      \"$type\": \"number\"\n    },\n    \"leading-2\": {\n      \"$value\": 1.15,\n      \"$type\": \"number\"\n    },\n    \"leading-3\": {\n      \"$value\": 1.2,\n      \"$type\": \"number\"\n    },\n    \"leading-4\": {\n      \"$value\": 1.25,\n      \"$type\": \"number\"\n    },\n    \"leading-5\": {\n      \"$value\": 1.3,\n      \"$type\": \"number\"\n    },\n    \"leading-6\": {\n      \"$value\": 1.4,\n      \"$type\": \"number\"\n    },\n    \"leading-7\": {\n      \"$value\": 1.5,\n      \"$type\": \"number\"\n    },\n    \"leading-8\": {\n      \"$value\": 2,\n      \"$type\": \"number\"\n    }\n  },\n  \"letterSpacing\": {\n    \"tracking-1\": {\n      \"$value\": \"-.02em\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-2\": {\n      \"$value\": \".01em\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-3\": {\n      \"$value\": \".25px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-4\": {\n      \"$value\": \".3px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-5\": {\n      \"$value\": \".04em\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-6\": {\n      \"$value\": \".8px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"dimension\": {\n    \"space-1\": {\n      \"$value\": \"5px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-2\": {\n      \"$value\": \"6px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-3\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-4\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-5\": {\n      \"$value\": \"12px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-6\": {\n      \"$value\": \"14px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-7\": {\n      \"$value\": \"15px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-8\": {\n      \"$value\": \"16px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-9\": {\n      \"$value\": \"20px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-10\": {\n      \"$value\": \"24px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-11\": {\n      \"$value\": \"32px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-12\": {\n      \"$value\": \"40px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"borderRadius\": {\n    \"sm\": {\n      \"$value\": \"2px\",\n      \"$type\": \"dimension\"\n    },\n    \"md\": {\n      \"$value\": \"4px\",\n      \"$type\": \"dimension\"\n    },\n    \"lg\": {\n      \"$value\": \"6px\",\n      \"$type\": \"dimension\"\n    },\n    \"xl\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"2xl\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"3xl\": {\n      \"$value\": \"12px\",\n      \"$type\": \"dimension\"\n    },\n    \"4xl\": {\n      \"$value\": \"16px\",\n      \"$type\": \"dimension\"\n    },\n    \"full\": {\n      \"$value\": \"50%\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"shadow\": {\n    \"sm\": {\n      \"$value\": \"0 0 18px rgba(0,0,0,.2)\",\n      \"$type\": \"shadow\"\n    },\n    \"md\": {\n      \"$value\": \"0 2px 0\",\n      \"$type\": \"shadow\"\n    },\n    \"lg\": {\n      \"$value\": \"0 3px 0 1px\",\n      \"$type\": \"shadow\"\n    }\n  }\n}"
+ },
+ "raw": {
+  "tokens": {
+   "title": "Duolingo - The world’s most popular way to learn",
+   "description": "",
+   "themeGuess": "light-leaning",
+   "darkWeight": 19,
+   "lightWeight": 50,
+   "neutrals": [
+    {
+     "hex": "#ffffff",
+     "count": 39
+    },
+    {
+     "hex": "#d7d7d7",
+     "count": 11
+    },
+    {
+     "hex": "#c1c1c1",
+     "count": 8
+    },
+    {
+     "hex": "#9e9e9e",
+     "count": 2
+    },
+    {
+     "hex": "#8e918f",
+     "count": 2
+    },
+    {
+     "hex": "#777777",
+     "count": 2
+    },
+    {
+     "hex": "#5f6368",
+     "count": 3
+    },
+    {
+     "hex": "#4b4b4b",
+     "count": 9
+    },
+    {
+     "hex": "#3c4043",
+     "count": 1
+    },
+    {
+     "hex": "#333333",
+     "count": 1
+    },
+    {
+     "hex": "#202124",
+     "count": 2
+    },
+    {
+     "hex": "#131314",
+     "count": 1
+    }
+   ],
+   "accents": [
+    {
+     "hex": "#1a73e8",
+     "count": 15
+    },
+    {
+     "hex": "#68b631",
+     "count": 8
+    },
+    {
+     "hex": "#e8eaed",
+     "count": 8
+    },
+    {
+     "hex": "#1cb0f6",
+     "count": 4
+    },
+    {
+     "hex": "#1f96db",
+     "count": 3
+    },
+    {
+     "hex": "#32ae88",
+     "count": 2
+    },
+    {
+     "hex": "#33c3f0",
+     "count": 2
+    },
+    {
+     "hex": "#1eaedb",
+     "count": 2
+    },
+    {
+     "hex": "#5cadff",
+     "count": 2
+    },
+    {
+     "hex": "#4285f4",
+     "count": 1
+    },
+    {
+     "hex": "#d2e3fc",
+     "count": 1
+    },
+    {
+     "hex": "#00639b",
+     "count": 1
+    }
+   ],
+   "modern": [
+    "color(\"eel\")",
+    "color(\"snow\")"
+   ],
+   "fonts": [
+    {
+     "name": "KaTeX_Main",
+     "count": 8
+    },
+    {
+     "name": "KaTeX_SansSerif",
+     "count": 7
+    },
+    {
+     "name": "KaTeX_Fraktur",
+     "count": 4
+    },
+    {
+     "name": "KaTeX_Math",
+     "count": 4
+    },
+    {
+     "name": "KaTeX_Size1",
+     "count": 4
+    },
+    {
+     "name": "duolingo-sans",
+     "count": 4
+    },
+    {
+     "name": "feather",
+     "count": 4
+    },
+    {
+     "name": "KaTeX_Caligraphic",
+     "count": 3
+    }
+   ],
+   "fontSizes": [
+    12,
+    13,
+    13.33,
+    14,
+    15,
+    16,
+    17,
+    19,
+    19.2,
+    24,
+    25,
+    32
+   ],
+   "fontWeights": [
+    {
+     "value": 300,
+     "count": 1
+    },
+    {
+     "value": 400,
+     "count": 19
+    },
+    {
+     "value": 500,
+     "count": 9
+    },
+    {
+     "value": 600,
+     "count": 4
+    },
+    {
+     "value": 700,
+     "count": 90
+    }
+   ],
+   "lineHeights": [
+    1,
+    1.15,
+    1.2,
+    1.25,
+    1.3,
+    1.4,
+    1.5,
+    2
+   ],
+   "letterSpacings": [
+    "-.02em",
+    ".01em",
+    ".25px",
+    ".3px",
+    ".04em",
+    ".8px"
+   ],
+   "spacing": [
+    5,
+    6,
+    8,
+    10,
+    12,
+    14,
+    15,
+    16,
+    20,
+    24,
+    32,
+    40
+   ],
+   "radii": [
+    {
+     "value": "12px",
+     "count": 23
+    },
+    {
+     "value": "16px",
+     "count": 13
+    },
+    {
+     "value": "4px",
+     "count": 11
+    },
+    {
+     "value": "8px",
+     "count": 8
+    },
+    {
+     "value": "2px",
+     "count": 5
+    },
+    {
+     "value": "6px",
+     "count": 5
+    },
+    {
+     "value": "10px",
+     "count": 4
+    },
+    {
+     "value": "50%",
+     "count": 12
+    }
+   ],
+   "shadows": [
+    {
+     "value": "0 0 18px rgba(0,0,0,.2)",
+     "count": 1,
+     "blur": 0
+    },
+    {
+     "value": "0 2px 0",
+     "count": 1,
+     "blur": 0
+    },
+    {
+     "value": "0 3px 0 1px",
+     "count": 1,
+     "blur": 0
+    }
+   ],
+   "breakpoints": [
+    360,
+    400,
+    410,
+    425,
+    530,
+    550,
+    600,
+    699
+   ],
+   "nativeVars": [
+    {
+     "name": "viewport-height",
+     "value": "100dvh"
+    },
+    {
+     "name": "web-ui_button-border-radius",
+     "value": "16px"
+    },
+    {
+     "name": "rtl-sign",
+     "value": "1"
+    },
+    {
+     "name": "text-pageTitle-casing-large",
+     "value": "none"
+    },
+    {
+     "name": "text-pageTitle-letter-spacing-large",
+     "value": "0"
+    },
+    {
+     "name": "text-pageTitle-line-height-large",
+     "value": "2.75rem"
+    },
+    {
+     "name": "text-pageTitle-size-large",
+     "value": "2.5rem"
+    },
+    {
+     "name": "text-pageTitle-weight-large",
+     "value": "700"
+    },
+    {
+     "name": "text-pageTitle-casing-small",
+     "value": "none"
+    },
+    {
+     "name": "text-pageTitle-letter-spacing-small",
+     "value": "0"
+    },
+    {
+     "name": "text-pageTitle-line-height-small",
+     "value": "2.25rem"
+    },
+    {
+     "name": "text-pageTitle-size-small",
+     "value": "2rem"
+    },
+    {
+     "name": "text-pageTitle-weight-small",
+     "value": "700"
+    },
+    {
+     "name": "text-heading-casing-large",
+     "value": "none"
+    },
+    {
+     "name": "text-heading-letter-spacing-large",
+     "value": "0"
+    },
+    {
+     "name": "text-heading-line-height-large",
+     "value": "2rem"
+    },
+    {
+     "name": "text-heading-size-large",
+     "value": "1.75rem"
+    },
+    {
+     "name": "text-heading-weight-large",
+     "value": "700"
+    },
+    {
+     "name": "text-heading-casing-medium",
+     "value": "none"
+    },
+    {
+     "name": "text-heading-letter-spacing-medium",
+     "value": "0"
+    },
+    {
+     "name": "text-heading-line-height-medium",
+     "value": "2rem"
+    },
+    {
+     "name": "text-heading-size-medium",
+     "value": "1.5rem"
+    },
+    {
+     "name": "text-heading-weight-medium",
+     "value": "700"
+    },
+    {
+     "name": "text-heading-casing-small",
+     "value": "none"
+    },
+    {
+     "name": "text-heading-letter-spacing-small",
+     "value": "0"
+    },
+    {
+     "name": "text-heading-line-height-small",
+     "value": "1.5rem"
+    },
+    {
+     "name": "text-heading-size-small",
+     "value": "1.25rem"
+    },
+    {
+     "name": "text-heading-weight-small",
+     "value": "700"
+    },
+    {
+     "name": "text-heading-casing-xsmall",
+     "value": "none"
+    },
+    {
+     "name": "text-heading-letter-spacing-xsmall",
+     "value": "0"
+    },
+    {
+     "name": "text-heading-line-height-xsmall",
+     "value": "1.25rem"
+    },
+    {
+     "name": "text-heading-size-xsmall",
+     "value": "1rem"
+    },
+    {
+     "name": "text-heading-weight-xsmall",
+     "value": "700"
+    },
+    {
+     "name": "text-body-casing",
+     "value": "none"
+    },
+    {
+     "name": "text-body-letter-spacing",
+     "value": "0"
+    },
+    {
+     "name": "text-body-line-height",
+     "value": "1.75rem"
+    },
+    {
+     "name": "text-body-size",
+     "value": "1.25rem"
+    },
+    {
+     "name": "text-body-weight",
+     "value": "500"
+    },
+    {
+     "name": "text-body-weight-bold",
+     "value": "700"
+    },
+    {
+     "name": "text-body-casing-spacious",
+     "value": "none"
+    },
+    {
+     "name": "text-body-letter-spacing-spacious",
+     "value": "0"
+    },
+    {
+     "name": "text-body-line-height-spacious",
+     "value": "2rem"
+    },
+    {
+     "name": "text-body-size-spacious",
+     "value": "1.25rem"
+    },
+    {
+     "name": "text-body-weight-spacious",
+     "value": "500"
+    },
+    {
+     "name": "text-body-weight-spacious-bold",
+     "value": "700"
+    },
+    {
+     "name": "text-caption-casing",
+     "value": "none"
+    },
+    {
+     "name": "text-caption-letter-spacing",
+     "value": "0"
+    },
+    {
+     "name": "text-caption-line-height",
+     "value": "1.5rem"
+    },
+    {
+     "name": "text-caption-size",
+     "value": "1rem"
+    },
+    {
+     "name": "text-caption-weight",
+     "value": "500"
+    },
+    {
+     "name": "text-caption-weight-bold",
+     "value": "700"
+    },
+    {
+     "name": "text-label-casing-large",
+     "value": "uppercase"
+    },
+    {
+     "name": "text-label-letter-spacing-large",
+     "value": "0.04em"
+    },
+    {
+     "name": "text-label-line-height-large",
+     "value": "1.5rem"
+    },
+    {
+     "name": "text-label-size-large",
+     "value": "1.5rem"
+    },
+    {
+     "name": "text-label-weight-large",
+     "value": "700"
+    },
+    {
+     "name": "text-label-casing-medium",
+     "value": "uppercase"
+    },
+    {
+     "name": "text-label-letter-spacing-medium",
+     "value": "0.04em"
+    },
+    {
+     "name": "text-label-line-height-medium",
+     "value": "1rem"
+    },
+    {
+     "name": "text-label-size-medium",
+     "value": "1rem"
+    },
+    {
+     "name": "text-label-weight-medium",
+     "value": "700"
+    }
+   ],
+   "darkVars": [],
+   "rings": []
+  },
+  "stylesheets": 9
+ }
+}

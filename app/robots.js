@@ -1,6 +1,6 @@
 export default function robots() {
   return {
     rules: { userAgent: "*", allow: "/" },
-    sitemap: "https://get-design.vercel.app/sitemap.xml",
+    sitemap: "https://source--design.vercel.app/sitemap.xml",
   };
 }

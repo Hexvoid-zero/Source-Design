@@ -1,0 +1,1271 @@
+{
+ "slug": "vercel",
+ "name": "Vercel",
+ "blurb": "Deployment platform. Monochrome discipline, Geist everywhere, hairline geometry.",
+ "url": "https://vercel.com/",
+ "title": "Agentic Infrastructure - Vercel",
+ "extractedAt": "2026-07-03",
+ "summary": {
+  "colors": [
+   {
+    "name": "neutral-50",
+    "hex": "#ffffff",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-100",
+    "hex": "#eaeaea",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-200",
+    "hex": "#cccccc",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-400",
+    "hex": "#a0a0a0",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-500",
+    "hex": "#878787",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-600",
+    "hex": "#666666",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-700",
+    "hex": "#4b4c57",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-800",
+    "hex": "#404040",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-900",
+    "hex": "#333333",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-950",
+    "hex": "#1f1f1f",
+    "group": "neutral"
+   },
+   {
+    "name": "red",
+    "hex": "#ef4444",
+    "group": "accent"
+   },
+   {
+    "name": "cyan",
+    "hex": "#0070f3",
+    "group": "accent"
+   },
+   {
+    "name": "orange",
+    "hex": "#ff9900",
+    "group": "accent"
+   },
+   {
+    "name": "pale-cyan",
+    "hex": "#e1f0fd",
+    "group": "accent"
+   },
+   {
+    "name": "lime",
+    "hex": "#95bf47",
+    "group": "accent"
+   },
+   {
+    "name": "pale-orange",
+    "hex": "#ffe8cc",
+    "group": "accent"
+   },
+   {
+    "name": "pink",
+    "hex": "#de2670",
+    "group": "accent"
+   },
+   {
+    "name": "indigo",
+    "hex": "#7928ca",
+    "group": "accent"
+   },
+   {
+    "name": "pink-2",
+    "hex": "#eb367f",
+    "group": "accent"
+   },
+   {
+    "name": "yellow",
+    "hex": "#febb2e",
+    "group": "accent"
+   },
+   {
+    "name": "orange-2",
+    "hex": "#bd5200",
+    "group": "accent"
+   },
+   {
+    "name": "pale-green",
+    "hex": "#d3f9d8",
+    "group": "accent"
+   }
+  ],
+  "fonts": [
+   "Geist Mono",
+   "Roboto Mono",
+   "GeistSans",
+   "Georgia",
+   "GeistPixelSquare",
+   "GeistPixelGrid",
+   "GeistPixelCircle",
+   "GeistPixelTriangle"
+  ],
+  "themeGuess": "light-leaning",
+  "stylesheets": 4,
+  "nativeVarCount": 120
+ },
+ "files": {
+  "DESIGN.md": "---\nname: vercel-com-design-system\nsource: https://vercel.com/\nextracted: 2026-07-03\ntheme: light  # measured from neutral usage weight\ncolors:  # roles inferred from usage frequency + luminance; names verified against values\n  canvas: \"#ffffff\"\n  ink: \"#1f1f1f\"\n  text-muted: \"#878787\"\n  surface: \"#eaeaea\"\n  hairline: \"#cccccc\"\n  accent: \"#ef4444\"  # red\n  accent-2: \"#0070f3\"  # cyan\n  accent-3: \"#ff9900\"  # orange\nfonts:\n  primary: \"GeistSans\"\n  serif: \"Georgia\"\n  mono: \"Geist Mono\"\n---\n\n# Agentic Infrastructure - Vercel — Design System\n\nExtracted from **https://vercel.com/** on 2026-07-03.\n\n> The autonomous stack for every app and agent.\n\nEvery value below is mined from the site's live CSS (120 native custom properties, ranked usage counts). Role assignments are inferred from usage and luminance and marked as such — treat them as a strong starting point, not gospel.\n\n## Overview\n\nThe system reads as light: measured neutral usage weighs 211 light against 181 dark. The palette is chromatic: 12 saturated values against 10 neutrals, led by red (`#ef4444`). **GeistSans** carries the interface; **Georgia** appears in serif roles; **Geist Mono** handles code and data. Geometry mixes sharp corners (2px) with full pills.\n\n## Usage rules\n\nDerived from the measured usage below — each rule cites its evidence.\n\n- Chromatic color is only 23% of measured color usage. Reserve `accent` (`#ef4444`) for primary actions, links, and emphasis — spreading it into body text or large surfaces breaks the ratio that defines this look.\n- The theme is light (measured neutral weight 211:181). Don't flip individual sections to the opposite mode.\n- `6px` is the workhorse radius (x40); treat the other radii as exceptions, not options.\n- The only shadows are blur-less hairline offsets — this system barely uses elevation; don't add soft drop shadows.\n- Spacing sits on a 4px grid (10 of 12 values divisible by 4) — stay on it.\n- `Geist Mono` is the monospace — keep it for code, data, and metadata roles.\n\n## Colors\n\n### Neutrals (light → dark)\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `neutral-50` | `#ffffff` | 169 | **canvas** — lightest neutral, matches the measured light-leaning theme |\n| `neutral-100` | `#eaeaea` | 26 | **surface** — neutral closest to canvas luminance |\n| `neutral-200` | `#cccccc` | 16 | **hairline** — next neutral near canvas, hairline-border weight |\n| `neutral-400` | `#a0a0a0` | 6 | — |\n| `neutral-500` | `#878787` | 9 | **text-muted** — most-used mid-luminance neutral |\n| `neutral-600` | `#666666` | 8 | — |\n| `neutral-700` | `#4b4c57` | 11 | — |\n| `neutral-800` | `#404040` | 6 | — |\n| `neutral-900` | `#333333` | 16 | — |\n| `neutral-950` | `#1f1f1f` | 19 | **ink** — darkest neutral, highest contrast against canvas |\n\n### Accents\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `red` | `#ef4444` | 12 | **accent** — most-used chromatic color |\n| `cyan` | `#0070f3` | 11 | **accent-2** — supporting chromatic color |\n| `orange` | `#ff9900` | 10 | **accent-3** — supporting chromatic color |\n| `pale-cyan` | `#e1f0fd` | 9 | — |\n| `lime` | `#95bf47` | 7 | — |\n| `pale-orange` | `#ffe8cc` | 7 | — |\n| `pink` | `#de2670` | 6 | — |\n| `indigo` | `#7928ca` | 5 | — |\n| `pink-2` | `#eb367f` | 5 | — |\n| `yellow` | `#febb2e` | 5 | — |\n| `orange-2` | `#bd5200` | 4 | — |\n| `pale-green` | `#d3f9d8` | 4 | — |\n\n### Modern color values (kept verbatim)\n\n- `lab(0% 0 0)`\n- `lab(96.5005% 4.18508 1.52328)`\n- `lab(98.6252% -.635922 8.42309)`\n- `lab(38.4009% 52.6132 -92.3857)`\n- `lab(96.2416% 2.28849 -5.51657)`\n- `lab(93.0838% 4.35197 -9.88284)`\n- `lab(35.2783% 67.9912 -88.793)`\n- `lab(84.7652% -1.94535 -7.93337)`\n- `lab(48.0876% -2.03595 -16.5814)`\n- `lab(98.2596% -.247031 -.706708)`\n- `lab(1.90334% .278696 -5.48866)`\n- `lab(96.1634% .0993311 -.364041)`\n\n### Dark mode\n\nThe source defines 60 dark-mode variants (via dark selector). Both halves of the system, first 30:\n\n| Token | Light | Dark |\n| --- | --- | --- |\n| `--tw-gradient-from` | — | `var(--ds-background-200)` |\n| `--tw-gradient-via` | — | `var(--ds-background-200)` |\n| `--tw-gradient-to` | — | `var(--ds-background-200)` |\n| `--tw-shadow` | — | `0 0 0 1px var(--tw-shadow-color,var(--ds-gray-600))` |\n| `--tw-ring-color` | — | `var(--ds-gray-700)` |\n| `--tw-invert` | — | `invert(0%)` |\n| `--leaderboard-chart-cursor-fill` | — | `#27272a` |\n| `--context-card-tip-stroke` | — | `#252525` |\n| `--geist-cyan` | — | `#50e3c2` |\n| `--geist-warning` | — | `#f5a623` |\n| `--geist-error` | — | `#e00` |\n| `--ds-black` | — | `#000` |\n| `--ds-white` | — | `#fff` |\n| `--ds-background-100` | — | `#fff` |\n| `--ds-background-200` | — | `#fafafa` |\n| `--ds-gray-100` | — | `#f2f2f2` |\n| `--ds-gray-200` | — | `#ebebeb` |\n| `--ds-gray-300` | — | `#e6e6e6` |\n| `--ds-gray-400` | — | `#eaeaea` |\n| `--ds-gray-500` | — | `#c9c9c9` |\n| `--ds-gray-600` | — | `#a8a8a8` |\n| `--ds-gray-700` | — | `#8f8f8f` |\n| `--ds-gray-800` | — | `#7d7d7d` |\n| `--ds-gray-900` | — | `#4d4d4d` |\n| `--ds-gray-1000` | — | `#171717` |\n| `--ds-gray-alpha-100` | — | `#0000000d` |\n| `--ds-gray-alpha-200` | — | `#00000015` |\n| `--ds-gray-alpha-300` | — | `#0000001a` |\n| `--ds-gray-alpha-400` | — | `#00000014` |\n| `--ds-gray-alpha-500` | — | `#00000036` |\n\n`variables.css` ships these as a `prefers-color-scheme: dark` override block.\n\n## Typography\n\n**GeistSans** is the primary interface face; **Georgia** covers serif roles; **Geist Mono** is the monospace. Full list by usage:\n\n| Family | Usage |\n| --- | --- |\n| Geist Mono | 7 |\n| Roboto Mono | 3 |\n| GeistSans | 2 |\n| Georgia | 2 |\n| GeistPixelSquare | 2 |\n| GeistPixelGrid | 2 |\n| GeistPixelCircle | 2 |\n| GeistPixelTriangle | 2 |\n\n**Size scale (px):** `12`, `13`, `14`, `16`, `18`, `20`, `24`, `32`, `40`, `48`, `56`, `64`\n\n**Weights in use:** `100` (x8), `400` (x15), `450` (x4), `500` (x54), `600` (x39), `700` (x9)\n\n**Line-heights (unitless):** `0.75`, `1`, `1.05`, `1.1`, `1.2`, `1.3`, `1.5`, `1.6`\n\n**Letter-spacing values:** `-2.88px`, `-2.4px`, `-1.28px`, `-.96px`, `-.4px`, `-.32px`\n\n## Spacing\n\nMost-used values (px): `1`, `2`, `4`, `8`, `12`, `16`, `20`, `24`, `32`, `40`, `48`, `64`\n\n10 of 12 values sit on a 4px grid.\n\n## Border radius\n\n| Token | Value | Usage |\n| --- | --- | --- |\n| `radius-sm` | `2px` | 5 |\n| `radius-md` | `.25rem` | 19 |\n| `radius-lg` | `6px` | 40 |\n| `radius-xl` | `8px` | 7 |\n| `radius-2xl` | `12px` | 24 |\n| `radius-3xl` | `100%` | 6 |\n| `radius-full` | `50%` | 17 |\n\n## Shadows (ordered by blur radius)\n\n- `shadow-sm` — `0 1px 2px #0000000a` (x7)\n\n## Breakpoints\n\n`370px`, `375px`, `380px`, `383px`, `384px`, `400px`, `401px`, `440px`\n\n## Starter recipes\n\nTokens composed into components. The source site's real components were **not** inspected — these are starting points built from the extracted values, with contrast ratios computed rather than assumed.\n\n```css\n.button-primary {\n  background: var(--color-accent); /* #ef4444 */\n  color: var(--color-ink); /* #1f1f1f — contrast 4.4:1, below AA for small text; use large or bold labels */\n  border-radius: 9999px; /* pill — mined as 50% */\n  font-weight: 500;\n}\n\n.card {\n  background: var(--color-surface); /* #eaeaea */\n  border: 1px solid var(--color-hairline); /* #cccccc */\n  border-radius: 6px; /* most-used finite radius */\n  box-shadow: var(--shadow-sm);\n}\n\n.input {\n  background: var(--color-canvas); /* #ffffff */\n  color: var(--color-ink); /* #1f1f1f — contrast 16.5:1 */\n  border: 1px solid var(--color-hairline); /* #cccccc */\n  border-radius: 2px;\n  /* placeholder color: var(--color-text-muted) #878787 */\n}\n\n.nav {\n  background: var(--color-canvas); /* #ffffff */\n  border-bottom: 1px solid var(--color-hairline); /* #cccccc */\n  color: var(--color-ink); /* #1f1f1f */\n  /* inactive links: var(--color-text-muted) #878787 */\n  /* active link: var(--color-accent) #ef4444 — contrast vs canvas 3.8:1 */\n}\n\n.modal {\n  background: var(--color-surface); /* #eaeaea */\n  border-radius: 6px;\n  box-shadow: var(--shadow-sm); /* largest mined shadow */\n}\n\n.modal-backdrop {\n  background: color-mix(in srgb, var(--color-ink) 55%, transparent); /* scrim from #1f1f1f */\n}\n\n.input-error {\n  border-color: #ef4444; /* mined token: red */\n  /* error text: #ef4444 on canvas — contrast 3.8:1, below AA; darken for message text */\n}\n\n.input-success {\n  border-color: #d3f9d8; /* mined token: pale-green */\n}\n```\n\n## Observations\n\n- 10 of 22 extracted colors are neutrals.\n- 1 distinct shadow; the softest reaches 0px blur.\n- 8 breakpoints, from 370px to 440px.\n- The site ships a large native token system (120+ custom properties) — prefer those names when extending it.\n\n## Native CSS custom properties\n\nFirst 40 of 120:\n\n```css\n:root {\n  --value: 0;\n  --font-sans: var(--font-geist-sans);\n  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace;\n  --color-red-50: #fef2f2;\n  --color-amber-50: #fffbeb;\n  --color-indigo-600: #4f39f6;\n  --color-violet-50: #f5f3ff;\n  --color-violet-100: #ede9fe;\n  --color-violet-700: #7008e7;\n  --color-slate-300: #cad5e2;\n  --color-slate-500: #62748e;\n  --color-gray-50: #f9fafb;\n  --color-gray-200: var(--ds-gray-200);\n  --color-gray-300: var(--ds-gray-300);\n  --color-gray-500: var(--ds-gray-500);\n  --color-gray-600: var(--ds-gray-600);\n  --color-gray-700: var(--ds-gray-700);\n  --color-gray-800: var(--ds-gray-800);\n  --color-gray-900: var(--ds-gray-900);\n  --color-gray-950: #030712;\n  --color-zinc-100: #f4f4f5;\n  --color-zinc-600: #52525c;\n  --color-zinc-900: #18181b;\n  --color-neutral-700: #404040;\n  --color-neutral-800: #262626;\n  --spacing: .25rem;\n  --container-xs: 20rem;\n  --container-sm: 401px;\n  --container-md: 601px;\n  --container-lg: 961px;\n  --container-xl: 1200px;\n  --container-2xl: 1400px;\n  --container-3xl: 48rem;\n  --container-4xl: 56rem;\n  --container-5xl: 64rem;\n  --text-xs: .75rem;\n  --text-xs--line-height: calc(1 / .75);\n  --text-sm: .875rem;\n  --text-sm--line-height: calc(1.25 / .875);\n  --text-base: 1rem;\n}\n```\n\n## Files\n\n- `tailwind.css` — Tailwind v4 `@theme` block; tokens become utilities (e.g. `bg-neutral-900`, `text-red`).\n- `variables.css` — framework-agnostic `:root` variables, same values.\n- `tokens.json` — W3C Design Tokens format for Figma plugins, Style Dictionary, etc.\n",
+  "tailwind.css": "@import \"tailwindcss\";\n\n@theme {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-100: #eaeaea;\n  --color-neutral-200: #cccccc;\n  --color-neutral-400: #a0a0a0;\n  --color-neutral-500: #878787;\n  --color-neutral-600: #666666;\n  --color-neutral-700: #4b4c57;\n  --color-neutral-800: #404040;\n  --color-neutral-900: #333333;\n  --color-neutral-950: #1f1f1f;\n  --color-red: #ef4444;\n  --color-cyan: #0070f3;\n  --color-orange: #ff9900;\n  --color-pale-cyan: #e1f0fd;\n  --color-lime: #95bf47;\n  --color-pale-orange: #ffe8cc;\n  --color-pink: #de2670;\n  --color-indigo: #7928ca;\n  --color-pink-2: #eb367f;\n  --color-yellow: #febb2e;\n  --color-orange-2: #bd5200;\n  --color-pale-green: #d3f9d8;\n\n  /* inferred semantic roles (each maps to a distinct mined value) */\n  --color-canvas: #ffffff;\n  --color-ink: #1f1f1f;\n  --color-text-muted: #878787;\n  --color-surface: #eaeaea;\n  --color-hairline: #cccccc;\n  --color-accent: #ef4444;\n  --color-accent-2: #0070f3;\n  --color-accent-3: #ff9900;\n\n  --font-sans: \"GeistSans\", ui-sans-serif, system-ui, sans-serif;\n  --font-serif: \"Georgia\", ui-serif, Georgia, serif;\n  --font-mono: \"Geist Mono\", ui-monospace, monospace;\n\n  --text-xs: 0.75rem;\n  --text-sm: 0.8125rem;\n  --text-base: 0.875rem;\n  --text-lg: 1rem;\n  --text-xl: 1.125rem;\n  --text-2xl: 1.25rem;\n  --text-3xl: 1.5rem;\n  --text-4xl: 2rem;\n  --text-5xl: 2.5rem;\n  --text-6xl: 3rem;\n  --text-7xl: 3.5rem;\n  --text-8xl: 4rem;\n\n  --font-weight-thin: 100;\n  --font-weight-normal: 400;\n  --font-weight-450: 450;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, sorted tight -> loose */\n  --leading-none: 0.75;\n  --leading-tight: 1;\n  --leading-snug: 1.05;\n  --leading-normal: 1.1;\n  --leading-relaxed: 1.2;\n  --leading-loose: 1.3;\n  --leading-looser: 1.5;\n  --leading-loosest: 1.6;\n\n  /* letter-spacing, sorted tight -> wide */\n  --tracking-tightest: -2.88px;\n  --tracking-tighter: -2.4px;\n  --tracking-tight: -1.28px;\n  --tracking-normal: -.96px;\n  --tracking-wide: -.4px;\n  --tracking-wider: -.32px;\n\n  --radius-sm: 2px;\n  --radius-md: .25rem;\n  --radius-lg: 6px;\n  --radius-xl: 8px;\n  --radius-2xl: 12px;\n  --radius-3xl: 100%;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 1px 2px #0000000a;\n\n  --breakpoint-sm: 23.125rem;\n  --breakpoint-md: 23.4375rem;\n  --breakpoint-lg: 23.75rem;\n  --breakpoint-xl: 23.9375rem;\n  --breakpoint-2xl: 24rem;\n  --breakpoint-3xl: 25rem;\n  --breakpoint-4xl: 25.0625rem;\n  --breakpoint-5xl: 27.5rem;\n\n  /* most-used spacing values on the source site (px): 1, 2, 4, 8, 12, 16, 20, 24, 32, 40, 48, 64 */\n}\n\n/* dark-mode values mined from the source (native token names) */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --tw-gradient-from: var(--ds-background-200);\n    --tw-gradient-via: var(--ds-background-200);\n    --tw-gradient-to: var(--ds-background-200);\n    --tw-shadow: 0 0 0 1px var(--tw-shadow-color,var(--ds-gray-600));\n    --tw-ring-color: var(--ds-gray-700);\n    --tw-invert: invert(0%);\n    --leaderboard-chart-cursor-fill: #27272a;\n    --context-card-tip-stroke: #252525;\n    --geist-cyan: #50e3c2;\n    --geist-warning: #f5a623;\n    --geist-error: #e00;\n    --ds-black: #000;\n    --ds-white: #fff;\n    --ds-background-100: #fff;\n    --ds-background-200: #fafafa;\n    --ds-gray-100: #f2f2f2;\n    --ds-gray-200: #ebebeb;\n    --ds-gray-300: #e6e6e6;\n    --ds-gray-400: #eaeaea;\n    --ds-gray-500: #c9c9c9;\n    --ds-gray-600: #a8a8a8;\n    --ds-gray-700: #8f8f8f;\n    --ds-gray-800: #7d7d7d;\n    --ds-gray-900: #4d4d4d;\n    --ds-gray-1000: #171717;\n    --ds-gray-alpha-100: #0000000d;\n    --ds-gray-alpha-200: #00000015;\n    --ds-gray-alpha-300: #0000001a;\n    --ds-gray-alpha-400: #00000014;\n    --ds-gray-alpha-500: #00000036;\n    --ds-gray-alpha-600: #0000003d;\n    --ds-gray-alpha-700: #00000070;\n    --ds-gray-alpha-800: #00000082;\n    --ds-gray-alpha-900: #000000b3;\n    --ds-gray-alpha-1000: #000000e8;\n    --ds-blue-100: #f0f7ff;\n    --ds-blue-200: #eaf4ff;\n    --ds-blue-300: #e0efff;\n    --ds-blue-400: #cce7ff;\n    --ds-blue-500: #97ccff;\n    --ds-blue-600: #51aeff;\n    --ds-blue-700: #0070f7;\n    --ds-blue-800: #005edc;\n    --ds-blue-900: #0064e2;\n    --ds-blue-1000: #002453;\n    --ds-red-100: #ffeef0;\n    --ds-red-200: #ffe9ea;\n    --ds-red-300: #ffe4e5;\n    --ds-red-400: #ffd8d7;\n    --ds-red-500: #ffb5b6;\n    --ds-red-600: #ff6a6e;\n    --ds-red-700: #fc0035;\n    --ds-red-800: #e70022;\n    --ds-red-900: #d60020;\n    --ds-red-1000: #46000c;\n    --ds-amber-100: #fff6e1;\n    --ds-amber-200: #fff4d4;\n    --ds-amber-300: #fff1c8;\n    --ds-amber-400: #ffdd84;\n    --ds-amber-500: #ffc85e;\n  }\n}\n",
+  "variables.css": ":root {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-100: #eaeaea;\n  --color-neutral-200: #cccccc;\n  --color-neutral-400: #a0a0a0;\n  --color-neutral-500: #878787;\n  --color-neutral-600: #666666;\n  --color-neutral-700: #4b4c57;\n  --color-neutral-800: #404040;\n  --color-neutral-900: #333333;\n  --color-neutral-950: #1f1f1f;\n  --color-red: #ef4444;\n  --color-cyan: #0070f3;\n  --color-orange: #ff9900;\n  --color-pale-cyan: #e1f0fd;\n  --color-lime: #95bf47;\n  --color-pale-orange: #ffe8cc;\n  --color-pink: #de2670;\n  --color-indigo: #7928ca;\n  --color-pink-2: #eb367f;\n  --color-yellow: #febb2e;\n  --color-orange-2: #bd5200;\n  --color-pale-green: #d3f9d8;\n\n  /* inferred semantic roles */\n  --color-canvas: #ffffff;\n  --color-ink: #1f1f1f;\n  --color-text-muted: #878787;\n  --color-surface: #eaeaea;\n  --color-hairline: #cccccc;\n  --color-accent: #ef4444;\n  --color-accent-2: #0070f3;\n  --color-accent-3: #ff9900;\n\n  /* typography */\n  --font-geist-mono: \"Geist Mono\";\n  --font-roboto-mono: \"Roboto Mono\";\n  --font-geistsans: \"GeistSans\";\n  --font-georgia: \"Georgia\";\n  --font-geistpixelsquare: \"GeistPixelSquare\";\n  --font-geistpixelgrid: \"GeistPixelGrid\";\n  --font-geistpixelcircle: \"GeistPixelCircle\";\n  --font-geistpixeltriangle: \"GeistPixelTriangle\";\n\n  /* type scale, ascending */\n  --text-1: 0.75rem;\n  --text-2: 0.8125rem;\n  --text-3: 0.875rem;\n  --text-4: 1rem;\n  --text-5: 1.125rem;\n  --text-6: 1.25rem;\n  --text-7: 1.5rem;\n  --text-8: 2rem;\n  --text-9: 2.5rem;\n  --text-10: 3rem;\n  --text-11: 3.5rem;\n  --text-12: 4rem;\n\n  /* font weights in use */\n  --font-weight-thin: 100;\n  --font-weight-normal: 400;\n  --font-weight-450: 450;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, tight -> loose */\n  --leading-1: 0.75;\n  --leading-2: 1;\n  --leading-3: 1.05;\n  --leading-4: 1.1;\n  --leading-5: 1.2;\n  --leading-6: 1.3;\n  --leading-7: 1.5;\n  --leading-8: 1.6;\n\n  /* letter-spacing, tight -> wide */\n  --tracking-1: -2.88px;\n  --tracking-2: -2.4px;\n  --tracking-3: -1.28px;\n  --tracking-4: -.96px;\n  --tracking-5: -.4px;\n  --tracking-6: -.32px;\n\n  /* spacing, ascending */\n  --space-1: 1px;\n  --space-2: 2px;\n  --space-3: 4px;\n  --space-4: 8px;\n  --space-5: 12px;\n  --space-6: 16px;\n  --space-7: 20px;\n  --space-8: 24px;\n  --space-9: 32px;\n  --space-10: 40px;\n  --space-11: 48px;\n  --space-12: 64px;\n\n  /* radius, ascending */\n  --radius-sm: 2px;\n  --radius-md: .25rem;\n  --radius-lg: 6px;\n  --radius-xl: 8px;\n  --radius-2xl: 12px;\n  --radius-3xl: 100%;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 1px 2px #0000000a;\n}\n\n/* dark-mode values mined from the source (native token names) */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --tw-gradient-from: var(--ds-background-200);\n    --tw-gradient-via: var(--ds-background-200);\n    --tw-gradient-to: var(--ds-background-200);\n    --tw-shadow: 0 0 0 1px var(--tw-shadow-color,var(--ds-gray-600));\n    --tw-ring-color: var(--ds-gray-700);\n    --tw-invert: invert(0%);\n    --leaderboard-chart-cursor-fill: #27272a;\n    --context-card-tip-stroke: #252525;\n    --geist-cyan: #50e3c2;\n    --geist-warning: #f5a623;\n    --geist-error: #e00;\n    --ds-black: #000;\n    --ds-white: #fff;\n    --ds-background-100: #fff;\n    --ds-background-200: #fafafa;\n    --ds-gray-100: #f2f2f2;\n    --ds-gray-200: #ebebeb;\n    --ds-gray-300: #e6e6e6;\n    --ds-gray-400: #eaeaea;\n    --ds-gray-500: #c9c9c9;\n    --ds-gray-600: #a8a8a8;\n    --ds-gray-700: #8f8f8f;\n    --ds-gray-800: #7d7d7d;\n    --ds-gray-900: #4d4d4d;\n    --ds-gray-1000: #171717;\n    --ds-gray-alpha-100: #0000000d;\n    --ds-gray-alpha-200: #00000015;\n    --ds-gray-alpha-300: #0000001a;\n    --ds-gray-alpha-400: #00000014;\n    --ds-gray-alpha-500: #00000036;\n    --ds-gray-alpha-600: #0000003d;\n    --ds-gray-alpha-700: #00000070;\n    --ds-gray-alpha-800: #00000082;\n    --ds-gray-alpha-900: #000000b3;\n    --ds-gray-alpha-1000: #000000e8;\n    --ds-blue-100: #f0f7ff;\n    --ds-blue-200: #eaf4ff;\n    --ds-blue-300: #e0efff;\n    --ds-blue-400: #cce7ff;\n    --ds-blue-500: #97ccff;\n    --ds-blue-600: #51aeff;\n    --ds-blue-700: #0070f7;\n    --ds-blue-800: #005edc;\n    --ds-blue-900: #0064e2;\n    --ds-blue-1000: #002453;\n    --ds-red-100: #ffeef0;\n    --ds-red-200: #ffe9ea;\n    --ds-red-300: #ffe4e5;\n    --ds-red-400: #ffd8d7;\n    --ds-red-500: #ffb5b6;\n    --ds-red-600: #ff6a6e;\n    --ds-red-700: #fc0035;\n    --ds-red-800: #e70022;\n    --ds-red-900: #d60020;\n    --ds-red-1000: #46000c;\n    --ds-amber-100: #fff6e1;\n    --ds-amber-200: #fff4d4;\n    --ds-amber-300: #fff1c8;\n    --ds-amber-400: #ffdd84;\n    --ds-amber-500: #ffc85e;\n  }\n}\n",
+  "tokens.json": "{\n  \"$description\": \"Design tokens extracted from https://vercel.com/. Semantic entries are inferred from usage + luminance; all values are mined from live CSS.\",\n  \"color\": {\n    \"neutral-50\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\"\n    },\n    \"neutral-100\": {\n      \"$value\": \"#eaeaea\",\n      \"$type\": \"color\"\n    },\n    \"neutral-200\": {\n      \"$value\": \"#cccccc\",\n      \"$type\": \"color\"\n    },\n    \"neutral-400\": {\n      \"$value\": \"#a0a0a0\",\n      \"$type\": \"color\"\n    },\n    \"neutral-500\": {\n      \"$value\": \"#878787\",\n      \"$type\": \"color\"\n    },\n    \"neutral-600\": {\n      \"$value\": \"#666666\",\n      \"$type\": \"color\"\n    },\n    \"neutral-700\": {\n      \"$value\": \"#4b4c57\",\n      \"$type\": \"color\"\n    },\n    \"neutral-800\": {\n      \"$value\": \"#404040\",\n      \"$type\": \"color\"\n    },\n    \"neutral-900\": {\n      \"$value\": \"#333333\",\n      \"$type\": \"color\"\n    },\n    \"neutral-950\": {\n      \"$value\": \"#1f1f1f\",\n      \"$type\": \"color\"\n    },\n    \"red\": {\n      \"$value\": \"#ef4444\",\n      \"$type\": \"color\"\n    },\n    \"cyan\": {\n      \"$value\": \"#0070f3\",\n      \"$type\": \"color\"\n    },\n    \"orange\": {\n      \"$value\": \"#ff9900\",\n      \"$type\": \"color\"\n    },\n    \"pale-cyan\": {\n      \"$value\": \"#e1f0fd\",\n      \"$type\": \"color\"\n    },\n    \"lime\": {\n      \"$value\": \"#95bf47\",\n      \"$type\": \"color\"\n    },\n    \"pale-orange\": {\n      \"$value\": \"#ffe8cc\",\n      \"$type\": \"color\"\n    },\n    \"pink\": {\n      \"$value\": \"#de2670\",\n      \"$type\": \"color\"\n    },\n    \"indigo\": {\n      \"$value\": \"#7928ca\",\n      \"$type\": \"color\"\n    },\n    \"pink-2\": {\n      \"$value\": \"#eb367f\",\n      \"$type\": \"color\"\n    },\n    \"yellow\": {\n      \"$value\": \"#febb2e\",\n      \"$type\": \"color\"\n    },\n    \"orange-2\": {\n      \"$value\": \"#bd5200\",\n      \"$type\": \"color\"\n    },\n    \"pale-green\": {\n      \"$value\": \"#d3f9d8\",\n      \"$type\": \"color\"\n    }\n  },\n  \"semantic\": {\n    \"canvas\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: lightest neutral, matches the measured light-leaning theme\"\n    },\n    \"ink\": {\n      \"$value\": \"#1f1f1f\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: darkest neutral, highest contrast against canvas\"\n    },\n    \"text-muted\": {\n      \"$value\": \"#878787\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used mid-luminance neutral\"\n    },\n    \"surface\": {\n      \"$value\": \"#eaeaea\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: neutral closest to canvas luminance\"\n    },\n    \"hairline\": {\n      \"$value\": \"#cccccc\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: next neutral near canvas, hairline-border weight\"\n    },\n    \"accent\": {\n      \"$value\": \"#ef4444\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used chromatic color\"\n    },\n    \"accent-2\": {\n      \"$value\": \"#0070f3\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    },\n    \"accent-3\": {\n      \"$value\": \"#ff9900\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    }\n  },\n  \"fontFamily\": {\n    \"geist-mono\": {\n      \"$value\": \"Geist Mono\",\n      \"$type\": \"fontFamily\"\n    },\n    \"roboto-mono\": {\n      \"$value\": \"Roboto Mono\",\n      \"$type\": \"fontFamily\"\n    },\n    \"geistsans\": {\n      \"$value\": \"GeistSans\",\n      \"$type\": \"fontFamily\"\n    },\n    \"georgia\": {\n      \"$value\": \"Georgia\",\n      \"$type\": \"fontFamily\"\n    },\n    \"geistpixelsquare\": {\n      \"$value\": \"GeistPixelSquare\",\n      \"$type\": \"fontFamily\"\n    },\n    \"geistpixelgrid\": {\n      \"$value\": \"GeistPixelGrid\",\n      \"$type\": \"fontFamily\"\n    },\n    \"geistpixelcircle\": {\n      \"$value\": \"GeistPixelCircle\",\n      \"$type\": \"fontFamily\"\n    },\n    \"geistpixeltriangle\": {\n      \"$value\": \"GeistPixelTriangle\",\n      \"$type\": \"fontFamily\"\n    }\n  },\n  \"fontSize\": {\n    \"size-1\": {\n      \"$value\": \"0.75rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-2\": {\n      \"$value\": \"0.8125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-3\": {\n      \"$value\": \"0.875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-4\": {\n      \"$value\": \"1rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-5\": {\n      \"$value\": \"1.125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-6\": {\n      \"$value\": \"1.25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-7\": {\n      \"$value\": \"1.5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-8\": {\n      \"$value\": \"2rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-9\": {\n      \"$value\": \"2.5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-10\": {\n      \"$value\": \"3rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-11\": {\n      \"$value\": \"3.5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-12\": {\n      \"$value\": \"4rem\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"fontWeight\": {\n    \"450\": {\n      \"$value\": 450,\n      \"$type\": \"fontWeight\"\n    },\n    \"thin\": {\n      \"$value\": 100,\n      \"$type\": \"fontWeight\"\n    },\n    \"normal\": {\n      \"$value\": 400,\n      \"$type\": \"fontWeight\"\n    },\n    \"medium\": {\n      \"$value\": 500,\n      \"$type\": \"fontWeight\"\n    },\n    \"semibold\": {\n      \"$value\": 600,\n      \"$type\": \"fontWeight\"\n    },\n    \"bold\": {\n      \"$value\": 700,\n      \"$type\": \"fontWeight\"\n    }\n  },\n  \"lineHeight\": {\n    \"leading-1\": {\n      \"$value\": 0.75,\n      \"$type\": \"number\"\n    },\n    \"leading-2\": {\n      \"$value\": 1,\n      \"$type\": \"number\"\n    },\n    \"leading-3\": {\n      \"$value\": 1.05,\n      \"$type\": \"number\"\n    },\n    \"leading-4\": {\n      \"$value\": 1.1,\n      \"$type\": \"number\"\n    },\n    \"leading-5\": {\n      \"$value\": 1.2,\n      \"$type\": \"number\"\n    },\n    \"leading-6\": {\n      \"$value\": 1.3,\n      \"$type\": \"number\"\n    },\n    \"leading-7\": {\n      \"$value\": 1.5,\n      \"$type\": \"number\"\n    },\n    \"leading-8\": {\n      \"$value\": 1.6,\n      \"$type\": \"number\"\n    }\n  },\n  \"letterSpacing\": {\n    \"tracking-1\": {\n      \"$value\": \"-2.88px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-2\": {\n      \"$value\": \"-2.4px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-3\": {\n      \"$value\": \"-1.28px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-4\": {\n      \"$value\": \"-.96px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-5\": {\n      \"$value\": \"-.4px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-6\": {\n      \"$value\": \"-.32px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"dimension\": {\n    \"space-1\": {\n      \"$value\": \"1px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-2\": {\n      \"$value\": \"2px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-3\": {\n      \"$value\": \"4px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-4\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-5\": {\n      \"$value\": \"12px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-6\": {\n      \"$value\": \"16px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-7\": {\n      \"$value\": \"20px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-8\": {\n      \"$value\": \"24px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-9\": {\n      \"$value\": \"32px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-10\": {\n      \"$value\": \"40px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-11\": {\n      \"$value\": \"48px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-12\": {\n      \"$value\": \"64px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"borderRadius\": {\n    \"sm\": {\n      \"$value\": \"2px\",\n      \"$type\": \"dimension\"\n    },\n    \"md\": {\n      \"$value\": \".25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"lg\": {\n      \"$value\": \"6px\",\n      \"$type\": \"dimension\"\n    },\n    \"xl\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"2xl\": {\n      \"$value\": \"12px\",\n      \"$type\": \"dimension\"\n    },\n    \"3xl\": {\n      \"$value\": \"100%\",\n      \"$type\": \"dimension\"\n    },\n    \"full\": {\n      \"$value\": \"50%\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"shadow\": {\n    \"sm\": {\n      \"$value\": \"0 1px 2px #0000000a\",\n      \"$type\": \"shadow\"\n    }\n  },\n  \"dark\": {\n    \"tw-gradient-from\": {\n      \"$value\": \"var(--ds-background-200)\",\n      \"$type\": \"string\"\n    },\n    \"tw-gradient-via\": {\n      \"$value\": \"var(--ds-background-200)\",\n      \"$type\": \"string\"\n    },\n    \"tw-gradient-to\": {\n      \"$value\": \"var(--ds-background-200)\",\n      \"$type\": \"string\"\n    },\n    \"tw-shadow\": {\n      \"$value\": \"0 0 0 1px var(--tw-shadow-color,var(--ds-gray-600))\",\n      \"$type\": \"string\"\n    },\n    \"tw-ring-color\": {\n      \"$value\": \"var(--ds-gray-700)\",\n      \"$type\": \"string\"\n    },\n    \"tw-invert\": {\n      \"$value\": \"invert(0%)\",\n      \"$type\": \"string\"\n    },\n    \"leaderboard-chart-cursor-fill\": {\n      \"$value\": \"#27272a\",\n      \"$type\": \"color\"\n    },\n    \"context-card-tip-stroke\": {\n      \"$value\": \"#252525\",\n      \"$type\": \"color\"\n    },\n    \"geist-cyan\": {\n      \"$value\": \"#50e3c2\",\n      \"$type\": \"color\"\n    },\n    \"geist-warning\": {\n      \"$value\": \"#f5a623\",\n      \"$type\": \"color\"\n    },\n    \"geist-error\": {\n      \"$value\": \"#e00\",\n      \"$type\": \"color\"\n    },\n    \"ds-black\": {\n      \"$value\": \"#000\",\n      \"$type\": \"color\"\n    },\n    \"ds-white\": {\n      \"$value\": \"#fff\",\n      \"$type\": \"color\"\n    },\n    \"ds-background-100\": {\n      \"$value\": \"#fff\",\n      \"$type\": \"color\"\n    },\n    \"ds-background-200\": {\n      \"$value\": \"#fafafa\",\n      \"$type\": \"color\"\n    },\n    \"ds-gray-100\": {\n      \"$value\": \"#f2f2f2\",\n      \"$type\": \"color\"\n    },\n    \"ds-gray-200\": {\n      \"$value\": \"#ebebeb\",\n      \"$type\": \"color\"\n    },\n    \"ds-gray-300\": {\n      \"$value\": \"#e6e6e6\",\n      \"$type\": \"color\"\n    },\n    \"ds-gray-400\": {\n      \"$value\": \"#eaeaea\",\n      \"$type\": \"color\"\n    },\n    \"ds-gray-500\": {\n      \"$value\": \"#c9c9c9\",\n      \"$type\": \"color\"\n    },\n    \"ds-gray-600\": {\n      \"$value\": \"#a8a8a8\",\n      \"$type\": \"color\"\n    },\n    \"ds-gray-700\": {\n      \"$value\": \"#8f8f8f\",\n      \"$type\": \"color\"\n    },\n    \"ds-gray-800\": {\n      \"$value\": \"#7d7d7d\",\n      \"$type\": \"color\"\n    },\n    \"ds-gray-900\": {\n      \"$value\": \"#4d4d4d\",\n      \"$type\": \"color\"\n    },\n    \"ds-gray-1000\": {\n      \"$value\": \"#171717\",\n      \"$type\": \"color\"\n    },\n    \"ds-gray-alpha-100\": {\n      \"$value\": \"#0000000d\",\n      \"$type\": \"color\"\n    },\n    \"ds-gray-alpha-200\": {\n      \"$value\": \"#00000015\",\n      \"$type\": \"color\"\n    },\n    \"ds-gray-alpha-300\": {\n      \"$value\": \"#0000001a\",\n      \"$type\": \"color\"\n    },\n    \"ds-gray-alpha-400\": {\n      \"$value\": \"#00000014\",\n      \"$type\": \"color\"\n    },\n    \"ds-gray-alpha-500\": {\n      \"$value\": \"#00000036\",\n      \"$type\": \"color\"\n    },\n    \"ds-gray-alpha-600\": {\n      \"$value\": \"#0000003d\",\n      \"$type\": \"color\"\n    },\n    \"ds-gray-alpha-700\": {\n      \"$value\": \"#00000070\",\n      \"$type\": \"color\"\n    },\n    \"ds-gray-alpha-800\": {\n      \"$value\": \"#00000082\",\n      \"$type\": \"color\"\n    },\n    \"ds-gray-alpha-900\": {\n      \"$value\": \"#000000b3\",\n      \"$type\": \"color\"\n    },\n    \"ds-gray-alpha-1000\": {\n      \"$value\": \"#000000e8\",\n      \"$type\": \"color\"\n    },\n    \"ds-blue-100\": {\n      \"$value\": \"#f0f7ff\",\n      \"$type\": \"color\"\n    },\n    \"ds-blue-200\": {\n      \"$value\": \"#eaf4ff\",\n      \"$type\": \"color\"\n    },\n    \"ds-blue-300\": {\n      \"$value\": \"#e0efff\",\n      \"$type\": \"color\"\n    },\n    \"ds-blue-400\": {\n      \"$value\": \"#cce7ff\",\n      \"$type\": \"color\"\n    },\n    \"ds-blue-500\": {\n      \"$value\": \"#97ccff\",\n      \"$type\": \"color\"\n    },\n    \"ds-blue-600\": {\n      \"$value\": \"#51aeff\",\n      \"$type\": \"color\"\n    },\n    \"ds-blue-700\": {\n      \"$value\": \"#0070f7\",\n      \"$type\": \"color\"\n    },\n    \"ds-blue-800\": {\n      \"$value\": \"#005edc\",\n      \"$type\": \"color\"\n    },\n    \"ds-blue-900\": {\n      \"$value\": \"#0064e2\",\n      \"$type\": \"color\"\n    },\n    \"ds-blue-1000\": {\n      \"$value\": \"#002453\",\n      \"$type\": \"color\"\n    },\n    \"ds-red-100\": {\n      \"$value\": \"#ffeef0\",\n      \"$type\": \"color\"\n    },\n    \"ds-red-200\": {\n      \"$value\": \"#ffe9ea\",\n      \"$type\": \"color\"\n    },\n    \"ds-red-300\": {\n      \"$value\": \"#ffe4e5\",\n      \"$type\": \"color\"\n    },\n    \"ds-red-400\": {\n      \"$value\": \"#ffd8d7\",\n      \"$type\": \"color\"\n    },\n    \"ds-red-500\": {\n      \"$value\": \"#ffb5b6\",\n      \"$type\": \"color\"\n    },\n    \"ds-red-600\": {\n      \"$value\": \"#ff6a6e\",\n      \"$type\": \"color\"\n    },\n    \"ds-red-700\": {\n      \"$value\": \"#fc0035\",\n      \"$type\": \"color\"\n    },\n    \"ds-red-800\": {\n      \"$value\": \"#e70022\",\n      \"$type\": \"color\"\n    },\n    \"ds-red-900\": {\n      \"$value\": \"#d60020\",\n      \"$type\": \"color\"\n    },\n    \"ds-red-1000\": {\n      \"$value\": \"#46000c\",\n      \"$type\": \"color\"\n    },\n    \"ds-amber-100\": {\n      \"$value\": \"#fff6e1\",\n      \"$type\": \"color\"\n    },\n    \"ds-amber-200\": {\n      \"$value\": \"#fff4d4\",\n      \"$type\": \"color\"\n    },\n    \"ds-amber-300\": {\n      \"$value\": \"#fff1c8\",\n      \"$type\": \"color\"\n    },\n    \"ds-amber-400\": {\n      \"$value\": \"#ffdd84\",\n      \"$type\": \"color\"\n    },\n    \"ds-amber-500\": {\n      \"$value\": \"#ffc85e\",\n      \"$type\": \"color\"\n    }\n  }\n}"
+ },
+ "raw": {
+  "tokens": {
+   "title": "Agentic Infrastructure - Vercel",
+   "description": "The autonomous stack for every app and agent.",
+   "themeGuess": "light-leaning",
+   "darkWeight": 181,
+   "lightWeight": 211,
+   "neutrals": [
+    {
+     "hex": "#ffffff",
+     "count": 169
+    },
+    {
+     "hex": "#eaeaea",
+     "count": 26
+    },
+    {
+     "hex": "#cccccc",
+     "count": 16
+    },
+    {
+     "hex": "#a0a0a0",
+     "count": 6
+    },
+    {
+     "hex": "#878787",
+     "count": 9
+    },
+    {
+     "hex": "#666666",
+     "count": 8
+    },
+    {
+     "hex": "#4b4c57",
+     "count": 11
+    },
+    {
+     "hex": "#404040",
+     "count": 6
+    },
+    {
+     "hex": "#333333",
+     "count": 16
+    },
+    {
+     "hex": "#1f1f1f",
+     "count": 19
+    },
+    {
+     "hex": "#111111",
+     "count": 7
+    },
+    {
+     "hex": "#000000",
+     "count": 114
+    }
+   ],
+   "accents": [
+    {
+     "hex": "#ef4444",
+     "count": 12
+    },
+    {
+     "hex": "#0070f3",
+     "count": 11
+    },
+    {
+     "hex": "#ff9900",
+     "count": 10
+    },
+    {
+     "hex": "#e1f0fd",
+     "count": 9
+    },
+    {
+     "hex": "#95bf47",
+     "count": 7
+    },
+    {
+     "hex": "#ffe8cc",
+     "count": 7
+    },
+    {
+     "hex": "#de2670",
+     "count": 6
+    },
+    {
+     "hex": "#7928ca",
+     "count": 5
+    },
+    {
+     "hex": "#eb367f",
+     "count": 5
+    },
+    {
+     "hex": "#febb2e",
+     "count": 5
+    },
+    {
+     "hex": "#bd5200",
+     "count": 4
+    },
+    {
+     "hex": "#d3f9d8",
+     "count": 4
+    }
+   ],
+   "modern": [
+    "lab(0% 0 0)",
+    "lab(96.5005% 4.18508 1.52328)",
+    "lab(98.6252% -.635922 8.42309)",
+    "lab(38.4009% 52.6132 -92.3857)",
+    "lab(96.2416% 2.28849 -5.51657)",
+    "lab(93.0838% 4.35197 -9.88284)",
+    "lab(35.2783% 67.9912 -88.793)",
+    "lab(84.7652% -1.94535 -7.93337)",
+    "lab(48.0876% -2.03595 -16.5814)",
+    "lab(98.2596% -.247031 -.706708)",
+    "lab(1.90334% .278696 -5.48866)",
+    "lab(96.1634% .0993311 -.364041)",
+    "lab(35.1166% 1.78212 -6.1173)",
+    "lab(8.30603% .618205 -2.16572)",
+    "lab(27.036% 0 0)",
+    "lab(15.204% 0 -.00000596046)",
+    "lab(55.7853% 65.6165 40.7976/.5)",
+    "lab(50.2444% 70.8456 6.8181/.3)",
+    "lab(0% 0 0/.2)",
+    "lab(0% 0 0/.7)"
+   ],
+   "fonts": [
+    {
+     "name": "Geist Mono",
+     "count": 7
+    },
+    {
+     "name": "Roboto Mono",
+     "count": 3
+    },
+    {
+     "name": "GeistSans",
+     "count": 2
+    },
+    {
+     "name": "Georgia",
+     "count": 2
+    },
+    {
+     "name": "GeistPixelSquare",
+     "count": 2
+    },
+    {
+     "name": "GeistPixelGrid",
+     "count": 2
+    },
+    {
+     "name": "GeistPixelCircle",
+     "count": 2
+    },
+    {
+     "name": "GeistPixelTriangle",
+     "count": 2
+    }
+   ],
+   "fontSizes": [
+    12,
+    13,
+    14,
+    16,
+    18,
+    20,
+    24,
+    32,
+    40,
+    48,
+    56,
+    64
+   ],
+   "fontWeights": [
+    {
+     "value": 100,
+     "count": 8
+    },
+    {
+     "value": 400,
+     "count": 15
+    },
+    {
+     "value": 450,
+     "count": 4
+    },
+    {
+     "value": 500,
+     "count": 54
+    },
+    {
+     "value": 600,
+     "count": 39
+    },
+    {
+     "value": 700,
+     "count": 9
+    }
+   ],
+   "lineHeights": [
+    0.75,
+    1,
+    1.05,
+    1.1,
+    1.2,
+    1.3,
+    1.5,
+    1.6
+   ],
+   "letterSpacings": [
+    "-2.88px",
+    "-2.4px",
+    "-1.28px",
+    "-.96px",
+    "-.4px",
+    "-.32px"
+   ],
+   "spacing": [
+    1,
+    2,
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    32,
+    40,
+    48,
+    64
+   ],
+   "radii": [
+    {
+     "value": "6px",
+     "count": 40
+    },
+    {
+     "value": "12px",
+     "count": 24
+    },
+    {
+     "value": ".25rem",
+     "count": 19
+    },
+    {
+     "value": "8px",
+     "count": 7
+    },
+    {
+     "value": "100%",
+     "count": 6
+    },
+    {
+     "value": "2px",
+     "count": 5
+    },
+    {
+     "value": "50%",
+     "count": 17
+    }
+   ],
+   "shadows": [
+    {
+     "value": "0 1px 2px #0000000a",
+     "count": 7,
+     "blur": 0
+    }
+   ],
+   "breakpoints": [
+    370,
+    375,
+    380,
+    383,
+    384,
+    400,
+    401,
+    440
+   ],
+   "nativeVars": [
+    {
+     "name": "value",
+     "value": "0"
+    },
+    {
+     "name": "font-sans",
+     "value": "var(--font-geist-sans)"
+    },
+    {
+     "name": "font-mono",
+     "value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace"
+    },
+    {
+     "name": "color-red-50",
+     "value": "#fef2f2"
+    },
+    {
+     "name": "color-amber-50",
+     "value": "#fffbeb"
+    },
+    {
+     "name": "color-indigo-600",
+     "value": "#4f39f6"
+    },
+    {
+     "name": "color-violet-50",
+     "value": "#f5f3ff"
+    },
+    {
+     "name": "color-violet-100",
+     "value": "#ede9fe"
+    },
+    {
+     "name": "color-violet-700",
+     "value": "#7008e7"
+    },
+    {
+     "name": "color-slate-300",
+     "value": "#cad5e2"
+    },
+    {
+     "name": "color-slate-500",
+     "value": "#62748e"
+    },
+    {
+     "name": "color-gray-50",
+     "value": "#f9fafb"
+    },
+    {
+     "name": "color-gray-200",
+     "value": "var(--ds-gray-200)"
+    },
+    {
+     "name": "color-gray-300",
+     "value": "var(--ds-gray-300)"
+    },
+    {
+     "name": "color-gray-500",
+     "value": "var(--ds-gray-500)"
+    },
+    {
+     "name": "color-gray-600",
+     "value": "var(--ds-gray-600)"
+    },
+    {
+     "name": "color-gray-700",
+     "value": "var(--ds-gray-700)"
+    },
+    {
+     "name": "color-gray-800",
+     "value": "var(--ds-gray-800)"
+    },
+    {
+     "name": "color-gray-900",
+     "value": "var(--ds-gray-900)"
+    },
+    {
+     "name": "color-gray-950",
+     "value": "#030712"
+    },
+    {
+     "name": "color-zinc-100",
+     "value": "#f4f4f5"
+    },
+    {
+     "name": "color-zinc-600",
+     "value": "#52525c"
+    },
+    {
+     "name": "color-zinc-900",
+     "value": "#18181b"
+    },
+    {
+     "name": "color-neutral-700",
+     "value": "#404040"
+    },
+    {
+     "name": "color-neutral-800",
+     "value": "#262626"
+    },
+    {
+     "name": "spacing",
+     "value": ".25rem"
+    },
+    {
+     "name": "container-xs",
+     "value": "20rem"
+    },
+    {
+     "name": "container-sm",
+     "value": "401px"
+    },
+    {
+     "name": "container-md",
+     "value": "601px"
+    },
+    {
+     "name": "container-lg",
+     "value": "961px"
+    },
+    {
+     "name": "container-xl",
+     "value": "1200px"
+    },
+    {
+     "name": "container-2xl",
+     "value": "1400px"
+    },
+    {
+     "name": "container-3xl",
+     "value": "48rem"
+    },
+    {
+     "name": "container-4xl",
+     "value": "56rem"
+    },
+    {
+     "name": "container-5xl",
+     "value": "64rem"
+    },
+    {
+     "name": "text-xs",
+     "value": ".75rem"
+    },
+    {
+     "name": "text-xs--line-height",
+     "value": "calc(1 / .75)"
+    },
+    {
+     "name": "text-sm",
+     "value": ".875rem"
+    },
+    {
+     "name": "text-sm--line-height",
+     "value": "calc(1.25 / .875)"
+    },
+    {
+     "name": "text-base",
+     "value": "1rem"
+    },
+    {
+     "name": "text-base--line-height",
+     "value": "calc(1.5 / 1)"
+    },
+    {
+     "name": "text-lg",
+     "value": "1.125rem"
+    },
+    {
+     "name": "text-lg--line-height",
+     "value": "calc(1.75 / 1.125)"
+    },
+    {
+     "name": "text-xl",
+     "value": "1.25rem"
+    },
+    {
+     "name": "text-xl--line-height",
+     "value": "calc(1.75 / 1.25)"
+    },
+    {
+     "name": "text-2xl",
+     "value": "1.5rem"
+    },
+    {
+     "name": "text-2xl--line-height",
+     "value": "calc(2 / 1.5)"
+    },
+    {
+     "name": "text-3xl",
+     "value": "1.875rem"
+    },
+    {
+     "name": "text-3xl--line-height",
+     "value": "calc(2.25 / 1.875)"
+    },
+    {
+     "name": "text-4xl",
+     "value": "2.25rem"
+    },
+    {
+     "name": "text-4xl--line-height",
+     "value": "calc(2.5 / 2.25)"
+    },
+    {
+     "name": "text-5xl",
+     "value": "3rem"
+    },
+    {
+     "name": "text-5xl--line-height",
+     "value": "1"
+    },
+    {
+     "name": "text-7xl",
+     "value": "4.5rem"
+    },
+    {
+     "name": "text-7xl--line-height",
+     "value": "1"
+    },
+    {
+     "name": "text-8xl",
+     "value": "6rem"
+    },
+    {
+     "name": "text-8xl--line-height",
+     "value": "1"
+    },
+    {
+     "name": "font-weight-thin",
+     "value": "100"
+    },
+    {
+     "name": "font-weight-light",
+     "value": "300"
+    },
+    {
+     "name": "font-weight-normal",
+     "value": "400"
+    },
+    {
+     "name": "font-weight-medium",
+     "value": "500"
+    },
+    {
+     "name": "font-weight-semibold",
+     "value": "600"
+    },
+    {
+     "name": "font-weight-bold",
+     "value": "700"
+    },
+    {
+     "name": "font-weight-extrabold",
+     "value": "800"
+    },
+    {
+     "name": "tracking-tighter",
+     "value": "-.05em"
+    },
+    {
+     "name": "tracking-tight",
+     "value": "-.025em"
+    },
+    {
+     "name": "tracking-normal",
+     "value": "0em"
+    },
+    {
+     "name": "tracking-wide",
+     "value": ".025em"
+    },
+    {
+     "name": "tracking-wider",
+     "value": ".05em"
+    },
+    {
+     "name": "leading-tight",
+     "value": "1.25"
+    },
+    {
+     "name": "leading-normal",
+     "value": "1.5"
+    },
+    {
+     "name": "leading-relaxed",
+     "value": "1.625"
+    },
+    {
+     "name": "radius-3xl",
+     "value": "1.5rem"
+    },
+    {
+     "name": "drop-shadow-lg",
+     "value": "0 4px 4px #00000026"
+    },
+    {
+     "name": "ease-in",
+     "value": "cubic-bezier(.4, 0, 1, 1)"
+    },
+    {
+     "name": "ease-out",
+     "value": "cubic-bezier(0, 0, .2, 1)"
+    },
+    {
+     "name": "ease-in-out",
+     "value": "cubic-bezier(.4, 0, .2, 1)"
+    },
+    {
+     "name": "animate-ping",
+     "value": "ping 1s cubic-bezier(0, 0, .2, 1) infinite"
+    },
+    {
+     "name": "animate-pulse",
+     "value": "pulse 2s cubic-bezier(.4, 0, .6, 1) infinite"
+    },
+    {
+     "name": "animate-bounce",
+     "value": "bounce 1s infinite"
+    },
+    {
+     "name": "blur-xs",
+     "value": "4px"
+    },
+    {
+     "name": "blur-sm",
+     "value": "8px"
+    },
+    {
+     "name": "blur-lg",
+     "value": "16px"
+    },
+    {
+     "name": "blur-xl",
+     "value": "24px"
+    },
+    {
+     "name": "perspective-distant",
+     "value": "1200px"
+    },
+    {
+     "name": "aspect-video",
+     "value": "16 / 9"
+    },
+    {
+     "name": "default-transition-duration",
+     "value": ".15s"
+    },
+    {
+     "name": "default-transition-timing-function",
+     "value": "cubic-bezier(.4, 0, .2, 1)"
+    },
+    {
+     "name": "default-font-family",
+     "value": "var(--font-geist-sans)"
+    },
+    {
+     "name": "default-mono-font-family",
+     "value": "var(--font-mono)"
+    },
+    {
+     "name": "color-background-100",
+     "value": "var(--ds-background-100)"
+    },
+    {
+     "name": "color-gray-1000",
+     "value": "var(--ds-gray-1000)"
+    },
+    {
+     "name": "color-gray-alpha-400",
+     "value": "var(--ds-gray-alpha-400)"
+    },
+    {
+     "name": "animate-accordion-down",
+     "value": "accordion-down .2s ease-out"
+    },
+    {
+     "name": "animate-accordion-up",
+     "value": "accordion-up .2s ease-out"
+    },
+    {
+     "name": "animate-loading",
+     "value": "loading 8s ease-in-out infinite"
+    },
+    {
+     "name": "animate-loading-skeleton",
+     "value": "loading-skeleton 1.5s ease-in-out infinite reverse"
+    },
+    {
+     "name": "animate-fadeInTooltip",
+     "value": "fadeInTooltip .1s ease-in .4s forwards"
+    },
+    {
+     "name": "animate-fadeInTooltipFaster",
+     "value": "fadeInTooltip .1s ease-in .1s forwards"
+    },
+    {
+     "name": "animate-blink",
+     "value": "blink 1s infinite"
+    },
+    {
+     "name": "animate-feedbackAppear",
+     "value": "feedbackAppear .5s .1s ease forwards"
+    },
+    {
+     "name": "animate-feedbackFadeIn",
+     "value": "feedbackFadeIn .1s cubic-bezier(.16, 1, .3, 1)"
+    },
+    {
+     "name": "animate-feedbackFadeOut",
+     "value": "feedbackFadeOut .2s cubic-bezier(.16, 1, .3, 1) forwards"
+    },
+    {
+     "name": "animate-fadeOutPopover",
+     "value": "fadeOut var(--ds-motion-popover-timing) var(--ds-motion-popover-duration)"
+    },
+    {
+     "name": "animate-cmdkLoading",
+     "value": "cmdkLoading 1.1s cubic-bezier(.455, .03, .515, .955) infinite"
+    },
+    {
+     "name": "animate-cmdkFadeIn",
+     "value": "cmdkFadeIn var(--ds-motion-overlay-duration) var(--ds-motion-overlay-timing)"
+    },
+    {
+     "name": "animate-cmdkFadeOut",
+     "value": "cmdkFadeOut var(--ds-motion-overlay-duration) var(--ds-motion-overlay-timing)"
+    },
+    {
+     "name": "animate-cmdkScaleIn",
+     "value": "cmdkScaleIn var(--ds-motion-overlay-duration) var(--ds-motion-overlay-timing)"
+    },
+    {
+     "name": "animate-cmdkScaleOut",
+     "value": "cmdkScaleOut var(--ds-motion-overlay-duration) var(--ds-motion-overlay-timing)"
+    },
+    {
+     "name": "animate-thinking-loader",
+     "value": "thinking-loader 1.5s linear infinite"
+    },
+    {
+     "name": "animate-thinking-loader-fast",
+     "value": "thinking-loader .85s linear infinite"
+    },
+    {
+     "name": "animate-sandbox-left",
+     "value": "sandbox-left .5s ease-in-out forwards"
+    },
+    {
+     "name": "animate-sandbox-right",
+     "value": "sandbox-right .5s ease-in-out forwards"
+    },
+    {
+     "name": "animate-sandbox-left-reverse",
+     "value": "sandbox-left-reverse .5s ease-in-out forwards"
+    },
+    {
+     "name": "animate-sandbox-right-reverse",
+     "value": "sandbox-right-reverse .5s ease-in-out forwards"
+    },
+    {
+     "name": "animate-slide-in",
+     "value": "slide-in 1.25s cubic-bezier(.4, .04, .04, 1) forwards"
+    },
+    {
+     "name": "animate-fade-in",
+     "value": "fade-in 1.25s cubic-bezier(.4, .04, .04, 1) forwards"
+    },
+    {
+     "name": "animate-fade-slide-in",
+     "value": "fade-slide-in .35s cubic-bezier(.16, 1, .3, 1) forwards"
+    },
+    {
+     "name": "animate-command-fade-in",
+     "value": "fade-in .2s ease-out forwards"
+    },
+    {
+     "name": "animate-flip-front",
+     "value": "flip-front .5s cubic-bezier(.4, .04, .04, 1) forwards"
+    }
+   ],
+   "darkVars": [
+    {
+     "name": "tw-gradient-from",
+     "light": null,
+     "dark": "var(--ds-background-200)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-gradient-via",
+     "light": null,
+     "dark": "var(--ds-background-200)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-gradient-to",
+     "light": null,
+     "dark": "var(--ds-background-200)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-shadow",
+     "light": null,
+     "dark": "0 0 0 1px var(--tw-shadow-color,var(--ds-gray-600))",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-ring-color",
+     "light": null,
+     "dark": "var(--ds-gray-700)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-invert",
+     "light": null,
+     "dark": "invert(0%)",
+     "via": "dark selector"
+    },
+    {
+     "name": "leaderboard-chart-cursor-fill",
+     "light": null,
+     "dark": "#27272a",
+     "via": "dark selector"
+    },
+    {
+     "name": "context-card-tip-stroke",
+     "light": null,
+     "dark": "#252525",
+     "via": "dark selector"
+    },
+    {
+     "name": "geist-cyan",
+     "light": null,
+     "dark": "#50e3c2",
+     "via": "dark selector"
+    },
+    {
+     "name": "geist-warning",
+     "light": null,
+     "dark": "#f5a623",
+     "via": "dark selector"
+    },
+    {
+     "name": "geist-error",
+     "light": null,
+     "dark": "#e00",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-black",
+     "light": null,
+     "dark": "#000",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-white",
+     "light": null,
+     "dark": "#fff",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-background-100",
+     "light": null,
+     "dark": "#fff",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-background-200",
+     "light": null,
+     "dark": "#fafafa",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-gray-100",
+     "light": null,
+     "dark": "#f2f2f2",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-gray-200",
+     "light": null,
+     "dark": "#ebebeb",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-gray-300",
+     "light": null,
+     "dark": "#e6e6e6",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-gray-400",
+     "light": null,
+     "dark": "#eaeaea",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-gray-500",
+     "light": null,
+     "dark": "#c9c9c9",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-gray-600",
+     "light": null,
+     "dark": "#a8a8a8",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-gray-700",
+     "light": null,
+     "dark": "#8f8f8f",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-gray-800",
+     "light": null,
+     "dark": "#7d7d7d",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-gray-900",
+     "light": null,
+     "dark": "#4d4d4d",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-gray-1000",
+     "light": null,
+     "dark": "#171717",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-gray-alpha-100",
+     "light": null,
+     "dark": "#0000000d",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-gray-alpha-200",
+     "light": null,
+     "dark": "#00000015",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-gray-alpha-300",
+     "light": null,
+     "dark": "#0000001a",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-gray-alpha-400",
+     "light": null,
+     "dark": "#00000014",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-gray-alpha-500",
+     "light": null,
+     "dark": "#00000036",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-gray-alpha-600",
+     "light": null,
+     "dark": "#0000003d",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-gray-alpha-700",
+     "light": null,
+     "dark": "#00000070",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-gray-alpha-800",
+     "light": null,
+     "dark": "#00000082",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-gray-alpha-900",
+     "light": null,
+     "dark": "#000000b3",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-gray-alpha-1000",
+     "light": null,
+     "dark": "#000000e8",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-blue-100",
+     "light": null,
+     "dark": "#f0f7ff",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-blue-200",
+     "light": null,
+     "dark": "#eaf4ff",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-blue-300",
+     "light": null,
+     "dark": "#e0efff",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-blue-400",
+     "light": null,
+     "dark": "#cce7ff",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-blue-500",
+     "light": null,
+     "dark": "#97ccff",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-blue-600",
+     "light": null,
+     "dark": "#51aeff",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-blue-700",
+     "light": null,
+     "dark": "#0070f7",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-blue-800",
+     "light": null,
+     "dark": "#005edc",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-blue-900",
+     "light": null,
+     "dark": "#0064e2",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-blue-1000",
+     "light": null,
+     "dark": "#002453",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-red-100",
+     "light": null,
+     "dark": "#ffeef0",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-red-200",
+     "light": null,
+     "dark": "#ffe9ea",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-red-300",
+     "light": null,
+     "dark": "#ffe4e5",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-red-400",
+     "light": null,
+     "dark": "#ffd8d7",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-red-500",
+     "light": null,
+     "dark": "#ffb5b6",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-red-600",
+     "light": null,
+     "dark": "#ff6a6e",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-red-700",
+     "light": null,
+     "dark": "#fc0035",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-red-800",
+     "light": null,
+     "dark": "#e70022",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-red-900",
+     "light": null,
+     "dark": "#d60020",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-red-1000",
+     "light": null,
+     "dark": "#46000c",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-amber-100",
+     "light": null,
+     "dark": "#fff6e1",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-amber-200",
+     "light": null,
+     "dark": "#fff4d4",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-amber-300",
+     "light": null,
+     "dark": "#fff1c8",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-amber-400",
+     "light": null,
+     "dark": "#ffdd84",
+     "via": "dark selector"
+    },
+    {
+     "name": "ds-amber-500",
+     "light": null,
+     "dark": "#ffc85e",
+     "via": "dark selector"
+    }
+   ],
+   "rings": []
+  },
+  "stylesheets": 4
+ }
+}

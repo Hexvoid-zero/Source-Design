@@ -1,0 +1,577 @@
+{
+ "slug": "github",
+ "name": "GitHub",
+ "blurb": "Code hosting. Primer system: dense neutrals, small type, precise borders.",
+ "url": "https://github.com/",
+ "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub",
+ "extractedAt": "2026-07-03",
+ "summary": {
+  "colors": [
+   {
+    "name": "neutral-50",
+    "hex": "#ffffff",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-400",
+    "hex": "#9198a1",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-500",
+    "hex": "#818b98",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-700",
+    "hex": "#59636e",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-800",
+    "hex": "#3d444d",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-900",
+    "hex": "#25292e",
+    "group": "neutral"
+   },
+   {
+    "name": "deep-blue",
+    "hex": "#010409",
+    "group": "accent"
+   },
+   {
+    "name": "pale-cyan",
+    "hex": "#eff2f5",
+    "group": "accent"
+   },
+   {
+    "name": "deep-cyan",
+    "hex": "#151b23",
+    "group": "accent"
+   },
+   {
+    "name": "cyan",
+    "hex": "#d1d9e0",
+    "group": "accent"
+   },
+   {
+    "name": "pale-orange",
+    "hex": "#eeeae2",
+    "group": "accent"
+   },
+   {
+    "name": "blue",
+    "hex": "#0349b4",
+    "group": "accent"
+   },
+   {
+    "name": "deep-red",
+    "hex": "#271817",
+    "group": "accent"
+   },
+   {
+    "name": "cyan-2",
+    "hex": "#0969da",
+    "group": "accent"
+   },
+   {
+    "name": "cyan-3",
+    "hex": "#5cacff",
+    "group": "accent"
+   },
+   {
+    "name": "blue-2",
+    "hex": "#023b95",
+    "group": "accent"
+   },
+   {
+    "name": "pale-cyan-2",
+    "hex": "#d1f0ff",
+    "group": "accent"
+   },
+   {
+    "name": "blue-3",
+    "hex": "#b7bdc8",
+    "group": "accent"
+   }
+  ],
+  "fonts": [],
+  "themeGuess": "dark-leaning",
+  "stylesheets": 12,
+  "nativeVarCount": 1
+ },
+ "files": {
+  "DESIGN.md": "---\nname: github-com-design-system\nsource: https://github.com/\nextracted: 2026-07-03\ntheme: dark  # measured from neutral usage weight\ncolors:  # roles inferred from usage frequency + luminance; names verified against values\n  canvas: \"#25292e\"\n  ink: \"#ffffff\"\n  text-muted: \"#818b98\"\n  surface: \"#3d444d\"\n  hairline: \"#59636e\"\n  accent: \"#010409\"  # deep-blue\n  accent-2: \"#eff2f5\"  # pale-cyan\n  accent-3: \"#151b23\"  # deep-cyan\n---\n\n# GitHub · Change is constant. GitHub keeps you ahead. · GitHub — Design System\n\nExtracted from **https://github.com/** on 2026-07-03.\n\n> Join the world&#39;s most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open source community build software that advances humanity.\n\nEvery value below is mined from the site's live CSS (1 native custom properties, ranked usage counts). Role assignments are inferred from usage and luminance and marked as such — treat them as a strong starting point, not gospel.\n\n## Overview\n\nThe system reads as dark: measured neutral usage weighs 1108 dark against 662 light. The palette is chromatic: 12 saturated values against 6 neutrals, led by deep-blue (`#010409`). No custom font families were found — the site runs on system font stacks. No box-shadows were found — depth comes from color contrast, not elevation.\n\n## Usage rules\n\nDerived from the measured usage below — each rule cites its evidence.\n\n- Chromatic color carries 58% of measured usage — this palette uses color structurally. Saturated values can hold large surfaces here; timidity would misrepresent the source.\n- The theme is dark (measured neutral weight 1108:662). Don't flip individual sections to the opposite mode.\n- No elevation shadows were found — build depth with tonal contrast between surfaces, not box-shadows.\n\n## Colors\n\n### Neutrals (light → dark)\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `neutral-50` | `#ffffff` | 662 | **ink** — lightest neutral, highest contrast against canvas |\n| `neutral-400` | `#9198a1` | 54 | — |\n| `neutral-500` | `#818b98` | 90 | **text-muted** — most-used mid-luminance neutral |\n| `neutral-700` | `#59636e` | 338 | **hairline** — next neutral near canvas, hairline-border weight |\n| `neutral-800` | `#3d444d` | 320 | **surface** — neutral closest to canvas luminance |\n| `neutral-900` | `#25292e` | 450 | **canvas** — darkest neutral, matches the measured dark-leaning theme |\n\n### Accents\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `deep-blue` | `#010409` | 360 | **accent** — most-used chromatic color |\n| `pale-cyan` | `#eff2f5` | 344 | **accent-2** — supporting chromatic color |\n| `deep-cyan` | `#151b23` | 270 | **accent-3** — supporting chromatic color |\n| `cyan` | `#d1d9e0` | 250 | — |\n| `pale-orange` | `#eeeae2` | 200 | — |\n| `blue` | `#0349b4` | 194 | — |\n| `deep-red` | `#271817` | 192 | — |\n| `cyan-2` | `#0969da` | 190 | — |\n| `cyan-3` | `#5cacff` | 186 | — |\n| `blue-2` | `#023b95` | 162 | — |\n| `pale-cyan-2` | `#d1f0ff` | 152 | — |\n| `blue-3` | `#b7bdc8` | 144 | — |\n\n### Dark mode\n\nThe source defines 60 dark-mode variants (via prefers-color-scheme). Both halves of the system, first 30:\n\n| Token | Light | Dark |\n| --- | --- | --- |\n| `--bgColor-success-emphasis` | — | `#1f883d` |\n| `--button-outline-bgColor-active` | — | `#0757ba` |\n| `--button-primary-bgColor-active` | — | `#197935` |\n| `--button-primary-bgColor-disabled` | — | `#95d8a6` |\n| `--button-primary-bgColor-hover` | — | `#1c8139` |\n| `--buttonCounter-danger-fgColor-rest` | — | `#c21c2c` |\n| `--color-ansi-cyan` | — | `#1b7c83` |\n| `--color-ansi-cyan-bright` | — | `#3192aa` |\n| `--control-checked-bgColor-active` | — | `#0757ba` |\n| `--control-checked-bgColor-hover` | — | `#0860ca` |\n| `--fgColor-danger` | — | `#d1242f` |\n| `--reactionButton-selected-bgColor-hover` | — | `#caecff` |\n| `--avatarStack-fade-bgColor-default` | — | `#c8d1da` |\n| `--avatarStack-fade-bgColor-muted` | — | `#dae0e7` |\n| `--bgColor-accent-emphasis` | — | `#0969da` |\n| `--bgColor-accent-muted` | — | `#ddf4ff` |\n| `--bgColor-attention-emphasis` | — | `#9a6700` |\n| `--bgColor-attention-muted` | — | `#fff8c5` |\n| `--bgColor-danger-emphasis` | — | `#cf222e` |\n| `--bgColor-danger-muted` | — | `#ffebe9` |\n| `--bgColor-disabled` | — | `#eff2f5` |\n| `--bgColor-done-emphasis` | — | `#8250df` |\n| `--bgColor-done-muted` | — | `#fbefff` |\n| `--bgColor-emphasis` | — | `#25292e` |\n| `--bgColor-inverse` | — | `#25292e` |\n| `--bgColor-muted` | — | `#f6f8fa` |\n| `--bgColor-neutral-emphasis` | — | `#59636e` |\n| `--bgColor-neutral-muted` | — | `#818b981f` |\n| `--bgColor-open-emphasis` | — | `var(--bgColor-success-emphasis)` |\n| `--bgColor-severe-emphasis` | — | `#bc4c00` |\n\n`variables.css` ships these as a `prefers-color-scheme: dark` override block.\n\n## Typography\n\nNo explicit custom font families found — the site relies on system font stacks.\n\n## Starter recipes\n\nTokens composed into components. The source site's real components were **not** inspected — these are starting points built from the extracted values, with contrast ratios computed rather than assumed.\n\n```css\n.button-primary {\n  background: var(--color-accent); /* #010409 */\n  color: var(--color-ink); /* #ffffff — contrast 20.5:1 */\n}\n\n.card {\n  background: var(--color-surface); /* #3d444d */\n  border: 1px solid var(--color-hairline); /* #59636e */\n  /* no shadow — this system builds depth with tonal contrast */\n}\n\n.input {\n  background: var(--color-canvas); /* #25292e */\n  color: var(--color-ink); /* #ffffff — contrast 14.6:1 */\n  border: 1px solid var(--color-hairline); /* #59636e */\n  /* placeholder color: var(--color-text-muted) #818b98 */\n}\n\n.nav {\n  background: var(--color-canvas); /* #25292e */\n  border-bottom: 1px solid var(--color-hairline); /* #59636e */\n  color: var(--color-ink); /* #ffffff */\n  /* inactive links: var(--color-text-muted) #818b98 */\n  /* active link: var(--color-accent) #010409 — contrast vs canvas 1.4:1 */\n}\n\n.modal {\n  background: var(--color-surface); /* #3d444d */\n  border: 1px solid var(--color-hairline); /* no shadows mined — hairline instead */\n}\n\n.modal-backdrop {\n  background: color-mix(in srgb, var(--color-ink) 55%, transparent); /* scrim from #ffffff */\n}\n\n.input-error {\n  border-color: #271817; /* mined token: deep-red */\n  /* error text: #271817 on canvas — contrast 1.2:1, below AA; darken for message text */\n}\n```\n\n## Observations\n\n- 6 of 18 extracted colors are neutrals.\n\n## Native CSS custom properties\n\nFirst 1 of 1:\n\n```css\n:root {\n  --tab-size-preference: 4;\n}\n```\n\n## Files\n\n- `tailwind.css` — Tailwind v4 `@theme` block; tokens become utilities (e.g. `bg-neutral-900`, `text-deep-blue`).\n- `variables.css` — framework-agnostic `:root` variables, same values.\n- `tokens.json` — W3C Design Tokens format for Figma plugins, Style Dictionary, etc.\n",
+  "tailwind.css": "@import \"tailwindcss\";\n\n@theme {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-400: #9198a1;\n  --color-neutral-500: #818b98;\n  --color-neutral-700: #59636e;\n  --color-neutral-800: #3d444d;\n  --color-neutral-900: #25292e;\n  --color-deep-blue: #010409;\n  --color-pale-cyan: #eff2f5;\n  --color-deep-cyan: #151b23;\n  --color-cyan: #d1d9e0;\n  --color-pale-orange: #eeeae2;\n  --color-blue: #0349b4;\n  --color-deep-red: #271817;\n  --color-cyan-2: #0969da;\n  --color-cyan-3: #5cacff;\n  --color-blue-2: #023b95;\n  --color-pale-cyan-2: #d1f0ff;\n  --color-blue-3: #b7bdc8;\n\n  /* inferred semantic roles (each maps to a distinct mined value) */\n  --color-canvas: #25292e;\n  --color-ink: #ffffff;\n  --color-text-muted: #818b98;\n  --color-surface: #3d444d;\n  --color-hairline: #59636e;\n  --color-accent: #010409;\n  --color-accent-2: #eff2f5;\n  --color-accent-3: #151b23;\n}\n\n/* dark-mode values mined from the source (native token names) */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --bgColor-success-emphasis: #1f883d;\n    --button-outline-bgColor-active: #0757ba;\n    --button-primary-bgColor-active: #197935;\n    --button-primary-bgColor-disabled: #95d8a6;\n    --button-primary-bgColor-hover: #1c8139;\n    --buttonCounter-danger-fgColor-rest: #c21c2c;\n    --color-ansi-cyan: #1b7c83;\n    --color-ansi-cyan-bright: #3192aa;\n    --control-checked-bgColor-active: #0757ba;\n    --control-checked-bgColor-hover: #0860ca;\n    --fgColor-danger: #d1242f;\n    --reactionButton-selected-bgColor-hover: #caecff;\n    --avatarStack-fade-bgColor-default: #c8d1da;\n    --avatarStack-fade-bgColor-muted: #dae0e7;\n    --bgColor-accent-emphasis: #0969da;\n    --bgColor-accent-muted: #ddf4ff;\n    --bgColor-attention-emphasis: #9a6700;\n    --bgColor-attention-muted: #fff8c5;\n    --bgColor-danger-emphasis: #cf222e;\n    --bgColor-danger-muted: #ffebe9;\n    --bgColor-disabled: #eff2f5;\n    --bgColor-done-emphasis: #8250df;\n    --bgColor-done-muted: #fbefff;\n    --bgColor-emphasis: #25292e;\n    --bgColor-inverse: #25292e;\n    --bgColor-muted: #f6f8fa;\n    --bgColor-neutral-emphasis: #59636e;\n    --bgColor-neutral-muted: #818b981f;\n    --bgColor-open-emphasis: var(--bgColor-success-emphasis);\n    --bgColor-severe-emphasis: #bc4c00;\n    --bgColor-severe-muted: #fff1e5;\n    --bgColor-sponsors-emphasis: #bf3989;\n    --bgColor-sponsors-muted: #ffeff7;\n    --bgColor-success-muted: #dafbe1;\n    --bgColor-transparent: #fff0;\n    --borderColor-accent-emphasis: #0969da;\n    --borderColor-accent-muted: #54aeff66;\n    --borderColor-attention-emphasis: #9a6700;\n    --borderColor-attention-muted: #d4a72c66;\n    --borderColor-danger-emphasis: #cf222e;\n    --borderColor-danger-muted: #ff818266;\n    --borderColor-default: #d1d9e0;\n    --borderColor-disabled: #818b981a;\n    --borderColor-done-emphasis: #8250df;\n    --borderColor-done-muted: #c297ff66;\n    --borderColor-emphasis: #818b98;\n    --borderColor-neutral-emphasis: #59636e;\n    --borderColor-severe-emphasis: #bc4c00;\n    --borderColor-severe-muted: #fb8f4466;\n    --borderColor-sponsors-emphasis: #bf3989;\n    --borderColor-sponsors-muted: #ff80c866;\n    --borderColor-success-emphasis: #1a7f37;\n    --borderColor-success-muted: #4ac26b66;\n    --borderColor-transparent: #fff0;\n    --button-danger-bgColor-active: #a40e26;\n    --button-danger-fgColor-disabled: #d1242f80;\n    --button-danger-fgColor-rest: var(--fgColor-danger);\n    --button-danger-shadow-selected: inset 0 1px 0 0 #4c001433;\n    --button-inactive-bgColor: #e6eaef;\n    --button-inactive-fgColor: #59636e;\n  }\n}\n",
+  "variables.css": ":root {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-400: #9198a1;\n  --color-neutral-500: #818b98;\n  --color-neutral-700: #59636e;\n  --color-neutral-800: #3d444d;\n  --color-neutral-900: #25292e;\n  --color-deep-blue: #010409;\n  --color-pale-cyan: #eff2f5;\n  --color-deep-cyan: #151b23;\n  --color-cyan: #d1d9e0;\n  --color-pale-orange: #eeeae2;\n  --color-blue: #0349b4;\n  --color-deep-red: #271817;\n  --color-cyan-2: #0969da;\n  --color-cyan-3: #5cacff;\n  --color-blue-2: #023b95;\n  --color-pale-cyan-2: #d1f0ff;\n  --color-blue-3: #b7bdc8;\n\n  /* inferred semantic roles */\n  --color-canvas: #25292e;\n  --color-ink: #ffffff;\n  --color-text-muted: #818b98;\n  --color-surface: #3d444d;\n  --color-hairline: #59636e;\n  --color-accent: #010409;\n  --color-accent-2: #eff2f5;\n  --color-accent-3: #151b23;\n}\n\n/* dark-mode values mined from the source (native token names) */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --bgColor-success-emphasis: #1f883d;\n    --button-outline-bgColor-active: #0757ba;\n    --button-primary-bgColor-active: #197935;\n    --button-primary-bgColor-disabled: #95d8a6;\n    --button-primary-bgColor-hover: #1c8139;\n    --buttonCounter-danger-fgColor-rest: #c21c2c;\n    --color-ansi-cyan: #1b7c83;\n    --color-ansi-cyan-bright: #3192aa;\n    --control-checked-bgColor-active: #0757ba;\n    --control-checked-bgColor-hover: #0860ca;\n    --fgColor-danger: #d1242f;\n    --reactionButton-selected-bgColor-hover: #caecff;\n    --avatarStack-fade-bgColor-default: #c8d1da;\n    --avatarStack-fade-bgColor-muted: #dae0e7;\n    --bgColor-accent-emphasis: #0969da;\n    --bgColor-accent-muted: #ddf4ff;\n    --bgColor-attention-emphasis: #9a6700;\n    --bgColor-attention-muted: #fff8c5;\n    --bgColor-danger-emphasis: #cf222e;\n    --bgColor-danger-muted: #ffebe9;\n    --bgColor-disabled: #eff2f5;\n    --bgColor-done-emphasis: #8250df;\n    --bgColor-done-muted: #fbefff;\n    --bgColor-emphasis: #25292e;\n    --bgColor-inverse: #25292e;\n    --bgColor-muted: #f6f8fa;\n    --bgColor-neutral-emphasis: #59636e;\n    --bgColor-neutral-muted: #818b981f;\n    --bgColor-open-emphasis: var(--bgColor-success-emphasis);\n    --bgColor-severe-emphasis: #bc4c00;\n    --bgColor-severe-muted: #fff1e5;\n    --bgColor-sponsors-emphasis: #bf3989;\n    --bgColor-sponsors-muted: #ffeff7;\n    --bgColor-success-muted: #dafbe1;\n    --bgColor-transparent: #fff0;\n    --borderColor-accent-emphasis: #0969da;\n    --borderColor-accent-muted: #54aeff66;\n    --borderColor-attention-emphasis: #9a6700;\n    --borderColor-attention-muted: #d4a72c66;\n    --borderColor-danger-emphasis: #cf222e;\n    --borderColor-danger-muted: #ff818266;\n    --borderColor-default: #d1d9e0;\n    --borderColor-disabled: #818b981a;\n    --borderColor-done-emphasis: #8250df;\n    --borderColor-done-muted: #c297ff66;\n    --borderColor-emphasis: #818b98;\n    --borderColor-neutral-emphasis: #59636e;\n    --borderColor-severe-emphasis: #bc4c00;\n    --borderColor-severe-muted: #fb8f4466;\n    --borderColor-sponsors-emphasis: #bf3989;\n    --borderColor-sponsors-muted: #ff80c866;\n    --borderColor-success-emphasis: #1a7f37;\n    --borderColor-success-muted: #4ac26b66;\n    --borderColor-transparent: #fff0;\n    --button-danger-bgColor-active: #a40e26;\n    --button-danger-fgColor-disabled: #d1242f80;\n    --button-danger-fgColor-rest: var(--fgColor-danger);\n    --button-danger-shadow-selected: inset 0 1px 0 0 #4c001433;\n    --button-inactive-bgColor: #e6eaef;\n    --button-inactive-fgColor: #59636e;\n  }\n}\n",
+  "tokens.json": "{\n  \"$description\": \"Design tokens extracted from https://github.com/. Semantic entries are inferred from usage + luminance; all values are mined from live CSS.\",\n  \"color\": {\n    \"neutral-50\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\"\n    },\n    \"neutral-400\": {\n      \"$value\": \"#9198a1\",\n      \"$type\": \"color\"\n    },\n    \"neutral-500\": {\n      \"$value\": \"#818b98\",\n      \"$type\": \"color\"\n    },\n    \"neutral-700\": {\n      \"$value\": \"#59636e\",\n      \"$type\": \"color\"\n    },\n    \"neutral-800\": {\n      \"$value\": \"#3d444d\",\n      \"$type\": \"color\"\n    },\n    \"neutral-900\": {\n      \"$value\": \"#25292e\",\n      \"$type\": \"color\"\n    },\n    \"deep-blue\": {\n      \"$value\": \"#010409\",\n      \"$type\": \"color\"\n    },\n    \"pale-cyan\": {\n      \"$value\": \"#eff2f5\",\n      \"$type\": \"color\"\n    },\n    \"deep-cyan\": {\n      \"$value\": \"#151b23\",\n      \"$type\": \"color\"\n    },\n    \"cyan\": {\n      \"$value\": \"#d1d9e0\",\n      \"$type\": \"color\"\n    },\n    \"pale-orange\": {\n      \"$value\": \"#eeeae2\",\n      \"$type\": \"color\"\n    },\n    \"blue\": {\n      \"$value\": \"#0349b4\",\n      \"$type\": \"color\"\n    },\n    \"deep-red\": {\n      \"$value\": \"#271817\",\n      \"$type\": \"color\"\n    },\n    \"cyan-2\": {\n      \"$value\": \"#0969da\",\n      \"$type\": \"color\"\n    },\n    \"cyan-3\": {\n      \"$value\": \"#5cacff\",\n      \"$type\": \"color\"\n    },\n    \"blue-2\": {\n      \"$value\": \"#023b95\",\n      \"$type\": \"color\"\n    },\n    \"pale-cyan-2\": {\n      \"$value\": \"#d1f0ff\",\n      \"$type\": \"color\"\n    },\n    \"blue-3\": {\n      \"$value\": \"#b7bdc8\",\n      \"$type\": \"color\"\n    }\n  },\n  \"semantic\": {\n    \"canvas\": {\n      \"$value\": \"#25292e\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: darkest neutral, matches the measured dark-leaning theme\"\n    },\n    \"ink\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: lightest neutral, highest contrast against canvas\"\n    },\n    \"text-muted\": {\n      \"$value\": \"#818b98\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used mid-luminance neutral\"\n    },\n    \"surface\": {\n      \"$value\": \"#3d444d\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: neutral closest to canvas luminance\"\n    },\n    \"hairline\": {\n      \"$value\": \"#59636e\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: next neutral near canvas, hairline-border weight\"\n    },\n    \"accent\": {\n      \"$value\": \"#010409\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used chromatic color\"\n    },\n    \"accent-2\": {\n      \"$value\": \"#eff2f5\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    },\n    \"accent-3\": {\n      \"$value\": \"#151b23\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    }\n  },\n  \"dark\": {\n    \"bgColor-success-emphasis\": {\n      \"$value\": \"#1f883d\",\n      \"$type\": \"color\"\n    },\n    \"button-outline-bgColor-active\": {\n      \"$value\": \"#0757ba\",\n      \"$type\": \"color\"\n    },\n    \"button-primary-bgColor-active\": {\n      \"$value\": \"#197935\",\n      \"$type\": \"color\"\n    },\n    \"button-primary-bgColor-disabled\": {\n      \"$value\": \"#95d8a6\",\n      \"$type\": \"color\"\n    },\n    \"button-primary-bgColor-hover\": {\n      \"$value\": \"#1c8139\",\n      \"$type\": \"color\"\n    },\n    \"buttonCounter-danger-fgColor-rest\": {\n      \"$value\": \"#c21c2c\",\n      \"$type\": \"color\"\n    },\n    \"color-ansi-cyan\": {\n      \"$value\": \"#1b7c83\",\n      \"$type\": \"color\"\n    },\n    \"color-ansi-cyan-bright\": {\n      \"$value\": \"#3192aa\",\n      \"$type\": \"color\"\n    },\n    \"control-checked-bgColor-active\": {\n      \"$value\": \"#0757ba\",\n      \"$type\": \"color\"\n    },\n    \"control-checked-bgColor-hover\": {\n      \"$value\": \"#0860ca\",\n      \"$type\": \"color\"\n    },\n    \"fgColor-danger\": {\n      \"$value\": \"#d1242f\",\n      \"$type\": \"color\"\n    },\n    \"reactionButton-selected-bgColor-hover\": {\n      \"$value\": \"#caecff\",\n      \"$type\": \"color\"\n    },\n    \"avatarStack-fade-bgColor-default\": {\n      \"$value\": \"#c8d1da\",\n      \"$type\": \"color\"\n    },\n    \"avatarStack-fade-bgColor-muted\": {\n      \"$value\": \"#dae0e7\",\n      \"$type\": \"color\"\n    },\n    \"bgColor-accent-emphasis\": {\n      \"$value\": \"#0969da\",\n      \"$type\": \"color\"\n    },\n    \"bgColor-accent-muted\": {\n      \"$value\": \"#ddf4ff\",\n      \"$type\": \"color\"\n    },\n    \"bgColor-attention-emphasis\": {\n      \"$value\": \"#9a6700\",\n      \"$type\": \"color\"\n    },\n    \"bgColor-attention-muted\": {\n      \"$value\": \"#fff8c5\",\n      \"$type\": \"color\"\n    },\n    \"bgColor-danger-emphasis\": {\n      \"$value\": \"#cf222e\",\n      \"$type\": \"color\"\n    },\n    \"bgColor-danger-muted\": {\n      \"$value\": \"#ffebe9\",\n      \"$type\": \"color\"\n    },\n    \"bgColor-disabled\": {\n      \"$value\": \"#eff2f5\",\n      \"$type\": \"color\"\n    },\n    \"bgColor-done-emphasis\": {\n      \"$value\": \"#8250df\",\n      \"$type\": \"color\"\n    },\n    \"bgColor-done-muted\": {\n      \"$value\": \"#fbefff\",\n      \"$type\": \"color\"\n    },\n    \"bgColor-emphasis\": {\n      \"$value\": \"#25292e\",\n      \"$type\": \"color\"\n    },\n    \"bgColor-inverse\": {\n      \"$value\": \"#25292e\",\n      \"$type\": \"color\"\n    },\n    \"bgColor-muted\": {\n      \"$value\": \"#f6f8fa\",\n      \"$type\": \"color\"\n    },\n    \"bgColor-neutral-emphasis\": {\n      \"$value\": \"#59636e\",\n      \"$type\": \"color\"\n    },\n    \"bgColor-neutral-muted\": {\n      \"$value\": \"#818b981f\",\n      \"$type\": \"color\"\n    },\n    \"bgColor-open-emphasis\": {\n      \"$value\": \"var(--bgColor-success-emphasis)\",\n      \"$type\": \"string\"\n    },\n    \"bgColor-severe-emphasis\": {\n      \"$value\": \"#bc4c00\",\n      \"$type\": \"color\"\n    },\n    \"bgColor-severe-muted\": {\n      \"$value\": \"#fff1e5\",\n      \"$type\": \"color\"\n    },\n    \"bgColor-sponsors-emphasis\": {\n      \"$value\": \"#bf3989\",\n      \"$type\": \"color\"\n    },\n    \"bgColor-sponsors-muted\": {\n      \"$value\": \"#ffeff7\",\n      \"$type\": \"color\"\n    },\n    \"bgColor-success-muted\": {\n      \"$value\": \"#dafbe1\",\n      \"$type\": \"color\"\n    },\n    \"bgColor-transparent\": {\n      \"$value\": \"#fff0\",\n      \"$type\": \"color\"\n    },\n    \"borderColor-accent-emphasis\": {\n      \"$value\": \"#0969da\",\n      \"$type\": \"color\"\n    },\n    \"borderColor-accent-muted\": {\n      \"$value\": \"#54aeff66\",\n      \"$type\": \"color\"\n    },\n    \"borderColor-attention-emphasis\": {\n      \"$value\": \"#9a6700\",\n      \"$type\": \"color\"\n    },\n    \"borderColor-attention-muted\": {\n      \"$value\": \"#d4a72c66\",\n      \"$type\": \"color\"\n    },\n    \"borderColor-danger-emphasis\": {\n      \"$value\": \"#cf222e\",\n      \"$type\": \"color\"\n    },\n    \"borderColor-danger-muted\": {\n      \"$value\": \"#ff818266\",\n      \"$type\": \"color\"\n    },\n    \"borderColor-default\": {\n      \"$value\": \"#d1d9e0\",\n      \"$type\": \"color\"\n    },\n    \"borderColor-disabled\": {\n      \"$value\": \"#818b981a\",\n      \"$type\": \"color\"\n    },\n    \"borderColor-done-emphasis\": {\n      \"$value\": \"#8250df\",\n      \"$type\": \"color\"\n    },\n    \"borderColor-done-muted\": {\n      \"$value\": \"#c297ff66\",\n      \"$type\": \"color\"\n    },\n    \"borderColor-emphasis\": {\n      \"$value\": \"#818b98\",\n      \"$type\": \"color\"\n    },\n    \"borderColor-neutral-emphasis\": {\n      \"$value\": \"#59636e\",\n      \"$type\": \"color\"\n    },\n    \"borderColor-severe-emphasis\": {\n      \"$value\": \"#bc4c00\",\n      \"$type\": \"color\"\n    },\n    \"borderColor-severe-muted\": {\n      \"$value\": \"#fb8f4466\",\n      \"$type\": \"color\"\n    },\n    \"borderColor-sponsors-emphasis\": {\n      \"$value\": \"#bf3989\",\n      \"$type\": \"color\"\n    },\n    \"borderColor-sponsors-muted\": {\n      \"$value\": \"#ff80c866\",\n      \"$type\": \"color\"\n    },\n    \"borderColor-success-emphasis\": {\n      \"$value\": \"#1a7f37\",\n      \"$type\": \"color\"\n    },\n    \"borderColor-success-muted\": {\n      \"$value\": \"#4ac26b66\",\n      \"$type\": \"color\"\n    },\n    \"borderColor-transparent\": {\n      \"$value\": \"#fff0\",\n      \"$type\": \"color\"\n    },\n    \"button-danger-bgColor-active\": {\n      \"$value\": \"#a40e26\",\n      \"$type\": \"color\"\n    },\n    \"button-danger-fgColor-disabled\": {\n      \"$value\": \"#d1242f80\",\n      \"$type\": \"color\"\n    },\n    \"button-danger-fgColor-rest\": {\n      \"$value\": \"var(--fgColor-danger)\",\n      \"$type\": \"string\"\n    },\n    \"button-danger-shadow-selected\": {\n      \"$value\": \"inset 0 1px 0 0 #4c001433\",\n      \"$type\": \"string\"\n    },\n    \"button-inactive-bgColor\": {\n      \"$value\": \"#e6eaef\",\n      \"$type\": \"color\"\n    },\n    \"button-inactive-fgColor\": {\n      \"$value\": \"#59636e\",\n      \"$type\": \"color\"\n    }\n  }\n}"
+ },
+ "raw": {
+  "tokens": {
+   "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub",
+   "description": "Join the world&#39;s most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open source community build software that advances humanity.",
+   "themeGuess": "dark-leaning",
+   "darkWeight": 1108,
+   "lightWeight": 662,
+   "neutrals": [
+    {
+     "hex": "#ffffff",
+     "count": 662
+    },
+    {
+     "hex": "#9198a1",
+     "count": 54
+    },
+    {
+     "hex": "#818b98",
+     "count": 90
+    },
+    {
+     "hex": "#59636e",
+     "count": 338
+    },
+    {
+     "hex": "#3d444d",
+     "count": 320
+    },
+    {
+     "hex": "#25292e",
+     "count": 450
+    }
+   ],
+   "accents": [
+    {
+     "hex": "#010409",
+     "count": 360
+    },
+    {
+     "hex": "#eff2f5",
+     "count": 344
+    },
+    {
+     "hex": "#151b23",
+     "count": 270
+    },
+    {
+     "hex": "#d1d9e0",
+     "count": 250
+    },
+    {
+     "hex": "#eeeae2",
+     "count": 200
+    },
+    {
+     "hex": "#0349b4",
+     "count": 194
+    },
+    {
+     "hex": "#271817",
+     "count": 192
+    },
+    {
+     "hex": "#0969da",
+     "count": 190
+    },
+    {
+     "hex": "#5cacff",
+     "count": 186
+    },
+    {
+     "hex": "#023b95",
+     "count": 162
+    },
+    {
+     "hex": "#d1f0ff",
+     "count": 152
+    },
+    {
+     "hex": "#b7bdc8",
+     "count": 144
+    }
+   ],
+   "modern": [],
+   "fonts": [],
+   "fontSizes": [],
+   "fontWeights": [],
+   "lineHeights": [],
+   "letterSpacings": [],
+   "spacing": [],
+   "radii": [],
+   "shadows": [],
+   "breakpoints": [],
+   "nativeVars": [
+    {
+     "name": "tab-size-preference",
+     "value": "4"
+    }
+   ],
+   "darkVars": [
+    {
+     "name": "bgColor-success-emphasis",
+     "light": null,
+     "dark": "#1f883d",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "button-outline-bgColor-active",
+     "light": null,
+     "dark": "#0757ba",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "button-primary-bgColor-active",
+     "light": null,
+     "dark": "#197935",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "button-primary-bgColor-disabled",
+     "light": null,
+     "dark": "#95d8a6",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "button-primary-bgColor-hover",
+     "light": null,
+     "dark": "#1c8139",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "buttonCounter-danger-fgColor-rest",
+     "light": null,
+     "dark": "#c21c2c",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "color-ansi-cyan",
+     "light": null,
+     "dark": "#1b7c83",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "color-ansi-cyan-bright",
+     "light": null,
+     "dark": "#3192aa",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "control-checked-bgColor-active",
+     "light": null,
+     "dark": "#0757ba",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "control-checked-bgColor-hover",
+     "light": null,
+     "dark": "#0860ca",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "fgColor-danger",
+     "light": null,
+     "dark": "#d1242f",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "reactionButton-selected-bgColor-hover",
+     "light": null,
+     "dark": "#caecff",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "avatarStack-fade-bgColor-default",
+     "light": null,
+     "dark": "#c8d1da",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "avatarStack-fade-bgColor-muted",
+     "light": null,
+     "dark": "#dae0e7",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "bgColor-accent-emphasis",
+     "light": null,
+     "dark": "#0969da",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "bgColor-accent-muted",
+     "light": null,
+     "dark": "#ddf4ff",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "bgColor-attention-emphasis",
+     "light": null,
+     "dark": "#9a6700",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "bgColor-attention-muted",
+     "light": null,
+     "dark": "#fff8c5",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "bgColor-danger-emphasis",
+     "light": null,
+     "dark": "#cf222e",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "bgColor-danger-muted",
+     "light": null,
+     "dark": "#ffebe9",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "bgColor-disabled",
+     "light": null,
+     "dark": "#eff2f5",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "bgColor-done-emphasis",
+     "light": null,
+     "dark": "#8250df",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "bgColor-done-muted",
+     "light": null,
+     "dark": "#fbefff",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "bgColor-emphasis",
+     "light": null,
+     "dark": "#25292e",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "bgColor-inverse",
+     "light": null,
+     "dark": "#25292e",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "bgColor-muted",
+     "light": null,
+     "dark": "#f6f8fa",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "bgColor-neutral-emphasis",
+     "light": null,
+     "dark": "#59636e",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "bgColor-neutral-muted",
+     "light": null,
+     "dark": "#818b981f",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "bgColor-open-emphasis",
+     "light": null,
+     "dark": "var(--bgColor-success-emphasis)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "bgColor-severe-emphasis",
+     "light": null,
+     "dark": "#bc4c00",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "bgColor-severe-muted",
+     "light": null,
+     "dark": "#fff1e5",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "bgColor-sponsors-emphasis",
+     "light": null,
+     "dark": "#bf3989",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "bgColor-sponsors-muted",
+     "light": null,
+     "dark": "#ffeff7",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "bgColor-success-muted",
+     "light": null,
+     "dark": "#dafbe1",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "bgColor-transparent",
+     "light": null,
+     "dark": "#fff0",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "borderColor-accent-emphasis",
+     "light": null,
+     "dark": "#0969da",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "borderColor-accent-muted",
+     "light": null,
+     "dark": "#54aeff66",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "borderColor-attention-emphasis",
+     "light": null,
+     "dark": "#9a6700",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "borderColor-attention-muted",
+     "light": null,
+     "dark": "#d4a72c66",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "borderColor-danger-emphasis",
+     "light": null,
+     "dark": "#cf222e",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "borderColor-danger-muted",
+     "light": null,
+     "dark": "#ff818266",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "borderColor-default",
+     "light": null,
+     "dark": "#d1d9e0",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "borderColor-disabled",
+     "light": null,
+     "dark": "#818b981a",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "borderColor-done-emphasis",
+     "light": null,
+     "dark": "#8250df",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "borderColor-done-muted",
+     "light": null,
+     "dark": "#c297ff66",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "borderColor-emphasis",
+     "light": null,
+     "dark": "#818b98",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "borderColor-neutral-emphasis",
+     "light": null,
+     "dark": "#59636e",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "borderColor-severe-emphasis",
+     "light": null,
+     "dark": "#bc4c00",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "borderColor-severe-muted",
+     "light": null,
+     "dark": "#fb8f4466",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "borderColor-sponsors-emphasis",
+     "light": null,
+     "dark": "#bf3989",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "borderColor-sponsors-muted",
+     "light": null,
+     "dark": "#ff80c866",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "borderColor-success-emphasis",
+     "light": null,
+     "dark": "#1a7f37",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "borderColor-success-muted",
+     "light": null,
+     "dark": "#4ac26b66",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "borderColor-transparent",
+     "light": null,
+     "dark": "#fff0",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "button-danger-bgColor-active",
+     "light": null,
+     "dark": "#a40e26",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "button-danger-fgColor-disabled",
+     "light": null,
+     "dark": "#d1242f80",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "button-danger-fgColor-rest",
+     "light": null,
+     "dark": "var(--fgColor-danger)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "button-danger-shadow-selected",
+     "light": null,
+     "dark": "inset 0 1px 0 0 #4c001433",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "button-inactive-bgColor",
+     "light": null,
+     "dark": "#e6eaef",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "button-inactive-fgColor",
+     "light": null,
+     "dark": "#59636e",
+     "via": "prefers-color-scheme"
+    }
+   ],
+   "rings": []
+  },
+  "stylesheets": 12
+ }
+}

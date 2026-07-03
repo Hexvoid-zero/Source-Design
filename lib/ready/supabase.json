@@ -1,0 +1,1280 @@
+{
+ "slug": "supabase",
+ "name": "Supabase",
+ "blurb": "Postgres platform. Dark developer canvas with a single jade-green accent.",
+ "url": "https://supabase.com/",
+ "title": "Supabase | The Open Source Firebase Alternative",
+ "extractedAt": "2026-07-03",
+ "summary": {
+  "colors": [
+   {
+    "name": "neutral-50",
+    "hex": "#ffffff",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-100",
+    "hex": "#ededed",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-200",
+    "hex": "#cccccc",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-300",
+    "hex": "#b0b0b0",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-400",
+    "hex": "#a0a0a0",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-500",
+    "hex": "#8b9092",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-600",
+    "hex": "#7e7e7e",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-700",
+    "hex": "#707070",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-800",
+    "hex": "#525252",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-900",
+    "hex": "#464444",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-950",
+    "hex": "#2e2e2e",
+    "group": "neutral"
+   },
+   {
+    "name": "pale-green",
+    "hex": "#dffff1",
+    "group": "accent"
+   },
+   {
+    "name": "green",
+    "hex": "#3ecf8e",
+    "group": "accent"
+   },
+   {
+    "name": "deep-teal",
+    "hex": "#061517",
+    "group": "accent"
+   },
+   {
+    "name": "deep-teal-2",
+    "hex": "#163837",
+    "group": "accent"
+   },
+   {
+    "name": "orange",
+    "hex": "#ffcda1",
+    "group": "accent"
+   },
+   {
+    "name": "indigo",
+    "hex": "#bda4ff",
+    "group": "accent"
+   },
+   {
+    "name": "orange-2",
+    "hex": "#f1a10d",
+    "group": "accent"
+   },
+   {
+    "name": "cyan",
+    "hex": "#0070f3",
+    "group": "accent"
+   },
+   {
+    "name": "green-2",
+    "hex": "#1a7a4c",
+    "group": "accent"
+   },
+   {
+    "name": "blue",
+    "hex": "#6453c5",
+    "group": "accent"
+   },
+   {
+    "name": "indigo-2",
+    "hex": "#6b35dc",
+    "group": "accent"
+   },
+   {
+    "name": "blue-2",
+    "hex": "#32325d",
+    "group": "accent"
+   }
+  ],
+  "fonts": [
+   "Inter",
+   "Source Code Pro",
+   "Manrope",
+   "Ubuntu",
+   "Courier New",
+   "Office Code Pro",
+   "Manrope Fallback",
+   "Inter Fallback"
+  ],
+  "themeGuess": "light-leaning",
+  "stylesheets": 3,
+  "nativeVarCount": 120
+ },
+ "files": {
+  "DESIGN.md": "---\nname: supabase-com-design-system\nsource: https://supabase.com/\nextracted: 2026-07-03\ntheme: light  # measured from neutral usage weight\ncolors:  # roles inferred from usage frequency + luminance; names verified against values\n  canvas: \"#ffffff\"\n  ink: \"#2e2e2e\"\n  text-muted: \"#7e7e7e\"\n  surface: \"#ededed\"\n  hairline: \"#cccccc\"\n  accent: \"#dffff1\"  # pale-green\n  accent-2: \"#3ecf8e\"  # green\n  accent-3: \"#061517\"  # deep-teal\nfonts:\n  primary: \"Inter\"  # low-confidence: usage counts are low and close\n  mono: \"Source Code Pro\"\n---\n\n# Supabase | The Open Source Firebase Alternative — Design System\n\nExtracted from **https://supabase.com/** on 2026-07-03.\n\n> Build production-grade applications with a Postgres database, Authentication, instant APIs, Realtime, Functions, Storage and Vector embeddings. Start for free.\n\nEvery value below is mined from the site's live CSS (120 native custom properties, ranked usage counts). Role assignments are inferred from usage and luminance and marked as such — treat them as a strong starting point, not gospel.\n\n## Overview\n\nThe system reads as light: measured neutral usage weighs 161 light against 172 dark. The palette is chromatic: 12 saturated values against 11 neutrals, led by pale-green (`#dffff1`). Font usage counts are low and close together (Inter: 8, Source Code Pro: 8, Manrope: 7) — the extractor can't confidently call a primary face from CSS alone. Geometry mixes sharp corners (2px) with full pills.\n\n## Usage rules\n\nDerived from the measured usage below — each rule cites its evidence.\n\n- Chromatic color is only 22% of measured color usage. Reserve `accent` (`#dffff1`) for primary actions, links, and emphasis — spreading it into body text or large surfaces breaks the ratio that defines this look.\n- The theme is light (measured neutral weight 161:172). Don't flip individual sections to the opposite mode.\n- `.25rem` is the workhorse radius (x8); treat the other radii as exceptions, not options.\n- Shadows stay tight (max 5px blur) — keep elevation subtle if you extend the scale.\n- `Source Code Pro` is the monospace — keep it for code, data, and metadata roles.\n\n## Colors\n\n### Neutrals (light → dark)\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `neutral-50` | `#ffffff` | 98 | **canvas** — lightest neutral, matches the measured light-leaning theme |\n| `neutral-100` | `#ededed` | 58 | **surface** — neutral closest to canvas luminance |\n| `neutral-200` | `#cccccc` | 5 | **hairline** — next neutral near canvas, hairline-border weight |\n| `neutral-300` | `#b0b0b0` | 2 | — |\n| `neutral-400` | `#a0a0a0` | 9 | — |\n| `neutral-500` | `#8b9092` | 11 | — |\n| `neutral-600` | `#7e7e7e` | 13 | **text-muted** — most-used mid-luminance neutral |\n| `neutral-700` | `#707070` | 9 | — |\n| `neutral-800` | `#525252` | 10 | — |\n| `neutral-900` | `#464444` | 22 | — |\n| `neutral-950` | `#2e2e2e` | 29 | **ink** — darkest neutral, highest contrast against canvas |\n\n### Accents\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `pale-green` | `#dffff1` | 10 | **accent** — most-used chromatic color |\n| `green` | `#3ecf8e` | 10 | **accent-2** — supporting chromatic color |\n| `deep-teal` | `#061517` | 7 | **accent-3** — supporting chromatic color |\n| `deep-teal-2` | `#163837` | 7 | — |\n| `orange` | `#ffcda1` | 6 | — |\n| `indigo` | `#bda4ff` | 5 | — |\n| `orange-2` | `#f1a10d` | 5 | — |\n| `cyan` | `#0070f3` | 5 | — |\n| `green-2` | `#1a7a4c` | 5 | — |\n| `blue` | `#6453c5` | 5 | — |\n| `indigo-2` | `#6b35dc` | 4 | — |\n| `blue-2` | `#32325d` | 4 | — |\n\n### Modern color values (kept verbatim)\n\n- `oklch(97.9% .021 166.113)`\n- `oklch(90.5% .093 164.15)`\n- `oklch(84.5% .143 164.978)`\n- `oklch(76.5% .177 163.223)`\n- `oklch(69.6% .17 162.48)`\n- `oklch(59.6% .145 163.225)`\n- `oklch(50.8% .118 165.612)`\n- `oklch(37.8% .077 168.94)`\n- `oklch(26.2% .051 172.552)`\n- `oklch(70.4% .14 182.503)`\n- `oklch(71.5% .143 215.221)`\n- `oklch(98.5% 0 0)`\n\n### Dark mode\n\nThe source defines 60 dark-mode variants (via dark selector). Both halves of the system, first 30:\n\n| Token | Light | Dark |\n| --- | --- | --- |\n| `--ch-0` | — | `dark` |\n| `--ch-1` | — | `#8b949e` |\n| `--ch-2` | — | `#79c0ff` |\n| `--ch-3` | — | `#ffcda1` |\n| `--ch-4` | — | `#f8f8f2` |\n| `--ch-5` | — | `#bda4ff` |\n| `--ch-6` | — | `hsl(var(--brand-600))` |\n| `--ch-7` | — | `#569cd6` |\n| `--ch-8` | — | `hsl(var(--brand-default))` |\n| `--ch-9` | — | `#ffa198` |\n| `--ch-10` | — | `#f0f6fc` |\n| `--ch-11` | — | `#490202` |\n| `--ch-12` | — | `#04260f` |\n| `--ch-13` | — | `#5a1e02` |\n| `--ch-14` | — | `#161b22` |\n| `--ch-15` | — | `#8b949e` |\n| `--ch-16` | — | `#2a2929` |\n| `--ch-17` | — | `#264f78` |\n| `--ch-18` | — | `#3794ff` |\n| `--ch-19` | — | `#ffffff0b` |\n| `--ch-20` | — | `#6e7681` |\n| `--ch-21` | — | `#010409` |\n| `--ch-22` | — | `#30363d` |\n| `--ch-23` | — | `#f78166` |\n| `--ch-24` | — | `#6e768166` |\n| `--ch-25` | — | `#6e76811a` |\n| `--tw-brightness` | — | `brightness(200%)` |\n| `--tw-contrast` | — | `contrast(0%)` |\n| `--tw-gradient-position` | — | `to bottom` |\n| `--tw-gradient-to` | — | `hsl(var(--background-surface-100))` |\n\n`variables.css` ships these as a `prefers-color-scheme: dark` override block.\n\n## Typography\n\nUsage counts here are low and close together, so no family can be confidently called primary from CSS declarations alone — sites that set fonts via shorthand or JS under-count. Verify visually. Full list by usage:\n\n| Family | Usage |\n| --- | --- |\n| Inter | 8 |\n| Source Code Pro | 8 |\n| Manrope | 7 |\n| Ubuntu | 4 |\n| Courier New | 1 |\n| Office Code Pro | 1 |\n| Manrope Fallback | 1 |\n| Inter Fallback | 1 |\n\n**Size scale (px):** `10`, `11`, `12`, `12.8`, `14`, `14.4`, `16`, `19.2`, `20`, `28`, `32`, `36`\n\n**Weights in use:** `100` (x7), `200` (x15), `400` (x10), `500` (x3), `600` (x4), `700` (x5)\n\n**Line-heights (unitless):** `1`, `1.11`, `1.33`, `1.43`, `1.5`, `1.6`, `1.71`, `1.75`\n\n**Letter-spacing values:** `-1.5px`, `-1.1px`, `-.5px`, `-.025em`, `-.01rem`, `-.15px`\n\n## Spacing\n\nMost-used values (px): `1`, `2`, `3`, `4`, `5`, `6`, `8`, `10`, `12`, `15`, `16`, `48`\n\n## Border radius\n\n| Token | Value | Usage |\n| --- | --- | --- |\n| `radius-sm` | `2px` | 1 |\n| `radius-md` | `.25rem` | 8 |\n| `radius-lg` | `6px` | 5 |\n| `radius-xl` | `8px` | 2 |\n| `radius-2xl` | `14px` | 1 |\n| `radius-3xl` | `20px` | 1 |\n| `radius-4xl` | `100%` | 1 |\n| `radius-full` | `50%` | 1 |\n\n## Shadows (ordered by blur radius)\n\n- `shadow-sm` — `0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025)` (x2)\n\n## Breakpoints\n\n`480px`, `520px`, `600px`, `640px`, `720px`, `768px`, `769px`, `960px`\n\n## Starter recipes\n\nTokens composed into components. The source site's real components were **not** inspected — these are starting points built from the extracted values, with contrast ratios computed rather than assumed.\n\n```css\n.button-primary {\n  background: var(--color-accent); /* #dffff1 */\n  color: var(--color-ink); /* #2e2e2e — contrast 12.7:1 */\n  border-radius: 9999px; /* pill — mined as 50% */\n  font-weight: 500;\n}\n\n.card {\n  background: var(--color-surface); /* #ededed */\n  border: 1px solid var(--color-hairline); /* #cccccc */\n  border-radius: .25rem; /* most-used finite radius */\n  box-shadow: var(--shadow-sm);\n}\n\n.input {\n  background: var(--color-canvas); /* #ffffff */\n  color: var(--color-ink); /* #2e2e2e — contrast 13.6:1 */\n  border: 1px solid var(--color-hairline); /* #cccccc */\n  border-radius: 2px;\n  /* placeholder color: var(--color-text-muted) #7e7e7e */\n}\n\n.nav {\n  background: var(--color-canvas); /* #ffffff */\n  border-bottom: 1px solid var(--color-hairline); /* #cccccc */\n  color: var(--color-ink); /* #2e2e2e */\n  /* inactive links: var(--color-text-muted) #7e7e7e */\n  /* active link: var(--color-accent) #dffff1 — contrast vs canvas 1.1:1 */\n}\n\n.modal {\n  background: var(--color-surface); /* #ededed */\n  border-radius: .25rem;\n  box-shadow: var(--shadow-sm); /* largest mined shadow */\n}\n\n.modal-backdrop {\n  background: color-mix(in srgb, var(--color-ink) 55%, transparent); /* scrim from #2e2e2e */\n}\n\n.input-success {\n  border-color: #dffff1; /* mined token: pale-green */\n}\n\n.input-error {\n  /* no red exists in the mined palette — this site does not expose an error color in its CSS. */\n  /* Introduce one deliberately rather than borrowing a random red; keep saturation near the accent's. */\n}\n```\n\n## Observations\n\n- 11 of 23 extracted colors are neutrals.\n- 1 distinct shadow; the softest reaches 5px blur.\n- 8 breakpoints, from 480px to 960px.\n- The site ships a large native token system (120+ custom properties) — prefer those names when extending it.\n\n## Native CSS custom properties\n\nFirst 40 of 120:\n\n```css\n:root {\n  --font-sans: var(--font-inter),Inter,Helvetica Neue,Helvetica,ui-sans-serif,system-ui,sans-serif;\n  --color-emerald-50: oklch(97.9% .021 166.113);\n  --color-emerald-200: oklch(90.5% .093 164.15);\n  --color-emerald-300: oklch(84.5% .143 164.978);\n  --color-emerald-400: oklch(76.5% .177 163.223);\n  --color-emerald-500: oklch(69.6% .17 162.48);\n  --color-emerald-600: oklch(59.6% .145 163.225);\n  --color-emerald-700: oklch(50.8% .118 165.612);\n  --color-emerald-900: oklch(37.8% .077 168.94);\n  --color-emerald-950: oklch(26.2% .051 172.552);\n  --color-teal-500: oklch(70.4% .14 182.503);\n  --color-cyan-500: oklch(71.5% .143 215.221);\n  --color-neutral-50: oklch(98.5% 0 0);\n  --color-neutral-100: oklch(97% 0 0);\n  --color-neutral-200: oklch(92.2% 0 0);\n  --color-neutral-300: oklch(87% 0 0);\n  --color-neutral-400: oklch(70.8% 0 0);\n  --color-neutral-500: oklch(55.6% 0 0);\n  --color-neutral-600: oklch(43.9% 0 0);\n  --color-neutral-700: oklch(37.1% 0 0);\n  --color-neutral-800: oklch(26.9% 0 0);\n  --color-neutral-900: oklch(20.5% 0 0);\n  --color-stone-500: oklch(55.3% .013 58.071);\n  --color-black: #000;\n  --color-white: #fff;\n  --spacing: .25rem;\n  --breakpoint-lg: 64rem;\n  --breakpoint-2xl: 96rem;\n  --container-xs: 20rem;\n  --container-sm: 24rem;\n  --container-md: 28rem;\n  --container-lg: 32rem;\n  --container-xl: 36rem;\n  --container-2xl: 42rem;\n  --container-3xl: 48rem;\n  --container-4xl: 56rem;\n  --container-5xl: 64rem;\n  --container-6xl: 72rem;\n  --container-7xl: 80rem;\n  --text-xs: .75rem;\n}\n```\n\n## Files\n\n- `tailwind.css` — Tailwind v4 `@theme` block; tokens become utilities (e.g. `bg-neutral-900`, `text-pale-green`).\n- `variables.css` — framework-agnostic `:root` variables, same values.\n- `tokens.json` — W3C Design Tokens format for Figma plugins, Style Dictionary, etc.\n",
+  "tailwind.css": "@import \"tailwindcss\";\n\n@theme {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-100: #ededed;\n  --color-neutral-200: #cccccc;\n  --color-neutral-300: #b0b0b0;\n  --color-neutral-400: #a0a0a0;\n  --color-neutral-500: #8b9092;\n  --color-neutral-600: #7e7e7e;\n  --color-neutral-700: #707070;\n  --color-neutral-800: #525252;\n  --color-neutral-900: #464444;\n  --color-neutral-950: #2e2e2e;\n  --color-pale-green: #dffff1;\n  --color-green: #3ecf8e;\n  --color-deep-teal: #061517;\n  --color-deep-teal-2: #163837;\n  --color-orange: #ffcda1;\n  --color-indigo: #bda4ff;\n  --color-orange-2: #f1a10d;\n  --color-cyan: #0070f3;\n  --color-green-2: #1a7a4c;\n  --color-blue: #6453c5;\n  --color-indigo-2: #6b35dc;\n  --color-blue-2: #32325d;\n\n  /* inferred semantic roles (each maps to a distinct mined value) */\n  --color-canvas: #ffffff;\n  --color-ink: #2e2e2e;\n  --color-text-muted: #7e7e7e;\n  --color-surface: #ededed;\n  --color-hairline: #cccccc;\n  --color-accent: #dffff1;\n  --color-accent-2: #3ecf8e;\n  --color-accent-3: #061517;\n\n  --font-sans: \"Inter\", ui-sans-serif, system-ui, sans-serif;\n  --font-mono: \"Source Code Pro\", ui-monospace, monospace;\n\n  --text-xs: 0.625rem;\n  --text-sm: 0.6875rem;\n  --text-base: 0.75rem;\n  --text-lg: 0.8rem;\n  --text-xl: 0.875rem;\n  --text-2xl: 0.9rem;\n  --text-3xl: 1rem;\n  --text-4xl: 1.2rem;\n  --text-5xl: 1.25rem;\n  --text-6xl: 1.75rem;\n  --text-7xl: 2rem;\n  --text-8xl: 2.25rem;\n\n  --font-weight-thin: 100;\n  --font-weight-extralight: 200;\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, sorted tight -> loose */\n  --leading-none: 1;\n  --leading-tight: 1.11;\n  --leading-snug: 1.33;\n  --leading-normal: 1.43;\n  --leading-relaxed: 1.5;\n  --leading-loose: 1.6;\n  --leading-looser: 1.71;\n  --leading-loosest: 1.75;\n\n  /* letter-spacing, sorted tight -> wide */\n  --tracking-tightest: -1.5px;\n  --tracking-tighter: -1.1px;\n  --tracking-tight: -.5px;\n  --tracking-normal: -.025em;\n  --tracking-wide: -.01rem;\n  --tracking-wider: -.15px;\n\n  --radius-sm: 2px;\n  --radius-md: .25rem;\n  --radius-lg: 6px;\n  --radius-xl: 8px;\n  --radius-2xl: 14px;\n  --radius-3xl: 20px;\n  --radius-4xl: 100%;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);\n\n  --breakpoint-sm: 30rem;\n  --breakpoint-md: 32.5rem;\n  --breakpoint-lg: 37.5rem;\n  --breakpoint-xl: 40rem;\n  --breakpoint-2xl: 45rem;\n  --breakpoint-3xl: 48rem;\n  --breakpoint-4xl: 48.0625rem;\n  --breakpoint-5xl: 60rem;\n\n  /* most-used spacing values on the source site (px): 1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 16, 48 */\n}\n\n/* dark-mode values mined from the source (native token names) */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --ch-0: dark;\n    --ch-1: #8b949e;\n    --ch-2: #79c0ff;\n    --ch-3: #ffcda1;\n    --ch-4: #f8f8f2;\n    --ch-5: #bda4ff;\n    --ch-6: hsl(var(--brand-600));\n    --ch-7: #569cd6;\n    --ch-8: hsl(var(--brand-default));\n    --ch-9: #ffa198;\n    --ch-10: #f0f6fc;\n    --ch-11: #490202;\n    --ch-12: #04260f;\n    --ch-13: #5a1e02;\n    --ch-14: #161b22;\n    --ch-15: #8b949e;\n    --ch-16: #2a2929;\n    --ch-17: #264f78;\n    --ch-18: #3794ff;\n    --ch-19: #ffffff0b;\n    --ch-20: #6e7681;\n    --ch-21: #010409;\n    --ch-22: #30363d;\n    --ch-23: #f78166;\n    --ch-24: #6e768166;\n    --ch-25: #6e76811a;\n    --tw-brightness: brightness(200%);\n    --tw-contrast: contrast(0%);\n    --tw-gradient-position: to bottom;\n    --tw-gradient-to: hsl(var(--background-surface-100));\n    --tw-shadow: 0px 0px 6px 0px var(--tw-shadow-color,#2cf49466);\n    --tw-blur: blur(24px);\n    --tw-invert: invert(100%);\n    --tw-saturate: saturate(.4);\n    --tw-gradient-from: #0003;\n    --tw-ring-color: hsl(var(--destructive-default));\n    --helpers-os-appearance: Dark;\n    --code-block-5: 13.8deg 89.7% 69.6%;\n    --code-block-4: 276.1deg 67.7% 74.5%;\n    --code-block-3: 83.8deg 61.7% 63.1%;\n    --code-block-2: 33.2deg 90.3% 75.7%;\n    --code-block-1: 170.8deg 43.1% 61.4%;\n    --secondary-default: 247.8deg 100% 70%;\n    --secondary-400: 248.3deg 54.5% 25.9%;\n    --secondary-200: 248deg 53.6% 11%;\n    --brand-link: 155deg 100% 38.6%;\n    --brand-default: 153.1deg 60.2% 52.7%;\n    --brand-600: 154.9deg 59.5% 70%;\n    --brand-500: 154.9deg 100% 19.2%;\n    --brand-400: 155.5deg 100% 9.6%;\n    --brand-300: 155.1deg 100% 8%;\n    --brand-200: 162deg 100% 2%;\n    --warning-default: 38.9deg 100% 42.9%;\n    --warning-600: 38.9deg 100% 42.9%;\n    --warning-500: 34.8deg 90.9% 21.6%;\n    --warning-400: 33.2deg 100% 14.5%;\n    --warning-300: 32.3deg 100% 10.2%;\n    --warning-200: 36.6deg 100% 8%;\n    --destructive-default: 10.2deg 77.9% 53.9%;\n    --destructive-600: 9.7deg 85.2% 62.9%;\n  }\n}\n",
+  "variables.css": ":root {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-100: #ededed;\n  --color-neutral-200: #cccccc;\n  --color-neutral-300: #b0b0b0;\n  --color-neutral-400: #a0a0a0;\n  --color-neutral-500: #8b9092;\n  --color-neutral-600: #7e7e7e;\n  --color-neutral-700: #707070;\n  --color-neutral-800: #525252;\n  --color-neutral-900: #464444;\n  --color-neutral-950: #2e2e2e;\n  --color-pale-green: #dffff1;\n  --color-green: #3ecf8e;\n  --color-deep-teal: #061517;\n  --color-deep-teal-2: #163837;\n  --color-orange: #ffcda1;\n  --color-indigo: #bda4ff;\n  --color-orange-2: #f1a10d;\n  --color-cyan: #0070f3;\n  --color-green-2: #1a7a4c;\n  --color-blue: #6453c5;\n  --color-indigo-2: #6b35dc;\n  --color-blue-2: #32325d;\n\n  /* inferred semantic roles */\n  --color-canvas: #ffffff;\n  --color-ink: #2e2e2e;\n  --color-text-muted: #7e7e7e;\n  --color-surface: #ededed;\n  --color-hairline: #cccccc;\n  --color-accent: #dffff1;\n  --color-accent-2: #3ecf8e;\n  --color-accent-3: #061517;\n\n  /* typography */\n  --font-inter: \"Inter\";\n  --font-source-code-pro: \"Source Code Pro\";\n  --font-manrope: \"Manrope\";\n  --font-ubuntu: \"Ubuntu\";\n  --font-courier-new: \"Courier New\";\n  --font-office-code-pro: \"Office Code Pro\";\n  --font-manrope-fallback: \"Manrope Fallback\";\n  --font-inter-fallback: \"Inter Fallback\";\n\n  /* type scale, ascending */\n  --text-1: 0.625rem;\n  --text-2: 0.6875rem;\n  --text-3: 0.75rem;\n  --text-4: 0.8rem;\n  --text-5: 0.875rem;\n  --text-6: 0.9rem;\n  --text-7: 1rem;\n  --text-8: 1.2rem;\n  --text-9: 1.25rem;\n  --text-10: 1.75rem;\n  --text-11: 2rem;\n  --text-12: 2.25rem;\n\n  /* font weights in use */\n  --font-weight-thin: 100;\n  --font-weight-extralight: 200;\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, tight -> loose */\n  --leading-1: 1;\n  --leading-2: 1.11;\n  --leading-3: 1.33;\n  --leading-4: 1.43;\n  --leading-5: 1.5;\n  --leading-6: 1.6;\n  --leading-7: 1.71;\n  --leading-8: 1.75;\n\n  /* letter-spacing, tight -> wide */\n  --tracking-1: -1.5px;\n  --tracking-2: -1.1px;\n  --tracking-3: -.5px;\n  --tracking-4: -.025em;\n  --tracking-5: -.01rem;\n  --tracking-6: -.15px;\n\n  /* spacing, ascending */\n  --space-1: 1px;\n  --space-2: 2px;\n  --space-3: 3px;\n  --space-4: 4px;\n  --space-5: 5px;\n  --space-6: 6px;\n  --space-7: 8px;\n  --space-8: 10px;\n  --space-9: 12px;\n  --space-10: 15px;\n  --space-11: 16px;\n  --space-12: 48px;\n\n  /* radius, ascending */\n  --radius-sm: 2px;\n  --radius-md: .25rem;\n  --radius-lg: 6px;\n  --radius-xl: 8px;\n  --radius-2xl: 14px;\n  --radius-3xl: 20px;\n  --radius-4xl: 100%;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);\n}\n\n/* dark-mode values mined from the source (native token names) */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --ch-0: dark;\n    --ch-1: #8b949e;\n    --ch-2: #79c0ff;\n    --ch-3: #ffcda1;\n    --ch-4: #f8f8f2;\n    --ch-5: #bda4ff;\n    --ch-6: hsl(var(--brand-600));\n    --ch-7: #569cd6;\n    --ch-8: hsl(var(--brand-default));\n    --ch-9: #ffa198;\n    --ch-10: #f0f6fc;\n    --ch-11: #490202;\n    --ch-12: #04260f;\n    --ch-13: #5a1e02;\n    --ch-14: #161b22;\n    --ch-15: #8b949e;\n    --ch-16: #2a2929;\n    --ch-17: #264f78;\n    --ch-18: #3794ff;\n    --ch-19: #ffffff0b;\n    --ch-20: #6e7681;\n    --ch-21: #010409;\n    --ch-22: #30363d;\n    --ch-23: #f78166;\n    --ch-24: #6e768166;\n    --ch-25: #6e76811a;\n    --tw-brightness: brightness(200%);\n    --tw-contrast: contrast(0%);\n    --tw-gradient-position: to bottom;\n    --tw-gradient-to: hsl(var(--background-surface-100));\n    --tw-shadow: 0px 0px 6px 0px var(--tw-shadow-color,#2cf49466);\n    --tw-blur: blur(24px);\n    --tw-invert: invert(100%);\n    --tw-saturate: saturate(.4);\n    --tw-gradient-from: #0003;\n    --tw-ring-color: hsl(var(--destructive-default));\n    --helpers-os-appearance: Dark;\n    --code-block-5: 13.8deg 89.7% 69.6%;\n    --code-block-4: 276.1deg 67.7% 74.5%;\n    --code-block-3: 83.8deg 61.7% 63.1%;\n    --code-block-2: 33.2deg 90.3% 75.7%;\n    --code-block-1: 170.8deg 43.1% 61.4%;\n    --secondary-default: 247.8deg 100% 70%;\n    --secondary-400: 248.3deg 54.5% 25.9%;\n    --secondary-200: 248deg 53.6% 11%;\n    --brand-link: 155deg 100% 38.6%;\n    --brand-default: 153.1deg 60.2% 52.7%;\n    --brand-600: 154.9deg 59.5% 70%;\n    --brand-500: 154.9deg 100% 19.2%;\n    --brand-400: 155.5deg 100% 9.6%;\n    --brand-300: 155.1deg 100% 8%;\n    --brand-200: 162deg 100% 2%;\n    --warning-default: 38.9deg 100% 42.9%;\n    --warning-600: 38.9deg 100% 42.9%;\n    --warning-500: 34.8deg 90.9% 21.6%;\n    --warning-400: 33.2deg 100% 14.5%;\n    --warning-300: 32.3deg 100% 10.2%;\n    --warning-200: 36.6deg 100% 8%;\n    --destructive-default: 10.2deg 77.9% 53.9%;\n    --destructive-600: 9.7deg 85.2% 62.9%;\n  }\n}\n",
+  "tokens.json": "{\n  \"$description\": \"Design tokens extracted from https://supabase.com/. Semantic entries are inferred from usage + luminance; all values are mined from live CSS.\",\n  \"color\": {\n    \"neutral-50\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\"\n    },\n    \"neutral-100\": {\n      \"$value\": \"#ededed\",\n      \"$type\": \"color\"\n    },\n    \"neutral-200\": {\n      \"$value\": \"#cccccc\",\n      \"$type\": \"color\"\n    },\n    \"neutral-300\": {\n      \"$value\": \"#b0b0b0\",\n      \"$type\": \"color\"\n    },\n    \"neutral-400\": {\n      \"$value\": \"#a0a0a0\",\n      \"$type\": \"color\"\n    },\n    \"neutral-500\": {\n      \"$value\": \"#8b9092\",\n      \"$type\": \"color\"\n    },\n    \"neutral-600\": {\n      \"$value\": \"#7e7e7e\",\n      \"$type\": \"color\"\n    },\n    \"neutral-700\": {\n      \"$value\": \"#707070\",\n      \"$type\": \"color\"\n    },\n    \"neutral-800\": {\n      \"$value\": \"#525252\",\n      \"$type\": \"color\"\n    },\n    \"neutral-900\": {\n      \"$value\": \"#464444\",\n      \"$type\": \"color\"\n    },\n    \"neutral-950\": {\n      \"$value\": \"#2e2e2e\",\n      \"$type\": \"color\"\n    },\n    \"pale-green\": {\n      \"$value\": \"#dffff1\",\n      \"$type\": \"color\"\n    },\n    \"green\": {\n      \"$value\": \"#3ecf8e\",\n      \"$type\": \"color\"\n    },\n    \"deep-teal\": {\n      \"$value\": \"#061517\",\n      \"$type\": \"color\"\n    },\n    \"deep-teal-2\": {\n      \"$value\": \"#163837\",\n      \"$type\": \"color\"\n    },\n    \"orange\": {\n      \"$value\": \"#ffcda1\",\n      \"$type\": \"color\"\n    },\n    \"indigo\": {\n      \"$value\": \"#bda4ff\",\n      \"$type\": \"color\"\n    },\n    \"orange-2\": {\n      \"$value\": \"#f1a10d\",\n      \"$type\": \"color\"\n    },\n    \"cyan\": {\n      \"$value\": \"#0070f3\",\n      \"$type\": \"color\"\n    },\n    \"green-2\": {\n      \"$value\": \"#1a7a4c\",\n      \"$type\": \"color\"\n    },\n    \"blue\": {\n      \"$value\": \"#6453c5\",\n      \"$type\": \"color\"\n    },\n    \"indigo-2\": {\n      \"$value\": \"#6b35dc\",\n      \"$type\": \"color\"\n    },\n    \"blue-2\": {\n      \"$value\": \"#32325d\",\n      \"$type\": \"color\"\n    }\n  },\n  \"semantic\": {\n    \"canvas\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: lightest neutral, matches the measured light-leaning theme\"\n    },\n    \"ink\": {\n      \"$value\": \"#2e2e2e\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: darkest neutral, highest contrast against canvas\"\n    },\n    \"text-muted\": {\n      \"$value\": \"#7e7e7e\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used mid-luminance neutral\"\n    },\n    \"surface\": {\n      \"$value\": \"#ededed\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: neutral closest to canvas luminance\"\n    },\n    \"hairline\": {\n      \"$value\": \"#cccccc\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: next neutral near canvas, hairline-border weight\"\n    },\n    \"accent\": {\n      \"$value\": \"#dffff1\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used chromatic color\"\n    },\n    \"accent-2\": {\n      \"$value\": \"#3ecf8e\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    },\n    \"accent-3\": {\n      \"$value\": \"#061517\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    }\n  },\n  \"fontFamily\": {\n    \"inter\": {\n      \"$value\": \"Inter\",\n      \"$type\": \"fontFamily\"\n    },\n    \"source-code-pro\": {\n      \"$value\": \"Source Code Pro\",\n      \"$type\": \"fontFamily\"\n    },\n    \"manrope\": {\n      \"$value\": \"Manrope\",\n      \"$type\": \"fontFamily\"\n    },\n    \"ubuntu\": {\n      \"$value\": \"Ubuntu\",\n      \"$type\": \"fontFamily\"\n    },\n    \"courier-new\": {\n      \"$value\": \"Courier New\",\n      \"$type\": \"fontFamily\"\n    },\n    \"office-code-pro\": {\n      \"$value\": \"Office Code Pro\",\n      \"$type\": \"fontFamily\"\n    },\n    \"manrope-fallback\": {\n      \"$value\": \"Manrope Fallback\",\n      \"$type\": \"fontFamily\"\n    },\n    \"inter-fallback\": {\n      \"$value\": \"Inter Fallback\",\n      \"$type\": \"fontFamily\"\n    }\n  },\n  \"fontSize\": {\n    \"size-1\": {\n      \"$value\": \"0.625rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-2\": {\n      \"$value\": \"0.6875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-3\": {\n      \"$value\": \"0.75rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-4\": {\n      \"$value\": \"0.8rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-5\": {\n      \"$value\": \"0.875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-6\": {\n      \"$value\": \"0.9rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-7\": {\n      \"$value\": \"1rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-8\": {\n      \"$value\": \"1.2rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-9\": {\n      \"$value\": \"1.25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-10\": {\n      \"$value\": \"1.75rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-11\": {\n      \"$value\": \"2rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-12\": {\n      \"$value\": \"2.25rem\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"fontWeight\": {\n    \"thin\": {\n      \"$value\": 100,\n      \"$type\": \"fontWeight\"\n    },\n    \"extralight\": {\n      \"$value\": 200,\n      \"$type\": \"fontWeight\"\n    },\n    \"normal\": {\n      \"$value\": 400,\n      \"$type\": \"fontWeight\"\n    },\n    \"medium\": {\n      \"$value\": 500,\n      \"$type\": \"fontWeight\"\n    },\n    \"semibold\": {\n      \"$value\": 600,\n      \"$type\": \"fontWeight\"\n    },\n    \"bold\": {\n      \"$value\": 700,\n      \"$type\": \"fontWeight\"\n    }\n  },\n  \"lineHeight\": {\n    \"leading-1\": {\n      \"$value\": 1,\n      \"$type\": \"number\"\n    },\n    \"leading-2\": {\n      \"$value\": 1.11,\n      \"$type\": \"number\"\n    },\n    \"leading-3\": {\n      \"$value\": 1.33,\n      \"$type\": \"number\"\n    },\n    \"leading-4\": {\n      \"$value\": 1.43,\n      \"$type\": \"number\"\n    },\n    \"leading-5\": {\n      \"$value\": 1.5,\n      \"$type\": \"number\"\n    },\n    \"leading-6\": {\n      \"$value\": 1.6,\n      \"$type\": \"number\"\n    },\n    \"leading-7\": {\n      \"$value\": 1.71,\n      \"$type\": \"number\"\n    },\n    \"leading-8\": {\n      \"$value\": 1.75,\n      \"$type\": \"number\"\n    }\n  },\n  \"letterSpacing\": {\n    \"tracking-1\": {\n      \"$value\": \"-1.5px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-2\": {\n      \"$value\": \"-1.1px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-3\": {\n      \"$value\": \"-.5px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-4\": {\n      \"$value\": \"-.025em\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-5\": {\n      \"$value\": \"-.01rem\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-6\": {\n      \"$value\": \"-.15px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"dimension\": {\n    \"space-1\": {\n      \"$value\": \"1px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-2\": {\n      \"$value\": \"2px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-3\": {\n      \"$value\": \"3px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-4\": {\n      \"$value\": \"4px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-5\": {\n      \"$value\": \"5px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-6\": {\n      \"$value\": \"6px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-7\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-8\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-9\": {\n      \"$value\": \"12px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-10\": {\n      \"$value\": \"15px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-11\": {\n      \"$value\": \"16px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-12\": {\n      \"$value\": \"48px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"borderRadius\": {\n    \"sm\": {\n      \"$value\": \"2px\",\n      \"$type\": \"dimension\"\n    },\n    \"md\": {\n      \"$value\": \".25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"lg\": {\n      \"$value\": \"6px\",\n      \"$type\": \"dimension\"\n    },\n    \"xl\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"2xl\": {\n      \"$value\": \"14px\",\n      \"$type\": \"dimension\"\n    },\n    \"3xl\": {\n      \"$value\": \"20px\",\n      \"$type\": \"dimension\"\n    },\n    \"4xl\": {\n      \"$value\": \"100%\",\n      \"$type\": \"dimension\"\n    },\n    \"full\": {\n      \"$value\": \"50%\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"shadow\": {\n    \"sm\": {\n      \"$value\": \"0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025)\",\n      \"$type\": \"shadow\"\n    }\n  },\n  \"dark\": {\n    \"ch-0\": {\n      \"$value\": \"dark\",\n      \"$type\": \"string\"\n    },\n    \"ch-1\": {\n      \"$value\": \"#8b949e\",\n      \"$type\": \"color\"\n    },\n    \"ch-2\": {\n      \"$value\": \"#79c0ff\",\n      \"$type\": \"color\"\n    },\n    \"ch-3\": {\n      \"$value\": \"#ffcda1\",\n      \"$type\": \"color\"\n    },\n    \"ch-4\": {\n      \"$value\": \"#f8f8f2\",\n      \"$type\": \"color\"\n    },\n    \"ch-5\": {\n      \"$value\": \"#bda4ff\",\n      \"$type\": \"color\"\n    },\n    \"ch-6\": {\n      \"$value\": \"hsl(var(--brand-600))\",\n      \"$type\": \"color\"\n    },\n    \"ch-7\": {\n      \"$value\": \"#569cd6\",\n      \"$type\": \"color\"\n    },\n    \"ch-8\": {\n      \"$value\": \"hsl(var(--brand-default))\",\n      \"$type\": \"color\"\n    },\n    \"ch-9\": {\n      \"$value\": \"#ffa198\",\n      \"$type\": \"color\"\n    },\n    \"ch-10\": {\n      \"$value\": \"#f0f6fc\",\n      \"$type\": \"color\"\n    },\n    \"ch-11\": {\n      \"$value\": \"#490202\",\n      \"$type\": \"color\"\n    },\n    \"ch-12\": {\n      \"$value\": \"#04260f\",\n      \"$type\": \"color\"\n    },\n    \"ch-13\": {\n      \"$value\": \"#5a1e02\",\n      \"$type\": \"color\"\n    },\n    \"ch-14\": {\n      \"$value\": \"#161b22\",\n      \"$type\": \"color\"\n    },\n    \"ch-15\": {\n      \"$value\": \"#8b949e\",\n      \"$type\": \"color\"\n    },\n    \"ch-16\": {\n      \"$value\": \"#2a2929\",\n      \"$type\": \"color\"\n    },\n    \"ch-17\": {\n      \"$value\": \"#264f78\",\n      \"$type\": \"color\"\n    },\n    \"ch-18\": {\n      \"$value\": \"#3794ff\",\n      \"$type\": \"color\"\n    },\n    \"ch-19\": {\n      \"$value\": \"#ffffff0b\",\n      \"$type\": \"color\"\n    },\n    \"ch-20\": {\n      \"$value\": \"#6e7681\",\n      \"$type\": \"color\"\n    },\n    \"ch-21\": {\n      \"$value\": \"#010409\",\n      \"$type\": \"color\"\n    },\n    \"ch-22\": {\n      \"$value\": \"#30363d\",\n      \"$type\": \"color\"\n    },\n    \"ch-23\": {\n      \"$value\": \"#f78166\",\n      \"$type\": \"color\"\n    },\n    \"ch-24\": {\n      \"$value\": \"#6e768166\",\n      \"$type\": \"color\"\n    },\n    \"ch-25\": {\n      \"$value\": \"#6e76811a\",\n      \"$type\": \"color\"\n    },\n    \"tw-brightness\": {\n      \"$value\": \"brightness(200%)\",\n      \"$type\": \"string\"\n    },\n    \"tw-contrast\": {\n      \"$value\": \"contrast(0%)\",\n      \"$type\": \"string\"\n    },\n    \"tw-gradient-position\": {\n      \"$value\": \"to bottom\",\n      \"$type\": \"string\"\n    },\n    \"tw-gradient-to\": {\n      \"$value\": \"hsl(var(--background-surface-100))\",\n      \"$type\": \"color\"\n    },\n    \"tw-shadow\": {\n      \"$value\": \"0px 0px 6px 0px var(--tw-shadow-color,#2cf49466)\",\n      \"$type\": \"string\"\n    },\n    \"tw-blur\": {\n      \"$value\": \"blur(24px)\",\n      \"$type\": \"string\"\n    },\n    \"tw-invert\": {\n      \"$value\": \"invert(100%)\",\n      \"$type\": \"string\"\n    },\n    \"tw-saturate\": {\n      \"$value\": \"saturate(.4)\",\n      \"$type\": \"string\"\n    },\n    \"tw-gradient-from\": {\n      \"$value\": \"#0003\",\n      \"$type\": \"color\"\n    },\n    \"tw-ring-color\": {\n      \"$value\": \"hsl(var(--destructive-default))\",\n      \"$type\": \"color\"\n    },\n    \"helpers-os-appearance\": {\n      \"$value\": \"Dark\",\n      \"$type\": \"string\"\n    },\n    \"code-block-5\": {\n      \"$value\": \"13.8deg 89.7% 69.6%\",\n      \"$type\": \"string\"\n    },\n    \"code-block-4\": {\n      \"$value\": \"276.1deg 67.7% 74.5%\",\n      \"$type\": \"string\"\n    },\n    \"code-block-3\": {\n      \"$value\": \"83.8deg 61.7% 63.1%\",\n      \"$type\": \"string\"\n    },\n    \"code-block-2\": {\n      \"$value\": \"33.2deg 90.3% 75.7%\",\n      \"$type\": \"string\"\n    },\n    \"code-block-1\": {\n      \"$value\": \"170.8deg 43.1% 61.4%\",\n      \"$type\": \"string\"\n    },\n    \"secondary-default\": {\n      \"$value\": \"247.8deg 100% 70%\",\n      \"$type\": \"string\"\n    },\n    \"secondary-400\": {\n      \"$value\": \"248.3deg 54.5% 25.9%\",\n      \"$type\": \"string\"\n    },\n    \"secondary-200\": {\n      \"$value\": \"248deg 53.6% 11%\",\n      \"$type\": \"string\"\n    },\n    \"brand-link\": {\n      \"$value\": \"155deg 100% 38.6%\",\n      \"$type\": \"string\"\n    },\n    \"brand-default\": {\n      \"$value\": \"153.1deg 60.2% 52.7%\",\n      \"$type\": \"string\"\n    },\n    \"brand-600\": {\n      \"$value\": \"154.9deg 59.5% 70%\",\n      \"$type\": \"string\"\n    },\n    \"brand-500\": {\n      \"$value\": \"154.9deg 100% 19.2%\",\n      \"$type\": \"string\"\n    },\n    \"brand-400\": {\n      \"$value\": \"155.5deg 100% 9.6%\",\n      \"$type\": \"string\"\n    },\n    \"brand-300\": {\n      \"$value\": \"155.1deg 100% 8%\",\n      \"$type\": \"string\"\n    },\n    \"brand-200\": {\n      \"$value\": \"162deg 100% 2%\",\n      \"$type\": \"string\"\n    },\n    \"warning-default\": {\n      \"$value\": \"38.9deg 100% 42.9%\",\n      \"$type\": \"string\"\n    },\n    \"warning-600\": {\n      \"$value\": \"38.9deg 100% 42.9%\",\n      \"$type\": \"string\"\n    },\n    \"warning-500\": {\n      \"$value\": \"34.8deg 90.9% 21.6%\",\n      \"$type\": \"string\"\n    },\n    \"warning-400\": {\n      \"$value\": \"33.2deg 100% 14.5%\",\n      \"$type\": \"string\"\n    },\n    \"warning-300\": {\n      \"$value\": \"32.3deg 100% 10.2%\",\n      \"$type\": \"string\"\n    },\n    \"warning-200\": {\n      \"$value\": \"36.6deg 100% 8%\",\n      \"$type\": \"string\"\n    },\n    \"destructive-default\": {\n      \"$value\": \"10.2deg 77.9% 53.9%\",\n      \"$type\": \"string\"\n    },\n    \"destructive-600\": {\n      \"$value\": \"9.7deg 85.2% 62.9%\",\n      \"$type\": \"string\"\n    }\n  }\n}"
+ },
+ "raw": {
+  "tokens": {
+   "title": "Supabase | The Open Source Firebase Alternative",
+   "description": "Build production-grade applications with a Postgres database, Authentication, instant APIs, Realtime, Functions, Storage and Vector embeddings. Start for free.",
+   "themeGuess": "light-leaning",
+   "darkWeight": 172,
+   "lightWeight": 161,
+   "neutrals": [
+    {
+     "hex": "#ffffff",
+     "count": 98
+    },
+    {
+     "hex": "#ededed",
+     "count": 58
+    },
+    {
+     "hex": "#cccccc",
+     "count": 5
+    },
+    {
+     "hex": "#b0b0b0",
+     "count": 2
+    },
+    {
+     "hex": "#a0a0a0",
+     "count": 9
+    },
+    {
+     "hex": "#8b9092",
+     "count": 11
+    },
+    {
+     "hex": "#7e7e7e",
+     "count": 13
+    },
+    {
+     "hex": "#707070",
+     "count": 9
+    },
+    {
+     "hex": "#525252",
+     "count": 10
+    },
+    {
+     "hex": "#464444",
+     "count": 22
+    },
+    {
+     "hex": "#2e2e2e",
+     "count": 29
+    },
+    {
+     "hex": "#1c1c1c",
+     "count": 102
+    }
+   ],
+   "accents": [
+    {
+     "hex": "#dffff1",
+     "count": 10
+    },
+    {
+     "hex": "#3ecf8e",
+     "count": 10
+    },
+    {
+     "hex": "#061517",
+     "count": 7
+    },
+    {
+     "hex": "#163837",
+     "count": 7
+    },
+    {
+     "hex": "#ffcda1",
+     "count": 6
+    },
+    {
+     "hex": "#bda4ff",
+     "count": 5
+    },
+    {
+     "hex": "#f1a10d",
+     "count": 5
+    },
+    {
+     "hex": "#0070f3",
+     "count": 5
+    },
+    {
+     "hex": "#1a7a4c",
+     "count": 5
+    },
+    {
+     "hex": "#6453c5",
+     "count": 5
+    },
+    {
+     "hex": "#6b35dc",
+     "count": 4
+    },
+    {
+     "hex": "#32325d",
+     "count": 4
+    }
+   ],
+   "modern": [
+    "oklch(97.9% .021 166.113)",
+    "oklch(90.5% .093 164.15)",
+    "oklch(84.5% .143 164.978)",
+    "oklch(76.5% .177 163.223)",
+    "oklch(69.6% .17 162.48)",
+    "oklch(59.6% .145 163.225)",
+    "oklch(50.8% .118 165.612)",
+    "oklch(37.8% .077 168.94)",
+    "oklch(26.2% .051 172.552)",
+    "oklch(70.4% .14 182.503)",
+    "oklch(71.5% .143 215.221)",
+    "oklch(98.5% 0 0)",
+    "oklch(97% 0 0)",
+    "oklch(92.2% 0 0)",
+    "oklch(87% 0 0)",
+    "oklch(70.8% 0 0)",
+    "oklch(55.6% 0 0)",
+    "oklch(43.9% 0 0)",
+    "oklch(37.1% 0 0)",
+    "oklch(26.9% 0 0)"
+   ],
+   "fonts": [
+    {
+     "name": "Inter",
+     "count": 8
+    },
+    {
+     "name": "Source Code Pro",
+     "count": 8
+    },
+    {
+     "name": "Manrope",
+     "count": 7
+    },
+    {
+     "name": "Ubuntu",
+     "count": 4
+    },
+    {
+     "name": "Courier New",
+     "count": 1
+    },
+    {
+     "name": "Office Code Pro",
+     "count": 1
+    },
+    {
+     "name": "Manrope Fallback",
+     "count": 1
+    },
+    {
+     "name": "Inter Fallback",
+     "count": 1
+    }
+   ],
+   "fontSizes": [
+    10,
+    11,
+    12,
+    12.8,
+    14,
+    14.4,
+    16,
+    19.2,
+    20,
+    28,
+    32,
+    36
+   ],
+   "fontWeights": [
+    {
+     "value": 100,
+     "count": 7
+    },
+    {
+     "value": 200,
+     "count": 15
+    },
+    {
+     "value": 400,
+     "count": 10
+    },
+    {
+     "value": 500,
+     "count": 3
+    },
+    {
+     "value": 600,
+     "count": 4
+    },
+    {
+     "value": 700,
+     "count": 5
+    }
+   ],
+   "lineHeights": [
+    1,
+    1.11,
+    1.33,
+    1.43,
+    1.5,
+    1.6,
+    1.71,
+    1.75
+   ],
+   "letterSpacings": [
+    "-1.5px",
+    "-1.1px",
+    "-.5px",
+    "-.025em",
+    "-.01rem",
+    "-.15px"
+   ],
+   "spacing": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    10,
+    12,
+    15,
+    16,
+    48
+   ],
+   "radii": [
+    {
+     "value": ".25rem",
+     "count": 8
+    },
+    {
+     "value": "6px",
+     "count": 5
+    },
+    {
+     "value": "8px",
+     "count": 2
+    },
+    {
+     "value": "100%",
+     "count": 1
+    },
+    {
+     "value": "2px",
+     "count": 1
+    },
+    {
+     "value": "14px",
+     "count": 1
+    },
+    {
+     "value": "20px",
+     "count": 1
+    },
+    {
+     "value": "50%",
+     "count": 1
+    }
+   ],
+   "shadows": [
+    {
+     "value": "0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025)",
+     "count": 2,
+     "blur": 5
+    }
+   ],
+   "breakpoints": [
+    480,
+    520,
+    600,
+    640,
+    720,
+    768,
+    769,
+    960
+   ],
+   "nativeVars": [
+    {
+     "name": "font-sans",
+     "value": "var(--font-inter),Inter,Helvetica Neue,Helvetica,ui-sans-serif,system-ui,sans-serif"
+    },
+    {
+     "name": "color-emerald-50",
+     "value": "oklch(97.9% .021 166.113)"
+    },
+    {
+     "name": "color-emerald-200",
+     "value": "oklch(90.5% .093 164.15)"
+    },
+    {
+     "name": "color-emerald-300",
+     "value": "oklch(84.5% .143 164.978)"
+    },
+    {
+     "name": "color-emerald-400",
+     "value": "oklch(76.5% .177 163.223)"
+    },
+    {
+     "name": "color-emerald-500",
+     "value": "oklch(69.6% .17 162.48)"
+    },
+    {
+     "name": "color-emerald-600",
+     "value": "oklch(59.6% .145 163.225)"
+    },
+    {
+     "name": "color-emerald-700",
+     "value": "oklch(50.8% .118 165.612)"
+    },
+    {
+     "name": "color-emerald-900",
+     "value": "oklch(37.8% .077 168.94)"
+    },
+    {
+     "name": "color-emerald-950",
+     "value": "oklch(26.2% .051 172.552)"
+    },
+    {
+     "name": "color-teal-500",
+     "value": "oklch(70.4% .14 182.503)"
+    },
+    {
+     "name": "color-cyan-500",
+     "value": "oklch(71.5% .143 215.221)"
+    },
+    {
+     "name": "color-neutral-50",
+     "value": "oklch(98.5% 0 0)"
+    },
+    {
+     "name": "color-neutral-100",
+     "value": "oklch(97% 0 0)"
+    },
+    {
+     "name": "color-neutral-200",
+     "value": "oklch(92.2% 0 0)"
+    },
+    {
+     "name": "color-neutral-300",
+     "value": "oklch(87% 0 0)"
+    },
+    {
+     "name": "color-neutral-400",
+     "value": "oklch(70.8% 0 0)"
+    },
+    {
+     "name": "color-neutral-500",
+     "value": "oklch(55.6% 0 0)"
+    },
+    {
+     "name": "color-neutral-600",
+     "value": "oklch(43.9% 0 0)"
+    },
+    {
+     "name": "color-neutral-700",
+     "value": "oklch(37.1% 0 0)"
+    },
+    {
+     "name": "color-neutral-800",
+     "value": "oklch(26.9% 0 0)"
+    },
+    {
+     "name": "color-neutral-900",
+     "value": "oklch(20.5% 0 0)"
+    },
+    {
+     "name": "color-stone-500",
+     "value": "oklch(55.3% .013 58.071)"
+    },
+    {
+     "name": "color-black",
+     "value": "#000"
+    },
+    {
+     "name": "color-white",
+     "value": "#fff"
+    },
+    {
+     "name": "spacing",
+     "value": ".25rem"
+    },
+    {
+     "name": "breakpoint-lg",
+     "value": "64rem"
+    },
+    {
+     "name": "breakpoint-2xl",
+     "value": "96rem"
+    },
+    {
+     "name": "container-xs",
+     "value": "20rem"
+    },
+    {
+     "name": "container-sm",
+     "value": "24rem"
+    },
+    {
+     "name": "container-md",
+     "value": "28rem"
+    },
+    {
+     "name": "container-lg",
+     "value": "32rem"
+    },
+    {
+     "name": "container-xl",
+     "value": "36rem"
+    },
+    {
+     "name": "container-2xl",
+     "value": "42rem"
+    },
+    {
+     "name": "container-3xl",
+     "value": "48rem"
+    },
+    {
+     "name": "container-4xl",
+     "value": "56rem"
+    },
+    {
+     "name": "container-5xl",
+     "value": "64rem"
+    },
+    {
+     "name": "container-6xl",
+     "value": "72rem"
+    },
+    {
+     "name": "container-7xl",
+     "value": "80rem"
+    },
+    {
+     "name": "text-xs",
+     "value": ".75rem"
+    },
+    {
+     "name": "text-xs--line-height",
+     "value": "calc(1 / .75)"
+    },
+    {
+     "name": "text-sm",
+     "value": ".875rem"
+    },
+    {
+     "name": "text-sm--line-height",
+     "value": "calc(1.25 / .875)"
+    },
+    {
+     "name": "text-base",
+     "value": ".9375rem"
+    },
+    {
+     "name": "text-base--line-height",
+     "value": "calc(1.5 / 1)"
+    },
+    {
+     "name": "text-lg",
+     "value": "1rem"
+    },
+    {
+     "name": "text-lg--line-height",
+     "value": "calc(1.75 / 1.125)"
+    },
+    {
+     "name": "text-xl",
+     "value": "1.125rem"
+    },
+    {
+     "name": "text-xl--line-height",
+     "value": "calc(1.75 / 1.25)"
+    },
+    {
+     "name": "text-2xl",
+     "value": "1.375rem"
+    },
+    {
+     "name": "text-2xl--line-height",
+     "value": "calc(2 / 1.5)"
+    },
+    {
+     "name": "text-3xl",
+     "value": "1.75rem"
+    },
+    {
+     "name": "text-3xl--line-height",
+     "value": "calc(2.25 / 1.875)"
+    },
+    {
+     "name": "text-4xl",
+     "value": "2.125rem"
+    },
+    {
+     "name": "text-4xl--line-height",
+     "value": "calc(2.5 / 2.25)"
+    },
+    {
+     "name": "text-5xl",
+     "value": "2.875rem"
+    },
+    {
+     "name": "text-5xl--line-height",
+     "value": "1"
+    },
+    {
+     "name": "text-6xl",
+     "value": "3.625rem"
+    },
+    {
+     "name": "text-6xl--line-height",
+     "value": "1"
+    },
+    {
+     "name": "text-7xl",
+     "value": "4.375rem"
+    },
+    {
+     "name": "text-7xl--line-height",
+     "value": "1"
+    },
+    {
+     "name": "text-8xl",
+     "value": "5.875rem"
+    },
+    {
+     "name": "text-8xl--line-height",
+     "value": "1"
+    },
+    {
+     "name": "font-weight-light",
+     "value": "300"
+    },
+    {
+     "name": "font-weight-normal",
+     "value": "450"
+    },
+    {
+     "name": "font-weight-medium",
+     "value": "500"
+    },
+    {
+     "name": "font-weight-semibold",
+     "value": "600"
+    },
+    {
+     "name": "font-weight-bold",
+     "value": "700"
+    },
+    {
+     "name": "font-weight-extrabold",
+     "value": "800"
+    },
+    {
+     "name": "tracking-tighter",
+     "value": "-.05em"
+    },
+    {
+     "name": "tracking-tight",
+     "value": "-.025em"
+    },
+    {
+     "name": "tracking-normal",
+     "value": "0em"
+    },
+    {
+     "name": "tracking-wide",
+     "value": ".025em"
+    },
+    {
+     "name": "tracking-wider",
+     "value": ".05em"
+    },
+    {
+     "name": "tracking-widest",
+     "value": ".1em"
+    },
+    {
+     "name": "leading-tight",
+     "value": "1.25"
+    },
+    {
+     "name": "leading-snug",
+     "value": "1.375"
+    },
+    {
+     "name": "leading-normal",
+     "value": "1.5"
+    },
+    {
+     "name": "leading-relaxed",
+     "value": "1.625"
+    },
+    {
+     "name": "radius-xs",
+     "value": ".125rem"
+    },
+    {
+     "name": "radius-sm",
+     "value": ".25rem"
+    },
+    {
+     "name": "radius-md",
+     "value": ".375rem"
+    },
+    {
+     "name": "radius-lg",
+     "value": ".5rem"
+    },
+    {
+     "name": "radius-xl",
+     "value": ".75rem"
+    },
+    {
+     "name": "radius-2xl",
+     "value": "1rem"
+    },
+    {
+     "name": "radius-3xl",
+     "value": "1.5rem"
+    },
+    {
+     "name": "drop-shadow-xs",
+     "value": "0 1px 1px #0000000d"
+    },
+    {
+     "name": "drop-shadow-md",
+     "value": "0 3px 3px #0000001f"
+    },
+    {
+     "name": "drop-shadow-lg",
+     "value": "0 4px 4px #00000026"
+    },
+    {
+     "name": "ease-in",
+     "value": "cubic-bezier(.4,0,1,1)"
+    },
+    {
+     "name": "ease-out",
+     "value": "cubic-bezier(0,0,.2,1)"
+    },
+    {
+     "name": "ease-in-out",
+     "value": "cubic-bezier(.4,0,.2,1)"
+    },
+    {
+     "name": "animate-spin",
+     "value": "spin 1s linear infinite"
+    },
+    {
+     "name": "animate-pulse",
+     "value": "pulse 2s cubic-bezier(.4,0,.6,1) infinite"
+    },
+    {
+     "name": "animate-bounce",
+     "value": "bounce 1s infinite"
+    },
+    {
+     "name": "blur-xs",
+     "value": "4px"
+    },
+    {
+     "name": "blur-sm",
+     "value": "8px"
+    },
+    {
+     "name": "blur-md",
+     "value": "12px"
+    },
+    {
+     "name": "blur-lg",
+     "value": "16px"
+    },
+    {
+     "name": "blur-xl",
+     "value": "24px"
+    },
+    {
+     "name": "blur-2xl",
+     "value": "40px"
+    },
+    {
+     "name": "perspective-distant",
+     "value": "1200px"
+    },
+    {
+     "name": "aspect-video",
+     "value": "16/9"
+    },
+    {
+     "name": "default-transition-duration",
+     "value": ".15s"
+    },
+    {
+     "name": "default-transition-timing-function",
+     "value": "cubic-bezier(.4,0,.2,1)"
+    },
+    {
+     "name": "default-font-family",
+     "value": "var(--font-inter),Inter,Helvetica Neue,Helvetica,ui-sans-serif,system-ui,sans-serif"
+    },
+    {
+     "name": "default-mono-font-family",
+     "value": "var(--font-source-code-pro),\"Source Code Pro\",ui-monospace,Menlo,monospace"
+    },
+    {
+     "name": "animate-accordion-down",
+     "value": "accordion-down .15s ease-out"
+    },
+    {
+     "name": "animate-accordion-up",
+     "value": "accordion-up .15s ease-out"
+    },
+    {
+     "name": "animate-collapsible-down",
+     "value": "collapsible-down .1s ease-out"
+    },
+    {
+     "name": "animate-collapsible-up",
+     "value": "collapsible-up .1s ease-out"
+    },
+    {
+     "name": "color-amber-100",
+     "value": "var(--color-amber-100)"
+    },
+    {
+     "name": "color-amber-200",
+     "value": "var(--color-amber-200)"
+    },
+    {
+     "name": "color-amber-300",
+     "value": "var(--color-amber-300)"
+    },
+    {
+     "name": "color-amber-400",
+     "value": "var(--color-amber-400)"
+    },
+    {
+     "name": "color-amber-500",
+     "value": "var(--color-amber-500)"
+    },
+    {
+     "name": "color-amber-600",
+     "value": "var(--color-amber-600)"
+    },
+    {
+     "name": "color-amber-700",
+     "value": "var(--color-amber-700)"
+    },
+    {
+     "name": "color-amber-800",
+     "value": "var(--color-amber-800)"
+    },
+    {
+     "name": "color-amber-900",
+     "value": "var(--color-amber-900)"
+    }
+   ],
+   "darkVars": [
+    {
+     "name": "ch-0",
+     "light": null,
+     "dark": "dark",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-1",
+     "light": null,
+     "dark": "#8b949e",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-2",
+     "light": null,
+     "dark": "#79c0ff",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-3",
+     "light": null,
+     "dark": "#ffcda1",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-4",
+     "light": null,
+     "dark": "#f8f8f2",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-5",
+     "light": null,
+     "dark": "#bda4ff",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-6",
+     "light": null,
+     "dark": "hsl(var(--brand-600))",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-7",
+     "light": null,
+     "dark": "#569cd6",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-8",
+     "light": null,
+     "dark": "hsl(var(--brand-default))",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-9",
+     "light": null,
+     "dark": "#ffa198",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-10",
+     "light": null,
+     "dark": "#f0f6fc",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-11",
+     "light": null,
+     "dark": "#490202",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-12",
+     "light": null,
+     "dark": "#04260f",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-13",
+     "light": null,
+     "dark": "#5a1e02",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-14",
+     "light": null,
+     "dark": "#161b22",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-15",
+     "light": null,
+     "dark": "#8b949e",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-16",
+     "light": null,
+     "dark": "#2a2929",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-17",
+     "light": null,
+     "dark": "#264f78",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-18",
+     "light": null,
+     "dark": "#3794ff",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-19",
+     "light": null,
+     "dark": "#ffffff0b",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-20",
+     "light": null,
+     "dark": "#6e7681",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-21",
+     "light": null,
+     "dark": "#010409",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-22",
+     "light": null,
+     "dark": "#30363d",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-23",
+     "light": null,
+     "dark": "#f78166",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-24",
+     "light": null,
+     "dark": "#6e768166",
+     "via": "dark selector"
+    },
+    {
+     "name": "ch-25",
+     "light": null,
+     "dark": "#6e76811a",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-brightness",
+     "light": null,
+     "dark": "brightness(200%)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-contrast",
+     "light": null,
+     "dark": "contrast(0%)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-gradient-position",
+     "light": null,
+     "dark": "to bottom",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-gradient-to",
+     "light": null,
+     "dark": "hsl(var(--background-surface-100))",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-shadow",
+     "light": null,
+     "dark": "0px 0px 6px 0px var(--tw-shadow-color,#2cf49466)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-blur",
+     "light": null,
+     "dark": "blur(24px)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-invert",
+     "light": null,
+     "dark": "invert(100%)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-saturate",
+     "light": null,
+     "dark": "saturate(.4)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-gradient-from",
+     "light": null,
+     "dark": "#0003",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-ring-color",
+     "light": null,
+     "dark": "hsl(var(--destructive-default))",
+     "via": "dark selector"
+    },
+    {
+     "name": "helpers-os-appearance",
+     "light": null,
+     "dark": "Dark",
+     "via": "dark selector"
+    },
+    {
+     "name": "code-block-5",
+     "light": null,
+     "dark": "13.8deg 89.7% 69.6%",
+     "via": "dark selector"
+    },
+    {
+     "name": "code-block-4",
+     "light": null,
+     "dark": "276.1deg 67.7% 74.5%",
+     "via": "dark selector"
+    },
+    {
+     "name": "code-block-3",
+     "light": null,
+     "dark": "83.8deg 61.7% 63.1%",
+     "via": "dark selector"
+    },
+    {
+     "name": "code-block-2",
+     "light": null,
+     "dark": "33.2deg 90.3% 75.7%",
+     "via": "dark selector"
+    },
+    {
+     "name": "code-block-1",
+     "light": null,
+     "dark": "170.8deg 43.1% 61.4%",
+     "via": "dark selector"
+    },
+    {
+     "name": "secondary-default",
+     "light": null,
+     "dark": "247.8deg 100% 70%",
+     "via": "dark selector"
+    },
+    {
+     "name": "secondary-400",
+     "light": null,
+     "dark": "248.3deg 54.5% 25.9%",
+     "via": "dark selector"
+    },
+    {
+     "name": "secondary-200",
+     "light": null,
+     "dark": "248deg 53.6% 11%",
+     "via": "dark selector"
+    },
+    {
+     "name": "brand-link",
+     "light": null,
+     "dark": "155deg 100% 38.6%",
+     "via": "dark selector"
+    },
+    {
+     "name": "brand-default",
+     "light": null,
+     "dark": "153.1deg 60.2% 52.7%",
+     "via": "dark selector"
+    },
+    {
+     "name": "brand-600",
+     "light": null,
+     "dark": "154.9deg 59.5% 70%",
+     "via": "dark selector"
+    },
+    {
+     "name": "brand-500",
+     "light": null,
+     "dark": "154.9deg 100% 19.2%",
+     "via": "dark selector"
+    },
+    {
+     "name": "brand-400",
+     "light": null,
+     "dark": "155.5deg 100% 9.6%",
+     "via": "dark selector"
+    },
+    {
+     "name": "brand-300",
+     "light": null,
+     "dark": "155.1deg 100% 8%",
+     "via": "dark selector"
+    },
+    {
+     "name": "brand-200",
+     "light": null,
+     "dark": "162deg 100% 2%",
+     "via": "dark selector"
+    },
+    {
+     "name": "warning-default",
+     "light": null,
+     "dark": "38.9deg 100% 42.9%",
+     "via": "dark selector"
+    },
+    {
+     "name": "warning-600",
+     "light": null,
+     "dark": "38.9deg 100% 42.9%",
+     "via": "dark selector"
+    },
+    {
+     "name": "warning-500",
+     "light": null,
+     "dark": "34.8deg 90.9% 21.6%",
+     "via": "dark selector"
+    },
+    {
+     "name": "warning-400",
+     "light": null,
+     "dark": "33.2deg 100% 14.5%",
+     "via": "dark selector"
+    },
+    {
+     "name": "warning-300",
+     "light": null,
+     "dark": "32.3deg 100% 10.2%",
+     "via": "dark selector"
+    },
+    {
+     "name": "warning-200",
+     "light": null,
+     "dark": "36.6deg 100% 8%",
+     "via": "dark selector"
+    },
+    {
+     "name": "destructive-default",
+     "light": null,
+     "dark": "10.2deg 77.9% 53.9%",
+     "via": "dark selector"
+    },
+    {
+     "name": "destructive-600",
+     "light": null,
+     "dark": "9.7deg 85.2% 62.9%",
+     "via": "dark selector"
+    }
+   ],
+   "rings": []
+  },
+  "stylesheets": 3
+ }
+}

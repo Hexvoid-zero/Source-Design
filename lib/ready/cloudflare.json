@@ -1,0 +1,1221 @@
+{
+ "slug": "cloudflare",
+ "name": "Cloudflare",
+ "blurb": "Edge network. Orange brand anchor, enterprise blues, diagram-heavy sections.",
+ "url": "https://www.cloudflare.com/",
+ "title": "Cloudflare: Build for the agent era",
+ "extractedAt": "2026-07-03",
+ "summary": {
+  "colors": [
+   {
+    "name": "neutral-50",
+    "hex": "#ffffff",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-100",
+    "hex": "#f0f0f0",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-300",
+    "hex": "#b4b4b4",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-400",
+    "hex": "#a0a0a0",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-500",
+    "hex": "#8c8c8c",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-600",
+    "hex": "#737373",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-900",
+    "hex": "#262626",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-950",
+    "hex": "#171717",
+    "group": "neutral"
+   },
+   {
+    "name": "orange",
+    "hex": "#ff5e1f",
+    "group": "accent"
+   },
+   {
+    "name": "orange-2",
+    "hex": "#ff4801",
+    "group": "accent"
+   },
+   {
+    "name": "red",
+    "hex": "#fb2c36",
+    "group": "accent"
+   },
+   {
+    "name": "yellow",
+    "hex": "#fcbb00",
+    "group": "accent"
+   },
+   {
+    "name": "pale-orange",
+    "hex": "#f0e3de",
+    "group": "accent"
+   },
+   {
+    "name": "orange-3",
+    "hex": "#f99c00",
+    "group": "accent"
+   },
+   {
+    "name": "red-2",
+    "hex": "#ff6568",
+    "group": "accent"
+   },
+   {
+    "name": "orange-4",
+    "hex": "#ff7038",
+    "group": "accent"
+   },
+   {
+    "name": "blue",
+    "hex": "#3080ff",
+    "group": "accent"
+   },
+   {
+    "name": "teal",
+    "hex": "#00bb7f",
+    "group": "accent"
+   },
+   {
+    "name": "cyan",
+    "hex": "#0a95ff",
+    "group": "accent"
+   },
+   {
+    "name": "orange-5",
+    "hex": "#e9d1bb",
+    "group": "accent"
+   }
+  ],
+  "fonts": [
+   "STK Bureau Sans",
+   "FT Kunst Grotesk",
+   "Apercu Mono Pro"
+  ],
+  "themeGuess": "light-leaning",
+  "stylesheets": 3,
+  "nativeVarCount": 120
+ },
+ "files": {
+  "DESIGN.md": "---\nname: cloudflare-com-design-system\nsource: https://www.cloudflare.com/\nextracted: 2026-07-03\ntheme: light  # measured from neutral usage weight\ncolors:  # roles inferred from usage frequency + luminance; names verified against values\n  canvas: \"#ffffff\"\n  ink: \"#171717\"\n  text-muted: \"#8c8c8c\"\n  surface: \"#f0f0f0\"\n  hairline: \"#b4b4b4\"\n  accent: \"#ff5e1f\"  # orange\n  accent-2: \"#ff4801\"  # orange\n  accent-3: \"#fb2c36\"  # red\nfonts:\n  primary: \"STK Bureau Sans\"  # medium-confidence: usage counts are close\n  mono: \"Apercu Mono Pro\"\n---\n\n# Cloudflare: Build for the agent era — Design System\n\nExtracted from **https://www.cloudflare.com/** on 2026-07-03.\n\n> Welcome to Cloudflare - Powering the next generation of applications\n\nEvery value below is mined from the site's live CSS (120 native custom properties, ranked usage counts). Role assignments are inferred from usage and luminance and marked as such — treat them as a strong starting point, not gospel.\n\n## Overview\n\nThe system reads as light: measured neutral usage weighs 278 light against 168 dark. The palette is chromatic: 12 saturated values against 8 neutrals, led by orange (`#ff5e1f`). **STK Bureau Sans** leads the font stack, though usage counts are close — verify against rendered pages before committing. Geometry mixes sharp corners (0px) with full pills.\n\n## Usage rules\n\nDerived from the measured usage below — each rule cites its evidence.\n\n- Chromatic color carries 39% of measured usage — this palette uses color structurally. Saturated values can hold large surfaces here; timidity would misrepresent the source.\n- The theme is light (measured neutral weight 278:168). Don't flip individual sections to the opposite mode.\n- `.25rem` is the workhorse radius (x9); treat the other radii as exceptions, not options.\n- The only shadows are blur-less hairline offsets — this system barely uses elevation; don't add soft drop shadows.\n- One family does the work — build hierarchy with size and weight (400/500/600/700), not by adding typefaces.\n- `Apercu Mono Pro` is the monospace — keep it for code, data, and metadata roles.\n\n## Colors\n\n### Neutrals (light → dark)\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `neutral-50` | `#ffffff` | 213 | **canvas** — lightest neutral, matches the measured light-leaning theme |\n| `neutral-100` | `#f0f0f0` | 65 | **surface** — neutral closest to canvas luminance |\n| `neutral-300` | `#b4b4b4` | 7 | **hairline** — next neutral near canvas, hairline-border weight |\n| `neutral-400` | `#a0a0a0` | 6 | — |\n| `neutral-500` | `#8c8c8c` | 12 | **text-muted** — most-used mid-luminance neutral |\n| `neutral-600` | `#737373` | 5 | — |\n| `neutral-900` | `#262626` | 81 | — |\n| `neutral-950` | `#171717` | 30 | **ink** — darkest neutral, highest contrast against canvas |\n\n### Accents\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `orange` | `#ff5e1f` | 95 | **accent** — most-used chromatic color |\n| `orange-2` | `#ff4801` | 70 | **accent-2** — supporting chromatic color |\n| `red` | `#fb2c36` | 25 | **accent-3** — supporting chromatic color |\n| `yellow` | `#fcbb00` | 12 | — |\n| `pale-orange` | `#f0e3de` | 10 | — |\n| `orange-3` | `#f99c00` | 9 | — |\n| `red-2` | `#ff6568` | 9 | — |\n| `orange-4` | `#ff7038` | 8 | — |\n| `blue` | `#3080ff` | 8 | — |\n| `teal` | `#00bb7f` | 8 | — |\n| `cyan` | `#0a95ff` | 7 | — |\n| `orange-5` | `#e9d1bb` | 7 | — |\n\n### Modern color values (kept verbatim)\n\n- `oklch(21% .006 285.885)`\n- `oklch(97% 0 0)`\n- `oklch(20.5% 0 0)`\n- `oklch(43.9% 0 0)`\n- `oklch(70.8% 0 0)`\n- `oklch(55.6% 0 0)`\n- `oklch(42.4% .199 265.638)`\n- `oklch(70.7% .165 254.624)`\n- `oklch(43.2% .095 166.913)`\n- `oklch(90.5% .093 164.15)`\n- `oklch(50.5% .213 27.518)`\n- `oklch(70.4% .191 22.216)`\n\n### Dark mode\n\nThe source defines 60 dark-mode variants (via light-dark(), dark selector). Both halves of the system, first 30:\n\n| Token | Light | Dark |\n| --- | --- | --- |\n| `--text-color-kumo-badge-inverted` | `var(--color-white,#fff)` | `var(--color-black,#000)` |\n| `--color-kumo-shadow-edge` | `oklch(0% 0 0/.12)` | `oklch(100% 0 0/.1)` |\n| `--color-kumo-shadow-drop` | `oklch(0% 0 0/.08)` | `oklch(0% 0 0/.3)` |\n| `--text-color-kumo-default` | `light-dark(var(--color-neutral-900,oklch(21% .006 285.885)),var(--color-neutral-100,oklch(97% 0 0)))` | `var(--color-neutral-100,oklch(97% 0 0))` |\n| `--text-color-kumo-inverse` | `light-dark(var(--color-neutral-100,oklch(97% 0 0)),var(--color-neutral-900,oklch(20.5% 0 0)))` | `var(--color-neutral-900,oklch(20.5% 0 0))` |\n| `--text-color-kumo-strong` | `light-dark(var(--color-neutral-600,oklch(43.9% 0 0)),var(--color-neutral-400,oklch(70.8% 0 0)))` | `var(--color-neutral-400,oklch(70.8% 0 0))` |\n| `--text-color-kumo-subtle` | `light-dark(var(--color-neutral-500,oklch(55.6% 0 0)),var(--color-neutral-400,oklch(70.8% 0 0)))` | `var(--color-neutral-400,oklch(70.8% 0 0))` |\n| `--text-color-kumo-inactive` | `light-dark(var(--color-neutral-400,oklch(70.8% 0 0)),var(--color-neutral-600,oklch(70.8% 0 0)))` | `var(--color-neutral-600,oklch(70.8% 0 0))` |\n| `--text-color-kumo-placeholder` | `light-dark(var(--color-neutral-400,oklch(70.8% 0 0)),var(--color-neutral-500,oklch(55.6% 0 0)))` | `var(--color-neutral-500,oklch(55.6% 0 0))` |\n| `--text-color-kumo-brand` | `var(--color-kumo-brand)` | `#f6821f` |\n| `--text-color-kumo-link` | `light-dark(var(--color-blue-800,oklch(42.4% .199 265.638)),var(--color-blue-400,oklch(70.7% .165 254.624)))` | `var(--color-blue-400,oklch(70.7% .165 254.624))` |\n| `--text-color-kumo-info` | `light-dark(var(--color-blue-800,oklch(42.4% .199 265.638)),var(--color-blue-400,oklch(70.7% .165 254.624)))` | `var(--color-blue-400,oklch(70.7% .165 254.624))` |\n| `--text-color-kumo-success` | `light-dark(var(--color-emerald-800,oklch(43.2% .095 166.913)),var(--color-emerald-200,oklch(90.5% .093 164.15)))` | `var(--color-emerald-200,oklch(90.5% .093 164.15))` |\n| `--text-color-kumo-danger` | `light-dark(var(--color-red-700,oklch(50.5% .213 27.518)),var(--color-red-400,oklch(70.4% .191 22.216)))` | `var(--color-red-400,oklch(70.4% .191 22.216))` |\n| `--text-color-kumo-warning` | `light-dark(var(--color-yellow-800,oklch(47.6% .114 61.907)),var(--color-yellow-400,oklch(85.2% .199 91.936)))` | `var(--color-yellow-400,oklch(85.2% .199 91.936))` |\n| `--text-color-kumo-badge-orange-subtle` | — | `var(--color-orange-200,oklch(90.1% .076 70.697))` |\n| `--text-color-kumo-badge-teal-subtle` | `light-dark(var(--color-teal-800,oklch(43.7% .078 188.216)),var(--color-teal-200,oklch(91% .096 180.426)))` | `var(--color-teal-200,oklch(91% .096 180.426))` |\n| `--text-color-kumo-badge-neutral-subtle` | `light-dark(var(--color-neutral-800,oklch(26.9% 0 0)),var(--color-neutral-200,oklch(92.2% 0 0)))` | `var(--color-neutral-200,oklch(92.2% 0 0))` |\n| `--color-kumo-canvas` | `light-dark(var(--color-kumo-neutral-25,oklch(98.75% 0 0)),var(--color-kumo-neutral-1000,oklch(10% 0 0)))` | `var(--color-kumo-neutral-1000,oklch(10% 0 0))` |\n| `--color-kumo-elevated` | `light-dark(var(--color-kumo-neutral-75,oklch(98% 0 0)),var(--color-kumo-neutral-975,oklch(12% 0 0)))` | `var(--color-kumo-neutral-975,oklch(12% 0 0))` |\n| `--color-kumo-recessed` | `light-dark(var(--color-kumo-neutral-125,oklch(96% 0 0)),var(--color-kumo-neutral-950,oklch(15% 0 0)))` | `var(--color-kumo-neutral-950,oklch(15% 0 0))` |\n| `--color-kumo-base` | `light-dark(var(--color-white,#fff),var(--color-kumo-neutral-925,oklch(17% 0 0)))` | `var(--color-kumo-neutral-925,oklch(17% 0 0))` |\n| `--color-kumo-tint` | `light-dark(var(--color-neutral-100,oklch(97% 0 0)),var(--color-kumo-neutral-800,oklch(26.9% 0 0)))` | `var(--color-kumo-neutral-800,oklch(26.9% 0 0))` |\n| `--color-kumo-contrast` | `light-dark(var(--color-kumo-neutral-975,oklch(8.5% 0 0)),var(--color-kumo-neutral-25,oklch(98.5% 0 0)))` | `var(--color-kumo-neutral-25,oklch(98.5% 0 0))` |\n| `--color-kumo-overlay` | `light-dark(var(--color-kumo-neutral-50,oklch(97.5% 0 0)),var(--color-neutral-800,oklch(26.9% 0 0)))` | `var(--color-neutral-800,oklch(26.9% 0 0))` |\n| `--color-kumo-control` | `light-dark(var(--color-white,#fff),var(--color-neutral-900,oklch(21% .006 285.885)))` | `var(--color-neutral-900,oklch(21% .006 285.885))` |\n| `--color-kumo-interact` | `light-dark(var(--color-neutral-300,oklch(87% 0 0)),var(--color-neutral-700,oklch(37.1% 0 0)))` | `var(--color-neutral-700,oklch(37.1% 0 0))` |\n| `--color-kumo-fill` | `light-dark(var(--color-neutral-200,oklch(92.2% 0 0)),var(--color-neutral-800,oklch(26.9% 0 0)))` | `var(--color-neutral-800,oklch(26.9% 0 0))` |\n| `--color-kumo-fill-hover` | `light-dark(var(--color-kumo-neutral-125,oklch(96.5% 0 0)),var(--color-neutral-800,oklch(37.1% 0 0)))` | `var(--color-neutral-800,oklch(37.1% 0 0))` |\n| `--color-kumo-brand` | `var(--color-accent-100)` | `oklch(57.72% .2324 260)` |\n\n`variables.css` ships these as a `prefers-color-scheme: dark` override block.\n\n## Typography\n\n**STK Bureau Sans** has the most `font-family` declarations, but the margin over the rest is thin — treat the primary-face call as provisional and verify on rendered pages. Full list by usage:\n\n| Family | Usage |\n| --- | --- |\n| STK Bureau Sans | 3 |\n| FT Kunst Grotesk | 2 |\n| Apercu Mono Pro | 1 |\n\n**Size scale (px):** `8`, `10`, `11`, `12`, `13`, `14`, `14.8`, `15`, `15.6`, `16`, `20`, `24`\n\n**Weights in use:** `400` (x8), `500` (x24), `600` (x3), `700` (x2)\n\n**Line-heights (unitless):** `1`, `1.1`, `1.2`, `1.25`, `1.28`, `1.3`, `1.4`, `1.5`\n\n**Letter-spacing values:** `-.04em`, `-.035em`, `-.02em`, `-.01em`, `.01em`, `.2em`\n\n## Spacing\n\nMost-used values (px): `1`, `2`, `3`, `4`, `5`, `6`, `8`, `10`, `12`, `16`, `20`, `24`\n\n## Border radius\n\n| Token | Value | Usage |\n| --- | --- | --- |\n| `radius-sm` | `0px` | 6 |\n| `radius-md` | `2px` | 3 |\n| `radius-lg` | `.25rem` | 9 |\n| `radius-xl` | `.375rem` | 3 |\n| `radius-2xl` | `10px` | 4 |\n| `radius-full` | `50%` | 2 |\n\n## Shadows (ordered by blur radius)\n\n- `shadow-sm` — `inset 0 0 9px 1px rgba(0, 0, 0, 0.14)` (x1)\n\n### Focus rings (spread-only box-shadows, kept out of the elevation scale)\n\n- `0 0 0 1px #0a0a0a1a,0 1px 2px #0000000d` (x1)\n- `0 0 0 1px #e5e5e5` (x1)\n\n## Breakpoints\n\n`640px`, `767px`, `768px`, `1024px`, `1280px`, `1536px`\n\n## Starter recipes\n\nTokens composed into components. The source site's real components were **not** inspected — these are starting points built from the extracted values, with contrast ratios computed rather than assumed.\n\n```css\n.button-primary {\n  background: var(--color-accent); /* #ff5e1f */\n  color: var(--color-ink); /* #171717 — contrast 5.9:1 */\n  border-radius: 9999px; /* pill — mined as 50% */\n  font-weight: 500;\n}\n\n.card {\n  background: var(--color-surface); /* #f0f0f0 */\n  border: 1px solid var(--color-hairline); /* #b4b4b4 */\n  border-radius: .25rem; /* most-used finite radius */\n  box-shadow: var(--shadow-sm);\n}\n\n.input {\n  background: var(--color-canvas); /* #ffffff */\n  color: var(--color-ink); /* #171717 — contrast 17.9:1 */\n  border: 1px solid var(--color-hairline); /* #b4b4b4 */\n  border-radius: 0px;\n  /* placeholder color: var(--color-text-muted) #8c8c8c */\n}\n\n.nav {\n  background: var(--color-canvas); /* #ffffff */\n  border-bottom: 1px solid var(--color-hairline); /* #b4b4b4 */\n  color: var(--color-ink); /* #171717 */\n  /* inactive links: var(--color-text-muted) #8c8c8c */\n  /* active link: var(--color-accent) #ff5e1f — contrast vs canvas 3.1:1 */\n}\n\n.modal {\n  background: var(--color-surface); /* #f0f0f0 */\n  border-radius: .25rem;\n  box-shadow: var(--shadow-sm); /* largest mined shadow */\n}\n\n.modal-backdrop {\n  background: color-mix(in srgb, var(--color-ink) 55%, transparent); /* scrim from #171717 */\n}\n\n.input-error {\n  border-color: #ff5e1f; /* mined token: orange */\n  /* error text: #ff5e1f on canvas — contrast 3.1:1, below AA; darken for message text */\n}\n\n.input-success {\n  border-color: #00bb7f; /* mined token: teal */\n}\n```\n\n## Observations\n\n- 8 of 20 extracted colors are neutrals.\n- 1 distinct shadow; the softest reaches 0px blur.\n- 6 breakpoints, from 640px to 1536px.\n- The site ships a large native token system (120+ custom properties) — prefer those names when extending it.\n\n## Native CSS custom properties\n\nFirst 40 of 120:\n\n```css\n:root {\n  --text-color-kumo-default: light-dark(var(--color-neutral-900,oklch(21% .006 285.885)),var(--color-neutral-100,oklch(97% 0 0)));\n  --text-color-kumo-inverse: light-dark(var(--color-neutral-100,oklch(97% 0 0)),var(--color-neutral-900,oklch(20.5% 0 0)));\n  --text-color-kumo-strong: light-dark(var(--color-neutral-600,oklch(43.9% 0 0)),var(--color-neutral-400,oklch(70.8% 0 0)));\n  --text-color-kumo-subtle: light-dark(var(--color-neutral-500,oklch(55.6% 0 0)),var(--color-neutral-400,oklch(70.8% 0 0)));\n  --text-color-kumo-inactive: light-dark(var(--color-neutral-400,oklch(70.8% 0 0)),var(--color-neutral-600,oklch(70.8% 0 0)));\n  --text-color-kumo-placeholder: light-dark(var(--color-neutral-400,oklch(70.8% 0 0)),var(--color-neutral-500,oklch(55.6% 0 0)));\n  --text-color-kumo-brand: var(--color-kumo-brand);\n  --text-color-kumo-link: light-dark(var(--color-blue-800,oklch(42.4% .199 265.638)),var(--color-blue-400,oklch(70.7% .165 254.624)));\n  --text-color-kumo-info: light-dark(var(--color-blue-800,oklch(42.4% .199 265.638)),var(--color-blue-400,oklch(70.7% .165 254.624)));\n  --text-color-kumo-success: light-dark(var(--color-emerald-800,oklch(43.2% .095 166.913)),var(--color-emerald-200,oklch(90.5% .093 164.15)));\n  --text-color-kumo-danger: light-dark(var(--color-red-700,oklch(50.5% .213 27.518)),var(--color-red-400,oklch(70.4% .191 22.216)));\n  --text-color-kumo-warning: light-dark(var(--color-yellow-800,oklch(47.6% .114 61.907)),var(--color-yellow-400,oklch(85.2% .199 91.936)));\n  --text-color-kumo-badge-teal-subtle: light-dark(var(--color-teal-800,oklch(43.7% .078 188.216)),var(--color-teal-200,oklch(91% .096 180.426)));\n  --text-color-kumo-badge-neutral-subtle: light-dark(var(--color-neutral-800,oklch(26.9% 0 0)),var(--color-neutral-200,oklch(92.2% 0 0)));\n  --text-color-kumo-badge-inverted: light-dark(var(--color-white,#fff),var(--color-black,#000));\n  --color-kumo-canvas: light-dark(var(--color-kumo-neutral-25,oklch(98.75% 0 0)),var(--color-kumo-neutral-1000,oklch(10% 0 0)));\n  --color-kumo-elevated: light-dark(var(--color-kumo-neutral-75,oklch(98% 0 0)),var(--color-kumo-neutral-975,oklch(12% 0 0)));\n  --color-kumo-recessed: light-dark(var(--color-kumo-neutral-125,oklch(96% 0 0)),var(--color-kumo-neutral-950,oklch(15% 0 0)));\n  --color-kumo-base: light-dark(var(--color-white,#fff),var(--color-kumo-neutral-925,oklch(17% 0 0)));\n  --color-kumo-tint: light-dark(var(--color-neutral-100,oklch(97% 0 0)),var(--color-kumo-neutral-800,oklch(26.9% 0 0)));\n  --color-kumo-contrast: light-dark(var(--color-kumo-neutral-975,oklch(8.5% 0 0)),var(--color-kumo-neutral-25,oklch(98.5% 0 0)));\n  --color-kumo-overlay: light-dark(var(--color-kumo-neutral-50,oklch(97.5% 0 0)),var(--color-neutral-800,oklch(26.9% 0 0)));\n  --color-kumo-control: light-dark(var(--color-white,#fff),var(--color-neutral-900,oklch(21% .006 285.885)));\n  --color-kumo-interact: light-dark(var(--color-neutral-300,oklch(87% 0 0)),var(--color-neutral-700,oklch(37.1% 0 0)));\n  --color-kumo-fill: light-dark(var(--color-neutral-200,oklch(92.2% 0 0)),var(--color-neutral-800,oklch(26.9% 0 0)));\n  --color-kumo-fill-hover: light-dark(var(--color-kumo-neutral-125,oklch(96.5% 0 0)),var(--color-neutral-800,oklch(37.1% 0 0)));\n  --color-kumo-brand: var(--color-accent-100);\n  --color-kumo-brand-hover: var(--color-accent-200);\n  --color-kumo-line: light-dark(oklch(14.5% 0 0/.1),var(--color-kumo-neutral-750,oklch(32% 0 0)));\n  --color-kumo-hairline: light-dark(var(--color-kumo-neutral-150,oklch(93.5% 0 0)),var(--color-neutral-800,oklch(26.9% 0 0)));\n  --color-kumo-shadow-edge: light-dark(oklch(0% 0 0/.12),oklch(100% 0 0/.1));\n  --color-kumo-shadow-drop: light-dark(oklch(0% 0 0/.08),oklch(0% 0 0/.3));\n  --color-kumo-tip-shadow: light-dark(var(--color-gray-200,oklch(92.8% .006 264.531)),transparent);\n  --color-kumo-tip-stroke: light-dark(transparent,var(--color-neutral-800,oklch(26.9% 0 0)));\n  --color-kumo-info-tint: light-dark(var(--color-blue-100,oklch(93.2% .032 255.585)),var(--color-blue-900,oklch(37.9% .146 265.522)));\n  --color-kumo-info: light-dark(var(--color-blue-300,oklch(80.9% .105 251.813)),var(--color-blue-900,oklch(37.9% .146 265.522)));\n  --color-kumo-warning-tint: light-dark(var(--color-yellow-100,oklch(97.3% .071 103.193)),var(--color-yellow-700,oklch(55.4% .135 66.442)));\n  --color-kumo-warning: light-dark(var(--color-yellow-300,oklch(90.5% .182 98.111)),var(--color-yellow-900,oklch(42.1% .095 57.708)));\n  --color-kumo-danger-tint: light-dark(var(--color-red-100,oklch(93.6% .032 17.717)),var(--color-red-900,oklch(39.6% .141 25.723)));\n  --color-kumo-danger: light-dark(var(--color-red-500,oklch(63.7% .237 25.331)),var(--color-red-900,oklch(39.6% .141 25.723)));\n}\n```\n\n## Files\n\n- `tailwind.css` — Tailwind v4 `@theme` block; tokens become utilities (e.g. `bg-neutral-900`, `text-orange`).\n- `variables.css` — framework-agnostic `:root` variables, same values.\n- `tokens.json` — W3C Design Tokens format for Figma plugins, Style Dictionary, etc.\n",
+  "tailwind.css": "@import \"tailwindcss\";\n\n@theme {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-100: #f0f0f0;\n  --color-neutral-300: #b4b4b4;\n  --color-neutral-400: #a0a0a0;\n  --color-neutral-500: #8c8c8c;\n  --color-neutral-600: #737373;\n  --color-neutral-900: #262626;\n  --color-neutral-950: #171717;\n  --color-orange: #ff5e1f;\n  --color-orange-2: #ff4801;\n  --color-red: #fb2c36;\n  --color-yellow: #fcbb00;\n  --color-pale-orange: #f0e3de;\n  --color-orange-3: #f99c00;\n  --color-red-2: #ff6568;\n  --color-orange-4: #ff7038;\n  --color-blue: #3080ff;\n  --color-teal: #00bb7f;\n  --color-cyan: #0a95ff;\n  --color-orange-5: #e9d1bb;\n\n  /* inferred semantic roles (each maps to a distinct mined value) */\n  --color-canvas: #ffffff;\n  --color-ink: #171717;\n  --color-text-muted: #8c8c8c;\n  --color-surface: #f0f0f0;\n  --color-hairline: #b4b4b4;\n  --color-accent: #ff5e1f;\n  --color-accent-2: #ff4801;\n  --color-accent-3: #fb2c36;\n\n  --font-sans: \"STK Bureau Sans\", ui-sans-serif, system-ui, sans-serif;\n  --font-mono: \"Apercu Mono Pro\", ui-monospace, monospace;\n\n  --text-xs: 0.5rem;\n  --text-sm: 0.625rem;\n  --text-base: 0.6875rem;\n  --text-lg: 0.75rem;\n  --text-xl: 0.8125rem;\n  --text-2xl: 0.875rem;\n  --text-3xl: 0.925rem;\n  --text-4xl: 0.9375rem;\n  --text-5xl: 0.975rem;\n  --text-6xl: 1rem;\n  --text-7xl: 1.25rem;\n  --text-8xl: 1.5rem;\n\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, sorted tight -> loose */\n  --leading-none: 1;\n  --leading-tight: 1.1;\n  --leading-snug: 1.2;\n  --leading-normal: 1.25;\n  --leading-relaxed: 1.28;\n  --leading-loose: 1.3;\n  --leading-looser: 1.4;\n  --leading-loosest: 1.5;\n\n  /* letter-spacing, sorted tight -> wide */\n  --tracking-tightest: -.04em;\n  --tracking-tighter: -.035em;\n  --tracking-tight: -.02em;\n  --tracking-normal: -.01em;\n  --tracking-wide: .01em;\n  --tracking-wider: .2em;\n\n  --radius-sm: 0px;\n  --radius-md: 2px;\n  --radius-lg: .25rem;\n  --radius-xl: .375rem;\n  --radius-2xl: 10px;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: inset 0 0 9px 1px rgba(0, 0, 0, 0.14);\n\n  --breakpoint-sm: 40rem;\n  --breakpoint-md: 47.9375rem;\n  --breakpoint-lg: 48rem;\n  --breakpoint-xl: 64rem;\n  --breakpoint-2xl: 80rem;\n  --breakpoint-3xl: 96rem;\n\n  /* most-used spacing values on the source site (px): 1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24 */\n}\n\n/* dark-mode values mined from the source (native token names) */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --text-color-kumo-badge-inverted: var(--color-black,#000);\n    --color-kumo-shadow-edge: oklch(100% 0 0/.1);\n    --color-kumo-shadow-drop: oklch(0% 0 0/.3);\n    --text-color-kumo-default: var(--color-neutral-100,oklch(97% 0 0));\n    --text-color-kumo-inverse: var(--color-neutral-900,oklch(20.5% 0 0));\n    --text-color-kumo-strong: var(--color-neutral-400,oklch(70.8% 0 0));\n    --text-color-kumo-subtle: var(--color-neutral-400,oklch(70.8% 0 0));\n    --text-color-kumo-inactive: var(--color-neutral-600,oklch(70.8% 0 0));\n    --text-color-kumo-placeholder: var(--color-neutral-500,oklch(55.6% 0 0));\n    --text-color-kumo-brand: #f6821f;\n    --text-color-kumo-link: var(--color-blue-400,oklch(70.7% .165 254.624));\n    --text-color-kumo-info: var(--color-blue-400,oklch(70.7% .165 254.624));\n    --text-color-kumo-success: var(--color-emerald-200,oklch(90.5% .093 164.15));\n    --text-color-kumo-danger: var(--color-red-400,oklch(70.4% .191 22.216));\n    --text-color-kumo-warning: var(--color-yellow-400,oklch(85.2% .199 91.936));\n    --text-color-kumo-badge-orange-subtle: var(--color-orange-200,oklch(90.1% .076 70.697));\n    --text-color-kumo-badge-teal-subtle: var(--color-teal-200,oklch(91% .096 180.426));\n    --text-color-kumo-badge-neutral-subtle: var(--color-neutral-200,oklch(92.2% 0 0));\n    --color-kumo-canvas: var(--color-kumo-neutral-1000,oklch(10% 0 0));\n    --color-kumo-elevated: var(--color-kumo-neutral-975,oklch(12% 0 0));\n    --color-kumo-recessed: var(--color-kumo-neutral-950,oklch(15% 0 0));\n    --color-kumo-base: var(--color-kumo-neutral-925,oklch(17% 0 0));\n    --color-kumo-tint: var(--color-kumo-neutral-800,oklch(26.9% 0 0));\n    --color-kumo-contrast: var(--color-kumo-neutral-25,oklch(98.5% 0 0));\n    --color-kumo-overlay: var(--color-neutral-800,oklch(26.9% 0 0));\n    --color-kumo-control: var(--color-neutral-900,oklch(21% .006 285.885));\n    --color-kumo-interact: var(--color-neutral-700,oklch(37.1% 0 0));\n    --color-kumo-fill: var(--color-neutral-800,oklch(26.9% 0 0));\n    --color-kumo-fill-hover: var(--color-neutral-800,oklch(37.1% 0 0));\n    --color-kumo-brand: oklch(57.72% .2324 260);\n    --color-kumo-brand-hover: var(--color-blue-700,oklch(48.8% .243 264.376));\n    --color-kumo-line: var(--color-kumo-neutral-750,oklch(32% 0 0));\n    --color-kumo-hairline: var(--color-neutral-800,oklch(26.9% 0 0));\n    --color-kumo-tip-shadow: transparent;\n    --color-kumo-tip-stroke: var(--color-neutral-800,oklch(26.9% 0 0));\n    --color-kumo-info-tint: var(--color-blue-900,oklch(37.9% .146 265.522));\n    --color-kumo-info: var(--color-blue-900,oklch(37.9% .146 265.522));\n    --color-kumo-warning-tint: var(--color-yellow-700,oklch(55.4% .135 66.442));\n    --color-kumo-warning: var(--color-yellow-900,oklch(42.1% .095 57.708));\n    --color-kumo-danger-tint: var(--color-red-900,oklch(39.6% .141 25.723));\n    --color-kumo-danger: var(--color-red-900,oklch(39.6% .141 25.723));\n    --color-kumo-success-tint: var(--color-emerald-900,oklch(37.8% .077 168.94));\n    --color-kumo-success: var(--color-green-900,oklch(39.3% .095 152.535));\n    --color-kumo-badge-red: var(--color-red-700,oklch(50.5% .213 27.518));\n    --color-kumo-badge-orange: var(--color-orange-650,oklch(81.5% .197 76));\n    --color-kumo-badge-orange-subtle: var(--color-orange-900,oklch(40.8% .123 38.172));\n    --color-kumo-badge-purple: var(--color-purple-700,oklch(50.8% .118 165.612));\n    --color-kumo-badge-green: var(--color-emerald-700,oklch(50.8% .118 165.612));\n    --color-kumo-badge-teal: var(--color-teal-700,oklch(51.1% .096 186.391));\n    --color-kumo-badge-teal-subtle: var(--color-teal-900,oklch(38.6% .063 188.416));\n    --color-kumo-badge-blue: var(--color-blue-700,oklch(48.8% .243 264.376));\n    --color-kumo-badge-neutral: var(--color-neutral-600,oklch(43.9% 0 0));\n    --color-kumo-badge-inverted: var(--color-white,#fff);\n    --tw-shadow: 0 16px 40px -12px var(--tw-shadow-color,#000000a6);\n    --tw-shadow-color: #00000040;\n    --tw-ring-color: var(--color-blue-500);\n    --rdp-accent-color: oklch(97% 0 0);\n    --rdp-accent-background-color: oklch(35% 0 0);\n    --rdp-range_middle-background-color: oklch(28% 0 0);\n    --rdp-range_middle-color: oklch(97% 0 0);\n  }\n}\n",
+  "variables.css": ":root {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-100: #f0f0f0;\n  --color-neutral-300: #b4b4b4;\n  --color-neutral-400: #a0a0a0;\n  --color-neutral-500: #8c8c8c;\n  --color-neutral-600: #737373;\n  --color-neutral-900: #262626;\n  --color-neutral-950: #171717;\n  --color-orange: #ff5e1f;\n  --color-orange-2: #ff4801;\n  --color-red: #fb2c36;\n  --color-yellow: #fcbb00;\n  --color-pale-orange: #f0e3de;\n  --color-orange-3: #f99c00;\n  --color-red-2: #ff6568;\n  --color-orange-4: #ff7038;\n  --color-blue: #3080ff;\n  --color-teal: #00bb7f;\n  --color-cyan: #0a95ff;\n  --color-orange-5: #e9d1bb;\n\n  /* inferred semantic roles */\n  --color-canvas: #ffffff;\n  --color-ink: #171717;\n  --color-text-muted: #8c8c8c;\n  --color-surface: #f0f0f0;\n  --color-hairline: #b4b4b4;\n  --color-accent: #ff5e1f;\n  --color-accent-2: #ff4801;\n  --color-accent-3: #fb2c36;\n\n  /* typography */\n  --font-stk-bureau-sans: \"STK Bureau Sans\";\n  --font-ft-kunst-grotesk: \"FT Kunst Grotesk\";\n  --font-apercu-mono-pro: \"Apercu Mono Pro\";\n\n  /* type scale, ascending */\n  --text-1: 0.5rem;\n  --text-2: 0.625rem;\n  --text-3: 0.6875rem;\n  --text-4: 0.75rem;\n  --text-5: 0.8125rem;\n  --text-6: 0.875rem;\n  --text-7: 0.925rem;\n  --text-8: 0.9375rem;\n  --text-9: 0.975rem;\n  --text-10: 1rem;\n  --text-11: 1.25rem;\n  --text-12: 1.5rem;\n\n  /* font weights in use */\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, tight -> loose */\n  --leading-1: 1;\n  --leading-2: 1.1;\n  --leading-3: 1.2;\n  --leading-4: 1.25;\n  --leading-5: 1.28;\n  --leading-6: 1.3;\n  --leading-7: 1.4;\n  --leading-8: 1.5;\n\n  /* letter-spacing, tight -> wide */\n  --tracking-1: -.04em;\n  --tracking-2: -.035em;\n  --tracking-3: -.02em;\n  --tracking-4: -.01em;\n  --tracking-5: .01em;\n  --tracking-6: .2em;\n\n  /* spacing, ascending */\n  --space-1: 1px;\n  --space-2: 2px;\n  --space-3: 3px;\n  --space-4: 4px;\n  --space-5: 5px;\n  --space-6: 6px;\n  --space-7: 8px;\n  --space-8: 10px;\n  --space-9: 12px;\n  --space-10: 16px;\n  --space-11: 20px;\n  --space-12: 24px;\n\n  /* radius, ascending */\n  --radius-sm: 0px;\n  --radius-md: 2px;\n  --radius-lg: .25rem;\n  --radius-xl: .375rem;\n  --radius-2xl: 10px;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: inset 0 0 9px 1px rgba(0, 0, 0, 0.14);\n}\n\n/* dark-mode values mined from the source (native token names) */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --text-color-kumo-badge-inverted: var(--color-black,#000);\n    --color-kumo-shadow-edge: oklch(100% 0 0/.1);\n    --color-kumo-shadow-drop: oklch(0% 0 0/.3);\n    --text-color-kumo-default: var(--color-neutral-100,oklch(97% 0 0));\n    --text-color-kumo-inverse: var(--color-neutral-900,oklch(20.5% 0 0));\n    --text-color-kumo-strong: var(--color-neutral-400,oklch(70.8% 0 0));\n    --text-color-kumo-subtle: var(--color-neutral-400,oklch(70.8% 0 0));\n    --text-color-kumo-inactive: var(--color-neutral-600,oklch(70.8% 0 0));\n    --text-color-kumo-placeholder: var(--color-neutral-500,oklch(55.6% 0 0));\n    --text-color-kumo-brand: #f6821f;\n    --text-color-kumo-link: var(--color-blue-400,oklch(70.7% .165 254.624));\n    --text-color-kumo-info: var(--color-blue-400,oklch(70.7% .165 254.624));\n    --text-color-kumo-success: var(--color-emerald-200,oklch(90.5% .093 164.15));\n    --text-color-kumo-danger: var(--color-red-400,oklch(70.4% .191 22.216));\n    --text-color-kumo-warning: var(--color-yellow-400,oklch(85.2% .199 91.936));\n    --text-color-kumo-badge-orange-subtle: var(--color-orange-200,oklch(90.1% .076 70.697));\n    --text-color-kumo-badge-teal-subtle: var(--color-teal-200,oklch(91% .096 180.426));\n    --text-color-kumo-badge-neutral-subtle: var(--color-neutral-200,oklch(92.2% 0 0));\n    --color-kumo-canvas: var(--color-kumo-neutral-1000,oklch(10% 0 0));\n    --color-kumo-elevated: var(--color-kumo-neutral-975,oklch(12% 0 0));\n    --color-kumo-recessed: var(--color-kumo-neutral-950,oklch(15% 0 0));\n    --color-kumo-base: var(--color-kumo-neutral-925,oklch(17% 0 0));\n    --color-kumo-tint: var(--color-kumo-neutral-800,oklch(26.9% 0 0));\n    --color-kumo-contrast: var(--color-kumo-neutral-25,oklch(98.5% 0 0));\n    --color-kumo-overlay: var(--color-neutral-800,oklch(26.9% 0 0));\n    --color-kumo-control: var(--color-neutral-900,oklch(21% .006 285.885));\n    --color-kumo-interact: var(--color-neutral-700,oklch(37.1% 0 0));\n    --color-kumo-fill: var(--color-neutral-800,oklch(26.9% 0 0));\n    --color-kumo-fill-hover: var(--color-neutral-800,oklch(37.1% 0 0));\n    --color-kumo-brand: oklch(57.72% .2324 260);\n    --color-kumo-brand-hover: var(--color-blue-700,oklch(48.8% .243 264.376));\n    --color-kumo-line: var(--color-kumo-neutral-750,oklch(32% 0 0));\n    --color-kumo-hairline: var(--color-neutral-800,oklch(26.9% 0 0));\n    --color-kumo-tip-shadow: transparent;\n    --color-kumo-tip-stroke: var(--color-neutral-800,oklch(26.9% 0 0));\n    --color-kumo-info-tint: var(--color-blue-900,oklch(37.9% .146 265.522));\n    --color-kumo-info: var(--color-blue-900,oklch(37.9% .146 265.522));\n    --color-kumo-warning-tint: var(--color-yellow-700,oklch(55.4% .135 66.442));\n    --color-kumo-warning: var(--color-yellow-900,oklch(42.1% .095 57.708));\n    --color-kumo-danger-tint: var(--color-red-900,oklch(39.6% .141 25.723));\n    --color-kumo-danger: var(--color-red-900,oklch(39.6% .141 25.723));\n    --color-kumo-success-tint: var(--color-emerald-900,oklch(37.8% .077 168.94));\n    --color-kumo-success: var(--color-green-900,oklch(39.3% .095 152.535));\n    --color-kumo-badge-red: var(--color-red-700,oklch(50.5% .213 27.518));\n    --color-kumo-badge-orange: var(--color-orange-650,oklch(81.5% .197 76));\n    --color-kumo-badge-orange-subtle: var(--color-orange-900,oklch(40.8% .123 38.172));\n    --color-kumo-badge-purple: var(--color-purple-700,oklch(50.8% .118 165.612));\n    --color-kumo-badge-green: var(--color-emerald-700,oklch(50.8% .118 165.612));\n    --color-kumo-badge-teal: var(--color-teal-700,oklch(51.1% .096 186.391));\n    --color-kumo-badge-teal-subtle: var(--color-teal-900,oklch(38.6% .063 188.416));\n    --color-kumo-badge-blue: var(--color-blue-700,oklch(48.8% .243 264.376));\n    --color-kumo-badge-neutral: var(--color-neutral-600,oklch(43.9% 0 0));\n    --color-kumo-badge-inverted: var(--color-white,#fff);\n    --tw-shadow: 0 16px 40px -12px var(--tw-shadow-color,#000000a6);\n    --tw-shadow-color: #00000040;\n    --tw-ring-color: var(--color-blue-500);\n    --rdp-accent-color: oklch(97% 0 0);\n    --rdp-accent-background-color: oklch(35% 0 0);\n    --rdp-range_middle-background-color: oklch(28% 0 0);\n    --rdp-range_middle-color: oklch(97% 0 0);\n  }\n}\n",
+  "tokens.json": "{\n  \"$description\": \"Design tokens extracted from https://www.cloudflare.com/. Semantic entries are inferred from usage + luminance; all values are mined from live CSS.\",\n  \"color\": {\n    \"neutral-50\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\"\n    },\n    \"neutral-100\": {\n      \"$value\": \"#f0f0f0\",\n      \"$type\": \"color\"\n    },\n    \"neutral-300\": {\n      \"$value\": \"#b4b4b4\",\n      \"$type\": \"color\"\n    },\n    \"neutral-400\": {\n      \"$value\": \"#a0a0a0\",\n      \"$type\": \"color\"\n    },\n    \"neutral-500\": {\n      \"$value\": \"#8c8c8c\",\n      \"$type\": \"color\"\n    },\n    \"neutral-600\": {\n      \"$value\": \"#737373\",\n      \"$type\": \"color\"\n    },\n    \"neutral-900\": {\n      \"$value\": \"#262626\",\n      \"$type\": \"color\"\n    },\n    \"neutral-950\": {\n      \"$value\": \"#171717\",\n      \"$type\": \"color\"\n    },\n    \"orange\": {\n      \"$value\": \"#ff5e1f\",\n      \"$type\": \"color\"\n    },\n    \"orange-2\": {\n      \"$value\": \"#ff4801\",\n      \"$type\": \"color\"\n    },\n    \"red\": {\n      \"$value\": \"#fb2c36\",\n      \"$type\": \"color\"\n    },\n    \"yellow\": {\n      \"$value\": \"#fcbb00\",\n      \"$type\": \"color\"\n    },\n    \"pale-orange\": {\n      \"$value\": \"#f0e3de\",\n      \"$type\": \"color\"\n    },\n    \"orange-3\": {\n      \"$value\": \"#f99c00\",\n      \"$type\": \"color\"\n    },\n    \"red-2\": {\n      \"$value\": \"#ff6568\",\n      \"$type\": \"color\"\n    },\n    \"orange-4\": {\n      \"$value\": \"#ff7038\",\n      \"$type\": \"color\"\n    },\n    \"blue\": {\n      \"$value\": \"#3080ff\",\n      \"$type\": \"color\"\n    },\n    \"teal\": {\n      \"$value\": \"#00bb7f\",\n      \"$type\": \"color\"\n    },\n    \"cyan\": {\n      \"$value\": \"#0a95ff\",\n      \"$type\": \"color\"\n    },\n    \"orange-5\": {\n      \"$value\": \"#e9d1bb\",\n      \"$type\": \"color\"\n    }\n  },\n  \"semantic\": {\n    \"canvas\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: lightest neutral, matches the measured light-leaning theme\"\n    },\n    \"ink\": {\n      \"$value\": \"#171717\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: darkest neutral, highest contrast against canvas\"\n    },\n    \"text-muted\": {\n      \"$value\": \"#8c8c8c\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used mid-luminance neutral\"\n    },\n    \"surface\": {\n      \"$value\": \"#f0f0f0\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: neutral closest to canvas luminance\"\n    },\n    \"hairline\": {\n      \"$value\": \"#b4b4b4\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: next neutral near canvas, hairline-border weight\"\n    },\n    \"accent\": {\n      \"$value\": \"#ff5e1f\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used chromatic color\"\n    },\n    \"accent-2\": {\n      \"$value\": \"#ff4801\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    },\n    \"accent-3\": {\n      \"$value\": \"#fb2c36\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    }\n  },\n  \"fontFamily\": {\n    \"stk-bureau-sans\": {\n      \"$value\": \"STK Bureau Sans\",\n      \"$type\": \"fontFamily\"\n    },\n    \"ft-kunst-grotesk\": {\n      \"$value\": \"FT Kunst Grotesk\",\n      \"$type\": \"fontFamily\"\n    },\n    \"apercu-mono-pro\": {\n      \"$value\": \"Apercu Mono Pro\",\n      \"$type\": \"fontFamily\"\n    }\n  },\n  \"fontSize\": {\n    \"size-1\": {\n      \"$value\": \"0.5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-2\": {\n      \"$value\": \"0.625rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-3\": {\n      \"$value\": \"0.6875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-4\": {\n      \"$value\": \"0.75rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-5\": {\n      \"$value\": \"0.8125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-6\": {\n      \"$value\": \"0.875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-7\": {\n      \"$value\": \"0.925rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-8\": {\n      \"$value\": \"0.9375rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-9\": {\n      \"$value\": \"0.975rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-10\": {\n      \"$value\": \"1rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-11\": {\n      \"$value\": \"1.25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-12\": {\n      \"$value\": \"1.5rem\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"fontWeight\": {\n    \"normal\": {\n      \"$value\": 400,\n      \"$type\": \"fontWeight\"\n    },\n    \"medium\": {\n      \"$value\": 500,\n      \"$type\": \"fontWeight\"\n    },\n    \"semibold\": {\n      \"$value\": 600,\n      \"$type\": \"fontWeight\"\n    },\n    \"bold\": {\n      \"$value\": 700,\n      \"$type\": \"fontWeight\"\n    }\n  },\n  \"lineHeight\": {\n    \"leading-1\": {\n      \"$value\": 1,\n      \"$type\": \"number\"\n    },\n    \"leading-2\": {\n      \"$value\": 1.1,\n      \"$type\": \"number\"\n    },\n    \"leading-3\": {\n      \"$value\": 1.2,\n      \"$type\": \"number\"\n    },\n    \"leading-4\": {\n      \"$value\": 1.25,\n      \"$type\": \"number\"\n    },\n    \"leading-5\": {\n      \"$value\": 1.28,\n      \"$type\": \"number\"\n    },\n    \"leading-6\": {\n      \"$value\": 1.3,\n      \"$type\": \"number\"\n    },\n    \"leading-7\": {\n      \"$value\": 1.4,\n      \"$type\": \"number\"\n    },\n    \"leading-8\": {\n      \"$value\": 1.5,\n      \"$type\": \"number\"\n    }\n  },\n  \"letterSpacing\": {\n    \"tracking-1\": {\n      \"$value\": \"-.04em\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-2\": {\n      \"$value\": \"-.035em\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-3\": {\n      \"$value\": \"-.02em\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-4\": {\n      \"$value\": \"-.01em\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-5\": {\n      \"$value\": \".01em\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-6\": {\n      \"$value\": \".2em\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"dimension\": {\n    \"space-1\": {\n      \"$value\": \"1px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-2\": {\n      \"$value\": \"2px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-3\": {\n      \"$value\": \"3px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-4\": {\n      \"$value\": \"4px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-5\": {\n      \"$value\": \"5px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-6\": {\n      \"$value\": \"6px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-7\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-8\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-9\": {\n      \"$value\": \"12px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-10\": {\n      \"$value\": \"16px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-11\": {\n      \"$value\": \"20px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-12\": {\n      \"$value\": \"24px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"borderRadius\": {\n    \"sm\": {\n      \"$value\": \"0px\",\n      \"$type\": \"dimension\"\n    },\n    \"md\": {\n      \"$value\": \"2px\",\n      \"$type\": \"dimension\"\n    },\n    \"lg\": {\n      \"$value\": \".25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"xl\": {\n      \"$value\": \".375rem\",\n      \"$type\": \"dimension\"\n    },\n    \"2xl\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"full\": {\n      \"$value\": \"50%\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"shadow\": {\n    \"sm\": {\n      \"$value\": \"inset 0 0 9px 1px rgba(0, 0, 0, 0.14)\",\n      \"$type\": \"shadow\"\n    }\n  },\n  \"dark\": {\n    \"text-color-kumo-badge-inverted\": {\n      \"$value\": \"var(--color-black,#000)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--color-white,#fff)\"\n    },\n    \"color-kumo-shadow-edge\": {\n      \"$value\": \"oklch(100% 0 0/.1)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: oklch(0% 0 0/.12)\"\n    },\n    \"color-kumo-shadow-drop\": {\n      \"$value\": \"oklch(0% 0 0/.3)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: oklch(0% 0 0/.08)\"\n    },\n    \"text-color-kumo-default\": {\n      \"$value\": \"var(--color-neutral-100,oklch(97% 0 0))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-neutral-900,oklch(21% .006 285.885)),var(--color-neutral-100,oklch(97% 0 0)))\"\n    },\n    \"text-color-kumo-inverse\": {\n      \"$value\": \"var(--color-neutral-900,oklch(20.5% 0 0))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-neutral-100,oklch(97% 0 0)),var(--color-neutral-900,oklch(20.5% 0 0)))\"\n    },\n    \"text-color-kumo-strong\": {\n      \"$value\": \"var(--color-neutral-400,oklch(70.8% 0 0))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-neutral-600,oklch(43.9% 0 0)),var(--color-neutral-400,oklch(70.8% 0 0)))\"\n    },\n    \"text-color-kumo-subtle\": {\n      \"$value\": \"var(--color-neutral-400,oklch(70.8% 0 0))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-neutral-500,oklch(55.6% 0 0)),var(--color-neutral-400,oklch(70.8% 0 0)))\"\n    },\n    \"text-color-kumo-inactive\": {\n      \"$value\": \"var(--color-neutral-600,oklch(70.8% 0 0))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-neutral-400,oklch(70.8% 0 0)),var(--color-neutral-600,oklch(70.8% 0 0)))\"\n    },\n    \"text-color-kumo-placeholder\": {\n      \"$value\": \"var(--color-neutral-500,oklch(55.6% 0 0))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-neutral-400,oklch(70.8% 0 0)),var(--color-neutral-500,oklch(55.6% 0 0)))\"\n    },\n    \"text-color-kumo-brand\": {\n      \"$value\": \"#f6821f\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: var(--color-kumo-brand)\"\n    },\n    \"text-color-kumo-link\": {\n      \"$value\": \"var(--color-blue-400,oklch(70.7% .165 254.624))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-blue-800,oklch(42.4% .199 265.638)),var(--color-blue-400,oklch(70.7% .165 254.624)))\"\n    },\n    \"text-color-kumo-info\": {\n      \"$value\": \"var(--color-blue-400,oklch(70.7% .165 254.624))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-blue-800,oklch(42.4% .199 265.638)),var(--color-blue-400,oklch(70.7% .165 254.624)))\"\n    },\n    \"text-color-kumo-success\": {\n      \"$value\": \"var(--color-emerald-200,oklch(90.5% .093 164.15))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-emerald-800,oklch(43.2% .095 166.913)),var(--color-emerald-200,oklch(90.5% .093 164.15)))\"\n    },\n    \"text-color-kumo-danger\": {\n      \"$value\": \"var(--color-red-400,oklch(70.4% .191 22.216))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-red-700,oklch(50.5% .213 27.518)),var(--color-red-400,oklch(70.4% .191 22.216)))\"\n    },\n    \"text-color-kumo-warning\": {\n      \"$value\": \"var(--color-yellow-400,oklch(85.2% .199 91.936))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-yellow-800,oklch(47.6% .114 61.907)),var(--color-yellow-400,oklch(85.2% .199 91.936)))\"\n    },\n    \"text-color-kumo-badge-orange-subtle\": {\n      \"$value\": \"var(--color-orange-200,oklch(90.1% .076 70.697))\",\n      \"$type\": \"string\"\n    },\n    \"text-color-kumo-badge-teal-subtle\": {\n      \"$value\": \"var(--color-teal-200,oklch(91% .096 180.426))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-teal-800,oklch(43.7% .078 188.216)),var(--color-teal-200,oklch(91% .096 180.426)))\"\n    },\n    \"text-color-kumo-badge-neutral-subtle\": {\n      \"$value\": \"var(--color-neutral-200,oklch(92.2% 0 0))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-neutral-800,oklch(26.9% 0 0)),var(--color-neutral-200,oklch(92.2% 0 0)))\"\n    },\n    \"color-kumo-canvas\": {\n      \"$value\": \"var(--color-kumo-neutral-1000,oklch(10% 0 0))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-kumo-neutral-25,oklch(98.75% 0 0)),var(--color-kumo-neutral-1000,oklch(10% 0 0)))\"\n    },\n    \"color-kumo-elevated\": {\n      \"$value\": \"var(--color-kumo-neutral-975,oklch(12% 0 0))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-kumo-neutral-75,oklch(98% 0 0)),var(--color-kumo-neutral-975,oklch(12% 0 0)))\"\n    },\n    \"color-kumo-recessed\": {\n      \"$value\": \"var(--color-kumo-neutral-950,oklch(15% 0 0))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-kumo-neutral-125,oklch(96% 0 0)),var(--color-kumo-neutral-950,oklch(15% 0 0)))\"\n    },\n    \"color-kumo-base\": {\n      \"$value\": \"var(--color-kumo-neutral-925,oklch(17% 0 0))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-white,#fff),var(--color-kumo-neutral-925,oklch(17% 0 0)))\"\n    },\n    \"color-kumo-tint\": {\n      \"$value\": \"var(--color-kumo-neutral-800,oklch(26.9% 0 0))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-neutral-100,oklch(97% 0 0)),var(--color-kumo-neutral-800,oklch(26.9% 0 0)))\"\n    },\n    \"color-kumo-contrast\": {\n      \"$value\": \"var(--color-kumo-neutral-25,oklch(98.5% 0 0))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-kumo-neutral-975,oklch(8.5% 0 0)),var(--color-kumo-neutral-25,oklch(98.5% 0 0)))\"\n    },\n    \"color-kumo-overlay\": {\n      \"$value\": \"var(--color-neutral-800,oklch(26.9% 0 0))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-kumo-neutral-50,oklch(97.5% 0 0)),var(--color-neutral-800,oklch(26.9% 0 0)))\"\n    },\n    \"color-kumo-control\": {\n      \"$value\": \"var(--color-neutral-900,oklch(21% .006 285.885))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-white,#fff),var(--color-neutral-900,oklch(21% .006 285.885)))\"\n    },\n    \"color-kumo-interact\": {\n      \"$value\": \"var(--color-neutral-700,oklch(37.1% 0 0))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-neutral-300,oklch(87% 0 0)),var(--color-neutral-700,oklch(37.1% 0 0)))\"\n    },\n    \"color-kumo-fill\": {\n      \"$value\": \"var(--color-neutral-800,oklch(26.9% 0 0))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-neutral-200,oklch(92.2% 0 0)),var(--color-neutral-800,oklch(26.9% 0 0)))\"\n    },\n    \"color-kumo-fill-hover\": {\n      \"$value\": \"var(--color-neutral-800,oklch(37.1% 0 0))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-kumo-neutral-125,oklch(96.5% 0 0)),var(--color-neutral-800,oklch(37.1% 0 0)))\"\n    },\n    \"color-kumo-brand\": {\n      \"$value\": \"oklch(57.72% .2324 260)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: var(--color-accent-100)\"\n    },\n    \"color-kumo-brand-hover\": {\n      \"$value\": \"var(--color-blue-700,oklch(48.8% .243 264.376))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--color-accent-200)\"\n    },\n    \"color-kumo-line\": {\n      \"$value\": \"var(--color-kumo-neutral-750,oklch(32% 0 0))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(oklch(14.5% 0 0/.1),var(--color-kumo-neutral-750,oklch(32% 0 0)))\"\n    },\n    \"color-kumo-hairline\": {\n      \"$value\": \"var(--color-neutral-800,oklch(26.9% 0 0))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-kumo-neutral-150,oklch(93.5% 0 0)),var(--color-neutral-800,oklch(26.9% 0 0)))\"\n    },\n    \"color-kumo-tip-shadow\": {\n      \"$value\": \"transparent\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-gray-200,oklch(92.8% .006 264.531)),transparent)\"\n    },\n    \"color-kumo-tip-stroke\": {\n      \"$value\": \"var(--color-neutral-800,oklch(26.9% 0 0))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(transparent,var(--color-neutral-800,oklch(26.9% 0 0)))\"\n    },\n    \"color-kumo-info-tint\": {\n      \"$value\": \"var(--color-blue-900,oklch(37.9% .146 265.522))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-blue-100,oklch(93.2% .032 255.585)),var(--color-blue-900,oklch(37.9% .146 265.522)))\"\n    },\n    \"color-kumo-info\": {\n      \"$value\": \"var(--color-blue-900,oklch(37.9% .146 265.522))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-blue-300,oklch(80.9% .105 251.813)),var(--color-blue-900,oklch(37.9% .146 265.522)))\"\n    },\n    \"color-kumo-warning-tint\": {\n      \"$value\": \"var(--color-yellow-700,oklch(55.4% .135 66.442))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-yellow-100,oklch(97.3% .071 103.193)),var(--color-yellow-700,oklch(55.4% .135 66.442)))\"\n    },\n    \"color-kumo-warning\": {\n      \"$value\": \"var(--color-yellow-900,oklch(42.1% .095 57.708))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-yellow-300,oklch(90.5% .182 98.111)),var(--color-yellow-900,oklch(42.1% .095 57.708)))\"\n    },\n    \"color-kumo-danger-tint\": {\n      \"$value\": \"var(--color-red-900,oklch(39.6% .141 25.723))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-red-100,oklch(93.6% .032 17.717)),var(--color-red-900,oklch(39.6% .141 25.723)))\"\n    },\n    \"color-kumo-danger\": {\n      \"$value\": \"var(--color-red-900,oklch(39.6% .141 25.723))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-red-500,oklch(63.7% .237 25.331)),var(--color-red-900,oklch(39.6% .141 25.723)))\"\n    },\n    \"color-kumo-success-tint\": {\n      \"$value\": \"var(--color-emerald-900,oklch(37.8% .077 168.94))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-emerald-100,oklch(95% .052 163.051)),var(--color-emerald-900,oklch(37.8% .077 168.94)))\"\n    },\n    \"color-kumo-success\": {\n      \"$value\": \"var(--color-green-900,oklch(39.3% .095 152.535))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-green-300,oklch(87.1% .15 154.449)),var(--color-green-900,oklch(39.3% .095 152.535)))\"\n    },\n    \"color-kumo-badge-red\": {\n      \"$value\": \"var(--color-red-700,oklch(50.5% .213 27.518))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-red-600,oklch(57.7% .245 27.325)),var(--color-red-700,oklch(50.5% .213 27.518)))\"\n    },\n    \"color-kumo-badge-orange\": {\n      \"$value\": \"var(--color-orange-650,oklch(81.5% .197 76))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-orange-650,oklch(81.5% .197 76)),var(--color-orange-650,oklch(81.5% .197 76)))\"\n    },\n    \"color-kumo-badge-orange-subtle\": {\n      \"$value\": \"var(--color-orange-900,oklch(40.8% .123 38.172))\",\n      \"$type\": \"string\"\n    },\n    \"color-kumo-badge-purple\": {\n      \"$value\": \"var(--color-purple-700,oklch(50.8% .118 165.612))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-purple-600,oklch(60% .118 184.704)),var(--color-purple-700,oklch(50.8% .118 165.612)))\"\n    },\n    \"color-kumo-badge-green\": {\n      \"$value\": \"var(--color-emerald-700,oklch(50.8% .118 165.612))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-emerald-700,oklch(50.8% .118 165.612)),var(--color-emerald-700,oklch(50.8% .118 165.612)))\"\n    },\n    \"color-kumo-badge-teal\": {\n      \"$value\": \"var(--color-teal-700,oklch(51.1% .096 186.391))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-teal-650,oklch(54.9% .096 184.565)),var(--color-teal-700,oklch(51.1% .096 186.391)))\"\n    },\n    \"color-kumo-badge-teal-subtle\": {\n      \"$value\": \"var(--color-teal-900,oklch(38.6% .063 188.416))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-teal-100,oklch(95.3% .051 180.801)),var(--color-teal-900,oklch(38.6% .063 188.416)))\"\n    },\n    \"color-kumo-badge-blue\": {\n      \"$value\": \"var(--color-blue-700,oklch(48.8% .243 264.376))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-blue-600,oklch(54.6% .245 262.881)),var(--color-blue-700,oklch(48.8% .243 264.376)))\"\n    },\n    \"color-kumo-badge-neutral\": {\n      \"$value\": \"var(--color-neutral-600,oklch(43.9% 0 0))\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-neutral-600,oklch(43.9% 0 0)),var(--color-neutral-600,oklch(43.9% 0 0)))\"\n    },\n    \"color-kumo-badge-inverted\": {\n      \"$value\": \"var(--color-white,#fff)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: light-dark(var(--color-neutral-950,oklch(14.5% 0 0)),var(--color-white,#fff))\"\n    },\n    \"tw-shadow\": {\n      \"$value\": \"0 16px 40px -12px var(--tw-shadow-color,#000000a6)\",\n      \"$type\": \"string\"\n    },\n    \"tw-shadow-color\": {\n      \"$value\": \"#00000040\",\n      \"$type\": \"color\"\n    },\n    \"tw-ring-color\": {\n      \"$value\": \"var(--color-blue-500)\",\n      \"$type\": \"string\"\n    },\n    \"rdp-accent-color\": {\n      \"$value\": \"oklch(97% 0 0)\",\n      \"$type\": \"color\"\n    },\n    \"rdp-accent-background-color\": {\n      \"$value\": \"oklch(35% 0 0)\",\n      \"$type\": \"color\"\n    },\n    \"rdp-range_middle-background-color\": {\n      \"$value\": \"oklch(28% 0 0)\",\n      \"$type\": \"color\"\n    },\n    \"rdp-range_middle-color\": {\n      \"$value\": \"oklch(97% 0 0)\",\n      \"$type\": \"color\"\n    }\n  }\n}"
+ },
+ "raw": {
+  "tokens": {
+   "title": "Cloudflare: Build for the agent era",
+   "description": "Welcome to Cloudflare - Powering the next generation of applications",
+   "themeGuess": "light-leaning",
+   "darkWeight": 168,
+   "lightWeight": 278,
+   "neutrals": [
+    {
+     "hex": "#ffffff",
+     "count": 213
+    },
+    {
+     "hex": "#f0f0f0",
+     "count": 65
+    },
+    {
+     "hex": "#b4b4b4",
+     "count": 7
+    },
+    {
+     "hex": "#a0a0a0",
+     "count": 6
+    },
+    {
+     "hex": "#8c8c8c",
+     "count": 12
+    },
+    {
+     "hex": "#737373",
+     "count": 5
+    },
+    {
+     "hex": "#262626",
+     "count": 81
+    },
+    {
+     "hex": "#171717",
+     "count": 30
+    },
+    {
+     "hex": "#000000",
+     "count": 52
+    }
+   ],
+   "accents": [
+    {
+     "hex": "#ff5e1f",
+     "count": 95
+    },
+    {
+     "hex": "#ff4801",
+     "count": 70
+    },
+    {
+     "hex": "#fb2c36",
+     "count": 25
+    },
+    {
+     "hex": "#fcbb00",
+     "count": 12
+    },
+    {
+     "hex": "#f0e3de",
+     "count": 10
+    },
+    {
+     "hex": "#f99c00",
+     "count": 9
+    },
+    {
+     "hex": "#ff6568",
+     "count": 9
+    },
+    {
+     "hex": "#ff7038",
+     "count": 8
+    },
+    {
+     "hex": "#3080ff",
+     "count": 8
+    },
+    {
+     "hex": "#00bb7f",
+     "count": 8
+    },
+    {
+     "hex": "#0a95ff",
+     "count": 7
+    },
+    {
+     "hex": "#e9d1bb",
+     "count": 7
+    }
+   ],
+   "modern": [
+    "oklch(21% .006 285.885)",
+    "oklch(97% 0 0)",
+    "oklch(20.5% 0 0)",
+    "oklch(43.9% 0 0)",
+    "oklch(70.8% 0 0)",
+    "oklch(55.6% 0 0)",
+    "oklch(42.4% .199 265.638)",
+    "oklch(70.7% .165 254.624)",
+    "oklch(43.2% .095 166.913)",
+    "oklch(90.5% .093 164.15)",
+    "oklch(50.5% .213 27.518)",
+    "oklch(70.4% .191 22.216)",
+    "oklch(47.6% .114 61.907)",
+    "oklch(85.2% .199 91.936)",
+    "oklch(43.7% .078 188.216)",
+    "oklch(91% .096 180.426)",
+    "oklch(26.9% 0 0)",
+    "oklch(92.2% 0 0)",
+    "oklch(98.75% 0 0)",
+    "oklch(10% 0 0)"
+   ],
+   "fonts": [
+    {
+     "name": "STK Bureau Sans",
+     "count": 3
+    },
+    {
+     "name": "FT Kunst Grotesk",
+     "count": 2
+    },
+    {
+     "name": "Apercu Mono Pro",
+     "count": 1
+    }
+   ],
+   "fontSizes": [
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    14.8,
+    15,
+    15.6,
+    16,
+    20,
+    24
+   ],
+   "fontWeights": [
+    {
+     "value": 400,
+     "count": 8
+    },
+    {
+     "value": 500,
+     "count": 24
+    },
+    {
+     "value": 600,
+     "count": 3
+    },
+    {
+     "value": 700,
+     "count": 2
+    }
+   ],
+   "lineHeights": [
+    1,
+    1.1,
+    1.2,
+    1.25,
+    1.28,
+    1.3,
+    1.4,
+    1.5
+   ],
+   "letterSpacings": [
+    "-.04em",
+    "-.035em",
+    "-.02em",
+    "-.01em",
+    ".01em",
+    ".2em"
+   ],
+   "spacing": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    10,
+    12,
+    16,
+    20,
+    24
+   ],
+   "radii": [
+    {
+     "value": ".25rem",
+     "count": 9
+    },
+    {
+     "value": "0px",
+     "count": 6
+    },
+    {
+     "value": "10px",
+     "count": 4
+    },
+    {
+     "value": ".375rem",
+     "count": 3
+    },
+    {
+     "value": "2px",
+     "count": 3
+    },
+    {
+     "value": "50%",
+     "count": 2
+    }
+   ],
+   "shadows": [
+    {
+     "value": "inset 0 0 9px 1px rgba(0, 0, 0, 0.14)",
+     "count": 1,
+     "blur": 0
+    }
+   ],
+   "breakpoints": [
+    640,
+    767,
+    768,
+    1024,
+    1280,
+    1536
+   ],
+   "nativeVars": [
+    {
+     "name": "text-color-kumo-default",
+     "value": "light-dark(var(--color-neutral-900,oklch(21% .006 285.885)),var(--color-neutral-100,oklch(97% 0 0)))"
+    },
+    {
+     "name": "text-color-kumo-inverse",
+     "value": "light-dark(var(--color-neutral-100,oklch(97% 0 0)),var(--color-neutral-900,oklch(20.5% 0 0)))"
+    },
+    {
+     "name": "text-color-kumo-strong",
+     "value": "light-dark(var(--color-neutral-600,oklch(43.9% 0 0)),var(--color-neutral-400,oklch(70.8% 0 0)))"
+    },
+    {
+     "name": "text-color-kumo-subtle",
+     "value": "light-dark(var(--color-neutral-500,oklch(55.6% 0 0)),var(--color-neutral-400,oklch(70.8% 0 0)))"
+    },
+    {
+     "name": "text-color-kumo-inactive",
+     "value": "light-dark(var(--color-neutral-400,oklch(70.8% 0 0)),var(--color-neutral-600,oklch(70.8% 0 0)))"
+    },
+    {
+     "name": "text-color-kumo-placeholder",
+     "value": "light-dark(var(--color-neutral-400,oklch(70.8% 0 0)),var(--color-neutral-500,oklch(55.6% 0 0)))"
+    },
+    {
+     "name": "text-color-kumo-brand",
+     "value": "var(--color-kumo-brand)"
+    },
+    {
+     "name": "text-color-kumo-link",
+     "value": "light-dark(var(--color-blue-800,oklch(42.4% .199 265.638)),var(--color-blue-400,oklch(70.7% .165 254.624)))"
+    },
+    {
+     "name": "text-color-kumo-info",
+     "value": "light-dark(var(--color-blue-800,oklch(42.4% .199 265.638)),var(--color-blue-400,oklch(70.7% .165 254.624)))"
+    },
+    {
+     "name": "text-color-kumo-success",
+     "value": "light-dark(var(--color-emerald-800,oklch(43.2% .095 166.913)),var(--color-emerald-200,oklch(90.5% .093 164.15)))"
+    },
+    {
+     "name": "text-color-kumo-danger",
+     "value": "light-dark(var(--color-red-700,oklch(50.5% .213 27.518)),var(--color-red-400,oklch(70.4% .191 22.216)))"
+    },
+    {
+     "name": "text-color-kumo-warning",
+     "value": "light-dark(var(--color-yellow-800,oklch(47.6% .114 61.907)),var(--color-yellow-400,oklch(85.2% .199 91.936)))"
+    },
+    {
+     "name": "text-color-kumo-badge-teal-subtle",
+     "value": "light-dark(var(--color-teal-800,oklch(43.7% .078 188.216)),var(--color-teal-200,oklch(91% .096 180.426)))"
+    },
+    {
+     "name": "text-color-kumo-badge-neutral-subtle",
+     "value": "light-dark(var(--color-neutral-800,oklch(26.9% 0 0)),var(--color-neutral-200,oklch(92.2% 0 0)))"
+    },
+    {
+     "name": "text-color-kumo-badge-inverted",
+     "value": "light-dark(var(--color-white,#fff),var(--color-black,#000))"
+    },
+    {
+     "name": "color-kumo-canvas",
+     "value": "light-dark(var(--color-kumo-neutral-25,oklch(98.75% 0 0)),var(--color-kumo-neutral-1000,oklch(10% 0 0)))"
+    },
+    {
+     "name": "color-kumo-elevated",
+     "value": "light-dark(var(--color-kumo-neutral-75,oklch(98% 0 0)),var(--color-kumo-neutral-975,oklch(12% 0 0)))"
+    },
+    {
+     "name": "color-kumo-recessed",
+     "value": "light-dark(var(--color-kumo-neutral-125,oklch(96% 0 0)),var(--color-kumo-neutral-950,oklch(15% 0 0)))"
+    },
+    {
+     "name": "color-kumo-base",
+     "value": "light-dark(var(--color-white,#fff),var(--color-kumo-neutral-925,oklch(17% 0 0)))"
+    },
+    {
+     "name": "color-kumo-tint",
+     "value": "light-dark(var(--color-neutral-100,oklch(97% 0 0)),var(--color-kumo-neutral-800,oklch(26.9% 0 0)))"
+    },
+    {
+     "name": "color-kumo-contrast",
+     "value": "light-dark(var(--color-kumo-neutral-975,oklch(8.5% 0 0)),var(--color-kumo-neutral-25,oklch(98.5% 0 0)))"
+    },
+    {
+     "name": "color-kumo-overlay",
+     "value": "light-dark(var(--color-kumo-neutral-50,oklch(97.5% 0 0)),var(--color-neutral-800,oklch(26.9% 0 0)))"
+    },
+    {
+     "name": "color-kumo-control",
+     "value": "light-dark(var(--color-white,#fff),var(--color-neutral-900,oklch(21% .006 285.885)))"
+    },
+    {
+     "name": "color-kumo-interact",
+     "value": "light-dark(var(--color-neutral-300,oklch(87% 0 0)),var(--color-neutral-700,oklch(37.1% 0 0)))"
+    },
+    {
+     "name": "color-kumo-fill",
+     "value": "light-dark(var(--color-neutral-200,oklch(92.2% 0 0)),var(--color-neutral-800,oklch(26.9% 0 0)))"
+    },
+    {
+     "name": "color-kumo-fill-hover",
+     "value": "light-dark(var(--color-kumo-neutral-125,oklch(96.5% 0 0)),var(--color-neutral-800,oklch(37.1% 0 0)))"
+    },
+    {
+     "name": "color-kumo-brand",
+     "value": "var(--color-accent-100)"
+    },
+    {
+     "name": "color-kumo-brand-hover",
+     "value": "var(--color-accent-200)"
+    },
+    {
+     "name": "color-kumo-line",
+     "value": "light-dark(oklch(14.5% 0 0/.1),var(--color-kumo-neutral-750,oklch(32% 0 0)))"
+    },
+    {
+     "name": "color-kumo-hairline",
+     "value": "light-dark(var(--color-kumo-neutral-150,oklch(93.5% 0 0)),var(--color-neutral-800,oklch(26.9% 0 0)))"
+    },
+    {
+     "name": "color-kumo-shadow-edge",
+     "value": "light-dark(oklch(0% 0 0/.12),oklch(100% 0 0/.1))"
+    },
+    {
+     "name": "color-kumo-shadow-drop",
+     "value": "light-dark(oklch(0% 0 0/.08),oklch(0% 0 0/.3))"
+    },
+    {
+     "name": "color-kumo-tip-shadow",
+     "value": "light-dark(var(--color-gray-200,oklch(92.8% .006 264.531)),transparent)"
+    },
+    {
+     "name": "color-kumo-tip-stroke",
+     "value": "light-dark(transparent,var(--color-neutral-800,oklch(26.9% 0 0)))"
+    },
+    {
+     "name": "color-kumo-info-tint",
+     "value": "light-dark(var(--color-blue-100,oklch(93.2% .032 255.585)),var(--color-blue-900,oklch(37.9% .146 265.522)))"
+    },
+    {
+     "name": "color-kumo-info",
+     "value": "light-dark(var(--color-blue-300,oklch(80.9% .105 251.813)),var(--color-blue-900,oklch(37.9% .146 265.522)))"
+    },
+    {
+     "name": "color-kumo-warning-tint",
+     "value": "light-dark(var(--color-yellow-100,oklch(97.3% .071 103.193)),var(--color-yellow-700,oklch(55.4% .135 66.442)))"
+    },
+    {
+     "name": "color-kumo-warning",
+     "value": "light-dark(var(--color-yellow-300,oklch(90.5% .182 98.111)),var(--color-yellow-900,oklch(42.1% .095 57.708)))"
+    },
+    {
+     "name": "color-kumo-danger-tint",
+     "value": "light-dark(var(--color-red-100,oklch(93.6% .032 17.717)),var(--color-red-900,oklch(39.6% .141 25.723)))"
+    },
+    {
+     "name": "color-kumo-danger",
+     "value": "light-dark(var(--color-red-500,oklch(63.7% .237 25.331)),var(--color-red-900,oklch(39.6% .141 25.723)))"
+    },
+    {
+     "name": "color-kumo-success-tint",
+     "value": "light-dark(var(--color-emerald-100,oklch(95% .052 163.051)),var(--color-emerald-900,oklch(37.8% .077 168.94)))"
+    },
+    {
+     "name": "color-kumo-success",
+     "value": "light-dark(var(--color-green-300,oklch(87.1% .15 154.449)),var(--color-green-900,oklch(39.3% .095 152.535)))"
+    },
+    {
+     "name": "color-kumo-badge-red",
+     "value": "light-dark(var(--color-red-600,oklch(57.7% .245 27.325)),var(--color-red-700,oklch(50.5% .213 27.518)))"
+    },
+    {
+     "name": "color-kumo-badge-orange",
+     "value": "light-dark(var(--color-orange-650,oklch(81.5% .197 76)),var(--color-orange-650,oklch(81.5% .197 76)))"
+    },
+    {
+     "name": "color-kumo-badge-purple",
+     "value": "light-dark(var(--color-purple-600,oklch(60% .118 184.704)),var(--color-purple-700,oklch(50.8% .118 165.612)))"
+    },
+    {
+     "name": "color-kumo-badge-green",
+     "value": "light-dark(var(--color-emerald-700,oklch(50.8% .118 165.612)),var(--color-emerald-700,oklch(50.8% .118 165.612)))"
+    },
+    {
+     "name": "color-kumo-badge-teal",
+     "value": "light-dark(var(--color-teal-650,oklch(54.9% .096 184.565)),var(--color-teal-700,oklch(51.1% .096 186.391)))"
+    },
+    {
+     "name": "color-kumo-badge-teal-subtle",
+     "value": "light-dark(var(--color-teal-100,oklch(95.3% .051 180.801)),var(--color-teal-900,oklch(38.6% .063 188.416)))"
+    },
+    {
+     "name": "color-kumo-badge-blue",
+     "value": "light-dark(var(--color-blue-600,oklch(54.6% .245 262.881)),var(--color-blue-700,oklch(48.8% .243 264.376)))"
+    },
+    {
+     "name": "color-kumo-badge-neutral",
+     "value": "light-dark(var(--color-neutral-600,oklch(43.9% 0 0)),var(--color-neutral-600,oklch(43.9% 0 0)))"
+    },
+    {
+     "name": "color-kumo-badge-inverted",
+     "value": "light-dark(var(--color-neutral-950,oklch(14.5% 0 0)),var(--color-white,#fff))"
+    },
+    {
+     "name": "text-xs",
+     "value": "12px"
+    },
+    {
+     "name": "text-xs--line-height",
+     "value": "calc(1 / .75)"
+    },
+    {
+     "name": "text-sm",
+     "value": "13px"
+    },
+    {
+     "name": "text-sm--line-height",
+     "value": "calc(1 / .85)"
+    },
+    {
+     "name": "text-base",
+     "value": "14px"
+    },
+    {
+     "name": "text-base--line-height",
+     "value": "calc(1.25 / .875)"
+    },
+    {
+     "name": "text-lg",
+     "value": "16px"
+    },
+    {
+     "name": "text-lg--line-height",
+     "value": "1.25"
+    },
+    {
+     "name": "color-blue-400",
+     "value": "oklch(70.7% .165 254.624)"
+    },
+    {
+     "name": "color-blue-800",
+     "value": "oklch(42.4% .199 265.638)"
+    },
+    {
+     "name": "color-orange-650",
+     "value": "oklch(81.5% .197 76)"
+    },
+    {
+     "name": "color-teal-650",
+     "value": "oklch(54.9% .096 184.565)"
+    },
+    {
+     "name": "color-kumo-neutral-50",
+     "value": "oklch(98.75% 0 0)"
+    },
+    {
+     "name": "color-kumo-neutral-75",
+     "value": "oklch(98% 0 0)"
+    },
+    {
+     "name": "color-kumo-neutral-125",
+     "value": "oklch(96.5% 0 0)"
+    },
+    {
+     "name": "color-kumo-neutral-750",
+     "value": "oklch(32% 0 0)"
+    },
+    {
+     "name": "color-kumo-neutral-925",
+     "value": "oklch(17% 0 0)"
+    },
+    {
+     "name": "color-kumo-neutral-950",
+     "value": "oklch(15% 0 0)"
+    },
+    {
+     "name": "color-kumo-neutral-975",
+     "value": "oklch(12% 0 0)"
+    },
+    {
+     "name": "color-kumo-neutral-1000",
+     "value": "oklch(10% 0 0)"
+    },
+    {
+     "name": "default-transition-duration",
+     "value": ".1s"
+    },
+    {
+     "name": "animate-refresh",
+     "value": "refresh .5s ease-in-out infinite"
+    },
+    {
+     "name": "font-sans",
+     "value": "\"FT Kunst Grotesk\", sans-serif"
+    },
+    {
+     "name": "font-mono",
+     "value": "\"Apercu Mono Pro\", monospace"
+    },
+    {
+     "name": "color-red-50",
+     "value": "oklch(97.1% .013 17.38)"
+    },
+    {
+     "name": "color-red-100",
+     "value": "oklch(93.6% .032 17.717)"
+    },
+    {
+     "name": "color-red-200",
+     "value": "oklch(88.5% .062 18.334)"
+    },
+    {
+     "name": "color-red-300",
+     "value": "oklch(80.8% .114 19.571)"
+    },
+    {
+     "name": "color-red-400",
+     "value": "oklch(70.4% .191 22.216)"
+    },
+    {
+     "name": "color-red-500",
+     "value": "oklch(63.7% .237 25.331)"
+    },
+    {
+     "name": "color-red-600",
+     "value": "oklch(57.7% .245 27.325)"
+    },
+    {
+     "name": "color-red-700",
+     "value": "oklch(50.5% .213 27.518)"
+    },
+    {
+     "name": "color-red-800",
+     "value": "oklch(44.4% .177 26.899)"
+    },
+    {
+     "name": "color-red-900",
+     "value": "oklch(39.6% .141 25.723)"
+    },
+    {
+     "name": "color-red-950",
+     "value": "oklch(25.8% .092 26.042)"
+    },
+    {
+     "name": "color-orange-100",
+     "value": "oklch(95.4% .038 75.164)"
+    },
+    {
+     "name": "color-orange-200",
+     "value": "oklch(90.1% .076 70.697)"
+    },
+    {
+     "name": "color-orange-400",
+     "value": "oklch(75% .183 55.934)"
+    },
+    {
+     "name": "color-orange-500",
+     "value": "oklch(70.5% .213 47.604)"
+    },
+    {
+     "name": "color-orange-600",
+     "value": "oklch(64.6% .222 41.116)"
+    },
+    {
+     "name": "color-orange-800",
+     "value": "oklch(47% .157 37.304)"
+    },
+    {
+     "name": "color-orange-900",
+     "value": "oklch(40.8% .123 38.172)"
+    },
+    {
+     "name": "color-amber-100",
+     "value": "oklch(96.2% .059 95.617)"
+    },
+    {
+     "name": "color-amber-200",
+     "value": "oklch(92.4% .12 95.746)"
+    },
+    {
+     "name": "color-amber-300",
+     "value": "oklch(87.9% .169 91.605)"
+    },
+    {
+     "name": "color-amber-400",
+     "value": "oklch(82.8% .189 84.429)"
+    },
+    {
+     "name": "color-amber-500",
+     "value": "oklch(76.9% .188 70.08)"
+    },
+    {
+     "name": "color-amber-600",
+     "value": "oklch(66.6% .179 58.318)"
+    },
+    {
+     "name": "color-amber-700",
+     "value": "oklch(55.5% .163 48.998)"
+    },
+    {
+     "name": "color-amber-800",
+     "value": "oklch(47.3% .137 46.201)"
+    },
+    {
+     "name": "color-amber-950",
+     "value": "oklch(27.9% .077 45.635)"
+    },
+    {
+     "name": "color-yellow-50",
+     "value": "oklch(98.7% .026 102.212)"
+    },
+    {
+     "name": "color-yellow-100",
+     "value": "oklch(97.3% .071 103.193)"
+    },
+    {
+     "name": "color-yellow-300",
+     "value": "oklch(90.5% .182 98.111)"
+    },
+    {
+     "name": "color-yellow-400",
+     "value": "oklch(85.2% .199 91.936)"
+    },
+    {
+     "name": "color-yellow-500",
+     "value": "oklch(79.5% .184 86.047)"
+    },
+    {
+     "name": "color-yellow-600",
+     "value": "oklch(68.1% .162 75.834)"
+    },
+    {
+     "name": "color-yellow-700",
+     "value": "oklch(55.4% .135 66.442)"
+    },
+    {
+     "name": "color-yellow-800",
+     "value": "oklch(47.6% .114 61.907)"
+    },
+    {
+     "name": "color-yellow-900",
+     "value": "oklch(42.1% .095 57.708)"
+    },
+    {
+     "name": "color-green-100",
+     "value": "oklch(96.2% .044 156.743)"
+    },
+    {
+     "name": "color-green-300",
+     "value": "oklch(87.1% .15 154.449)"
+    },
+    {
+     "name": "color-green-400",
+     "value": "oklch(79.2% .209 151.711)"
+    },
+    {
+     "name": "color-green-500",
+     "value": "oklch(72.3% .219 149.579)"
+    },
+    {
+     "name": "color-green-600",
+     "value": "oklch(62.7% .194 149.214)"
+    },
+    {
+     "name": "color-green-800",
+     "value": "oklch(44.8% .119 151.328)"
+    },
+    {
+     "name": "color-green-900",
+     "value": "oklch(39.3% .095 152.535)"
+    },
+    {
+     "name": "color-emerald-100",
+     "value": "oklch(95% .052 163.051)"
+    },
+    {
+     "name": "color-emerald-200",
+     "value": "oklch(90.5% .093 164.15)"
+    }
+   ],
+   "darkVars": [
+    {
+     "name": "text-color-kumo-badge-inverted",
+     "light": "var(--color-white,#fff)",
+     "dark": "var(--color-black,#000)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "color-kumo-shadow-edge",
+     "light": "oklch(0% 0 0/.12)",
+     "dark": "oklch(100% 0 0/.1)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "color-kumo-shadow-drop",
+     "light": "oklch(0% 0 0/.08)",
+     "dark": "oklch(0% 0 0/.3)",
+     "via": "light-dark()"
+    },
+    {
+     "name": "text-color-kumo-default",
+     "light": "light-dark(var(--color-neutral-900,oklch(21% .006 285.885)),var(--color-neutral-100,oklch(97% 0 0)))",
+     "dark": "var(--color-neutral-100,oklch(97% 0 0))",
+     "via": "dark selector"
+    },
+    {
+     "name": "text-color-kumo-inverse",
+     "light": "light-dark(var(--color-neutral-100,oklch(97% 0 0)),var(--color-neutral-900,oklch(20.5% 0 0)))",
+     "dark": "var(--color-neutral-900,oklch(20.5% 0 0))",
+     "via": "dark selector"
+    },
+    {
+     "name": "text-color-kumo-strong",
+     "light": "light-dark(var(--color-neutral-600,oklch(43.9% 0 0)),var(--color-neutral-400,oklch(70.8% 0 0)))",
+     "dark": "var(--color-neutral-400,oklch(70.8% 0 0))",
+     "via": "dark selector"
+    },
+    {
+     "name": "text-color-kumo-subtle",
+     "light": "light-dark(var(--color-neutral-500,oklch(55.6% 0 0)),var(--color-neutral-400,oklch(70.8% 0 0)))",
+     "dark": "var(--color-neutral-400,oklch(70.8% 0 0))",
+     "via": "dark selector"
+    },
+    {
+     "name": "text-color-kumo-inactive",
+     "light": "light-dark(var(--color-neutral-400,oklch(70.8% 0 0)),var(--color-neutral-600,oklch(70.8% 0 0)))",
+     "dark": "var(--color-neutral-600,oklch(70.8% 0 0))",
+     "via": "dark selector"
+    },
+    {
+     "name": "text-color-kumo-placeholder",
+     "light": "light-dark(var(--color-neutral-400,oklch(70.8% 0 0)),var(--color-neutral-500,oklch(55.6% 0 0)))",
+     "dark": "var(--color-neutral-500,oklch(55.6% 0 0))",
+     "via": "dark selector"
+    },
+    {
+     "name": "text-color-kumo-brand",
+     "light": "var(--color-kumo-brand)",
+     "dark": "#f6821f",
+     "via": "dark selector"
+    },
+    {
+     "name": "text-color-kumo-link",
+     "light": "light-dark(var(--color-blue-800,oklch(42.4% .199 265.638)),var(--color-blue-400,oklch(70.7% .165 254.624)))",
+     "dark": "var(--color-blue-400,oklch(70.7% .165 254.624))",
+     "via": "dark selector"
+    },
+    {
+     "name": "text-color-kumo-info",
+     "light": "light-dark(var(--color-blue-800,oklch(42.4% .199 265.638)),var(--color-blue-400,oklch(70.7% .165 254.624)))",
+     "dark": "var(--color-blue-400,oklch(70.7% .165 254.624))",
+     "via": "dark selector"
+    },
+    {
+     "name": "text-color-kumo-success",
+     "light": "light-dark(var(--color-emerald-800,oklch(43.2% .095 166.913)),var(--color-emerald-200,oklch(90.5% .093 164.15)))",
+     "dark": "var(--color-emerald-200,oklch(90.5% .093 164.15))",
+     "via": "dark selector"
+    },
+    {
+     "name": "text-color-kumo-danger",
+     "light": "light-dark(var(--color-red-700,oklch(50.5% .213 27.518)),var(--color-red-400,oklch(70.4% .191 22.216)))",
+     "dark": "var(--color-red-400,oklch(70.4% .191 22.216))",
+     "via": "dark selector"
+    },
+    {
+     "name": "text-color-kumo-warning",
+     "light": "light-dark(var(--color-yellow-800,oklch(47.6% .114 61.907)),var(--color-yellow-400,oklch(85.2% .199 91.936)))",
+     "dark": "var(--color-yellow-400,oklch(85.2% .199 91.936))",
+     "via": "dark selector"
+    },
+    {
+     "name": "text-color-kumo-badge-orange-subtle",
+     "light": null,
+     "dark": "var(--color-orange-200,oklch(90.1% .076 70.697))",
+     "via": "dark selector"
+    },
+    {
+     "name": "text-color-kumo-badge-teal-subtle",
+     "light": "light-dark(var(--color-teal-800,oklch(43.7% .078 188.216)),var(--color-teal-200,oklch(91% .096 180.426)))",
+     "dark": "var(--color-teal-200,oklch(91% .096 180.426))",
+     "via": "dark selector"
+    },
+    {
+     "name": "text-color-kumo-badge-neutral-subtle",
+     "light": "light-dark(var(--color-neutral-800,oklch(26.9% 0 0)),var(--color-neutral-200,oklch(92.2% 0 0)))",
+     "dark": "var(--color-neutral-200,oklch(92.2% 0 0))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-canvas",
+     "light": "light-dark(var(--color-kumo-neutral-25,oklch(98.75% 0 0)),var(--color-kumo-neutral-1000,oklch(10% 0 0)))",
+     "dark": "var(--color-kumo-neutral-1000,oklch(10% 0 0))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-elevated",
+     "light": "light-dark(var(--color-kumo-neutral-75,oklch(98% 0 0)),var(--color-kumo-neutral-975,oklch(12% 0 0)))",
+     "dark": "var(--color-kumo-neutral-975,oklch(12% 0 0))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-recessed",
+     "light": "light-dark(var(--color-kumo-neutral-125,oklch(96% 0 0)),var(--color-kumo-neutral-950,oklch(15% 0 0)))",
+     "dark": "var(--color-kumo-neutral-950,oklch(15% 0 0))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-base",
+     "light": "light-dark(var(--color-white,#fff),var(--color-kumo-neutral-925,oklch(17% 0 0)))",
+     "dark": "var(--color-kumo-neutral-925,oklch(17% 0 0))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-tint",
+     "light": "light-dark(var(--color-neutral-100,oklch(97% 0 0)),var(--color-kumo-neutral-800,oklch(26.9% 0 0)))",
+     "dark": "var(--color-kumo-neutral-800,oklch(26.9% 0 0))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-contrast",
+     "light": "light-dark(var(--color-kumo-neutral-975,oklch(8.5% 0 0)),var(--color-kumo-neutral-25,oklch(98.5% 0 0)))",
+     "dark": "var(--color-kumo-neutral-25,oklch(98.5% 0 0))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-overlay",
+     "light": "light-dark(var(--color-kumo-neutral-50,oklch(97.5% 0 0)),var(--color-neutral-800,oklch(26.9% 0 0)))",
+     "dark": "var(--color-neutral-800,oklch(26.9% 0 0))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-control",
+     "light": "light-dark(var(--color-white,#fff),var(--color-neutral-900,oklch(21% .006 285.885)))",
+     "dark": "var(--color-neutral-900,oklch(21% .006 285.885))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-interact",
+     "light": "light-dark(var(--color-neutral-300,oklch(87% 0 0)),var(--color-neutral-700,oklch(37.1% 0 0)))",
+     "dark": "var(--color-neutral-700,oklch(37.1% 0 0))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-fill",
+     "light": "light-dark(var(--color-neutral-200,oklch(92.2% 0 0)),var(--color-neutral-800,oklch(26.9% 0 0)))",
+     "dark": "var(--color-neutral-800,oklch(26.9% 0 0))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-fill-hover",
+     "light": "light-dark(var(--color-kumo-neutral-125,oklch(96.5% 0 0)),var(--color-neutral-800,oklch(37.1% 0 0)))",
+     "dark": "var(--color-neutral-800,oklch(37.1% 0 0))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-brand",
+     "light": "var(--color-accent-100)",
+     "dark": "oklch(57.72% .2324 260)",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-brand-hover",
+     "light": "var(--color-accent-200)",
+     "dark": "var(--color-blue-700,oklch(48.8% .243 264.376))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-line",
+     "light": "light-dark(oklch(14.5% 0 0/.1),var(--color-kumo-neutral-750,oklch(32% 0 0)))",
+     "dark": "var(--color-kumo-neutral-750,oklch(32% 0 0))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-hairline",
+     "light": "light-dark(var(--color-kumo-neutral-150,oklch(93.5% 0 0)),var(--color-neutral-800,oklch(26.9% 0 0)))",
+     "dark": "var(--color-neutral-800,oklch(26.9% 0 0))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-tip-shadow",
+     "light": "light-dark(var(--color-gray-200,oklch(92.8% .006 264.531)),transparent)",
+     "dark": "transparent",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-tip-stroke",
+     "light": "light-dark(transparent,var(--color-neutral-800,oklch(26.9% 0 0)))",
+     "dark": "var(--color-neutral-800,oklch(26.9% 0 0))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-info-tint",
+     "light": "light-dark(var(--color-blue-100,oklch(93.2% .032 255.585)),var(--color-blue-900,oklch(37.9% .146 265.522)))",
+     "dark": "var(--color-blue-900,oklch(37.9% .146 265.522))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-info",
+     "light": "light-dark(var(--color-blue-300,oklch(80.9% .105 251.813)),var(--color-blue-900,oklch(37.9% .146 265.522)))",
+     "dark": "var(--color-blue-900,oklch(37.9% .146 265.522))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-warning-tint",
+     "light": "light-dark(var(--color-yellow-100,oklch(97.3% .071 103.193)),var(--color-yellow-700,oklch(55.4% .135 66.442)))",
+     "dark": "var(--color-yellow-700,oklch(55.4% .135 66.442))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-warning",
+     "light": "light-dark(var(--color-yellow-300,oklch(90.5% .182 98.111)),var(--color-yellow-900,oklch(42.1% .095 57.708)))",
+     "dark": "var(--color-yellow-900,oklch(42.1% .095 57.708))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-danger-tint",
+     "light": "light-dark(var(--color-red-100,oklch(93.6% .032 17.717)),var(--color-red-900,oklch(39.6% .141 25.723)))",
+     "dark": "var(--color-red-900,oklch(39.6% .141 25.723))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-danger",
+     "light": "light-dark(var(--color-red-500,oklch(63.7% .237 25.331)),var(--color-red-900,oklch(39.6% .141 25.723)))",
+     "dark": "var(--color-red-900,oklch(39.6% .141 25.723))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-success-tint",
+     "light": "light-dark(var(--color-emerald-100,oklch(95% .052 163.051)),var(--color-emerald-900,oklch(37.8% .077 168.94)))",
+     "dark": "var(--color-emerald-900,oklch(37.8% .077 168.94))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-success",
+     "light": "light-dark(var(--color-green-300,oklch(87.1% .15 154.449)),var(--color-green-900,oklch(39.3% .095 152.535)))",
+     "dark": "var(--color-green-900,oklch(39.3% .095 152.535))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-badge-red",
+     "light": "light-dark(var(--color-red-600,oklch(57.7% .245 27.325)),var(--color-red-700,oklch(50.5% .213 27.518)))",
+     "dark": "var(--color-red-700,oklch(50.5% .213 27.518))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-badge-orange",
+     "light": "light-dark(var(--color-orange-650,oklch(81.5% .197 76)),var(--color-orange-650,oklch(81.5% .197 76)))",
+     "dark": "var(--color-orange-650,oklch(81.5% .197 76))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-badge-orange-subtle",
+     "light": null,
+     "dark": "var(--color-orange-900,oklch(40.8% .123 38.172))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-badge-purple",
+     "light": "light-dark(var(--color-purple-600,oklch(60% .118 184.704)),var(--color-purple-700,oklch(50.8% .118 165.612)))",
+     "dark": "var(--color-purple-700,oklch(50.8% .118 165.612))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-badge-green",
+     "light": "light-dark(var(--color-emerald-700,oklch(50.8% .118 165.612)),var(--color-emerald-700,oklch(50.8% .118 165.612)))",
+     "dark": "var(--color-emerald-700,oklch(50.8% .118 165.612))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-badge-teal",
+     "light": "light-dark(var(--color-teal-650,oklch(54.9% .096 184.565)),var(--color-teal-700,oklch(51.1% .096 186.391)))",
+     "dark": "var(--color-teal-700,oklch(51.1% .096 186.391))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-badge-teal-subtle",
+     "light": "light-dark(var(--color-teal-100,oklch(95.3% .051 180.801)),var(--color-teal-900,oklch(38.6% .063 188.416)))",
+     "dark": "var(--color-teal-900,oklch(38.6% .063 188.416))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-badge-blue",
+     "light": "light-dark(var(--color-blue-600,oklch(54.6% .245 262.881)),var(--color-blue-700,oklch(48.8% .243 264.376)))",
+     "dark": "var(--color-blue-700,oklch(48.8% .243 264.376))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-badge-neutral",
+     "light": "light-dark(var(--color-neutral-600,oklch(43.9% 0 0)),var(--color-neutral-600,oklch(43.9% 0 0)))",
+     "dark": "var(--color-neutral-600,oklch(43.9% 0 0))",
+     "via": "dark selector"
+    },
+    {
+     "name": "color-kumo-badge-inverted",
+     "light": "light-dark(var(--color-neutral-950,oklch(14.5% 0 0)),var(--color-white,#fff))",
+     "dark": "var(--color-white,#fff)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-shadow",
+     "light": null,
+     "dark": "0 16px 40px -12px var(--tw-shadow-color,#000000a6)",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-shadow-color",
+     "light": null,
+     "dark": "#00000040",
+     "via": "dark selector"
+    },
+    {
+     "name": "tw-ring-color",
+     "light": null,
+     "dark": "var(--color-blue-500)",
+     "via": "dark selector"
+    },
+    {
+     "name": "rdp-accent-color",
+     "light": null,
+     "dark": "oklch(97% 0 0)",
+     "via": "dark selector"
+    },
+    {
+     "name": "rdp-accent-background-color",
+     "light": null,
+     "dark": "oklch(35% 0 0)",
+     "via": "dark selector"
+    },
+    {
+     "name": "rdp-range_middle-background-color",
+     "light": null,
+     "dark": "oklch(28% 0 0)",
+     "via": "dark selector"
+    },
+    {
+     "name": "rdp-range_middle-color",
+     "light": null,
+     "dark": "oklch(97% 0 0)",
+     "via": "dark selector"
+    }
+   ],
+   "rings": [
+    {
+     "value": "0 0 0 1px #0a0a0a1a,0 1px 2px #0000000d",
+     "count": 1,
+     "blur": 0
+    },
+    {
+     "value": "0 0 0 1px #e5e5e5",
+     "count": 1,
+     "blur": 0
+    }
+   ]
+  },
+  "stylesheets": 3
+ }
+}

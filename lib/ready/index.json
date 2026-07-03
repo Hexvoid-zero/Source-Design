@@ -1,0 +1,438 @@
+[
+ {
+  "slug": "chatgpt",
+  "name": "ChatGPT",
+  "blurb": "AI assistant. Quiet gray canvas, conversation-first restraint, almost no chrome.",
+  "url": "https://chatgpt.com/",
+  "extractedAt": "2026-07-03",
+  "theme": "light-leaning",
+  "chips": [
+   "#ffffff",
+   "#f3f3f3",
+   "#dfdfdf",
+   "#cecece",
+   "#c1c0c0"
+  ],
+  "fonts": [
+   "OpenAI Sans",
+   "OpenDyslexic"
+  ],
+  "tokenCount": 143
+ },
+ {
+  "slug": "vercel",
+  "name": "Vercel",
+  "blurb": "Deployment platform. Monochrome discipline, Geist everywhere, hairline geometry.",
+  "url": "https://vercel.com/",
+  "extractedAt": "2026-07-03",
+  "theme": "light-leaning",
+  "chips": [
+   "#ffffff",
+   "#eaeaea",
+   "#cccccc",
+   "#a0a0a0",
+   "#878787"
+  ],
+  "fonts": [
+   "Geist Mono",
+   "Roboto Mono"
+  ],
+  "tokenCount": 142
+ },
+ {
+  "slug": "supabase",
+  "name": "Supabase",
+  "blurb": "Postgres platform. Dark developer canvas with a single jade-green accent.",
+  "url": "https://supabase.com/",
+  "extractedAt": "2026-07-03",
+  "theme": "light-leaning",
+  "chips": [
+   "#ffffff",
+   "#ededed",
+   "#cccccc",
+   "#b0b0b0",
+   "#a0a0a0"
+  ],
+  "fonts": [
+   "Inter",
+   "Source Code Pro"
+  ],
+  "tokenCount": 143
+ },
+ {
+  "slug": "perplexity",
+  "name": "Perplexity",
+  "blurb": "Answer engine. Deep teal surfaces, serif-touched type, search-box gravity.",
+  "url": "https://www.perplexity.ai/",
+  "extractedAt": "2026-07-03",
+  "theme": "light-leaning",
+  "chips": [
+   "#ffffff",
+   "#d6d5d4",
+   "#9ca3af",
+   "#5f6368",
+   "#333333"
+  ],
+  "fonts": [
+   "Apple SD Gothic Neo",
+   "PingFang SC"
+  ],
+  "tokenCount": 138
+ },
+ {
+  "slug": "huggingface",
+  "name": "Hugging Face",
+  "blurb": "ML hub. Warm yellow mascot accent over utilitarian data-dense lists.",
+  "url": "https://huggingface.co/",
+  "extractedAt": "2026-07-03",
+  "theme": "light-leaning",
+  "chips": [
+   "#ffffff",
+   "#6a7282",
+   "#30363d",
+   "#000000",
+   "#0b0f19"
+  ],
+  "fonts": [
+   "Source Sans Pro",
+   "IBM Plex Mono"
+  ],
+  "tokenCount": 136
+ },
+ {
+  "slug": "midjourney",
+  "name": "Midjourney",
+  "blurb": "Image generation. Near-black gallery walls that let renders carry all color.",
+  "url": "https://www.midjourney.com/",
+  "extractedAt": "2026-07-03",
+  "theme": "dark-leaning",
+  "chips": [
+   "#efefef",
+   "#dddddd",
+   "#cfcfcf",
+   "#bfbfbf",
+   "#abafba"
+  ],
+  "fonts": [
+   "JetBrains Mono",
+   "DM Sans"
+  ],
+  "tokenCount": 142
+ },
+ {
+  "slug": "characterai",
+  "name": "Character.ai",
+  "blurb": "AI characters. Soft rounded chat UI, friendly neutrals, avatar-led rows.",
+  "url": "https://character.ai/",
+  "extractedAt": "2026-07-03",
+  "theme": "light-leaning",
+  "chips": [
+   "#ffffff",
+   "#dadce0",
+   "#c4c7c5",
+   "#8e918f",
+   "#757575"
+  ],
+  "fonts": [
+   "Open Sans",
+   "Google Sans"
+  ],
+  "tokenCount": 66
+ },
+ {
+  "slug": "github",
+  "name": "GitHub",
+  "blurb": "Code hosting. Primer system: dense neutrals, small type, precise borders.",
+  "url": "https://github.com/",
+  "extractedAt": "2026-07-03",
+  "theme": "dark-leaning",
+  "chips": [
+   "#ffffff",
+   "#9198a1",
+   "#818b98",
+   "#59636e",
+   "#3d444d"
+  ],
+  "fonts": [],
+  "tokenCount": 19
+ },
+ {
+  "slug": "netlify",
+  "name": "Netlify",
+  "blurb": "Web platform. Teal-to-blue brand accents on clean white developer marketing.",
+  "url": "https://www.netlify.com/",
+  "extractedAt": "2026-07-03",
+  "theme": "light-leaning",
+  "chips": [
+   "#ffffff",
+   "#d1d5da",
+   "#9da7b2",
+   "#778089",
+   "#6b7280"
+  ],
+  "fonts": [
+   "Martian Mono",
+   "Instrument Sans"
+  ],
+  "tokenCount": 140
+ },
+ {
+  "slug": "cloudflare",
+  "name": "Cloudflare",
+  "blurb": "Edge network. Orange brand anchor, enterprise blues, diagram-heavy sections.",
+  "url": "https://www.cloudflare.com/",
+  "extractedAt": "2026-07-03",
+  "theme": "light-leaning",
+  "chips": [
+   "#ffffff",
+   "#f0f0f0",
+   "#b4b4b4",
+   "#a0a0a0",
+   "#8c8c8c"
+  ],
+  "fonts": [
+   "STK Bureau Sans",
+   "FT Kunst Grotesk"
+  ],
+  "tokenCount": 140
+ },
+ {
+  "slug": "docker",
+  "name": "Docker",
+  "blurb": "Containers. Signature blue, whale-scale product marketing, boxy cards.",
+  "url": "https://www.docker.com/",
+  "extractedAt": "2026-07-03",
+  "theme": "light-leaning",
+  "chips": [
+   "#ffffff",
+   "#949494",
+   "#444444",
+   "#000000",
+   "#2560ff"
+  ],
+  "fonts": [
+   "Inter",
+   "Manrope"
+  ],
+  "tokenCount": 136
+ },
+ {
+  "slug": "postman",
+  "name": "Postman",
+  "blurb": "API platform. Orange on charcoal, workspace UI screenshots front and center.",
+  "url": "https://www.postman.com/",
+  "extractedAt": "2026-07-03",
+  "theme": "light-leaning",
+  "chips": [
+   "#ffffff",
+   "#f2f2f2",
+   "#e6e6e6",
+   "#cfcfcf",
+   "#a6a6a6"
+  ],
+  "fonts": [
+   "inter",
+   "degular"
+  ],
+  "tokenCount": 142
+ },
+ {
+  "slug": "canva",
+  "name": "Canva",
+  "blurb": "Design tool. Cyan-violet brand wash, rounded everything, template-grid energy.",
+  "url": "https://www.canva.com/",
+  "extractedAt": "2026-07-03",
+  "theme": "light-leaning",
+  "chips": [
+   "#ffffff",
+   "#000000",
+   "#0f1015",
+   "#7d2ae8",
+   "#1c2130"
+  ],
+  "fonts": [
+   "Noto Sans",
+   "Canva Sans"
+  ],
+  "tokenCount": 134
+ },
+ {
+  "slug": "dropbox",
+  "name": "Dropbox",
+  "blurb": "File storage. Flat blue on white, generous space, illustration-driven calm.",
+  "url": "https://www.dropbox.com/",
+  "extractedAt": "2026-07-03",
+  "theme": "dark-leaning",
+  "chips": [
+   "#ebe9e6",
+   "#d3cec9",
+   "#bbb5ae",
+   "#8e8b87",
+   "#736c64"
+  ],
+  "fonts": [
+   "SharpGrotesk",
+   "AtlasGrotesk"
+  ],
+  "tokenCount": 141
+ },
+ {
+  "slug": "loom",
+  "name": "Loom",
+  "blurb": "Video messaging. Purple-red gradient accents, soft cards, recorder-first CTAs.",
+  "url": "https://www.loom.com/",
+  "extractedAt": "2026-07-03",
+  "theme": "light-leaning",
+  "chips": [
+   "#ffffff",
+   "#dddee1",
+   "#b7b9be",
+   "#9ca3af",
+   "#8c8f97"
+  ],
+  "fonts": [
+   "Charlie Display",
+   "Charlie Text"
+  ],
+  "tokenCount": 142
+ },
+ {
+  "slug": "duolingo",
+  "name": "Duolingo",
+  "blurb": "Language learning. Feather green, chunky rounded buttons, cartoon confidence.",
+  "url": "https://www.duolingo.com/",
+  "extractedAt": "2026-07-03",
+  "theme": "light-leaning",
+  "chips": [
+   "#ffffff",
+   "#d7d7d7",
+   "#c1c1c1",
+   "#9e9e9e",
+   "#8e918f"
+  ],
+  "fonts": [
+   "KaTeX_Main",
+   "KaTeX_SansSerif"
+  ],
+  "tokenCount": 83
+ },
+ {
+  "slug": "porsche",
+  "name": "Porsche",
+  "blurb": "Sports cars. Black-and-white showroom, full-bleed photography, thin utility type.",
+  "url": "https://www.porsche.com/",
+  "extractedAt": "2026-07-03",
+  "theme": "light-leaning",
+  "chips": [
+   "#ffffff",
+   "#e6e6e6",
+   "#d7d7da",
+   "#cccccc",
+   "#b3b3b3"
+  ],
+  "fonts": [
+   "Porsche Next"
+  ],
+  "tokenCount": 123
+ },
+ {
+  "slug": "rolex",
+  "name": "Rolex",
+  "blurb": "Watchmaking. Deep green heritage, gold restraint, serif authority, slow pacing.",
+  "url": "https://www.rolex.com/",
+  "extractedAt": "2026-07-03",
+  "theme": "light-leaning",
+  "chips": [
+   "#ffffff",
+   "#f3f3f3",
+   "#d4d4d4",
+   "#979797",
+   "#545454"
+  ],
+  "fonts": [
+   "RolexFont-XL",
+   "Helvetica Now Text"
+  ],
+  "tokenCount": 72
+ },
+ {
+  "slug": "sonos",
+  "name": "Sonos",
+  "blurb": "Home audio. Matte monochrome, product photography on tonal fields, quiet type.",
+  "url": "https://www.sonos.com/",
+  "extractedAt": "2026-07-03",
+  "theme": "light-leaning",
+  "chips": [
+   "#ffffff",
+   "#eeeeee",
+   "#e0e0e0",
+   "#cccccc",
+   "#bfbfbf"
+  ],
+  "fonts": [
+   "aktiv-grotesk",
+   "bold"
+  ],
+  "tokenCount": 143
+ },
+ {
+  "slug": "xbox",
+  "name": "Xbox",
+  "blurb": "Gaming. Signature green on carbon, tile grids, hero art from current releases.",
+  "url": "https://www.xbox.com/",
+  "extractedAt": "2026-07-03",
+  "theme": "light-leaning",
+  "chips": [
+   "#ffffff",
+   "#f2f2f2",
+   "#e6e6e6",
+   "#cccccc",
+   "#acacac"
+  ],
+  "fonts": [
+   "Segoe UI",
+   "MWF-MDL2"
+  ],
+  "tokenCount": 114
+ },
+ {
+  "slug": "twitch",
+  "name": "Twitch",
+  "blurb": "Live streaming. Full-commit purple, dark viewer chrome, thumbnail-dense grids.",
+  "url": "https://www.twitch.tv/",
+  "extractedAt": "2026-07-03",
+  "theme": "light-leaning",
+  "chips": [
+   "#ffffff",
+   "#efeff1",
+   "#d9d8dd",
+   "#c8c8d0",
+   "#b7b2a7"
+  ],
+  "fonts": [
+   "Inter",
+   "Roobert"
+  ],
+  "tokenCount": 24
+ },
+ {
+  "slug": "netflix",
+  "name": "Netflix",
+  "blurb": "Streaming. Red-on-black cinema chrome, poster art as the entire layout.",
+  "url": "https://www.netflix.com/",
+  "extractedAt": "2026-07-03",
+  "theme": "light-leaning",
+  "chips": [
+   "#ffffff",
+   "#ececec",
+   "#a9a9a9",
+   "#808080",
+   "#414141"
+  ],
+  "fonts": [
+   "Netflix Sans",
+   "Netflix Sans Variable"
+  ],
+  "tokenCount": 19
+ }
+]

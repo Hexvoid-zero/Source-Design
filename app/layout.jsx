@@ -12,7 +12,7 @@ const mono = JetBrains_Mono({
   variable: "--font-mono-jb",
 });
 
-const SITE = "https://get-design.vercel.app";
+const SITE = "https://source--design.vercel.app";
 
 export const metadata = {
   metadataBase: new URL(SITE),

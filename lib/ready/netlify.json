@@ -1,0 +1,1225 @@
+{
+ "slug": "netlify",
+ "name": "Netlify",
+ "blurb": "Web platform. Teal-to-blue brand accents on clean white developer marketing.",
+ "url": "https://www.netlify.com/",
+ "title": "Push your ideas to the web | Netlify",
+ "extractedAt": "2026-07-03",
+ "summary": {
+  "colors": [
+   {
+    "name": "neutral-50",
+    "hex": "#ffffff",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-200",
+    "hex": "#d1d5da",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-400",
+    "hex": "#9da7b2",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-500",
+    "hex": "#778089",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-600",
+    "hex": "#6b7280",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-700",
+    "hex": "#545a61",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-800",
+    "hex": "#353a3e",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-950",
+    "hex": "#000000",
+    "group": "neutral"
+   },
+   {
+    "name": "deep-cyan",
+    "hex": "#131920",
+    "group": "accent"
+   },
+   {
+    "name": "pale-blue",
+    "hex": "#e5e7eb",
+    "group": "accent"
+   },
+   {
+    "name": "teal",
+    "hex": "#05bdba",
+    "group": "accent"
+   },
+   {
+    "name": "teal-2",
+    "hex": "#14d8d4",
+    "group": "accent"
+   },
+   {
+    "name": "blue",
+    "hex": "#2036a1",
+    "group": "accent"
+   },
+   {
+    "name": "deep-teal",
+    "hex": "#0c2a2a",
+    "group": "accent"
+   },
+   {
+    "name": "blue-2",
+    "hex": "#80abfa",
+    "group": "accent"
+   },
+   {
+    "name": "blue-3",
+    "hex": "#1b205b",
+    "group": "accent"
+   },
+   {
+    "name": "teal-3",
+    "hex": "#30c8c9",
+    "group": "accent"
+   },
+   {
+    "name": "blue-4",
+    "hex": "#183dd1",
+    "group": "accent"
+   },
+   {
+    "name": "pale-teal",
+    "hex": "#d0fffe",
+    "group": "accent"
+   },
+   {
+    "name": "teal-4",
+    "hex": "#26736c",
+    "group": "accent"
+   }
+  ],
+  "fonts": [
+   "Martian Mono",
+   "Instrument Sans",
+   "YouTube Noto",
+   "Figtree"
+  ],
+  "themeGuess": "light-leaning",
+  "stylesheets": 5,
+  "nativeVarCount": 120
+ },
+ "files": {
+  "DESIGN.md": "---\nname: netlify-com-design-system\nsource: https://www.netlify.com/\nextracted: 2026-07-03\ntheme: light  # measured from neutral usage weight\ncolors:  # roles inferred from usage frequency + luminance; names verified against values\n  canvas: \"#ffffff\"\n  ink: \"#000000\"\n  text-muted: \"#6b7280\"\n  surface: \"#d1d5da\"\n  hairline: \"#9da7b2\"\n  accent: \"#131920\"  # deep-cyan\n  accent-2: \"#e5e7eb\"  # pale-blue\n  accent-3: \"#05bdba\"  # teal\nfonts:\n  primary: \"Instrument Sans\"  # medium-confidence: usage counts are close\n  mono: \"Martian Mono\"\n---\n\n# Push your ideas to the web | Netlify — Design System\n\nExtracted from **https://www.netlify.com/** on 2026-07-03.\n\n> Create with AI or code, deploy instantly on production infrastructure. One platform to build and ship.\n\nEvery value below is mined from the site's live CSS (120 native custom properties, ranked usage counts). Role assignments are inferred from usage and luminance and marked as such — treat them as a strong starting point, not gospel.\n\n## Overview\n\nThe system reads as light: measured neutral usage weighs 67 light against 20 dark. The palette is chromatic: 12 saturated values against 8 neutrals, led by deep-cyan (`#131920`). **Instrument Sans** leads the font stack, though usage counts are close — verify against rendered pages before committing. Geometry mixes sharp corners (2px) with full pills.\n\n## Usage rules\n\nDerived from the measured usage below — each rule cites its evidence.\n\n- Chromatic color carries 39% of measured usage — this palette uses color structurally. Saturated values can hold large surfaces here; timidity would misrepresent the source.\n- The theme is light (measured neutral weight 67:20). Don't flip individual sections to the opposite mode.\n- `.25rem` is the workhorse radius (x5); treat the other radii as exceptions, not options.\n- The only shadows are blur-less hairline offsets — this system barely uses elevation; don't add soft drop shadows.\n- `Martian Mono` is the monospace — keep it for code, data, and metadata roles.\n\n## Colors\n\n### Neutrals (light → dark)\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `neutral-50` | `#ffffff` | 66 | **canvas** — lightest neutral, matches the measured light-leaning theme |\n| `neutral-200` | `#d1d5da` | 1 | **surface** — neutral closest to canvas luminance |\n| `neutral-400` | `#9da7b2` | 2 | **hairline** — next neutral near canvas, hairline-border weight |\n| `neutral-500` | `#778089` | 2 | — |\n| `neutral-600` | `#6b7280` | 4 | **text-muted** — most-used mid-luminance neutral |\n| `neutral-700` | `#545a61` | 2 | — |\n| `neutral-800` | `#353a3e` | 3 | — |\n| `neutral-950` | `#000000` | 11 | **ink** — darkest neutral, highest contrast against canvas |\n\n### Accents\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `deep-cyan` | `#131920` | 13 | **accent** — most-used chromatic color |\n| `pale-blue` | `#e5e7eb` | 12 | **accent-2** — supporting chromatic color |\n| `teal` | `#05bdba` | 10 | **accent-3** — supporting chromatic color |\n| `teal-2` | `#14d8d4` | 7 | — |\n| `blue` | `#2036a1` | 4 | — |\n| `deep-teal` | `#0c2a2a` | 2 | — |\n| `blue-2` | `#80abfa` | 2 | — |\n| `blue-3` | `#1b205b` | 2 | — |\n| `teal-3` | `#30c8c9` | 2 | — |\n| `blue-4` | `#183dd1` | 2 | — |\n| `pale-teal` | `#d0fffe` | 2 | — |\n| `teal-4` | `#26736c` | 1 | — |\n\n### Modern color values (kept verbatim)\n\n- `color(srgb .047058823529411764 .16470588235294117 .16470588235294117 / .047058823529411764)`\n- `color(srgb .9294117647058824 .9568627450980393 1)`\n- `color(srgb .803921568627451 .8862745098039215 1)`\n- `color(srgb .7098039215686275 .8235294117647058 .984313725490196)`\n- `color(srgb .611764705882353 .7450980392156863 .9647058823529412)`\n- `color(srgb .5019607843137255 .6705882352941176 .9803921568627451)`\n- `color(srgb .36470588235294116 .5529411764705883 .9607843137254902)`\n- `color(srgb .19215686274509805 .4196078431372549 .9568627450980393)`\n- `color(srgb .1803921568627451 .3176470588235294 .9294117647058824)`\n- `color(srgb .12549019607843137 .21176470588235294 .6313725490196078)`\n- `color(srgb .10588235294117647 .12549019607843137 .3568627450980392)`\n- `color(srgb 0 0 0 / 0)`\n\n### Dark mode\n\nThe source defines 60 dark-mode variants (via prefers-color-scheme). Both halves of the system, first 30:\n\n| Token | Light | Dark |\n| --- | --- | --- |\n| `--start-card-glow-1` | — | `hsla(175, 50%, 30%, .5)` |\n| `--start-card-glow-2` | — | `hsla(195, 40%, 25%, .4)` |\n| `--ntl-active-switcher-tab-bg-color` | `color(srgb .047058823529411764 .16470588235294117 .16470588235294117 / .047058823529411764)` | `color(srgb .047058823529411764 .16470588235294117 .16470588235294117)` |\n| `--ntl-badge-bg-color` | `var(--ntl-neutral-100)` | `var(--ntl-neutral-700)` |\n| `--ntl-badge-border-color` | `var(--ntl-neutral-300)` | `var(--ntl-neutral-600)` |\n| `--ntl-badge-text-color` | `var(--ntl-neutral-500)` | `var(--ntl-neutral-100)` |\n| `--ntl-blockquote-accent-color` | `var(--ntl-blue-700)` | `var(--ntl-teal-200)` |\n| `--ntl-button-outline-bg-color` | `color(srgb 0 0 0 / 0)` | `color(srgb 0 0 0 / 0)` |\n| `--ntl-button-outline-bg-color-hover` | `color(srgb .8392156862745098 .9803921568627451 .9764705882352941)` | `var(--ntl-neutral-500)` |\n| `--ntl-button-outline-stroke-color` | `var(--ntl-neutral-800)` | `var(--ntl-teal-200)` |\n| `--ntl-button-outline-text-color` | `var(--ntl-neutral-800)` | `var(--ntl-teal-200)` |\n| `--ntl-button-primary-bg-color` | `var(--ntl-teal-200)` | `var(--ntl-teal-200)` |\n| `--ntl-button-primary-bg-color-hover` | `var(--ntl-teal-100)` | `var(--ntl-teal-100)` |\n| `--ntl-button-primary-text-color` | `var(--ntl-neutral-800)` | `var(--ntl-neutral-800)` |\n| `--ntl-button-secondary-bg-color` | `color(srgb .047058823529411764 .16470588235294117 .16470588235294117 / .09803921568627451)` | `color(srgb 1 1 1 / .09803921568627451)` |\n| `--ntl-button-secondary-bg-color-hover` | `color(srgb .047058823529411764 .16470588235294117 .16470588235294117 / .14901960784313725)` | `color(srgb .6549019607843137 1 .9921568627450981 / .14901960784313725)` |\n| `--ntl-button-secondary-text-color` | `var(--ntl-neutral-800)` | `var(--ntl-teal-200)` |\n| `--ntl-card-bg-color` | `var(--ntl-neutral-000)` | `var(--ntl-teal-900)` |\n| `--ntl-card-border-color` | `var(--ntl-neutral-200)` | `var(--ntl-teal-900)` |\n| `--ntl-card-border-color-hover` | `var(--ntl-neutral-300)` | `var(--ntl-teal-800)` |\n| `--ntl-code-bg-color` | `var(--ntl-teal-900)` | `var(--ntl-teal-900)` |\n| `--ntl-color-bg` | `var(--ntl-neutral-000)` | `var(--ntl-neutral-800)` |\n| `--ntl-color-bg-2` | `var(--ntl-neutral-100)` | `var(--ntl-neutral-700)` |\n| `--ntl-color-bg-3` | `var(--ntl-neutral-200)` | `var(--ntl-neutral-600)` |\n| `--ntl-color-bg-inverse` | `var(--ntl-neutral-300)` | `var(--ntl-neutral-000)` |\n| `--ntl-color-bg-translucent` | `color(srgb 1 1 1 / .9019607843137255)` | `color(srgb .07058823529411765 .09411764705882353 .12156862745098039 / .9490196078431372)` |\n| `--ntl-color-border-default` | `color(srgb 0 0 0 / .14901960784313725)` | `color(srgb 1 1 1 / .09803921568627451)` |\n| `--ntl-color-border-strong` | `var(--ntl-neutral-300)` | `var(--ntl-neutral-500)` |\n| `--ntl-color-border-subtle` | `color(srgb 0 0 0 / .06274509803921569)` | `color(srgb 1 1 1 / .0392156862745098)` |\n| `--ntl-color-brand-primary` | `var(--ntl-blue-700)` | `var(--ntl-teal-300)` |\n\n`variables.css` ships these as a `prefers-color-scheme: dark` override block.\n\n## Typography\n\n**Instrument Sans** has the most `font-family` declarations, but the margin over the rest is thin — treat the primary-face call as provisional and verify on rendered pages. Full list by usage:\n\n| Family | Usage |\n| --- | --- |\n| Martian Mono | 4 |\n| Instrument Sans | 2 |\n| YouTube Noto | 1 |\n| Figtree | 1 |\n\n**Size scale (px):** `8`, `11.2`, `12`, `12.8`, `14`, `14.4`, `16`, `18`, `20`, `24`\n\n**Weights in use:** `100` (x3), `400` (x2), `500` (x2), `600` (x8), `700` (x5), `800` (x1)\n\n**Line-heights (unitless):** `1`, `1.1`, `1.2`, `1.3`, `1.35`, `1.5`, `1.75`\n\n**Letter-spacing values:** `-.025em`, `.2px`, `.02em`, `.025em`, `.05em`\n\n## Spacing\n\nMost-used values (px): `1`, `2`, `4`, `5`, `8`, `10`, `12`, `14`, `16`, `24`, `32`, `48`\n\n## Border radius\n\n| Token | Value | Usage |\n| --- | --- | --- |\n| `radius-sm` | `2px` | 3 |\n| `radius-md` | `.25rem` | 5 |\n| `radius-lg` | `.375rem` | 2 |\n| `radius-xl` | `.5rem` | 3 |\n| `radius-2xl` | `.75rem` | 1 |\n| `radius-3xl` | `1.3rem` | 1 |\n| `radius-full` | `50%` | 5 |\n\n## Shadows (ordered by blur radius)\n\n- `shadow-sm` — `0 2px 8px #00000026` (x1)\n- `shadow-md` — `0 2px 12px #0000004d` (x1)\n\n## Breakpoints\n\n`480px`, `500px`, `600px`, `640px`, `750px`, `768px`, `1085px`\n\n## Starter recipes\n\nTokens composed into components. The source site's real components were **not** inspected — these are starting points built from the extracted values, with contrast ratios computed rather than assumed.\n\n```css\n.button-primary {\n  background: var(--color-accent); /* #131920 */\n  color: var(--color-canvas); /* #ffffff — contrast 17.7:1 */\n  border-radius: 9999px; /* pill — mined as 50% */\n  font-weight: 500;\n}\n\n.card {\n  background: var(--color-surface); /* #d1d5da */\n  border: 1px solid var(--color-hairline); /* #9da7b2 */\n  border-radius: .25rem; /* most-used finite radius */\n  box-shadow: var(--shadow-sm);\n}\n\n.input {\n  background: var(--color-canvas); /* #ffffff */\n  color: var(--color-ink); /* #000000 — contrast 21.0:1 */\n  border: 1px solid var(--color-hairline); /* #9da7b2 */\n  border-radius: 2px;\n  /* placeholder color: var(--color-text-muted) #6b7280 */\n}\n\n.nav {\n  background: var(--color-canvas); /* #ffffff */\n  border-bottom: 1px solid var(--color-hairline); /* #9da7b2 */\n  color: var(--color-ink); /* #000000 */\n  /* inactive links: var(--color-text-muted) #6b7280 */\n  /* active link: var(--color-accent) #131920 — contrast vs canvas 17.7:1 */\n}\n\n.modal {\n  background: var(--color-surface); /* #d1d5da */\n  border-radius: .25rem;\n  box-shadow: var(--shadow-md); /* largest mined shadow */\n}\n\n.modal-backdrop {\n  background: color-mix(in srgb, var(--color-ink) 55%, transparent); /* scrim from #000000 */\n}\n\n.input-error {\n  /* no red exists in the mined palette — this site does not expose an error color in its CSS. */\n  /* Introduce one deliberately rather than borrowing a random red; keep saturation near the accent's. */\n}\n```\n\n## Observations\n\n- 8 of 20 extracted colors are neutrals.\n- 2 distinct shadows; the softest reaches 0px blur.\n- 7 breakpoints, from 480px to 1085px.\n- The site ships a large native token system (120+ custom properties) — prefer those names when extending it.\n\n## Native CSS custom properties\n\nFirst 40 of 120:\n\n```css\n:root {\n  --font-size-display-2xl: var(--step-5);\n  --ntl-active-switcher-tab-bg-color: color(srgb .047058823529411764 .16470588235294117 .16470588235294117 / .047058823529411764);\n  --ntl-badge-bg-color: var(--ntl-neutral-100);\n  --ntl-badge-border-color: var(--ntl-neutral-300);\n  --ntl-badge-text-color: var(--ntl-neutral-500);\n  --ntl-blockquote-accent-color: var(--ntl-blue-700);\n  --ntl-blue-000: color(srgb .9294117647058824 .9568627450980393 1);\n  --ntl-blue-100: color(srgb .803921568627451 .8862745098039215 1);\n  --ntl-blue-200: color(srgb .7098039215686275 .8235294117647058 .984313725490196);\n  --ntl-blue-300: color(srgb .611764705882353 .7450980392156863 .9647058823529412);\n  --ntl-blue-400: color(srgb .5019607843137255 .6705882352941176 .9803921568627451);\n  --ntl-blue-500: color(srgb .36470588235294116 .5529411764705883 .9607843137254902);\n  --ntl-blue-600: color(srgb .19215686274509805 .4196078431372549 .9568627450980393);\n  --ntl-blue-700: color(srgb .1803921568627451 .3176470588235294 .9294117647058824);\n  --ntl-blue-800: color(srgb .12549019607843137 .21176470588235294 .6313725490196078);\n  --ntl-blue-900: color(srgb .10588235294117647 .12549019607843137 .3568627450980392);\n  --ntl-border-width-base: 1.5px;\n  --ntl-border-width-heavy: 3px;\n  --ntl-border-width-thick: 2px;\n  --ntl-border-width-thin: 1px;\n  --ntl-button-outline-bg-color: color(srgb 0 0 0 / 0);\n  --ntl-button-outline-bg-color-hover: color(srgb .8392156862745098 .9803921568627451 .9764705882352941);\n  --ntl-button-outline-stroke-color: var(--ntl-neutral-800);\n  --ntl-button-outline-text-color: var(--ntl-neutral-800);\n  --ntl-button-primary-bg-color: var(--ntl-teal-200);\n  --ntl-button-primary-bg-color-hover: var(--ntl-teal-100);\n  --ntl-button-primary-text-color: var(--ntl-neutral-800);\n  --ntl-button-secondary-bg-color: color(srgb .047058823529411764 .16470588235294117 .16470588235294117 / .09803921568627451);\n  --ntl-button-secondary-bg-color-hover: color(srgb .047058823529411764 .16470588235294117 .16470588235294117 / .14901960784313725);\n  --ntl-button-secondary-text-color: var(--ntl-neutral-800);\n  --ntl-card-bg-color: var(--ntl-neutral-000);\n  --ntl-card-border-color: var(--ntl-neutral-200);\n  --ntl-card-border-color-hover: var(--ntl-neutral-300);\n  --ntl-code-bg-color: var(--ntl-teal-900);\n  --ntl-color-bg: var(--ntl-neutral-000);\n  --ntl-color-bg-2: var(--ntl-neutral-100);\n  --ntl-color-bg-3: var(--ntl-neutral-200);\n  --ntl-color-bg-inverse: var(--ntl-neutral-300);\n  --ntl-color-bg-translucent: color(srgb 1 1 1 / .9019607843137255);\n  --ntl-color-border-default: color(srgb 0 0 0 / .14901960784313725);\n}\n```\n\n## Files\n\n- `tailwind.css` — Tailwind v4 `@theme` block; tokens become utilities (e.g. `bg-neutral-900`, `text-deep-cyan`).\n- `variables.css` — framework-agnostic `:root` variables, same values.\n- `tokens.json` — W3C Design Tokens format for Figma plugins, Style Dictionary, etc.\n",
+  "tailwind.css": "@import \"tailwindcss\";\n\n@theme {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-200: #d1d5da;\n  --color-neutral-400: #9da7b2;\n  --color-neutral-500: #778089;\n  --color-neutral-600: #6b7280;\n  --color-neutral-700: #545a61;\n  --color-neutral-800: #353a3e;\n  --color-neutral-950: #000000;\n  --color-deep-cyan: #131920;\n  --color-pale-blue: #e5e7eb;\n  --color-teal: #05bdba;\n  --color-teal-2: #14d8d4;\n  --color-blue: #2036a1;\n  --color-deep-teal: #0c2a2a;\n  --color-blue-2: #80abfa;\n  --color-blue-3: #1b205b;\n  --color-teal-3: #30c8c9;\n  --color-blue-4: #183dd1;\n  --color-pale-teal: #d0fffe;\n  --color-teal-4: #26736c;\n\n  /* inferred semantic roles (each maps to a distinct mined value) */\n  --color-canvas: #ffffff;\n  --color-ink: #000000;\n  --color-text-muted: #6b7280;\n  --color-surface: #d1d5da;\n  --color-hairline: #9da7b2;\n  --color-accent: #131920;\n  --color-accent-2: #e5e7eb;\n  --color-accent-3: #05bdba;\n\n  --font-sans: \"Instrument Sans\", ui-sans-serif, system-ui, sans-serif;\n  --font-mono: \"Martian Mono\", ui-monospace, monospace;\n\n  --text-xs: 0.5rem;\n  --text-sm: 0.7rem;\n  --text-base: 0.75rem;\n  --text-lg: 0.8rem;\n  --text-xl: 0.875rem;\n  --text-2xl: 0.9rem;\n  --text-3xl: 1rem;\n  --text-4xl: 1.125rem;\n  --text-5xl: 1.25rem;\n  --text-6xl: 1.5rem;\n\n  --font-weight-thin: 100;\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n  --font-weight-extrabold: 800;\n\n  /* line-heights, sorted tight -> loose */\n  --leading-none: 1;\n  --leading-tight: 1.1;\n  --leading-snug: 1.2;\n  --leading-normal: 1.3;\n  --leading-relaxed: 1.35;\n  --leading-loose: 1.5;\n  --leading-looser: 1.75;\n\n  /* letter-spacing, sorted tight -> wide */\n  --tracking-tightest: -.025em;\n  --tracking-tighter: .2px;\n  --tracking-tight: .02em;\n  --tracking-normal: .025em;\n  --tracking-wide: .05em;\n\n  --radius-sm: 2px;\n  --radius-md: .25rem;\n  --radius-lg: .375rem;\n  --radius-xl: .5rem;\n  --radius-2xl: .75rem;\n  --radius-3xl: 1.3rem;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 2px 8px #00000026;\n  --shadow-md: 0 2px 12px #0000004d;\n\n  --breakpoint-sm: 30rem;\n  --breakpoint-md: 31.25rem;\n  --breakpoint-lg: 37.5rem;\n  --breakpoint-xl: 40rem;\n  --breakpoint-2xl: 46.875rem;\n  --breakpoint-3xl: 48rem;\n  --breakpoint-4xl: 67.8125rem;\n\n  /* most-used spacing values on the source site (px): 1, 2, 4, 5, 8, 10, 12, 14, 16, 24, 32, 48 */\n}\n\n/* dark-mode values mined from the source (native token names) */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --start-card-glow-1: hsla(175, 50%, 30%, .5);\n    --start-card-glow-2: hsla(195, 40%, 25%, .4);\n    --ntl-active-switcher-tab-bg-color: color(srgb .047058823529411764 .16470588235294117 .16470588235294117);\n    --ntl-badge-bg-color: var(--ntl-neutral-700);\n    --ntl-badge-border-color: var(--ntl-neutral-600);\n    --ntl-badge-text-color: var(--ntl-neutral-100);\n    --ntl-blockquote-accent-color: var(--ntl-teal-200);\n    --ntl-button-outline-bg-color: color(srgb 0 0 0 / 0);\n    --ntl-button-outline-bg-color-hover: var(--ntl-neutral-500);\n    --ntl-button-outline-stroke-color: var(--ntl-teal-200);\n    --ntl-button-outline-text-color: var(--ntl-teal-200);\n    --ntl-button-primary-bg-color: var(--ntl-teal-200);\n    --ntl-button-primary-bg-color-hover: var(--ntl-teal-100);\n    --ntl-button-primary-text-color: var(--ntl-neutral-800);\n    --ntl-button-secondary-bg-color: color(srgb 1 1 1 / .09803921568627451);\n    --ntl-button-secondary-bg-color-hover: color(srgb .6549019607843137 1 .9921568627450981 / .14901960784313725);\n    --ntl-button-secondary-text-color: var(--ntl-teal-200);\n    --ntl-card-bg-color: var(--ntl-teal-900);\n    --ntl-card-border-color: var(--ntl-teal-900);\n    --ntl-card-border-color-hover: var(--ntl-teal-800);\n    --ntl-code-bg-color: var(--ntl-teal-900);\n    --ntl-color-bg: var(--ntl-neutral-800);\n    --ntl-color-bg-2: var(--ntl-neutral-700);\n    --ntl-color-bg-3: var(--ntl-neutral-600);\n    --ntl-color-bg-inverse: var(--ntl-neutral-000);\n    --ntl-color-bg-translucent: color(srgb .07058823529411765 .09411764705882353 .12156862745098039 / .9490196078431372);\n    --ntl-color-border-default: color(srgb 1 1 1 / .09803921568627451);\n    --ntl-color-border-strong: var(--ntl-neutral-500);\n    --ntl-color-border-subtle: color(srgb 1 1 1 / .0392156862745098);\n    --ntl-color-brand-primary: var(--ntl-teal-300);\n    --ntl-color-brand-primary-hover: var(--ntl-teal-800);\n    --ntl-color-brand-secondary: var(--ntl-blue-700);\n    --ntl-color-brand-secondary-hover: var(--ntl-blue-800);\n    --ntl-color-disabled-bg: var(--ntl-neutral-600);\n    --ntl-color-disabled-border: var(--ntl-neutral-400);\n    --ntl-color-disabled-text: var(--ntl-neutral-400);\n    --ntl-color-highlight-bg: var(--ntl-purple-200);\n    --ntl-color-highlight-border: var(--ntl-purple-700);\n    --ntl-color-highlight-text: var(--ntl-purple-700);\n    --ntl-color-icon: var(--ntl-teal-200);\n    --ntl-color-info-bg: var(--ntl-blue-200);\n    --ntl-color-info-border: var(--ntl-blue-700);\n    --ntl-color-info-text: var(--ntl-blue-700);\n    --ntl-color-invalid-bg: var(--ntl-red-200);\n    --ntl-color-invalid-border: var(--ntl-red-700);\n    --ntl-color-invalid-text: var(--ntl-red-700);\n    --ntl-color-link: var(--ntl-teal-200);\n    --ntl-color-link-default: var(--ntl-teal-200);\n    --ntl-color-link-hover: var(--ntl-teal-100);\n    --ntl-color-link-inverse: var(--ntl-blue-600);\n    --ntl-color-logo-inactive: color(srgb .2823529411764706 .36470588235294116 .36470588235294116);\n    --ntl-color-logo-spark: var(--ntl-teal-200);\n    --ntl-color-logo-type: var(--ntl-neutral-000);\n    --ntl-color-stroke: color(srgb 1 1 1 / .09803921568627451);\n    --ntl-color-success-bg: var(--ntl-green-200);\n    --ntl-color-success-border: var(--ntl-green-400);\n    --ntl-color-success-text: var(--ntl-green-900);\n    --ntl-color-text: var(--ntl-teal-000);\n    --ntl-color-text-accent: var(--ntl-teal-600);\n    --ntl-color-text-default: var(--ntl-teal-000);\n  }\n}\n",
+  "variables.css": ":root {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-200: #d1d5da;\n  --color-neutral-400: #9da7b2;\n  --color-neutral-500: #778089;\n  --color-neutral-600: #6b7280;\n  --color-neutral-700: #545a61;\n  --color-neutral-800: #353a3e;\n  --color-neutral-950: #000000;\n  --color-deep-cyan: #131920;\n  --color-pale-blue: #e5e7eb;\n  --color-teal: #05bdba;\n  --color-teal-2: #14d8d4;\n  --color-blue: #2036a1;\n  --color-deep-teal: #0c2a2a;\n  --color-blue-2: #80abfa;\n  --color-blue-3: #1b205b;\n  --color-teal-3: #30c8c9;\n  --color-blue-4: #183dd1;\n  --color-pale-teal: #d0fffe;\n  --color-teal-4: #26736c;\n\n  /* inferred semantic roles */\n  --color-canvas: #ffffff;\n  --color-ink: #000000;\n  --color-text-muted: #6b7280;\n  --color-surface: #d1d5da;\n  --color-hairline: #9da7b2;\n  --color-accent: #131920;\n  --color-accent-2: #e5e7eb;\n  --color-accent-3: #05bdba;\n\n  /* typography */\n  --font-martian-mono: \"Martian Mono\";\n  --font-instrument-sans: \"Instrument Sans\";\n  --font-youtube-noto: \"YouTube Noto\";\n  --font-figtree: \"Figtree\";\n\n  /* type scale, ascending */\n  --text-1: 0.5rem;\n  --text-2: 0.7rem;\n  --text-3: 0.75rem;\n  --text-4: 0.8rem;\n  --text-5: 0.875rem;\n  --text-6: 0.9rem;\n  --text-7: 1rem;\n  --text-8: 1.125rem;\n  --text-9: 1.25rem;\n  --text-10: 1.5rem;\n\n  /* font weights in use */\n  --font-weight-thin: 100;\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n  --font-weight-extrabold: 800;\n\n  /* line-heights, tight -> loose */\n  --leading-1: 1;\n  --leading-2: 1.1;\n  --leading-3: 1.2;\n  --leading-4: 1.3;\n  --leading-5: 1.35;\n  --leading-6: 1.5;\n  --leading-7: 1.75;\n\n  /* letter-spacing, tight -> wide */\n  --tracking-1: -.025em;\n  --tracking-2: .2px;\n  --tracking-3: .02em;\n  --tracking-4: .025em;\n  --tracking-5: .05em;\n\n  /* spacing, ascending */\n  --space-1: 1px;\n  --space-2: 2px;\n  --space-3: 4px;\n  --space-4: 5px;\n  --space-5: 8px;\n  --space-6: 10px;\n  --space-7: 12px;\n  --space-8: 14px;\n  --space-9: 16px;\n  --space-10: 24px;\n  --space-11: 32px;\n  --space-12: 48px;\n\n  /* radius, ascending */\n  --radius-sm: 2px;\n  --radius-md: .25rem;\n  --radius-lg: .375rem;\n  --radius-xl: .5rem;\n  --radius-2xl: .75rem;\n  --radius-3xl: 1.3rem;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 2px 8px #00000026;\n  --shadow-md: 0 2px 12px #0000004d;\n}\n\n/* dark-mode values mined from the source (native token names) */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --start-card-glow-1: hsla(175, 50%, 30%, .5);\n    --start-card-glow-2: hsla(195, 40%, 25%, .4);\n    --ntl-active-switcher-tab-bg-color: color(srgb .047058823529411764 .16470588235294117 .16470588235294117);\n    --ntl-badge-bg-color: var(--ntl-neutral-700);\n    --ntl-badge-border-color: var(--ntl-neutral-600);\n    --ntl-badge-text-color: var(--ntl-neutral-100);\n    --ntl-blockquote-accent-color: var(--ntl-teal-200);\n    --ntl-button-outline-bg-color: color(srgb 0 0 0 / 0);\n    --ntl-button-outline-bg-color-hover: var(--ntl-neutral-500);\n    --ntl-button-outline-stroke-color: var(--ntl-teal-200);\n    --ntl-button-outline-text-color: var(--ntl-teal-200);\n    --ntl-button-primary-bg-color: var(--ntl-teal-200);\n    --ntl-button-primary-bg-color-hover: var(--ntl-teal-100);\n    --ntl-button-primary-text-color: var(--ntl-neutral-800);\n    --ntl-button-secondary-bg-color: color(srgb 1 1 1 / .09803921568627451);\n    --ntl-button-secondary-bg-color-hover: color(srgb .6549019607843137 1 .9921568627450981 / .14901960784313725);\n    --ntl-button-secondary-text-color: var(--ntl-teal-200);\n    --ntl-card-bg-color: var(--ntl-teal-900);\n    --ntl-card-border-color: var(--ntl-teal-900);\n    --ntl-card-border-color-hover: var(--ntl-teal-800);\n    --ntl-code-bg-color: var(--ntl-teal-900);\n    --ntl-color-bg: var(--ntl-neutral-800);\n    --ntl-color-bg-2: var(--ntl-neutral-700);\n    --ntl-color-bg-3: var(--ntl-neutral-600);\n    --ntl-color-bg-inverse: var(--ntl-neutral-000);\n    --ntl-color-bg-translucent: color(srgb .07058823529411765 .09411764705882353 .12156862745098039 / .9490196078431372);\n    --ntl-color-border-default: color(srgb 1 1 1 / .09803921568627451);\n    --ntl-color-border-strong: var(--ntl-neutral-500);\n    --ntl-color-border-subtle: color(srgb 1 1 1 / .0392156862745098);\n    --ntl-color-brand-primary: var(--ntl-teal-300);\n    --ntl-color-brand-primary-hover: var(--ntl-teal-800);\n    --ntl-color-brand-secondary: var(--ntl-blue-700);\n    --ntl-color-brand-secondary-hover: var(--ntl-blue-800);\n    --ntl-color-disabled-bg: var(--ntl-neutral-600);\n    --ntl-color-disabled-border: var(--ntl-neutral-400);\n    --ntl-color-disabled-text: var(--ntl-neutral-400);\n    --ntl-color-highlight-bg: var(--ntl-purple-200);\n    --ntl-color-highlight-border: var(--ntl-purple-700);\n    --ntl-color-highlight-text: var(--ntl-purple-700);\n    --ntl-color-icon: var(--ntl-teal-200);\n    --ntl-color-info-bg: var(--ntl-blue-200);\n    --ntl-color-info-border: var(--ntl-blue-700);\n    --ntl-color-info-text: var(--ntl-blue-700);\n    --ntl-color-invalid-bg: var(--ntl-red-200);\n    --ntl-color-invalid-border: var(--ntl-red-700);\n    --ntl-color-invalid-text: var(--ntl-red-700);\n    --ntl-color-link: var(--ntl-teal-200);\n    --ntl-color-link-default: var(--ntl-teal-200);\n    --ntl-color-link-hover: var(--ntl-teal-100);\n    --ntl-color-link-inverse: var(--ntl-blue-600);\n    --ntl-color-logo-inactive: color(srgb .2823529411764706 .36470588235294116 .36470588235294116);\n    --ntl-color-logo-spark: var(--ntl-teal-200);\n    --ntl-color-logo-type: var(--ntl-neutral-000);\n    --ntl-color-stroke: color(srgb 1 1 1 / .09803921568627451);\n    --ntl-color-success-bg: var(--ntl-green-200);\n    --ntl-color-success-border: var(--ntl-green-400);\n    --ntl-color-success-text: var(--ntl-green-900);\n    --ntl-color-text: var(--ntl-teal-000);\n    --ntl-color-text-accent: var(--ntl-teal-600);\n    --ntl-color-text-default: var(--ntl-teal-000);\n  }\n}\n",
+  "tokens.json": "{\n  \"$description\": \"Design tokens extracted from https://www.netlify.com/. Semantic entries are inferred from usage + luminance; all values are mined from live CSS.\",\n  \"color\": {\n    \"neutral-50\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\"\n    },\n    \"neutral-200\": {\n      \"$value\": \"#d1d5da\",\n      \"$type\": \"color\"\n    },\n    \"neutral-400\": {\n      \"$value\": \"#9da7b2\",\n      \"$type\": \"color\"\n    },\n    \"neutral-500\": {\n      \"$value\": \"#778089\",\n      \"$type\": \"color\"\n    },\n    \"neutral-600\": {\n      \"$value\": \"#6b7280\",\n      \"$type\": \"color\"\n    },\n    \"neutral-700\": {\n      \"$value\": \"#545a61\",\n      \"$type\": \"color\"\n    },\n    \"neutral-800\": {\n      \"$value\": \"#353a3e\",\n      \"$type\": \"color\"\n    },\n    \"neutral-950\": {\n      \"$value\": \"#000000\",\n      \"$type\": \"color\"\n    },\n    \"deep-cyan\": {\n      \"$value\": \"#131920\",\n      \"$type\": \"color\"\n    },\n    \"pale-blue\": {\n      \"$value\": \"#e5e7eb\",\n      \"$type\": \"color\"\n    },\n    \"teal\": {\n      \"$value\": \"#05bdba\",\n      \"$type\": \"color\"\n    },\n    \"teal-2\": {\n      \"$value\": \"#14d8d4\",\n      \"$type\": \"color\"\n    },\n    \"blue\": {\n      \"$value\": \"#2036a1\",\n      \"$type\": \"color\"\n    },\n    \"deep-teal\": {\n      \"$value\": \"#0c2a2a\",\n      \"$type\": \"color\"\n    },\n    \"blue-2\": {\n      \"$value\": \"#80abfa\",\n      \"$type\": \"color\"\n    },\n    \"blue-3\": {\n      \"$value\": \"#1b205b\",\n      \"$type\": \"color\"\n    },\n    \"teal-3\": {\n      \"$value\": \"#30c8c9\",\n      \"$type\": \"color\"\n    },\n    \"blue-4\": {\n      \"$value\": \"#183dd1\",\n      \"$type\": \"color\"\n    },\n    \"pale-teal\": {\n      \"$value\": \"#d0fffe\",\n      \"$type\": \"color\"\n    },\n    \"teal-4\": {\n      \"$value\": \"#26736c\",\n      \"$type\": \"color\"\n    }\n  },\n  \"semantic\": {\n    \"canvas\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: lightest neutral, matches the measured light-leaning theme\"\n    },\n    \"ink\": {\n      \"$value\": \"#000000\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: darkest neutral, highest contrast against canvas\"\n    },\n    \"text-muted\": {\n      \"$value\": \"#6b7280\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used mid-luminance neutral\"\n    },\n    \"surface\": {\n      \"$value\": \"#d1d5da\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: neutral closest to canvas luminance\"\n    },\n    \"hairline\": {\n      \"$value\": \"#9da7b2\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: next neutral near canvas, hairline-border weight\"\n    },\n    \"accent\": {\n      \"$value\": \"#131920\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used chromatic color\"\n    },\n    \"accent-2\": {\n      \"$value\": \"#e5e7eb\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    },\n    \"accent-3\": {\n      \"$value\": \"#05bdba\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    }\n  },\n  \"fontFamily\": {\n    \"martian-mono\": {\n      \"$value\": \"Martian Mono\",\n      \"$type\": \"fontFamily\"\n    },\n    \"instrument-sans\": {\n      \"$value\": \"Instrument Sans\",\n      \"$type\": \"fontFamily\"\n    },\n    \"youtube-noto\": {\n      \"$value\": \"YouTube Noto\",\n      \"$type\": \"fontFamily\"\n    },\n    \"figtree\": {\n      \"$value\": \"Figtree\",\n      \"$type\": \"fontFamily\"\n    }\n  },\n  \"fontSize\": {\n    \"size-1\": {\n      \"$value\": \"0.5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-2\": {\n      \"$value\": \"0.7rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-3\": {\n      \"$value\": \"0.75rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-4\": {\n      \"$value\": \"0.8rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-5\": {\n      \"$value\": \"0.875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-6\": {\n      \"$value\": \"0.9rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-7\": {\n      \"$value\": \"1rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-8\": {\n      \"$value\": \"1.125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-9\": {\n      \"$value\": \"1.25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-10\": {\n      \"$value\": \"1.5rem\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"fontWeight\": {\n    \"thin\": {\n      \"$value\": 100,\n      \"$type\": \"fontWeight\"\n    },\n    \"normal\": {\n      \"$value\": 400,\n      \"$type\": \"fontWeight\"\n    },\n    \"medium\": {\n      \"$value\": 500,\n      \"$type\": \"fontWeight\"\n    },\n    \"semibold\": {\n      \"$value\": 600,\n      \"$type\": \"fontWeight\"\n    },\n    \"bold\": {\n      \"$value\": 700,\n      \"$type\": \"fontWeight\"\n    },\n    \"extrabold\": {\n      \"$value\": 800,\n      \"$type\": \"fontWeight\"\n    }\n  },\n  \"lineHeight\": {\n    \"leading-1\": {\n      \"$value\": 1,\n      \"$type\": \"number\"\n    },\n    \"leading-2\": {\n      \"$value\": 1.1,\n      \"$type\": \"number\"\n    },\n    \"leading-3\": {\n      \"$value\": 1.2,\n      \"$type\": \"number\"\n    },\n    \"leading-4\": {\n      \"$value\": 1.3,\n      \"$type\": \"number\"\n    },\n    \"leading-5\": {\n      \"$value\": 1.35,\n      \"$type\": \"number\"\n    },\n    \"leading-6\": {\n      \"$value\": 1.5,\n      \"$type\": \"number\"\n    },\n    \"leading-7\": {\n      \"$value\": 1.75,\n      \"$type\": \"number\"\n    }\n  },\n  \"letterSpacing\": {\n    \"tracking-1\": {\n      \"$value\": \"-.025em\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-2\": {\n      \"$value\": \".2px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-3\": {\n      \"$value\": \".02em\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-4\": {\n      \"$value\": \".025em\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-5\": {\n      \"$value\": \".05em\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"dimension\": {\n    \"space-1\": {\n      \"$value\": \"1px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-2\": {\n      \"$value\": \"2px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-3\": {\n      \"$value\": \"4px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-4\": {\n      \"$value\": \"5px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-5\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-6\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-7\": {\n      \"$value\": \"12px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-8\": {\n      \"$value\": \"14px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-9\": {\n      \"$value\": \"16px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-10\": {\n      \"$value\": \"24px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-11\": {\n      \"$value\": \"32px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-12\": {\n      \"$value\": \"48px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"borderRadius\": {\n    \"sm\": {\n      \"$value\": \"2px\",\n      \"$type\": \"dimension\"\n    },\n    \"md\": {\n      \"$value\": \".25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"lg\": {\n      \"$value\": \".375rem\",\n      \"$type\": \"dimension\"\n    },\n    \"xl\": {\n      \"$value\": \".5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"2xl\": {\n      \"$value\": \".75rem\",\n      \"$type\": \"dimension\"\n    },\n    \"3xl\": {\n      \"$value\": \"1.3rem\",\n      \"$type\": \"dimension\"\n    },\n    \"full\": {\n      \"$value\": \"50%\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"shadow\": {\n    \"sm\": {\n      \"$value\": \"0 2px 8px #00000026\",\n      \"$type\": \"shadow\"\n    },\n    \"md\": {\n      \"$value\": \"0 2px 12px #0000004d\",\n      \"$type\": \"shadow\"\n    }\n  },\n  \"dark\": {\n    \"start-card-glow-1\": {\n      \"$value\": \"hsla(175, 50%, 30%, .5)\",\n      \"$type\": \"color\"\n    },\n    \"start-card-glow-2\": {\n      \"$value\": \"hsla(195, 40%, 25%, .4)\",\n      \"$type\": \"color\"\n    },\n    \"ntl-active-switcher-tab-bg-color\": {\n      \"$value\": \"color(srgb .047058823529411764 .16470588235294117 .16470588235294117)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: color(srgb .047058823529411764 .16470588235294117 .16470588235294117 / .047058823529411764)\"\n    },\n    \"ntl-badge-bg-color\": {\n      \"$value\": \"var(--ntl-neutral-700)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-neutral-100)\"\n    },\n    \"ntl-badge-border-color\": {\n      \"$value\": \"var(--ntl-neutral-600)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-neutral-300)\"\n    },\n    \"ntl-badge-text-color\": {\n      \"$value\": \"var(--ntl-neutral-100)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-neutral-500)\"\n    },\n    \"ntl-blockquote-accent-color\": {\n      \"$value\": \"var(--ntl-teal-200)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-blue-700)\"\n    },\n    \"ntl-button-outline-bg-color\": {\n      \"$value\": \"color(srgb 0 0 0 / 0)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: color(srgb 0 0 0 / 0)\"\n    },\n    \"ntl-button-outline-bg-color-hover\": {\n      \"$value\": \"var(--ntl-neutral-500)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: color(srgb .8392156862745098 .9803921568627451 .9764705882352941)\"\n    },\n    \"ntl-button-outline-stroke-color\": {\n      \"$value\": \"var(--ntl-teal-200)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-neutral-800)\"\n    },\n    \"ntl-button-outline-text-color\": {\n      \"$value\": \"var(--ntl-teal-200)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-neutral-800)\"\n    },\n    \"ntl-button-primary-bg-color\": {\n      \"$value\": \"var(--ntl-teal-200)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-teal-200)\"\n    },\n    \"ntl-button-primary-bg-color-hover\": {\n      \"$value\": \"var(--ntl-teal-100)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-teal-100)\"\n    },\n    \"ntl-button-primary-text-color\": {\n      \"$value\": \"var(--ntl-neutral-800)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-neutral-800)\"\n    },\n    \"ntl-button-secondary-bg-color\": {\n      \"$value\": \"color(srgb 1 1 1 / .09803921568627451)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: color(srgb .047058823529411764 .16470588235294117 .16470588235294117 / .09803921568627451)\"\n    },\n    \"ntl-button-secondary-bg-color-hover\": {\n      \"$value\": \"color(srgb .6549019607843137 1 .9921568627450981 / .14901960784313725)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: color(srgb .047058823529411764 .16470588235294117 .16470588235294117 / .14901960784313725)\"\n    },\n    \"ntl-button-secondary-text-color\": {\n      \"$value\": \"var(--ntl-teal-200)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-neutral-800)\"\n    },\n    \"ntl-card-bg-color\": {\n      \"$value\": \"var(--ntl-teal-900)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-neutral-000)\"\n    },\n    \"ntl-card-border-color\": {\n      \"$value\": \"var(--ntl-teal-900)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-neutral-200)\"\n    },\n    \"ntl-card-border-color-hover\": {\n      \"$value\": \"var(--ntl-teal-800)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-neutral-300)\"\n    },\n    \"ntl-code-bg-color\": {\n      \"$value\": \"var(--ntl-teal-900)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-teal-900)\"\n    },\n    \"ntl-color-bg\": {\n      \"$value\": \"var(--ntl-neutral-800)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-neutral-000)\"\n    },\n    \"ntl-color-bg-2\": {\n      \"$value\": \"var(--ntl-neutral-700)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-neutral-100)\"\n    },\n    \"ntl-color-bg-3\": {\n      \"$value\": \"var(--ntl-neutral-600)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-neutral-200)\"\n    },\n    \"ntl-color-bg-inverse\": {\n      \"$value\": \"var(--ntl-neutral-000)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-neutral-300)\"\n    },\n    \"ntl-color-bg-translucent\": {\n      \"$value\": \"color(srgb .07058823529411765 .09411764705882353 .12156862745098039 / .9490196078431372)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: color(srgb 1 1 1 / .9019607843137255)\"\n    },\n    \"ntl-color-border-default\": {\n      \"$value\": \"color(srgb 1 1 1 / .09803921568627451)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: color(srgb 0 0 0 / .14901960784313725)\"\n    },\n    \"ntl-color-border-strong\": {\n      \"$value\": \"var(--ntl-neutral-500)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-neutral-300)\"\n    },\n    \"ntl-color-border-subtle\": {\n      \"$value\": \"color(srgb 1 1 1 / .0392156862745098)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: color(srgb 0 0 0 / .06274509803921569)\"\n    },\n    \"ntl-color-brand-primary\": {\n      \"$value\": \"var(--ntl-teal-300)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-blue-700)\"\n    },\n    \"ntl-color-brand-primary-hover\": {\n      \"$value\": \"var(--ntl-teal-800)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-blue-800)\"\n    },\n    \"ntl-color-brand-secondary\": {\n      \"$value\": \"var(--ntl-blue-700)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-teal-300)\"\n    },\n    \"ntl-color-brand-secondary-hover\": {\n      \"$value\": \"var(--ntl-blue-800)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-teal-800)\"\n    },\n    \"ntl-color-disabled-bg\": {\n      \"$value\": \"var(--ntl-neutral-600)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-neutral-200)\"\n    },\n    \"ntl-color-disabled-border\": {\n      \"$value\": \"var(--ntl-neutral-400)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-neutral-400)\"\n    },\n    \"ntl-color-disabled-text\": {\n      \"$value\": \"var(--ntl-neutral-400)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-neutral-400)\"\n    },\n    \"ntl-color-highlight-bg\": {\n      \"$value\": \"var(--ntl-purple-200)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-purple-100)\"\n    },\n    \"ntl-color-highlight-border\": {\n      \"$value\": \"var(--ntl-purple-700)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-purple-600)\"\n    },\n    \"ntl-color-highlight-text\": {\n      \"$value\": \"var(--ntl-purple-700)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-purple-600)\"\n    },\n    \"ntl-color-icon\": {\n      \"$value\": \"var(--ntl-teal-200)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-blue-700)\"\n    },\n    \"ntl-color-info-bg\": {\n      \"$value\": \"var(--ntl-blue-200)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-blue-100)\"\n    },\n    \"ntl-color-info-border\": {\n      \"$value\": \"var(--ntl-blue-700)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-blue-600)\"\n    },\n    \"ntl-color-info-text\": {\n      \"$value\": \"var(--ntl-blue-700)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-blue-600)\"\n    },\n    \"ntl-color-invalid-bg\": {\n      \"$value\": \"var(--ntl-red-200)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-red-100)\"\n    },\n    \"ntl-color-invalid-border\": {\n      \"$value\": \"var(--ntl-red-700)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-red-600)\"\n    },\n    \"ntl-color-invalid-text\": {\n      \"$value\": \"var(--ntl-red-700)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-red-600)\"\n    },\n    \"ntl-color-link\": {\n      \"$value\": \"var(--ntl-teal-200)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-blue-700)\"\n    },\n    \"ntl-color-link-default\": {\n      \"$value\": \"var(--ntl-teal-200)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-blue-700)\"\n    },\n    \"ntl-color-link-hover\": {\n      \"$value\": \"var(--ntl-teal-100)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-blue-800)\"\n    },\n    \"ntl-color-link-inverse\": {\n      \"$value\": \"var(--ntl-blue-600)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-blue-400)\"\n    },\n    \"ntl-color-logo-inactive\": {\n      \"$value\": \"color(srgb .2823529411764706 .36470588235294116 .36470588235294116)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: color(srgb .7019607843137254 .7019607843137254 .7019607843137254)\"\n    },\n    \"ntl-color-logo-spark\": {\n      \"$value\": \"var(--ntl-teal-200)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-teal-400)\"\n    },\n    \"ntl-color-logo-type\": {\n      \"$value\": \"var(--ntl-neutral-000)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-teal-800)\"\n    },\n    \"ntl-color-stroke\": {\n      \"$value\": \"color(srgb 1 1 1 / .09803921568627451)\",\n      \"$type\": \"color\",\n      \"$description\": \"light-mode value: color(srgb 0 0 0 / .14901960784313725)\"\n    },\n    \"ntl-color-success-bg\": {\n      \"$value\": \"var(--ntl-green-200)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-green-100)\"\n    },\n    \"ntl-color-success-border\": {\n      \"$value\": \"var(--ntl-green-400)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-green-300)\"\n    },\n    \"ntl-color-success-text\": {\n      \"$value\": \"var(--ntl-green-900)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-green-800)\"\n    },\n    \"ntl-color-text\": {\n      \"$value\": \"var(--ntl-teal-000)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-neutral-700)\"\n    },\n    \"ntl-color-text-accent\": {\n      \"$value\": \"var(--ntl-teal-600)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-teal-300)\"\n    },\n    \"ntl-color-text-default\": {\n      \"$value\": \"var(--ntl-teal-000)\",\n      \"$type\": \"string\",\n      \"$description\": \"light-mode value: var(--ntl-neutral-700)\"\n    }\n  }\n}"
+ },
+ "raw": {
+  "tokens": {
+   "title": "Push your ideas to the web | Netlify",
+   "description": "Create with AI or code, deploy instantly on production infrastructure. One platform to build and ship.",
+   "themeGuess": "light-leaning",
+   "darkWeight": 20,
+   "lightWeight": 67,
+   "neutrals": [
+    {
+     "hex": "#ffffff",
+     "count": 66
+    },
+    {
+     "hex": "#d1d5da",
+     "count": 1
+    },
+    {
+     "hex": "#9da7b2",
+     "count": 2
+    },
+    {
+     "hex": "#778089",
+     "count": 2
+    },
+    {
+     "hex": "#6b7280",
+     "count": 4
+    },
+    {
+     "hex": "#545a61",
+     "count": 2
+    },
+    {
+     "hex": "#353a3e",
+     "count": 3
+    },
+    {
+     "hex": "#000000",
+     "count": 11
+    }
+   ],
+   "accents": [
+    {
+     "hex": "#131920",
+     "count": 13
+    },
+    {
+     "hex": "#e5e7eb",
+     "count": 12
+    },
+    {
+     "hex": "#05bdba",
+     "count": 10
+    },
+    {
+     "hex": "#14d8d4",
+     "count": 7
+    },
+    {
+     "hex": "#2036a1",
+     "count": 4
+    },
+    {
+     "hex": "#0c2a2a",
+     "count": 2
+    },
+    {
+     "hex": "#80abfa",
+     "count": 2
+    },
+    {
+     "hex": "#1b205b",
+     "count": 2
+    },
+    {
+     "hex": "#30c8c9",
+     "count": 2
+    },
+    {
+     "hex": "#183dd1",
+     "count": 2
+    },
+    {
+     "hex": "#d0fffe",
+     "count": 2
+    },
+    {
+     "hex": "#26736c",
+     "count": 1
+    }
+   ],
+   "modern": [
+    "color(srgb .047058823529411764 .16470588235294117 .16470588235294117 / .047058823529411764)",
+    "color(srgb .9294117647058824 .9568627450980393 1)",
+    "color(srgb .803921568627451 .8862745098039215 1)",
+    "color(srgb .7098039215686275 .8235294117647058 .984313725490196)",
+    "color(srgb .611764705882353 .7450980392156863 .9647058823529412)",
+    "color(srgb .5019607843137255 .6705882352941176 .9803921568627451)",
+    "color(srgb .36470588235294116 .5529411764705883 .9607843137254902)",
+    "color(srgb .19215686274509805 .4196078431372549 .9568627450980393)",
+    "color(srgb .1803921568627451 .3176470588235294 .9294117647058824)",
+    "color(srgb .12549019607843137 .21176470588235294 .6313725490196078)",
+    "color(srgb .10588235294117647 .12549019607843137 .3568627450980392)",
+    "color(srgb 0 0 0 / 0)",
+    "color(srgb .8392156862745098 .9803921568627451 .9764705882352941)",
+    "color(srgb .047058823529411764 .16470588235294117 .16470588235294117 / .09803921568627451)",
+    "color(srgb .047058823529411764 .16470588235294117 .16470588235294117 / .14901960784313725)",
+    "color(srgb 1 1 1 / .9019607843137255)",
+    "color(srgb 0 0 0 / .14901960784313725)",
+    "color(srgb 0 0 0 / .06274509803921569)",
+    "color(srgb .7019607843137254 .7019607843137254 .7019607843137254)",
+    "color(srgb .9921568627450981 .9607843137254902 .8470588235294118)"
+   ],
+   "fonts": [
+    {
+     "name": "Martian Mono",
+     "count": 4
+    },
+    {
+     "name": "Instrument Sans",
+     "count": 2
+    },
+    {
+     "name": "YouTube Noto",
+     "count": 1
+    },
+    {
+     "name": "Figtree",
+     "count": 1
+    }
+   ],
+   "fontSizes": [
+    8,
+    11.2,
+    12,
+    12.8,
+    14,
+    14.4,
+    16,
+    18,
+    20,
+    24
+   ],
+   "fontWeights": [
+    {
+     "value": 100,
+     "count": 3
+    },
+    {
+     "value": 400,
+     "count": 2
+    },
+    {
+     "value": 500,
+     "count": 2
+    },
+    {
+     "value": 600,
+     "count": 8
+    },
+    {
+     "value": 700,
+     "count": 5
+    },
+    {
+     "value": 800,
+     "count": 1
+    }
+   ],
+   "lineHeights": [
+    1,
+    1.1,
+    1.2,
+    1.3,
+    1.35,
+    1.5,
+    1.75
+   ],
+   "letterSpacings": [
+    "-.025em",
+    ".2px",
+    ".02em",
+    ".025em",
+    ".05em"
+   ],
+   "spacing": [
+    1,
+    2,
+    4,
+    5,
+    8,
+    10,
+    12,
+    14,
+    16,
+    24,
+    32,
+    48
+   ],
+   "radii": [
+    {
+     "value": ".25rem",
+     "count": 5
+    },
+    {
+     "value": ".5rem",
+     "count": 3
+    },
+    {
+     "value": "2px",
+     "count": 3
+    },
+    {
+     "value": ".375rem",
+     "count": 2
+    },
+    {
+     "value": ".75rem",
+     "count": 1
+    },
+    {
+     "value": "1.3rem",
+     "count": 1
+    },
+    {
+     "value": "50%",
+     "count": 5
+    }
+   ],
+   "shadows": [
+    {
+     "value": "0 2px 8px #00000026",
+     "count": 1,
+     "blur": 0
+    },
+    {
+     "value": "0 2px 12px #0000004d",
+     "count": 1,
+     "blur": 0
+    }
+   ],
+   "breakpoints": [
+    480,
+    500,
+    600,
+    640,
+    750,
+    768,
+    1085
+   ],
+   "nativeVars": [
+    {
+     "name": "font-size-display-2xl",
+     "value": "var(--step-5)"
+    },
+    {
+     "name": "ntl-active-switcher-tab-bg-color",
+     "value": "color(srgb .047058823529411764 .16470588235294117 .16470588235294117 / .047058823529411764)"
+    },
+    {
+     "name": "ntl-badge-bg-color",
+     "value": "var(--ntl-neutral-100)"
+    },
+    {
+     "name": "ntl-badge-border-color",
+     "value": "var(--ntl-neutral-300)"
+    },
+    {
+     "name": "ntl-badge-text-color",
+     "value": "var(--ntl-neutral-500)"
+    },
+    {
+     "name": "ntl-blockquote-accent-color",
+     "value": "var(--ntl-blue-700)"
+    },
+    {
+     "name": "ntl-blue-000",
+     "value": "color(srgb .9294117647058824 .9568627450980393 1)"
+    },
+    {
+     "name": "ntl-blue-100",
+     "value": "color(srgb .803921568627451 .8862745098039215 1)"
+    },
+    {
+     "name": "ntl-blue-200",
+     "value": "color(srgb .7098039215686275 .8235294117647058 .984313725490196)"
+    },
+    {
+     "name": "ntl-blue-300",
+     "value": "color(srgb .611764705882353 .7450980392156863 .9647058823529412)"
+    },
+    {
+     "name": "ntl-blue-400",
+     "value": "color(srgb .5019607843137255 .6705882352941176 .9803921568627451)"
+    },
+    {
+     "name": "ntl-blue-500",
+     "value": "color(srgb .36470588235294116 .5529411764705883 .9607843137254902)"
+    },
+    {
+     "name": "ntl-blue-600",
+     "value": "color(srgb .19215686274509805 .4196078431372549 .9568627450980393)"
+    },
+    {
+     "name": "ntl-blue-700",
+     "value": "color(srgb .1803921568627451 .3176470588235294 .9294117647058824)"
+    },
+    {
+     "name": "ntl-blue-800",
+     "value": "color(srgb .12549019607843137 .21176470588235294 .6313725490196078)"
+    },
+    {
+     "name": "ntl-blue-900",
+     "value": "color(srgb .10588235294117647 .12549019607843137 .3568627450980392)"
+    },
+    {
+     "name": "ntl-border-width-base",
+     "value": "1.5px"
+    },
+    {
+     "name": "ntl-border-width-heavy",
+     "value": "3px"
+    },
+    {
+     "name": "ntl-border-width-thick",
+     "value": "2px"
+    },
+    {
+     "name": "ntl-border-width-thin",
+     "value": "1px"
+    },
+    {
+     "name": "ntl-button-outline-bg-color",
+     "value": "color(srgb 0 0 0 / 0)"
+    },
+    {
+     "name": "ntl-button-outline-bg-color-hover",
+     "value": "color(srgb .8392156862745098 .9803921568627451 .9764705882352941)"
+    },
+    {
+     "name": "ntl-button-outline-stroke-color",
+     "value": "var(--ntl-neutral-800)"
+    },
+    {
+     "name": "ntl-button-outline-text-color",
+     "value": "var(--ntl-neutral-800)"
+    },
+    {
+     "name": "ntl-button-primary-bg-color",
+     "value": "var(--ntl-teal-200)"
+    },
+    {
+     "name": "ntl-button-primary-bg-color-hover",
+     "value": "var(--ntl-teal-100)"
+    },
+    {
+     "name": "ntl-button-primary-text-color",
+     "value": "var(--ntl-neutral-800)"
+    },
+    {
+     "name": "ntl-button-secondary-bg-color",
+     "value": "color(srgb .047058823529411764 .16470588235294117 .16470588235294117 / .09803921568627451)"
+    },
+    {
+     "name": "ntl-button-secondary-bg-color-hover",
+     "value": "color(srgb .047058823529411764 .16470588235294117 .16470588235294117 / .14901960784313725)"
+    },
+    {
+     "name": "ntl-button-secondary-text-color",
+     "value": "var(--ntl-neutral-800)"
+    },
+    {
+     "name": "ntl-card-bg-color",
+     "value": "var(--ntl-neutral-000)"
+    },
+    {
+     "name": "ntl-card-border-color",
+     "value": "var(--ntl-neutral-200)"
+    },
+    {
+     "name": "ntl-card-border-color-hover",
+     "value": "var(--ntl-neutral-300)"
+    },
+    {
+     "name": "ntl-code-bg-color",
+     "value": "var(--ntl-teal-900)"
+    },
+    {
+     "name": "ntl-color-bg",
+     "value": "var(--ntl-neutral-000)"
+    },
+    {
+     "name": "ntl-color-bg-2",
+     "value": "var(--ntl-neutral-100)"
+    },
+    {
+     "name": "ntl-color-bg-3",
+     "value": "var(--ntl-neutral-200)"
+    },
+    {
+     "name": "ntl-color-bg-inverse",
+     "value": "var(--ntl-neutral-300)"
+    },
+    {
+     "name": "ntl-color-bg-translucent",
+     "value": "color(srgb 1 1 1 / .9019607843137255)"
+    },
+    {
+     "name": "ntl-color-border-default",
+     "value": "color(srgb 0 0 0 / .14901960784313725)"
+    },
+    {
+     "name": "ntl-color-border-strong",
+     "value": "var(--ntl-neutral-300)"
+    },
+    {
+     "name": "ntl-color-border-subtle",
+     "value": "color(srgb 0 0 0 / .06274509803921569)"
+    },
+    {
+     "name": "ntl-color-brand-primary",
+     "value": "var(--ntl-blue-700)"
+    },
+    {
+     "name": "ntl-color-brand-primary-hover",
+     "value": "var(--ntl-blue-800)"
+    },
+    {
+     "name": "ntl-color-brand-secondary",
+     "value": "var(--ntl-teal-300)"
+    },
+    {
+     "name": "ntl-color-brand-secondary-hover",
+     "value": "var(--ntl-teal-800)"
+    },
+    {
+     "name": "ntl-color-disabled-bg",
+     "value": "var(--ntl-neutral-200)"
+    },
+    {
+     "name": "ntl-color-disabled-border",
+     "value": "var(--ntl-neutral-400)"
+    },
+    {
+     "name": "ntl-color-disabled-text",
+     "value": "var(--ntl-neutral-400)"
+    },
+    {
+     "name": "ntl-color-highlight-bg",
+     "value": "var(--ntl-purple-100)"
+    },
+    {
+     "name": "ntl-color-highlight-border",
+     "value": "var(--ntl-purple-600)"
+    },
+    {
+     "name": "ntl-color-highlight-text",
+     "value": "var(--ntl-purple-600)"
+    },
+    {
+     "name": "ntl-color-icon",
+     "value": "var(--ntl-blue-700)"
+    },
+    {
+     "name": "ntl-color-info-bg",
+     "value": "var(--ntl-blue-100)"
+    },
+    {
+     "name": "ntl-color-info-border",
+     "value": "var(--ntl-blue-600)"
+    },
+    {
+     "name": "ntl-color-info-text",
+     "value": "var(--ntl-blue-600)"
+    },
+    {
+     "name": "ntl-color-invalid-bg",
+     "value": "var(--ntl-red-100)"
+    },
+    {
+     "name": "ntl-color-invalid-border",
+     "value": "var(--ntl-red-600)"
+    },
+    {
+     "name": "ntl-color-invalid-text",
+     "value": "var(--ntl-red-600)"
+    },
+    {
+     "name": "ntl-color-link",
+     "value": "var(--ntl-blue-700)"
+    },
+    {
+     "name": "ntl-color-link-default",
+     "value": "var(--ntl-blue-700)"
+    },
+    {
+     "name": "ntl-color-link-hover",
+     "value": "var(--ntl-blue-800)"
+    },
+    {
+     "name": "ntl-color-link-inverse",
+     "value": "var(--ntl-blue-400)"
+    },
+    {
+     "name": "ntl-color-logo-inactive",
+     "value": "color(srgb .7019607843137254 .7019607843137254 .7019607843137254)"
+    },
+    {
+     "name": "ntl-color-logo-spark",
+     "value": "var(--ntl-teal-400)"
+    },
+    {
+     "name": "ntl-color-logo-type",
+     "value": "var(--ntl-teal-800)"
+    },
+    {
+     "name": "ntl-color-stroke",
+     "value": "color(srgb 0 0 0 / .14901960784313725)"
+    },
+    {
+     "name": "ntl-color-success-bg",
+     "value": "var(--ntl-green-100)"
+    },
+    {
+     "name": "ntl-color-success-border",
+     "value": "var(--ntl-green-300)"
+    },
+    {
+     "name": "ntl-color-success-text",
+     "value": "var(--ntl-green-800)"
+    },
+    {
+     "name": "ntl-color-text",
+     "value": "var(--ntl-neutral-700)"
+    },
+    {
+     "name": "ntl-color-text-accent",
+     "value": "var(--ntl-teal-300)"
+    },
+    {
+     "name": "ntl-color-text-default",
+     "value": "var(--ntl-neutral-700)"
+    },
+    {
+     "name": "ntl-color-text-inverse",
+     "value": "var(--ntl-neutral-100)"
+    },
+    {
+     "name": "ntl-color-text-weak",
+     "value": "var(--ntl-neutral-500)"
+    },
+    {
+     "name": "ntl-color-text-weaker",
+     "value": "var(--ntl-neutral-400)"
+    },
+    {
+     "name": "ntl-color-warning-bg",
+     "value": "var(--ntl-gold-100)"
+    },
+    {
+     "name": "ntl-color-warning-border",
+     "value": "var(--ntl-gold-300)"
+    },
+    {
+     "name": "ntl-color-warning-text",
+     "value": "var(--ntl-gold-800)"
+    },
+    {
+     "name": "ntl-eyebrow-text-color",
+     "value": "var(--ntl-blue-700)"
+    },
+    {
+     "name": "ntl-focus-outline-offset",
+     "value": "0"
+    },
+    {
+     "name": "ntl-focus-outline-width",
+     "value": "5px"
+    },
+    {
+     "name": "ntl-font-family-display",
+     "value": "\"Figtree\", system-ui, \"Helvetica\", sans-serif"
+    },
+    {
+     "name": "ntl-font-family-mono",
+     "value": "\"Martian Mono\", ui-monospace, \"Cascadia Code\", \"Source Code Pro\", \"Menlo\", \"Consolas\", \"DejaVu Sans Mono\", monospace"
+    },
+    {
+     "name": "ntl-font-family-text",
+     "value": "\"Instrument Sans\", system-ui, \"Helvetica\", sans-serif"
+    },
+    {
+     "name": "ntl-font-size-display-2xl",
+     "value": "clamp(2.5rem, 1.8864rem + 2.7273vw, 4rem)"
+    },
+    {
+     "name": "ntl-font-size-display-2xs",
+     "value": "clamp(1.125rem, 1.0739rem + .2273vw, 1.25rem)"
+    },
+    {
+     "name": "ntl-font-size-display-3xl",
+     "value": "clamp(2.75rem, 2.0341rem + 3.1818vw, 4.5rem)"
+    },
+    {
+     "name": "ntl-font-size-display-4xl",
+     "value": "clamp(3rem, 2.1818rem + 3.6364vw, 5rem)"
+    },
+    {
+     "name": "ntl-font-size-display-lg",
+     "value": "clamp(2rem, 1.5909rem + 1.8182vw, 3rem)"
+    },
+    {
+     "name": "ntl-font-size-display-md",
+     "value": "clamp(1.75rem, 1.4432rem + 1.3636vw, 2.5rem)"
+    },
+    {
+     "name": "ntl-font-size-display-sm",
+     "value": "clamp(1.5rem, 1.2955rem + .9091vw, 2rem)"
+    },
+    {
+     "name": "ntl-font-size-display-xl",
+     "value": "clamp(2.25rem, 1.7386rem + 2.2727vw, 3.5rem)"
+    },
+    {
+     "name": "ntl-font-size-display-xs",
+     "value": "clamp(1.25rem, 1.1477rem + .4545vw, 1.5rem)"
+    },
+    {
+     "name": "ntl-font-size-text-lg",
+     "value": "1.125rem"
+    },
+    {
+     "name": "ntl-font-size-text-md",
+     "value": "1rem"
+    },
+    {
+     "name": "ntl-font-size-text-sm",
+     "value": ".875rem"
+    },
+    {
+     "name": "ntl-font-size-text-xl",
+     "value": "1.375rem"
+    },
+    {
+     "name": "ntl-font-size-text-xs",
+     "value": ".75rem"
+    },
+    {
+     "name": "ntl-font-weight-bold",
+     "value": "700"
+    },
+    {
+     "name": "ntl-font-weight-extrabold",
+     "value": "800"
+    },
+    {
+     "name": "ntl-font-weight-medium",
+     "value": "500"
+    },
+    {
+     "name": "ntl-font-weight-regular",
+     "value": "400"
+    },
+    {
+     "name": "ntl-font-weight-semibold",
+     "value": "600"
+    },
+    {
+     "name": "ntl-gold-000",
+     "value": "color(srgb .9921568627450981 .9607843137254902 .8470588235294118)"
+    },
+    {
+     "name": "ntl-gold-100",
+     "value": "color(srgb .9647058823529412 .8784313725490196 .6470588235294118)"
+    },
+    {
+     "name": "ntl-gold-200",
+     "value": "color(srgb .9803921568627451 .803921568627451 .43529411764705883)"
+    },
+    {
+     "name": "ntl-gold-300",
+     "value": "color(srgb .984313725490196 .6941176470588235 .23921568627450981)"
+    },
+    {
+     "name": "ntl-gold-400",
+     "value": "color(srgb .9764705882352941 .5568627450980392 .12941176470588237)"
+    },
+    {
+     "name": "ntl-gold-500",
+     "value": "color(srgb .8352941176470589 .4666666666666667 .10196078431372549)"
+    },
+    {
+     "name": "ntl-gold-600",
+     "value": "color(srgb .6588235294117647 .36470588235294116 .07450980392156863)"
+    },
+    {
+     "name": "ntl-gold-700",
+     "value": "color(srgb .5490196078431373 .2980392156862745 .050980392156862744)"
+    },
+    {
+     "name": "ntl-gold-800",
+     "value": "color(srgb .3764705882352941 .20392156862745098 .03137254901960784)"
+    },
+    {
+     "name": "ntl-gold-900",
+     "value": "color(srgb .2 .13333333333333333 .07450980392156863)"
+    },
+    {
+     "name": "ntl-green-000",
+     "value": "color(srgb .9058823529411765 .9882352941176471 .9137254901960784)"
+    },
+    {
+     "name": "ntl-green-100",
+     "value": "color(srgb .7450980392156863 .9764705882352941 .7764705882352941)"
+    },
+    {
+     "name": "ntl-green-200",
+     "value": "color(srgb .5764705882352941 .9607843137254902 .6470588235294118)"
+    },
+    {
+     "name": "ntl-green-300",
+     "value": "color(srgb .39215686274509803 .8470588235294118 .4980392156862745)"
+    },
+    {
+     "name": "ntl-green-400",
+     "value": "color(srgb .22745098039215686 .7647058823529411 .39215686274509803)"
+    },
+    {
+     "name": "ntl-green-500",
+     "value": "color(srgb .19215686274509805 .6588235294117647 .3333333333333333)"
+    }
+   ],
+   "darkVars": [
+    {
+     "name": "start-card-glow-1",
+     "light": null,
+     "dark": "hsla(175, 50%, 30%, .5)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "start-card-glow-2",
+     "light": null,
+     "dark": "hsla(195, 40%, 25%, .4)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-active-switcher-tab-bg-color",
+     "light": "color(srgb .047058823529411764 .16470588235294117 .16470588235294117 / .047058823529411764)",
+     "dark": "color(srgb .047058823529411764 .16470588235294117 .16470588235294117)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-badge-bg-color",
+     "light": "var(--ntl-neutral-100)",
+     "dark": "var(--ntl-neutral-700)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-badge-border-color",
+     "light": "var(--ntl-neutral-300)",
+     "dark": "var(--ntl-neutral-600)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-badge-text-color",
+     "light": "var(--ntl-neutral-500)",
+     "dark": "var(--ntl-neutral-100)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-blockquote-accent-color",
+     "light": "var(--ntl-blue-700)",
+     "dark": "var(--ntl-teal-200)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-button-outline-bg-color",
+     "light": "color(srgb 0 0 0 / 0)",
+     "dark": "color(srgb 0 0 0 / 0)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-button-outline-bg-color-hover",
+     "light": "color(srgb .8392156862745098 .9803921568627451 .9764705882352941)",
+     "dark": "var(--ntl-neutral-500)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-button-outline-stroke-color",
+     "light": "var(--ntl-neutral-800)",
+     "dark": "var(--ntl-teal-200)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-button-outline-text-color",
+     "light": "var(--ntl-neutral-800)",
+     "dark": "var(--ntl-teal-200)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-button-primary-bg-color",
+     "light": "var(--ntl-teal-200)",
+     "dark": "var(--ntl-teal-200)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-button-primary-bg-color-hover",
+     "light": "var(--ntl-teal-100)",
+     "dark": "var(--ntl-teal-100)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-button-primary-text-color",
+     "light": "var(--ntl-neutral-800)",
+     "dark": "var(--ntl-neutral-800)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-button-secondary-bg-color",
+     "light": "color(srgb .047058823529411764 .16470588235294117 .16470588235294117 / .09803921568627451)",
+     "dark": "color(srgb 1 1 1 / .09803921568627451)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-button-secondary-bg-color-hover",
+     "light": "color(srgb .047058823529411764 .16470588235294117 .16470588235294117 / .14901960784313725)",
+     "dark": "color(srgb .6549019607843137 1 .9921568627450981 / .14901960784313725)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-button-secondary-text-color",
+     "light": "var(--ntl-neutral-800)",
+     "dark": "var(--ntl-teal-200)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-card-bg-color",
+     "light": "var(--ntl-neutral-000)",
+     "dark": "var(--ntl-teal-900)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-card-border-color",
+     "light": "var(--ntl-neutral-200)",
+     "dark": "var(--ntl-teal-900)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-card-border-color-hover",
+     "light": "var(--ntl-neutral-300)",
+     "dark": "var(--ntl-teal-800)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-code-bg-color",
+     "light": "var(--ntl-teal-900)",
+     "dark": "var(--ntl-teal-900)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-bg",
+     "light": "var(--ntl-neutral-000)",
+     "dark": "var(--ntl-neutral-800)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-bg-2",
+     "light": "var(--ntl-neutral-100)",
+     "dark": "var(--ntl-neutral-700)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-bg-3",
+     "light": "var(--ntl-neutral-200)",
+     "dark": "var(--ntl-neutral-600)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-bg-inverse",
+     "light": "var(--ntl-neutral-300)",
+     "dark": "var(--ntl-neutral-000)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-bg-translucent",
+     "light": "color(srgb 1 1 1 / .9019607843137255)",
+     "dark": "color(srgb .07058823529411765 .09411764705882353 .12156862745098039 / .9490196078431372)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-border-default",
+     "light": "color(srgb 0 0 0 / .14901960784313725)",
+     "dark": "color(srgb 1 1 1 / .09803921568627451)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-border-strong",
+     "light": "var(--ntl-neutral-300)",
+     "dark": "var(--ntl-neutral-500)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-border-subtle",
+     "light": "color(srgb 0 0 0 / .06274509803921569)",
+     "dark": "color(srgb 1 1 1 / .0392156862745098)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-brand-primary",
+     "light": "var(--ntl-blue-700)",
+     "dark": "var(--ntl-teal-300)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-brand-primary-hover",
+     "light": "var(--ntl-blue-800)",
+     "dark": "var(--ntl-teal-800)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-brand-secondary",
+     "light": "var(--ntl-teal-300)",
+     "dark": "var(--ntl-blue-700)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-brand-secondary-hover",
+     "light": "var(--ntl-teal-800)",
+     "dark": "var(--ntl-blue-800)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-disabled-bg",
+     "light": "var(--ntl-neutral-200)",
+     "dark": "var(--ntl-neutral-600)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-disabled-border",
+     "light": "var(--ntl-neutral-400)",
+     "dark": "var(--ntl-neutral-400)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-disabled-text",
+     "light": "var(--ntl-neutral-400)",
+     "dark": "var(--ntl-neutral-400)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-highlight-bg",
+     "light": "var(--ntl-purple-100)",
+     "dark": "var(--ntl-purple-200)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-highlight-border",
+     "light": "var(--ntl-purple-600)",
+     "dark": "var(--ntl-purple-700)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-highlight-text",
+     "light": "var(--ntl-purple-600)",
+     "dark": "var(--ntl-purple-700)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-icon",
+     "light": "var(--ntl-blue-700)",
+     "dark": "var(--ntl-teal-200)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-info-bg",
+     "light": "var(--ntl-blue-100)",
+     "dark": "var(--ntl-blue-200)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-info-border",
+     "light": "var(--ntl-blue-600)",
+     "dark": "var(--ntl-blue-700)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-info-text",
+     "light": "var(--ntl-blue-600)",
+     "dark": "var(--ntl-blue-700)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-invalid-bg",
+     "light": "var(--ntl-red-100)",
+     "dark": "var(--ntl-red-200)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-invalid-border",
+     "light": "var(--ntl-red-600)",
+     "dark": "var(--ntl-red-700)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-invalid-text",
+     "light": "var(--ntl-red-600)",
+     "dark": "var(--ntl-red-700)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-link",
+     "light": "var(--ntl-blue-700)",
+     "dark": "var(--ntl-teal-200)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-link-default",
+     "light": "var(--ntl-blue-700)",
+     "dark": "var(--ntl-teal-200)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-link-hover",
+     "light": "var(--ntl-blue-800)",
+     "dark": "var(--ntl-teal-100)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-link-inverse",
+     "light": "var(--ntl-blue-400)",
+     "dark": "var(--ntl-blue-600)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-logo-inactive",
+     "light": "color(srgb .7019607843137254 .7019607843137254 .7019607843137254)",
+     "dark": "color(srgb .2823529411764706 .36470588235294116 .36470588235294116)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-logo-spark",
+     "light": "var(--ntl-teal-400)",
+     "dark": "var(--ntl-teal-200)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-logo-type",
+     "light": "var(--ntl-teal-800)",
+     "dark": "var(--ntl-neutral-000)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-stroke",
+     "light": "color(srgb 0 0 0 / .14901960784313725)",
+     "dark": "color(srgb 1 1 1 / .09803921568627451)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-success-bg",
+     "light": "var(--ntl-green-100)",
+     "dark": "var(--ntl-green-200)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-success-border",
+     "light": "var(--ntl-green-300)",
+     "dark": "var(--ntl-green-400)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-success-text",
+     "light": "var(--ntl-green-800)",
+     "dark": "var(--ntl-green-900)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-text",
+     "light": "var(--ntl-neutral-700)",
+     "dark": "var(--ntl-teal-000)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-text-accent",
+     "light": "var(--ntl-teal-300)",
+     "dark": "var(--ntl-teal-600)",
+     "via": "prefers-color-scheme"
+    },
+    {
+     "name": "ntl-color-text-default",
+     "light": "var(--ntl-neutral-700)",
+     "dark": "var(--ntl-teal-000)",
+     "via": "prefers-color-scheme"
+    }
+   ],
+   "rings": []
+  },
+  "stylesheets": 5
+ }
+}

@@ -1,16 +1,6 @@
-<div align="center">
-  <img src="Docs/Logo with anme.png" alt="Source-Design" width="235">
-</p>
-  
-# Source Design
-  Source Design is a premium web application and developer utility designed to inspect, extract, and compile production-grade design tokens from live websites into semantic, ready-to-use configurations (Tailwind CSS, CSS variables, and JSON design tokens).
-    <a href="https://x.com/Source__Design"><img src="https://img.shields.io/badge/Follow-%40Source__Design-000000?style=flat&logo=x&logoColor=white" alt="Follow on X" /></a>
-  <img src="docs/Logo.jpeg" alt="Source-Design logo">
-</p>
+# Source Design 🎨
 
-
-<div align="left">
-
+Source Design is a premium web application and developer utility designed to inspect, extract, and compile production-grade design tokens from live websites into semantic, ready-to-use configurations (Tailwind CSS, CSS variables, and JSON design tokens).
 
 ## Features
 
@@ -75,13 +65,3 @@ npx vercel --prod
 ├── scripts/              # Build scripts for compiling ready design lists
 └── package.json          # Dependency and script definitions
 ```
-
-## Star History
-
-<a href="https://www.star-history.com/?type=date&repos=Source-Design%2FSource-Design">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Source-Design/Source-Design&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Source-Design/Source-Design&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Source-Design/Source-Design&type=date&legend=top-left" />
- </picture>
-</a>

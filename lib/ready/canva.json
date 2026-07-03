@@ -1,0 +1,1179 @@
+{
+ "slug": "canva",
+ "name": "Canva",
+ "blurb": "Design tool. Cyan-violet brand wash, rounded everything, template-grid energy.",
+ "url": "https://www.canva.com/",
+ "title": "Canva: Visual Suite for Everyone",
+ "extractedAt": "2026-07-03",
+ "summary": {
+  "colors": [
+   {
+    "name": "neutral-50",
+    "hex": "#ffffff",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-950",
+    "hex": "#000000",
+    "group": "neutral"
+   },
+   {
+    "name": "deep-blue",
+    "hex": "#0f1015",
+    "group": "accent"
+   },
+   {
+    "name": "indigo",
+    "hex": "#7d2ae8",
+    "group": "accent"
+   },
+   {
+    "name": "deep-blue-2",
+    "hex": "#1c2130",
+    "group": "accent"
+   },
+   {
+    "name": "indigo-2",
+    "hex": "#a370fc",
+    "group": "accent"
+   },
+   {
+    "name": "teal",
+    "hex": "#00c4cc",
+    "group": "accent"
+   },
+   {
+    "name": "indigo-3",
+    "hex": "#8b3dff",
+    "group": "accent"
+   },
+   {
+    "name": "blue",
+    "hex": "#5a32fa",
+    "group": "accent"
+   },
+   {
+    "name": "cyan",
+    "hex": "#1a73e8",
+    "group": "accent"
+   },
+   {
+    "name": "teal-2",
+    "hex": "#13a3b5",
+    "group": "accent"
+   },
+   {
+    "name": "red",
+    "hex": "#fd4958",
+    "group": "accent"
+   },
+   {
+    "name": "indigo-4",
+    "hex": "#992bff",
+    "group": "accent"
+   },
+   {
+    "name": "pale-indigo",
+    "hex": "#f1ebff",
+    "group": "accent"
+   }
+  ],
+  "fonts": [
+   "Noto Sans",
+   "Canva Sans",
+   "Noto Sans Vietnamese",
+   "Noto Sans Variable",
+   "Google Sans",
+   "Roboto-Regular",
+   "Roboto",
+   "Helvetica"
+  ],
+  "themeGuess": "light-leaning",
+  "stylesheets": 2,
+  "nativeVarCount": 120
+ },
+ "files": {
+  "DESIGN.md": "---\nname: canva-com-design-system\nsource: https://www.canva.com/\nextracted: 2026-07-03\ntheme: light  # measured from neutral usage weight\ncolors:  # roles inferred from usage frequency + luminance; names verified against values\n  canvas: \"#ffffff\"\n  ink: \"#000000\"\n  accent: \"#0f1015\"  # deep-blue\n  accent-2: \"#7d2ae8\"  # indigo\n  accent-3: \"#1c2130\"  # deep-blue\nfonts:\n  primary: \"Noto Sans\"\n---\n\n# Canva: Visual Suite for Everyone — Design System\n\nExtracted from **https://www.canva.com/** on 2026-07-03.\n\n> Canva is a free-to-use online graphic design tool. Use it to create social media posts, presentations, posters, videos, logos and more.\n\nEvery value below is mined from the site's live CSS (120 native custom properties, ranked usage counts). Role assignments are inferred from usage and luminance and marked as such — treat them as a strong starting point, not gospel.\n\n## Overview\n\nThe system reads as light: measured neutral usage weighs 227 light against 48 dark. The palette is chromatic: 12 saturated values against 2 neutrals, led by deep-blue (`#0f1015`). **Noto Sans** carries the interface. Geometry mixes sharp corners (4px) with full pills.\n\n## Usage rules\n\nDerived from the measured usage below — each rule cites its evidence.\n\n- Chromatic color carries 54% of measured usage — this palette uses color structurally. Saturated values can hold large surfaces here; timidity would misrepresent the source.\n- The theme is light (measured neutral weight 227:48). Don't flip individual sections to the opposite mode.\n- The most-used radius is the full pill (x29); mid-size radii are the exception in this system.\n- The only shadows are blur-less hairline offsets — this system barely uses elevation; don't add soft drop shadows.\n\n## Colors\n\n### Neutrals (light → dark)\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `neutral-50` | `#ffffff` | 227 | **canvas** — lightest neutral, matches the measured light-leaning theme |\n| `neutral-950` | `#000000` | 48 | **ink** — darkest neutral, highest contrast against canvas |\n\n### Accents\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `deep-blue` | `#0f1015` | 57 | **accent** — most-used chromatic color |\n| `indigo` | `#7d2ae8` | 41 | **accent-2** — supporting chromatic color |\n| `deep-blue-2` | `#1c2130` | 38 | **accent-3** — supporting chromatic color |\n| `indigo-2` | `#a370fc` | 34 | — |\n| `teal` | `#00c4cc` | 26 | — |\n| `indigo-3` | `#8b3dff` | 24 | — |\n| `blue` | `#5a32fa` | 22 | — |\n| `cyan` | `#1a73e8` | 16 | — |\n| `teal-2` | `#13a3b5` | 16 | — |\n| `red` | `#fd4958` | 16 | — |\n| `indigo-4` | `#992bff` | 15 | — |\n| `pale-indigo` | `#f1ebff` | 15 | — |\n\n### Dark mode\n\nThe source defines 60 dark-mode variants (via dark selector). Both halves of the system, first 30:\n\n| Token | Light | Dark |\n| --- | --- | --- |\n| `--tk9EiQ` | — | `dark` |\n| `--xpFk1A` | — | `#ffffff26` |\n| `--Kd3K9A` | — | `#7630d7` |\n| `--DVEAGQ` | — | `#612dae` |\n| `--V0s6Og` | — | `#4a2e7e` |\n| `--PqRKXQ` | — | `#fff` |\n| `--R-jrhg` | — | `#ffffff00` |\n| `--GXtk9g` | — | `#ffffff12` |\n| `--xGXQgA` | — | `#ffffff26` |\n| `--oAdupw` | — | `#fff` |\n| `--8-4niA` | — | `#ffffff33` |\n| `--wd-tZA` | — | `#ffffff00` |\n| `--ntzWpQ` | — | `#ffffff12` |\n| `--BorQ6g` | — | `#ffffff26` |\n| `--O8dBuQ` | — | `#fff` |\n| `--EvA8JQ` | — | `#13162099` |\n| `--gIrJLw` | — | `#101219b2` |\n| `--XxI4hg` | — | `#0f1015d9` |\n| `--SvgSpA` | — | `#13162099` |\n| `--N8Oz5g` | — | `#fff` |\n| `--4zRigw` | — | `#ffffffb2` |\n| `--wv7owA` | — | `#b61629` |\n| `--m9I-bA` | — | `#911826` |\n| `--Hxdoag` | — | `#721d27` |\n| `--pxBf3A` | — | `#fff` |\n| `--1sn2Sg` | — | `#a370fc4d` |\n| `--4HnQxA` | — | `#a370fc4d` |\n| `--NRjSsw` | — | `#a370fc33` |\n| `--GviWcg` | — | `#fff` |\n| `--kl47TA` | — | `#a370fc` |\n\n`variables.css` ships these as a `prefers-color-scheme: dark` override block.\n\n## Typography\n\n**Noto Sans** is the primary interface face. Full list by usage:\n\n| Family | Usage |\n| --- | --- |\n| Noto Sans | 18 |\n| Canva Sans | 8 |\n| Noto Sans Vietnamese | 5 |\n| Noto Sans Variable | 3 |\n| Google Sans | 2 |\n| Roboto-Regular | 1 |\n| Roboto | 1 |\n| Helvetica | 1 |\n\n**Size scale (px):** `11`, `12`, `14`, `16`, `17.5`, `18`, `24`, `36`, `48`, `66`, `88`, `128`\n\n**Weights in use:** `100` (x3), `300` (x1), `400` (x38), `500` (x14), `600` (x29), `700` (x13)\n\n**Line-heights (unitless):** `1`, `1.04`, `1.06`, `1.1`, `1.2`, `1.25`, `1.4`, `1.6`\n\n**Letter-spacing values:** `-1.5px`, `-.64px`, `-.28px`, `-.01em`, `.25px`, `.3px`\n\n## Spacing\n\nMost-used values (px): `1`, `2`, `4`, `6`, `8`, `10`, `12`, `16`, `24`, `32`, `48`, `64`\n\n## Border radius\n\n| Token | Value | Usage |\n| --- | --- | --- |\n| `radius-sm` | `4px` | 8 |\n| `radius-md` | `8px` | 8 |\n| `radius-lg` | `10px` | 11 |\n| `radius-xl` | `12px` | 19 |\n| `radius-2xl` | `16px` | 11 |\n| `radius-3xl` | `20px` | 12 |\n| `radius-4xl` | `24px` | 7 |\n| `radius-full` | `9999px` | 29 |\n\n## Shadows (ordered by blur radius)\n\n- `shadow-sm` — `0 -16px 20px rgba(14,19,24,.04)` (x2)\n- `shadow-md` — `shadowSurface` (x2)\n\n## Breakpoints\n\n`352px`, `410px`, `432px`, `599px`, `600px`, `880px`, `899px`, `900px`\n\n## Starter recipes\n\nTokens composed into components. The source site's real components were **not** inspected — these are starting points built from the extracted values, with contrast ratios computed rather than assumed.\n\n```css\n.button-primary {\n  background: var(--color-accent); /* #0f1015 */\n  color: var(--color-canvas); /* #ffffff — contrast 19.0:1 */\n  border-radius: 9999px; /* pill — mined as 9999px */\n  font-weight: 500;\n}\n\n.modal {\n  background: var(--color-canvas); /* #ffffff */\n  border-radius: 12px;\n  box-shadow: var(--shadow-md); /* largest mined shadow */\n}\n\n.modal-backdrop {\n  background: color-mix(in srgb, var(--color-ink) 55%, transparent); /* scrim from #000000 */\n}\n\n.input-error {\n  border-color: #fd4958; /* mined token: red */\n  /* error text: #fd4958 on canvas — contrast 3.3:1, below AA; darken for message text */\n}\n```\n\n## Observations\n\n- 2 of 14 extracted colors are neutrals.\n- 2 distinct shadows; the softest reaches 0px blur.\n- 8 breakpoints, from 352px to 900px.\n- The site ships a large native token system (120+ custom properties) — prefer those names when extending it.\n\n## Native CSS custom properties\n\nFirst 40 of 120:\n\n```css\n:root {\n  --wczjwA: calc(var(----lgQg, 0.1rem)*42);\n  --32-5Rg: calc(var(----lgQg, 0.1rem)*36);\n  --q5aPlw: calc(var(----lgQg, 0.1rem)*36);\n  --XAu0sw: calc(var(----lgQg, 0.1rem)*32);\n  --OJy8Yg: calc(var(----lgQg, 0.1rem)*32);\n  --Vf8OSg: calc(var(----lgQg, 0.1rem)*36);\n  --A3YTsg: calc(var(----lgQg, 0.1rem)*24);\n  --Dynksw: calc(var(----lgQg, 0.1rem)*21);\n  --VrAiwg: calc(var(----lgQg, 0.1rem)*16);\n  --5QGiVg: calc(var(----lgQg, 0.1rem)*14);\n  --R07nfg: calc(var(----lgQg, 0.1rem)*12);\n  --m8t8Kw: calc(var(----lgQg, 0.1rem)*21);\n  --ZYsOLQ: calc(var(----lgQg, 0.1rem)*18);\n  --__4QUw: calc(var(----lgQg, 0.1rem)*16);\n  --ZOMbtg: calc(var(----lgQg, 0.1rem)*14);\n  --ylZqXQ: calc(var(----lgQg, 0.1rem)*12);\n  --ggP9YA: calc(var(----lgQg, 0.1rem)*11);\n  --Csadrg: 1.1;\n  --3HwnTg: 1.1;\n  --guGCJg: 1.1;\n  --Pz31Ow: 1.1;\n  --qKnIjA: 1.25;\n  --a60EZw: 1.25;\n  --KMUE6w: 1.25;\n  --moczTQ: calc(var(----lgQg, 0.1rem)*26);\n  --VbcScA: calc(var(----lgQg, 0.1rem)*24);\n  --0LLpdQ: calc(var(----lgQg, 0.1rem)*20);\n  ---eZrnA: calc(var(----lgQg, 0.1rem)*18);\n  --Vr1mRA: 1.5;\n  --HMj1Lg: 1.5;\n  --lQwhPA: calc(var(----lgQg, 0.1rem)*24);\n  --X8ysKw: calc(var(----lgQg, 0.1rem)*22);\n  --RJKbrQ: calc(var(----lgQg, 0.1rem)*20);\n  --xQU-mQ: calc(var(----lgQg, 0.1rem)*16);\n  --x1ji1vbh: 6px;\n  --x1oenytr: 10px;\n  --x1mwufea: 12px;\n  --x12tkvam: 16px;\n  --xtymr81: 24px;\n  --x1cchj8c: 9999px;\n}\n```\n\n## Files\n\n- `tailwind.css` — Tailwind v4 `@theme` block; tokens become utilities (e.g. `bg-neutral-900`, `text-deep-blue`).\n- `variables.css` — framework-agnostic `:root` variables, same values.\n- `tokens.json` — W3C Design Tokens format for Figma plugins, Style Dictionary, etc.\n",
+  "tailwind.css": "@import \"tailwindcss\";\n\n@theme {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-950: #000000;\n  --color-deep-blue: #0f1015;\n  --color-indigo: #7d2ae8;\n  --color-deep-blue-2: #1c2130;\n  --color-indigo-2: #a370fc;\n  --color-teal: #00c4cc;\n  --color-indigo-3: #8b3dff;\n  --color-blue: #5a32fa;\n  --color-cyan: #1a73e8;\n  --color-teal-2: #13a3b5;\n  --color-red: #fd4958;\n  --color-indigo-4: #992bff;\n  --color-pale-indigo: #f1ebff;\n\n  /* inferred semantic roles (each maps to a distinct mined value) */\n  --color-canvas: #ffffff;\n  --color-ink: #000000;\n  --color-accent: #0f1015;\n  --color-accent-2: #7d2ae8;\n  --color-accent-3: #1c2130;\n\n  --font-sans: \"Noto Sans\", ui-sans-serif, system-ui, sans-serif;\n\n  --text-xs: 0.6875rem;\n  --text-sm: 0.75rem;\n  --text-base: 0.875rem;\n  --text-lg: 1rem;\n  --text-xl: 1.09375rem;\n  --text-2xl: 1.125rem;\n  --text-3xl: 1.5rem;\n  --text-4xl: 2.25rem;\n  --text-5xl: 3rem;\n  --text-6xl: 4.125rem;\n  --text-7xl: 5.5rem;\n  --text-8xl: 8rem;\n\n  --font-weight-thin: 100;\n  --font-weight-light: 300;\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, sorted tight -> loose */\n  --leading-none: 1;\n  --leading-tight: 1.04;\n  --leading-snug: 1.06;\n  --leading-normal: 1.1;\n  --leading-relaxed: 1.2;\n  --leading-loose: 1.25;\n  --leading-looser: 1.4;\n  --leading-loosest: 1.6;\n\n  /* letter-spacing, sorted tight -> wide */\n  --tracking-tightest: -1.5px;\n  --tracking-tighter: -.64px;\n  --tracking-tight: -.28px;\n  --tracking-normal: -.01em;\n  --tracking-wide: .25px;\n  --tracking-wider: .3px;\n\n  --radius-sm: 4px;\n  --radius-md: 8px;\n  --radius-lg: 10px;\n  --radius-xl: 12px;\n  --radius-2xl: 16px;\n  --radius-3xl: 20px;\n  --radius-4xl: 24px;\n  --radius-full: 9999px;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 -16px 20px rgba(14,19,24,.04);\n  --shadow-md: shadowSurface;\n\n  --breakpoint-sm: 22rem;\n  --breakpoint-md: 25.625rem;\n  --breakpoint-lg: 27rem;\n  --breakpoint-xl: 37.4375rem;\n  --breakpoint-2xl: 37.5rem;\n  --breakpoint-3xl: 55rem;\n  --breakpoint-4xl: 56.1875rem;\n  --breakpoint-5xl: 56.25rem;\n\n  /* most-used spacing values on the source site (px): 1, 2, 4, 6, 8, 10, 12, 16, 24, 32, 48, 64 */\n}\n\n/* dark-mode values mined from the source (native token names) */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --tk9EiQ: dark;\n    --xpFk1A: #ffffff26;\n    --Kd3K9A: #7630d7;\n    --DVEAGQ: #612dae;\n    --V0s6Og: #4a2e7e;\n    --PqRKXQ: #fff;\n    --R-jrhg: #ffffff00;\n    --GXtk9g: #ffffff12;\n    --xGXQgA: #ffffff26;\n    --oAdupw: #fff;\n    --8-4niA: #ffffff33;\n    --wd-tZA: #ffffff00;\n    --ntzWpQ: #ffffff12;\n    --BorQ6g: #ffffff26;\n    --O8dBuQ: #fff;\n    --EvA8JQ: #13162099;\n    --gIrJLw: #101219b2;\n    --XxI4hg: #0f1015d9;\n    --SvgSpA: #13162099;\n    --N8Oz5g: #fff;\n    --4zRigw: #ffffffb2;\n    --wv7owA: #b61629;\n    --m9I-bA: #911826;\n    --Hxdoag: #721d27;\n    --pxBf3A: #fff;\n    --1sn2Sg: #a370fc4d;\n    --4HnQxA: #a370fc4d;\n    --NRjSsw: #a370fc33;\n    --GviWcg: #fff;\n    --kl47TA: #a370fc;\n    --gFgXSg: #ffffff12;\n    --wBWOJg: #ffffff80;\n    --BVrlVA: #ffffff26;\n    --KwfPsg: #ffffff00;\n    --p5yS_g: #ffffff80;\n    --jz0LSw: #096d11;\n    --CJur3Q: #fff;\n    --UfNqTg: #16461a;\n    --QcueGQ: #fff;\n    --bdtRFA: #1854d7;\n    --YrdGEw: #fff;\n    --_bpjsw: #1d3b7c;\n    --x3uTOw: #fff;\n    --Am6Phw: #944f05;\n    --X8oIbA: #fff;\n    --G_qVww: #563715;\n    --HfWZ1A: #fff;\n    --43wRQw: #b61629;\n    --9luNoA: #fff;\n    --qKGzFw: #721d27;\n    --CMMUiA: #fff;\n    --RzZG4Q: #7630d7;\n    --M8YsdQ: #fff;\n    --xc412Q: #4a2e7e;\n    --XZIM8Q: #fff;\n    --6Hmmng: #13162099;\n    --SxhHZg: #fff;\n    --3ifkTA: #101219b2;\n    --W1_3nw: #ffffff12;\n    --igdHlg: #ffffff33;\n  }\n}\n",
+  "variables.css": ":root {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-950: #000000;\n  --color-deep-blue: #0f1015;\n  --color-indigo: #7d2ae8;\n  --color-deep-blue-2: #1c2130;\n  --color-indigo-2: #a370fc;\n  --color-teal: #00c4cc;\n  --color-indigo-3: #8b3dff;\n  --color-blue: #5a32fa;\n  --color-cyan: #1a73e8;\n  --color-teal-2: #13a3b5;\n  --color-red: #fd4958;\n  --color-indigo-4: #992bff;\n  --color-pale-indigo: #f1ebff;\n\n  /* inferred semantic roles */\n  --color-canvas: #ffffff;\n  --color-ink: #000000;\n  --color-accent: #0f1015;\n  --color-accent-2: #7d2ae8;\n  --color-accent-3: #1c2130;\n\n  /* typography */\n  --font-noto-sans: \"Noto Sans\";\n  --font-canva-sans: \"Canva Sans\";\n  --font-noto-sans-vietnamese: \"Noto Sans Vietnamese\";\n  --font-noto-sans-variable: \"Noto Sans Variable\";\n  --font-google-sans: \"Google Sans\";\n  --font-roboto-regular: \"Roboto-Regular\";\n  --font-roboto: \"Roboto\";\n  --font-helvetica: \"Helvetica\";\n\n  /* type scale, ascending */\n  --text-1: 0.6875rem;\n  --text-2: 0.75rem;\n  --text-3: 0.875rem;\n  --text-4: 1rem;\n  --text-5: 1.09375rem;\n  --text-6: 1.125rem;\n  --text-7: 1.5rem;\n  --text-8: 2.25rem;\n  --text-9: 3rem;\n  --text-10: 4.125rem;\n  --text-11: 5.5rem;\n  --text-12: 8rem;\n\n  /* font weights in use */\n  --font-weight-thin: 100;\n  --font-weight-light: 300;\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, tight -> loose */\n  --leading-1: 1;\n  --leading-2: 1.04;\n  --leading-3: 1.06;\n  --leading-4: 1.1;\n  --leading-5: 1.2;\n  --leading-6: 1.25;\n  --leading-7: 1.4;\n  --leading-8: 1.6;\n\n  /* letter-spacing, tight -> wide */\n  --tracking-1: -1.5px;\n  --tracking-2: -.64px;\n  --tracking-3: -.28px;\n  --tracking-4: -.01em;\n  --tracking-5: .25px;\n  --tracking-6: .3px;\n\n  /* spacing, ascending */\n  --space-1: 1px;\n  --space-2: 2px;\n  --space-3: 4px;\n  --space-4: 6px;\n  --space-5: 8px;\n  --space-6: 10px;\n  --space-7: 12px;\n  --space-8: 16px;\n  --space-9: 24px;\n  --space-10: 32px;\n  --space-11: 48px;\n  --space-12: 64px;\n\n  /* radius, ascending */\n  --radius-sm: 4px;\n  --radius-md: 8px;\n  --radius-lg: 10px;\n  --radius-xl: 12px;\n  --radius-2xl: 16px;\n  --radius-3xl: 20px;\n  --radius-4xl: 24px;\n  --radius-full: 9999px;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 -16px 20px rgba(14,19,24,.04);\n  --shadow-md: shadowSurface;\n}\n\n/* dark-mode values mined from the source (native token names) */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --tk9EiQ: dark;\n    --xpFk1A: #ffffff26;\n    --Kd3K9A: #7630d7;\n    --DVEAGQ: #612dae;\n    --V0s6Og: #4a2e7e;\n    --PqRKXQ: #fff;\n    --R-jrhg: #ffffff00;\n    --GXtk9g: #ffffff12;\n    --xGXQgA: #ffffff26;\n    --oAdupw: #fff;\n    --8-4niA: #ffffff33;\n    --wd-tZA: #ffffff00;\n    --ntzWpQ: #ffffff12;\n    --BorQ6g: #ffffff26;\n    --O8dBuQ: #fff;\n    --EvA8JQ: #13162099;\n    --gIrJLw: #101219b2;\n    --XxI4hg: #0f1015d9;\n    --SvgSpA: #13162099;\n    --N8Oz5g: #fff;\n    --4zRigw: #ffffffb2;\n    --wv7owA: #b61629;\n    --m9I-bA: #911826;\n    --Hxdoag: #721d27;\n    --pxBf3A: #fff;\n    --1sn2Sg: #a370fc4d;\n    --4HnQxA: #a370fc4d;\n    --NRjSsw: #a370fc33;\n    --GviWcg: #fff;\n    --kl47TA: #a370fc;\n    --gFgXSg: #ffffff12;\n    --wBWOJg: #ffffff80;\n    --BVrlVA: #ffffff26;\n    --KwfPsg: #ffffff00;\n    --p5yS_g: #ffffff80;\n    --jz0LSw: #096d11;\n    --CJur3Q: #fff;\n    --UfNqTg: #16461a;\n    --QcueGQ: #fff;\n    --bdtRFA: #1854d7;\n    --YrdGEw: #fff;\n    --_bpjsw: #1d3b7c;\n    --x3uTOw: #fff;\n    --Am6Phw: #944f05;\n    --X8oIbA: #fff;\n    --G_qVww: #563715;\n    --HfWZ1A: #fff;\n    --43wRQw: #b61629;\n    --9luNoA: #fff;\n    --qKGzFw: #721d27;\n    --CMMUiA: #fff;\n    --RzZG4Q: #7630d7;\n    --M8YsdQ: #fff;\n    --xc412Q: #4a2e7e;\n    --XZIM8Q: #fff;\n    --6Hmmng: #13162099;\n    --SxhHZg: #fff;\n    --3ifkTA: #101219b2;\n    --W1_3nw: #ffffff12;\n    --igdHlg: #ffffff33;\n  }\n}\n",
+  "tokens.json": "{\n  \"$description\": \"Design tokens extracted from https://www.canva.com/. Semantic entries are inferred from usage + luminance; all values are mined from live CSS.\",\n  \"color\": {\n    \"neutral-50\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\"\n    },\n    \"neutral-950\": {\n      \"$value\": \"#000000\",\n      \"$type\": \"color\"\n    },\n    \"deep-blue\": {\n      \"$value\": \"#0f1015\",\n      \"$type\": \"color\"\n    },\n    \"indigo\": {\n      \"$value\": \"#7d2ae8\",\n      \"$type\": \"color\"\n    },\n    \"deep-blue-2\": {\n      \"$value\": \"#1c2130\",\n      \"$type\": \"color\"\n    },\n    \"indigo-2\": {\n      \"$value\": \"#a370fc\",\n      \"$type\": \"color\"\n    },\n    \"teal\": {\n      \"$value\": \"#00c4cc\",\n      \"$type\": \"color\"\n    },\n    \"indigo-3\": {\n      \"$value\": \"#8b3dff\",\n      \"$type\": \"color\"\n    },\n    \"blue\": {\n      \"$value\": \"#5a32fa\",\n      \"$type\": \"color\"\n    },\n    \"cyan\": {\n      \"$value\": \"#1a73e8\",\n      \"$type\": \"color\"\n    },\n    \"teal-2\": {\n      \"$value\": \"#13a3b5\",\n      \"$type\": \"color\"\n    },\n    \"red\": {\n      \"$value\": \"#fd4958\",\n      \"$type\": \"color\"\n    },\n    \"indigo-4\": {\n      \"$value\": \"#992bff\",\n      \"$type\": \"color\"\n    },\n    \"pale-indigo\": {\n      \"$value\": \"#f1ebff\",\n      \"$type\": \"color\"\n    }\n  },\n  \"semantic\": {\n    \"canvas\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: lightest neutral, matches the measured light-leaning theme\"\n    },\n    \"ink\": {\n      \"$value\": \"#000000\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: darkest neutral, highest contrast against canvas\"\n    },\n    \"accent\": {\n      \"$value\": \"#0f1015\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used chromatic color\"\n    },\n    \"accent-2\": {\n      \"$value\": \"#7d2ae8\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    },\n    \"accent-3\": {\n      \"$value\": \"#1c2130\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    }\n  },\n  \"fontFamily\": {\n    \"noto-sans\": {\n      \"$value\": \"Noto Sans\",\n      \"$type\": \"fontFamily\"\n    },\n    \"canva-sans\": {\n      \"$value\": \"Canva Sans\",\n      \"$type\": \"fontFamily\"\n    },\n    \"noto-sans-vietnamese\": {\n      \"$value\": \"Noto Sans Vietnamese\",\n      \"$type\": \"fontFamily\"\n    },\n    \"noto-sans-variable\": {\n      \"$value\": \"Noto Sans Variable\",\n      \"$type\": \"fontFamily\"\n    },\n    \"google-sans\": {\n      \"$value\": \"Google Sans\",\n      \"$type\": \"fontFamily\"\n    },\n    \"roboto-regular\": {\n      \"$value\": \"Roboto-Regular\",\n      \"$type\": \"fontFamily\"\n    },\n    \"roboto\": {\n      \"$value\": \"Roboto\",\n      \"$type\": \"fontFamily\"\n    },\n    \"helvetica\": {\n      \"$value\": \"Helvetica\",\n      \"$type\": \"fontFamily\"\n    }\n  },\n  \"fontSize\": {\n    \"size-1\": {\n      \"$value\": \"0.6875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-2\": {\n      \"$value\": \"0.75rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-3\": {\n      \"$value\": \"0.875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-4\": {\n      \"$value\": \"1rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-5\": {\n      \"$value\": \"1.09375rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-6\": {\n      \"$value\": \"1.125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-7\": {\n      \"$value\": \"1.5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-8\": {\n      \"$value\": \"2.25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-9\": {\n      \"$value\": \"3rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-10\": {\n      \"$value\": \"4.125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-11\": {\n      \"$value\": \"5.5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-12\": {\n      \"$value\": \"8rem\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"fontWeight\": {\n    \"thin\": {\n      \"$value\": 100,\n      \"$type\": \"fontWeight\"\n    },\n    \"light\": {\n      \"$value\": 300,\n      \"$type\": \"fontWeight\"\n    },\n    \"normal\": {\n      \"$value\": 400,\n      \"$type\": \"fontWeight\"\n    },\n    \"medium\": {\n      \"$value\": 500,\n      \"$type\": \"fontWeight\"\n    },\n    \"semibold\": {\n      \"$value\": 600,\n      \"$type\": \"fontWeight\"\n    },\n    \"bold\": {\n      \"$value\": 700,\n      \"$type\": \"fontWeight\"\n    }\n  },\n  \"lineHeight\": {\n    \"leading-1\": {\n      \"$value\": 1,\n      \"$type\": \"number\"\n    },\n    \"leading-2\": {\n      \"$value\": 1.04,\n      \"$type\": \"number\"\n    },\n    \"leading-3\": {\n      \"$value\": 1.06,\n      \"$type\": \"number\"\n    },\n    \"leading-4\": {\n      \"$value\": 1.1,\n      \"$type\": \"number\"\n    },\n    \"leading-5\": {\n      \"$value\": 1.2,\n      \"$type\": \"number\"\n    },\n    \"leading-6\": {\n      \"$value\": 1.25,\n      \"$type\": \"number\"\n    },\n    \"leading-7\": {\n      \"$value\": 1.4,\n      \"$type\": \"number\"\n    },\n    \"leading-8\": {\n      \"$value\": 1.6,\n      \"$type\": \"number\"\n    }\n  },\n  \"letterSpacing\": {\n    \"tracking-1\": {\n      \"$value\": \"-1.5px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-2\": {\n      \"$value\": \"-.64px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-3\": {\n      \"$value\": \"-.28px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-4\": {\n      \"$value\": \"-.01em\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-5\": {\n      \"$value\": \".25px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-6\": {\n      \"$value\": \".3px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"dimension\": {\n    \"space-1\": {\n      \"$value\": \"1px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-2\": {\n      \"$value\": \"2px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-3\": {\n      \"$value\": \"4px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-4\": {\n      \"$value\": \"6px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-5\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-6\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-7\": {\n      \"$value\": \"12px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-8\": {\n      \"$value\": \"16px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-9\": {\n      \"$value\": \"24px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-10\": {\n      \"$value\": \"32px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-11\": {\n      \"$value\": \"48px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-12\": {\n      \"$value\": \"64px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"borderRadius\": {\n    \"sm\": {\n      \"$value\": \"4px\",\n      \"$type\": \"dimension\"\n    },\n    \"md\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"lg\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"xl\": {\n      \"$value\": \"12px\",\n      \"$type\": \"dimension\"\n    },\n    \"2xl\": {\n      \"$value\": \"16px\",\n      \"$type\": \"dimension\"\n    },\n    \"3xl\": {\n      \"$value\": \"20px\",\n      \"$type\": \"dimension\"\n    },\n    \"4xl\": {\n      \"$value\": \"24px\",\n      \"$type\": \"dimension\"\n    },\n    \"full\": {\n      \"$value\": \"9999px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"shadow\": {\n    \"sm\": {\n      \"$value\": \"0 -16px 20px rgba(14,19,24,.04)\",\n      \"$type\": \"shadow\"\n    },\n    \"md\": {\n      \"$value\": \"shadowSurface\",\n      \"$type\": \"shadow\"\n    }\n  },\n  \"dark\": {\n    \"tk9EiQ\": {\n      \"$value\": \"dark\",\n      \"$type\": \"string\"\n    },\n    \"xpFk1A\": {\n      \"$value\": \"#ffffff26\",\n      \"$type\": \"color\"\n    },\n    \"Kd3K9A\": {\n      \"$value\": \"#7630d7\",\n      \"$type\": \"color\"\n    },\n    \"DVEAGQ\": {\n      \"$value\": \"#612dae\",\n      \"$type\": \"color\"\n    },\n    \"V0s6Og\": {\n      \"$value\": \"#4a2e7e\",\n      \"$type\": \"color\"\n    },\n    \"PqRKXQ\": {\n      \"$value\": \"#fff\",\n      \"$type\": \"color\"\n    },\n    \"R-jrhg\": {\n      \"$value\": \"#ffffff00\",\n      \"$type\": \"color\"\n    },\n    \"GXtk9g\": {\n      \"$value\": \"#ffffff12\",\n      \"$type\": \"color\"\n    },\n    \"xGXQgA\": {\n      \"$value\": \"#ffffff26\",\n      \"$type\": \"color\"\n    },\n    \"oAdupw\": {\n      \"$value\": \"#fff\",\n      \"$type\": \"color\"\n    },\n    \"8-4niA\": {\n      \"$value\": \"#ffffff33\",\n      \"$type\": \"color\"\n    },\n    \"wd-tZA\": {\n      \"$value\": \"#ffffff00\",\n      \"$type\": \"color\"\n    },\n    \"ntzWpQ\": {\n      \"$value\": \"#ffffff12\",\n      \"$type\": \"color\"\n    },\n    \"BorQ6g\": {\n      \"$value\": \"#ffffff26\",\n      \"$type\": \"color\"\n    },\n    \"O8dBuQ\": {\n      \"$value\": \"#fff\",\n      \"$type\": \"color\"\n    },\n    \"EvA8JQ\": {\n      \"$value\": \"#13162099\",\n      \"$type\": \"color\"\n    },\n    \"gIrJLw\": {\n      \"$value\": \"#101219b2\",\n      \"$type\": \"color\"\n    },\n    \"XxI4hg\": {\n      \"$value\": \"#0f1015d9\",\n      \"$type\": \"color\"\n    },\n    \"SvgSpA\": {\n      \"$value\": \"#13162099\",\n      \"$type\": \"color\"\n    },\n    \"N8Oz5g\": {\n      \"$value\": \"#fff\",\n      \"$type\": \"color\"\n    },\n    \"4zRigw\": {\n      \"$value\": \"#ffffffb2\",\n      \"$type\": \"color\"\n    },\n    \"wv7owA\": {\n      \"$value\": \"#b61629\",\n      \"$type\": \"color\"\n    },\n    \"m9I-bA\": {\n      \"$value\": \"#911826\",\n      \"$type\": \"color\"\n    },\n    \"Hxdoag\": {\n      \"$value\": \"#721d27\",\n      \"$type\": \"color\"\n    },\n    \"pxBf3A\": {\n      \"$value\": \"#fff\",\n      \"$type\": \"color\"\n    },\n    \"1sn2Sg\": {\n      \"$value\": \"#a370fc4d\",\n      \"$type\": \"color\"\n    },\n    \"4HnQxA\": {\n      \"$value\": \"#a370fc4d\",\n      \"$type\": \"color\"\n    },\n    \"NRjSsw\": {\n      \"$value\": \"#a370fc33\",\n      \"$type\": \"color\"\n    },\n    \"GviWcg\": {\n      \"$value\": \"#fff\",\n      \"$type\": \"color\"\n    },\n    \"kl47TA\": {\n      \"$value\": \"#a370fc\",\n      \"$type\": \"color\"\n    },\n    \"gFgXSg\": {\n      \"$value\": \"#ffffff12\",\n      \"$type\": \"color\"\n    },\n    \"wBWOJg\": {\n      \"$value\": \"#ffffff80\",\n      \"$type\": \"color\"\n    },\n    \"BVrlVA\": {\n      \"$value\": \"#ffffff26\",\n      \"$type\": \"color\"\n    },\n    \"KwfPsg\": {\n      \"$value\": \"#ffffff00\",\n      \"$type\": \"color\"\n    },\n    \"p5yS_g\": {\n      \"$value\": \"#ffffff80\",\n      \"$type\": \"color\"\n    },\n    \"jz0LSw\": {\n      \"$value\": \"#096d11\",\n      \"$type\": \"color\"\n    },\n    \"CJur3Q\": {\n      \"$value\": \"#fff\",\n      \"$type\": \"color\"\n    },\n    \"UfNqTg\": {\n      \"$value\": \"#16461a\",\n      \"$type\": \"color\"\n    },\n    \"QcueGQ\": {\n      \"$value\": \"#fff\",\n      \"$type\": \"color\"\n    },\n    \"bdtRFA\": {\n      \"$value\": \"#1854d7\",\n      \"$type\": \"color\"\n    },\n    \"YrdGEw\": {\n      \"$value\": \"#fff\",\n      \"$type\": \"color\"\n    },\n    \"_bpjsw\": {\n      \"$value\": \"#1d3b7c\",\n      \"$type\": \"color\"\n    },\n    \"x3uTOw\": {\n      \"$value\": \"#fff\",\n      \"$type\": \"color\"\n    },\n    \"Am6Phw\": {\n      \"$value\": \"#944f05\",\n      \"$type\": \"color\"\n    },\n    \"X8oIbA\": {\n      \"$value\": \"#fff\",\n      \"$type\": \"color\"\n    },\n    \"G_qVww\": {\n      \"$value\": \"#563715\",\n      \"$type\": \"color\"\n    },\n    \"HfWZ1A\": {\n      \"$value\": \"#fff\",\n      \"$type\": \"color\"\n    },\n    \"43wRQw\": {\n      \"$value\": \"#b61629\",\n      \"$type\": \"color\"\n    },\n    \"9luNoA\": {\n      \"$value\": \"#fff\",\n      \"$type\": \"color\"\n    },\n    \"qKGzFw\": {\n      \"$value\": \"#721d27\",\n      \"$type\": \"color\"\n    },\n    \"CMMUiA\": {\n      \"$value\": \"#fff\",\n      \"$type\": \"color\"\n    },\n    \"RzZG4Q\": {\n      \"$value\": \"#7630d7\",\n      \"$type\": \"color\"\n    },\n    \"M8YsdQ\": {\n      \"$value\": \"#fff\",\n      \"$type\": \"color\"\n    },\n    \"xc412Q\": {\n      \"$value\": \"#4a2e7e\",\n      \"$type\": \"color\"\n    },\n    \"XZIM8Q\": {\n      \"$value\": \"#fff\",\n      \"$type\": \"color\"\n    },\n    \"6Hmmng\": {\n      \"$value\": \"#13162099\",\n      \"$type\": \"color\"\n    },\n    \"SxhHZg\": {\n      \"$value\": \"#fff\",\n      \"$type\": \"color\"\n    },\n    \"3ifkTA\": {\n      \"$value\": \"#101219b2\",\n      \"$type\": \"color\"\n    },\n    \"W1_3nw\": {\n      \"$value\": \"#ffffff12\",\n      \"$type\": \"color\"\n    },\n    \"igdHlg\": {\n      \"$value\": \"#ffffff33\",\n      \"$type\": \"color\"\n    }\n  }\n}"
+ },
+ "raw": {
+  "tokens": {
+   "title": "Canva: Visual Suite for Everyone",
+   "description": "Canva is a free-to-use online graphic design tool. Use it to create social media posts, presentations, posters, videos, logos and more.",
+   "themeGuess": "light-leaning",
+   "darkWeight": 48,
+   "lightWeight": 227,
+   "neutrals": [
+    {
+     "hex": "#ffffff",
+     "count": 227
+    },
+    {
+     "hex": "#000000",
+     "count": 48
+    }
+   ],
+   "accents": [
+    {
+     "hex": "#0f1015",
+     "count": 57
+    },
+    {
+     "hex": "#7d2ae8",
+     "count": 41
+    },
+    {
+     "hex": "#1c2130",
+     "count": 38
+    },
+    {
+     "hex": "#a370fc",
+     "count": 34
+    },
+    {
+     "hex": "#00c4cc",
+     "count": 26
+    },
+    {
+     "hex": "#8b3dff",
+     "count": 24
+    },
+    {
+     "hex": "#5a32fa",
+     "count": 22
+    },
+    {
+     "hex": "#1a73e8",
+     "count": 16
+    },
+    {
+     "hex": "#13a3b5",
+     "count": 16
+    },
+    {
+     "hex": "#fd4958",
+     "count": 16
+    },
+    {
+     "hex": "#992bff",
+     "count": 15
+    },
+    {
+     "hex": "#f1ebff",
+     "count": 15
+    }
+   ],
+   "modern": [],
+   "fonts": [
+    {
+     "name": "Noto Sans",
+     "count": 18
+    },
+    {
+     "name": "Canva Sans",
+     "count": 8
+    },
+    {
+     "name": "Noto Sans Vietnamese",
+     "count": 5
+    },
+    {
+     "name": "Noto Sans Variable",
+     "count": 3
+    },
+    {
+     "name": "Google Sans",
+     "count": 2
+    },
+    {
+     "name": "Roboto-Regular",
+     "count": 1
+    },
+    {
+     "name": "Roboto",
+     "count": 1
+    },
+    {
+     "name": "Helvetica",
+     "count": 1
+    }
+   ],
+   "fontSizes": [
+    11,
+    12,
+    14,
+    16,
+    17.5,
+    18,
+    24,
+    36,
+    48,
+    66,
+    88,
+    128
+   ],
+   "fontWeights": [
+    {
+     "value": 100,
+     "count": 3
+    },
+    {
+     "value": 300,
+     "count": 1
+    },
+    {
+     "value": 400,
+     "count": 38
+    },
+    {
+     "value": 500,
+     "count": 14
+    },
+    {
+     "value": 600,
+     "count": 29
+    },
+    {
+     "value": 700,
+     "count": 13
+    }
+   ],
+   "lineHeights": [
+    1,
+    1.04,
+    1.06,
+    1.1,
+    1.2,
+    1.25,
+    1.4,
+    1.6
+   ],
+   "letterSpacings": [
+    "-1.5px",
+    "-.64px",
+    "-.28px",
+    "-.01em",
+    ".25px",
+    ".3px"
+   ],
+   "spacing": [
+    1,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+   ],
+   "radii": [
+    {
+     "value": "12px",
+     "count": 19
+    },
+    {
+     "value": "20px",
+     "count": 12
+    },
+    {
+     "value": "10px",
+     "count": 11
+    },
+    {
+     "value": "16px",
+     "count": 11
+    },
+    {
+     "value": "4px",
+     "count": 8
+    },
+    {
+     "value": "8px",
+     "count": 8
+    },
+    {
+     "value": "24px",
+     "count": 7
+    },
+    {
+     "value": "9999px",
+     "count": 29
+    }
+   ],
+   "shadows": [
+    {
+     "value": "0 -16px 20px rgba(14,19,24,.04)",
+     "count": 2,
+     "blur": 0
+    },
+    {
+     "value": "shadowSurface",
+     "count": 2,
+     "blur": 0
+    }
+   ],
+   "breakpoints": [
+    352,
+    410,
+    432,
+    599,
+    600,
+    880,
+    899,
+    900
+   ],
+   "nativeVars": [
+    {
+     "name": "wczjwA",
+     "value": "calc(var(----lgQg, 0.1rem)*42)"
+    },
+    {
+     "name": "32-5Rg",
+     "value": "calc(var(----lgQg, 0.1rem)*36)"
+    },
+    {
+     "name": "q5aPlw",
+     "value": "calc(var(----lgQg, 0.1rem)*36)"
+    },
+    {
+     "name": "XAu0sw",
+     "value": "calc(var(----lgQg, 0.1rem)*32)"
+    },
+    {
+     "name": "OJy8Yg",
+     "value": "calc(var(----lgQg, 0.1rem)*32)"
+    },
+    {
+     "name": "Vf8OSg",
+     "value": "calc(var(----lgQg, 0.1rem)*36)"
+    },
+    {
+     "name": "A3YTsg",
+     "value": "calc(var(----lgQg, 0.1rem)*24)"
+    },
+    {
+     "name": "Dynksw",
+     "value": "calc(var(----lgQg, 0.1rem)*21)"
+    },
+    {
+     "name": "VrAiwg",
+     "value": "calc(var(----lgQg, 0.1rem)*16)"
+    },
+    {
+     "name": "5QGiVg",
+     "value": "calc(var(----lgQg, 0.1rem)*14)"
+    },
+    {
+     "name": "R07nfg",
+     "value": "calc(var(----lgQg, 0.1rem)*12)"
+    },
+    {
+     "name": "m8t8Kw",
+     "value": "calc(var(----lgQg, 0.1rem)*21)"
+    },
+    {
+     "name": "ZYsOLQ",
+     "value": "calc(var(----lgQg, 0.1rem)*18)"
+    },
+    {
+     "name": "__4QUw",
+     "value": "calc(var(----lgQg, 0.1rem)*16)"
+    },
+    {
+     "name": "ZOMbtg",
+     "value": "calc(var(----lgQg, 0.1rem)*14)"
+    },
+    {
+     "name": "ylZqXQ",
+     "value": "calc(var(----lgQg, 0.1rem)*12)"
+    },
+    {
+     "name": "ggP9YA",
+     "value": "calc(var(----lgQg, 0.1rem)*11)"
+    },
+    {
+     "name": "Csadrg",
+     "value": "1.1"
+    },
+    {
+     "name": "3HwnTg",
+     "value": "1.1"
+    },
+    {
+     "name": "guGCJg",
+     "value": "1.1"
+    },
+    {
+     "name": "Pz31Ow",
+     "value": "1.1"
+    },
+    {
+     "name": "qKnIjA",
+     "value": "1.25"
+    },
+    {
+     "name": "a60EZw",
+     "value": "1.25"
+    },
+    {
+     "name": "KMUE6w",
+     "value": "1.25"
+    },
+    {
+     "name": "moczTQ",
+     "value": "calc(var(----lgQg, 0.1rem)*26)"
+    },
+    {
+     "name": "VbcScA",
+     "value": "calc(var(----lgQg, 0.1rem)*24)"
+    },
+    {
+     "name": "0LLpdQ",
+     "value": "calc(var(----lgQg, 0.1rem)*20)"
+    },
+    {
+     "name": "-eZrnA",
+     "value": "calc(var(----lgQg, 0.1rem)*18)"
+    },
+    {
+     "name": "Vr1mRA",
+     "value": "1.5"
+    },
+    {
+     "name": "HMj1Lg",
+     "value": "1.5"
+    },
+    {
+     "name": "lQwhPA",
+     "value": "calc(var(----lgQg, 0.1rem)*24)"
+    },
+    {
+     "name": "X8ysKw",
+     "value": "calc(var(----lgQg, 0.1rem)*22)"
+    },
+    {
+     "name": "RJKbrQ",
+     "value": "calc(var(----lgQg, 0.1rem)*20)"
+    },
+    {
+     "name": "xQU-mQ",
+     "value": "calc(var(----lgQg, 0.1rem)*16)"
+    },
+    {
+     "name": "x1ji1vbh",
+     "value": "6px"
+    },
+    {
+     "name": "x1oenytr",
+     "value": "10px"
+    },
+    {
+     "name": "x1mwufea",
+     "value": "12px"
+    },
+    {
+     "name": "x12tkvam",
+     "value": "16px"
+    },
+    {
+     "name": "xtymr81",
+     "value": "24px"
+    },
+    {
+     "name": "x1cchj8c",
+     "value": "9999px"
+    },
+    {
+     "name": "x1k7owy0",
+     "value": "14px"
+    },
+    {
+     "name": "x29i84u",
+     "value": "16px"
+    },
+    {
+     "name": "x1c983hf",
+     "value": "20px"
+    },
+    {
+     "name": "xtggeuw",
+     "value": "32px"
+    },
+    {
+     "name": "xmbptrk",
+     "value": "initial"
+    },
+    {
+     "name": "x1ohpzcg",
+     "value": "initial"
+    },
+    {
+     "name": "x1uwd1d6",
+     "value": "initial"
+    },
+    {
+     "name": "xfqksvz",
+     "value": "initial"
+    },
+    {
+     "name": "xihvkld",
+     "value": "initial"
+    },
+    {
+     "name": "x4hezqk",
+     "value": "initial"
+    },
+    {
+     "name": "x1ocn4oh",
+     "value": "initial"
+    },
+    {
+     "name": "xchemzi",
+     "value": "initial"
+    },
+    {
+     "name": "xi33d4w",
+     "value": "initial"
+    },
+    {
+     "name": "x1dhaoky",
+     "value": "initial"
+    },
+    {
+     "name": "x1maigf0",
+     "value": "initial"
+    },
+    {
+     "name": "xr7q9zi",
+     "value": "initial"
+    },
+    {
+     "name": "x8ziph4",
+     "value": "initial"
+    },
+    {
+     "name": "xn0r6qy",
+     "value": "initial"
+    },
+    {
+     "name": "x3feg2x",
+     "value": "initial"
+    },
+    {
+     "name": "x1pki0o8",
+     "value": "initial"
+    },
+    {
+     "name": "x1735g3x",
+     "value": "initial"
+    },
+    {
+     "name": "xub82ts",
+     "value": "initial"
+    },
+    {
+     "name": "x1xq5mgg",
+     "value": "initial"
+    },
+    {
+     "name": "x1getfyd",
+     "value": "initial"
+    },
+    {
+     "name": "xgksvxh",
+     "value": "initial"
+    },
+    {
+     "name": "x2em15e",
+     "value": "initial"
+    },
+    {
+     "name": "x1x61wad",
+     "value": "initial"
+    },
+    {
+     "name": "xlv8j6w",
+     "value": "initial"
+    },
+    {
+     "name": "xldwcu1",
+     "value": "initial"
+    },
+    {
+     "name": "xs10nhl",
+     "value": "initial"
+    },
+    {
+     "name": "xi99wm0",
+     "value": "initial"
+    },
+    {
+     "name": "x1h6imwf",
+     "value": "initial"
+    },
+    {
+     "name": "xctgemq",
+     "value": "initial"
+    },
+    {
+     "name": "x1701io7",
+     "value": "initial"
+    },
+    {
+     "name": "x1ae5sig",
+     "value": "initial"
+    },
+    {
+     "name": "x11upyvn",
+     "value": "initial"
+    },
+    {
+     "name": "x1fh7jof",
+     "value": "initial"
+    },
+    {
+     "name": "xe9l79n",
+     "value": "initial"
+    },
+    {
+     "name": "x1ys0uy7",
+     "value": "initial"
+    },
+    {
+     "name": "x12g387",
+     "value": "initial"
+    },
+    {
+     "name": "x1i4z4r9",
+     "value": "initial"
+    },
+    {
+     "name": "x1d14g3u",
+     "value": "initial"
+    },
+    {
+     "name": "xstli9h",
+     "value": "initial"
+    },
+    {
+     "name": "x1le4i62",
+     "value": "initial"
+    },
+    {
+     "name": "x1jhh6sn",
+     "value": "initial"
+    },
+    {
+     "name": "xb8sy3z",
+     "value": "initial"
+    },
+    {
+     "name": "x1j8lsjo",
+     "value": "initial"
+    },
+    {
+     "name": "x1509etf",
+     "value": "initial"
+    },
+    {
+     "name": "x1gv02jv",
+     "value": "initial"
+    },
+    {
+     "name": "x1ckxg35",
+     "value": "initial"
+    },
+    {
+     "name": "xzkqv3r",
+     "value": "initial"
+    },
+    {
+     "name": "x1hvhyjv",
+     "value": "initial"
+    },
+    {
+     "name": "xnnsip7",
+     "value": "initial"
+    },
+    {
+     "name": "x7zx197",
+     "value": "initial"
+    },
+    {
+     "name": "xqjd72j",
+     "value": "initial"
+    },
+    {
+     "name": "x1oohv4w",
+     "value": "initial"
+    },
+    {
+     "name": "xwsneo9",
+     "value": "initial"
+    },
+    {
+     "name": "xhrnyfl",
+     "value": "initial"
+    },
+    {
+     "name": "x1n0w1n2",
+     "value": "initial"
+    },
+    {
+     "name": "x8voyoh",
+     "value": "initial"
+    },
+    {
+     "name": "xfp5rmo",
+     "value": "initial"
+    },
+    {
+     "name": "xtqk5qf",
+     "value": "initial"
+    },
+    {
+     "name": "x1ypgdvh",
+     "value": "initial"
+    },
+    {
+     "name": "xb1ns9n",
+     "value": "initial"
+    },
+    {
+     "name": "x19j03hc",
+     "value": "initial"
+    },
+    {
+     "name": "xjtbb9",
+     "value": "initial"
+    },
+    {
+     "name": "xqgoy7p",
+     "value": "initial"
+    },
+    {
+     "name": "x1czl7f6",
+     "value": "initial"
+    },
+    {
+     "name": "x10nj4v5",
+     "value": "initial"
+    },
+    {
+     "name": "x1oz8rqk",
+     "value": "initial"
+    },
+    {
+     "name": "xp1m3i3",
+     "value": "initial"
+    },
+    {
+     "name": "x1h9ved8",
+     "value": "initial"
+    },
+    {
+     "name": "xkdps2a",
+     "value": "initial"
+    },
+    {
+     "name": "x1ypwk8g",
+     "value": "initial"
+    },
+    {
+     "name": "xdeoihw",
+     "value": "initial"
+    },
+    {
+     "name": "x13sna8r",
+     "value": "initial"
+    },
+    {
+     "name": "xcsngl3",
+     "value": "initial"
+    },
+    {
+     "name": "xxx18mj",
+     "value": "initial"
+    },
+    {
+     "name": "x144sta6",
+     "value": "initial"
+    },
+    {
+     "name": "x5v5mcb",
+     "value": "initial"
+    }
+   ],
+   "darkVars": [
+    {
+     "name": "tk9EiQ",
+     "light": null,
+     "dark": "dark",
+     "via": "dark selector"
+    },
+    {
+     "name": "xpFk1A",
+     "light": null,
+     "dark": "#ffffff26",
+     "via": "dark selector"
+    },
+    {
+     "name": "Kd3K9A",
+     "light": null,
+     "dark": "#7630d7",
+     "via": "dark selector"
+    },
+    {
+     "name": "DVEAGQ",
+     "light": null,
+     "dark": "#612dae",
+     "via": "dark selector"
+    },
+    {
+     "name": "V0s6Og",
+     "light": null,
+     "dark": "#4a2e7e",
+     "via": "dark selector"
+    },
+    {
+     "name": "PqRKXQ",
+     "light": null,
+     "dark": "#fff",
+     "via": "dark selector"
+    },
+    {
+     "name": "R-jrhg",
+     "light": null,
+     "dark": "#ffffff00",
+     "via": "dark selector"
+    },
+    {
+     "name": "GXtk9g",
+     "light": null,
+     "dark": "#ffffff12",
+     "via": "dark selector"
+    },
+    {
+     "name": "xGXQgA",
+     "light": null,
+     "dark": "#ffffff26",
+     "via": "dark selector"
+    },
+    {
+     "name": "oAdupw",
+     "light": null,
+     "dark": "#fff",
+     "via": "dark selector"
+    },
+    {
+     "name": "8-4niA",
+     "light": null,
+     "dark": "#ffffff33",
+     "via": "dark selector"
+    },
+    {
+     "name": "wd-tZA",
+     "light": null,
+     "dark": "#ffffff00",
+     "via": "dark selector"
+    },
+    {
+     "name": "ntzWpQ",
+     "light": null,
+     "dark": "#ffffff12",
+     "via": "dark selector"
+    },
+    {
+     "name": "BorQ6g",
+     "light": null,
+     "dark": "#ffffff26",
+     "via": "dark selector"
+    },
+    {
+     "name": "O8dBuQ",
+     "light": null,
+     "dark": "#fff",
+     "via": "dark selector"
+    },
+    {
+     "name": "EvA8JQ",
+     "light": null,
+     "dark": "#13162099",
+     "via": "dark selector"
+    },
+    {
+     "name": "gIrJLw",
+     "light": null,
+     "dark": "#101219b2",
+     "via": "dark selector"
+    },
+    {
+     "name": "XxI4hg",
+     "light": null,
+     "dark": "#0f1015d9",
+     "via": "dark selector"
+    },
+    {
+     "name": "SvgSpA",
+     "light": null,
+     "dark": "#13162099",
+     "via": "dark selector"
+    },
+    {
+     "name": "N8Oz5g",
+     "light": null,
+     "dark": "#fff",
+     "via": "dark selector"
+    },
+    {
+     "name": "4zRigw",
+     "light": null,
+     "dark": "#ffffffb2",
+     "via": "dark selector"
+    },
+    {
+     "name": "wv7owA",
+     "light": null,
+     "dark": "#b61629",
+     "via": "dark selector"
+    },
+    {
+     "name": "m9I-bA",
+     "light": null,
+     "dark": "#911826",
+     "via": "dark selector"
+    },
+    {
+     "name": "Hxdoag",
+     "light": null,
+     "dark": "#721d27",
+     "via": "dark selector"
+    },
+    {
+     "name": "pxBf3A",
+     "light": null,
+     "dark": "#fff",
+     "via": "dark selector"
+    },
+    {
+     "name": "1sn2Sg",
+     "light": null,
+     "dark": "#a370fc4d",
+     "via": "dark selector"
+    },
+    {
+     "name": "4HnQxA",
+     "light": null,
+     "dark": "#a370fc4d",
+     "via": "dark selector"
+    },
+    {
+     "name": "NRjSsw",
+     "light": null,
+     "dark": "#a370fc33",
+     "via": "dark selector"
+    },
+    {
+     "name": "GviWcg",
+     "light": null,
+     "dark": "#fff",
+     "via": "dark selector"
+    },
+    {
+     "name": "kl47TA",
+     "light": null,
+     "dark": "#a370fc",
+     "via": "dark selector"
+    },
+    {
+     "name": "gFgXSg",
+     "light": null,
+     "dark": "#ffffff12",
+     "via": "dark selector"
+    },
+    {
+     "name": "wBWOJg",
+     "light": null,
+     "dark": "#ffffff80",
+     "via": "dark selector"
+    },
+    {
+     "name": "BVrlVA",
+     "light": null,
+     "dark": "#ffffff26",
+     "via": "dark selector"
+    },
+    {
+     "name": "KwfPsg",
+     "light": null,
+     "dark": "#ffffff00",
+     "via": "dark selector"
+    },
+    {
+     "name": "p5yS_g",
+     "light": null,
+     "dark": "#ffffff80",
+     "via": "dark selector"
+    },
+    {
+     "name": "jz0LSw",
+     "light": null,
+     "dark": "#096d11",
+     "via": "dark selector"
+    },
+    {
+     "name": "CJur3Q",
+     "light": null,
+     "dark": "#fff",
+     "via": "dark selector"
+    },
+    {
+     "name": "UfNqTg",
+     "light": null,
+     "dark": "#16461a",
+     "via": "dark selector"
+    },
+    {
+     "name": "QcueGQ",
+     "light": null,
+     "dark": "#fff",
+     "via": "dark selector"
+    },
+    {
+     "name": "bdtRFA",
+     "light": null,
+     "dark": "#1854d7",
+     "via": "dark selector"
+    },
+    {
+     "name": "YrdGEw",
+     "light": null,
+     "dark": "#fff",
+     "via": "dark selector"
+    },
+    {
+     "name": "_bpjsw",
+     "light": null,
+     "dark": "#1d3b7c",
+     "via": "dark selector"
+    },
+    {
+     "name": "x3uTOw",
+     "light": null,
+     "dark": "#fff",
+     "via": "dark selector"
+    },
+    {
+     "name": "Am6Phw",
+     "light": null,
+     "dark": "#944f05",
+     "via": "dark selector"
+    },
+    {
+     "name": "X8oIbA",
+     "light": null,
+     "dark": "#fff",
+     "via": "dark selector"
+    },
+    {
+     "name": "G_qVww",
+     "light": null,
+     "dark": "#563715",
+     "via": "dark selector"
+    },
+    {
+     "name": "HfWZ1A",
+     "light": null,
+     "dark": "#fff",
+     "via": "dark selector"
+    },
+    {
+     "name": "43wRQw",
+     "light": null,
+     "dark": "#b61629",
+     "via": "dark selector"
+    },
+    {
+     "name": "9luNoA",
+     "light": null,
+     "dark": "#fff",
+     "via": "dark selector"
+    },
+    {
+     "name": "qKGzFw",
+     "light": null,
+     "dark": "#721d27",
+     "via": "dark selector"
+    },
+    {
+     "name": "CMMUiA",
+     "light": null,
+     "dark": "#fff",
+     "via": "dark selector"
+    },
+    {
+     "name": "RzZG4Q",
+     "light": null,
+     "dark": "#7630d7",
+     "via": "dark selector"
+    },
+    {
+     "name": "M8YsdQ",
+     "light": null,
+     "dark": "#fff",
+     "via": "dark selector"
+    },
+    {
+     "name": "xc412Q",
+     "light": null,
+     "dark": "#4a2e7e",
+     "via": "dark selector"
+    },
+    {
+     "name": "XZIM8Q",
+     "light": null,
+     "dark": "#fff",
+     "via": "dark selector"
+    },
+    {
+     "name": "6Hmmng",
+     "light": null,
+     "dark": "#13162099",
+     "via": "dark selector"
+    },
+    {
+     "name": "SxhHZg",
+     "light": null,
+     "dark": "#fff",
+     "via": "dark selector"
+    },
+    {
+     "name": "3ifkTA",
+     "light": null,
+     "dark": "#101219b2",
+     "via": "dark selector"
+    },
+    {
+     "name": "W1_3nw",
+     "light": null,
+     "dark": "#ffffff12",
+     "via": "dark selector"
+    },
+    {
+     "name": "igdHlg",
+     "light": null,
+     "dark": "#ffffff33",
+     "via": "dark selector"
+    }
+   ],
+   "rings": []
+  },
+  "stylesheets": 2
+ }
+}

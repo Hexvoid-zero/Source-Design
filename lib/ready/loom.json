@@ -1,0 +1,861 @@
+{
+ "slug": "loom",
+ "name": "Loom",
+ "blurb": "Video messaging. Purple-red gradient accents, soft cards, recorder-first CTAs.",
+ "url": "https://www.loom.com/",
+ "title": "Free screen recorder for Mac and PC | Loom",
+ "extractedAt": "2026-07-03",
+ "summary": {
+  "colors": [
+   {
+    "name": "neutral-50",
+    "hex": "#ffffff",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-100",
+    "hex": "#dddee1",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-300",
+    "hex": "#b7b9be",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-400",
+    "hex": "#9ca3af",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-500",
+    "hex": "#8c8f97",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-600",
+    "hex": "#7d818a",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-700",
+    "hex": "#6c6f77",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-800",
+    "hex": "#505258",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-900",
+    "hex": "#3b3d42",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-950",
+    "hex": "#292a2e",
+    "group": "neutral"
+   },
+   {
+    "name": "deep-blue",
+    "hex": "#111019",
+    "group": "accent"
+   },
+   {
+    "name": "pale-blue",
+    "hex": "#eff0ff",
+    "group": "accent"
+   },
+   {
+    "name": "blue",
+    "hex": "#1868db",
+    "group": "accent"
+   },
+   {
+    "name": "purple",
+    "hex": "#bf63f3",
+    "group": "accent"
+   },
+   {
+    "name": "lime",
+    "hex": "#82b536",
+    "group": "accent"
+   },
+   {
+    "name": "blue-2",
+    "hex": "#3b82f6",
+    "group": "accent"
+   },
+   {
+    "name": "cyan",
+    "hex": "#9fcdfe",
+    "group": "accent"
+   },
+   {
+    "name": "purple-2",
+    "hex": "#d8a0f7",
+    "group": "accent"
+   },
+   {
+    "name": "purple-3",
+    "hex": "#af59e1",
+    "group": "accent"
+   },
+   {
+    "name": "purple-4",
+    "hex": "#803fa5",
+    "group": "accent"
+   },
+   {
+    "name": "purple-5",
+    "hex": "#48245d",
+    "group": "accent"
+   },
+   {
+    "name": "deep-purple",
+    "hex": "#35243f",
+    "group": "accent"
+   }
+  ],
+  "fonts": [
+   "Charlie Display",
+   "Charlie Text"
+  ],
+  "themeGuess": "light-leaning",
+  "stylesheets": 4,
+  "nativeVarCount": 120
+ },
+ "files": {
+  "DESIGN.md": "---\nname: loom-com-design-system\nsource: https://www.loom.com/\nextracted: 2026-07-03\ntheme: light  # measured from neutral usage weight\ncolors:  # roles inferred from usage frequency + luminance; names verified against values\n  canvas: \"#ffffff\"\n  ink: \"#292a2e\"\n  text-muted: \"#8c8f97\"\n  surface: \"#dddee1\"\n  hairline: \"#b7b9be\"\n  accent: \"#111019\"  # deep-blue\n  accent-2: \"#eff0ff\"  # pale-blue\n  accent-3: \"#1868db\"  # blue\nfonts:\n  primary: \"Charlie Display\"  # medium-confidence: usage counts are close\n---\n\n# Free screen recorder for Mac and PC | Loom — Design System\n\nExtracted from **https://www.loom.com/** on 2026-07-03.\n\nEvery value below is mined from the site's live CSS (120 native custom properties, ranked usage counts). Role assignments are inferred from usage and luminance and marked as such — treat them as a strong starting point, not gospel.\n\n## Overview\n\nThe system reads as light: measured neutral usage weighs 16 light against 14 dark. The palette is chromatic: 12 saturated values against 10 neutrals, led by deep-blue (`#111019`). **Charlie Display** leads the font stack, though usage counts are close — verify against rendered pages before committing. Geometry mixes sharp corners (.125rem) with full pills.\n\n## Usage rules\n\nDerived from the measured usage below — each rule cites its evidence.\n\n- Chromatic color carries 61% of measured usage — this palette uses color structurally. Saturated values can hold large surfaces here; timidity would misrepresent the source.\n- The theme is light (measured neutral weight 16:14). Don't flip individual sections to the opposite mode.\n- `624.9375rem` is the workhorse radius (x18); treat the other radii as exceptions, not options.\n- Shadows stay tight (max 0.3125px blur) — keep elevation subtle if you extend the scale.\n- One family does the work — build hierarchy with size and weight (100/200/400/500/700/800), not by adding typefaces.\n\n## Colors\n\n### Neutrals (light → dark)\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `neutral-50` | `#ffffff` | 14 | **canvas** — lightest neutral, matches the measured light-leaning theme |\n| `neutral-100` | `#dddee1` | 2 | **surface** — neutral closest to canvas luminance |\n| `neutral-300` | `#b7b9be` | 1 | **hairline** — next neutral near canvas, hairline-border weight |\n| `neutral-400` | `#9ca3af` | 1 | — |\n| `neutral-500` | `#8c8f97` | 3 | **text-muted** — most-used mid-luminance neutral |\n| `neutral-600` | `#7d818a` | 1 | — |\n| `neutral-700` | `#6c6f77` | 2 | — |\n| `neutral-800` | `#505258` | 1 | — |\n| `neutral-900` | `#3b3d42` | 1 | — |\n| `neutral-950` | `#292a2e` | 1 | **ink** — darkest neutral, highest contrast against canvas |\n\n### Accents\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `deep-blue` | `#111019` | 10 | **accent** — most-used chromatic color |\n| `pale-blue` | `#eff0ff` | 6 | **accent-2** — supporting chromatic color |\n| `blue` | `#1868db` | 5 | **accent-3** — supporting chromatic color |\n| `purple` | `#bf63f3` | 3 | — |\n| `lime` | `#82b536` | 3 | — |\n| `blue-2` | `#3b82f6` | 3 | — |\n| `cyan` | `#9fcdfe` | 3 | — |\n| `purple-2` | `#d8a0f7` | 2 | — |\n| `purple-3` | `#af59e1` | 2 | — |\n| `purple-4` | `#803fa5` | 2 | — |\n| `purple-5` | `#48245d` | 2 | — |\n| `deep-purple` | `#35243f` | 2 | — |\n\n## Typography\n\n**Charlie Display** has the most `font-family` declarations, but the margin over the rest is thin — treat the primary-face call as provisional and verify on rendered pages. Full list by usage:\n\n| Family | Usage |\n| --- | --- |\n| Charlie Display | 21 |\n| Charlie Text | 12 |\n\n**Size scale (px):** `11`, `12`, `14`, `15`, `16`, `18`, `21`, `24`, `32`, `36`, `48`, `72`\n\n**Weights in use:** `100` (x4), `200` (x4), `400` (x9), `500` (x7), `700` (x13), `800` (x4)\n\n**Line-heights (unitless):** `1`, `1.1`, `1.2`, `1.3`, `1.4`, `1.5`, `1.6`, `1.7`\n\n**Letter-spacing values:** `-.03em`, `-.01em`, `.03em`\n\n## Spacing\n\nMost-used values (px): `20`, `22`, `24`, `28`, `32`, `33`, `39`, `48`, `64`, `80`, `112`, `144`\n\n## Border radius\n\n| Token | Value | Usage |\n| --- | --- | --- |\n| `radius-sm` | `.125rem` | 5 |\n| `radius-md` | `.375rem` | 7 |\n| `radius-lg` | `8px` | 8 |\n| `radius-xl` | `.75rem` | 6 |\n| `radius-2xl` | `1.5rem` | 2 |\n| `radius-3xl` | `2rem` | 5 |\n| `radius-4xl` | `624.9375rem` | 18 |\n| `radius-full` | `50%` | 5 |\n\n## Shadows (ordered by blur radius)\n\n- `shadow-sm` — `0 .9375rem 3.125rem 0 rgba(0,0,0,.25)` (x1)\n- `shadow-md` — `.3125rem .3125rem .3125rem rgba(0,0,0,.25)` (x1)\n\n## Breakpoints\n\n`360px`, `375px`, `640px`, `767px`, `768px`, `820px`, `1023px`, `1024px`\n\n## Starter recipes\n\nTokens composed into components. The source site's real components were **not** inspected — these are starting points built from the extracted values, with contrast ratios computed rather than assumed.\n\n```css\n.button-primary {\n  background: var(--color-accent); /* #111019 */\n  color: var(--color-canvas); /* #ffffff — contrast 18.9:1 */\n  border-radius: 9999px; /* pill — mined as 50% */\n  font-weight: 500;\n}\n\n.card {\n  background: var(--color-surface); /* #dddee1 */\n  border: 1px solid var(--color-hairline); /* #b7b9be */\n  border-radius: 624.9375rem; /* most-used finite radius */\n  box-shadow: var(--shadow-sm);\n}\n\n.input {\n  background: var(--color-canvas); /* #ffffff */\n  color: var(--color-ink); /* #292a2e — contrast 14.3:1 */\n  border: 1px solid var(--color-hairline); /* #b7b9be */\n  border-radius: .125rem;\n  /* placeholder color: var(--color-text-muted) #8c8f97 */\n}\n\n.nav {\n  background: var(--color-canvas); /* #ffffff */\n  border-bottom: 1px solid var(--color-hairline); /* #b7b9be */\n  color: var(--color-ink); /* #292a2e */\n  /* inactive links: var(--color-text-muted) #8c8f97 */\n  /* active link: var(--color-accent) #111019 — contrast vs canvas 18.9:1 */\n}\n\n.modal {\n  background: var(--color-surface); /* #dddee1 */\n  border-radius: 624.9375rem;\n  box-shadow: var(--shadow-md); /* largest mined shadow */\n}\n\n.modal-backdrop {\n  background: color-mix(in srgb, var(--color-ink) 55%, transparent); /* scrim from #292a2e */\n}\n\n.input-error {\n  /* no red exists in the mined palette — this site does not expose an error color in its CSS. */\n  /* Introduce one deliberately rather than borrowing a random red; keep saturation near the accent's. */\n}\n```\n\n## Observations\n\n- 10 of 22 extracted colors are neutrals.\n- 2 distinct shadows; the softest reaches 0.3125px blur.\n- 8 breakpoints, from 360px to 1024px.\n- The site ships a large native token system (120+ custom properties) — prefer those names when extending it.\n\n## Native CSS custom properties\n\nFirst 40 of 120:\n\n```css\n:root {\n  --reach-tabs: 1;\n  --lns-color-body: var(--lns-themeLight-color-body);\n  --lns-color-bodyDimmed: var(--lns-themeLight-color-bodyDimmed);\n  --lns-color-background: var(--lns-themeLight-color-background);\n  --lns-color-backgroundHover: var(--lns-themeLight-color-backgroundHover);\n  --lns-color-backgroundActive: var(--lns-themeLight-color-backgroundActive);\n  --lns-color-overlay: var(--lns-themeLight-color-overlay);\n  --lns-color-primary: var(--lns-themeLight-color-primary);\n  --lns-color-primaryHover: var(--lns-themeLight-color-primaryHover);\n  --lns-color-primaryActive: var(--lns-themeLight-color-primaryActive);\n  --lns-color-focusRing: var(--lns-themeLight-color-focusRing);\n  --lns-color-record: var(--lns-themeLight-color-record);\n  --lns-color-recordHover: var(--lns-themeLight-color-recordHover);\n  --lns-color-recordActive: var(--lns-themeLight-color-recordActive);\n  --lns-color-border: var(--lns-themeLight-color-border);\n  --lns-color-disabledContent: var(--lns-themeLight-color-disabledContent);\n  --lns-color-disabledBackground: var(\n    --lns-themeLight-color-disabledBackground\n  );\n  --lns-color-backdrop: var(--lns-themeLight-color-backdrop);\n  --lns-color-formFieldBorder: var(--lns-themeLight-color-formFieldBorder);\n  --lns-color-formFieldBackground: var(\n    --lns-themeLight-color-formFieldBackground\n  );\n  --thd-nav-h: 5.625rem;\n  --thd-nav-sm-h-logged-in: 37.5rem;\n  --thd-nav-sm-h-logged-out: 10rem;\n  --thd-screen-xs: 23.4375rem;\n  --thd-screen-sm: 40rem;\n  --thd-screen-md: 48rem;\n  --thd-screen-lg: 64rem;\n  --thd-screen-xl: 80rem;\n  --thd-screen-2xl: 84.875rem;\n  --thd-screen-3xl: 100rem;\n  --thd-screen-4xl: 120rem;\n  --thd-screen-5xl: 142.75rem;\n  --thd-fluid-vw-start: 48;\n  --thd-fluid-vw-end: 100;\n  --thd-color-grey-10: #f8f8f8;\n  --thd-color-grey-20: #f0f1f2;\n  --thd-color-grey-30: #dddee1;\n  --thd-color-grey-40: #b7b9be;\n  --thd-color-grey-50: #8c8f97;\n  --thd-color-grey-50-50: #8c8f9780;\n}\n```\n\n## Files\n\n- `tailwind.css` — Tailwind v4 `@theme` block; tokens become utilities (e.g. `bg-neutral-900`, `text-deep-blue`).\n- `variables.css` — framework-agnostic `:root` variables, same values.\n- `tokens.json` — W3C Design Tokens format for Figma plugins, Style Dictionary, etc.\n",
+  "tailwind.css": "@import \"tailwindcss\";\n\n@theme {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-100: #dddee1;\n  --color-neutral-300: #b7b9be;\n  --color-neutral-400: #9ca3af;\n  --color-neutral-500: #8c8f97;\n  --color-neutral-600: #7d818a;\n  --color-neutral-700: #6c6f77;\n  --color-neutral-800: #505258;\n  --color-neutral-900: #3b3d42;\n  --color-neutral-950: #292a2e;\n  --color-deep-blue: #111019;\n  --color-pale-blue: #eff0ff;\n  --color-blue: #1868db;\n  --color-purple: #bf63f3;\n  --color-lime: #82b536;\n  --color-blue-2: #3b82f6;\n  --color-cyan: #9fcdfe;\n  --color-purple-2: #d8a0f7;\n  --color-purple-3: #af59e1;\n  --color-purple-4: #803fa5;\n  --color-purple-5: #48245d;\n  --color-deep-purple: #35243f;\n\n  /* inferred semantic roles (each maps to a distinct mined value) */\n  --color-canvas: #ffffff;\n  --color-ink: #292a2e;\n  --color-text-muted: #8c8f97;\n  --color-surface: #dddee1;\n  --color-hairline: #b7b9be;\n  --color-accent: #111019;\n  --color-accent-2: #eff0ff;\n  --color-accent-3: #1868db;\n\n  --font-sans: \"Charlie Display\", ui-sans-serif, system-ui, sans-serif;\n\n  --text-xs: 0.6875rem;\n  --text-sm: 0.75rem;\n  --text-base: 0.875rem;\n  --text-lg: 0.9375rem;\n  --text-xl: 1rem;\n  --text-2xl: 1.125rem;\n  --text-3xl: 1.3125rem;\n  --text-4xl: 1.5rem;\n  --text-5xl: 2rem;\n  --text-6xl: 2.25rem;\n  --text-7xl: 3rem;\n  --text-8xl: 4.5rem;\n\n  --font-weight-thin: 100;\n  --font-weight-extralight: 200;\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-bold: 700;\n  --font-weight-extrabold: 800;\n\n  /* line-heights, sorted tight -> loose */\n  --leading-none: 1;\n  --leading-tight: 1.1;\n  --leading-snug: 1.2;\n  --leading-normal: 1.3;\n  --leading-relaxed: 1.4;\n  --leading-loose: 1.5;\n  --leading-looser: 1.6;\n  --leading-loosest: 1.7;\n\n  /* letter-spacing, sorted tight -> wide */\n  --tracking-tightest: -.03em;\n  --tracking-tighter: -.01em;\n  --tracking-tight: .03em;\n\n  --radius-sm: .125rem;\n  --radius-md: .375rem;\n  --radius-lg: 8px;\n  --radius-xl: .75rem;\n  --radius-2xl: 1.5rem;\n  --radius-3xl: 2rem;\n  --radius-4xl: 624.9375rem;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 .9375rem 3.125rem 0 rgba(0,0,0,.25);\n  --shadow-md: .3125rem .3125rem .3125rem rgba(0,0,0,.25);\n\n  --breakpoint-sm: 22.5rem;\n  --breakpoint-md: 23.4375rem;\n  --breakpoint-lg: 40rem;\n  --breakpoint-xl: 47.9375rem;\n  --breakpoint-2xl: 48rem;\n  --breakpoint-3xl: 51.25rem;\n  --breakpoint-4xl: 63.9375rem;\n  --breakpoint-5xl: 64rem;\n\n  /* most-used spacing values on the source site (px): 20, 22, 24, 28, 32, 33, 39, 48, 64, 80, 112, 144 */\n}\n",
+  "variables.css": ":root {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-100: #dddee1;\n  --color-neutral-300: #b7b9be;\n  --color-neutral-400: #9ca3af;\n  --color-neutral-500: #8c8f97;\n  --color-neutral-600: #7d818a;\n  --color-neutral-700: #6c6f77;\n  --color-neutral-800: #505258;\n  --color-neutral-900: #3b3d42;\n  --color-neutral-950: #292a2e;\n  --color-deep-blue: #111019;\n  --color-pale-blue: #eff0ff;\n  --color-blue: #1868db;\n  --color-purple: #bf63f3;\n  --color-lime: #82b536;\n  --color-blue-2: #3b82f6;\n  --color-cyan: #9fcdfe;\n  --color-purple-2: #d8a0f7;\n  --color-purple-3: #af59e1;\n  --color-purple-4: #803fa5;\n  --color-purple-5: #48245d;\n  --color-deep-purple: #35243f;\n\n  /* inferred semantic roles */\n  --color-canvas: #ffffff;\n  --color-ink: #292a2e;\n  --color-text-muted: #8c8f97;\n  --color-surface: #dddee1;\n  --color-hairline: #b7b9be;\n  --color-accent: #111019;\n  --color-accent-2: #eff0ff;\n  --color-accent-3: #1868db;\n\n  /* typography */\n  --font-charlie-display: \"Charlie Display\";\n  --font-charlie-text: \"Charlie Text\";\n\n  /* type scale, ascending */\n  --text-1: 0.6875rem;\n  --text-2: 0.75rem;\n  --text-3: 0.875rem;\n  --text-4: 0.9375rem;\n  --text-5: 1rem;\n  --text-6: 1.125rem;\n  --text-7: 1.3125rem;\n  --text-8: 1.5rem;\n  --text-9: 2rem;\n  --text-10: 2.25rem;\n  --text-11: 3rem;\n  --text-12: 4.5rem;\n\n  /* font weights in use */\n  --font-weight-thin: 100;\n  --font-weight-extralight: 200;\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-bold: 700;\n  --font-weight-extrabold: 800;\n\n  /* line-heights, tight -> loose */\n  --leading-1: 1;\n  --leading-2: 1.1;\n  --leading-3: 1.2;\n  --leading-4: 1.3;\n  --leading-5: 1.4;\n  --leading-6: 1.5;\n  --leading-7: 1.6;\n  --leading-8: 1.7;\n\n  /* letter-spacing, tight -> wide */\n  --tracking-1: -.03em;\n  --tracking-2: -.01em;\n  --tracking-3: .03em;\n\n  /* spacing, ascending */\n  --space-1: 20px;\n  --space-2: 22px;\n  --space-3: 24px;\n  --space-4: 28px;\n  --space-5: 32px;\n  --space-6: 33px;\n  --space-7: 39px;\n  --space-8: 48px;\n  --space-9: 64px;\n  --space-10: 80px;\n  --space-11: 112px;\n  --space-12: 144px;\n\n  /* radius, ascending */\n  --radius-sm: .125rem;\n  --radius-md: .375rem;\n  --radius-lg: 8px;\n  --radius-xl: .75rem;\n  --radius-2xl: 1.5rem;\n  --radius-3xl: 2rem;\n  --radius-4xl: 624.9375rem;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 .9375rem 3.125rem 0 rgba(0,0,0,.25);\n  --shadow-md: .3125rem .3125rem .3125rem rgba(0,0,0,.25);\n}\n",
+  "tokens.json": "{\n  \"$description\": \"Design tokens extracted from https://www.loom.com/. Semantic entries are inferred from usage + luminance; all values are mined from live CSS.\",\n  \"color\": {\n    \"neutral-50\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\"\n    },\n    \"neutral-100\": {\n      \"$value\": \"#dddee1\",\n      \"$type\": \"color\"\n    },\n    \"neutral-300\": {\n      \"$value\": \"#b7b9be\",\n      \"$type\": \"color\"\n    },\n    \"neutral-400\": {\n      \"$value\": \"#9ca3af\",\n      \"$type\": \"color\"\n    },\n    \"neutral-500\": {\n      \"$value\": \"#8c8f97\",\n      \"$type\": \"color\"\n    },\n    \"neutral-600\": {\n      \"$value\": \"#7d818a\",\n      \"$type\": \"color\"\n    },\n    \"neutral-700\": {\n      \"$value\": \"#6c6f77\",\n      \"$type\": \"color\"\n    },\n    \"neutral-800\": {\n      \"$value\": \"#505258\",\n      \"$type\": \"color\"\n    },\n    \"neutral-900\": {\n      \"$value\": \"#3b3d42\",\n      \"$type\": \"color\"\n    },\n    \"neutral-950\": {\n      \"$value\": \"#292a2e\",\n      \"$type\": \"color\"\n    },\n    \"deep-blue\": {\n      \"$value\": \"#111019\",\n      \"$type\": \"color\"\n    },\n    \"pale-blue\": {\n      \"$value\": \"#eff0ff\",\n      \"$type\": \"color\"\n    },\n    \"blue\": {\n      \"$value\": \"#1868db\",\n      \"$type\": \"color\"\n    },\n    \"purple\": {\n      \"$value\": \"#bf63f3\",\n      \"$type\": \"color\"\n    },\n    \"lime\": {\n      \"$value\": \"#82b536\",\n      \"$type\": \"color\"\n    },\n    \"blue-2\": {\n      \"$value\": \"#3b82f6\",\n      \"$type\": \"color\"\n    },\n    \"cyan\": {\n      \"$value\": \"#9fcdfe\",\n      \"$type\": \"color\"\n    },\n    \"purple-2\": {\n      \"$value\": \"#d8a0f7\",\n      \"$type\": \"color\"\n    },\n    \"purple-3\": {\n      \"$value\": \"#af59e1\",\n      \"$type\": \"color\"\n    },\n    \"purple-4\": {\n      \"$value\": \"#803fa5\",\n      \"$type\": \"color\"\n    },\n    \"purple-5\": {\n      \"$value\": \"#48245d\",\n      \"$type\": \"color\"\n    },\n    \"deep-purple\": {\n      \"$value\": \"#35243f\",\n      \"$type\": \"color\"\n    }\n  },\n  \"semantic\": {\n    \"canvas\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: lightest neutral, matches the measured light-leaning theme\"\n    },\n    \"ink\": {\n      \"$value\": \"#292a2e\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: darkest neutral, highest contrast against canvas\"\n    },\n    \"text-muted\": {\n      \"$value\": \"#8c8f97\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used mid-luminance neutral\"\n    },\n    \"surface\": {\n      \"$value\": \"#dddee1\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: neutral closest to canvas luminance\"\n    },\n    \"hairline\": {\n      \"$value\": \"#b7b9be\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: next neutral near canvas, hairline-border weight\"\n    },\n    \"accent\": {\n      \"$value\": \"#111019\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used chromatic color\"\n    },\n    \"accent-2\": {\n      \"$value\": \"#eff0ff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    },\n    \"accent-3\": {\n      \"$value\": \"#1868db\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    }\n  },\n  \"fontFamily\": {\n    \"charlie-display\": {\n      \"$value\": \"Charlie Display\",\n      \"$type\": \"fontFamily\"\n    },\n    \"charlie-text\": {\n      \"$value\": \"Charlie Text\",\n      \"$type\": \"fontFamily\"\n    }\n  },\n  \"fontSize\": {\n    \"size-1\": {\n      \"$value\": \"0.6875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-2\": {\n      \"$value\": \"0.75rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-3\": {\n      \"$value\": \"0.875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-4\": {\n      \"$value\": \"0.9375rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-5\": {\n      \"$value\": \"1rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-6\": {\n      \"$value\": \"1.125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-7\": {\n      \"$value\": \"1.3125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-8\": {\n      \"$value\": \"1.5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-9\": {\n      \"$value\": \"2rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-10\": {\n      \"$value\": \"2.25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-11\": {\n      \"$value\": \"3rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-12\": {\n      \"$value\": \"4.5rem\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"fontWeight\": {\n    \"thin\": {\n      \"$value\": 100,\n      \"$type\": \"fontWeight\"\n    },\n    \"extralight\": {\n      \"$value\": 200,\n      \"$type\": \"fontWeight\"\n    },\n    \"normal\": {\n      \"$value\": 400,\n      \"$type\": \"fontWeight\"\n    },\n    \"medium\": {\n      \"$value\": 500,\n      \"$type\": \"fontWeight\"\n    },\n    \"bold\": {\n      \"$value\": 700,\n      \"$type\": \"fontWeight\"\n    },\n    \"extrabold\": {\n      \"$value\": 800,\n      \"$type\": \"fontWeight\"\n    }\n  },\n  \"lineHeight\": {\n    \"leading-1\": {\n      \"$value\": 1,\n      \"$type\": \"number\"\n    },\n    \"leading-2\": {\n      \"$value\": 1.1,\n      \"$type\": \"number\"\n    },\n    \"leading-3\": {\n      \"$value\": 1.2,\n      \"$type\": \"number\"\n    },\n    \"leading-4\": {\n      \"$value\": 1.3,\n      \"$type\": \"number\"\n    },\n    \"leading-5\": {\n      \"$value\": 1.4,\n      \"$type\": \"number\"\n    },\n    \"leading-6\": {\n      \"$value\": 1.5,\n      \"$type\": \"number\"\n    },\n    \"leading-7\": {\n      \"$value\": 1.6,\n      \"$type\": \"number\"\n    },\n    \"leading-8\": {\n      \"$value\": 1.7,\n      \"$type\": \"number\"\n    }\n  },\n  \"letterSpacing\": {\n    \"tracking-1\": {\n      \"$value\": \"-.03em\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-2\": {\n      \"$value\": \"-.01em\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-3\": {\n      \"$value\": \".03em\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"dimension\": {\n    \"space-1\": {\n      \"$value\": \"20px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-2\": {\n      \"$value\": \"22px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-3\": {\n      \"$value\": \"24px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-4\": {\n      \"$value\": \"28px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-5\": {\n      \"$value\": \"32px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-6\": {\n      \"$value\": \"33px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-7\": {\n      \"$value\": \"39px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-8\": {\n      \"$value\": \"48px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-9\": {\n      \"$value\": \"64px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-10\": {\n      \"$value\": \"80px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-11\": {\n      \"$value\": \"112px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-12\": {\n      \"$value\": \"144px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"borderRadius\": {\n    \"sm\": {\n      \"$value\": \".125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"md\": {\n      \"$value\": \".375rem\",\n      \"$type\": \"dimension\"\n    },\n    \"lg\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"xl\": {\n      \"$value\": \".75rem\",\n      \"$type\": \"dimension\"\n    },\n    \"2xl\": {\n      \"$value\": \"1.5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"3xl\": {\n      \"$value\": \"2rem\",\n      \"$type\": \"dimension\"\n    },\n    \"4xl\": {\n      \"$value\": \"624.9375rem\",\n      \"$type\": \"dimension\"\n    },\n    \"full\": {\n      \"$value\": \"50%\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"shadow\": {\n    \"sm\": {\n      \"$value\": \"0 .9375rem 3.125rem 0 rgba(0,0,0,.25)\",\n      \"$type\": \"shadow\"\n    },\n    \"md\": {\n      \"$value\": \".3125rem .3125rem .3125rem rgba(0,0,0,.25)\",\n      \"$type\": \"shadow\"\n    }\n  }\n}"
+ },
+ "raw": {
+  "tokens": {
+   "title": "Free screen recorder for Mac and PC | Loom",
+   "description": "",
+   "themeGuess": "light-leaning",
+   "darkWeight": 14,
+   "lightWeight": 16,
+   "neutrals": [
+    {
+     "hex": "#ffffff",
+     "count": 14
+    },
+    {
+     "hex": "#dddee1",
+     "count": 2
+    },
+    {
+     "hex": "#b7b9be",
+     "count": 1
+    },
+    {
+     "hex": "#9ca3af",
+     "count": 1
+    },
+    {
+     "hex": "#8c8f97",
+     "count": 3
+    },
+    {
+     "hex": "#7d818a",
+     "count": 1
+    },
+    {
+     "hex": "#6c6f77",
+     "count": 2
+    },
+    {
+     "hex": "#505258",
+     "count": 1
+    },
+    {
+     "hex": "#3b3d42",
+     "count": 1
+    },
+    {
+     "hex": "#292a2e",
+     "count": 1
+    },
+    {
+     "hex": "#000000",
+     "count": 9
+    }
+   ],
+   "accents": [
+    {
+     "hex": "#111019",
+     "count": 10
+    },
+    {
+     "hex": "#eff0ff",
+     "count": 6
+    },
+    {
+     "hex": "#1868db",
+     "count": 5
+    },
+    {
+     "hex": "#bf63f3",
+     "count": 3
+    },
+    {
+     "hex": "#82b536",
+     "count": 3
+    },
+    {
+     "hex": "#3b82f6",
+     "count": 3
+    },
+    {
+     "hex": "#9fcdfe",
+     "count": 3
+    },
+    {
+     "hex": "#d8a0f7",
+     "count": 2
+    },
+    {
+     "hex": "#af59e1",
+     "count": 2
+    },
+    {
+     "hex": "#803fa5",
+     "count": 2
+    },
+    {
+     "hex": "#48245d",
+     "count": 2
+    },
+    {
+     "hex": "#35243f",
+     "count": 2
+    }
+   ],
+   "modern": [],
+   "fonts": [
+    {
+     "name": "Charlie Display",
+     "count": 21
+    },
+    {
+     "name": "Charlie Text",
+     "count": 12
+    }
+   ],
+   "fontSizes": [
+    11,
+    12,
+    14,
+    15,
+    16,
+    18,
+    21,
+    24,
+    32,
+    36,
+    48,
+    72
+   ],
+   "fontWeights": [
+    {
+     "value": 100,
+     "count": 4
+    },
+    {
+     "value": 200,
+     "count": 4
+    },
+    {
+     "value": 400,
+     "count": 9
+    },
+    {
+     "value": 500,
+     "count": 7
+    },
+    {
+     "value": 700,
+     "count": 13
+    },
+    {
+     "value": 800,
+     "count": 4
+    }
+   ],
+   "lineHeights": [
+    1,
+    1.1,
+    1.2,
+    1.3,
+    1.4,
+    1.5,
+    1.6,
+    1.7
+   ],
+   "letterSpacings": [
+    "-.03em",
+    "-.01em",
+    ".03em"
+   ],
+   "spacing": [
+    20,
+    22,
+    24,
+    28,
+    32,
+    33,
+    39,
+    48,
+    64,
+    80,
+    112,
+    144
+   ],
+   "radii": [
+    {
+     "value": "624.9375rem",
+     "count": 18
+    },
+    {
+     "value": "8px",
+     "count": 8
+    },
+    {
+     "value": ".375rem",
+     "count": 7
+    },
+    {
+     "value": ".75rem",
+     "count": 6
+    },
+    {
+     "value": "2rem",
+     "count": 5
+    },
+    {
+     "value": ".125rem",
+     "count": 5
+    },
+    {
+     "value": "1.5rem",
+     "count": 2
+    },
+    {
+     "value": "50%",
+     "count": 5
+    }
+   ],
+   "shadows": [
+    {
+     "value": "0 .9375rem 3.125rem 0 rgba(0,0,0,.25)",
+     "count": 1,
+     "blur": 0
+    },
+    {
+     "value": ".3125rem .3125rem .3125rem rgba(0,0,0,.25)",
+     "count": 1,
+     "blur": 0.3125
+    }
+   ],
+   "breakpoints": [
+    360,
+    375,
+    640,
+    767,
+    768,
+    820,
+    1023,
+    1024
+   ],
+   "nativeVars": [
+    {
+     "name": "reach-tabs",
+     "value": "1"
+    },
+    {
+     "name": "lns-color-body",
+     "value": "var(--lns-themeLight-color-body)"
+    },
+    {
+     "name": "lns-color-bodyDimmed",
+     "value": "var(--lns-themeLight-color-bodyDimmed)"
+    },
+    {
+     "name": "lns-color-background",
+     "value": "var(--lns-themeLight-color-background)"
+    },
+    {
+     "name": "lns-color-backgroundHover",
+     "value": "var(--lns-themeLight-color-backgroundHover)"
+    },
+    {
+     "name": "lns-color-backgroundActive",
+     "value": "var(--lns-themeLight-color-backgroundActive)"
+    },
+    {
+     "name": "lns-color-overlay",
+     "value": "var(--lns-themeLight-color-overlay)"
+    },
+    {
+     "name": "lns-color-primary",
+     "value": "var(--lns-themeLight-color-primary)"
+    },
+    {
+     "name": "lns-color-primaryHover",
+     "value": "var(--lns-themeLight-color-primaryHover)"
+    },
+    {
+     "name": "lns-color-primaryActive",
+     "value": "var(--lns-themeLight-color-primaryActive)"
+    },
+    {
+     "name": "lns-color-focusRing",
+     "value": "var(--lns-themeLight-color-focusRing)"
+    },
+    {
+     "name": "lns-color-record",
+     "value": "var(--lns-themeLight-color-record)"
+    },
+    {
+     "name": "lns-color-recordHover",
+     "value": "var(--lns-themeLight-color-recordHover)"
+    },
+    {
+     "name": "lns-color-recordActive",
+     "value": "var(--lns-themeLight-color-recordActive)"
+    },
+    {
+     "name": "lns-color-border",
+     "value": "var(--lns-themeLight-color-border)"
+    },
+    {
+     "name": "lns-color-disabledContent",
+     "value": "var(--lns-themeLight-color-disabledContent)"
+    },
+    {
+     "name": "lns-color-disabledBackground",
+     "value": "var(\n    --lns-themeLight-color-disabledBackground\n  )"
+    },
+    {
+     "name": "lns-color-backdrop",
+     "value": "var(--lns-themeLight-color-backdrop)"
+    },
+    {
+     "name": "lns-color-formFieldBorder",
+     "value": "var(--lns-themeLight-color-formFieldBorder)"
+    },
+    {
+     "name": "lns-color-formFieldBackground",
+     "value": "var(\n    --lns-themeLight-color-formFieldBackground\n  )"
+    },
+    {
+     "name": "thd-nav-h",
+     "value": "5.625rem"
+    },
+    {
+     "name": "thd-nav-sm-h-logged-in",
+     "value": "37.5rem"
+    },
+    {
+     "name": "thd-nav-sm-h-logged-out",
+     "value": "10rem"
+    },
+    {
+     "name": "thd-screen-xs",
+     "value": "23.4375rem"
+    },
+    {
+     "name": "thd-screen-sm",
+     "value": "40rem"
+    },
+    {
+     "name": "thd-screen-md",
+     "value": "48rem"
+    },
+    {
+     "name": "thd-screen-lg",
+     "value": "64rem"
+    },
+    {
+     "name": "thd-screen-xl",
+     "value": "80rem"
+    },
+    {
+     "name": "thd-screen-2xl",
+     "value": "84.875rem"
+    },
+    {
+     "name": "thd-screen-3xl",
+     "value": "100rem"
+    },
+    {
+     "name": "thd-screen-4xl",
+     "value": "120rem"
+    },
+    {
+     "name": "thd-screen-5xl",
+     "value": "142.75rem"
+    },
+    {
+     "name": "thd-fluid-vw-start",
+     "value": "48"
+    },
+    {
+     "name": "thd-fluid-vw-end",
+     "value": "100"
+    },
+    {
+     "name": "thd-color-grey-10",
+     "value": "#f8f8f8"
+    },
+    {
+     "name": "thd-color-grey-20",
+     "value": "#f0f1f2"
+    },
+    {
+     "name": "thd-color-grey-30",
+     "value": "#dddee1"
+    },
+    {
+     "name": "thd-color-grey-40",
+     "value": "#b7b9be"
+    },
+    {
+     "name": "thd-color-grey-50",
+     "value": "#8c8f97"
+    },
+    {
+     "name": "thd-color-grey-50-50",
+     "value": "#8c8f9780"
+    },
+    {
+     "name": "thd-color-grey-60",
+     "value": "#7d818a"
+    },
+    {
+     "name": "thd-color-grey-70",
+     "value": "#6c6f77"
+    },
+    {
+     "name": "thd-color-grey-80",
+     "value": "#505258"
+    },
+    {
+     "name": "thd-color-grey-90",
+     "value": "#3b3d42"
+    },
+    {
+     "name": "thd-color-grey-100",
+     "value": "#292a2e"
+    },
+    {
+     "name": "thd-color-grey-light-border",
+     "value": "#e4e2e7"
+    },
+    {
+     "name": "thd-color-blue-0",
+     "value": "#1868db00"
+    },
+    {
+     "name": "thd-color-blue-10",
+     "value": "#e9f2fe"
+    },
+    {
+     "name": "thd-color-blue-20",
+     "value": "#cfe1fd"
+    },
+    {
+     "name": "thd-color-blue-30",
+     "value": "#8fb8f6"
+    },
+    {
+     "name": "thd-color-blue-40",
+     "value": "#669df1"
+    },
+    {
+     "name": "thd-color-blue-50",
+     "value": "#4d8ced"
+    },
+    {
+     "name": "thd-color-blue-60",
+     "value": "#357de8"
+    },
+    {
+     "name": "thd-color-blue-70",
+     "value": "#1868db"
+    },
+    {
+     "name": "thd-color-blue-70-50",
+     "value": "#1868db80"
+    },
+    {
+     "name": "thd-color-blue-80",
+     "value": "#1558bc"
+    },
+    {
+     "name": "thd-color-blue-90",
+     "value": "#123263"
+    },
+    {
+     "name": "thd-color-blue-100",
+     "value": "#1c2b42"
+    },
+    {
+     "name": "thd-color-blue-gradient",
+     "value": "linear-gradient(135deg,var(--thd-color-blue-50) 0%,var(--thd-color-blue-70) 100%)"
+    },
+    {
+     "name": "thd-color-violet-0",
+     "value": "#f8eefe00"
+    },
+    {
+     "name": "thd-color-violet-10",
+     "value": "#f8eefe"
+    },
+    {
+     "name": "thd-color-violet-20",
+     "value": "#eed7fc"
+    },
+    {
+     "name": "thd-color-violet-30",
+     "value": "#d8a0f7"
+    },
+    {
+     "name": "thd-color-violet-30-50",
+     "value": "#d8a0f780"
+    },
+    {
+     "name": "thd-color-violet-40",
+     "value": "#c97cf4"
+    },
+    {
+     "name": "thd-color-violet-50",
+     "value": "#bf63f3"
+    },
+    {
+     "name": "thd-color-violet-50-80",
+     "value": "#bf63f3cc"
+    },
+    {
+     "name": "thd-color-violet-60",
+     "value": "#af59e1"
+    },
+    {
+     "name": "thd-color-violet-60-40",
+     "value": "#af59e166"
+    },
+    {
+     "name": "thd-color-violet-70",
+     "value": "#964ac0"
+    },
+    {
+     "name": "thd-color-violet-80",
+     "value": "#803fa5"
+    },
+    {
+     "name": "thd-color-violet-80-80",
+     "value": "#803fa5cc"
+    },
+    {
+     "name": "thd-color-violet-90",
+     "value": "#48245d"
+    },
+    {
+     "name": "thd-color-violet-90-80",
+     "value": "#48245dcc"
+    },
+    {
+     "name": "thd-color-violet-100",
+     "value": "#35243f"
+    },
+    {
+     "name": "thd-color-violet-100-60",
+     "value": "#35243f99"
+    },
+    {
+     "name": "thd-color-yellow-10",
+     "value": "#fff5d4"
+    },
+    {
+     "name": "thd-color-yellow-20",
+     "value": "#ffe48f"
+    },
+    {
+     "name": "thd-color-yellow-30",
+     "value": "#ffc716"
+    },
+    {
+     "name": "thd-color-yellow-40",
+     "value": "#ffa900"
+    },
+    {
+     "name": "thd-color-yellow-50",
+     "value": "#eb9100"
+    },
+    {
+     "name": "thd-color-yellow-50-20",
+     "value": "#eb910033"
+    },
+    {
+     "name": "thd-color-yellow-60",
+     "value": "#c77b00"
+    },
+    {
+     "name": "thd-color-yellow-70",
+     "value": "#a36700"
+    },
+    {
+     "name": "thd-color-yellow-80",
+     "value": "#8a5700"
+    },
+    {
+     "name": "thd-color-yellow-90",
+     "value": "#5c3900"
+    },
+    {
+     "name": "thd-color-yellow-100",
+     "value": "#372d1d"
+    },
+    {
+     "name": "thd-color-green-10",
+     "value": "#efffd6"
+    },
+    {
+     "name": "thd-color-green-20",
+     "value": "#d3f1a7"
+    },
+    {
+     "name": "thd-color-green-30",
+     "value": "#b3df72"
+    },
+    {
+     "name": "thd-color-green-40",
+     "value": "#94c748"
+    },
+    {
+     "name": "thd-color-green-50",
+     "value": "#82b536"
+    },
+    {
+     "name": "thd-color-green-50-50",
+     "value": "#82b53680"
+    },
+    {
+     "name": "thd-color-green-50-80",
+     "value": "#82b536cc"
+    },
+    {
+     "name": "thd-color-green-60",
+     "value": "#6a9a23"
+    },
+    {
+     "name": "thd-color-green-60-40",
+     "value": "#6a9a2366"
+    },
+    {
+     "name": "thd-color-green-70",
+     "value": "#5b7f24"
+    },
+    {
+     "name": "thd-color-green-80",
+     "value": "#4c6b1f"
+    },
+    {
+     "name": "thd-color-green-90",
+     "value": "#37471f"
+    },
+    {
+     "name": "thd-color-green-100",
+     "value": "#28311b"
+    },
+    {
+     "name": "thd-color-record",
+     "value": "#ff613d"
+    },
+    {
+     "name": "thd-color-record-20",
+     "value": "#ff613d20"
+    },
+    {
+     "name": "thd-color-white",
+     "value": "#fff"
+    },
+    {
+     "name": "thd-color-black-0",
+     "value": "transparent"
+    },
+    {
+     "name": "thd-color-black",
+     "value": "#101214"
+    },
+    {
+     "name": "thd-color-black-50",
+     "value": "#10121480"
+    },
+    {
+     "name": "thd-color-black-neutral",
+     "value": "#1e1f21"
+    },
+    {
+     "name": "thd-color-border-grey",
+     "value": "#f1f0f3"
+    },
+    {
+     "name": "thd-color-button-ol",
+     "value": "#a3c3f1"
+    },
+    {
+     "name": "thd-color-button-fr",
+     "value": "#1868db"
+    },
+    {
+     "name": "thd-color-button-sh",
+     "value": "#1868db80"
+    },
+    {
+     "name": "thd-shadow",
+     "value": "0 0.125rem 0.375rem 0px rgba(0,0,0,.04),0px 0.3125rem 1.125rem 0 rgba(0,0,0,.06),0 1.5rem 5.1875rem 0 rgba(0,0,0,.1)"
+    },
+    {
+     "name": "thd-shadow-nav",
+     "value": "0 0.125rem 0.375rem 0px rgba(0,0,0,.04),0px 0.3125rem 1.125rem 0 rgba(0,0,0,.06),0 1.5rem 5.1875rem 0 rgba(0,0,0,.1)"
+    },
+    {
+     "name": "thd-gradient-nav",
+     "value": "linear-gradient(180deg,rgba(0,0,0,.07),transparent)"
+    },
+    {
+     "name": "thd-color-overlay",
+     "value": "rgba(0,0,0,.5)"
+    },
+    {
+     "name": "thd-focus-thick",
+     "value": "0 0 0 0.125rem var(--thd-color-blue-80)"
+    },
+    {
+     "name": "thd-focus-thin",
+     "value": "0 0 0 0.1875rem var(--thd-color-blue-80)"
+    },
+    {
+     "name": "thd-border-radius-md",
+     "value": "clamp(1.5rem,5vw,2rem)"
+    },
+    {
+     "name": "thd-base-ff-heading",
+     "value": "\"ss01\",\"ss02\",\"ss08\""
+    },
+    {
+     "name": "thd-base-ff-body",
+     "value": "\"ss08\""
+    }
+   ],
+   "darkVars": [],
+   "rings": []
+  },
+  "stylesheets": 4
+ }
+}

@@ -1,0 +1,1288 @@
+{
+ "slug": "chatgpt",
+ "name": "ChatGPT",
+ "blurb": "AI assistant. Quiet gray canvas, conversation-first restraint, almost no chrome.",
+ "url": "https://chatgpt.com/",
+ "title": "ChatGPT",
+ "extractedAt": "2026-07-03",
+ "summary": {
+  "colors": [
+   {
+    "name": "neutral-50",
+    "hex": "#ffffff",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-100",
+    "hex": "#f3f3f3",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-200",
+    "hex": "#dfdfdf",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-300",
+    "hex": "#cecece",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-400",
+    "hex": "#c1c0c0",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-500",
+    "hex": "#afafaf",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-600",
+    "hex": "#8f8f8f",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-700",
+    "hex": "#767676",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-800",
+    "hex": "#5d5d5d",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-900",
+    "hex": "#414141",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-950",
+    "hex": "#303030",
+    "group": "neutral"
+   },
+   {
+    "name": "cyan",
+    "hex": "#0285ff",
+    "group": "accent"
+   },
+   {
+    "name": "red",
+    "hex": "#fa423e",
+    "group": "accent"
+   },
+   {
+    "name": "blue",
+    "hex": "#7d5bff",
+    "group": "accent"
+   },
+   {
+    "name": "blue-2",
+    "hex": "#aa96ff",
+    "group": "accent"
+   },
+   {
+    "name": "blue-3",
+    "hex": "#5856d6",
+    "group": "accent"
+   },
+   {
+    "name": "teal",
+    "hex": "#10a37f",
+    "group": "accent"
+   },
+   {
+    "name": "blue-4",
+    "hex": "#4e86f7",
+    "group": "accent"
+   },
+   {
+    "name": "deep-blue",
+    "hex": "#0f172a",
+    "group": "accent"
+   },
+   {
+    "name": "yellow",
+    "hex": "#f2c94c",
+    "group": "accent"
+   },
+   {
+    "name": "orange",
+    "hex": "#c76b12",
+    "group": "accent"
+   },
+   {
+    "name": "red-2",
+    "hex": "#e02e2a",
+    "group": "accent"
+   },
+   {
+    "name": "blue-5",
+    "hex": "#6157ff",
+    "group": "accent"
+   }
+  ],
+  "fonts": [
+   "OpenAI Sans",
+   "OpenDyslexic",
+   "Circle",
+   "-apple-system-body",
+   "Segoe UI Variable Text",
+   "Atkinson Hyperlegible Mono",
+   "OpenDyslexic Mono",
+   "Segoe UI Variable Small"
+  ],
+  "themeGuess": "light-leaning",
+  "stylesheets": 2,
+  "nativeVarCount": 120
+ },
+ "files": {
+  "DESIGN.md": "---\nname: chatgpt-com-design-system\nsource: https://chatgpt.com/\nextracted: 2026-07-03\ntheme: light  # measured from neutral usage weight\ncolors:  # roles inferred from usage frequency + luminance; names verified against values\n  canvas: \"#ffffff\"\n  ink: \"#303030\"\n  text-muted: \"#afafaf\"\n  surface: \"#f3f3f3\"\n  hairline: \"#dfdfdf\"\n  accent: \"#0285ff\"  # cyan\n  accent-2: \"#fa423e\"  # red\n  accent-3: \"#7d5bff\"  # blue\nfonts:\n  primary: \"OpenAI Sans\"\n  mono: \"Atkinson Hyperlegible Mono\"\n---\n\n# ChatGPT — Design System\n\nExtracted from **https://chatgpt.com/** on 2026-07-03.\n\n> ChatGPT is your AI chatbot for everyday use. Chat with the most advanced AI to explore ideas, solve problems, and learn faster.\n\nEvery value below is mined from the site's live CSS (120 native custom properties, ranked usage counts). Role assignments are inferred from usage and luminance and marked as such — treat them as a strong starting point, not gospel.\n\n## Overview\n\nThe system reads as light: measured neutral usage weighs 535 light against 109 dark. The palette is chromatic: 12 saturated values against 11 neutrals, led by cyan (`#0285ff`). **OpenAI Sans** carries the interface; **Atkinson Hyperlegible Mono** handles code and data. Geometry mixes sharp corners (.25rem) with full pills.\n\n## Usage rules\n\nDerived from the measured usage below — each rule cites its evidence.\n\n- Chromatic color is only 23% of measured color usage. Reserve `accent` (`#0285ff`) for primary actions, links, and emphasis — spreading it into body text or large surfaces breaks the ratio that defines this look.\n- The theme is light (measured neutral weight 535:109). Don't flip individual sections to the opposite mode.\n- `.25rem` is the workhorse radius (x7); treat the other radii as exceptions, not options.\n- The only shadows are blur-less hairline offsets — this system barely uses elevation; don't add soft drop shadows.\n- `Atkinson Hyperlegible Mono` is the monospace — keep it for code, data, and metadata roles.\n\n## Colors\n\n### Neutrals (light → dark)\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `neutral-50` | `#ffffff` | 382 | **canvas** — lightest neutral, matches the measured light-leaning theme |\n| `neutral-100` | `#f3f3f3` | 95 | **surface** — neutral closest to canvas luminance |\n| `neutral-200` | `#dfdfdf` | 24 | **hairline** — next neutral near canvas, hairline-border weight |\n| `neutral-300` | `#cecece` | 34 | — |\n| `neutral-400` | `#c1c0c0` | 6 | — |\n| `neutral-500` | `#afafaf` | 18 | **text-muted** — most-used mid-luminance neutral |\n| `neutral-600` | `#8f8f8f` | 18 | — |\n| `neutral-700` | `#767676` | 14 | — |\n| `neutral-800` | `#5d5d5d` | 21 | — |\n| `neutral-900` | `#414141` | 10 | — |\n| `neutral-950` | `#303030` | 27 | **ink** — darkest neutral, highest contrast against canvas |\n\n### Accents\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `cyan` | `#0285ff` | 53 | **accent** — most-used chromatic color |\n| `red` | `#fa423e` | 19 | **accent-2** — supporting chromatic color |\n| `blue` | `#7d5bff` | 19 | **accent-3** — supporting chromatic color |\n| `blue-2` | `#aa96ff` | 17 | — |\n| `blue-3` | `#5856d6` | 15 | — |\n| `teal` | `#10a37f` | 15 | — |\n| `blue-4` | `#4e86f7` | 15 | — |\n| `deep-blue` | `#0f172a` | 13 | — |\n| `yellow` | `#f2c94c` | 9 | — |\n| `orange` | `#c76b12` | 8 | — |\n| `red-2` | `#e02e2a` | 8 | — |\n| `blue-5` | `#6157ff` | 7 | — |\n\n### Modern color values (kept verbatim)\n\n- `oklch(0.99 0 0)`\n- `oklch(55.1%25 0.027 264.364)`\n- `lab(0% 0 0)`\n- `lab(53.6% 0 0/0)`\n- `lab(82.6% .0000298023 -.0000119209)`\n- `lab(91.6229% -.159115 -2.26791)`\n- `lab(8.11897% .811279 -12.254)`\n- `lab(8.11897% .811279 -12.254/.1)`\n- `lab(16.1051% -1.18239 -11.7533)`\n- `lab(85.1236% -.612259 -3.7138)`\n- `lab(27.1134% -.956401 -12.3224)`\n- `lab(35.6337% -1.58697 -10.8425)`\n\n### Dark mode\n\nThe source defines 60 dark-mode variants (via dark selector). Both halves of the system, first 30:\n\n| Token | Light | Dark |\n| --- | --- | --- |\n| `--interactive-bg-primary-default-context` | — | `var(--interactive-bg-primary-default)` |\n| `--interactive-bg-primary-hover-context` | — | `var(--interactive-bg-primary-hover)` |\n| `--interactive-bg-primary-press-context` | — | `var(--interactive-bg-primary-press)` |\n| `--interactive-bg-primary-inactive-context` | — | `var(--interactive-bg-primary-inactive)` |\n| `--interactive-bg-primary-selected-context` | — | `var(--interactive-bg-primary-selected)` |\n| `--interactive-bg-primary-inverted-context` | — | `var(--bg-primary-inverted)` |\n| `--interactive-border-primary-inverted-context` | — | `var(--bg-primary-inverted)` |\n| `--interactive-label-primary-context` | — | `var(--interactive-label-primary-default)` |\n| `--interactive-label-primary-inactive-context` | — | `var(--interactive-label-primary-inactive)` |\n| `--interactive-label-primary-inverted-context` | — | `var(--text-inverted)` |\n| `--interactive-icon-primary-context` | — | `var(--interactive-icon-primary-default)` |\n| `--interactive-icon-primary-inactive-context` | — | `var(--interactive-icon-primary-inactive)` |\n| `--interactive-icon-primary-inverted-context` | — | `var(--icon-inverted)` |\n| `--interactive-bg-danger-primary-default-context` | — | `var(--red-500)` |\n| `--interactive-bg-danger-primary-hover-context` | — | `var(--red-600)` |\n| `--interactive-bg-danger-primary-press-context` | — | `var(--red-500)` |\n| `--interactive-bg-danger-primary-inactive-context` | — | `#0d0d0d0f` |\n| `--interactive-bg-danger-primary-selected-context` | — | `var(--red-500)` |\n| `--interactive-label-danger-primary-context` | — | `var(--white)` |\n| `--interactive-label-danger-primary-press-context` | — | `var(--white)` |\n| `--interactive-label-danger-primary-inactive-context` | — | `var(--gray-500)` |\n| `--interactive-icon-danger-primary-context` | — | `var(--white)` |\n| `--interactive-icon-danger-primary-press-context` | — | `var(--white)` |\n| `--interactive-icon-danger-primary-inactive-context` | — | `var(--gray-500)` |\n| `--interactive-bg-danger-soft-default-context` | — | `var(--red-50)` |\n| `--interactive-bg-danger-soft-hover-context` | — | `var(--red-75)` |\n| `--interactive-bg-danger-soft-press-context` | — | `var(--red-50)` |\n| `--interactive-bg-danger-soft-inactive-context` | — | `#0d0d0d0f` |\n| `--interactive-bg-danger-soft-selected-context` | — | `var(--red-50)` |\n| `--interactive-label-danger-soft-context` | — | `var(--red-600)` |\n\n`variables.css` ships these as a `prefers-color-scheme: dark` override block.\n\n## Typography\n\n**OpenAI Sans** is the primary interface face; **Atkinson Hyperlegible Mono** is the monospace. Full list by usage:\n\n| Family | Usage |\n| --- | --- |\n| OpenAI Sans | 34 |\n| OpenDyslexic | 4 |\n| Circle | 3 |\n| -apple-system-body | 3 |\n| Segoe UI Variable Text | 3 |\n| Atkinson Hyperlegible Mono | 2 |\n| OpenDyslexic Mono | 1 |\n| Segoe UI Variable Small | 1 |\n\n**Size scale (px):** `8`, `10`, `11`, `12`, `13.71`, `14`, `14.4`, `16`, `17`, `20`, `24`, `36`\n\n**Weights in use:** `300` (x10), `400` (x23), `500` (x17), `510` (x5), `600` (x22), `700` (x15)\n\n**Line-heights (unitless):** `1`, `1.33`, `1.4`, `1.43`, `1.45`, `1.5`, `1.6`, `1.71`\n\n**Letter-spacing values:** `-.026875rem`, `-.015em`, `-.18px`, `-.154px`, `-.08px`, `-.005rem`\n\n## Spacing\n\nMost-used values (px): `1`, `2`, `3`, `4`, `5`, `6`, `8`, `10`, `12`, `14`, `16`, `20`\n\n## Border radius\n\n| Token | Value | Usage |\n| --- | --- | --- |\n| `radius-sm` | `.25rem` | 7 |\n| `radius-md` | `.375rem` | 2 |\n| `radius-lg` | `10px` | 3 |\n| `radius-xl` | `18px` | 3 |\n| `radius-2xl` | `1.25rem` | 2 |\n| `radius-3xl` | `26px` | 3 |\n| `radius-4xl` | `100%` | 3 |\n| `radius-full` | `50%` | 5 |\n\n## Shadows (ordered by blur radius)\n\n- `shadow-sm` — `0 1px #0000` (x2)\n- `shadow-md` — `0 -1px #0000` (x2)\n- `shadow-lg` — `0 2px 8px #0000000d` (x1)\n\n## Breakpoints\n\n`480px`, `640px`, `768px`, `1024px`, `1280px`, `1536px`\n\n## Starter recipes\n\nTokens composed into components. The source site's real components were **not** inspected — these are starting points built from the extracted values, with contrast ratios computed rather than assumed.\n\n```css\n.button-primary {\n  background: var(--color-accent); /* #0285ff */\n  color: var(--color-ink); /* #303030 — contrast 3.6:1, below AA for small text; use large or bold labels */\n  border-radius: 9999px; /* pill — mined as 50% */\n  font-weight: 500;\n}\n\n.card {\n  background: var(--color-surface); /* #f3f3f3 */\n  border: 1px solid var(--color-hairline); /* #dfdfdf */\n  border-radius: .25rem; /* most-used finite radius */\n  box-shadow: var(--shadow-sm);\n}\n\n.input {\n  background: var(--color-canvas); /* #ffffff */\n  color: var(--color-ink); /* #303030 — contrast 13.2:1 */\n  border: 1px solid var(--color-hairline); /* #dfdfdf */\n  border-radius: .25rem;\n  /* placeholder color: var(--color-text-muted) #afafaf */\n}\n\n.nav {\n  background: var(--color-canvas); /* #ffffff */\n  border-bottom: 1px solid var(--color-hairline); /* #dfdfdf */\n  color: var(--color-ink); /* #303030 */\n  /* inactive links: var(--color-text-muted) #afafaf */\n  /* active link: var(--color-accent) #0285ff — contrast vs canvas 3.6:1 */\n}\n\n.modal {\n  background: var(--color-surface); /* #f3f3f3 */\n  border-radius: .25rem;\n  box-shadow: var(--shadow-lg); /* largest mined shadow */\n}\n\n.modal-backdrop {\n  background: color-mix(in srgb, var(--color-ink) 55%, transparent); /* scrim from #303030 */\n}\n\n.input-error {\n  border-color: #fa423e; /* mined token: red */\n  /* error text: #fa423e on canvas — contrast 3.6:1, below AA; darken for message text */\n}\n```\n\n## Observations\n\n- 11 of 23 extracted colors are neutrals.\n- 3 distinct shadows; the softest reaches 0px blur.\n- 6 breakpoints, from 480px to 1536px.\n- The site ships a large native token system (120+ custom properties) — prefer those names when extending it.\n\n## Native CSS custom properties\n\nFirst 40 of 120:\n\n```css\n:root {\n  --spring-fast-duration: .667s;\n  --spring-common-duration: .667s;\n  --spring-standard: var(--spring-common);\n  --spring-slow-bounce-duration: 1.167s;\n  --spring-bounce-duration: .833s;\n  --spring-fast-bounce-duration: 1s;\n  --easing-spring-elegant-duration: .58171s;\n  --easing-common: ease-in-out;\n  --spring-common: ease-in-out;\n  --spring-bounce: ease-in-out;\n  --spring-fast: ease-in-out;\n  --spring-fast-bounce: ease-in-out;\n  --spring-slow-bounce: ease-in-out;\n  --font-mono: \"ui-monospace\", \"SFMono-Regular\", \"SF Mono\", \"Menlo\", \"Consolas\", \"Liberation Mono\", \"monospace\";\n  --spacing: .25rem;\n  --breakpoint-md: 48rem;\n  --breakpoint-lg: 64rem;\n  --breakpoint-xl: 80rem;\n  --breakpoint-2xl: 96rem;\n  --container-xs: 20rem;\n  --container-sm: 24rem;\n  --container-md: 28rem;\n  --container-lg: 32rem;\n  --container-xl: 36rem;\n  --container-2xl: 42rem;\n  --container-3xl: 48rem;\n  --container-4xl: 56rem;\n  --container-5xl: 64rem;\n  --container-6xl: 72rem;\n  --container-7xl: 80rem;\n  --text-xs: .75rem;\n  --text-xs--line-height: calc(1 / .75);\n  --text-sm: .875rem;\n  --text-sm--line-height: calc(1.25 / .875);\n  --text-base: 1rem;\n  --text-base--line-height: calc(1.5 / 1);\n  --text-lg: 1.125rem;\n  --text-lg--line-height: calc(1.75 / 1.125);\n  --text-xl: 1.25rem;\n  --text-xl--line-height: calc(1.75 / 1.25);\n}\n```\n\n## Files\n\n- `tailwind.css` — Tailwind v4 `@theme` block; tokens become utilities (e.g. `bg-neutral-900`, `text-cyan`).\n- `variables.css` — framework-agnostic `:root` variables, same values.\n- `tokens.json` — W3C Design Tokens format for Figma plugins, Style Dictionary, etc.\n",
+  "tailwind.css": "@import \"tailwindcss\";\n\n@theme {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-100: #f3f3f3;\n  --color-neutral-200: #dfdfdf;\n  --color-neutral-300: #cecece;\n  --color-neutral-400: #c1c0c0;\n  --color-neutral-500: #afafaf;\n  --color-neutral-600: #8f8f8f;\n  --color-neutral-700: #767676;\n  --color-neutral-800: #5d5d5d;\n  --color-neutral-900: #414141;\n  --color-neutral-950: #303030;\n  --color-cyan: #0285ff;\n  --color-red: #fa423e;\n  --color-blue: #7d5bff;\n  --color-blue-2: #aa96ff;\n  --color-blue-3: #5856d6;\n  --color-teal: #10a37f;\n  --color-blue-4: #4e86f7;\n  --color-deep-blue: #0f172a;\n  --color-yellow: #f2c94c;\n  --color-orange: #c76b12;\n  --color-red-2: #e02e2a;\n  --color-blue-5: #6157ff;\n\n  /* inferred semantic roles (each maps to a distinct mined value) */\n  --color-canvas: #ffffff;\n  --color-ink: #303030;\n  --color-text-muted: #afafaf;\n  --color-surface: #f3f3f3;\n  --color-hairline: #dfdfdf;\n  --color-accent: #0285ff;\n  --color-accent-2: #fa423e;\n  --color-accent-3: #7d5bff;\n\n  --font-sans: \"OpenAI Sans\", ui-sans-serif, system-ui, sans-serif;\n  --font-mono: \"Atkinson Hyperlegible Mono\", ui-monospace, monospace;\n\n  --text-xs: 0.5rem;\n  --text-sm: 0.625rem;\n  --text-base: 0.6875rem;\n  --text-lg: 0.75rem;\n  --text-xl: 0.856875rem;\n  --text-2xl: 0.875rem;\n  --text-3xl: 0.9rem;\n  --text-4xl: 1rem;\n  --text-5xl: 1.0625rem;\n  --text-6xl: 1.25rem;\n  --text-7xl: 1.5rem;\n  --text-8xl: 2.25rem;\n\n  --font-weight-light: 300;\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-510: 510;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, sorted tight -> loose */\n  --leading-none: 1;\n  --leading-tight: 1.33;\n  --leading-snug: 1.4;\n  --leading-normal: 1.43;\n  --leading-relaxed: 1.45;\n  --leading-loose: 1.5;\n  --leading-looser: 1.6;\n  --leading-loosest: 1.71;\n\n  /* letter-spacing, sorted tight -> wide */\n  --tracking-tightest: -.026875rem;\n  --tracking-tighter: -.015em;\n  --tracking-tight: -.18px;\n  --tracking-normal: -.154px;\n  --tracking-wide: -.08px;\n  --tracking-wider: -.005rem;\n\n  --radius-sm: .25rem;\n  --radius-md: .375rem;\n  --radius-lg: 10px;\n  --radius-xl: 18px;\n  --radius-2xl: 1.25rem;\n  --radius-3xl: 26px;\n  --radius-4xl: 100%;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 1px #0000;\n  --shadow-md: 0 -1px #0000;\n  --shadow-lg: 0 2px 8px #0000000d;\n\n  --breakpoint-sm: 30rem;\n  --breakpoint-md: 40rem;\n  --breakpoint-lg: 48rem;\n  --breakpoint-xl: 64rem;\n  --breakpoint-2xl: 80rem;\n  --breakpoint-3xl: 96rem;\n\n  /* most-used spacing values on the source site (px): 1, 2, 3, 4, 5, 6, 8, 10, 12, 14, 16, 20 */\n}\n\n/* dark-mode values mined from the source (native token names) */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --interactive-bg-primary-default-context: var(--interactive-bg-primary-default);\n    --interactive-bg-primary-hover-context: var(--interactive-bg-primary-hover);\n    --interactive-bg-primary-press-context: var(--interactive-bg-primary-press);\n    --interactive-bg-primary-inactive-context: var(--interactive-bg-primary-inactive);\n    --interactive-bg-primary-selected-context: var(--interactive-bg-primary-selected);\n    --interactive-bg-primary-inverted-context: var(--bg-primary-inverted);\n    --interactive-border-primary-inverted-context: var(--bg-primary-inverted);\n    --interactive-label-primary-context: var(--interactive-label-primary-default);\n    --interactive-label-primary-inactive-context: var(--interactive-label-primary-inactive);\n    --interactive-label-primary-inverted-context: var(--text-inverted);\n    --interactive-icon-primary-context: var(--interactive-icon-primary-default);\n    --interactive-icon-primary-inactive-context: var(--interactive-icon-primary-inactive);\n    --interactive-icon-primary-inverted-context: var(--icon-inverted);\n    --interactive-bg-danger-primary-default-context: var(--red-500);\n    --interactive-bg-danger-primary-hover-context: var(--red-600);\n    --interactive-bg-danger-primary-press-context: var(--red-500);\n    --interactive-bg-danger-primary-inactive-context: #0d0d0d0f;\n    --interactive-bg-danger-primary-selected-context: var(--red-500);\n    --interactive-label-danger-primary-context: var(--white);\n    --interactive-label-danger-primary-press-context: var(--white);\n    --interactive-label-danger-primary-inactive-context: var(--gray-500);\n    --interactive-icon-danger-primary-context: var(--white);\n    --interactive-icon-danger-primary-press-context: var(--white);\n    --interactive-icon-danger-primary-inactive-context: var(--gray-500);\n    --interactive-bg-danger-soft-default-context: var(--red-50);\n    --interactive-bg-danger-soft-hover-context: var(--red-75);\n    --interactive-bg-danger-soft-press-context: var(--red-50);\n    --interactive-bg-danger-soft-inactive-context: #0d0d0d0f;\n    --interactive-bg-danger-soft-selected-context: var(--red-50);\n    --interactive-label-danger-soft-context: var(--red-600);\n    --interactive-label-danger-soft-press-context: var(--red-500);\n    --interactive-label-danger-soft-inactive-context: var(--red-200);\n    --interactive-icon-danger-soft-context: var(--red-600);\n    --interactive-icon-danger-soft-press-context: var(--red-500);\n    --interactive-icon-danger-soft-inactive-context: var(--red-200);\n    --interactive-bg-danger-ghost-hover-context: var(--red-a50);\n    --interactive-bg-danger-ghost-press-context: var(--red-a25);\n    --interactive-bg-danger-ghost-selected-context: var(--red-a50);\n    --interactive-label-danger-ghost-context: var(--red-500);\n    --interactive-label-danger-ghost-press-context: var(--red-400);\n    --interactive-label-danger-ghost-inactive-context: var(--gray-500);\n    --interactive-icon-danger-ghost-context: var(--red-500);\n    --interactive-icon-danger-ghost-press-context: var(--red-400);\n    --interactive-icon-danger-ghost-inactive-context: var(--gray-500);\n    --interactive-outline-focus-primary: var(--interactive-focus-ring-primary);\n    --interactive-outline-focus-secondary: var(--interactive-focus-ring-secondary);\n    --interactive-outline-focus-danger: var(--interactive-focus-ring-danger);\n    --interactive-button-outline-focus-primary: var(--interactive-outline-focus-primary);\n    --interactive-button-outline-focus-secondary: var(--interactive-outline-focus-secondary);\n    --interactive-button-outline-focus-accent: var(--interactive-outline-focus-primary);\n    --interactive-button-outline-focus-destructive: var(--interactive-outline-focus-danger);\n    --interactive-button-outline-focus-sec-destructive: var(--interactive-outline-focus-danger);\n    --interactive-button-outline-focus-danger-soft: var(--interactive-outline-focus-danger);\n    --interactive-button-outline-focus-danger-ghost: var(--interactive-outline-focus-danger);\n    --interactive-bg-default-primary: var(--interactive-bg-primary-default-context);\n    --interactive-bg-default-secondary: var(--interactive-bg-secondary-default);\n    --interactive-bg-default-accent: var(--interactive-bg-accent-default);\n    --interactive-bg-default-accent-secondary: var(--interactive-bg-accent-secondary-default);\n    --interactive-bg-default-control: var(--interactive-bg-control-default);\n    --interactive-bg-default-primary-inverted: var(--interactive-bg-primary-inverted-context);\n  }\n}\n",
+  "variables.css": ":root {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-100: #f3f3f3;\n  --color-neutral-200: #dfdfdf;\n  --color-neutral-300: #cecece;\n  --color-neutral-400: #c1c0c0;\n  --color-neutral-500: #afafaf;\n  --color-neutral-600: #8f8f8f;\n  --color-neutral-700: #767676;\n  --color-neutral-800: #5d5d5d;\n  --color-neutral-900: #414141;\n  --color-neutral-950: #303030;\n  --color-cyan: #0285ff;\n  --color-red: #fa423e;\n  --color-blue: #7d5bff;\n  --color-blue-2: #aa96ff;\n  --color-blue-3: #5856d6;\n  --color-teal: #10a37f;\n  --color-blue-4: #4e86f7;\n  --color-deep-blue: #0f172a;\n  --color-yellow: #f2c94c;\n  --color-orange: #c76b12;\n  --color-red-2: #e02e2a;\n  --color-blue-5: #6157ff;\n\n  /* inferred semantic roles */\n  --color-canvas: #ffffff;\n  --color-ink: #303030;\n  --color-text-muted: #afafaf;\n  --color-surface: #f3f3f3;\n  --color-hairline: #dfdfdf;\n  --color-accent: #0285ff;\n  --color-accent-2: #fa423e;\n  --color-accent-3: #7d5bff;\n\n  /* typography */\n  --font-openai-sans: \"OpenAI Sans\";\n  --font-opendyslexic: \"OpenDyslexic\";\n  --font-circle: \"Circle\";\n  --font-apple-system-body: \"-apple-system-body\";\n  --font-segoe-ui-variable-text: \"Segoe UI Variable Text\";\n  --font-atkinson-hyperlegible-mono: \"Atkinson Hyperlegible Mono\";\n  --font-opendyslexic-mono: \"OpenDyslexic Mono\";\n  --font-segoe-ui-variable-small: \"Segoe UI Variable Small\";\n\n  /* type scale, ascending */\n  --text-1: 0.5rem;\n  --text-2: 0.625rem;\n  --text-3: 0.6875rem;\n  --text-4: 0.75rem;\n  --text-5: 0.856875rem;\n  --text-6: 0.875rem;\n  --text-7: 0.9rem;\n  --text-8: 1rem;\n  --text-9: 1.0625rem;\n  --text-10: 1.25rem;\n  --text-11: 1.5rem;\n  --text-12: 2.25rem;\n\n  /* font weights in use */\n  --font-weight-light: 300;\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-510: 510;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, tight -> loose */\n  --leading-1: 1;\n  --leading-2: 1.33;\n  --leading-3: 1.4;\n  --leading-4: 1.43;\n  --leading-5: 1.45;\n  --leading-6: 1.5;\n  --leading-7: 1.6;\n  --leading-8: 1.71;\n\n  /* letter-spacing, tight -> wide */\n  --tracking-1: -.026875rem;\n  --tracking-2: -.015em;\n  --tracking-3: -.18px;\n  --tracking-4: -.154px;\n  --tracking-5: -.08px;\n  --tracking-6: -.005rem;\n\n  /* spacing, ascending */\n  --space-1: 1px;\n  --space-2: 2px;\n  --space-3: 3px;\n  --space-4: 4px;\n  --space-5: 5px;\n  --space-6: 6px;\n  --space-7: 8px;\n  --space-8: 10px;\n  --space-9: 12px;\n  --space-10: 14px;\n  --space-11: 16px;\n  --space-12: 20px;\n\n  /* radius, ascending */\n  --radius-sm: .25rem;\n  --radius-md: .375rem;\n  --radius-lg: 10px;\n  --radius-xl: 18px;\n  --radius-2xl: 1.25rem;\n  --radius-3xl: 26px;\n  --radius-4xl: 100%;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 1px #0000;\n  --shadow-md: 0 -1px #0000;\n  --shadow-lg: 0 2px 8px #0000000d;\n}\n\n/* dark-mode values mined from the source (native token names) */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --interactive-bg-primary-default-context: var(--interactive-bg-primary-default);\n    --interactive-bg-primary-hover-context: var(--interactive-bg-primary-hover);\n    --interactive-bg-primary-press-context: var(--interactive-bg-primary-press);\n    --interactive-bg-primary-inactive-context: var(--interactive-bg-primary-inactive);\n    --interactive-bg-primary-selected-context: var(--interactive-bg-primary-selected);\n    --interactive-bg-primary-inverted-context: var(--bg-primary-inverted);\n    --interactive-border-primary-inverted-context: var(--bg-primary-inverted);\n    --interactive-label-primary-context: var(--interactive-label-primary-default);\n    --interactive-label-primary-inactive-context: var(--interactive-label-primary-inactive);\n    --interactive-label-primary-inverted-context: var(--text-inverted);\n    --interactive-icon-primary-context: var(--interactive-icon-primary-default);\n    --interactive-icon-primary-inactive-context: var(--interactive-icon-primary-inactive);\n    --interactive-icon-primary-inverted-context: var(--icon-inverted);\n    --interactive-bg-danger-primary-default-context: var(--red-500);\n    --interactive-bg-danger-primary-hover-context: var(--red-600);\n    --interactive-bg-danger-primary-press-context: var(--red-500);\n    --interactive-bg-danger-primary-inactive-context: #0d0d0d0f;\n    --interactive-bg-danger-primary-selected-context: var(--red-500);\n    --interactive-label-danger-primary-context: var(--white);\n    --interactive-label-danger-primary-press-context: var(--white);\n    --interactive-label-danger-primary-inactive-context: var(--gray-500);\n    --interactive-icon-danger-primary-context: var(--white);\n    --interactive-icon-danger-primary-press-context: var(--white);\n    --interactive-icon-danger-primary-inactive-context: var(--gray-500);\n    --interactive-bg-danger-soft-default-context: var(--red-50);\n    --interactive-bg-danger-soft-hover-context: var(--red-75);\n    --interactive-bg-danger-soft-press-context: var(--red-50);\n    --interactive-bg-danger-soft-inactive-context: #0d0d0d0f;\n    --interactive-bg-danger-soft-selected-context: var(--red-50);\n    --interactive-label-danger-soft-context: var(--red-600);\n    --interactive-label-danger-soft-press-context: var(--red-500);\n    --interactive-label-danger-soft-inactive-context: var(--red-200);\n    --interactive-icon-danger-soft-context: var(--red-600);\n    --interactive-icon-danger-soft-press-context: var(--red-500);\n    --interactive-icon-danger-soft-inactive-context: var(--red-200);\n    --interactive-bg-danger-ghost-hover-context: var(--red-a50);\n    --interactive-bg-danger-ghost-press-context: var(--red-a25);\n    --interactive-bg-danger-ghost-selected-context: var(--red-a50);\n    --interactive-label-danger-ghost-context: var(--red-500);\n    --interactive-label-danger-ghost-press-context: var(--red-400);\n    --interactive-label-danger-ghost-inactive-context: var(--gray-500);\n    --interactive-icon-danger-ghost-context: var(--red-500);\n    --interactive-icon-danger-ghost-press-context: var(--red-400);\n    --interactive-icon-danger-ghost-inactive-context: var(--gray-500);\n    --interactive-outline-focus-primary: var(--interactive-focus-ring-primary);\n    --interactive-outline-focus-secondary: var(--interactive-focus-ring-secondary);\n    --interactive-outline-focus-danger: var(--interactive-focus-ring-danger);\n    --interactive-button-outline-focus-primary: var(--interactive-outline-focus-primary);\n    --interactive-button-outline-focus-secondary: var(--interactive-outline-focus-secondary);\n    --interactive-button-outline-focus-accent: var(--interactive-outline-focus-primary);\n    --interactive-button-outline-focus-destructive: var(--interactive-outline-focus-danger);\n    --interactive-button-outline-focus-sec-destructive: var(--interactive-outline-focus-danger);\n    --interactive-button-outline-focus-danger-soft: var(--interactive-outline-focus-danger);\n    --interactive-button-outline-focus-danger-ghost: var(--interactive-outline-focus-danger);\n    --interactive-bg-default-primary: var(--interactive-bg-primary-default-context);\n    --interactive-bg-default-secondary: var(--interactive-bg-secondary-default);\n    --interactive-bg-default-accent: var(--interactive-bg-accent-default);\n    --interactive-bg-default-accent-secondary: var(--interactive-bg-accent-secondary-default);\n    --interactive-bg-default-control: var(--interactive-bg-control-default);\n    --interactive-bg-default-primary-inverted: var(--interactive-bg-primary-inverted-context);\n  }\n}\n",
+  "tokens.json": "{\n  \"$description\": \"Design tokens extracted from https://chatgpt.com/. Semantic entries are inferred from usage + luminance; all values are mined from live CSS.\",\n  \"color\": {\n    \"neutral-50\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\"\n    },\n    \"neutral-100\": {\n      \"$value\": \"#f3f3f3\",\n      \"$type\": \"color\"\n    },\n    \"neutral-200\": {\n      \"$value\": \"#dfdfdf\",\n      \"$type\": \"color\"\n    },\n    \"neutral-300\": {\n      \"$value\": \"#cecece\",\n      \"$type\": \"color\"\n    },\n    \"neutral-400\": {\n      \"$value\": \"#c1c0c0\",\n      \"$type\": \"color\"\n    },\n    \"neutral-500\": {\n      \"$value\": \"#afafaf\",\n      \"$type\": \"color\"\n    },\n    \"neutral-600\": {\n      \"$value\": \"#8f8f8f\",\n      \"$type\": \"color\"\n    },\n    \"neutral-700\": {\n      \"$value\": \"#767676\",\n      \"$type\": \"color\"\n    },\n    \"neutral-800\": {\n      \"$value\": \"#5d5d5d\",\n      \"$type\": \"color\"\n    },\n    \"neutral-900\": {\n      \"$value\": \"#414141\",\n      \"$type\": \"color\"\n    },\n    \"neutral-950\": {\n      \"$value\": \"#303030\",\n      \"$type\": \"color\"\n    },\n    \"cyan\": {\n      \"$value\": \"#0285ff\",\n      \"$type\": \"color\"\n    },\n    \"red\": {\n      \"$value\": \"#fa423e\",\n      \"$type\": \"color\"\n    },\n    \"blue\": {\n      \"$value\": \"#7d5bff\",\n      \"$type\": \"color\"\n    },\n    \"blue-2\": {\n      \"$value\": \"#aa96ff\",\n      \"$type\": \"color\"\n    },\n    \"blue-3\": {\n      \"$value\": \"#5856d6\",\n      \"$type\": \"color\"\n    },\n    \"teal\": {\n      \"$value\": \"#10a37f\",\n      \"$type\": \"color\"\n    },\n    \"blue-4\": {\n      \"$value\": \"#4e86f7\",\n      \"$type\": \"color\"\n    },\n    \"deep-blue\": {\n      \"$value\": \"#0f172a\",\n      \"$type\": \"color\"\n    },\n    \"yellow\": {\n      \"$value\": \"#f2c94c\",\n      \"$type\": \"color\"\n    },\n    \"orange\": {\n      \"$value\": \"#c76b12\",\n      \"$type\": \"color\"\n    },\n    \"red-2\": {\n      \"$value\": \"#e02e2a\",\n      \"$type\": \"color\"\n    },\n    \"blue-5\": {\n      \"$value\": \"#6157ff\",\n      \"$type\": \"color\"\n    }\n  },\n  \"semantic\": {\n    \"canvas\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: lightest neutral, matches the measured light-leaning theme\"\n    },\n    \"ink\": {\n      \"$value\": \"#303030\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: darkest neutral, highest contrast against canvas\"\n    },\n    \"text-muted\": {\n      \"$value\": \"#afafaf\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used mid-luminance neutral\"\n    },\n    \"surface\": {\n      \"$value\": \"#f3f3f3\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: neutral closest to canvas luminance\"\n    },\n    \"hairline\": {\n      \"$value\": \"#dfdfdf\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: next neutral near canvas, hairline-border weight\"\n    },\n    \"accent\": {\n      \"$value\": \"#0285ff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used chromatic color\"\n    },\n    \"accent-2\": {\n      \"$value\": \"#fa423e\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    },\n    \"accent-3\": {\n      \"$value\": \"#7d5bff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    }\n  },\n  \"fontFamily\": {\n    \"openai-sans\": {\n      \"$value\": \"OpenAI Sans\",\n      \"$type\": \"fontFamily\"\n    },\n    \"opendyslexic\": {\n      \"$value\": \"OpenDyslexic\",\n      \"$type\": \"fontFamily\"\n    },\n    \"circle\": {\n      \"$value\": \"Circle\",\n      \"$type\": \"fontFamily\"\n    },\n    \"apple-system-body\": {\n      \"$value\": \"-apple-system-body\",\n      \"$type\": \"fontFamily\"\n    },\n    \"segoe-ui-variable-text\": {\n      \"$value\": \"Segoe UI Variable Text\",\n      \"$type\": \"fontFamily\"\n    },\n    \"atkinson-hyperlegible-mono\": {\n      \"$value\": \"Atkinson Hyperlegible Mono\",\n      \"$type\": \"fontFamily\"\n    },\n    \"opendyslexic-mono\": {\n      \"$value\": \"OpenDyslexic Mono\",\n      \"$type\": \"fontFamily\"\n    },\n    \"segoe-ui-variable-small\": {\n      \"$value\": \"Segoe UI Variable Small\",\n      \"$type\": \"fontFamily\"\n    }\n  },\n  \"fontSize\": {\n    \"size-1\": {\n      \"$value\": \"0.5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-2\": {\n      \"$value\": \"0.625rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-3\": {\n      \"$value\": \"0.6875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-4\": {\n      \"$value\": \"0.75rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-5\": {\n      \"$value\": \"0.856875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-6\": {\n      \"$value\": \"0.875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-7\": {\n      \"$value\": \"0.9rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-8\": {\n      \"$value\": \"1rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-9\": {\n      \"$value\": \"1.0625rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-10\": {\n      \"$value\": \"1.25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-11\": {\n      \"$value\": \"1.5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-12\": {\n      \"$value\": \"2.25rem\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"fontWeight\": {\n    \"510\": {\n      \"$value\": 510,\n      \"$type\": \"fontWeight\"\n    },\n    \"light\": {\n      \"$value\": 300,\n      \"$type\": \"fontWeight\"\n    },\n    \"normal\": {\n      \"$value\": 400,\n      \"$type\": \"fontWeight\"\n    },\n    \"medium\": {\n      \"$value\": 500,\n      \"$type\": \"fontWeight\"\n    },\n    \"semibold\": {\n      \"$value\": 600,\n      \"$type\": \"fontWeight\"\n    },\n    \"bold\": {\n      \"$value\": 700,\n      \"$type\": \"fontWeight\"\n    }\n  },\n  \"lineHeight\": {\n    \"leading-1\": {\n      \"$value\": 1,\n      \"$type\": \"number\"\n    },\n    \"leading-2\": {\n      \"$value\": 1.33,\n      \"$type\": \"number\"\n    },\n    \"leading-3\": {\n      \"$value\": 1.4,\n      \"$type\": \"number\"\n    },\n    \"leading-4\": {\n      \"$value\": 1.43,\n      \"$type\": \"number\"\n    },\n    \"leading-5\": {\n      \"$value\": 1.45,\n      \"$type\": \"number\"\n    },\n    \"leading-6\": {\n      \"$value\": 1.5,\n      \"$type\": \"number\"\n    },\n    \"leading-7\": {\n      \"$value\": 1.6,\n      \"$type\": \"number\"\n    },\n    \"leading-8\": {\n      \"$value\": 1.71,\n      \"$type\": \"number\"\n    }\n  },\n  \"letterSpacing\": {\n    \"tracking-1\": {\n      \"$value\": \"-.026875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-2\": {\n      \"$value\": \"-.015em\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-3\": {\n      \"$value\": \"-.18px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-4\": {\n      \"$value\": \"-.154px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-5\": {\n      \"$value\": \"-.08px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-6\": {\n      \"$value\": \"-.005rem\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"dimension\": {\n    \"space-1\": {\n      \"$value\": \"1px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-2\": {\n      \"$value\": \"2px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-3\": {\n      \"$value\": \"3px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-4\": {\n      \"$value\": \"4px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-5\": {\n      \"$value\": \"5px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-6\": {\n      \"$value\": \"6px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-7\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-8\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-9\": {\n      \"$value\": \"12px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-10\": {\n      \"$value\": \"14px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-11\": {\n      \"$value\": \"16px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-12\": {\n      \"$value\": \"20px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"borderRadius\": {\n    \"sm\": {\n      \"$value\": \".25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"md\": {\n      \"$value\": \".375rem\",\n      \"$type\": \"dimension\"\n    },\n    \"lg\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"xl\": {\n      \"$value\": \"18px\",\n      \"$type\": \"dimension\"\n    },\n    \"2xl\": {\n      \"$value\": \"1.25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"3xl\": {\n      \"$value\": \"26px\",\n      \"$type\": \"dimension\"\n    },\n    \"4xl\": {\n      \"$value\": \"100%\",\n      \"$type\": \"dimension\"\n    },\n    \"full\": {\n      \"$value\": \"50%\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"shadow\": {\n    \"sm\": {\n      \"$value\": \"0 1px #0000\",\n      \"$type\": \"shadow\"\n    },\n    \"md\": {\n      \"$value\": \"0 -1px #0000\",\n      \"$type\": \"shadow\"\n    },\n    \"lg\": {\n      \"$value\": \"0 2px 8px #0000000d\",\n      \"$type\": \"shadow\"\n    }\n  },\n  \"dark\": {\n    \"interactive-bg-primary-default-context\": {\n      \"$value\": \"var(--interactive-bg-primary-default)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-bg-primary-hover-context\": {\n      \"$value\": \"var(--interactive-bg-primary-hover)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-bg-primary-press-context\": {\n      \"$value\": \"var(--interactive-bg-primary-press)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-bg-primary-inactive-context\": {\n      \"$value\": \"var(--interactive-bg-primary-inactive)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-bg-primary-selected-context\": {\n      \"$value\": \"var(--interactive-bg-primary-selected)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-bg-primary-inverted-context\": {\n      \"$value\": \"var(--bg-primary-inverted)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-border-primary-inverted-context\": {\n      \"$value\": \"var(--bg-primary-inverted)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-label-primary-context\": {\n      \"$value\": \"var(--interactive-label-primary-default)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-label-primary-inactive-context\": {\n      \"$value\": \"var(--interactive-label-primary-inactive)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-label-primary-inverted-context\": {\n      \"$value\": \"var(--text-inverted)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-icon-primary-context\": {\n      \"$value\": \"var(--interactive-icon-primary-default)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-icon-primary-inactive-context\": {\n      \"$value\": \"var(--interactive-icon-primary-inactive)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-icon-primary-inverted-context\": {\n      \"$value\": \"var(--icon-inverted)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-bg-danger-primary-default-context\": {\n      \"$value\": \"var(--red-500)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-bg-danger-primary-hover-context\": {\n      \"$value\": \"var(--red-600)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-bg-danger-primary-press-context\": {\n      \"$value\": \"var(--red-500)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-bg-danger-primary-inactive-context\": {\n      \"$value\": \"#0d0d0d0f\",\n      \"$type\": \"color\"\n    },\n    \"interactive-bg-danger-primary-selected-context\": {\n      \"$value\": \"var(--red-500)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-label-danger-primary-context\": {\n      \"$value\": \"var(--white)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-label-danger-primary-press-context\": {\n      \"$value\": \"var(--white)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-label-danger-primary-inactive-context\": {\n      \"$value\": \"var(--gray-500)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-icon-danger-primary-context\": {\n      \"$value\": \"var(--white)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-icon-danger-primary-press-context\": {\n      \"$value\": \"var(--white)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-icon-danger-primary-inactive-context\": {\n      \"$value\": \"var(--gray-500)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-bg-danger-soft-default-context\": {\n      \"$value\": \"var(--red-50)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-bg-danger-soft-hover-context\": {\n      \"$value\": \"var(--red-75)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-bg-danger-soft-press-context\": {\n      \"$value\": \"var(--red-50)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-bg-danger-soft-inactive-context\": {\n      \"$value\": \"#0d0d0d0f\",\n      \"$type\": \"color\"\n    },\n    \"interactive-bg-danger-soft-selected-context\": {\n      \"$value\": \"var(--red-50)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-label-danger-soft-context\": {\n      \"$value\": \"var(--red-600)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-label-danger-soft-press-context\": {\n      \"$value\": \"var(--red-500)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-label-danger-soft-inactive-context\": {\n      \"$value\": \"var(--red-200)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-icon-danger-soft-context\": {\n      \"$value\": \"var(--red-600)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-icon-danger-soft-press-context\": {\n      \"$value\": \"var(--red-500)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-icon-danger-soft-inactive-context\": {\n      \"$value\": \"var(--red-200)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-bg-danger-ghost-hover-context\": {\n      \"$value\": \"var(--red-a50)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-bg-danger-ghost-press-context\": {\n      \"$value\": \"var(--red-a25)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-bg-danger-ghost-selected-context\": {\n      \"$value\": \"var(--red-a50)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-label-danger-ghost-context\": {\n      \"$value\": \"var(--red-500)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-label-danger-ghost-press-context\": {\n      \"$value\": \"var(--red-400)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-label-danger-ghost-inactive-context\": {\n      \"$value\": \"var(--gray-500)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-icon-danger-ghost-context\": {\n      \"$value\": \"var(--red-500)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-icon-danger-ghost-press-context\": {\n      \"$value\": \"var(--red-400)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-icon-danger-ghost-inactive-context\": {\n      \"$value\": \"var(--gray-500)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-outline-focus-primary\": {\n      \"$value\": \"var(--interactive-focus-ring-primary)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-outline-focus-secondary\": {\n      \"$value\": \"var(--interactive-focus-ring-secondary)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-outline-focus-danger\": {\n      \"$value\": \"var(--interactive-focus-ring-danger)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-button-outline-focus-primary\": {\n      \"$value\": \"var(--interactive-outline-focus-primary)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-button-outline-focus-secondary\": {\n      \"$value\": \"var(--interactive-outline-focus-secondary)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-button-outline-focus-accent\": {\n      \"$value\": \"var(--interactive-outline-focus-primary)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-button-outline-focus-destructive\": {\n      \"$value\": \"var(--interactive-outline-focus-danger)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-button-outline-focus-sec-destructive\": {\n      \"$value\": \"var(--interactive-outline-focus-danger)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-button-outline-focus-danger-soft\": {\n      \"$value\": \"var(--interactive-outline-focus-danger)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-button-outline-focus-danger-ghost\": {\n      \"$value\": \"var(--interactive-outline-focus-danger)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-bg-default-primary\": {\n      \"$value\": \"var(--interactive-bg-primary-default-context)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-bg-default-secondary\": {\n      \"$value\": \"var(--interactive-bg-secondary-default)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-bg-default-accent\": {\n      \"$value\": \"var(--interactive-bg-accent-default)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-bg-default-accent-secondary\": {\n      \"$value\": \"var(--interactive-bg-accent-secondary-default)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-bg-default-control\": {\n      \"$value\": \"var(--interactive-bg-control-default)\",\n      \"$type\": \"string\"\n    },\n    \"interactive-bg-default-primary-inverted\": {\n      \"$value\": \"var(--interactive-bg-primary-inverted-context)\",\n      \"$type\": \"string\"\n    }\n  }\n}"
+ },
+ "raw": {
+  "tokens": {
+   "title": "ChatGPT",
+   "description": "ChatGPT is your AI chatbot for everyday use. Chat with the most advanced AI to explore ideas, solve problems, and learn faster.",
+   "themeGuess": "light-leaning",
+   "darkWeight": 109,
+   "lightWeight": 535,
+   "neutrals": [
+    {
+     "hex": "#ffffff",
+     "count": 382
+    },
+    {
+     "hex": "#f3f3f3",
+     "count": 95
+    },
+    {
+     "hex": "#dfdfdf",
+     "count": 24
+    },
+    {
+     "hex": "#cecece",
+     "count": 34
+    },
+    {
+     "hex": "#c1c0c0",
+     "count": 6
+    },
+    {
+     "hex": "#afafaf",
+     "count": 18
+    },
+    {
+     "hex": "#8f8f8f",
+     "count": 18
+    },
+    {
+     "hex": "#767676",
+     "count": 14
+    },
+    {
+     "hex": "#5d5d5d",
+     "count": 21
+    },
+    {
+     "hex": "#414141",
+     "count": 10
+    },
+    {
+     "hex": "#303030",
+     "count": 27
+    },
+    {
+     "hex": "#212121",
+     "count": 37
+    }
+   ],
+   "accents": [
+    {
+     "hex": "#0285ff",
+     "count": 53
+    },
+    {
+     "hex": "#fa423e",
+     "count": 19
+    },
+    {
+     "hex": "#7d5bff",
+     "count": 19
+    },
+    {
+     "hex": "#aa96ff",
+     "count": 17
+    },
+    {
+     "hex": "#5856d6",
+     "count": 15
+    },
+    {
+     "hex": "#10a37f",
+     "count": 15
+    },
+    {
+     "hex": "#4e86f7",
+     "count": 15
+    },
+    {
+     "hex": "#0f172a",
+     "count": 13
+    },
+    {
+     "hex": "#f2c94c",
+     "count": 9
+    },
+    {
+     "hex": "#c76b12",
+     "count": 8
+    },
+    {
+     "hex": "#e02e2a",
+     "count": 8
+    },
+    {
+     "hex": "#6157ff",
+     "count": 7
+    }
+   ],
+   "modern": [
+    "oklch(0.99 0 0)",
+    "oklch(55.1%25 0.027 264.364)",
+    "lab(0% 0 0)",
+    "lab(53.6% 0 0/0)",
+    "lab(82.6% .0000298023 -.0000119209)",
+    "lab(91.6229% -.159115 -2.26791)",
+    "lab(8.11897% .811279 -12.254)",
+    "lab(8.11897% .811279 -12.254/.1)",
+    "lab(16.1051% -1.18239 -11.7533)",
+    "lab(85.1236% -.612259 -3.7138)",
+    "lab(27.1134% -.956401 -12.3224)",
+    "lab(35.6337% -1.58697 -10.8425)",
+    "lab(0% 0 0/.05)",
+    "lab(0% 0 0/.15)",
+    "lab(100% -.0000298023 .0000119209/.1)",
+    "lab(3.63549% -.00000745058 .00000298023/.05)",
+    "lab(61.1228% -49.5053 22.9273/.3)",
+    "lab(51.2463% -38.7928 7.89099/.6)",
+    "lab(48.698% 43.544 -76.2347/.3)",
+    "lab(50.6912% 45.8506 -71.7974/.3)"
+   ],
+   "fonts": [
+    {
+     "name": "OpenAI Sans",
+     "count": 34
+    },
+    {
+     "name": "OpenDyslexic",
+     "count": 4
+    },
+    {
+     "name": "Circle",
+     "count": 3
+    },
+    {
+     "name": "-apple-system-body",
+     "count": 3
+    },
+    {
+     "name": "Segoe UI Variable Text",
+     "count": 3
+    },
+    {
+     "name": "Atkinson Hyperlegible Mono",
+     "count": 2
+    },
+    {
+     "name": "OpenDyslexic Mono",
+     "count": 1
+    },
+    {
+     "name": "Segoe UI Variable Small",
+     "count": 1
+    }
+   ],
+   "fontSizes": [
+    8,
+    10,
+    11,
+    12,
+    13.71,
+    14,
+    14.4,
+    16,
+    17,
+    20,
+    24,
+    36
+   ],
+   "fontWeights": [
+    {
+     "value": 300,
+     "count": 10
+    },
+    {
+     "value": 400,
+     "count": 23
+    },
+    {
+     "value": 500,
+     "count": 17
+    },
+    {
+     "value": 510,
+     "count": 5
+    },
+    {
+     "value": 600,
+     "count": 22
+    },
+    {
+     "value": 700,
+     "count": 15
+    }
+   ],
+   "lineHeights": [
+    1,
+    1.33,
+    1.4,
+    1.43,
+    1.45,
+    1.5,
+    1.6,
+    1.71
+   ],
+   "letterSpacings": [
+    "-.026875rem",
+    "-.015em",
+    "-.18px",
+    "-.154px",
+    "-.08px",
+    "-.005rem"
+   ],
+   "spacing": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    20
+   ],
+   "radii": [
+    {
+     "value": ".25rem",
+     "count": 7
+    },
+    {
+     "value": "100%",
+     "count": 3
+    },
+    {
+     "value": "10px",
+     "count": 3
+    },
+    {
+     "value": "18px",
+     "count": 3
+    },
+    {
+     "value": "26px",
+     "count": 3
+    },
+    {
+     "value": ".375rem",
+     "count": 2
+    },
+    {
+     "value": "1.25rem",
+     "count": 2
+    },
+    {
+     "value": "50%",
+     "count": 5
+    }
+   ],
+   "shadows": [
+    {
+     "value": "0 1px #0000",
+     "count": 2,
+     "blur": 0
+    },
+    {
+     "value": "0 -1px #0000",
+     "count": 2,
+     "blur": 0
+    },
+    {
+     "value": "0 2px 8px #0000000d",
+     "count": 1,
+     "blur": 0
+    }
+   ],
+   "breakpoints": [
+    480,
+    640,
+    768,
+    1024,
+    1280,
+    1536
+   ],
+   "nativeVars": [
+    {
+     "name": "spring-fast-duration",
+     "value": ".667s"
+    },
+    {
+     "name": "spring-common-duration",
+     "value": ".667s"
+    },
+    {
+     "name": "spring-standard",
+     "value": "var(--spring-common)"
+    },
+    {
+     "name": "spring-slow-bounce-duration",
+     "value": "1.167s"
+    },
+    {
+     "name": "spring-bounce-duration",
+     "value": ".833s"
+    },
+    {
+     "name": "spring-fast-bounce-duration",
+     "value": "1s"
+    },
+    {
+     "name": "easing-spring-elegant-duration",
+     "value": ".58171s"
+    },
+    {
+     "name": "easing-common",
+     "value": "ease-in-out"
+    },
+    {
+     "name": "spring-common",
+     "value": "ease-in-out"
+    },
+    {
+     "name": "spring-bounce",
+     "value": "ease-in-out"
+    },
+    {
+     "name": "spring-fast",
+     "value": "ease-in-out"
+    },
+    {
+     "name": "spring-fast-bounce",
+     "value": "ease-in-out"
+    },
+    {
+     "name": "spring-slow-bounce",
+     "value": "ease-in-out"
+    },
+    {
+     "name": "font-mono",
+     "value": "\"ui-monospace\", \"SFMono-Regular\", \"SF Mono\", \"Menlo\", \"Consolas\", \"Liberation Mono\", \"monospace\""
+    },
+    {
+     "name": "spacing",
+     "value": ".25rem"
+    },
+    {
+     "name": "breakpoint-md",
+     "value": "48rem"
+    },
+    {
+     "name": "breakpoint-lg",
+     "value": "64rem"
+    },
+    {
+     "name": "breakpoint-xl",
+     "value": "80rem"
+    },
+    {
+     "name": "breakpoint-2xl",
+     "value": "96rem"
+    },
+    {
+     "name": "container-xs",
+     "value": "20rem"
+    },
+    {
+     "name": "container-sm",
+     "value": "24rem"
+    },
+    {
+     "name": "container-md",
+     "value": "28rem"
+    },
+    {
+     "name": "container-lg",
+     "value": "32rem"
+    },
+    {
+     "name": "container-xl",
+     "value": "36rem"
+    },
+    {
+     "name": "container-2xl",
+     "value": "42rem"
+    },
+    {
+     "name": "container-3xl",
+     "value": "48rem"
+    },
+    {
+     "name": "container-4xl",
+     "value": "56rem"
+    },
+    {
+     "name": "container-5xl",
+     "value": "64rem"
+    },
+    {
+     "name": "container-6xl",
+     "value": "72rem"
+    },
+    {
+     "name": "container-7xl",
+     "value": "80rem"
+    },
+    {
+     "name": "text-xs",
+     "value": ".75rem"
+    },
+    {
+     "name": "text-xs--line-height",
+     "value": "calc(1 / .75)"
+    },
+    {
+     "name": "text-sm",
+     "value": ".875rem"
+    },
+    {
+     "name": "text-sm--line-height",
+     "value": "calc(1.25 / .875)"
+    },
+    {
+     "name": "text-base",
+     "value": "1rem"
+    },
+    {
+     "name": "text-base--line-height",
+     "value": "calc(1.5 / 1)"
+    },
+    {
+     "name": "text-lg",
+     "value": "1.125rem"
+    },
+    {
+     "name": "text-lg--line-height",
+     "value": "calc(1.75 / 1.125)"
+    },
+    {
+     "name": "text-xl",
+     "value": "1.25rem"
+    },
+    {
+     "name": "text-xl--line-height",
+     "value": "calc(1.75 / 1.25)"
+    },
+    {
+     "name": "text-2xl",
+     "value": "1.5rem"
+    },
+    {
+     "name": "text-2xl--line-height",
+     "value": "calc(2 / 1.5)"
+    },
+    {
+     "name": "text-3xl",
+     "value": "1.875rem"
+    },
+    {
+     "name": "text-3xl--line-height",
+     "value": "calc(2.25 / 1.875)"
+    },
+    {
+     "name": "text-4xl",
+     "value": "2.25rem"
+    },
+    {
+     "name": "text-4xl--line-height",
+     "value": "calc(2.5 / 2.25)"
+    },
+    {
+     "name": "text-5xl",
+     "value": "3rem"
+    },
+    {
+     "name": "text-5xl--line-height",
+     "value": "1"
+    },
+    {
+     "name": "text-6xl",
+     "value": "3.75rem"
+    },
+    {
+     "name": "text-6xl--line-height",
+     "value": "1"
+    },
+    {
+     "name": "font-weight-thin",
+     "value": "100"
+    },
+    {
+     "name": "font-weight-extralight",
+     "value": "200"
+    },
+    {
+     "name": "font-weight-light",
+     "value": "300"
+    },
+    {
+     "name": "font-weight-normal",
+     "value": "400"
+    },
+    {
+     "name": "font-weight-medium",
+     "value": "500"
+    },
+    {
+     "name": "font-weight-semibold",
+     "value": "600"
+    },
+    {
+     "name": "font-weight-bold",
+     "value": "700"
+    },
+    {
+     "name": "font-weight-extrabold",
+     "value": "800"
+    },
+    {
+     "name": "font-weight-black",
+     "value": "900"
+    },
+    {
+     "name": "tracking-tighter",
+     "value": "-.05em"
+    },
+    {
+     "name": "tracking-tight",
+     "value": "-.025em"
+    },
+    {
+     "name": "tracking-normal",
+     "value": "0em"
+    },
+    {
+     "name": "tracking-wide",
+     "value": ".025em"
+    },
+    {
+     "name": "tracking-wider",
+     "value": ".05em"
+    },
+    {
+     "name": "tracking-widest",
+     "value": ".1em"
+    },
+    {
+     "name": "leading-tight",
+     "value": "1.25"
+    },
+    {
+     "name": "leading-snug",
+     "value": "1.375"
+    },
+    {
+     "name": "leading-normal",
+     "value": "1.5"
+    },
+    {
+     "name": "leading-relaxed",
+     "value": "1.625"
+    },
+    {
+     "name": "leading-loose",
+     "value": "2"
+    },
+    {
+     "name": "radius-xs",
+     "value": ".125rem"
+    },
+    {
+     "name": "radius-sm",
+     "value": ".25rem"
+    },
+    {
+     "name": "radius-md",
+     "value": ".375rem"
+    },
+    {
+     "name": "radius-lg",
+     "value": ".5rem"
+    },
+    {
+     "name": "radius-xl",
+     "value": ".75rem"
+    },
+    {
+     "name": "radius-2xl",
+     "value": "1rem"
+    },
+    {
+     "name": "radius-3xl",
+     "value": "1.5rem"
+    },
+    {
+     "name": "radius-4xl",
+     "value": "2rem"
+    },
+    {
+     "name": "shadow-xs",
+     "value": "0 0 15px #0000001a"
+    },
+    {
+     "name": "shadow-sm",
+     "value": "0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a"
+    },
+    {
+     "name": "shadow-md",
+     "value": "0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a"
+    },
+    {
+     "name": "shadow-lg",
+     "value": "0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a"
+    },
+    {
+     "name": "drop-shadow-sm",
+     "value": "0 1px 2px #00000026"
+    },
+    {
+     "name": "drop-shadow-md",
+     "value": "0 3px 3px #0000001f"
+    },
+    {
+     "name": "drop-shadow-lg",
+     "value": "0 4px 4px #00000026"
+    },
+    {
+     "name": "drop-shadow-xl",
+     "value": "0 9px 7px #0000001a"
+    },
+    {
+     "name": "drop-shadow-2xl",
+     "value": "0 25px 25px #00000026"
+    },
+    {
+     "name": "ease-in",
+     "value": "cubic-bezier(.4, 0, 1, 1)"
+    },
+    {
+     "name": "ease-out",
+     "value": "cubic-bezier(0, 0, .2, 1)"
+    },
+    {
+     "name": "ease-in-out",
+     "value": "cubic-bezier(.4, 0, .2, 1)"
+    },
+    {
+     "name": "animate-spin",
+     "value": "spin 1s linear infinite"
+    },
+    {
+     "name": "animate-ping",
+     "value": "ping 1s cubic-bezier(0, 0, .2, 1) infinite"
+    },
+    {
+     "name": "animate-pulse",
+     "value": "pulse 2s cubic-bezier(.4, 0, .6, 1) infinite"
+    },
+    {
+     "name": "animate-bounce",
+     "value": "bounce 1s infinite"
+    },
+    {
+     "name": "blur-xs",
+     "value": "4px"
+    },
+    {
+     "name": "blur-sm",
+     "value": "8px"
+    },
+    {
+     "name": "blur-md",
+     "value": "12px"
+    },
+    {
+     "name": "blur-lg",
+     "value": "16px"
+    },
+    {
+     "name": "blur-xl",
+     "value": "24px"
+    },
+    {
+     "name": "blur-2xl",
+     "value": "40px"
+    },
+    {
+     "name": "blur-3xl",
+     "value": "64px"
+    },
+    {
+     "name": "aspect-video",
+     "value": "16 / 9"
+    },
+    {
+     "name": "default-transition-duration",
+     "value": ".15s"
+    },
+    {
+     "name": "default-transition-timing-function",
+     "value": "cubic-bezier(.4, 0, .2, 1)"
+    },
+    {
+     "name": "default-mono-font-family",
+     "value": "\"ui-monospace\", \"SFMono-Regular\", \"SF Mono\", \"Menlo\", \"Consolas\", \"Liberation Mono\", \"monospace\""
+    },
+    {
+     "name": "font-oai",
+     "value": "\"OpenAI Sans\", sans-serif"
+    },
+    {
+     "name": "text-heading-1",
+     "value": "2.25rem"
+    },
+    {
+     "name": "text-heading-1--line-height",
+     "value": "2.5rem"
+    },
+    {
+     "name": "text-heading-1--font-weight",
+     "value": "600"
+    },
+    {
+     "name": "text-heading-2",
+     "value": "1.5rem"
+    },
+    {
+     "name": "text-heading-2--line-height",
+     "value": "1.75rem"
+    },
+    {
+     "name": "text-heading-2--font-weight",
+     "value": "600"
+    },
+    {
+     "name": "text-heading-app",
+     "value": "1.75rem"
+    },
+    {
+     "name": "text-heading-app--line-height",
+     "value": "2.125rem"
+    },
+    {
+     "name": "text-heading-app--font-weight",
+     "value": "400"
+    },
+    {
+     "name": "text-heading-app-emphasized",
+     "value": "1.75rem"
+    },
+    {
+     "name": "text-heading-app-emphasized--line-height",
+     "value": "2.125rem"
+    },
+    {
+     "name": "text-heading-app-emphasized--font-weight",
+     "value": "600"
+    },
+    {
+     "name": "text-heading-3",
+     "value": "1.125rem"
+    },
+    {
+     "name": "text-heading-3--line-height",
+     "value": "1.625rem"
+    }
+   ],
+   "darkVars": [
+    {
+     "name": "interactive-bg-primary-default-context",
+     "light": null,
+     "dark": "var(--interactive-bg-primary-default)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-primary-hover-context",
+     "light": null,
+     "dark": "var(--interactive-bg-primary-hover)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-primary-press-context",
+     "light": null,
+     "dark": "var(--interactive-bg-primary-press)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-primary-inactive-context",
+     "light": null,
+     "dark": "var(--interactive-bg-primary-inactive)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-primary-selected-context",
+     "light": null,
+     "dark": "var(--interactive-bg-primary-selected)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-primary-inverted-context",
+     "light": null,
+     "dark": "var(--bg-primary-inverted)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-border-primary-inverted-context",
+     "light": null,
+     "dark": "var(--bg-primary-inverted)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-label-primary-context",
+     "light": null,
+     "dark": "var(--interactive-label-primary-default)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-label-primary-inactive-context",
+     "light": null,
+     "dark": "var(--interactive-label-primary-inactive)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-label-primary-inverted-context",
+     "light": null,
+     "dark": "var(--text-inverted)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-icon-primary-context",
+     "light": null,
+     "dark": "var(--interactive-icon-primary-default)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-icon-primary-inactive-context",
+     "light": null,
+     "dark": "var(--interactive-icon-primary-inactive)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-icon-primary-inverted-context",
+     "light": null,
+     "dark": "var(--icon-inverted)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-danger-primary-default-context",
+     "light": null,
+     "dark": "var(--red-500)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-danger-primary-hover-context",
+     "light": null,
+     "dark": "var(--red-600)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-danger-primary-press-context",
+     "light": null,
+     "dark": "var(--red-500)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-danger-primary-inactive-context",
+     "light": null,
+     "dark": "#0d0d0d0f",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-danger-primary-selected-context",
+     "light": null,
+     "dark": "var(--red-500)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-label-danger-primary-context",
+     "light": null,
+     "dark": "var(--white)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-label-danger-primary-press-context",
+     "light": null,
+     "dark": "var(--white)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-label-danger-primary-inactive-context",
+     "light": null,
+     "dark": "var(--gray-500)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-icon-danger-primary-context",
+     "light": null,
+     "dark": "var(--white)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-icon-danger-primary-press-context",
+     "light": null,
+     "dark": "var(--white)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-icon-danger-primary-inactive-context",
+     "light": null,
+     "dark": "var(--gray-500)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-danger-soft-default-context",
+     "light": null,
+     "dark": "var(--red-50)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-danger-soft-hover-context",
+     "light": null,
+     "dark": "var(--red-75)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-danger-soft-press-context",
+     "light": null,
+     "dark": "var(--red-50)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-danger-soft-inactive-context",
+     "light": null,
+     "dark": "#0d0d0d0f",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-danger-soft-selected-context",
+     "light": null,
+     "dark": "var(--red-50)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-label-danger-soft-context",
+     "light": null,
+     "dark": "var(--red-600)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-label-danger-soft-press-context",
+     "light": null,
+     "dark": "var(--red-500)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-label-danger-soft-inactive-context",
+     "light": null,
+     "dark": "var(--red-200)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-icon-danger-soft-context",
+     "light": null,
+     "dark": "var(--red-600)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-icon-danger-soft-press-context",
+     "light": null,
+     "dark": "var(--red-500)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-icon-danger-soft-inactive-context",
+     "light": null,
+     "dark": "var(--red-200)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-danger-ghost-hover-context",
+     "light": null,
+     "dark": "var(--red-a50)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-danger-ghost-press-context",
+     "light": null,
+     "dark": "var(--red-a25)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-danger-ghost-selected-context",
+     "light": null,
+     "dark": "var(--red-a50)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-label-danger-ghost-context",
+     "light": null,
+     "dark": "var(--red-500)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-label-danger-ghost-press-context",
+     "light": null,
+     "dark": "var(--red-400)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-label-danger-ghost-inactive-context",
+     "light": null,
+     "dark": "var(--gray-500)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-icon-danger-ghost-context",
+     "light": null,
+     "dark": "var(--red-500)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-icon-danger-ghost-press-context",
+     "light": null,
+     "dark": "var(--red-400)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-icon-danger-ghost-inactive-context",
+     "light": null,
+     "dark": "var(--gray-500)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-outline-focus-primary",
+     "light": null,
+     "dark": "var(--interactive-focus-ring-primary)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-outline-focus-secondary",
+     "light": null,
+     "dark": "var(--interactive-focus-ring-secondary)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-outline-focus-danger",
+     "light": null,
+     "dark": "var(--interactive-focus-ring-danger)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-button-outline-focus-primary",
+     "light": null,
+     "dark": "var(--interactive-outline-focus-primary)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-button-outline-focus-secondary",
+     "light": null,
+     "dark": "var(--interactive-outline-focus-secondary)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-button-outline-focus-accent",
+     "light": null,
+     "dark": "var(--interactive-outline-focus-primary)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-button-outline-focus-destructive",
+     "light": null,
+     "dark": "var(--interactive-outline-focus-danger)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-button-outline-focus-sec-destructive",
+     "light": null,
+     "dark": "var(--interactive-outline-focus-danger)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-button-outline-focus-danger-soft",
+     "light": null,
+     "dark": "var(--interactive-outline-focus-danger)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-button-outline-focus-danger-ghost",
+     "light": null,
+     "dark": "var(--interactive-outline-focus-danger)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-default-primary",
+     "light": null,
+     "dark": "var(--interactive-bg-primary-default-context)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-default-secondary",
+     "light": null,
+     "dark": "var(--interactive-bg-secondary-default)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-default-accent",
+     "light": null,
+     "dark": "var(--interactive-bg-accent-default)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-default-accent-secondary",
+     "light": null,
+     "dark": "var(--interactive-bg-accent-secondary-default)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-default-control",
+     "light": null,
+     "dark": "var(--interactive-bg-control-default)",
+     "via": "dark selector"
+    },
+    {
+     "name": "interactive-bg-default-primary-inverted",
+     "light": null,
+     "dark": "var(--interactive-bg-primary-inverted-context)",
+     "via": "dark selector"
+    }
+   ],
+   "rings": []
+  },
+  "stylesheets": 2
+ }
+}

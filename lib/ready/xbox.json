@@ -1,0 +1,808 @@
+{
+ "slug": "xbox",
+ "name": "Xbox",
+ "blurb": "Gaming. Signature green on carbon, tile grids, hero art from current releases.",
+ "url": "https://www.xbox.com/",
+ "title": "XBOX Official Site: PC Game Pass, Games, Apps | XBOX",
+ "extractedAt": "2026-07-03",
+ "summary": {
+  "colors": [
+   {
+    "name": "neutral-50",
+    "hex": "#ffffff",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-100",
+    "hex": "#f2f2f2",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-200",
+    "hex": "#e6e6e6",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-300",
+    "hex": "#cccccc",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-400",
+    "hex": "#acacac",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-500",
+    "hex": "#999999",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-600",
+    "hex": "#757575",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-700",
+    "hex": "#666666",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-800",
+    "hex": "#505050",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-900",
+    "hex": "#404040",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-950",
+    "hex": "#333333",
+    "group": "neutral"
+   },
+   {
+    "name": "green",
+    "hex": "#107c10",
+    "group": "accent"
+   },
+   {
+    "name": "deep-green",
+    "hex": "#094709",
+    "group": "accent"
+   },
+   {
+    "name": "lime",
+    "hex": "#9bf00b",
+    "group": "accent"
+   },
+   {
+    "name": "cyan",
+    "hex": "#0078d4",
+    "group": "accent"
+   },
+   {
+    "name": "lime-2",
+    "hex": "#5dc21e",
+    "group": "accent"
+   },
+   {
+    "name": "orange",
+    "hex": "#d83b01",
+    "group": "accent"
+   },
+   {
+    "name": "cyan-2",
+    "hex": "#106ebe",
+    "group": "accent"
+   },
+   {
+    "name": "deep-green-2",
+    "hex": "#0d630d",
+    "group": "accent"
+   },
+   {
+    "name": "yellow",
+    "hex": "#ffd800",
+    "group": "accent"
+   },
+   {
+    "name": "green-2",
+    "hex": "#007533",
+    "group": "accent"
+   },
+   {
+    "name": "yellow-2",
+    "hex": "#ffb900",
+    "group": "accent"
+   },
+   {
+    "name": "green-3",
+    "hex": "#04ab4f",
+    "group": "accent"
+   }
+  ],
+  "fonts": [
+   "Segoe UI",
+   "MWF-MDL2",
+   "SegoeUI",
+   "Bahnschrift Light",
+   "Segoe UI Web (East European)",
+   "Bahnschrift",
+   "Bahnschrift Bold",
+   "MWFMDL2-Xbox"
+  ],
+  "themeGuess": "light-leaning",
+  "stylesheets": 10,
+  "nativeVarCount": 91
+ },
+ "files": {
+  "DESIGN.md": "---\nname: xbox-com-design-system\nsource: https://www.xbox.com/\nextracted: 2026-07-03\ntheme: light  # measured from neutral usage weight\ncolors:  # roles inferred from usage frequency + luminance; names verified against values\n  canvas: \"#ffffff\"\n  ink: \"#333333\"\n  text-muted: \"#757575\"\n  surface: \"#f2f2f2\"\n  hairline: \"#e6e6e6\"\n  accent: \"#107c10\"  # green\n  accent-2: \"#094709\"  # deep-green\n  accent-3: \"#9bf00b\"  # lime\nfonts:\n  primary: \"Segoe UI\"  # medium-confidence: usage counts are close\n---\n\n# XBOX Official Site: PC Game Pass, Games, Apps | XBOX — Design System\n\nExtracted from **https://www.xbox.com/** on 2026-07-03.\n\n> Play a library of PC games with friends all for one low monthly price.\n\nEvery value below is mined from the site's live CSS (91 native custom properties, ranked usage counts). Role assignments are inferred from usage and luminance and marked as such — treat them as a strong starting point, not gospel.\n\n## Overview\n\nThe system reads as light: measured neutral usage weighs 1215 light against 332 dark. The palette is chromatic: 12 saturated values against 11 neutrals, led by green (`#107c10`). **Segoe UI** leads the font stack, though usage counts are close — verify against rendered pages before committing. Geometry mixes sharp corners (.125rem) with full pills.\n\n## Usage rules\n\nDerived from the measured usage below — each rule cites its evidence.\n\n- Chromatic color is only 23% of measured color usage. Reserve `accent` (`#107c10`) for primary actions, links, and emphasis — spreading it into body text or large surfaces breaks the ratio that defines this look.\n- The theme is light (measured neutral weight 1215:332). Don't flip individual sections to the opposite mode.\n- The most-used radius is the full pill (x41); mid-size radii are the exception in this system.\n- Shadows stay tight (max 0.03125px blur) — keep elevation subtle if you extend the scale.\n\n## Colors\n\n### Neutrals (light → dark)\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `neutral-50` | `#ffffff` | 944 | **canvas** — lightest neutral, matches the measured light-leaning theme |\n| `neutral-100` | `#f2f2f2` | 36 | **surface** — neutral closest to canvas luminance |\n| `neutral-200` | `#e6e6e6` | 129 | **hairline** — next neutral near canvas, hairline-border weight |\n| `neutral-300` | `#cccccc` | 106 | — |\n| `neutral-400` | `#acacac` | 24 | — |\n| `neutral-500` | `#999999` | 40 | — |\n| `neutral-600` | `#757575` | 41 | **text-muted** — most-used mid-luminance neutral |\n| `neutral-700` | `#666666` | 34 | — |\n| `neutral-800` | `#505050` | 35 | — |\n| `neutral-900` | `#404040` | 50 | — |\n| `neutral-950` | `#333333` | 44 | **ink** — darkest neutral, highest contrast against canvas |\n\n### Accents\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `green` | `#107c10` | 199 | **accent** — most-used chromatic color |\n| `deep-green` | `#094709` | 91 | **accent-2** — supporting chromatic color |\n| `lime` | `#9bf00b` | 51 | **accent-3** — supporting chromatic color |\n| `cyan` | `#0078d4` | 21 | — |\n| `lime-2` | `#5dc21e` | 16 | — |\n| `orange` | `#d83b01` | 15 | — |\n| `cyan-2` | `#106ebe` | 13 | — |\n| `deep-green-2` | `#0d630d` | 10 | — |\n| `yellow` | `#ffd800` | 10 | — |\n| `green-2` | `#007533` | 9 | — |\n| `yellow-2` | `#ffb900` | 8 | — |\n| `green-3` | `#04ab4f` | 8 | — |\n\n## Typography\n\n**Segoe UI** has the most `font-family` declarations, but the margin over the rest is thin — treat the primary-face call as provisional and verify on rendered pages. Full list by usage:\n\n| Family | Usage |\n| --- | --- |\n| Segoe UI | 38 |\n| MWF-MDL2 | 34 |\n| SegoeUI | 12 |\n| Bahnschrift Light | 12 |\n| Segoe UI Web (East European) | 7 |\n| Bahnschrift | 6 |\n| Bahnschrift Bold | 5 |\n| MWFMDL2-Xbox | 5 |\n\n**Size scale (px):** `11`, `12`, `13`, `14`, `15`, `16`, `18`, `20`, `24`, `28`, `34`, `46`\n\n**Weights in use:** `100` (x12), `200` (x22), `300` (x14), `400` (x104), `600` (x176), `700` (x45)\n\n**Line-heights (unitless):** `1`, `1.15`, `1.2`, `1.3`, `1.35`, `1.4`, `1.5`\n\n**Letter-spacing values:** `-.01em`, `.05em`, `.0625em`, `.075em`, `4px`, `12px`\n\n## Spacing\n\nMost-used values (px): `2`, `4`, `6`, `8`, `10`, `12`, `15`, `16`, `20`, `24`, `36`, `48`\n\n## Border radius\n\n| Token | Value | Usage |\n| --- | --- | --- |\n| `radius-sm` | `.125rem` | 9 |\n| `radius-md` | `.25rem` | 38 |\n| `radius-lg` | `6px` | 9 |\n| `radius-xl` | `.5rem` | 32 |\n| `radius-2xl` | `.9rem` | 3 |\n| `radius-3xl` | `1rem` | 5 |\n| `radius-full` | `50%` | 41 |\n\n## Shadows (ordered by blur radius)\n\n- `shadow-sm` — `0 2px currentColor` (x56)\n- `shadow-md` — `unset` (x14)\n- `shadow-lg` — `0 .125rem .25rem 0 rgba(0,0,0,.13),0 0 .0625rem 0 rgba(0,0,0,.11)` (x13)\n- `shadow-xl` — `0 3px 0 -1px currentColor` (x6)\n- `shadow-2xl` — `0 4px 8px rgba(0,0,0,.2)` (x5)\n- `shadow-3xl` — `0 .0625rem .125rem .03125rem rgba(0,0,0,.16)` (x4)\n\n### Focus rings (spread-only box-shadows, kept out of the elevation scale)\n\n- `inset 0 0 0 1px #fff` (x4)\n\n## Breakpoints\n\n`320px`, `339px`, `340px`, `350px`, `360px`, `374px`, `389px`, `390px`\n\n## Starter recipes\n\nTokens composed into components. The source site's real components were **not** inspected — these are starting points built from the extracted values, with contrast ratios computed rather than assumed.\n\n```css\n.button-primary {\n  background: var(--color-accent); /* #107c10 */\n  color: var(--color-canvas); /* #ffffff — contrast 5.4:1 */\n  border-radius: 9999px; /* pill — mined as 50% */\n  font-weight: 600;\n}\n\n.card {\n  background: var(--color-surface); /* #f2f2f2 */\n  border: 1px solid var(--color-hairline); /* #e6e6e6 */\n  border-radius: .25rem; /* most-used finite radius */\n  box-shadow: var(--shadow-sm);\n}\n\n.input {\n  background: var(--color-canvas); /* #ffffff */\n  color: var(--color-ink); /* #333333 — contrast 12.6:1 */\n  border: 1px solid var(--color-hairline); /* #e6e6e6 */\n  border-radius: .125rem;\n  /* placeholder color: var(--color-text-muted) #757575 */\n}\n\n.nav {\n  background: var(--color-canvas); /* #ffffff */\n  border-bottom: 1px solid var(--color-hairline); /* #e6e6e6 */\n  color: var(--color-ink); /* #333333 */\n  /* inactive links: var(--color-text-muted) #757575 */\n  /* active link: var(--color-accent) #107c10 — contrast vs canvas 5.4:1 */\n}\n\n.modal {\n  background: var(--color-surface); /* #f2f2f2 */\n  border-radius: .25rem;\n  box-shadow: var(--shadow-3xl); /* largest mined shadow */\n}\n\n.modal-backdrop {\n  background: color-mix(in srgb, var(--color-ink) 55%, transparent); /* scrim from #333333 */\n}\n\n.input-error {\n  border-color: #d83b01; /* mined token: orange */\n  /* error text: #d83b01 on canvas — contrast 4.6:1 */\n}\n\n.input-success {\n  border-color: #107c10; /* mined token: green */\n}\n```\n\n## Observations\n\n- 11 of 23 extracted colors are neutrals.\n- 6 distinct shadows; the softest reaches 0.03125px blur.\n- 8 breakpoints, from 320px to 390px.\n\n## Native CSS custom properties\n\nFirst 40 of 91:\n\n```css\n:root {\n  --uhf-font-family: \"Segoe UI\", SegoeUI, \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  --tw-border-spacing-x: 0;\n  --tw-border-spacing-y: 0;\n  --tw-translate-x: 0;\n  --tw-translate-y: 0;\n  --tw-rotate: 0;\n  --tw-skew-x: 0;\n  --tw-skew-y: 0;\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  --tw-pan-x: ;\n  --tw-pan-y: ;\n  --tw-pinch-zoom: ;\n  --tw-scroll-snap-strictness: proximity;\n  --tw-gradient-from-position: ;\n  --tw-gradient-via-position: ;\n  --tw-gradient-to-position: ;\n  --tw-ordinal: ;\n  --tw-slashed-zero: ;\n  --tw-numeric-figure: ;\n  --tw-numeric-spacing: ;\n  --tw-numeric-fraction: ;\n  --tw-ring-inset: ;\n  --tw-ring-offset-width: 0px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: rgba(59,130,246,.5);\n  --tw-ring-offset-shadow: 0 0 #0000;\n  --tw-ring-shadow: 0 0 #0000;\n  --tw-shadow: 0 0 #0000;\n  --tw-shadow-colored: 0 0 #0000;\n  --tw-blur: ;\n  --tw-brightness: ;\n  --tw-contrast: ;\n  --tw-grayscale: ;\n  --tw-hue-rotate: ;\n  --tw-invert: ;\n  --tw-saturate: ;\n  --tw-sepia: ;\n  --tw-drop-shadow: ;\n  --tw-backdrop-blur: ;\n}\n```\n\n## Files\n\n- `tailwind.css` — Tailwind v4 `@theme` block; tokens become utilities (e.g. `bg-neutral-900`, `text-green`).\n- `variables.css` — framework-agnostic `:root` variables, same values.\n- `tokens.json` — W3C Design Tokens format for Figma plugins, Style Dictionary, etc.\n",
+  "tailwind.css": "@import \"tailwindcss\";\n\n@theme {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-100: #f2f2f2;\n  --color-neutral-200: #e6e6e6;\n  --color-neutral-300: #cccccc;\n  --color-neutral-400: #acacac;\n  --color-neutral-500: #999999;\n  --color-neutral-600: #757575;\n  --color-neutral-700: #666666;\n  --color-neutral-800: #505050;\n  --color-neutral-900: #404040;\n  --color-neutral-950: #333333;\n  --color-green: #107c10;\n  --color-deep-green: #094709;\n  --color-lime: #9bf00b;\n  --color-cyan: #0078d4;\n  --color-lime-2: #5dc21e;\n  --color-orange: #d83b01;\n  --color-cyan-2: #106ebe;\n  --color-deep-green-2: #0d630d;\n  --color-yellow: #ffd800;\n  --color-green-2: #007533;\n  --color-yellow-2: #ffb900;\n  --color-green-3: #04ab4f;\n\n  /* inferred semantic roles (each maps to a distinct mined value) */\n  --color-canvas: #ffffff;\n  --color-ink: #333333;\n  --color-text-muted: #757575;\n  --color-surface: #f2f2f2;\n  --color-hairline: #e6e6e6;\n  --color-accent: #107c10;\n  --color-accent-2: #094709;\n  --color-accent-3: #9bf00b;\n\n  --font-sans: \"Segoe UI\", ui-sans-serif, system-ui, sans-serif;\n\n  --text-xs: 0.6875rem;\n  --text-sm: 0.75rem;\n  --text-base: 0.8125rem;\n  --text-lg: 0.875rem;\n  --text-xl: 0.9375rem;\n  --text-2xl: 1rem;\n  --text-3xl: 1.125rem;\n  --text-4xl: 1.25rem;\n  --text-5xl: 1.5rem;\n  --text-6xl: 1.75rem;\n  --text-7xl: 2.125rem;\n  --text-8xl: 2.875rem;\n\n  --font-weight-thin: 100;\n  --font-weight-extralight: 200;\n  --font-weight-light: 300;\n  --font-weight-normal: 400;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, sorted tight -> loose */\n  --leading-none: 1;\n  --leading-tight: 1.15;\n  --leading-snug: 1.2;\n  --leading-normal: 1.3;\n  --leading-relaxed: 1.35;\n  --leading-loose: 1.4;\n  --leading-looser: 1.5;\n\n  /* letter-spacing, sorted tight -> wide */\n  --tracking-tightest: -.01em;\n  --tracking-tighter: .05em;\n  --tracking-tight: .0625em;\n  --tracking-normal: .075em;\n  --tracking-wide: 4px;\n  --tracking-wider: 12px;\n\n  --radius-sm: .125rem;\n  --radius-md: .25rem;\n  --radius-lg: 6px;\n  --radius-xl: .5rem;\n  --radius-2xl: .9rem;\n  --radius-3xl: 1rem;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 2px currentColor;\n  --shadow-md: unset;\n  --shadow-lg: 0 .125rem .25rem 0 rgba(0,0,0,.13),0 0 .0625rem 0 rgba(0,0,0,.11);\n  --shadow-xl: 0 3px 0 -1px currentColor;\n  --shadow-2xl: 0 4px 8px rgba(0,0,0,.2);\n  --shadow-3xl: 0 .0625rem .125rem .03125rem rgba(0,0,0,.16);\n\n  --breakpoint-sm: 20rem;\n  --breakpoint-md: 21.1875rem;\n  --breakpoint-lg: 21.25rem;\n  --breakpoint-xl: 21.875rem;\n  --breakpoint-2xl: 22.5rem;\n  --breakpoint-3xl: 23.375rem;\n  --breakpoint-4xl: 24.3125rem;\n  --breakpoint-5xl: 24.375rem;\n\n  /* most-used spacing values on the source site (px): 2, 4, 6, 8, 10, 12, 15, 16, 20, 24, 36, 48 */\n}\n",
+  "variables.css": ":root {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-100: #f2f2f2;\n  --color-neutral-200: #e6e6e6;\n  --color-neutral-300: #cccccc;\n  --color-neutral-400: #acacac;\n  --color-neutral-500: #999999;\n  --color-neutral-600: #757575;\n  --color-neutral-700: #666666;\n  --color-neutral-800: #505050;\n  --color-neutral-900: #404040;\n  --color-neutral-950: #333333;\n  --color-green: #107c10;\n  --color-deep-green: #094709;\n  --color-lime: #9bf00b;\n  --color-cyan: #0078d4;\n  --color-lime-2: #5dc21e;\n  --color-orange: #d83b01;\n  --color-cyan-2: #106ebe;\n  --color-deep-green-2: #0d630d;\n  --color-yellow: #ffd800;\n  --color-green-2: #007533;\n  --color-yellow-2: #ffb900;\n  --color-green-3: #04ab4f;\n\n  /* inferred semantic roles */\n  --color-canvas: #ffffff;\n  --color-ink: #333333;\n  --color-text-muted: #757575;\n  --color-surface: #f2f2f2;\n  --color-hairline: #e6e6e6;\n  --color-accent: #107c10;\n  --color-accent-2: #094709;\n  --color-accent-3: #9bf00b;\n\n  /* typography */\n  --font-segoe-ui: \"Segoe UI\";\n  --font-mwf-mdl2: \"MWF-MDL2\";\n  --font-segoeui: \"SegoeUI\";\n  --font-bahnschrift-light: \"Bahnschrift Light\";\n  --font-segoe-ui-web-east-european: \"Segoe UI Web (East European)\";\n  --font-bahnschrift: \"Bahnschrift\";\n  --font-bahnschrift-bold: \"Bahnschrift Bold\";\n  --font-mwfmdl2-xbox: \"MWFMDL2-Xbox\";\n\n  /* type scale, ascending */\n  --text-1: 0.6875rem;\n  --text-2: 0.75rem;\n  --text-3: 0.8125rem;\n  --text-4: 0.875rem;\n  --text-5: 0.9375rem;\n  --text-6: 1rem;\n  --text-7: 1.125rem;\n  --text-8: 1.25rem;\n  --text-9: 1.5rem;\n  --text-10: 1.75rem;\n  --text-11: 2.125rem;\n  --text-12: 2.875rem;\n\n  /* font weights in use */\n  --font-weight-thin: 100;\n  --font-weight-extralight: 200;\n  --font-weight-light: 300;\n  --font-weight-normal: 400;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, tight -> loose */\n  --leading-1: 1;\n  --leading-2: 1.15;\n  --leading-3: 1.2;\n  --leading-4: 1.3;\n  --leading-5: 1.35;\n  --leading-6: 1.4;\n  --leading-7: 1.5;\n\n  /* letter-spacing, tight -> wide */\n  --tracking-1: -.01em;\n  --tracking-2: .05em;\n  --tracking-3: .0625em;\n  --tracking-4: .075em;\n  --tracking-5: 4px;\n  --tracking-6: 12px;\n\n  /* spacing, ascending */\n  --space-1: 2px;\n  --space-2: 4px;\n  --space-3: 6px;\n  --space-4: 8px;\n  --space-5: 10px;\n  --space-6: 12px;\n  --space-7: 15px;\n  --space-8: 16px;\n  --space-9: 20px;\n  --space-10: 24px;\n  --space-11: 36px;\n  --space-12: 48px;\n\n  /* radius, ascending */\n  --radius-sm: .125rem;\n  --radius-md: .25rem;\n  --radius-lg: 6px;\n  --radius-xl: .5rem;\n  --radius-2xl: .9rem;\n  --radius-3xl: 1rem;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 2px currentColor;\n  --shadow-md: unset;\n  --shadow-lg: 0 .125rem .25rem 0 rgba(0,0,0,.13),0 0 .0625rem 0 rgba(0,0,0,.11);\n  --shadow-xl: 0 3px 0 -1px currentColor;\n  --shadow-2xl: 0 4px 8px rgba(0,0,0,.2);\n  --shadow-3xl: 0 .0625rem .125rem .03125rem rgba(0,0,0,.16);\n}\n",
+  "tokens.json": "{\n  \"$description\": \"Design tokens extracted from https://www.xbox.com/. Semantic entries are inferred from usage + luminance; all values are mined from live CSS.\",\n  \"color\": {\n    \"neutral-50\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\"\n    },\n    \"neutral-100\": {\n      \"$value\": \"#f2f2f2\",\n      \"$type\": \"color\"\n    },\n    \"neutral-200\": {\n      \"$value\": \"#e6e6e6\",\n      \"$type\": \"color\"\n    },\n    \"neutral-300\": {\n      \"$value\": \"#cccccc\",\n      \"$type\": \"color\"\n    },\n    \"neutral-400\": {\n      \"$value\": \"#acacac\",\n      \"$type\": \"color\"\n    },\n    \"neutral-500\": {\n      \"$value\": \"#999999\",\n      \"$type\": \"color\"\n    },\n    \"neutral-600\": {\n      \"$value\": \"#757575\",\n      \"$type\": \"color\"\n    },\n    \"neutral-700\": {\n      \"$value\": \"#666666\",\n      \"$type\": \"color\"\n    },\n    \"neutral-800\": {\n      \"$value\": \"#505050\",\n      \"$type\": \"color\"\n    },\n    \"neutral-900\": {\n      \"$value\": \"#404040\",\n      \"$type\": \"color\"\n    },\n    \"neutral-950\": {\n      \"$value\": \"#333333\",\n      \"$type\": \"color\"\n    },\n    \"green\": {\n      \"$value\": \"#107c10\",\n      \"$type\": \"color\"\n    },\n    \"deep-green\": {\n      \"$value\": \"#094709\",\n      \"$type\": \"color\"\n    },\n    \"lime\": {\n      \"$value\": \"#9bf00b\",\n      \"$type\": \"color\"\n    },\n    \"cyan\": {\n      \"$value\": \"#0078d4\",\n      \"$type\": \"color\"\n    },\n    \"lime-2\": {\n      \"$value\": \"#5dc21e\",\n      \"$type\": \"color\"\n    },\n    \"orange\": {\n      \"$value\": \"#d83b01\",\n      \"$type\": \"color\"\n    },\n    \"cyan-2\": {\n      \"$value\": \"#106ebe\",\n      \"$type\": \"color\"\n    },\n    \"deep-green-2\": {\n      \"$value\": \"#0d630d\",\n      \"$type\": \"color\"\n    },\n    \"yellow\": {\n      \"$value\": \"#ffd800\",\n      \"$type\": \"color\"\n    },\n    \"green-2\": {\n      \"$value\": \"#007533\",\n      \"$type\": \"color\"\n    },\n    \"yellow-2\": {\n      \"$value\": \"#ffb900\",\n      \"$type\": \"color\"\n    },\n    \"green-3\": {\n      \"$value\": \"#04ab4f\",\n      \"$type\": \"color\"\n    }\n  },\n  \"semantic\": {\n    \"canvas\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: lightest neutral, matches the measured light-leaning theme\"\n    },\n    \"ink\": {\n      \"$value\": \"#333333\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: darkest neutral, highest contrast against canvas\"\n    },\n    \"text-muted\": {\n      \"$value\": \"#757575\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used mid-luminance neutral\"\n    },\n    \"surface\": {\n      \"$value\": \"#f2f2f2\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: neutral closest to canvas luminance\"\n    },\n    \"hairline\": {\n      \"$value\": \"#e6e6e6\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: next neutral near canvas, hairline-border weight\"\n    },\n    \"accent\": {\n      \"$value\": \"#107c10\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used chromatic color\"\n    },\n    \"accent-2\": {\n      \"$value\": \"#094709\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    },\n    \"accent-3\": {\n      \"$value\": \"#9bf00b\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    }\n  },\n  \"fontFamily\": {\n    \"segoe-ui\": {\n      \"$value\": \"Segoe UI\",\n      \"$type\": \"fontFamily\"\n    },\n    \"mwf-mdl2\": {\n      \"$value\": \"MWF-MDL2\",\n      \"$type\": \"fontFamily\"\n    },\n    \"segoeui\": {\n      \"$value\": \"SegoeUI\",\n      \"$type\": \"fontFamily\"\n    },\n    \"bahnschrift-light\": {\n      \"$value\": \"Bahnschrift Light\",\n      \"$type\": \"fontFamily\"\n    },\n    \"segoe-ui-web-east-european\": {\n      \"$value\": \"Segoe UI Web (East European)\",\n      \"$type\": \"fontFamily\"\n    },\n    \"bahnschrift\": {\n      \"$value\": \"Bahnschrift\",\n      \"$type\": \"fontFamily\"\n    },\n    \"bahnschrift-bold\": {\n      \"$value\": \"Bahnschrift Bold\",\n      \"$type\": \"fontFamily\"\n    },\n    \"mwfmdl2-xbox\": {\n      \"$value\": \"MWFMDL2-Xbox\",\n      \"$type\": \"fontFamily\"\n    }\n  },\n  \"fontSize\": {\n    \"size-1\": {\n      \"$value\": \"0.6875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-2\": {\n      \"$value\": \"0.75rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-3\": {\n      \"$value\": \"0.8125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-4\": {\n      \"$value\": \"0.875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-5\": {\n      \"$value\": \"0.9375rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-6\": {\n      \"$value\": \"1rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-7\": {\n      \"$value\": \"1.125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-8\": {\n      \"$value\": \"1.25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-9\": {\n      \"$value\": \"1.5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-10\": {\n      \"$value\": \"1.75rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-11\": {\n      \"$value\": \"2.125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-12\": {\n      \"$value\": \"2.875rem\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"fontWeight\": {\n    \"thin\": {\n      \"$value\": 100,\n      \"$type\": \"fontWeight\"\n    },\n    \"extralight\": {\n      \"$value\": 200,\n      \"$type\": \"fontWeight\"\n    },\n    \"light\": {\n      \"$value\": 300,\n      \"$type\": \"fontWeight\"\n    },\n    \"normal\": {\n      \"$value\": 400,\n      \"$type\": \"fontWeight\"\n    },\n    \"semibold\": {\n      \"$value\": 600,\n      \"$type\": \"fontWeight\"\n    },\n    \"bold\": {\n      \"$value\": 700,\n      \"$type\": \"fontWeight\"\n    }\n  },\n  \"lineHeight\": {\n    \"leading-1\": {\n      \"$value\": 1,\n      \"$type\": \"number\"\n    },\n    \"leading-2\": {\n      \"$value\": 1.15,\n      \"$type\": \"number\"\n    },\n    \"leading-3\": {\n      \"$value\": 1.2,\n      \"$type\": \"number\"\n    },\n    \"leading-4\": {\n      \"$value\": 1.3,\n      \"$type\": \"number\"\n    },\n    \"leading-5\": {\n      \"$value\": 1.35,\n      \"$type\": \"number\"\n    },\n    \"leading-6\": {\n      \"$value\": 1.4,\n      \"$type\": \"number\"\n    },\n    \"leading-7\": {\n      \"$value\": 1.5,\n      \"$type\": \"number\"\n    }\n  },\n  \"letterSpacing\": {\n    \"tracking-1\": {\n      \"$value\": \"-.01em\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-2\": {\n      \"$value\": \".05em\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-3\": {\n      \"$value\": \".0625em\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-4\": {\n      \"$value\": \".075em\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-5\": {\n      \"$value\": \"4px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-6\": {\n      \"$value\": \"12px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"dimension\": {\n    \"space-1\": {\n      \"$value\": \"2px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-2\": {\n      \"$value\": \"4px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-3\": {\n      \"$value\": \"6px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-4\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-5\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-6\": {\n      \"$value\": \"12px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-7\": {\n      \"$value\": \"15px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-8\": {\n      \"$value\": \"16px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-9\": {\n      \"$value\": \"20px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-10\": {\n      \"$value\": \"24px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-11\": {\n      \"$value\": \"36px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-12\": {\n      \"$value\": \"48px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"borderRadius\": {\n    \"sm\": {\n      \"$value\": \".125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"md\": {\n      \"$value\": \".25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"lg\": {\n      \"$value\": \"6px\",\n      \"$type\": \"dimension\"\n    },\n    \"xl\": {\n      \"$value\": \".5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"2xl\": {\n      \"$value\": \".9rem\",\n      \"$type\": \"dimension\"\n    },\n    \"3xl\": {\n      \"$value\": \"1rem\",\n      \"$type\": \"dimension\"\n    },\n    \"full\": {\n      \"$value\": \"50%\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"shadow\": {\n    \"sm\": {\n      \"$value\": \"0 2px currentColor\",\n      \"$type\": \"shadow\"\n    },\n    \"md\": {\n      \"$value\": \"unset\",\n      \"$type\": \"shadow\"\n    },\n    \"lg\": {\n      \"$value\": \"0 .125rem .25rem 0 rgba(0,0,0,.13),0 0 .0625rem 0 rgba(0,0,0,.11)\",\n      \"$type\": \"shadow\"\n    },\n    \"xl\": {\n      \"$value\": \"0 3px 0 -1px currentColor\",\n      \"$type\": \"shadow\"\n    },\n    \"2xl\": {\n      \"$value\": \"0 4px 8px rgba(0,0,0,.2)\",\n      \"$type\": \"shadow\"\n    },\n    \"3xl\": {\n      \"$value\": \"0 .0625rem .125rem .03125rem rgba(0,0,0,.16)\",\n      \"$type\": \"shadow\"\n    }\n  }\n}"
+ },
+ "raw": {
+  "tokens": {
+   "title": "XBOX Official Site: PC Game Pass, Games, Apps | XBOX",
+   "description": "Play a library of PC games with friends all for one low monthly price.",
+   "themeGuess": "light-leaning",
+   "darkWeight": 332,
+   "lightWeight": 1215,
+   "neutrals": [
+    {
+     "hex": "#ffffff",
+     "count": 944
+    },
+    {
+     "hex": "#f2f2f2",
+     "count": 36
+    },
+    {
+     "hex": "#e6e6e6",
+     "count": 129
+    },
+    {
+     "hex": "#cccccc",
+     "count": 106
+    },
+    {
+     "hex": "#acacac",
+     "count": 24
+    },
+    {
+     "hex": "#999999",
+     "count": 40
+    },
+    {
+     "hex": "#757575",
+     "count": 41
+    },
+    {
+     "hex": "#666666",
+     "count": 34
+    },
+    {
+     "hex": "#505050",
+     "count": 35
+    },
+    {
+     "hex": "#404040",
+     "count": 50
+    },
+    {
+     "hex": "#333333",
+     "count": 44
+    },
+    {
+     "hex": "#201f24",
+     "count": 128
+    }
+   ],
+   "accents": [
+    {
+     "hex": "#107c10",
+     "count": 199
+    },
+    {
+     "hex": "#094709",
+     "count": 91
+    },
+    {
+     "hex": "#9bf00b",
+     "count": 51
+    },
+    {
+     "hex": "#0078d4",
+     "count": 21
+    },
+    {
+     "hex": "#5dc21e",
+     "count": 16
+    },
+    {
+     "hex": "#d83b01",
+     "count": 15
+    },
+    {
+     "hex": "#106ebe",
+     "count": 13
+    },
+    {
+     "hex": "#0d630d",
+     "count": 10
+    },
+    {
+     "hex": "#ffd800",
+     "count": 10
+    },
+    {
+     "hex": "#007533",
+     "count": 9
+    },
+    {
+     "hex": "#ffb900",
+     "count": 8
+    },
+    {
+     "hex": "#04ab4f",
+     "count": 8
+    }
+   ],
+   "modern": [],
+   "fonts": [
+    {
+     "name": "Segoe UI",
+     "count": 38
+    },
+    {
+     "name": "MWF-MDL2",
+     "count": 34
+    },
+    {
+     "name": "SegoeUI",
+     "count": 12
+    },
+    {
+     "name": "Bahnschrift Light",
+     "count": 12
+    },
+    {
+     "name": "Segoe UI Web (East European)",
+     "count": 7
+    },
+    {
+     "name": "Bahnschrift",
+     "count": 6
+    },
+    {
+     "name": "Bahnschrift Bold",
+     "count": 5
+    },
+    {
+     "name": "MWFMDL2-Xbox",
+     "count": 5
+    }
+   ],
+   "fontSizes": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    18,
+    20,
+    24,
+    28,
+    34,
+    46
+   ],
+   "fontWeights": [
+    {
+     "value": 100,
+     "count": 12
+    },
+    {
+     "value": 200,
+     "count": 22
+    },
+    {
+     "value": 300,
+     "count": 14
+    },
+    {
+     "value": 400,
+     "count": 104
+    },
+    {
+     "value": 600,
+     "count": 176
+    },
+    {
+     "value": 700,
+     "count": 45
+    }
+   ],
+   "lineHeights": [
+    1,
+    1.15,
+    1.2,
+    1.3,
+    1.35,
+    1.4,
+    1.5
+   ],
+   "letterSpacings": [
+    "-.01em",
+    ".05em",
+    ".0625em",
+    ".075em",
+    "4px",
+    "12px"
+   ],
+   "spacing": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    15,
+    16,
+    20,
+    24,
+    36,
+    48
+   ],
+   "radii": [
+    {
+     "value": ".25rem",
+     "count": 38
+    },
+    {
+     "value": ".5rem",
+     "count": 32
+    },
+    {
+     "value": ".125rem",
+     "count": 9
+    },
+    {
+     "value": "6px",
+     "count": 9
+    },
+    {
+     "value": "1rem",
+     "count": 5
+    },
+    {
+     "value": ".9rem",
+     "count": 3
+    },
+    {
+     "value": "50%",
+     "count": 41
+    }
+   ],
+   "shadows": [
+    {
+     "value": "0 2px currentColor",
+     "count": 56,
+     "blur": 0
+    },
+    {
+     "value": "unset",
+     "count": 14,
+     "blur": 0
+    },
+    {
+     "value": "0 .125rem .25rem 0 rgba(0,0,0,.13),0 0 .0625rem 0 rgba(0,0,0,.11)",
+     "count": 13,
+     "blur": 0
+    },
+    {
+     "value": "0 3px 0 -1px currentColor",
+     "count": 6,
+     "blur": 0
+    },
+    {
+     "value": "0 4px 8px rgba(0,0,0,.2)",
+     "count": 5,
+     "blur": 0
+    },
+    {
+     "value": "0 .0625rem .125rem .03125rem rgba(0,0,0,.16)",
+     "count": 4,
+     "blur": 0.03125
+    }
+   ],
+   "breakpoints": [
+    320,
+    339,
+    340,
+    350,
+    360,
+    374,
+    389,
+    390
+   ],
+   "nativeVars": [
+    {
+     "name": "uhf-font-family",
+     "value": "\"Segoe UI\", SegoeUI, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+    },
+    {
+     "name": "tw-border-spacing-x",
+     "value": "0"
+    },
+    {
+     "name": "tw-border-spacing-y",
+     "value": "0"
+    },
+    {
+     "name": "tw-translate-x",
+     "value": "0"
+    },
+    {
+     "name": "tw-translate-y",
+     "value": "0"
+    },
+    {
+     "name": "tw-rotate",
+     "value": "0"
+    },
+    {
+     "name": "tw-skew-x",
+     "value": "0"
+    },
+    {
+     "name": "tw-skew-y",
+     "value": "0"
+    },
+    {
+     "name": "tw-scale-x",
+     "value": "1"
+    },
+    {
+     "name": "tw-scale-y",
+     "value": "1"
+    },
+    {
+     "name": "tw-pan-x",
+     "value": ""
+    },
+    {
+     "name": "tw-pan-y",
+     "value": ""
+    },
+    {
+     "name": "tw-pinch-zoom",
+     "value": ""
+    },
+    {
+     "name": "tw-scroll-snap-strictness",
+     "value": "proximity"
+    },
+    {
+     "name": "tw-gradient-from-position",
+     "value": ""
+    },
+    {
+     "name": "tw-gradient-via-position",
+     "value": ""
+    },
+    {
+     "name": "tw-gradient-to-position",
+     "value": ""
+    },
+    {
+     "name": "tw-ordinal",
+     "value": ""
+    },
+    {
+     "name": "tw-slashed-zero",
+     "value": ""
+    },
+    {
+     "name": "tw-numeric-figure",
+     "value": ""
+    },
+    {
+     "name": "tw-numeric-spacing",
+     "value": ""
+    },
+    {
+     "name": "tw-numeric-fraction",
+     "value": ""
+    },
+    {
+     "name": "tw-ring-inset",
+     "value": ""
+    },
+    {
+     "name": "tw-ring-offset-width",
+     "value": "0px"
+    },
+    {
+     "name": "tw-ring-offset-color",
+     "value": "#fff"
+    },
+    {
+     "name": "tw-ring-color",
+     "value": "rgba(59,130,246,.5)"
+    },
+    {
+     "name": "tw-ring-offset-shadow",
+     "value": "0 0 #0000"
+    },
+    {
+     "name": "tw-ring-shadow",
+     "value": "0 0 #0000"
+    },
+    {
+     "name": "tw-shadow",
+     "value": "0 0 #0000"
+    },
+    {
+     "name": "tw-shadow-colored",
+     "value": "0 0 #0000"
+    },
+    {
+     "name": "tw-blur",
+     "value": ""
+    },
+    {
+     "name": "tw-brightness",
+     "value": ""
+    },
+    {
+     "name": "tw-contrast",
+     "value": ""
+    },
+    {
+     "name": "tw-grayscale",
+     "value": ""
+    },
+    {
+     "name": "tw-hue-rotate",
+     "value": ""
+    },
+    {
+     "name": "tw-invert",
+     "value": ""
+    },
+    {
+     "name": "tw-saturate",
+     "value": ""
+    },
+    {
+     "name": "tw-sepia",
+     "value": ""
+    },
+    {
+     "name": "tw-drop-shadow",
+     "value": ""
+    },
+    {
+     "name": "tw-backdrop-blur",
+     "value": ""
+    },
+    {
+     "name": "tw-backdrop-brightness",
+     "value": ""
+    },
+    {
+     "name": "tw-backdrop-contrast",
+     "value": ""
+    },
+    {
+     "name": "tw-backdrop-grayscale",
+     "value": ""
+    },
+    {
+     "name": "tw-backdrop-hue-rotate",
+     "value": ""
+    },
+    {
+     "name": "tw-backdrop-invert",
+     "value": ""
+    },
+    {
+     "name": "tw-backdrop-opacity",
+     "value": ""
+    },
+    {
+     "name": "tw-backdrop-saturate",
+     "value": ""
+    },
+    {
+     "name": "tw-backdrop-sepia",
+     "value": ""
+    },
+    {
+     "name": "tw-contain-size",
+     "value": ""
+    },
+    {
+     "name": "tw-contain-layout",
+     "value": ""
+    },
+    {
+     "name": "tw-contain-paint",
+     "value": ""
+    },
+    {
+     "name": "tw-contain-style",
+     "value": ""
+    },
+    {
+     "name": "reach-dialog",
+     "value": "1"
+    },
+    {
+     "name": "blue",
+     "value": "#0067b8"
+    },
+    {
+     "name": "indigo",
+     "value": "#243a5e"
+    },
+    {
+     "name": "purple",
+     "value": "#8661c5"
+    },
+    {
+     "name": "pink",
+     "value": "#e83e8c"
+    },
+    {
+     "name": "red",
+     "value": "#dc3545"
+    },
+    {
+     "name": "orange",
+     "value": "#d83b01"
+    },
+    {
+     "name": "yellow",
+     "value": "#ffb900"
+    },
+    {
+     "name": "green",
+     "value": "#107c10"
+    },
+    {
+     "name": "teal",
+     "value": "#008575"
+    },
+    {
+     "name": "cyan",
+     "value": "#30e5d0"
+    },
+    {
+     "name": "white",
+     "value": "#fff"
+    },
+    {
+     "name": "gray",
+     "value": "#505050"
+    },
+    {
+     "name": "gray-dark",
+     "value": "#2f2f2f"
+    },
+    {
+     "name": "primary",
+     "value": "#107c10"
+    },
+    {
+     "name": "secondary",
+     "value": "#000"
+    },
+    {
+     "name": "success",
+     "value": "#107c10"
+    },
+    {
+     "name": "info",
+     "value": "#d2d2d2"
+    },
+    {
+     "name": "warning",
+     "value": "#ffb900"
+    },
+    {
+     "name": "danger",
+     "value": "#dc3545"
+    },
+    {
+     "name": "light",
+     "value": "#fff"
+    },
+    {
+     "name": "dark",
+     "value": "#000"
+    },
+    {
+     "name": "breakpoint-xs",
+     "value": "0"
+    },
+    {
+     "name": "breakpoint-sm",
+     "value": "540px"
+    },
+    {
+     "name": "breakpoint-md",
+     "value": "860px"
+    },
+    {
+     "name": "breakpoint-lg",
+     "value": "1084px"
+    },
+    {
+     "name": "breakpoint-xl",
+     "value": "1400px"
+    },
+    {
+     "name": "font-family-sans-serif",
+     "value": "\"Segoe UI\",SegoeUI,\"Helvetica Neue\",Helvetica,Arial,sans-serif"
+    },
+    {
+     "name": "font-family-monospace",
+     "value": "Consolas,\"Courier New\",Courier,monospace"
+    },
+    {
+     "name": "video-fragment-btn-bg",
+     "value": "rgba(0,0,0,.6)"
+    },
+    {
+     "name": "video-fragment-btn-bg-hover",
+     "value": "rgba(0,0,0,.8)"
+    },
+    {
+     "name": "video-fragment-btn-color",
+     "value": "#fff"
+    },
+    {
+     "name": "video-fragment-btn-outline",
+     "value": "#fff"
+    },
+    {
+     "name": "pd-hero-bg",
+     "value": "#171717"
+    },
+    {
+     "name": "pd-hero-text",
+     "value": "#fff"
+    },
+    {
+     "name": "pd-hero-checklist-icon",
+     "value": "#107c10"
+    },
+    {
+     "name": "pd-hero-alert-bg",
+     "value": "#ffd800"
+    },
+    {
+     "name": "pd-hero-alert-text",
+     "value": "#000"
+    },
+    {
+     "name": "pd-hero-logo-divider",
+     "value": "hsla(0,0%,100%,.5)"
+    }
+   ],
+   "darkVars": [],
+   "rings": [
+    {
+     "value": "inset 0 0 0 1px #fff",
+     "count": 4,
+     "blur": 0
+    }
+   ]
+  },
+  "stylesheets": 10
+ }
+}

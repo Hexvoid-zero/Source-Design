@@ -1,0 +1,845 @@
+{
+ "slug": "dropbox",
+ "name": "Dropbox",
+ "blurb": "File storage. Flat blue on white, generous space, illustration-driven calm.",
+ "url": "https://www.dropbox.com/",
+ "title": "Dropbox: Secure cloud storage, file sharing, and more",
+ "extractedAt": "2026-07-03",
+ "summary": {
+  "colors": [
+   {
+    "name": "neutral-100",
+    "hex": "#ebe9e6",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-200",
+    "hex": "#d3cec9",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-300",
+    "hex": "#bbb5ae",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-500",
+    "hex": "#8e8b87",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-600",
+    "hex": "#736c64",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-700",
+    "hex": "#5b5650",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-800",
+    "hex": "#44403d",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-900",
+    "hex": "#2d2b29",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-950",
+    "hex": "#1e1919",
+    "group": "neutral"
+   },
+   {
+    "name": "pale-orange",
+    "hex": "#f7f5f2",
+    "group": "accent"
+   },
+   {
+    "name": "blue",
+    "hex": "#3984ff",
+    "group": "accent"
+   },
+   {
+    "name": "blue-2",
+    "hex": "#0061fe",
+    "group": "accent"
+   },
+   {
+    "name": "yellow",
+    "hex": "#fad24b",
+    "group": "accent"
+   },
+   {
+    "name": "lime",
+    "hex": "#b4dc19",
+    "group": "accent"
+   },
+   {
+    "name": "orange",
+    "hex": "#fa551e",
+    "group": "accent"
+   },
+   {
+    "name": "pale-blue",
+    "hex": "#b4d1ff",
+    "group": "accent"
+   },
+   {
+    "name": "pink",
+    "hex": "#9b0032",
+    "group": "accent"
+   },
+   {
+    "name": "deep-teal",
+    "hex": "#0f503c",
+    "group": "accent"
+   },
+   {
+    "name": "orange-2",
+    "hex": "#9b6400",
+    "group": "accent"
+   },
+   {
+    "name": "deep-orange",
+    "hex": "#684505",
+    "group": "accent"
+   },
+   {
+    "name": "indigo",
+    "hex": "#c8aff0",
+    "group": "accent"
+   }
+  ],
+  "fonts": [
+   "SharpGrotesk",
+   "AtlasGrotesk",
+   "SharpGroteskSuperCondensed",
+   "SharpGroteskCondensed",
+   "SharpGroteskWide",
+   "Atlas Grotesk Web",
+   "Sharp Grotesk",
+   "Sharp Grotesk 23"
+  ],
+  "themeGuess": "dark-leaning",
+  "stylesheets": 12,
+  "nativeVarCount": 120
+ },
+ "files": {
+  "DESIGN.md": "---\nname: dropbox-com-design-system\nsource: https://www.dropbox.com/\nextracted: 2026-07-03\ntheme: dark  # measured from neutral usage weight\ncolors:  # roles inferred from usage frequency + luminance; names verified against values\n  canvas: \"#1e1919\"\n  ink: \"#ebe9e6\"\n  text-muted: \"#736c64\"\n  surface: \"#2d2b29\"\n  hairline: \"#44403d\"\n  accent: \"#f7f5f2\"  # pale-orange\n  accent-2: \"#3984ff\"  # blue\n  accent-3: \"#0061fe\"  # blue\nfonts:\n  primary: \"SharpGrotesk\"  # low-confidence: usage counts are low and close\n---\n\n# Dropbox: Secure cloud storage, file sharing, and more — Design System\n\nExtracted from **https://www.dropbox.com/** on 2026-07-03.\n\nEvery value below is mined from the site's live CSS (120 native custom properties, ranked usage counts). Role assignments are inferred from usage and luminance and marked as such — treat them as a strong starting point, not gospel.\n\n## Overview\n\nThe system reads as dark: measured neutral usage weighs 131 dark against 31 light. The palette is chromatic: 12 saturated values against 9 neutrals, led by pale-orange (`#f7f5f2`). Font usage counts are low and close together (SharpGrotesk: 12, AtlasGrotesk: 12, SharpGroteskSuperCondensed: 6) — the extractor can't confidently call a primary face from CSS alone. Geometry mixes sharp corners (4px) with full pills. No box-shadows were found — depth comes from color contrast, not elevation.\n\n## Usage rules\n\nDerived from the measured usage below — each rule cites its evidence.\n\n- Chromatic color carries 63% of measured usage — this palette uses color structurally. Saturated values can hold large surfaces here; timidity would misrepresent the source.\n- The theme is dark (measured neutral weight 131:31). Don't flip individual sections to the opposite mode.\n- `4px` is the workhorse radius (x4); treat the other radii as exceptions, not options.\n- No elevation shadows were found — build depth with tonal contrast between surfaces, not box-shadows.\n\n## Colors\n\n### Neutrals (light → dark)\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `neutral-100` | `#ebe9e6` | 16 | **ink** — lightest neutral, highest contrast against canvas |\n| `neutral-200` | `#d3cec9` | 15 | — |\n| `neutral-300` | `#bbb5ae` | 12 | — |\n| `neutral-500` | `#8e8b87` | 17 | — |\n| `neutral-600` | `#736c64` | 19 | **text-muted** — most-used mid-luminance neutral |\n| `neutral-700` | `#5b5650` | 11 | — |\n| `neutral-800` | `#44403d` | 21 | **hairline** — next neutral near canvas, hairline-border weight |\n| `neutral-900` | `#2d2b29` | 10 | **surface** — neutral closest to canvas luminance |\n| `neutral-950` | `#1e1919` | 51 | **canvas** — darkest neutral, matches the measured dark-leaning theme |\n\n### Accents\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `pale-orange` | `#f7f5f2` | 88 | **accent** — most-used chromatic color |\n| `blue` | `#3984ff` | 30 | **accent-2** — supporting chromatic color |\n| `blue-2` | `#0061fe` | 27 | **accent-3** — supporting chromatic color |\n| `yellow` | `#fad24b` | 25 | — |\n| `lime` | `#b4dc19` | 25 | — |\n| `orange` | `#fa551e` | 17 | — |\n| `pale-blue` | `#b4d1ff` | 16 | — |\n| `pink` | `#9b0032` | 16 | — |\n| `deep-teal` | `#0f503c` | 14 | — |\n| `orange-2` | `#9b6400` | 13 | — |\n| `deep-orange` | `#684505` | 12 | — |\n| `indigo` | `#c8aff0` | 11 | — |\n\n## Typography\n\nUsage counts here are low and close together, so no family can be confidently called primary from CSS declarations alone — sites that set fonts via shorthand or JS under-count. Verify visually. Full list by usage:\n\n| Family | Usage |\n| --- | --- |\n| SharpGrotesk | 12 |\n| AtlasGrotesk | 12 |\n| SharpGroteskSuperCondensed | 6 |\n| SharpGroteskCondensed | 6 |\n| SharpGroteskWide | 6 |\n| Atlas Grotesk Web | 4 |\n| Sharp Grotesk | 4 |\n| Sharp Grotesk 23 | 3 |\n\n**Size scale (px):** `10`, `12`, `14`, `16`, `18`, `20`, `24`, `32`, `40`, `48`, `72`\n\n**Weights in use:** `100` (x2), `300` (x2), `400` (x25), `500` (x21), `600` (x5), `700` (x9)\n\n## Spacing\n\nMost-used values (px): `1`, `2`, `3`, `5`, `6`, `8`, `10`, `12`, `14`, `16`, `24`, `28`\n\n## Border radius\n\n| Token | Value | Usage |\n| --- | --- | --- |\n| `radius-sm` | `4px` | 4 |\n| `radius-md` | `8px` | 1 |\n| `radius-lg` | `40px` | 1 |\n| `radius-full` | `50%` | 2 |\n\n### Focus rings (spread-only box-shadows, kept out of the elevation scale)\n\n- `0 0 0 2px #a0d1fa` (x2)\n\n## Breakpoints\n\n`480px`, `768px`, `1024px`, `1280px`, `1440px`, `1920px`\n\n## Starter recipes\n\nTokens composed into components. The source site's real components were **not** inspected — these are starting points built from the extracted values, with contrast ratios computed rather than assumed.\n\n```css\n.button-primary {\n  background: var(--color-accent); /* #f7f5f2 */\n  color: var(--color-canvas); /* #1e1919 — contrast 16.0:1 */\n  border-radius: 9999px; /* pill — mined as 50% */\n  font-weight: 500;\n}\n\n.card {\n  background: var(--color-surface); /* #2d2b29 */\n  border: 1px solid var(--color-hairline); /* #44403d */\n  border-radius: 4px; /* most-used finite radius */\n  /* no shadow — this system builds depth with tonal contrast */\n}\n\n.input {\n  background: var(--color-canvas); /* #1e1919 */\n  color: var(--color-ink); /* #ebe9e6 — contrast 14.3:1 */\n  border: 1px solid var(--color-hairline); /* #44403d */\n  border-radius: 4px;\n  /* placeholder color: var(--color-text-muted) #736c64 */\n}\n\n.nav {\n  background: var(--color-canvas); /* #1e1919 */\n  border-bottom: 1px solid var(--color-hairline); /* #44403d */\n  color: var(--color-ink); /* #ebe9e6 */\n  /* inactive links: var(--color-text-muted) #736c64 */\n  /* active link: var(--color-accent) #f7f5f2 — contrast vs canvas 16.0:1 */\n}\n\n.modal {\n  background: var(--color-surface); /* #2d2b29 */\n  border-radius: 4px;\n  border: 1px solid var(--color-hairline); /* no shadows mined — hairline instead */\n}\n\n.modal-backdrop {\n  background: color-mix(in srgb, var(--color-ink) 55%, transparent); /* scrim from #ebe9e6 */\n}\n\n.input-error {\n  border-color: #fa551e; /* mined token: orange */\n  /* error text: #fa551e on canvas — contrast 5.3:1 */\n}\n\n.input-success {\n  border-color: #0f503c; /* mined token: deep-teal */\n}\n```\n\n## Observations\n\n- 9 of 21 extracted colors are neutrals.\n- 6 breakpoints, from 480px to 1920px.\n- The site ships a large native token system (120+ custom properties) — prefer those names when extending it.\n\n## Native CSS custom properties\n\nFirst 40 of 120:\n\n```css\n:root {\n  --scheme__color: light;\n  --scheme__inverse__color: dark;\n  --spacing__base_unit: 8px;\n  --spacing__unit--0_5: 4px;\n  --spacing__unit--1: 8px;\n  --spacing__unit--1_5: 12px;\n  --spacing__unit--2: 16px;\n  --spacing__unit--2_5: 20px;\n  --spacing__unit--3: 24px;\n  --spacing__unit--4: 32px;\n  --spacing__unit--5: 40px;\n  --boxshadow__elevation1: 0px 8px 32px #1e191908, 0px 8px 16px #1e191908, 0px 4px 8px #1e191908, 0px 2px 4px #1e191908, 0px 1px 2px #1e191908;\n  --__desktopMacBodyFontStack: Atlas Grotesk Web, Atlas Grotesk, system-ui;\n  --__titleFontStack: Sharp Grotesk, SharpGrotesk, Sharp Grotesk KR, Sharp Grotesk Thai, var(--__bodyFontStack);\n  --type__body__monospace--fontweight__strong: 600;\n  --color__core__primary: #1e1919;\n  --color__core__secondary: #f7f5f2;\n  --color__core__accent: #0061fe;\n  --color__button__primary__hover: #0057e5;\n  --color__button__primary__active: #0050d0;\n  --color__standard__text: #1e1919;\n  --color__standard__border: #a69e9299;\n  --color__standard__background: #fff;\n  --color__faint__text: #524a3ed1;\n  --color__faint__border: #a6917133;\n  --color__faint__background: #f7f5f2;\n  --color__disabled__text: #524a3e66;\n  --color__disabled__border: #c0bbb4;\n  --color__disabled__background: #c0bbb4;\n  --color__elevated__background: #fbfaf9;\n  --color__attention__text: #0061fe;\n  --color__attention__border: #0061fe;\n  --color__attention__border--faint: #0061fe52;\n  --color__attention__background: #0061fe29;\n  --color__attention__background--faint: #0061fe14;\n  --color__success__text: #2d7a02;\n  --color__success__border: #2d7a02;\n  --color__success__border--faint: #2d7a0252;\n  --color__success__background: #2d7a021f;\n  --color__warning__text: #9b6400;\n}\n```\n\n## Files\n\n- `tailwind.css` — Tailwind v4 `@theme` block; tokens become utilities (e.g. `bg-neutral-900`, `text-pale-orange`).\n- `variables.css` — framework-agnostic `:root` variables, same values.\n- `tokens.json` — W3C Design Tokens format for Figma plugins, Style Dictionary, etc.\n",
+  "tailwind.css": "@import \"tailwindcss\";\n\n@theme {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-100: #ebe9e6;\n  --color-neutral-200: #d3cec9;\n  --color-neutral-300: #bbb5ae;\n  --color-neutral-500: #8e8b87;\n  --color-neutral-600: #736c64;\n  --color-neutral-700: #5b5650;\n  --color-neutral-800: #44403d;\n  --color-neutral-900: #2d2b29;\n  --color-neutral-950: #1e1919;\n  --color-pale-orange: #f7f5f2;\n  --color-blue: #3984ff;\n  --color-blue-2: #0061fe;\n  --color-yellow: #fad24b;\n  --color-lime: #b4dc19;\n  --color-orange: #fa551e;\n  --color-pale-blue: #b4d1ff;\n  --color-pink: #9b0032;\n  --color-deep-teal: #0f503c;\n  --color-orange-2: #9b6400;\n  --color-deep-orange: #684505;\n  --color-indigo: #c8aff0;\n\n  /* inferred semantic roles (each maps to a distinct mined value) */\n  --color-canvas: #1e1919;\n  --color-ink: #ebe9e6;\n  --color-text-muted: #736c64;\n  --color-surface: #2d2b29;\n  --color-hairline: #44403d;\n  --color-accent: #f7f5f2;\n  --color-accent-2: #3984ff;\n  --color-accent-3: #0061fe;\n\n  --font-sans: \"SharpGrotesk\", ui-sans-serif, system-ui, sans-serif;\n\n  --text-xs: 0.625rem;\n  --text-sm: 0.75rem;\n  --text-base: 0.875rem;\n  --text-lg: 1rem;\n  --text-xl: 1.125rem;\n  --text-2xl: 1.25rem;\n  --text-3xl: 1.5rem;\n  --text-4xl: 2rem;\n  --text-5xl: 2.5rem;\n  --text-6xl: 3rem;\n  --text-7xl: 4.5rem;\n\n  --font-weight-thin: 100;\n  --font-weight-light: 300;\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  --radius-sm: 4px;\n  --radius-md: 8px;\n  --radius-lg: 40px;\n  --radius-full: 50%;\n\n  --breakpoint-sm: 30rem;\n  --breakpoint-md: 48rem;\n  --breakpoint-lg: 64rem;\n  --breakpoint-xl: 80rem;\n  --breakpoint-2xl: 90rem;\n  --breakpoint-3xl: 120rem;\n\n  /* most-used spacing values on the source site (px): 1, 2, 3, 5, 6, 8, 10, 12, 14, 16, 24, 28 */\n}\n",
+  "variables.css": ":root {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-100: #ebe9e6;\n  --color-neutral-200: #d3cec9;\n  --color-neutral-300: #bbb5ae;\n  --color-neutral-500: #8e8b87;\n  --color-neutral-600: #736c64;\n  --color-neutral-700: #5b5650;\n  --color-neutral-800: #44403d;\n  --color-neutral-900: #2d2b29;\n  --color-neutral-950: #1e1919;\n  --color-pale-orange: #f7f5f2;\n  --color-blue: #3984ff;\n  --color-blue-2: #0061fe;\n  --color-yellow: #fad24b;\n  --color-lime: #b4dc19;\n  --color-orange: #fa551e;\n  --color-pale-blue: #b4d1ff;\n  --color-pink: #9b0032;\n  --color-deep-teal: #0f503c;\n  --color-orange-2: #9b6400;\n  --color-deep-orange: #684505;\n  --color-indigo: #c8aff0;\n\n  /* inferred semantic roles */\n  --color-canvas: #1e1919;\n  --color-ink: #ebe9e6;\n  --color-text-muted: #736c64;\n  --color-surface: #2d2b29;\n  --color-hairline: #44403d;\n  --color-accent: #f7f5f2;\n  --color-accent-2: #3984ff;\n  --color-accent-3: #0061fe;\n\n  /* typography */\n  --font-sharpgrotesk: \"SharpGrotesk\";\n  --font-atlasgrotesk: \"AtlasGrotesk\";\n  --font-sharpgrotesksupercondensed: \"SharpGroteskSuperCondensed\";\n  --font-sharpgroteskcondensed: \"SharpGroteskCondensed\";\n  --font-sharpgroteskwide: \"SharpGroteskWide\";\n  --font-atlas-grotesk-web: \"Atlas Grotesk Web\";\n  --font-sharp-grotesk: \"Sharp Grotesk\";\n  --font-sharp-grotesk-23: \"Sharp Grotesk 23\";\n\n  /* type scale, ascending */\n  --text-1: 0.625rem;\n  --text-2: 0.75rem;\n  --text-3: 0.875rem;\n  --text-4: 1rem;\n  --text-5: 1.125rem;\n  --text-6: 1.25rem;\n  --text-7: 1.5rem;\n  --text-8: 2rem;\n  --text-9: 2.5rem;\n  --text-10: 3rem;\n  --text-11: 4.5rem;\n\n  /* font weights in use */\n  --font-weight-thin: 100;\n  --font-weight-light: 300;\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* spacing, ascending */\n  --space-1: 1px;\n  --space-2: 2px;\n  --space-3: 3px;\n  --space-4: 5px;\n  --space-5: 6px;\n  --space-6: 8px;\n  --space-7: 10px;\n  --space-8: 12px;\n  --space-9: 14px;\n  --space-10: 16px;\n  --space-11: 24px;\n  --space-12: 28px;\n\n  /* radius, ascending */\n  --radius-sm: 4px;\n  --radius-md: 8px;\n  --radius-lg: 40px;\n  --radius-full: 50%;\n}\n",
+  "tokens.json": "{\n  \"$description\": \"Design tokens extracted from https://www.dropbox.com/. Semantic entries are inferred from usage + luminance; all values are mined from live CSS.\",\n  \"color\": {\n    \"neutral-100\": {\n      \"$value\": \"#ebe9e6\",\n      \"$type\": \"color\"\n    },\n    \"neutral-200\": {\n      \"$value\": \"#d3cec9\",\n      \"$type\": \"color\"\n    },\n    \"neutral-300\": {\n      \"$value\": \"#bbb5ae\",\n      \"$type\": \"color\"\n    },\n    \"neutral-500\": {\n      \"$value\": \"#8e8b87\",\n      \"$type\": \"color\"\n    },\n    \"neutral-600\": {\n      \"$value\": \"#736c64\",\n      \"$type\": \"color\"\n    },\n    \"neutral-700\": {\n      \"$value\": \"#5b5650\",\n      \"$type\": \"color\"\n    },\n    \"neutral-800\": {\n      \"$value\": \"#44403d\",\n      \"$type\": \"color\"\n    },\n    \"neutral-900\": {\n      \"$value\": \"#2d2b29\",\n      \"$type\": \"color\"\n    },\n    \"neutral-950\": {\n      \"$value\": \"#1e1919\",\n      \"$type\": \"color\"\n    },\n    \"pale-orange\": {\n      \"$value\": \"#f7f5f2\",\n      \"$type\": \"color\"\n    },\n    \"blue\": {\n      \"$value\": \"#3984ff\",\n      \"$type\": \"color\"\n    },\n    \"blue-2\": {\n      \"$value\": \"#0061fe\",\n      \"$type\": \"color\"\n    },\n    \"yellow\": {\n      \"$value\": \"#fad24b\",\n      \"$type\": \"color\"\n    },\n    \"lime\": {\n      \"$value\": \"#b4dc19\",\n      \"$type\": \"color\"\n    },\n    \"orange\": {\n      \"$value\": \"#fa551e\",\n      \"$type\": \"color\"\n    },\n    \"pale-blue\": {\n      \"$value\": \"#b4d1ff\",\n      \"$type\": \"color\"\n    },\n    \"pink\": {\n      \"$value\": \"#9b0032\",\n      \"$type\": \"color\"\n    },\n    \"deep-teal\": {\n      \"$value\": \"#0f503c\",\n      \"$type\": \"color\"\n    },\n    \"orange-2\": {\n      \"$value\": \"#9b6400\",\n      \"$type\": \"color\"\n    },\n    \"deep-orange\": {\n      \"$value\": \"#684505\",\n      \"$type\": \"color\"\n    },\n    \"indigo\": {\n      \"$value\": \"#c8aff0\",\n      \"$type\": \"color\"\n    }\n  },\n  \"semantic\": {\n    \"canvas\": {\n      \"$value\": \"#1e1919\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: darkest neutral, matches the measured dark-leaning theme\"\n    },\n    \"ink\": {\n      \"$value\": \"#ebe9e6\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: lightest neutral, highest contrast against canvas\"\n    },\n    \"text-muted\": {\n      \"$value\": \"#736c64\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used mid-luminance neutral\"\n    },\n    \"surface\": {\n      \"$value\": \"#2d2b29\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: neutral closest to canvas luminance\"\n    },\n    \"hairline\": {\n      \"$value\": \"#44403d\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: next neutral near canvas, hairline-border weight\"\n    },\n    \"accent\": {\n      \"$value\": \"#f7f5f2\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used chromatic color\"\n    },\n    \"accent-2\": {\n      \"$value\": \"#3984ff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    },\n    \"accent-3\": {\n      \"$value\": \"#0061fe\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    }\n  },\n  \"fontFamily\": {\n    \"sharpgrotesk\": {\n      \"$value\": \"SharpGrotesk\",\n      \"$type\": \"fontFamily\"\n    },\n    \"atlasgrotesk\": {\n      \"$value\": \"AtlasGrotesk\",\n      \"$type\": \"fontFamily\"\n    },\n    \"sharpgrotesksupercondensed\": {\n      \"$value\": \"SharpGroteskSuperCondensed\",\n      \"$type\": \"fontFamily\"\n    },\n    \"sharpgroteskcondensed\": {\n      \"$value\": \"SharpGroteskCondensed\",\n      \"$type\": \"fontFamily\"\n    },\n    \"sharpgroteskwide\": {\n      \"$value\": \"SharpGroteskWide\",\n      \"$type\": \"fontFamily\"\n    },\n    \"atlas-grotesk-web\": {\n      \"$value\": \"Atlas Grotesk Web\",\n      \"$type\": \"fontFamily\"\n    },\n    \"sharp-grotesk\": {\n      \"$value\": \"Sharp Grotesk\",\n      \"$type\": \"fontFamily\"\n    },\n    \"sharp-grotesk-23\": {\n      \"$value\": \"Sharp Grotesk 23\",\n      \"$type\": \"fontFamily\"\n    }\n  },\n  \"fontSize\": {\n    \"size-1\": {\n      \"$value\": \"0.625rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-2\": {\n      \"$value\": \"0.75rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-3\": {\n      \"$value\": \"0.875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-4\": {\n      \"$value\": \"1rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-5\": {\n      \"$value\": \"1.125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-6\": {\n      \"$value\": \"1.25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-7\": {\n      \"$value\": \"1.5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-8\": {\n      \"$value\": \"2rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-9\": {\n      \"$value\": \"2.5rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-10\": {\n      \"$value\": \"3rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-11\": {\n      \"$value\": \"4.5rem\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"fontWeight\": {\n    \"thin\": {\n      \"$value\": 100,\n      \"$type\": \"fontWeight\"\n    },\n    \"light\": {\n      \"$value\": 300,\n      \"$type\": \"fontWeight\"\n    },\n    \"normal\": {\n      \"$value\": 400,\n      \"$type\": \"fontWeight\"\n    },\n    \"medium\": {\n      \"$value\": 500,\n      \"$type\": \"fontWeight\"\n    },\n    \"semibold\": {\n      \"$value\": 600,\n      \"$type\": \"fontWeight\"\n    },\n    \"bold\": {\n      \"$value\": 700,\n      \"$type\": \"fontWeight\"\n    }\n  },\n  \"dimension\": {\n    \"space-1\": {\n      \"$value\": \"1px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-2\": {\n      \"$value\": \"2px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-3\": {\n      \"$value\": \"3px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-4\": {\n      \"$value\": \"5px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-5\": {\n      \"$value\": \"6px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-6\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-7\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-8\": {\n      \"$value\": \"12px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-9\": {\n      \"$value\": \"14px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-10\": {\n      \"$value\": \"16px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-11\": {\n      \"$value\": \"24px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-12\": {\n      \"$value\": \"28px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"borderRadius\": {\n    \"sm\": {\n      \"$value\": \"4px\",\n      \"$type\": \"dimension\"\n    },\n    \"md\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"lg\": {\n      \"$value\": \"40px\",\n      \"$type\": \"dimension\"\n    },\n    \"full\": {\n      \"$value\": \"50%\",\n      \"$type\": \"dimension\"\n    }\n  }\n}"
+ },
+ "raw": {
+  "tokens": {
+   "title": "Dropbox: Secure cloud storage, file sharing, and more",
+   "description": "",
+   "themeGuess": "dark-leaning",
+   "darkWeight": 131,
+   "lightWeight": 31,
+   "neutrals": [
+    {
+     "hex": "#ebe9e6",
+     "count": 16
+    },
+    {
+     "hex": "#d3cec9",
+     "count": 15
+    },
+    {
+     "hex": "#bbb5ae",
+     "count": 12
+    },
+    {
+     "hex": "#8e8b87",
+     "count": 17
+    },
+    {
+     "hex": "#736c64",
+     "count": 19
+    },
+    {
+     "hex": "#5b5650",
+     "count": 11
+    },
+    {
+     "hex": "#44403d",
+     "count": 21
+    },
+    {
+     "hex": "#2d2b29",
+     "count": 10
+    },
+    {
+     "hex": "#1e1919",
+     "count": 51
+    },
+    {
+     "hex": "#000000",
+     "count": 19
+    }
+   ],
+   "accents": [
+    {
+     "hex": "#f7f5f2",
+     "count": 88
+    },
+    {
+     "hex": "#3984ff",
+     "count": 30
+    },
+    {
+     "hex": "#0061fe",
+     "count": 27
+    },
+    {
+     "hex": "#fad24b",
+     "count": 25
+    },
+    {
+     "hex": "#b4dc19",
+     "count": 25
+    },
+    {
+     "hex": "#fa551e",
+     "count": 17
+    },
+    {
+     "hex": "#b4d1ff",
+     "count": 16
+    },
+    {
+     "hex": "#9b0032",
+     "count": 16
+    },
+    {
+     "hex": "#0f503c",
+     "count": 14
+    },
+    {
+     "hex": "#9b6400",
+     "count": 13
+    },
+    {
+     "hex": "#684505",
+     "count": 12
+    },
+    {
+     "hex": "#c8aff0",
+     "count": 11
+    }
+   ],
+   "modern": [],
+   "fonts": [
+    {
+     "name": "SharpGrotesk",
+     "count": 12
+    },
+    {
+     "name": "AtlasGrotesk",
+     "count": 12
+    },
+    {
+     "name": "SharpGroteskSuperCondensed",
+     "count": 6
+    },
+    {
+     "name": "SharpGroteskCondensed",
+     "count": 6
+    },
+    {
+     "name": "SharpGroteskWide",
+     "count": 6
+    },
+    {
+     "name": "Atlas Grotesk Web",
+     "count": 4
+    },
+    {
+     "name": "Sharp Grotesk",
+     "count": 4
+    },
+    {
+     "name": "Sharp Grotesk 23",
+     "count": 3
+    }
+   ],
+   "fontSizes": [
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    24,
+    32,
+    40,
+    48,
+    72
+   ],
+   "fontWeights": [
+    {
+     "value": 100,
+     "count": 2
+    },
+    {
+     "value": 300,
+     "count": 2
+    },
+    {
+     "value": 400,
+     "count": 25
+    },
+    {
+     "value": 500,
+     "count": 21
+    },
+    {
+     "value": 600,
+     "count": 5
+    },
+    {
+     "value": 700,
+     "count": 9
+    }
+   ],
+   "lineHeights": [],
+   "letterSpacings": [],
+   "spacing": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    24,
+    28
+   ],
+   "radii": [
+    {
+     "value": "4px",
+     "count": 4
+    },
+    {
+     "value": "8px",
+     "count": 1
+    },
+    {
+     "value": "40px",
+     "count": 1
+    },
+    {
+     "value": "50%",
+     "count": 2
+    }
+   ],
+   "shadows": [],
+   "breakpoints": [
+    480,
+    768,
+    1024,
+    1280,
+    1440,
+    1920
+   ],
+   "nativeVars": [
+    {
+     "name": "scheme__color",
+     "value": "light"
+    },
+    {
+     "name": "scheme__inverse__color",
+     "value": "dark"
+    },
+    {
+     "name": "spacing__base_unit",
+     "value": "8px"
+    },
+    {
+     "name": "spacing__unit--0_5",
+     "value": "4px"
+    },
+    {
+     "name": "spacing__unit--1",
+     "value": "8px"
+    },
+    {
+     "name": "spacing__unit--1_5",
+     "value": "12px"
+    },
+    {
+     "name": "spacing__unit--2",
+     "value": "16px"
+    },
+    {
+     "name": "spacing__unit--2_5",
+     "value": "20px"
+    },
+    {
+     "name": "spacing__unit--3",
+     "value": "24px"
+    },
+    {
+     "name": "spacing__unit--4",
+     "value": "32px"
+    },
+    {
+     "name": "spacing__unit--5",
+     "value": "40px"
+    },
+    {
+     "name": "boxshadow__elevation1",
+     "value": "0px 8px 32px #1e191908, 0px 8px 16px #1e191908, 0px 4px 8px #1e191908, 0px 2px 4px #1e191908, 0px 1px 2px #1e191908"
+    },
+    {
+     "name": "__desktopMacBodyFontStack",
+     "value": "Atlas Grotesk Web, Atlas Grotesk, system-ui"
+    },
+    {
+     "name": "__titleFontStack",
+     "value": "Sharp Grotesk, SharpGrotesk, Sharp Grotesk KR, Sharp Grotesk Thai, var(--__bodyFontStack)"
+    },
+    {
+     "name": "type__body__monospace--fontweight__strong",
+     "value": "600"
+    },
+    {
+     "name": "color__core__primary",
+     "value": "#1e1919"
+    },
+    {
+     "name": "color__core__secondary",
+     "value": "#f7f5f2"
+    },
+    {
+     "name": "color__core__accent",
+     "value": "#0061fe"
+    },
+    {
+     "name": "color__button__primary__hover",
+     "value": "#0057e5"
+    },
+    {
+     "name": "color__button__primary__active",
+     "value": "#0050d0"
+    },
+    {
+     "name": "color__standard__text",
+     "value": "#1e1919"
+    },
+    {
+     "name": "color__standard__border",
+     "value": "#a69e9299"
+    },
+    {
+     "name": "color__standard__background",
+     "value": "#fff"
+    },
+    {
+     "name": "color__faint__text",
+     "value": "#524a3ed1"
+    },
+    {
+     "name": "color__faint__border",
+     "value": "#a6917133"
+    },
+    {
+     "name": "color__faint__background",
+     "value": "#f7f5f2"
+    },
+    {
+     "name": "color__disabled__text",
+     "value": "#524a3e66"
+    },
+    {
+     "name": "color__disabled__border",
+     "value": "#c0bbb4"
+    },
+    {
+     "name": "color__disabled__background",
+     "value": "#c0bbb4"
+    },
+    {
+     "name": "color__elevated__background",
+     "value": "#fbfaf9"
+    },
+    {
+     "name": "color__attention__text",
+     "value": "#0061fe"
+    },
+    {
+     "name": "color__attention__border",
+     "value": "#0061fe"
+    },
+    {
+     "name": "color__attention__border--faint",
+     "value": "#0061fe52"
+    },
+    {
+     "name": "color__attention__background",
+     "value": "#0061fe29"
+    },
+    {
+     "name": "color__attention__background--faint",
+     "value": "#0061fe14"
+    },
+    {
+     "name": "color__success__text",
+     "value": "#2d7a02"
+    },
+    {
+     "name": "color__success__border",
+     "value": "#2d7a02"
+    },
+    {
+     "name": "color__success__border--faint",
+     "value": "#2d7a0252"
+    },
+    {
+     "name": "color__success__background",
+     "value": "#2d7a021f"
+    },
+    {
+     "name": "color__warning__text",
+     "value": "#9b6400"
+    },
+    {
+     "name": "color__warning__border",
+     "value": "#9b6400"
+    },
+    {
+     "name": "color__warning__border--faint",
+     "value": "#9b640052"
+    },
+    {
+     "name": "color__warning__background",
+     "value": "#fad24b3d"
+    },
+    {
+     "name": "color__alert__text",
+     "value": "#9b0032"
+    },
+    {
+     "name": "color__alert__border",
+     "value": "#9b0032"
+    },
+    {
+     "name": "color__alert__border--faint",
+     "value": "#9b003252"
+    },
+    {
+     "name": "color__alert__background",
+     "value": "#9b00321a"
+    },
+    {
+     "name": "color__opacity--1",
+     "value": "#a6917124"
+    },
+    {
+     "name": "color__opacity--2",
+     "value": "#a691713d"
+    },
+    {
+     "name": "color__opacity--3",
+     "value": "#a6917152"
+    },
+    {
+     "name": "color__glyph__primary",
+     "value": "#1e1919"
+    },
+    {
+     "name": "color__glyph__accent",
+     "value": "#0061fe"
+    },
+    {
+     "name": "color__utility__focusring",
+     "value": "#428bff"
+    },
+    {
+     "name": "color__utility__overlay",
+     "value": "#544a4480"
+    },
+    {
+     "name": "boxshadow__focusring",
+     "value": "0 0 0 3px var(--color__utility__focusring)"
+    },
+    {
+     "name": "color__inverse__utility__focusring",
+     "value": "#0060fa"
+    },
+    {
+     "name": "boxshadow__inverse__focusring",
+     "value": "0 0 0 3px var(--color__inverse__utility__focusring)"
+    },
+    {
+     "name": "color__inverse__core__primary",
+     "value": "#f7f5f2"
+    },
+    {
+     "name": "color__inverse__core__secondary",
+     "value": "#1e1919"
+    },
+    {
+     "name": "color__inverse__core__accent",
+     "value": "#3984ff"
+    },
+    {
+     "name": "color__inverse__button__primary__hover",
+     "value": "#4d90ff"
+    },
+    {
+     "name": "color__inverse__button__primary__active",
+     "value": "#5d9aff"
+    },
+    {
+     "name": "color__inverse__standard__text",
+     "value": "#f7f5f2"
+    },
+    {
+     "name": "color__inverse__standard__border",
+     "value": "#8e8b8780"
+    },
+    {
+     "name": "color__inverse__standard__background",
+     "value": "#161313"
+    },
+    {
+     "name": "color__inverse__faint__text",
+     "value": "#f7f5f299"
+    },
+    {
+     "name": "color__inverse__faint__border",
+     "value": "#8e8b8733"
+    },
+    {
+     "name": "color__inverse__faint__background",
+     "value": "#242121"
+    },
+    {
+     "name": "color__inverse__disabled__text",
+     "value": "#f7f5f24d"
+    },
+    {
+     "name": "color__inverse__disabled__border",
+     "value": "#f7f5f24d"
+    },
+    {
+     "name": "color__inverse__disabled__background",
+     "value": "#d8d3cb"
+    },
+    {
+     "name": "color__inverse__elevated__background",
+     "value": "#2b2929"
+    },
+    {
+     "name": "color__inverse__attention__text",
+     "value": "#3984ff"
+    },
+    {
+     "name": "color__inverse__attention__border",
+     "value": "#3984ff"
+    },
+    {
+     "name": "color__inverse__attention__border--faint",
+     "value": "#3984ff66"
+    },
+    {
+     "name": "color__inverse__attention__background",
+     "value": "#3984ff66"
+    },
+    {
+     "name": "color__inverse__attention__background--faint",
+     "value": "#3984ff29"
+    },
+    {
+     "name": "color__inverse__success__text",
+     "value": "#b4dc19"
+    },
+    {
+     "name": "color__inverse__success__border",
+     "value": "#b4dc19"
+    },
+    {
+     "name": "color__inverse__success__border--faint",
+     "value": "#b4dc1966"
+    },
+    {
+     "name": "color__inverse__success__background",
+     "value": "#b4dc194d"
+    },
+    {
+     "name": "color__inverse__warning__text",
+     "value": "#fad24b"
+    },
+    {
+     "name": "color__inverse__warning__border",
+     "value": "#fad24b"
+    },
+    {
+     "name": "color__inverse__warning__border--faint",
+     "value": "#fad24b66"
+    },
+    {
+     "name": "color__inverse__warning__background",
+     "value": "#fad24b4d"
+    },
+    {
+     "name": "color__inverse__alert__text",
+     "value": "#fa551e"
+    },
+    {
+     "name": "color__inverse__alert__border",
+     "value": "#fa551e"
+    },
+    {
+     "name": "color__inverse__alert__border--faint",
+     "value": "#fa551e66"
+    },
+    {
+     "name": "color__inverse__alert__background",
+     "value": "#fa551e4d"
+    },
+    {
+     "name": "color__inverse__opacity--1",
+     "value": "#8e8b8729"
+    },
+    {
+     "name": "color__inverse__opacity--2",
+     "value": "#8e8b873d"
+    },
+    {
+     "name": "color__inverse__opacity--3",
+     "value": "#8e8b8752"
+    },
+    {
+     "name": "color__inverse__glyph__primary",
+     "value": "#696663"
+    },
+    {
+     "name": "color__inverse__glyph__accent",
+     "value": "#3984ff"
+    },
+    {
+     "name": "color__accent__zen",
+     "value": "#14c8eb"
+    },
+    {
+     "name": "color__accent__ocean",
+     "value": "#007891"
+    },
+    {
+     "name": "color__accent__sunset",
+     "value": "#fa551e"
+    },
+    {
+     "name": "color__accent__crimson",
+     "value": "#9b0032"
+    },
+    {
+     "name": "color__accent__tangerine",
+     "value": "#ff8c19"
+    },
+    {
+     "name": "color__accent__rust",
+     "value": "#be4b0a"
+    },
+    {
+     "name": "color__accent__lime",
+     "value": "#b4dc19"
+    },
+    {
+     "name": "color__accent__canopy",
+     "value": "#0f503c"
+    },
+    {
+     "name": "color__accent__cloud",
+     "value": "#b4c8e1"
+    },
+    {
+     "name": "color__accent__navy",
+     "value": "#283750"
+    },
+    {
+     "name": "color__accent__orchid",
+     "value": "#c8aff0"
+    },
+    {
+     "name": "color__accent__plum",
+     "value": "#78286e"
+    },
+    {
+     "name": "color__accent__pink",
+     "value": "#ffafa5"
+    },
+    {
+     "name": "color__accent__azalea",
+     "value": "#cd2f7b"
+    },
+    {
+     "name": "color__accent__banana",
+     "value": "#fad24b"
+    },
+    {
+     "name": "color__accent__gold",
+     "value": "#9b6400"
+    },
+    {
+     "name": "breakpoint__small",
+     "value": "600px"
+    },
+    {
+     "name": "breakpoint__standard",
+     "value": "1024px"
+    },
+    {
+     "name": "breakpoint__medium",
+     "value": "1024px"
+    },
+    {
+     "name": "breakpoint__large",
+     "value": "1600px"
+    },
+    {
+     "name": "breakpoint__xlarge",
+     "value": "1920px"
+    },
+    {
+     "name": "color__opacity--darken1",
+     "value": "#0000000f"
+    },
+    {
+     "name": "color__opacity--darken2",
+     "value": "#0000001f"
+    },
+    {
+     "name": "color__opacity--darken3",
+     "value": "#0000002e"
+    },
+    {
+     "name": "color__opacity--lighten1",
+     "value": "#ffffff1a"
+    },
+    {
+     "name": "color__opacity--lighten2",
+     "value": "#ffffff26"
+    }
+   ],
+   "darkVars": [],
+   "rings": [
+    {
+     "value": "0 0 0 2px #a0d1fa",
+     "count": 2,
+     "blur": 0
+    }
+   ]
+  },
+  "stylesheets": 12
+ }
+}

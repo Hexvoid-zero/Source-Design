@@ -1,0 +1,571 @@
+{
+ "slug": "characterai",
+ "name": "Character.ai",
+ "blurb": "AI characters. Soft rounded chat UI, friendly neutrals, avatar-led rows.",
+ "url": "https://character.ai/",
+ "title": "character.ai | AI Chat, Reimagined–Your Words. Your World.",
+ "extractedAt": "2026-07-03",
+ "summary": {
+  "colors": [
+   {
+    "name": "neutral-50",
+    "hex": "#ffffff",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-200",
+    "hex": "#dadce0",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-300",
+    "hex": "#c4c7c5",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-500",
+    "hex": "#8e918f",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-600",
+    "hex": "#757575",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-700",
+    "hex": "#5f6368",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-800",
+    "hex": "#3c4043",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-900",
+    "hex": "#202124",
+    "group": "neutral"
+   },
+   {
+    "name": "neutral-950",
+    "hex": "#121212",
+    "group": "neutral"
+   },
+   {
+    "name": "cyan",
+    "hex": "#1a73e8",
+    "group": "accent"
+   },
+   {
+    "name": "cyan-2",
+    "hex": "#1967d2",
+    "group": "accent"
+   },
+   {
+    "name": "cyan-3",
+    "hex": "#2299dd",
+    "group": "accent"
+   },
+   {
+    "name": "pale-blue",
+    "hex": "#e8eaed",
+    "group": "accent"
+   },
+   {
+    "name": "blue",
+    "hex": "#174ea6",
+    "group": "accent"
+   },
+   {
+    "name": "green",
+    "hex": "#07bc0c",
+    "group": "accent"
+   },
+   {
+    "name": "yellow",
+    "hex": "#f1c40f",
+    "group": "accent"
+   },
+   {
+    "name": "red",
+    "hex": "#e74d3c",
+    "group": "accent"
+   },
+   {
+    "name": "green-2",
+    "hex": "#4cd964",
+    "group": "accent"
+   },
+   {
+    "name": "cyan-4",
+    "hex": "#5ac8fa",
+    "group": "accent"
+   },
+   {
+    "name": "cyan-5",
+    "hex": "#007aff",
+    "group": "accent"
+   },
+   {
+    "name": "cyan-6",
+    "hex": "#34aadc",
+    "group": "accent"
+   }
+  ],
+  "fonts": [
+   "Open Sans",
+   "Google Sans",
+   "Archivo",
+   "Roboto",
+   "Arimo",
+   "EB Garamond",
+   "Lora",
+   "Roboto Condensed"
+  ],
+  "themeGuess": "light-leaning",
+  "stylesheets": 3,
+  "nativeVarCount": 45
+ },
+ "files": {
+  "DESIGN.md": "---\nname: character-ai-design-system\nsource: https://character.ai/\nextracted: 2026-07-03\ntheme: light  # measured from neutral usage weight\ncolors:  # roles inferred from usage frequency + luminance; names verified against values\n  canvas: \"#ffffff\"\n  ink: \"#121212\"\n  text-muted: \"#8e918f\"\n  surface: \"#dadce0\"\n  hairline: \"#c4c7c5\"\n  accent: \"#1a73e8\"  # cyan\n  accent-2: \"#1967d2\"  # cyan\n  accent-3: \"#2299dd\"  # cyan\nfonts:\n  primary: \"Open Sans\"  # medium-confidence: usage counts are close\n  serif: \"EB Garamond\"\n---\n\n# character.ai | AI Chat, Reimagined–Your Words. Your World. — Design System\n\nExtracted from **https://character.ai/** on 2026-07-03.\n\n> Chat with millions of AI Characters on the #1 AI chat app. Where will your next adventure take you?\n\nEvery value below is mined from the site's live CSS (45 native custom properties, ranked usage counts). Role assignments are inferred from usage and luminance and marked as such — treat them as a strong starting point, not gospel.\n\n## Overview\n\nThe system reads as light: measured neutral usage weighs 53 light against 56 dark. The palette is chromatic: 12 saturated values against 9 neutrals, led by cyan (`#1a73e8`). **Open Sans** leads the font stack, though usage counts are close — verify against rendered pages before committing. Geometry mixes sharp corners (4px) with full pills.\n\n## Usage rules\n\nDerived from the measured usage below — each rule cites its evidence.\n\n- Chromatic color carries 34% of measured usage — this palette uses color structurally. Saturated values can hold large surfaces here; timidity would misrepresent the source.\n- The theme is light (measured neutral weight 53:56). Don't flip individual sections to the opposite mode.\n- `8px` is the workhorse radius (x7); treat the other radii as exceptions, not options.\n- The only shadows are blur-less hairline offsets — this system barely uses elevation; don't add soft drop shadows.\n\n## Colors\n\n### Neutrals (light → dark)\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `neutral-50` | `#ffffff` | 43 | **canvas** — lightest neutral, matches the measured light-leaning theme |\n| `neutral-200` | `#dadce0` | 10 | **surface** — neutral closest to canvas luminance |\n| `neutral-300` | `#c4c7c5` | 2 | **hairline** — next neutral near canvas, hairline-border weight |\n| `neutral-500` | `#8e918f` | 2 | **text-muted** — most-used mid-luminance neutral |\n| `neutral-600` | `#757575` | 1 | — |\n| `neutral-700` | `#5f6368` | 19 | — |\n| `neutral-800` | `#3c4043` | 6 | — |\n| `neutral-900` | `#202124` | 7 | — |\n| `neutral-950` | `#121212` | 2 | **ink** — darkest neutral, highest contrast against canvas |\n\n### Accents\n\n| Token | Value | Usage | Inferred role |\n| --- | --- | --- | --- |\n| `cyan` | `#1a73e8` | 15 | **accent** — most-used chromatic color |\n| `cyan-2` | `#1967d2` | 12 | **accent-2** — supporting chromatic color |\n| `cyan-3` | `#2299dd` | 6 | **accent-3** — supporting chromatic color |\n| `pale-blue` | `#e8eaed` | 5 | — |\n| `blue` | `#174ea6` | 2 | — |\n| `green` | `#07bc0c` | 1 | — |\n| `yellow` | `#f1c40f` | 1 | — |\n| `red` | `#e74d3c` | 1 | — |\n| `green-2` | `#4cd964` | 1 | — |\n| `cyan-4` | `#5ac8fa` | 1 | — |\n| `cyan-5` | `#007aff` | 1 | — |\n| `cyan-6` | `#34aadc` | 1 | — |\n\n## Typography\n\n**Open Sans** has the most `font-family` declarations, but the margin over the rest is thin — treat the primary-face call as provisional and verify on rendered pages. Full list by usage:\n\n| Family | Usage |\n| --- | --- |\n| Open Sans | 71 |\n| Google Sans | 52 |\n| Archivo | 31 |\n| Roboto | 28 |\n| Arimo | 16 |\n| EB Garamond | 14 |\n| Lora | 14 |\n| Roboto Condensed | 14 |\n\n**Size scale (px):** `11`, `12`, `14`, `16`, `18`, `20`, `24`\n\n**Weights in use:** `300` (x1), `400` (x174), `500` (x145), `600` (x23), `700` (x13)\n\n**Line-heights (unitless):** `1`\n\n**Letter-spacing values:** `.25px`, `.3px`\n\n## Spacing\n\nMost-used values (px): `2`, `3`, `4`, `6`, `8`, `10`, `12`, `14`, `16`, `20`, `24`, `48`\n\n## Border radius\n\n| Token | Value | Usage |\n| --- | --- | --- |\n| `radius-sm` | `4px` | 6 |\n| `radius-md` | `8px` | 7 |\n| `radius-lg` | `10px` | 2 |\n| `radius-xl` | `14px` | 3 |\n| `radius-2xl` | `18px` | 2 |\n| `radius-3xl` | `20px` | 4 |\n| `radius-4xl` | `100%` | 1 |\n| `radius-full` | `50%` | 3 |\n\n## Shadows (ordered by blur radius)\n\n- `shadow-sm` — `0 4px 8px rgba(0, 0, 0, 0.16)` (x1)\n- `shadow-md` — `0 -2px 8px rgba(128, 134, 139, 0.09), 0 4px 8px rgba(128, 134, 139, 0.06), 0 1px 2px rgba(60, 64, 67, 0.3), 0 2px 6px rgba(60, 64, 67, 0.15)` (x1)\n- `shadow-lg` — `0 0 10px #29D, 0 0 5px #29D` (x1)\n\n### Focus rings (spread-only box-shadows, kept out of the elevation scale)\n\n- `0 0 0 3px #FFFFFF` (x1)\n\n## Breakpoints\n\n`479px`, `480px`, `481px`\n\n## Starter recipes\n\nTokens composed into components. The source site's real components were **not** inspected — these are starting points built from the extracted values, with contrast ratios computed rather than assumed.\n\n```css\n.button-primary {\n  background: var(--color-accent); /* #1a73e8 */\n  color: var(--color-canvas); /* #ffffff — contrast 4.5:1 */\n  border-radius: 9999px; /* pill — mined as 50% */\n  font-weight: 500;\n}\n\n.card {\n  background: var(--color-surface); /* #dadce0 */\n  border: 1px solid var(--color-hairline); /* #c4c7c5 */\n  border-radius: 8px; /* most-used finite radius */\n  box-shadow: var(--shadow-sm);\n}\n\n.input {\n  background: var(--color-canvas); /* #ffffff */\n  color: var(--color-ink); /* #121212 — contrast 18.7:1 */\n  border: 1px solid var(--color-hairline); /* #c4c7c5 */\n  border-radius: 4px;\n  /* placeholder color: var(--color-text-muted) #8e918f */\n}\n\n.nav {\n  background: var(--color-canvas); /* #ffffff */\n  border-bottom: 1px solid var(--color-hairline); /* #c4c7c5 */\n  color: var(--color-ink); /* #121212 */\n  /* inactive links: var(--color-text-muted) #8e918f */\n  /* active link: var(--color-accent) #1a73e8 — contrast vs canvas 4.5:1 */\n}\n\n.modal {\n  background: var(--color-surface); /* #dadce0 */\n  border-radius: 8px;\n  box-shadow: var(--shadow-lg); /* largest mined shadow */\n}\n\n.modal-backdrop {\n  background: color-mix(in srgb, var(--color-ink) 55%, transparent); /* scrim from #121212 */\n}\n\n.input-error {\n  border-color: #e74d3c; /* mined token: red */\n  /* error text: #e74d3c on canvas — contrast 3.8:1, below AA; darken for message text */\n}\n\n.input-success {\n  border-color: #07bc0c; /* mined token: green */\n}\n```\n\n## Observations\n\n- 9 of 21 extracted colors are neutrals.\n- 3 distinct shadows; the softest reaches 0px blur.\n- 3 breakpoints, from 479px to 481px.\n\n## Native CSS custom properties\n\nFirst 40 of 45:\n\n```css\n:root {\n  --toastify-color-light: #fff;\n  --toastify-color-dark: #121212;\n  --toastify-color-info: #3498db;\n  --toastify-color-success: #07bc0c;\n  --toastify-color-warning: #f1c40f;\n  --toastify-color-error: hsl(6, 78%, 57%);\n  --toastify-color-transparent: rgba(255, 255, 255, .7);\n  --toastify-icon-color-info: var(--toastify-color-info);\n  --toastify-icon-color-success: var(--toastify-color-success);\n  --toastify-icon-color-warning: var(--toastify-color-warning);\n  --toastify-icon-color-error: var(--toastify-color-error);\n  --toastify-container-width: fit-content;\n  --toastify-toast-width: 320px;\n  --toastify-toast-offset: 16px;\n  --toastify-toast-top: max(var(--toastify-toast-offset), env(safe-area-inset-top));\n  --toastify-toast-right: max(var(--toastify-toast-offset), env(safe-area-inset-right));\n  --toastify-toast-left: max(var(--toastify-toast-offset), env(safe-area-inset-left));\n  --toastify-toast-bottom: max(var(--toastify-toast-offset), env(safe-area-inset-bottom));\n  --toastify-toast-background: #fff;\n  --toastify-toast-padding: 14px;\n  --toastify-toast-min-height: 64px;\n  --toastify-toast-max-height: 800px;\n  --toastify-toast-bd-radius: 6px;\n  --toastify-toast-shadow: 0px 4px 12px rgba(0, 0, 0, .1);\n  --toastify-font-family: sans-serif;\n  --toastify-z-index: 9999;\n  --toastify-text-color-light: #757575;\n  --toastify-text-color-dark: #fff;\n  --toastify-text-color-info: #fff;\n  --toastify-text-color-success: #fff;\n  --toastify-text-color-warning: #fff;\n  --toastify-text-color-error: #fff;\n  --toastify-spinner-color: #616161;\n  --toastify-spinner-color-empty-area: #e0e0e0;\n  --toastify-color-progress-light: linear-gradient(to right, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);\n  --toastify-color-progress-dark: #bb86fc;\n  --toastify-color-progress-info: var(--toastify-color-info);\n  --toastify-color-progress-success: var(--toastify-color-success);\n  --toastify-color-progress-warning: var(--toastify-color-warning);\n  --toastify-color-progress-error: var(--toastify-color-error);\n}\n```\n\n## Files\n\n- `tailwind.css` — Tailwind v4 `@theme` block; tokens become utilities (e.g. `bg-neutral-900`, `text-cyan`).\n- `variables.css` — framework-agnostic `:root` variables, same values.\n- `tokens.json` — W3C Design Tokens format for Figma plugins, Style Dictionary, etc.\n",
+  "tailwind.css": "@import \"tailwindcss\";\n\n@theme {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-200: #dadce0;\n  --color-neutral-300: #c4c7c5;\n  --color-neutral-500: #8e918f;\n  --color-neutral-600: #757575;\n  --color-neutral-700: #5f6368;\n  --color-neutral-800: #3c4043;\n  --color-neutral-900: #202124;\n  --color-neutral-950: #121212;\n  --color-cyan: #1a73e8;\n  --color-cyan-2: #1967d2;\n  --color-cyan-3: #2299dd;\n  --color-pale-blue: #e8eaed;\n  --color-blue: #174ea6;\n  --color-green: #07bc0c;\n  --color-yellow: #f1c40f;\n  --color-red: #e74d3c;\n  --color-green-2: #4cd964;\n  --color-cyan-4: #5ac8fa;\n  --color-cyan-5: #007aff;\n  --color-cyan-6: #34aadc;\n\n  /* inferred semantic roles (each maps to a distinct mined value) */\n  --color-canvas: #ffffff;\n  --color-ink: #121212;\n  --color-text-muted: #8e918f;\n  --color-surface: #dadce0;\n  --color-hairline: #c4c7c5;\n  --color-accent: #1a73e8;\n  --color-accent-2: #1967d2;\n  --color-accent-3: #2299dd;\n\n  --font-sans: \"Open Sans\", ui-sans-serif, system-ui, sans-serif;\n  --font-serif: \"EB Garamond\", ui-serif, Georgia, serif;\n\n  --text-xs: 0.6875rem;\n  --text-sm: 0.75rem;\n  --text-base: 0.875rem;\n  --text-lg: 1rem;\n  --text-xl: 1.125rem;\n  --text-2xl: 1.25rem;\n  --text-3xl: 1.5rem;\n\n  --font-weight-light: 300;\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, sorted tight -> loose */\n  --leading-none: 1;\n\n  /* letter-spacing, sorted tight -> wide */\n  --tracking-tightest: .25px;\n  --tracking-tighter: .3px;\n\n  --radius-sm: 4px;\n  --radius-md: 8px;\n  --radius-lg: 10px;\n  --radius-xl: 14px;\n  --radius-2xl: 18px;\n  --radius-3xl: 20px;\n  --radius-4xl: 100%;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 4px 8px rgba(0, 0, 0, 0.16);\n  --shadow-md: 0 -2px 8px rgba(128, 134, 139, 0.09), 0 4px 8px rgba(128, 134, 139, 0.06), 0 1px 2px rgba(60, 64, 67, 0.3), 0 2px 6px rgba(60, 64, 67, 0.15);\n  --shadow-lg: 0 0 10px #29D, 0 0 5px #29D;\n\n  --breakpoint-sm: 29.9375rem;\n  --breakpoint-md: 30rem;\n  --breakpoint-lg: 30.0625rem;\n\n  /* most-used spacing values on the source site (px): 2, 3, 4, 6, 8, 10, 12, 14, 16, 20, 24, 48 */\n}\n",
+  "variables.css": ":root {\n  /* palette (mined, ranked by usage) */\n  --color-neutral-50: #ffffff;\n  --color-neutral-200: #dadce0;\n  --color-neutral-300: #c4c7c5;\n  --color-neutral-500: #8e918f;\n  --color-neutral-600: #757575;\n  --color-neutral-700: #5f6368;\n  --color-neutral-800: #3c4043;\n  --color-neutral-900: #202124;\n  --color-neutral-950: #121212;\n  --color-cyan: #1a73e8;\n  --color-cyan-2: #1967d2;\n  --color-cyan-3: #2299dd;\n  --color-pale-blue: #e8eaed;\n  --color-blue: #174ea6;\n  --color-green: #07bc0c;\n  --color-yellow: #f1c40f;\n  --color-red: #e74d3c;\n  --color-green-2: #4cd964;\n  --color-cyan-4: #5ac8fa;\n  --color-cyan-5: #007aff;\n  --color-cyan-6: #34aadc;\n\n  /* inferred semantic roles */\n  --color-canvas: #ffffff;\n  --color-ink: #121212;\n  --color-text-muted: #8e918f;\n  --color-surface: #dadce0;\n  --color-hairline: #c4c7c5;\n  --color-accent: #1a73e8;\n  --color-accent-2: #1967d2;\n  --color-accent-3: #2299dd;\n\n  /* typography */\n  --font-open-sans: \"Open Sans\";\n  --font-google-sans: \"Google Sans\";\n  --font-archivo: \"Archivo\";\n  --font-roboto: \"Roboto\";\n  --font-arimo: \"Arimo\";\n  --font-eb-garamond: \"EB Garamond\";\n  --font-lora: \"Lora\";\n  --font-roboto-condensed: \"Roboto Condensed\";\n\n  /* type scale, ascending */\n  --text-1: 0.6875rem;\n  --text-2: 0.75rem;\n  --text-3: 0.875rem;\n  --text-4: 1rem;\n  --text-5: 1.125rem;\n  --text-6: 1.25rem;\n  --text-7: 1.5rem;\n\n  /* font weights in use */\n  --font-weight-light: 300;\n  --font-weight-normal: 400;\n  --font-weight-medium: 500;\n  --font-weight-semibold: 600;\n  --font-weight-bold: 700;\n\n  /* line-heights, tight -> loose */\n  --leading-1: 1;\n\n  /* letter-spacing, tight -> wide */\n  --tracking-1: .25px;\n  --tracking-2: .3px;\n\n  /* spacing, ascending */\n  --space-1: 2px;\n  --space-2: 3px;\n  --space-3: 4px;\n  --space-4: 6px;\n  --space-5: 8px;\n  --space-6: 10px;\n  --space-7: 12px;\n  --space-8: 14px;\n  --space-9: 16px;\n  --space-10: 20px;\n  --space-11: 24px;\n  --space-12: 48px;\n\n  /* radius, ascending */\n  --radius-sm: 4px;\n  --radius-md: 8px;\n  --radius-lg: 10px;\n  --radius-xl: 14px;\n  --radius-2xl: 18px;\n  --radius-3xl: 20px;\n  --radius-4xl: 100%;\n  --radius-full: 50%;\n\n  /* shadows, sorted by blur */\n  --shadow-sm: 0 4px 8px rgba(0, 0, 0, 0.16);\n  --shadow-md: 0 -2px 8px rgba(128, 134, 139, 0.09), 0 4px 8px rgba(128, 134, 139, 0.06), 0 1px 2px rgba(60, 64, 67, 0.3), 0 2px 6px rgba(60, 64, 67, 0.15);\n  --shadow-lg: 0 0 10px #29D, 0 0 5px #29D;\n}\n",
+  "tokens.json": "{\n  \"$description\": \"Design tokens extracted from https://character.ai/. Semantic entries are inferred from usage + luminance; all values are mined from live CSS.\",\n  \"color\": {\n    \"neutral-50\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\"\n    },\n    \"neutral-200\": {\n      \"$value\": \"#dadce0\",\n      \"$type\": \"color\"\n    },\n    \"neutral-300\": {\n      \"$value\": \"#c4c7c5\",\n      \"$type\": \"color\"\n    },\n    \"neutral-500\": {\n      \"$value\": \"#8e918f\",\n      \"$type\": \"color\"\n    },\n    \"neutral-600\": {\n      \"$value\": \"#757575\",\n      \"$type\": \"color\"\n    },\n    \"neutral-700\": {\n      \"$value\": \"#5f6368\",\n      \"$type\": \"color\"\n    },\n    \"neutral-800\": {\n      \"$value\": \"#3c4043\",\n      \"$type\": \"color\"\n    },\n    \"neutral-900\": {\n      \"$value\": \"#202124\",\n      \"$type\": \"color\"\n    },\n    \"neutral-950\": {\n      \"$value\": \"#121212\",\n      \"$type\": \"color\"\n    },\n    \"cyan\": {\n      \"$value\": \"#1a73e8\",\n      \"$type\": \"color\"\n    },\n    \"cyan-2\": {\n      \"$value\": \"#1967d2\",\n      \"$type\": \"color\"\n    },\n    \"cyan-3\": {\n      \"$value\": \"#2299dd\",\n      \"$type\": \"color\"\n    },\n    \"pale-blue\": {\n      \"$value\": \"#e8eaed\",\n      \"$type\": \"color\"\n    },\n    \"blue\": {\n      \"$value\": \"#174ea6\",\n      \"$type\": \"color\"\n    },\n    \"green\": {\n      \"$value\": \"#07bc0c\",\n      \"$type\": \"color\"\n    },\n    \"yellow\": {\n      \"$value\": \"#f1c40f\",\n      \"$type\": \"color\"\n    },\n    \"red\": {\n      \"$value\": \"#e74d3c\",\n      \"$type\": \"color\"\n    },\n    \"green-2\": {\n      \"$value\": \"#4cd964\",\n      \"$type\": \"color\"\n    },\n    \"cyan-4\": {\n      \"$value\": \"#5ac8fa\",\n      \"$type\": \"color\"\n    },\n    \"cyan-5\": {\n      \"$value\": \"#007aff\",\n      \"$type\": \"color\"\n    },\n    \"cyan-6\": {\n      \"$value\": \"#34aadc\",\n      \"$type\": \"color\"\n    }\n  },\n  \"semantic\": {\n    \"canvas\": {\n      \"$value\": \"#ffffff\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: lightest neutral, matches the measured light-leaning theme\"\n    },\n    \"ink\": {\n      \"$value\": \"#121212\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: darkest neutral, highest contrast against canvas\"\n    },\n    \"text-muted\": {\n      \"$value\": \"#8e918f\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used mid-luminance neutral\"\n    },\n    \"surface\": {\n      \"$value\": \"#dadce0\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: neutral closest to canvas luminance\"\n    },\n    \"hairline\": {\n      \"$value\": \"#c4c7c5\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: next neutral near canvas, hairline-border weight\"\n    },\n    \"accent\": {\n      \"$value\": \"#1a73e8\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: most-used chromatic color\"\n    },\n    \"accent-2\": {\n      \"$value\": \"#1967d2\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    },\n    \"accent-3\": {\n      \"$value\": \"#2299dd\",\n      \"$type\": \"color\",\n      \"$description\": \"inferred: supporting chromatic color\"\n    }\n  },\n  \"fontFamily\": {\n    \"open-sans\": {\n      \"$value\": \"Open Sans\",\n      \"$type\": \"fontFamily\"\n    },\n    \"google-sans\": {\n      \"$value\": \"Google Sans\",\n      \"$type\": \"fontFamily\"\n    },\n    \"archivo\": {\n      \"$value\": \"Archivo\",\n      \"$type\": \"fontFamily\"\n    },\n    \"roboto\": {\n      \"$value\": \"Roboto\",\n      \"$type\": \"fontFamily\"\n    },\n    \"arimo\": {\n      \"$value\": \"Arimo\",\n      \"$type\": \"fontFamily\"\n    },\n    \"eb-garamond\": {\n      \"$value\": \"EB Garamond\",\n      \"$type\": \"fontFamily\"\n    },\n    \"lora\": {\n      \"$value\": \"Lora\",\n      \"$type\": \"fontFamily\"\n    },\n    \"roboto-condensed\": {\n      \"$value\": \"Roboto Condensed\",\n      \"$type\": \"fontFamily\"\n    }\n  },\n  \"fontSize\": {\n    \"size-1\": {\n      \"$value\": \"0.6875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-2\": {\n      \"$value\": \"0.75rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-3\": {\n      \"$value\": \"0.875rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-4\": {\n      \"$value\": \"1rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-5\": {\n      \"$value\": \"1.125rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-6\": {\n      \"$value\": \"1.25rem\",\n      \"$type\": \"dimension\"\n    },\n    \"size-7\": {\n      \"$value\": \"1.5rem\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"fontWeight\": {\n    \"light\": {\n      \"$value\": 300,\n      \"$type\": \"fontWeight\"\n    },\n    \"normal\": {\n      \"$value\": 400,\n      \"$type\": \"fontWeight\"\n    },\n    \"medium\": {\n      \"$value\": 500,\n      \"$type\": \"fontWeight\"\n    },\n    \"semibold\": {\n      \"$value\": 600,\n      \"$type\": \"fontWeight\"\n    },\n    \"bold\": {\n      \"$value\": 700,\n      \"$type\": \"fontWeight\"\n    }\n  },\n  \"lineHeight\": {\n    \"leading-1\": {\n      \"$value\": 1,\n      \"$type\": \"number\"\n    }\n  },\n  \"letterSpacing\": {\n    \"tracking-1\": {\n      \"$value\": \".25px\",\n      \"$type\": \"dimension\"\n    },\n    \"tracking-2\": {\n      \"$value\": \".3px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"dimension\": {\n    \"space-1\": {\n      \"$value\": \"2px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-2\": {\n      \"$value\": \"3px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-3\": {\n      \"$value\": \"4px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-4\": {\n      \"$value\": \"6px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-5\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-6\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-7\": {\n      \"$value\": \"12px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-8\": {\n      \"$value\": \"14px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-9\": {\n      \"$value\": \"16px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-10\": {\n      \"$value\": \"20px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-11\": {\n      \"$value\": \"24px\",\n      \"$type\": \"dimension\"\n    },\n    \"space-12\": {\n      \"$value\": \"48px\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"borderRadius\": {\n    \"sm\": {\n      \"$value\": \"4px\",\n      \"$type\": \"dimension\"\n    },\n    \"md\": {\n      \"$value\": \"8px\",\n      \"$type\": \"dimension\"\n    },\n    \"lg\": {\n      \"$value\": \"10px\",\n      \"$type\": \"dimension\"\n    },\n    \"xl\": {\n      \"$value\": \"14px\",\n      \"$type\": \"dimension\"\n    },\n    \"2xl\": {\n      \"$value\": \"18px\",\n      \"$type\": \"dimension\"\n    },\n    \"3xl\": {\n      \"$value\": \"20px\",\n      \"$type\": \"dimension\"\n    },\n    \"4xl\": {\n      \"$value\": \"100%\",\n      \"$type\": \"dimension\"\n    },\n    \"full\": {\n      \"$value\": \"50%\",\n      \"$type\": \"dimension\"\n    }\n  },\n  \"shadow\": {\n    \"sm\": {\n      \"$value\": \"0 4px 8px rgba(0, 0, 0, 0.16)\",\n      \"$type\": \"shadow\"\n    },\n    \"md\": {\n      \"$value\": \"0 -2px 8px rgba(128, 134, 139, 0.09), 0 4px 8px rgba(128, 134, 139, 0.06), 0 1px 2px rgba(60, 64, 67, 0.3), 0 2px 6px rgba(60, 64, 67, 0.15)\",\n      \"$type\": \"shadow\"\n    },\n    \"lg\": {\n      \"$value\": \"0 0 10px #29D, 0 0 5px #29D\",\n      \"$type\": \"shadow\"\n    }\n  }\n}"
+ },
+ "raw": {
+  "tokens": {
+   "title": "character.ai | AI Chat, Reimagined–Your Words. Your World.",
+   "description": "Chat with millions of AI Characters on the #1 AI chat app. Where will your next adventure take you?",
+   "themeGuess": "light-leaning",
+   "darkWeight": 56,
+   "lightWeight": 53,
+   "neutrals": [
+    {
+     "hex": "#ffffff",
+     "count": 43
+    },
+    {
+     "hex": "#dadce0",
+     "count": 10
+    },
+    {
+     "hex": "#c4c7c5",
+     "count": 2
+    },
+    {
+     "hex": "#8e918f",
+     "count": 2
+    },
+    {
+     "hex": "#757575",
+     "count": 1
+    },
+    {
+     "hex": "#5f6368",
+     "count": 19
+    },
+    {
+     "hex": "#3c4043",
+     "count": 6
+    },
+    {
+     "hex": "#202124",
+     "count": 7
+    },
+    {
+     "hex": "#121212",
+     "count": 2
+    },
+    {
+     "hex": "#000000",
+     "count": 21
+    }
+   ],
+   "accents": [
+    {
+     "hex": "#1a73e8",
+     "count": 15
+    },
+    {
+     "hex": "#1967d2",
+     "count": 12
+    },
+    {
+     "hex": "#2299dd",
+     "count": 6
+    },
+    {
+     "hex": "#e8eaed",
+     "count": 5
+    },
+    {
+     "hex": "#174ea6",
+     "count": 2
+    },
+    {
+     "hex": "#07bc0c",
+     "count": 1
+    },
+    {
+     "hex": "#f1c40f",
+     "count": 1
+    },
+    {
+     "hex": "#e74d3c",
+     "count": 1
+    },
+    {
+     "hex": "#4cd964",
+     "count": 1
+    },
+    {
+     "hex": "#5ac8fa",
+     "count": 1
+    },
+    {
+     "hex": "#007aff",
+     "count": 1
+    },
+    {
+     "hex": "#34aadc",
+     "count": 1
+    }
+   ],
+   "modern": [],
+   "fonts": [
+    {
+     "name": "Open Sans",
+     "count": 71
+    },
+    {
+     "name": "Google Sans",
+     "count": 52
+    },
+    {
+     "name": "Archivo",
+     "count": 31
+    },
+    {
+     "name": "Roboto",
+     "count": 28
+    },
+    {
+     "name": "Arimo",
+     "count": 16
+    },
+    {
+     "name": "EB Garamond",
+     "count": 14
+    },
+    {
+     "name": "Lora",
+     "count": 14
+    },
+    {
+     "name": "Roboto Condensed",
+     "count": 14
+    }
+   ],
+   "fontSizes": [
+    11,
+    12,
+    14,
+    16,
+    18,
+    20,
+    24
+   ],
+   "fontWeights": [
+    {
+     "value": 300,
+     "count": 1
+    },
+    {
+     "value": 400,
+     "count": 174
+    },
+    {
+     "value": 500,
+     "count": 145
+    },
+    {
+     "value": 600,
+     "count": 23
+    },
+    {
+     "value": 700,
+     "count": 13
+    }
+   ],
+   "lineHeights": [
+    1
+   ],
+   "letterSpacings": [
+    ".25px",
+    ".3px"
+   ],
+   "spacing": [
+    2,
+    3,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    20,
+    24,
+    48
+   ],
+   "radii": [
+    {
+     "value": "8px",
+     "count": 7
+    },
+    {
+     "value": "4px",
+     "count": 6
+    },
+    {
+     "value": "20px",
+     "count": 4
+    },
+    {
+     "value": "14px",
+     "count": 3
+    },
+    {
+     "value": "10px",
+     "count": 2
+    },
+    {
+     "value": "18px",
+     "count": 2
+    },
+    {
+     "value": "100%",
+     "count": 1
+    },
+    {
+     "value": "50%",
+     "count": 3
+    }
+   ],
+   "shadows": [
+    {
+     "value": "0 4px 8px rgba(0, 0, 0, 0.16)",
+     "count": 1,
+     "blur": 0
+    },
+    {
+     "value": "0 -2px 8px rgba(128, 134, 139, 0.09), 0 4px 8px rgba(128, 134, 139, 0.06), 0 1px 2px rgba(60, 64, 67, 0.3), 0 2px 6px rgba(60, 64, 67, 0.15)",
+     "count": 1,
+     "blur": 0
+    },
+    {
+     "value": "0 0 10px #29D, 0 0 5px #29D",
+     "count": 1,
+     "blur": 0
+    }
+   ],
+   "breakpoints": [
+    479,
+    480,
+    481
+   ],
+   "nativeVars": [
+    {
+     "name": "toastify-color-light",
+     "value": "#fff"
+    },
+    {
+     "name": "toastify-color-dark",
+     "value": "#121212"
+    },
+    {
+     "name": "toastify-color-info",
+     "value": "#3498db"
+    },
+    {
+     "name": "toastify-color-success",
+     "value": "#07bc0c"
+    },
+    {
+     "name": "toastify-color-warning",
+     "value": "#f1c40f"
+    },
+    {
+     "name": "toastify-color-error",
+     "value": "hsl(6, 78%, 57%)"
+    },
+    {
+     "name": "toastify-color-transparent",
+     "value": "rgba(255, 255, 255, .7)"
+    },
+    {
+     "name": "toastify-icon-color-info",
+     "value": "var(--toastify-color-info)"
+    },
+    {
+     "name": "toastify-icon-color-success",
+     "value": "var(--toastify-color-success)"
+    },
+    {
+     "name": "toastify-icon-color-warning",
+     "value": "var(--toastify-color-warning)"
+    },
+    {
+     "name": "toastify-icon-color-error",
+     "value": "var(--toastify-color-error)"
+    },
+    {
+     "name": "toastify-container-width",
+     "value": "fit-content"
+    },
+    {
+     "name": "toastify-toast-width",
+     "value": "320px"
+    },
+    {
+     "name": "toastify-toast-offset",
+     "value": "16px"
+    },
+    {
+     "name": "toastify-toast-top",
+     "value": "max(var(--toastify-toast-offset), env(safe-area-inset-top))"
+    },
+    {
+     "name": "toastify-toast-right",
+     "value": "max(var(--toastify-toast-offset), env(safe-area-inset-right))"
+    },
+    {
+     "name": "toastify-toast-left",
+     "value": "max(var(--toastify-toast-offset), env(safe-area-inset-left))"
+    },
+    {
+     "name": "toastify-toast-bottom",
+     "value": "max(var(--toastify-toast-offset), env(safe-area-inset-bottom))"
+    },
+    {
+     "name": "toastify-toast-background",
+     "value": "#fff"
+    },
+    {
+     "name": "toastify-toast-padding",
+     "value": "14px"
+    },
+    {
+     "name": "toastify-toast-min-height",
+     "value": "64px"
+    },
+    {
+     "name": "toastify-toast-max-height",
+     "value": "800px"
+    },
+    {
+     "name": "toastify-toast-bd-radius",
+     "value": "6px"
+    },
+    {
+     "name": "toastify-toast-shadow",
+     "value": "0px 4px 12px rgba(0, 0, 0, .1)"
+    },
+    {
+     "name": "toastify-font-family",
+     "value": "sans-serif"
+    },
+    {
+     "name": "toastify-z-index",
+     "value": "9999"
+    },
+    {
+     "name": "toastify-text-color-light",
+     "value": "#757575"
+    },
+    {
+     "name": "toastify-text-color-dark",
+     "value": "#fff"
+    },
+    {
+     "name": "toastify-text-color-info",
+     "value": "#fff"
+    },
+    {
+     "name": "toastify-text-color-success",
+     "value": "#fff"
+    },
+    {
+     "name": "toastify-text-color-warning",
+     "value": "#fff"
+    },
+    {
+     "name": "toastify-text-color-error",
+     "value": "#fff"
+    },
+    {
+     "name": "toastify-spinner-color",
+     "value": "#616161"
+    },
+    {
+     "name": "toastify-spinner-color-empty-area",
+     "value": "#e0e0e0"
+    },
+    {
+     "name": "toastify-color-progress-light",
+     "value": "linear-gradient(to right, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55)"
+    },
+    {
+     "name": "toastify-color-progress-dark",
+     "value": "#bb86fc"
+    },
+    {
+     "name": "toastify-color-progress-info",
+     "value": "var(--toastify-color-info)"
+    },
+    {
+     "name": "toastify-color-progress-success",
+     "value": "var(--toastify-color-success)"
+    },
+    {
+     "name": "toastify-color-progress-warning",
+     "value": "var(--toastify-color-warning)"
+    },
+    {
+     "name": "toastify-color-progress-error",
+     "value": "var(--toastify-color-error)"
+    },
+    {
+     "name": "toastify-color-progress-bgo",
+     "value": ".2"
+    },
+    {
+     "name": "font-at-hauss",
+     "value": "'atHauss'"
+    },
+    {
+     "name": "font-character-sans",
+     "value": "'characterSans'"
+    },
+    {
+     "name": "font-libre-baskerville",
+     "value": "'libreBaskerville'"
+    },
+    {
+     "name": "font-inter",
+     "value": "'Inter'"
+    }
+   ],
+   "darkVars": [],
+   "rings": [
+    {
+     "value": "0 0 0 3px #FFFFFF",
+     "count": 1,
+     "blur": 0
+    }
+   ]
+  },
+  "stylesheets": 3
+ }
+}
