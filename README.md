@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="Docs/Logo with anme.png" alt="Odysseus" width="238">
+  <img src="Docs/Logo with anme.png" alt="Source-Design" width="238">
 </p>
   
 # Source Design 
