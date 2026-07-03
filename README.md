@@ -1,10 +1,16 @@
 <div align="center">
+  <img src="Docs/Logo with anme.png" alt="Source-Design" width="235">
+</p>
   
-# Source Design 
-<img width="1254" height="1254" alt="308dd320-65a1-4523-9d93-81d68bb0b14e" src="https://github.com/user-attachments/assets/eabce1c6-dec2-418a-9f33-b1fafd2b8354" />
-  <a href="https://x.com/Source__Design"><img src="https://img.shields.io/badge/Follow-%40Source__Design-000000?style=flat&logo=x&logoColor=white" alt="Follow on X" /></a>
-<div align="left">
+# Source Design
   Source Design is a premium web application and developer utility designed to inspect, extract, and compile production-grade design tokens from live websites into semantic, ready-to-use configurations (Tailwind CSS, CSS variables, and JSON design tokens).
+    <a href="https://x.com/Source__Design"><img src="https://img.shields.io/badge/Follow-%40Source__Design-000000?style=flat&logo=x&logoColor=white" alt="Follow on X" /></a>
+  <img src="docs/Logo.jpeg" alt="Source-Design logo">
+</p>
+
+
+<div align="left">
+
 
 ## Features
 
