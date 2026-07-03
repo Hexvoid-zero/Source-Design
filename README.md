@@ -1,5 +1,6 @@
 <div align="center">
-  <img src="Docs/Logo with anme.png" alt="Source-Design" width="230">
+  
+  <img src="Docs/Logo with anme.png" alt="Source-Design" width="245">
 </p>
   
 # Source Design
