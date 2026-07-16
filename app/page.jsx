@@ -3,32 +3,9 @@
 import { useState } from "react";
 import SiteHeader from "../components/SiteHeader";
 import DesignViewer from "../components/DesignViewer";
-import ready from "../lib/ready/index.json";
+import library from "../lib/library.json";
 
-const LOGO_MAPPING = {
-  chatgpt: "chatgpt.png",
-  vercel: "vercel.png",
-  supabase: "supabase.png",
-  perplexity: "perplexity.png",
-  huggingface: "huggingface.png",
-  midjourney: "midjourney.png",
-  characterai: "characterai.png",
-  github: "github.png",
-  netlify: "netlify.png",
-  cloudflare: "cloudflare.png",
-  docker: "docker.png",
-  postman: "postman.png",
-  canva: "canva.png",
-  dropbox: "dropbox.png",
-  loom: "loom.png",
-  duolingo: "duolingo.png",
-  porsche: "porsche.png",
-  rolex: "rolex.png",
-  sonos: "sonos.png",
-  xbox: "xbox.png",
-  twitch: "twitch.png",
-  netflix: "netflix.png",
-};
+const LIBRARY_COUNT = library.categories.reduce((n, c) => n + c.sites.length, 0);
 
 const FILES = ["DESIGN.md", "tailwind.css", "variables.css", "tokens.json"];
 
@@ -159,47 +136,47 @@ export default function Home() {
               </div>
             </section>
 
-            {/* ready designs teaser: full-width strip, different rhythm */}
+            {/* live library: a massive categorized index of real sites worth extracting */}
             <section className="border-t border-line">
               <div className="max-w-[1400px] mx-auto px-5 md:px-10 py-16 md:py-20">
                 <div className="flex flex-wrap items-baseline gap-x-8 gap-y-3">
                   <h2 className="text-[clamp(1.6rem,3vw,2.4rem)] font-light text-snow">
-                    Or skip the wait.
+                    Live Library
                   </h2>
-                  <a href="/designs" className="font-mono text-[11px] uppercase tracking-[0.14em]">
-                    Browse {ready.length} ready designs
-                  </a>
+                  <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-fog">
+                    {LIBRARY_COUNT} sites · {library.categories.length} categories
+                  </p>
                 </div>
-                <div className="mt-8 flex flex-wrap gap-x-7 gap-y-4">
-                  {ready.slice(0, 12).map((d) => (
-                    <a
-                      key={d.slug}
-                      href={`/designs/${d.slug}`}
-                      className="group flex items-center gap-2.5 text-snow hover:no-underline"
-                    >
-                      {LOGO_MAPPING[d.slug] ? (
-                        <div className="w-6 h-6 flex shrink-0 items-center justify-center bg-transparent">
-                          <img
-                            src={`/sites/${LOGO_MAPPING[d.slug]}`}
-                            alt=""
-                            className="max-h-full max-w-full object-contain"
-                          />
-                        </div>
-                      ) : (
-                        <span className="flex">
-                          {d.chips.slice(0, 3).map((hex, i) => (
-                            <span
-                              key={i}
-                              className="w-3.5 h-3.5 border border-line -ml-px first:ml-0"
-                              style={{ backgroundColor: hex }}
-                            />
-                          ))}
-                        </span>
-                      )}
-                      <span className="text-sm group-hover:text-cyan transition-colors">
-                        {d.name}
-                      </span>
-                    </a>
+                <p className="mt-4 text-sm leading-relaxed text-fog max-w-[52ch]">
+                  A library of live websites with design systems worth stealing,
+                  indexed by category. Open one, or paste its URL above and extract
+                  the system for yourself.
+                </p>
+                <div className="mt-10 space-y-10">
+                  {library.categories.map((cat) => (
+                    <div key={cat.slug}>
+                      <h3 className="font-mono text-[11px] uppercase tracking-[0.14em] text-fog">
+                        {cat.name} <span className="text-cyan">{cat.sites.length}</span>
+                      </h3>
+                      <div className="mt-4 flex flex-wrap gap-x-7 gap-y-3">
+                        {cat.sites.map((s) => (
+                          <a
+                            key={s.url}
+                            href={s.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group flex items-baseline gap-2 text-snow hover:no-underline"
+                          >
+                            <span className="text-sm group-hover:text-cyan transition-colors">
+                              {s.name}
+                            </span>
+                            <span className="font-mono text-[11px] text-fog/70">
+                              {s.url.replace("https://", "")}
+                            </span>
+                          </a>
+                        ))}
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>
